@@ -184,14 +184,28 @@ qwen3.5-397b-a17b & 3120 & 5  & $0{,}0625$              & $-0{,}0052$ & - \\
 
 \subsection{Промпт-условия}
 
-Оценивались два промпт-условия на датасете «Формальная логика --- Нейтральная» и дополнительно на «Знакомых социальных контрактах».
+Оценивались три промпт-условия на датасете «Формальная логика --- Нейтральная» и дополнительно на «Знакомых социальных контрактах».
 
-\textbf{Neutral.} Предъявляет задачу без стратегических указаний, без персоны эксперта и без фрейминга фальсификации. Наиболее близко воспроизводит оригинальную человеческую экспериментальную парадигму и служит основным измерением непромпт-ированной логической компетентности.
-
-\textbf{Chain-of-Thought (CoT).} Инструктирует модель рассуждать пошагово перед ответом~\cite{wei2022chain}:
+\textbf{Original (Assisted Falsification).} Системный промпт задаёт персону эксперта по логике и явную задачу найти карточки, нарушающие правило:
 
 \begin{quote}
-\textit{You are a logic expert analyzing conditional rules. Think step by step before answering. After reasoning, output your final answer on the last line as: ANSWER: card1, card2.}
+\textit{System: You are a logic expert analyzing conditional rules. Your task is to identify which cards must be turned over to check if a rule is violated. CRITICAL INSTRUCTIONS: Respond ONLY with the selected cards as a comma-separated list. NO explanations, NO reasoning, NO JSON, NO other text.}
+\end{quote}
+
+Условие обеспечивает два независимых фасилитирующих сигнала: ролевое прайминирование и явный фрейминг фальсификации. Служит верхней границей производительности без CoT и позволяет сравниться с предшествующими работами, большинство из которых используют аналогично директивные промпты.
+
+\textbf{Neutral.} Системный промпт содержит только инструкцию по формату без персоны и без фрейминга фальсификации:
+
+\begin{quote}
+\textit{System: Respond ONLY with card labels as a comma-separated list. No explanations.}
+\end{quote}
+
+Наиболее близко воспроизводит оригинальную человеческую экспериментальную парадигму и служит основным измерением непромпт-ированной логической компетентности.
+
+\textbf{Chain-of-Thought (CoT).} Системный промпт инструктирует модель рассуждать пошагово и выводить финальный ответ в фиксированном формате~\cite{wei2022chain}:
+
+\begin{quote}
+\textit{System: You are a logic expert analyzing conditional rules. Think step by step before answering. After reasoning, output your final answer on the last line as: ANSWER: card1, card2.}
 \end{quote}
 
 Условие CoT тестирует, раскрывает ли явное элицирование рассуждений латентную компетентность у моделей, недостаточно показывающих себя при прямых ответах, и взаимодействует ли CoT дифференцированно с уровнем способностей модели~\cite{kojima2022large}.
@@ -326,13 +340,25 @@ gemma-3-12b-it     & 0,028 & 0,270 & 0,134 & 0,186 & 0,468 & 0,230 \\
 \texttt{T: [x, y, z]}
 \end{quote}
 
-где \texttt{H} --- исполняемый Python-лямбда-выражение, представляющее текущую гипотезу о скрытом правиле $R$, а \texttt{T} --- следующая тройка для тестирования. Модель получает только бинарную обратную связь вида \texttt{(a, b, c) -> True} или \texttt{(a, b, c) -> False}. Диалог продолжается не более \texttt{max\_turns} шагов. В отличие от бенчмарка WILT~\cite{banatt2024wilt}, дизайн настоящего исследования требует от модели поддерживать живую, исполняемую гипотезу \textit{на каждом ходу}, что позволяет анализировать полную траекторию гипотез.
+где \texttt{H} --- исполняемый Python-лямбда-выражение, представляющее текущую гипотезу о скрытом правиле $R$, а \texttt{T} --- следующая тройка для тестирования. Модель получает только бинарную обратную связь вида \texttt{(a, b, c) -> True} или \texttt{(a, b, c) -> False}. Испытание завершается либо по достижении \texttt{max\_turns}, либо при выполнении условия ранней остановки: $\text{IOU}(H_t, R) > 0{,}95$ на текущей Монте-Карло выборке~--- в зависимости от того, что наступит раньше. Это объясняет, почему среднее число ходов у reasoning-модели (\texttt{mean\_turns} $\approx 15$) меньше \texttt{max\_turns}: часть траекторий завершается досрочно при успешном обнаружении правила. В отличие от бенчмарка WILT~\cite{banatt2024wilt}, дизайн настоящего исследования требует от модели поддерживать живую, исполняемую гипотезу \textit{на каждом ходу}, что позволяет анализировать полную траекторию гипотез.
 
 \subsection{Промпт-условия: Baseline и Adaptive}
 
-\textbf{Baseline.} Предоставляет только фрейм задачи: существование скрытого правила, порождающую тройку, требуемый формат вывода и жёсткие ограничения (целые числа в $[1, 99]$, только \texttt{H} и \texttt{T} без пояснений).
+Оба условия используют одинаковую структуру диалога: стартовое сообщение пользователя содержит только \texttt{True} (подтверждение того, что тройка $(2, 4, 6)$ удовлетворяет правилу), на каждом последующем ходу модель получает бинарную обратную связь вида \texttt{(x, y, z) -> True} или \texttt{(x, y, z) -> False}. Ответ модели должен быть оформлен в блоке \texttt{```python```} и содержать ровно две строки: гипотезу \texttt{H} и тестируемую тройку \texttt{T}.
 
-\textbf{Adaptive.} Расширяет базовый промпт явными метакогнитивными указаниями, основанными на нормативном байесовском пересмотре гипотез: после получения ответа False гипотезу следует сузить; после неожиданного True --- расширить; рекомендуется рассматривать арифметические свойства (суммы, произведения, остатки) как компоненты правила. Манипуляция мотивирована данными Batista и Griffiths~\cite{batista2026rational} о том, что явные инструкции по обратной связи модулируют поведение пересмотра гипотез.
+\textbf{Baseline.} Системный промпт содержит фрейм задачи, требуемый формат и жёсткие технические ограничения без каких-либо метакогнитивных советов:
+
+\begin{quote}
+\textit{You have a hidden rule for number triples (x,y,z). The triple (2,4,6) satisfies this rule. Your goal: discover the rule through testing. YOU MUST respond in a fenced python block on EVERY turn [...] Use ONLY positive integers from 1 to 1000 [...] NO explanations, commentary, or reasoning in your response. NO stopping until maximum turns reached.}
+\end{quote}
+
+\textbf{Adaptive.} Идентичен baseline по техническим ограничениям и формату, однако дополнен блоком явных метакогнитивных указаний по стратегии тестирования:
+
+\begin{quote}
+\textit{CRITICAL TESTING APPROACH: If you get a False result, your hypothesis MUST change to exclude that case. If you get an unexpected True, your hypothesis MUST expand to include it. Prefer tests that could prove your current hypothesis wrong, not just confirm it. Repeatedly proposing triples your current hypothesis already expects to be True is weak testing. Use boundary cases and contrastive cases that distinguish your current hypothesis from nearby alternatives. Consider mathematical properties: sums, products, differences, divisibility, remainders.}
+\end{quote}
+
+Манипуляция мотивирована данными Batista и Griffiths~\cite{batista2026rational} о том, что явные инструкции по обратной связи модулируют поведение пересмотра гипотез. Оба условия разделяют требование продолжать тестирование до достижения \texttt{max\_turns} вне зависимости от уверенности модели.
 
 \subsection{Метрики качества гипотез}
 
