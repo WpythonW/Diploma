@@ -1,0 +1,57 @@
+\documentclass[14pt,a4paper,oneside,openany]{book}
+\let\cleardoublepage\clearpage
+
+\input{preamble.tex}
+
+\begin{document}
+
+% Нумерация страниц начинается с листа «СОДЕРЖАНИЕ» (п. 4.3.1)
+% Титульный лист, задание и аннотация оформляются в ИСУ ИТМО отдельно.
+% Если перед содержанием 3 страницы (титул, задание, аннотация) - поставить 4:
+\setcounter{page}{1}
+
+% СОДЕРЖАНИЕ
+\chapter*{СОДЕРЖАНИЕ}
+\markboth{СОДЕРЖАНИЕ}{}
+\vspace{-3.5cm}
+{%
+  \renewcommand{\contentsname}{}%
+  \tableofcontents
+}
+
+% Список сокращений и условных обозначений (п. 3.2, 4.8)
+\input{abbreviations.tex}
+\cleardoublepage
+
+% Список терминов и определений (п. 3.2, 4.9)
+\input{terms.tex}
+\cleardoublepage
+
+% Основной текст работы
+\mainmatter
+
+% ВВЕДЕНИЕ
+\input{intro.tex}
+
+% ГЛАВА 1 - Анализ предметной области
+\input{chapter1.tex}
+
+% ГЛАВА 2 - Дизайн и проведение экспериментов
+\input{chapter2.tex}
+
+% ГЛАВА 3 - Практическая реализация
+%\input{chapter3.tex}
+
+% ЗАКЛЮЧЕНИЕ
+\input{conclusion.tex}
+
+% СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ (п. 4.10)
+\addcontentsline{toc}{chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
+\nocite{*}
+\printbibliography[title={СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}]
+
+% ПРИЛОЖЕНИЯ (п. 4.11)
+\appendix
+\input{appA.tex}
+
+\end{document}
