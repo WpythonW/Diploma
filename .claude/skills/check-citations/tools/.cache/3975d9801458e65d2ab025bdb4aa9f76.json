@@ -1,0 +1,32 @@
+{
+  "key": "wang2024linda",
+  "type": "inproceedings",
+  "description": "Authors: Wang, P. and Xiao, Z. and Chen, H. and Oswald, F. L.\nTitle: Will the real Linda please stand up\\ldots to large language models? Examining the representativeness heuristic in LLMs\nConference/Book: Proceedings of the Conference on Language Modeling (COLM 2024)",
+  "verdict": "REAL",
+  "confidence": 98,
+  "reason": "Paper confirmed via Semantic Scholar and Perplexity with matching title, authors, year, and DOI. Hosted on arXiv with DOI 10.48550/arXiv.2404.01461 and officially presented at COLM 2024.",
+  "tool_calls": 3,
+  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
+  "_search_results": [
+    "This paper **exists** and is a published conference paper at COLM 2024[1][3].\n\n**Exact Title:** \"Will the Real Linda Please Stand Up…to Large Language Models? Examining the Representativeness Heuristic in LLMs\"[3]\n\n**Authors:** Pengda Wang, Zilin Xiao, Hanjie Chen, Frederick L. Oswald (all from Rice University)[2]\n\n**Venue:** COLM 2024 (Conference on Language Modeling)[1][5]\n\n**Year:** 2024[1]\n\n**DOI/URL:** arXiv:2404.01461 with DOI https://doi.org/10.48550/arXiv.2404.01461[3]\n\nThe paper investigates how large language models exhibit the **representativeness heuristic**—a cognitive bias where probability judgments are based on how closely something resembles a typical example rather than actual statistical evidence[2]. The research evaluated GPT-3.5, GPT-4, PaLM 2, and LLaMA 2, finding that these models frequently made incorrect judgments by prioritizing semantic cues over statistical reasoning, though performance improved when models received hints encouraging them to use statistical knowledge[1].",
+    "Semantic Scholar: no matching paper found.",
+    "Semantic Scholar result:\n  Title: Will the Real Linda Please Stand up...to Large Language Models? Examining the Representativeness Heuristic in LLMs\n  Authors: Pengda Wang, Zilin Xiao, Hanjie Chen, Frederick L. Oswald\n  Year: 2024\n  Venue: arXiv.org\n  DOI: 10.48550/arXiv.2404.01461\n  arXiv: 2404.01461\n  PDF: n/a\n  Citations: 18\n  URL: https://www.semanticscholar.org/paper/d4e3aa50b3d822021628d7c8d89519ec0389fbd8"
+  ],
+  "_s2": {
+    "paper_id": "d4e3aa50b3d822021628d7c8d89519ec0389fbd8",
+    "title": "Will the Real Linda Please Stand up...to Large Language Models? Examining the Representativeness Heuristic in LLMs",
+    "authors": [
+      "Pengda Wang",
+      "Zilin Xiao",
+      "Hanjie Chen",
+      "Frederick L. Oswald"
+    ],
+    "year": 2024,
+    "venue": "arXiv.org",
+    "doi": "10.48550/arXiv.2404.01461",
+    "arxiv_id": "2404.01461",
+    "pdf_url": "",
+    "paper_url": "https://www.semanticscholar.org/paper/d4e3aa50b3d822021628d7c8d89519ec0389fbd8",
+    "citation_count": 18
+  }
+}

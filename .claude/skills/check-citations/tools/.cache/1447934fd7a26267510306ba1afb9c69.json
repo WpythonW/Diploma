@@ -1,0 +1,29 @@
+{
+  "key": "binz2023using",
+  "type": "article",
+  "description": "Authors: Binz, M. and Schulz, E.\nTitle: Using cognitive psychology to understand GPT-3\nJournal: Proceedings of the National Academy of Sciences\nYear: 2023\nVolume: 120",
+  "verdict": "REAL",
+  "confidence": 98,
+  "reason": "Paper confirmed by Semantic Scholar and web search with matching title, authors, venue, DOI, and publication details. Discrepancy in year (2022 vs 2023) is due to online preprint vs. final publication date, which is standard in academic publishing.",
+  "tool_calls": 2,
+  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
+  "_search_results": [
+    "The paper **exists**. Here are the details:\n\n**Exact Title:** Using cognitive psychology to understand GPT-3\n\n**Authors:** Marcel Binz, Eric Schulz\n\n**Venue:** Proceedings of the National Academy of Sciences U.S.A. (PNAS)\n\n**Year:** 2023\n\n**Publication Date:** February 7, 2023 (published online February 2, 2023)\n\n**DOI:** 10.1073/pnas.2218523120\n\n**Volume/Issue:** Volume 120, Issue 6\n\n**Article Number:** e2218523120\n\n**PMID:** 37844246\n\n**PMCID:** PMC10614207\n\nThe study uses cognitive psychology experiments as a framework to evaluate GPT-3's decision-making, information search, deliberation, and causal reasoning abilities.[2][4][5]",
+    "Semantic Scholar result:\n  Title: Using cognitive psychology to understand GPT-3\n  Authors: Marcel Binz, Eric Schulz\n  Year: 2022\n  Venue: Proceedings of the National Academy of Sciences of the United States of America\n  DOI: 10.1073/pnas.2218523120\n  arXiv: 2206.14576\n  PDF: https://doi.org/10.1073/pnas.2218523120\n  Citations: 678\n  URL: https://www.semanticscholar.org/paper/fa3609e00f9f422a309c621a35394c4a38f88687"
+  ],
+  "_s2": {
+    "paper_id": "fa3609e00f9f422a309c621a35394c4a38f88687",
+    "title": "Using cognitive psychology to understand GPT-3",
+    "authors": [
+      "Marcel Binz",
+      "Eric Schulz"
+    ],
+    "year": 2022,
+    "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+    "doi": "10.1073/pnas.2218523120",
+    "arxiv_id": "2206.14576",
+    "pdf_url": "https://doi.org/10.1073/pnas.2218523120",
+    "paper_url": "https://www.semanticscholar.org/paper/fa3609e00f9f422a309c621a35394c4a38f88687",
+    "citation_count": 678
+  }
+}

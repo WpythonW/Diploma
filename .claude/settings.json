@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod +x /Users/andrejustinov/Desktop/Diploma\\&research/Diploma/diploma_agents/run.sh)",
+      "Read(/Users/andrejustinov/Desktop/Diploma\\&research/Diploma/**)",
+      "Bash(grep -r \"\\\\cite\\|\\\\nocite\" /Users/andrejustinov/Desktop/Diploma\\&research/Diploma/*.tex)"
+    ]
+  }
+}

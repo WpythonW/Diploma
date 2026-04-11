@@ -1,0 +1,31 @@
+{
+  "key": "han2023explaining",
+  "type": "misc",
+  "description": "Authors: Han, C. and Wang, Z. and Zhao, H. and Ji, H.\nTitle: Explaining Emergent In-Context Learning as Kernel Regression\nYear: 2023\nURL: URL: https://arxiv.org/abs/2305.12766",
+  "verdict": "REAL",
+  "confidence": 95,
+  "reason": "The paper exists on arXiv with the exact title, authors, year, and URL provided. Semantic Scholar lists a near-identical paper with the same arXiv ID and authors but a slightly different title ('Understanding' vs 'Explaining'), which is a common metadata discrepancy. The core identifiers (arXiv:2305.12766, authors, year) match, confirming the paper is real.",
+  "tool_calls": 2,
+  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
+  "_search_results": [
+    "**Yes, the paper exists.**\n\n**Exact title:** Explaining Emergent In-Context Learning as Kernel Regression[1][2][6]\n\n**Authors:** Chi Han, Ziqi Wang, Han Zhao, Heng Ji[2]\n\n**Venue:** arXiv (preprint)[2]\n\n**Year:** 2023 (submitted 22 May 2023, last revised 5 Oct 2023 for v2; v3 also available)[1][2]\n\n**arXiv ID/DOI:** arXiv:2305.12766 (versions v1-v3)[1][2][6][8]\n\nThe paper proposes that large language models (LLMs) perform in-context learning (ICL) by simulating kernel regression, proving Bayesian inference on prompts asymptotically matches kernel regression form \\(\\hat{y} = \\sum_i y_i K(x, x_i)/\\sum_i K(x, x_i)\\) as demonstrations increase. It includes empirical validation showing LLM attention and features align with kernel regression behaviors, explaining phenomena like sensitivity to similar samples, output formats, and in-distribution examples.[1][2][3][4] Code is available on GitHub.[6]",
+    "Semantic Scholar result:\n  Title: Understanding Emergent In-Context Learning from a Kernel Regression Perspective\n  Authors: Chi Han, Ziqi Wang, H. Zhao, Heng Ji\n  Year: 2023\n  Venue: Trans. Mach. Learn. Res.\n  DOI: n/a\n  arXiv: 2305.12766\n  PDF: n/a\n  Citations: 18\n  URL: https://www.semanticscholar.org/paper/3706bdb607a83a558e38b62dacfed7bc9e114310"
+  ],
+  "_s2": {
+    "paper_id": "3706bdb607a83a558e38b62dacfed7bc9e114310",
+    "title": "Understanding Emergent In-Context Learning from a Kernel Regression Perspective",
+    "authors": [
+      "Chi Han",
+      "Ziqi Wang",
+      "H. Zhao",
+      "Heng Ji"
+    ],
+    "year": 2023,
+    "venue": "Trans. Mach. Learn. Res.",
+    "doi": null,
+    "arxiv_id": "2305.12766",
+    "pdf_url": "",
+    "paper_url": "https://www.semanticscholar.org/paper/3706bdb607a83a558e38b62dacfed7bc9e114310",
+    "citation_count": 18
+  }
+}

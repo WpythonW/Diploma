@@ -1,0 +1,1994 @@
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.1)  6 APR 2026 20:54
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count271
+\c@chapter=\count272
+\c@section=\count273
+\c@subsection=\count274
+\c@subsubsection=\count275
+\c@paragraph=\count276
+\c@subparagraph=\count277
+\c@figure=\count278
+\c@table=\count279
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+) (./preamble.tex
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-01-19 L3 programming layer (loader) 
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
+\g__graphics_track_int=\count280
+\g__pdfannot_backend_int=\count281
+\g__pdfannot_backend_link_int=\count282
+))
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count283
+\l__fontspec_language_int=\count284
+\l__fontspec_strnum_int=\count285
+\l__fontspec_tmp_int=\count286
+\l__fontspec_tmpa_int=\count287
+\l__fontspec_tmpb_int=\count288
+\l__fontspec_tmpc_int=\count289
+\l__fontspec_em_int=\count290
+\l__fontspec_emdef_int=\count291
+\l__fontspec_strong_int=\count292
+\l__fontspec_strongdef_int=\count293
+\l__fontspec_tmpa_dim=\dimen149
+\l__fontspec_tmpb_dim=\dimen150
+\l__fontspec_tmpc_dim=\dimen151
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+
+Package fontspec Info: 
+(fontspec)             Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+
+
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count294
+\Gm@cntv=\count295
+\c@Gm@tempcnt=\count296
+\Gm@bindingoffset=\dimen152
+\Gm@wd@mp=\dimen153
+\Gm@odd@mp=\dimen154
+\Gm@even@mp=\dimen155
+\Gm@layoutwidth=\dimen156
+\Gm@layoutheight=\dimen157
+\Gm@layouthoffset=\dimen158
+\Gm@layoutvoffset=\dimen159
+\Gm@dimlist=\toks18
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip51
+\f@nch@offset@elh=\skip52
+\f@nch@offset@erh=\skip53
+\f@nch@offset@olh=\skip54
+\f@nch@offset@orh=\skip55
+\f@nch@offset@elf=\skip56
+\f@nch@offset@erf=\skip57
+\f@nch@offset@olf=\skip58
+\f@nch@offset@orf=\skip59
+\f@nch@height=\skip60
+\f@nch@footalignment=\skip61
+\f@nch@widthL=\skip62
+\f@nch@widthC=\skip63
+\f@nch@widthR=\skip64
+\@temptokenb=\toks19
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box53
+\beforetitleunit=\skip65
+\aftertitleunit=\skip66
+\ttl@plus=\dimen160
+\ttl@minus=\dimen161
+\ttl@toksa=\toks20
+\titlewidth=\dimen162
+\titlewidthlast=\dimen163
+\titlewidthfirst=\dimen164
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip67
+\cftbeforetoctitleskip=\skip68
+\cftaftertoctitleskip=\skip69
+\cftbeforepartskip=\skip70
+\cftpartnumwidth=\skip71
+\cftpartindent=\skip72
+\cftbeforechapskip=\skip73
+\cftchapindent=\skip74
+\cftchapnumwidth=\skip75
+\cftbeforesecskip=\skip76
+\cftsecindent=\skip77
+\cftsecnumwidth=\skip78
+\cftbeforesubsecskip=\skip79
+\cftsubsecindent=\skip80
+\cftsubsecnumwidth=\skip81
+\cftbeforesubsubsecskip=\skip82
+\cftsubsubsecindent=\skip83
+\cftsubsubsecnumwidth=\skip84
+\cftbeforeparaskip=\skip85
+\cftparaindent=\skip86
+\cftparanumwidth=\skip87
+\cftbeforesubparaskip=\skip88
+\cftsubparaindent=\skip89
+\cftsubparanumwidth=\skip90
+\cftbeforeloftitleskip=\skip91
+\cftafterloftitleskip=\skip92
+\cftbeforefigskip=\skip93
+\cftfigindent=\skip94
+\cftfignumwidth=\skip95
+\c@lofdepth=\count297
+\c@lotdepth=\count298
+\cftbeforelottitleskip=\skip96
+\cftafterlottitleskip=\skip97
+\cftbeforetabskip=\skip98
+\cfttabindent=\skip99
+\cfttabnumwidth=\skip100
+)
+(./config-lists.tex
+(/usr/local/texlive/2026/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip101
+\enit@outerparindent=\dimen165
+\enit@toks=\toks21
+\enit@inbox=\box54
+\enit@count@id=\count299
+\enitdp@description=\count300
+))
+(./config-formulas.tex
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip102
+\thm@postskip=\skip103
+\thm@headsep=\skip104
+\dth@everypar=\toks27
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip105
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks28
+\ex@=\dimen166
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen167
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count301
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count302
+\leftroot@=\count303
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count304
+\DOTSCASE@=\count305
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen168
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count306
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count307
+\dotsspace@=\muskip17
+\c@parentequation=\count308
+\dspbrk@lvl=\count309
+\tag@help=\toks29
+\row@=\count310
+\column@=\count311
+\maxfields@=\count312
+\andhelp@=\toks30
+\eqnshift@=\dimen169
+\alignsep@=\dimen170
+\tagshift@=\dimen171
+\tagwidth@=\dimen172
+\totwidth@=\dimen173
+\lineht@=\dimen174
+\@envbody=\toks31
+\multlinegap=\skip106
+\multlinetaggap=\skip107
+\mathdisplay@stack=\toks32
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+\c@theorem=\count313
+)
+(./config-tables.tex
+(/usr/local/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen175
+\lightrulewidth=\dimen176
+\cmidrulewidth=\dimen177
+\belowrulesep=\dimen178
+\belowbottomsep=\dimen179
+\aboverulesep=\dimen180
+\abovetopsep=\dimen181
+\cmidrulesep=\dimen182
+\cmidrulekern=\dimen183
+\defaultaddspace=\dimen184
+\@cmidla=\count314
+\@cmidlb=\count315
+\@aboverulesep=\dimen185
+\@belowrulesep=\dimen186
+\@thisruleclass=\count316
+\@lastruleclass=\count317
+\@thisrulewidth=\dimen187
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip108
+\multirow@cntb=\count318
+\multirow@dima=\skip109
+\bigstrutjot=\dimen188
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen189
+\captionmargin=\dimen190
+\caption@leftmargin=\dimen191
+\caption@rightmargin=\dimen192
+\caption@width=\dimen193
+\caption@indent=\dimen194
+\caption@parindent=\dimen195
+\caption@hangindent=\dimen196
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count319
+\c@continuedfloat=\count320
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip110
+\LTright=\skip111
+\LTpre=\skip112
+\LTpost=\skip113
+\LTchunksize=\count321
+\LTcapwidth=\dimen197
+\LT@head=\box57
+\LT@firsthead=\box58
+\LT@foot=\box59
+\LT@lastfoot=\box60
+\LT@gbox=\box61
+\LT@cols=\count322
+\LT@rows=\count323
+\c@LT@tables=\count324
+\c@LT@chunks=\count325
+\LT@p@ftn=\toks33
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count326
+))
+(./config-images.tex
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 106.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2025/11/01 v5.0p Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen198
+\Gin@req@width=\dimen199
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count327
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count328
+\c@listtotal=\count329
+\c@listcount=\count330
+\c@liststart=\count331
+\c@liststop=\count332
+\c@citecount=\count333
+\c@citetotal=\count334
+\c@multicitecount=\count335
+\c@multicitetotal=\count336
+\c@instcount=\count337
+\c@maxnames=\count338
+\c@minnames=\count339
+\c@maxitems=\count340
+\c@minitems=\count341
+\c@citecounter=\count342
+\c@maxcitecounter=\count343
+\c@savedcitecounter=\count344
+\c@uniquelist=\count345
+\c@uniquename=\count346
+\c@refsection=\count347
+\c@refsegment=\count348
+\c@maxextratitle=\count349
+\c@maxextratitleyear=\count350
+\c@maxextraname=\count351
+\c@maxextradate=\count352
+\c@maxextraalpha=\count353
+\c@abbrvpenalty=\count354
+\c@highnamepenalty=\count355
+\c@lownamepenalty=\count356
+\c@maxparens=\count357
+\c@parenlevel=\count358
+\blx@tempcnta=\count359
+\blx@tempcntb=\count360
+\blx@tempcntc=\count361
+\c@blx@maxsection=\count362
+\blx@maxsegment@0=\count363
+\blx@notetype=\count364
+\blx@parenlevel@text=\count365
+\blx@parenlevel@foot=\count366
+\blx@sectionciteorder@0=\count367
+\blx@sectionciteorderinternal@0=\count368
+\blx@entrysetcounter=\count369
+\blx@biblioinstance=\count370
+\labelnumberwidth=\skip114
+\labelalphawidth=\skip115
+\biblabelsep=\skip116
+\bibitemsep=\skip117
+\bibnamesep=\skip118
+\bibinitsep=\skip119
+\bibparsep=\skip120
+\bibhang=\skip121
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\blx@langwohyphens=\language91
+\c@mincomprange=\count371
+\c@maxcomprange=\count372
+\c@mincompwidth=\count373
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'gost-numeric.dbx' found.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex-gost/gost-numeric.dbx
+File: gost-numeric.dbx 2023/04/25 v1.24 biblatex-gost data model
+Package biblatex Info: Trying to load biblatex-gost data model...
+Package biblatex Info: ... file 'biblatex-gost.dbx' found.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex-gost/biblatex-gost.dbx
+File: biblatex-gost.dbx 2023/04/25 v1.24 biblatex-gost data model
+))
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count374
+\c@savedafterword=\count375
+\c@annotator=\count376
+\c@savedannotator=\count377
+\c@author=\count378
+\c@savedauthor=\count379
+\c@bookauthor=\count380
+\c@savedbookauthor=\count381
+\c@commentator=\count382
+\c@savedcommentator=\count383
+\c@editor=\count384
+\c@savededitor=\count385
+\c@editora=\count386
+\c@savededitora=\count387
+\c@editorb=\count388
+\c@savededitorb=\count389
+\c@editorc=\count390
+\c@savededitorc=\count391
+\c@foreword=\count392
+\c@savedforeword=\count393
+\c@holder=\count394
+\c@savedholder=\count395
+\c@introduction=\count396
+\c@savedintroduction=\count397
+\c@namea=\count398
+\c@savednamea=\count399
+\c@nameb=\count400
+\c@savednameb=\count401
+\c@namec=\count402
+\c@savednamec=\count403
+\c@translator=\count404
+\c@savedtranslator=\count405
+\c@shortauthor=\count406
+\c@savedshortauthor=\count407
+\c@shorteditor=\count408
+\c@savedshorteditor=\count409
+\c@booktranslator=\count410
+\c@savedbooktranslator=\count411
+\c@bookcommentator=\count412
+\c@savedbookcommentator=\count413
+\c@bookannotator=\count414
+\c@savedbookannotator=\count415
+\c@bookintroduction=\count416
+\c@savedbookintroduction=\count417
+\c@bookforeword=\count418
+\c@savedbookforeword=\count419
+\c@bookafterword=\count420
+\c@savedbookafterword=\count421
+\c@labelname=\count422
+\c@savedlabelname=\count423
+\c@institution=\count424
+\c@savedinstitution=\count425
+\c@lista=\count426
+\c@savedlista=\count427
+\c@listb=\count428
+\c@savedlistb=\count429
+\c@listc=\count430
+\c@savedlistc=\count431
+\c@listd=\count432
+\c@savedlistd=\count433
+\c@liste=\count434
+\c@savedliste=\count435
+\c@listf=\count436
+\c@savedlistf=\count437
+\c@location=\count438
+\c@savedlocation=\count439
+\c@organization=\count440
+\c@savedorganization=\count441
+\c@origlocation=\count442
+\c@savedoriglocation=\count443
+\c@origpublisher=\count444
+\c@savedorigpublisher=\count445
+\c@publisher=\count446
+\c@savedpublisher=\count447
+\c@language=\count448
+\c@savedlanguage=\count449
+\c@origlanguage=\count450
+\c@savedoriglanguage=\count451
+\c@bookoriglanguage=\count452
+\c@savedbookoriglanguage=\count453
+\c@specdata=\count454
+\c@savedspecdata=\count455
+\c@credits=\count456
+\c@savedcredits=\count457
+\c@bookcredits=\count458
+\c@savedbookcredits=\count459
+\c@editioncredits=\count460
+\c@savededitioncredits=\count461
+\c@pageref=\count462
+\c@savedpageref=\count463
+\shorthandwidth=\skip122
+\shortjournalwidth=\skip123
+\shortserieswidth=\skip124
+\shorttitlewidth=\skip125
+\shortauthorwidth=\skip126
+\shorteditorwidth=\skip127
+\locallabelnumberwidth=\skip128
+\locallabelalphawidth=\skip129
+\localshorthandwidth=\skip130
+\localshortjournalwidth=\skip131
+\localshortserieswidth=\skip132
+\localshorttitlewidth=\skip133
+\localshortauthorwidth=\skip134
+\localshorteditorwidth=\skip135
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+\c@textcitecount=\count464
+\c@textcitetotal=\count465
+\c@textcitemaxnames=\count466
+\c@biburlbigbreakpenalty=\count467
+\c@biburlbreakpenalty=\count468
+\c@biburlnumpenalty=\count469
+\c@biburlucpenalty=\count470
+\c@biburllcpenalty=\count471
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count472
+)
+Package biblatex Info: Trying to load bibliography style 'gost-numeric'...
+Package biblatex Info: ... file 'gost-numeric.bbx' found.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex-gost/gost-numeric.bbx
+File: gost-numeric.bbx 2023/04/25 v1.24 biblatex-gost styles
+Package biblatex Info: Trying to load bibliography style 'gost-standard'...
+Package biblatex Info: ... file 'gost-standard.bbx' found.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex-gost/gost-standard.bbx
+File: gost-standard.bbx 2023/04/25 v1.24 biblatex-gost styles
+Package biblatex Info: Trying to load biblatex-gost generic definitions...
+Package biblatex Info: ... file 'biblatex-gost.def' found.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex-gost/biblatex-gost.def
+File: biblatex-gost.def 2023/04/25 v1.24 biblatex-gost styles
+)
+\c@blx@gost@pointer=\count473
+\c@bbx:relatedcount=\count474
+\c@bbx:relatedtotal=\count475
+Package biblatex Info: Redefining autocite command 'footnote'.
+Package biblatex Info: Redefining autocite command 'superscript'.
+))
+Package biblatex Info: Trying to load citation style 'gost-numeric'...
+Package biblatex Info: ... file 'gost-numeric.cbx' found.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex-gost/gost-numeric.cbx
+File: gost-numeric.cbx 2023/04/25 v1.24 biblatex-gost styles
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count476
+\c@cbx@tempcntb=\count477
+\c@cbx@tempcntc=\count478
+\c@cbx@tempcntd=\count479
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+))
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2026-01-19 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
+)))
+\@quotelevel=\count480
+\@quotereset=\count481
+
+
+LaTeX Warning: Unused global option(s):
+    [14pt].
+
+(./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 6.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 6.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 6.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 6.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 6.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 6.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 6.
+LaTeX Font Info:    Redeclaring math accent \check on input line 6.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 6.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 6.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 6.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 6.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 6.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 6.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 6
+.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 6.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
+6.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
+input line 6.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
+ 6.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
+6.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 6.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 6.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on 
+input line 6.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input lin
+e 6.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 6.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 6.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 469.47049pt, 42.67912pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=469.47049pt
+* \textheight=731.23584pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-45.43198pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=61.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: longtable package is loaded.
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: Trying to load language 'english' -> 'english-gost'...
+Package biblatex Info: ... file 'english-gost.lbx' found.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex-gost/english-gost.lbx
+File: english-gost.lbx 2023/04/25 v1.24 biblatex-gost styles
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+))
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+
+(./main.bbl)
+Package biblatex Info: Reference section=0 on input line 6.
+Package biblatex Info: Reference segment=0 on input line 6.
+ (./main.toc [1
+
+
+])
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+ (./abbreviations.tex [2]) [3
+
+] (./terms.tex)
+Overfull \hbox (11.52144pt too wide) in paragraph at lines 6--28
+[]\TU/TimesNewRoman(0)/m/n/10 Большая языковая модель — нейросетевая модель на 
+основе трансформерной архитектуры, обученная на больших
+ []
+
+
+Overfull \hbox (23.31831pt too wide) in paragraph at lines 6--28
+\TU/TimesNewRoman(0)/m/n/10 Задача 2-4-6 — психологическая парадигма для исслед
+ования индуктивного открытия правил, в которой испытуемый
+ []
+
+
+Overfull \hbox (25.31471pt too wide) in paragraph at lines 6--28
+\TU/TimesNewRoman(0)/m/n/10 Когнитивное предубеждение — устойчивое систематичес
+кое отклонение от нормативных стандартов вероятностного
+ []
+
+
+Overfull \hbox (5.56929pt too wide) in paragraph at lines 6--28
+\TU/TimesNewRoman(0)/m/n/10 Контаминация обучающих данных — явление, при которо
+м тестовые задачи присутствуют в обучающем корпусе
+ []
+
+
+Overfull \hbox (23.00418pt too wide) in paragraph at lines 6--28
+\TU/TimesNewRoman(0)/m/n/10 Предубеждение подтверждения — когнитивное предубежд
+ение, при котором агент предпочитает искать и принимать
+ []
+
+
+Overfull \hbox (15.46446pt too wide) in paragraph at lines 6--28
+\TU/TimesNewRoman(0)/m/n/10 Эвристика репрезентативности — когнитивная стратеги
+я оценки вероятности события по степени его соответствия
+ []
+
+[4
+
+
+] (./intro.tex
+Underfull \hbox (badness 1377) in paragraph at lines 5--7
+\TU/TimesNewRoman(0)/m/n/10 поддержки принятия решений: от медицинской диагност
+ики и юридического анализа до финансового
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 5--7
+\TU/TimesNewRoman(0)/m/n/10 стандартов вероятностного и логического рассуждения
+ — давно являются предметом исследований в
+ []
+
+
+Underfull \hbox (badness 4353) in paragraph at lines 5--7
+\TU/TimesNewRoman(0)/m/n/10 на огромных корпусах текстов, порождённых людьми, з
+акономерно возникает гипотеза о том, что
+ []
+
+
+Underfull \hbox (badness 5147) in paragraph at lines 8--9
+[]\TU/TimesNewRoman(0)/m/n/10 Несмотря на растущий массив литературы, посвящённ
+ой рациональности LLM [5–7], большинство
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 10--12
+\TU/TimesNewRoman(0)/m/n/10 репрезентативности и предвзятости подтверждения на 
+классических задачах из программы эвристик и
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 10--12
+\TU/TimesNewRoman(0)/m/n/10 предубеждений Канемана и Тверски. Suri и соавторы [
+6] расширили эту линию, исследовав эффект
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+[]\TU/TimesNewRoman(0)/m/n/10 сформировать оригинальные датасеты для каждого эк
+сперимента, обеспечивающие структурное
+ []
+
+[5
+
+
+
+]
+Underfull \hbox (badness 2213) in paragraph at lines 21--22
+[]\TU/TimesNewRoman(0)/m/n/10 провести эксперименты на девяти современных языко
+вых моделях, охватывающих широкий спектр
+ []
+
+
+Underfull \hbox (badness 1394) in paragraph at lines 24--25
+[]\TU/TimesNewRoman(0)/m/n/10 на основании полученных результатов сформулироват
+ь рекомендации по выбору и оценке LLM для
+ []
+
+
+Underfull \hbox (badness 6944) in paragraph at lines 38--39
+[]\TU/TimesNewRoman(0)/m/n/10 разработан воспроизводимый экспериментальный фрей
+мворк с унифицированным API-пайплайном
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+\TU/TimesNewRoman(0)/m/n/10 через OpenRouter, оригинальными датасетами и статис
+тическим протоколом с FDR-коррекцией,
+ []
+
+[6]
+Underfull \hbox (badness 1199) in paragraph at lines 48--49
+[]\TU/TimesNewRoman(0)/m/n/10 Предубеждение подтверждения в дедуктивном рассужд
+ении воспроизводится у всех девяти моделей
+ []
+
+
+Underfull \hbox (badness 2318) in paragraph at lines 49--50
+[]\TU/TimesNewRoman(0)/m/n/10 Предубеждение подтверждения в индуктивном открыти
+и правил является универсальным для всех
+ []
+
+
+Underfull \hbox (badness 2591) in paragraph at lines 51--52
+[]\TU/TimesNewRoman(0)/m/n/10 Профили когнитивных предубеждений по трём парадиг
+мам не коррелируют монотонно на уровне
+ []
+
+
+Underfull \hbox (badness 4205) in paragraph at lines 51--52
+\TU/TimesNewRoman(0)/m/n/10 отдельных моделей, что свидетельствует о мультидиме
+нзиональной природе данного феномена и
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 54--56
+\TU/TimesNewRoman(0)/m/n/10 4; 8], адаптированные для тестирования языковых мод
+елей. В качестве статистических инструментов
+ []
+
+
+Underfull \hbox (badness 2951) in paragraph at lines 57--59
+\TU/TimesNewRoman(0)/m/n/10 руководителя и членов комиссии, часть которых учтен
+а при доработке методологии эксперимента 3
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 63--77
+\TU/TimesNewRoman(0)/m/n/10 выявление логических противоречий и несогласованнос
+тей между разделами; уточнение англоязычной
+ []
+
+
+Underfull \hbox (badness 1762) in paragraph at lines 63--77
+\TU/TimesNewRoman(0)/m/n/10 датасетов (биографических виньеток, формулировок пр
+авил) по авторским шаблонам, факториальному
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 78--84
+[]\TU/TimesNewRoman(0)/m/n/10 Все содержательные решения — постановка задачи, в
+ыбор парадигм и моделей, разработка
+ []
+
+
+Underfull \hbox (badness 7685) in paragraph at lines 78--84
+\TU/TimesNewRoman(0)/m/n/10 экспериментального и факториального дизайна, архите
+ктура фреймворка, статистический анализ и
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 78--84
+\TU/TimesNewRoman(0)/m/n/10 интерпретация результатов — приняты и реализованы а
+втором самостоятельно. Языковые модели не
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 78--84
+\TU/TimesNewRoman(0)/m/n/10 использовались для формулировки гипотез, анализа ли
+тературы или интерпретации экспериментальных
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 85--87
+[]\TU/TimesNewRoman(0)/b/n/10 Структура работы. \TU/TimesNewRoman(0)/m/n/10 Раб
+ота состоит из введения, четырёх глав, заключения, списка использованных
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 90--91
+[]\TU/TimesNewRoman(0)/m/n/10 Во \TU/TimesNewRoman(0)/m/it/10 второй главе \TU/
+TimesNewRoman(0)/m/n/10 описывается дизайн экспериментов: обосновывается выбор 
+парадигм, представлены
+ []
+
+
+Underfull \hbox (badness 5741) in paragraph at lines 94--95
+\TU/TimesNewRoman(0)/m/n/10 и процедуры Бенджамини-Хохберга, обсуждаются ограни
+чения исследования, приводится апробация
+ []
+
+) (./chapter1.tex [8]
+Chapter 1.
+[9
+
+]
+Underfull \hbox (badness 1303) in paragraph at lines 37--39
+\TU/TimesNewRoman(0)/m/n/10 требует применения абстрактных синтаксических прави
+л (например, modus tollens: $\OML/cmm/m/it/10 P \OMS/cmsy/m/n/10 ! \OML/cmm/m/i
+t/10 Q; \OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 Q \OMS/cmsy/m/n/10 )
+ []
+
+[10]
+Underfull \hbox (badness 2269) in paragraph at lines 55--57
+\TU/TimesNewRoman(0)/m/n/10 Колмогорова. Вероятность наступления двух совместны
+х событий не может превышать вероятность
+ []
+
+
+Underfull \hbox (badness 7851) in paragraph at lines 58--60
+[]\TU/TimesNewRoman(0)/b/n/10 Стандарт дедуктивного вывода (Задача Уэйсона). \T
+U/TimesNewRoman(0)/m/n/10 Нормативный ответ определяется правилом
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 58--60
+\TU/TimesNewRoman(0)/m/n/10 материальной импликации в логике высказываний. Для 
+проверки истинности условного утверждения
+ []
+
+[11]
+Underfull \hbox (badness 3108) in paragraph at lines 77--78
+\TU/TimesNewRoman(0)/m/n/10 следствие самой природы авторегрессионного обучения
+ на массивах человеческих текстов. Модель
+ []
+
+
+Underfull \hbox (badness 2961) in paragraph at lines 79--80
+\TU/TimesNewRoman(0)/m/n/10 давал ошибочные ответы при изменении поверхностных 
+признаков (порядка карточек). Dasgupta и
+ []
+
+
+Underfull \hbox (badness 2469) in paragraph at lines 79--80
+\TU/TimesNewRoman(0)/m/n/10 вне зависимости от первичного механизма их усвоения
+. Данный методологический выбор является
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 79--80
+\TU/TimesNewRoman(0)/m/n/10 сознательным ограничением: применяемый эксперимента
+льный дизайн позволяет зафиксировать факт
+ []
+
+
+Underfull \hbox (badness 7504) in paragraph at lines 83--84
+\TU/TimesNewRoman(0)/m/n/10 механистической интерпретируемости (mechanistic int
+erpretability) за 2023–2025 гг. предоставляют
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 87--89
+\TU/TimesNewRoman(0)/m/n/10 существование специфических «нейронов частотности» 
+(token frequency neurons), которые формируют
+ []
+
+
+Underfull \hbox (badness 3657) in paragraph at lines 87--89
+[] \OML/cmm/m/it/10 p[] \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 ([] \OML/cmm/m/i
+t/10 p[]\OT1/cmr/m/n/10 )$\TU/TimesNewRoman(0)/m/n/10 ). Поскольку softmax прим
+еняется к логитам, такое аддитивное смещение
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 90--92
+\TU/TimesNewRoman(0)/m/n/10 внимания показывает, что оно математически эквивале
+нтно экспоненциальной ядерной сглаживающей
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 90--92
+\TU/TimesNewRoman(0)/m/n/10 а не по строгим правилам конъюнкции. Следует оговор
+иться, что данная аналогия строго выводится
+ []
+
+[12]
+Underfull \hbox (badness 1360) in paragraph at lines 93--94
+[]\TU/TimesNewRoman(0)/m/n/10 Кроме того, исследования логических цепей в LLM [
+25] демонстрируют, что структурные логические
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 101--102
+\TU/TimesNewRoman(0)/m/n/10 предобучения (pretraining), остаётся открытым иссле
+довательским вопросом: имеющиеся эмпирические
+ []
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 105--106
+\TU/TimesNewRoman(0)/m/n/10 угроз при оценке когнитивных способностей LLM. В от
+личие от стандартных бенчмарков (например,
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 105--106
+\TU/TimesNewRoman(0)/m/n/10 MMLU), где контаминация всегда ведет к завышению то
+чности, в когнитивных задачах она вызывает
+ []
+
+
+Underfull \hbox (badness 4686) in paragraph at lines 105--106
+\TU/TimesNewRoman(0)/m/n/10 метрик), так и человекоподобный ошибочный паттерн и
+з учебников по психологии (искусственное
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 107--108
+\TU/TimesNewRoman(0)/m/n/10 исследовании контаминация строго контролируется на 
+уровне каждого эксперимента: в задаче Линды
+ []
+
+[13]
+Underfull \hbox (badness 4205) in paragraph at lines 113--114
+\TU/TimesNewRoman(0)/m/n/10 семейства GPT), что не позволяет отделить архитекту
+рные артефакты от фундаментальных свойств
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 115--116
+\TU/TimesNewRoman(0)/m/n/10 CogBench) является подсчёт доли правильных ответов 
+(Accuracy или Exact Match). Данный подход
+ []
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 121--131
+\TU/TimesNewRoman(0)/m/n/10 в области alignment и безопасности ИИ получают восп
+роизводимый фреймворк для профилирования
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 121--131
+\TU/TimesNewRoman(0)/m/n/10 вторых, инженеры и архитекторы LLM-систем могут исп
+ользовать предложенные метрики (Severity of
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 121--131
+\TU/TimesNewRoman(0)/m/n/10 Bias, AUC-IOU) для сравнительного отбора моделей в 
+задачах, требующих надёжного вероятностного
+ []
+
+
+Underfull \hbox (badness 2608) in paragraph at lines 121--131
+\TU/TimesNewRoman(0)/m/n/10 многопарадигмальных оценок когнитивных способностей
+ ИИ, выходящих за рамки бинарных метрик
+ []
+
+[14]
+Underfull \hbox (badness 7522) in paragraph at lines 148--149
+[]\TU/TimesNewRoman(0)/m/n/10 Однако более глубокий механистический подход к эт
+ой проблеме требует анализа \TU/TimesNewRoman(0)/m/it/10 токен-bias \TU/TimesNe
+wRoman(0)/m/n/10 —
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 148--149
+\TU/TimesNewRoman(0)/m/n/10 вне зависимости от логической структуры задачи. В э
+том контексте особую важность приобретают
+ []
+
+
+Underfull \hbox (badness 4144) in paragraph at lines 148--149
+\TU/TimesNewRoman(0)/m/n/10 исследования 2024–2025 годов, изучающие влияние дем
+ографических маркеров на вероятностный и
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 150--151
+\TU/TimesNewRoman(0)/m/n/10 субъекта на демографически нагруженный токен (напри
+мер, «женщина», «афроамериканец») в строго
+ []
+
+
+Underfull \hbox (badness 2205) in paragraph at lines 154--155
+[]\TU/TimesNewRoman(0)/m/n/10 An и соавторы (PNAS 2025) [30] подтвердили этот э
+ффект на задачах скоринга резюме, где замена
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 154--155
+\TU/TimesNewRoman(0)/m/n/10 этот эффект объясняется работами Yang et al. (2025)
+ [31], показавшими, что специфические головы
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+\TU/TimesNewRoman(0)/m/n/10 одни LLM демонстрируют точность, близкую к потолку,
+ другие подвержены систематическому
+ []
+
+[15]
+Underfull \hbox (badness 2103) in paragraph at lines 172--173
+[]\TU/TimesNewRoman(0)/m/n/10 Banatt и соавторы [11] сделали важный шаг, разраб
+отав бенчмарк WILT — первый систематический
+ []
+
+
+Underfull \hbox (badness 5064) in paragraph at lines 172--173
+\TU/TimesNewRoman(0)/m/n/10 подтверждения (Confirmation Bias): доля подтверждаю
+щих тестов (positive testing) катастрофически
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+[]\TU/TimesNewRoman(0)/m/n/10 Настоящее исследование (Эксперимент 3) расширяет 
+эту парадигму, внедряя строгую метрику
+ []
+
+
+Underfull \hbox (badness 3078) in paragraph at lines 176--177
+\TU/TimesNewRoman(0)/m/n/10 экстенсиональной эквивалентности гипотез (Intersect
+ion over Union, IOU) на базе симуляции Монте-
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 182--183
+\TU/TimesNewRoman(0)/m/n/10 точности. Настоящее исследование заполняет этот про
+бел, рассматривая три классические парадигмы
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 188--189
+\TU/TimesNewRoman(0)/m/n/10 аспекты универсальности когнитивных искажений, влия
+ния масштаба моделей, когнитивной сложности
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+\TU/TimesNewRoman(0)/m/it/10 значимое предубеждение подтверждения (Confirmation
+ Bias) и подверженность эвристике
+ []
+
+[16]
+Underfull \hbox (badness 1616) in paragraph at lines 194--195
+\TU/TimesNewRoman(0)/m/n/10 Во-первых, архитектура Transformer математически пр
+едрасположена к Системе 1: механизм softmax-
+ []
+
+
+Underfull \hbox (badness 3590) in paragraph at lines 194--195
+\TU/TimesNewRoman(0)/m/n/10 токенам (эвристика репрезентативности) в ущерб стру
+ктурным логическим операторам. Во-вторых,
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 194--195
+\TU/TimesNewRoman(0)/m/n/10 выравнивания (RLHF) дополнительно пенализирует конф
+ронтационное поведение модели, искусственно
+ []
+
+
+Underfull \hbox (badness 5802) in paragraph at lines 194--195
+\TU/TimesNewRoman(0)/m/n/10 поощряя ее угождать пользователю [26] — стремление 
+подтверждать имплицитные предположения
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 198--199
+\TU/TimesNewRoman(0)/m/it/10 когнитивных предубеждений за счет лучших способнос
+тей к эмуляции Системы 2. Однако данная
+ []
+
+
+Underfull \hbox (badness 4181) in paragraph at lines 200--201
+[]\TU/TimesNewRoman(0)/b/n/10 Обоснование: \TU/TimesNewRoman(0)/m/n/10 Традицио
+нно в ML предполагается, что увеличение количества параметров ведет к
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 200--201
+\TU/TimesNewRoman(0)/m/n/10 монотонному улучшению метрик. Однако в задачах, под
+верженных когнитивным искажениям, часто
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 200--201
+\TU/TimesNewRoman(0)/m/n/10 С другой стороны, более крупная модель обладает бол
+ее богатым и детализированным пространством
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+[]\TU/TimesNewRoman(0)/b/n/10 Гипотеза H3 (Спектральность). \TU/TimesNewRoman(0
+)/m/it/10 Интенсивность когнитивных предубеждений (отклонений от
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 204--205
+\TU/TimesNewRoman(0)/m/it/10 нормативного стандарта) систематически возрастает 
+от вероятностной парадигмы к логической и
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 210--211
+[]\TU/TimesNewRoman(0)/m/n/10 Индуктивное открытие правил (задача 2-4-6) требуе
+т многоходового удержания контекста, генерации
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+\TU/TimesNewRoman(0)/m/n/10 Поскольку авторегрессионные модели испытывают фунда
+ментальные трудности с долгосрочным
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 212--213
+\TU/TimesNewRoman(0)/m/n/10 планированием и активным поиском опровержений (отсу
+тствие истинного внутреннего цикла обратной
+ []
+
+
+Underfull \hbox (badness 1303) in paragraph at lines 212--213
+\TU/TimesNewRoman(0)/m/n/10 связи), ожидается, что метрики фальсификации (напри
+мер, Confirming Test Rate) в задаче 2-4-6 будут
+ []
+
+[17]
+Underfull \hbox (badness 1796) in paragraph at lines 218--220
+\TU/TimesNewRoman(0)/m/n/10 статистически ассоциированные с определенными расов
+ыми или этническими группами в обучающем
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 218--220
+\TU/TimesNewRoman(0)/m/n/10 в зависимости от подаваемого имени, искажая чистоту
+ математического вывода. Возраст, задаваемый
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 218--220
+\TU/TimesNewRoman(0)/m/n/10 числовым значением, обладает меньшей социокультурно
+й «гравитацией» в пространстве эмбеддингов,
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 229--231
+\TU/TimesNewRoman(0)/m/n/10 1) должны быть сгенерированы вручную с использовани
+ем факториального дизайна (factorial design) и
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 229--231
+\TU/TimesNewRoman(0)/m/n/10 2) и задачи 2-4-6 (Эксперимент 3) стимульные сеты д
+олжны включать деконтаминированные условия
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
+\TU/TimesNewRoman(0)/m/n/10 с оригинальным абстрактным или вымышленным содержан
+ием (например, условие «незнакомых
+ []
+
+
+Underfull \hbox (badness 2837) in paragraph at lines 232--234
+[]\TU/TimesNewRoman(0)/b/n/10 2. Структурное единообразие и изоляция переменных
+. \TU/TimesNewRoman(0)/m/n/10 Каждая единица датасета должна быть
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 232--234
+\TU/TimesNewRoman(0)/m/n/10 появление конфаундеров (confounders), связанных с в
+ариабельностью длины промпта, его лексической
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--237
+[]\TU/TimesNewRoman(0)/b/n/10 3. Объем выборки и статистическая мощность (Stati
+stical Power). \TU/TimesNewRoman(0)/m/n/10 Датасеты должны
+ []
+
+
+Underfull \hbox (badness 2351) in paragraph at lines 235--237
+\TU/TimesNewRoman(0)/m/n/10 непараметрических тестов. Для теста МакНемара на со
+гласованных парах необходимо минимум 30
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
+[]\TU/TimesNewRoman(0)/b/n/10 4. Верификация консистентности. \TU/TimesNewRoman
+(0)/m/n/10 Каждый элемент генеративного датасета должен пройти
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
+\TU/TimesNewRoman(0)/m/n/10 тавтологий и функциональных дубликатов (проверка че
+рез экстенсиональную эквивалентность
+ []
+
+
+Underfull \hbox (badness 3417) in paragraph at lines 246--248
+\TU/TimesNewRoman(0)/m/n/10 рассуждения (многоходовой генерации гипотез) тексто
+вое совпадение (exact match) неприменимо из-
+ []
+
+
+Underfull \hbox (badness 5022) in paragraph at lines 246--248
+\TU/TimesNewRoman(0)/m/n/10 за синтаксической вариативности LLM. Требуется внед
+рение метрики IOU на основе Монте-Карло
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 246--248
+\TU/TimesNewRoman(0)/m/n/10 сэмплирования, позволяющей математически строго сра
+внивать сгенерированные моделью предикаты
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 252--254
+\TU/TimesNewRoman(0)/m/n/10 (например, между 9 моделями или 5 демографическими 
+группами) в обязательном порядке должна
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--254
+\TU/TimesNewRoman(0)/m/n/10 применяться процедура коррекции $\OML/cmm/m/it/10 p
+$\TU/TimesNewRoman(0)/m/n/10 -значений, такая как метод Бенджамини-Хохберга (Be
+njamini-
+ []
+
+)
+Underfull \hbox (badness 3000) in paragraph at lines 268--38
+\TU/TimesNewRoman(0)/m/n/10 в препроцессинге промптов или системных сообщениях 
+у разных провайдеров, все модели должны
+ []
+
+(./chapter2.tex [19]
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+[]\TU/TimesNewRoman(0)/m/n/10 Настоящее исследование объединяет три классически
+е психологические парадигмы в едином
+ []
+
+
+Underfull \hbox (badness 7379) in paragraph at lines 13--14
+\TU/TimesNewRoman(0)/m/n/10 применить правило modus tollens к условному утвержд
+ению и выбрать карточки, способные его
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 15--16
+[]\TU/TimesNewRoman(0)/m/it/10 Эксперимент 3 (задача открытия правила 2-4-6) \T
+U/TimesNewRoman(0)/m/n/10 тестирует индуктивное рассуждение в многоходовом
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 23--24
+\TU/TimesNewRoman(0)/m/n/10 текст классических задач или их известных адаптаций
+. Детали контроля контаминации описаны в
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 35--36
+\TU/TimesNewRoman(0)/m/n/10 прочтения испытуемые оценивали относительную вероят
+ность двух утверждений: (a) Линда является
+ []
+
+[20
+
+]
+Underfull \hbox (badness 1320) in paragraph at lines 41--42
+\TU/TimesNewRoman(0)/m/n/10 вероятностью присутствует в обучающих данных больши
+нства современных LLM [19]. Для решения
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 41--42
+\TU/TimesNewRoman(0)/m/n/10 проблемы контаминации был сформирован оригинальный 
+датасет с использованием фиксированных
+ []
+
+[21]
+Underfull \hbox (badness 2600) in paragraph at lines 95--96
+[]\TU/TimesNewRoman(0)/m/n/10 Все модели запрашивались с параметром temperature
+ = 0. Сырые ответы сохранялись отдельно от
+ []
+
+[22]
+Underfull \hbox (badness 2671) in paragraph at lines 147--148
+\TU/TimesNewRoman(0)/m/n/10 у \TU/lmtt/m/n/10 gemma-3-27b-it $\OML/cmm/m/it/10 
+n[] \OT1/cmr/m/n/10 = 305$ \TU/TimesNewRoman(0)/m/n/10 и delta_bias $\OT1/cmr/m
+/n/10 = 0[]4975$ \TU/TimesNewRoman(0)/m/n/10 против $\OML/cmm/m/it/10 n[] \OT1/
+cmr/m/n/10 = 14$ \TU/TimesNewRoman(0)/m/n/10 и delta_bias $\OT1/cmr/m/n/10 = 0[
+]0370$
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 147--148
+\TU/TimesNewRoman(0)/m/n/10 у \TU/lmtt/m/n/10 gemma-3-12b-it\TU/TimesNewRoman(0
+)/m/n/10 . Это прямо противоречит гипотезе H2 о монотонном снижении предубежден
+ий с
+ []
+
+[23]
+Underfull \hbox (badness 5388) in paragraph at lines 161--162
+[]\TU/TimesNewRoman(0)/m/n/10 Задача выбора карточек Уэйсона [4] была выбрана к
+ак каноническая парадигма для исследования
+ []
+
+
+Underfull \hbox (badness 6016) in paragraph at lines 161--162
+\TU/TimesNewRoman(0)/m/n/10 предубеждения подтверждения в дедуктивном рассужден
+ии. В оригинальной версии испытуемым
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 169--170
+[]\TU/TimesNewRoman(0)/b/n/10 Формальная логика — Каноническая. \TU/TimesNewRom
+an(0)/m/n/10 Правила используют стандартные абстрактные символы из
+ []
+
+
+Underfull \hbox (badness 4291) in paragraph at lines 171--172
+[]\TU/TimesNewRoman(0)/b/n/10 Формальная логика — Нейтральная. \TU/TimesNewRoma
+n(0)/m/n/10 Правила используют оригинальные абстрактные пары, не
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+[]\TU/TimesNewRoman(0)/m/n/10 Ключевым методологическим вкладом дизайна являетс
+я систематическая манипуляция порядком
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 181--182
+\TU/TimesNewRoman(0)/m/n/10 перестановки способно обратить ответ GPT-3 на канон
+ическую задачу, и из данных Macmillan-Scott и
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 195--196
+[]\TU/TimesNewRoman(0)/m/n/10 Условие обеспечивает два независимых фасилитирующ
+их сигнала: ролевое прайминирование и явный
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 197--198
+[]\TU/TimesNewRoman(0)/b/n/10 Neutral. \TU/TimesNewRoman(0)/m/n/10 Системный пр
+омпт содержит только инструкцию по формату без персоны и без фрейминга
+ []
+
+
+Underfull \hbox (badness 2197) in paragraph at lines 203--204
+[]\TU/TimesNewRoman(0)/m/n/10 Наиболее близко воспроизводит оригинальную челове
+ческую экспериментальную парадигму и служит
+ []
+
+
+Underfull \hbox (badness 2653) in paragraph at lines 205--206
+[]\TU/TimesNewRoman(0)/b/n/10 Chain-of-Thought (CoT). \TU/TimesNewRoman(0)/m/n/
+10 Системный промпт инструктирует модель рассуждать пошагово и выводить
+ []
+
+[25]
+Underfull \hbox (badness 1308) in paragraph at lines 217--218
+[]\TU/TimesNewRoman(0)/b/n/10 Expected Metric Accuracy (EMA) \TU/TimesNewRoman(
+0)/m/n/10 — доля испытаний, в которых модель выбирает ровно нормативно
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 223--224
+[]\TU/TimesNewRoman(0)/b/n/10 Consistency Rate \TU/TimesNewRoman(0)/m/n/10 — до
+ля правил, для которых модель даёт идентичный выбор карточек во всех пяти
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 271--272
+\TU/TimesNewRoman(0)/m/n/10 восьми из девяти моделей и вплотную приближается к 
+EMA знакомых социальных контрактов. Это
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 271--272
+\TU/TimesNewRoman(0)/m/n/10 поддерживает гипотезу прагматических схем [32]: део
+нтическая структура обязательства фасилитирует
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
+[]\TU/TimesNewRoman(0)/b/n/10 Предубеждение подтверждения \TU/TimesNewRoman(0)/
+m/n/10 подтверждено для всех моделей в нейтральном промпт-условии
+ []
+
+[27]
+Underfull \hbox (badness 1038) in paragraph at lines 316--317
+\TU/TimesNewRoman(0)/m/n/10 новые тройки и получая бинарную обратную связь. Кан
+онический результат: испытуемые тестируют
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 316--317
+\TU/TimesNewRoman(0)/m/n/10 возрастания»), вместо попыток фальсифицировать её, 
+и не обнаруживают истинное правило («любая
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 332--333
+\TU/TimesNewRoman(0)/m/n/10 (проверка через экстенсиональную эквивалентность) и
+ отсутствие тавтологий. Ряд правил намеренно
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 332--333
+\TU/TimesNewRoman(0)/m/n/10 сконструирован как \TU/TimesNewRoman(0)/m/it/10 лов
+ушки специфичности\TU/TimesNewRoman(0)/m/n/10 : правила, являющиеся строго боле
+е специфичными, чем
+ []
+
+[28] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 384--386
+\TU/TimesNewRoman(0)/m/n/10 Напрямую операционализирует предубеждение подтвержд
+ения: низкий CTR соответствует
+ []
+
+
+Underfull \hbox (badness 4013) in paragraph at lines 423--424
+[]\TU/TimesNewRoman(0)/b/n/10 Success Rate низкий у всех non-reasoning моделей.
+ \TU/TimesNewRoman(0)/m/n/10 Лучший результат в baseline среди них —
+ []
+
+[30]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 429.
+
+Underfull \hbox (badness 2426) in paragraph at lines 429--430
+[]\TU/TimesNewRoman(0)/m/n/10 Наиболее интригующим является \TU/TimesNewRoman(0
+)/b/n/10 парадокс \TU/lmtt/b/n/10 qwen3.5-397b-a17b\TU/TimesNewRoman(0)/m/n/10 
+: adaptive-промпт вызвал крупнейшее
+ []
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 431--432
+[]\TU/TimesNewRoman(0)/b/n/10 Контринтуитивный эффект у \TU/lmtt/b/n/10 gemma-3
+-27b-it\TU/TimesNewRoman(0)/b/n/10 : \TU/TimesNewRoman(0)/m/n/10 adaptive-промп
+т, направленный на фальсификацию,
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 439--440
+\TU/TimesNewRoman(0)/m/n/10 промпт нестабилен: снижение CTR не конвертируется в
+ рост SR у половины моделей; (4) парадокс
+ []
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 439--440
+\TU/TimesNewRoman(0)/m/n/10 на то, что предубеждение подтверждения имеет как ми
+нимум два независимых компонента: выбор
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 476--477
+[]\TU/TimesNewRoman(0)/m/n/10 Гипотеза H2 о снижении предубеждений с ростом мод
+ели получила частичное подтверждение. На
+ []
+
+[31]
+Underfull \hbox (badness 1275) in paragraph at lines 478--479
+[]\TU/TimesNewRoman(0)/m/n/10 В семействе Gemma направление эффекта противоречи
+т ожидаемому: \TU/lmtt/m/n/10 gemma-3-27b-it \TU/TimesNewRoman(0)/m/n/10 демонс
+трирует
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 478--479
+\OT1/cmr/m/n/10 = 0[]037$\TU/TimesNewRoman(0)/m/n/10 , fallacy rate $\OT1/cmr/m
+/n/10 2[]7[]$\TU/TimesNewRoman(0)/m/n/10 ). Это является наиболее ярким проявле
+нием внутрисемейного парадокса
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 482--483
+[]\TU/TimesNewRoman(0)/m/n/10 Гипотеза H3 подтверждена: уровень предубеждений с
+истематически возрастает от эксперимента 1 к
+ []
+
+[32]
+Underfull \hbox (badness 7704) in paragraph at lines 492--493
+[]\TU/TimesNewRoman(0)/m/n/10 В-третьих, масштаб модели не является надёжным пр
+едиктором устойчивости к предубеждениям.
+ []
+
+
+Underfull \hbox (badness 1831) in paragraph at lines 492--493
+\TU/TimesNewRoman(0)/m/n/10 Внутрисемейный парадокс Gemma проявляется по-разном
+у в разных экспериментах: в задаче Линды
+ []
+
+) (./chapter3.tex [33]
+Chapter 3.
+
+Underfull \hbox (badness 1067) in paragraph at lines 13--14
+[]\TU/lmtt/m/n/10 src/common/ \TU/TimesNewRoman(0)/m/n/10 — общая инфраструктур
+а: асинхронный клиент OpenRouter (\TU/lmtt/m/n/10 openrouter.py\TU/TimesNewRoma
+n(0)/m/n/10 ), утилита
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+[]\TU/lmtt/m/n/10 wason-2-4-6/ \TU/TimesNewRoman(0)/m/n/10 — эксперимент 3: \TU
+/lmtt/m/n/10 run_experiments.py\TU/TimesNewRoman(0)/m/n/10 , \TU/lmtt/m/n/10 me
+trics.py\TU/TimesNewRoman(0)/m/n/10 , \TU/lmtt/m/n/10 compute_metrics.py\TU/Tim
+esNewRoman(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+[]\TU/TimesNewRoman(0)/m/n/10 эксперимент 1: \TU/lmtt/m/n/10 uv run python lind
+a-problem/run_experiments.py --api-key
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+[]\TU/TimesNewRoman(0)/m/n/10 эксперимент 2: \TU/lmtt/m/n/10 uv run python waso
+n-selection/run_experiments.py --models <model_id>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+[]\TU/TimesNewRoman(0)/m/n/10 эксперимент 3: \TU/lmtt/m/n/10 uv run python waso
+n-2-4-6/run_experiments.py --models <model_id>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+[]\TU/TimesNewRoman(0)/m/n/10 Все три пайплайна используют единый асинхронный к
+лиент OpenRouter с базовым URL
+ []
+
+
+Underfull \hbox (badness 6141) in paragraph at lines 32--33
+\TU/lmtt/m/n/10 https://openrouter.ai/api/v1\TU/TimesNewRoman(0)/m/n/10 . Парам
+етры запросов различаются в зависимости от требований
+ []
+
+
+Underfull \hbox (badness 3407) in paragraph at lines 34--35
+[]\TU/TimesNewRoman(0)/m/n/10 В эксперименте 1 (задача Линды) использовались: \
+TU/lmtt/m/n/10 temperature=0.0\TU/TimesNewRoman(0)/m/n/10 , \TU/lmtt/m/n/10 max
+_completion_tokens=160\TU/TimesNewRoman(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 2717) in paragraph at lines 34--35
+\TU/lmtt/m/n/10 seed=42\TU/TimesNewRoman(0)/m/n/10 , конкурентность 20 одноврем
+енных запросов, 4 попытки при ошибках, таймаут 60 секунд.
+ []
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 34--35
+\TU/TimesNewRoman(0)/m/n/10 В эксперименте 2 (задача Уэйсона): \TU/lmtt/m/n/10 
+temperature=1.0 \TU/TimesNewRoman(0)/m/n/10 для сохранения вариабельности ответ
+ов между
+ []
+
+
+Underfull \hbox (badness 3460) in paragraph at lines 34--35
+\TU/TimesNewRoman(0)/m/n/10 перестановками, \TU/lmtt/m/n/10 max_completion_toke
+ns=1000\TU/TimesNewRoman(0)/m/n/10 , \TU/lmtt/m/n/10 random_seed=42\TU/TimesNew
+Roman(0)/m/n/10 , до 60 одновременных запросов, 5
+ []
+
+[34
+
+]
+Underfull \hbox (badness 2689) in paragraph at lines 36--37
+[]\TU/TimesNewRoman(0)/m/n/10 Механизм повторных попыток при ошибках формата ре
+ализован через экспоненциальный backoff по
+ []
+
+
+Underfull \hbox (badness 1137) in paragraph at lines 36--37
+\TU/TimesNewRoman(0)/m/n/10 формуле $[]\OT1/cmr/m/n/10 (2[]\OML/cmm/m/it/10 ; \
+OT1/cmr/m/n/10 8) + [](0; 0[]25)$ \TU/TimesNewRoman(0)/m/n/10 секунды. В экспер
+именте 3 после каждого невалидного
+ []
+
+
+Underfull \hbox (badness 3386) in paragraph at lines 36--37
+\TU/TimesNewRoman(0)/m/n/10 ответа формируется repair-prompt и выполняется до 2
+ дополнительных попыток с явным указанием
+ []
+
+
+Underfull \hbox (badness 3189) in paragraph at lines 44--45
+[]\TU/TimesNewRoman(0)/b/n/10 Эксперимент 3. \TU/TimesNewRoman(0)/m/n/10 Набор 
+из 50 правил хранится в Google Sheets и загружается при запуске через
+ []
+
+
+Overfull \hbox (13.65051pt too wide) in paragraph at lines 44--45
+\TU/lmtt/m/n/10 google_sheets.py\TU/TimesNewRoman(0)/m/n/10 . Локально сохранён
+ манифест \TU/lmtt/m/n/10 wason-2-4-6/output/adaptive/none/rules_manifest.csv
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 48--49
+\TU/TimesNewRoman(0)/m/n/10 эквивалентность. Функция \TU/lmtt/m/n/10 compare_se
+ts(R, H, n=200000) \TU/TimesNewRoman(0)/m/n/10 реализует следующий алгоритм: пр
+авило
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 48--49
+\TU/TimesNewRoman(0)/m/n/10 из 200000 случайных троек $\OT1/cmr/m/n/10 (\OML/cm
+m/m/it/10 x; y; z\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [1\OML/cm
+m/m/it/10 ; \OT1/cmr/m/n/10 1000][]$ \TU/TimesNewRoman(0)/m/n/10 через \TU/lmtt
+/m/n/10 numpy.random.randint\TU/TimesNewRoman(0)/m/n/10 ; для каждой тройки
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 48--49
+\TU/TimesNewRoman(0)/m/n/10 Для метрики изменения гипотез (HCR) используется от
+дельно кэшированная выборка из 50000 троек
+ []
+
+
+Underfull \hbox (badness 3354) in paragraph at lines 50--51
+\TU/TimesNewRoman(0)/m/n/10 воспроизводимости рекомендуется добавить фиксацию s
+eed перед вызовом \TU/lmtt/m/n/10 numpy.random.randint \TU/TimesNewRoman(0)/m/n
+/10 в
+ []
+
+[35]
+Underfull \hbox (badness 3735) in paragraph at lines 62--63
+\TU/TimesNewRoman(0)/m/n/10 В частности, за рамками исследования остались: спец
+иализированные модели для математического
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 66--67
+[]\TU/TimesNewRoman(0)/b/n/10 Самооценка уверенности как прокси. \TU/TimesNewRo
+man(0)/m/n/10 Метрика Severity of Bias основана на запрошенной у модели
+ []
+
+
+Underfull \hbox (badness 8170) in paragraph at lines 70--71
+[]\TU/TimesNewRoman(0)/m/n/10 В эксперименте 1 демографический анализ был прове
+дён только для моделей \TU/lmtt/m/n/10 glm-4.7-flash \TU/TimesNewRoman(0)/m/n/1
+0 и
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 70--71
+\TU/lmtt/m/n/10 qwen3.5-397b-a17b \TU/TimesNewRoman(0)/m/n/10 в полном факториа
+льном дизайне; для остальных моделей сетка была сокращена
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 80--81
+[]\TU/TimesNewRoman(0)/m/n/10 По результатам проведённых экспериментов подготов
+лена рукопись статьи, планируемая к подаче в
+ []
+
+[36]
+Underfull \hbox (badness 7221) in paragraph at lines 88--89
+\TU/TimesNewRoman(0)/m/n/10 и индуктивный типы рассуждения, однако спектр когни
+тивных предубеждений значительно шире.
+ []
+
+
+Underfull \hbox (badness 4205) in paragraph at lines 88--89
+\TU/TimesNewRoman(0)/m/n/10 (base-rate neglect), эффект фрейминга в контексте п
+отерь и приобретений, а также предубеждения,
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 94--95
+\TU/lmtt/m/n/10 compare_sets \TU/TimesNewRoman(0)/m/n/10 и верификация стабильн
+ости результатов на нескольких независимых прогонах является
+ []
+
+
+Underfull \hbox (badness 2205) in paragraph at lines 96--97
+\TU/TimesNewRoman(0)/m/n/10 независимые методы (например, температурное масштаб
+ирование или сравнение с логарифмическими
+ []
+
+) (./conclusion.tex [37]
+Underfull \hbox (badness 3679) in paragraph at lines 4--5
+\TU/TimesNewRoman(0)/m/n/10 глубокого обучения для классификации данных показал
+а свою эффективность на тестовых наборах.
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 9--10
+[]\TU/TimesNewRoman(0)/m/n/10 экспериментальные результаты демонстрируют преиму
+щества глубоких нейронных сетей для задач
+ []
+
+) [38
+
+] [39
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+[]\TU/TimesNewRoman(0)/m/n/10 Arkoudas K. GPT-4 can’t reason. — 2023. — дата об
+ращения: 01.03.2025. URL:
+ []
+
+[40] (./appA.tex [41]
+ПРИЛОЖЕНИЕ А.
+File: example.jpg Graphic file (type bmp)
+<example.jpg>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[42
+
+] [43])
+Underfull \hbox (badness 1019) in paragraph at lines 121--56
+\TU/TimesNewRoman(0)/m/n/10 В него можно включать изображения, таблицы, програм
+мный код, результаты экспериментов и другие
+ []
+
+[44] (./main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 17107 strings out of 468168
+ 369748 string characters out of 5432816
+ 1426354 words of memory out of 5000000
+ 45626 multiletter control sequences out of 15000+600000
+ 628383 words of font info for 68 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 78i,12n,96p,1832b,5203s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main.xdv (44 pages, 1332028 bytes).

@@ -1,0 +1,15 @@
+{
+  "key": "wason1966reasoning",
+  "type": "incollection",
+  "description": "Authors: Wason, P. C.\nTitle: Reasoning\nConference/Book: New Horizons in Psychology\nYear: 1966\nPublisher: Penguin",
+  "verdict": "REAL",
+  "confidence": 95,
+  "reason": "Multiple consistent citations from Perplexity confirm the chapter's existence in the 1966 edited volume 'New Horizons in Psychology' by Penguin, despite absence in Semantic Scholar. The reference aligns with Wason's known scholarly output.",
+  "tool_calls": 2,
+  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
+  "_search_results": [
+    "**Yes, the work exists.**\n\n- **Exact title**: Reasoning\n- **Author**: P. C. Wason (full name: Peter Cathcart Wason)[1][4]\n- **Venue**: In B. Foss (Ed.), *New Horizons in Psychology*[1][2][4][5]\n- **Year**: 1966[1][2][4][5]\n- **Publisher details**: Harmondsworth: Penguin Books, pp. 135–151[1][4]\n- **DOI/URL**: No DOI provided in sources; chapter in edited book published by Penguin[1][2][4][5]",
+    "Semantic Scholar: no matching paper found."
+  ],
+  "_s2": {}
+}

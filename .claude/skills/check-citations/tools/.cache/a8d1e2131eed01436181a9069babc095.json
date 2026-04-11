@@ -1,0 +1,19 @@
+{
+  "key": "wei2022chain",
+  "type": "inproceedings",
+  "description": "Authors: Wei, J. and Wang, X. and Schuurmans, D. and Bosma, M. and Ichter, B. and Xia, F. and Chi, E. and Le, Q. and Zhou, D.\nTitle: Chain-of-thought prompting elicits reasoning in large language models\nConference/Book: Advances in Neural Information Processing Systems\nYear: 2022\nVolume: 35",
+  "verdict": "REAL",
+  "confidence": 95,
+  "reason": "Paper confirmed by multiple authoritative sources including the official NeurIPS 2022 proceedings and arXiv (arXiv:2201.11903). Title, authors, year, and venue match. Semantic Scholar's failure to return results is likely due to indexing issues, not paper nonexistence.",
+  "tool_calls": 6,
+  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
+  "_search_results": [
+    "**Yes, the paper exists.**\n\n**Exact title:** Chain-of-Thought Prompting Elicits Reasoning in Large Language Models[1][2][3][4][5][7][8].\n\n**Authors:** Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed Chi, Quoc Le, Denny Zhou (note: Wei Wang is not listed as an author; the query likely misattributes this)[4][7][8].\n\n**Venue:** 36th Conference on Neural Information Processing Systems (NeurIPS 2022)[1][2][3][8].\n\n**Year:** 2022[1][2][3][4][8].\n\n**DOI/URL:** arXiv preprint at https://arxiv.org/abs/2201.11903; official NeurIPS proceedings page at https://proceedings.neurips.cc/paper/2022/hash/9d5609613524ecf4f15af0f7b31abca4-Abstract-Conference.html[3][4].",
+    "Semantic Scholar: no matching paper found.",
+    "**Yes, the paper exists.**\n\n- **Exact title**: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models[1][3][5]\n- **Authors**: Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed H. Chi, Quoc V. Le, Denny Zhou[1][3][5]\n- **Venue**: arXiv (preprint)[3][5]\n- **Year**: 2022 (submitted v1 on 28 Jan 2022, last revised 10 Jan 2023 as v6)[5]\n- **DOI**: 10.48550/arXiv.2201.11903[3][5]\n- **URL**: https://arxiv.org/abs/2201.11903 (abstract); https://arxiv.org/pdf/2201.11903 (PDF)[1][5]",
+    "Semantic Scholar: no matching paper found.",
+    "The paper **\"Chain-of-Thought Prompting Elicits Reasoning in Large Language Models\"** exists and was published at NeurIPS 2022[1][2].\n\n**Key Details:**\n\n- **Authors:** Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed Chi, Quoc Le, Denny Zhou[3]\n- **Venue:** 36th Conference on Neural Information Processing Systems (NeurIPS 2022)[1]\n- **Conference Dates:** November 28 - December 9, 2022, New Orleans, Louisiana[6]\n- **Pages:** 24824-24837 (14 pages)[6]\n- **DOI/URLs:** \n  - arXiv: https://arxiv.org/abs/2201.11903[3]\n  - NeurIPS Proceedings: https://proceedings.neurips.cc/paper/2022/hash/9d5609613524ecf4f15af0f7b31abca4-Abstract-Conference.html[2]\n  - PDF: https://webdocs.cs.ualberta.ca/~daes/papers/neurips22a.pdf[1]\n\n**Summary:** The paper demonstrates that **chain-of-thought prompting**—providing intermediate reasoning steps in prompts—significantly improves large language models' performance on arithmetic, commonsense, and symbolic reasoning tasks[2]. For example, a 540B-parameter model with just eight chain-of-thought exemplars achieved state-of-the-art accuracy on the GSM8K benchmark of math word problems[2].",
+    "Semantic Scholar: no matching paper found."
+  ],
+  "_s2": {}
+}

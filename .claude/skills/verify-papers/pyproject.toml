@@ -1,0 +1,10 @@
+[project]
+name = "verify-papers"
+version = "0.1.0"
+description = "Verify bibliography entries and generate paper cards"
+requires-python = ">=3.13"
+dependencies = [
+    "openai>=2.30.0",
+    "python-dotenv>=1.0.0",
+    "tqdm>=4.67.3",
+]

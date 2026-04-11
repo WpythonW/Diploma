@@ -1,0 +1,15 @@
+{
+  "key": "mcnemar1947note",
+  "type": "article",
+  "description": "Authors: McNemar, Q.\nTitle: Note on the sampling error of the difference between correlated proportions or percentages\nJournal: Psychometrika\nYear: 1947\nVolume: 12",
+  "verdict": "REAL",
+  "confidence": 95,
+  "reason": "Verified via Perplexity with matching title, author, journal, year, volume, and DOI (10.1007/BF02295996). The paper is widely recognized as the original source of McNemar's Test, with over 3,750 citations. Semantic Scholar may have failed to index it due to its age, but external confirmation is strong.",
+  "tool_calls": 2,
+  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
+  "_search_results": [
+    "The paper **exists** and is a foundational statistical work by Q. McNemar.\n\n**Exact Title:** \"Note on the sampling error of the difference between correlated proportions or percentages\"[1]\n\n**Author:** Quinn McNemar[2]\n\n**Venue:** Psychometrika[1]\n\n**Year:** 1947[1]\n\n**Publication Details:** Volume 12, Issue 2, June 1947, pages 153–157[1]\n\n**DOI:** 10.1007/BF02295996[5]\n\n**Content:** The paper presents two formulas for judging the significance of the difference between correlated proportions, with one formula having a chi-square equivalent.[2] This work is highly influential, with over 3,750 citations and is the foundational reference for what is now known as McNemar's Test, a statistical method widely used in research design and hypothesis testing.[2]",
+    "Semantic Scholar: no matching paper found."
+  ],
+  "_s2": {}
+}

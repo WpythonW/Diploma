@@ -1,0 +1,32 @@
+{
+  "key": "collins2024softmax",
+  "type": "inproceedings",
+  "description": "Authors: Collins, L. and Parulekar, A. and Mokhtari, A. and Sanghavi, S. and Shakkottai, S.\nTitle: In-Context Learning with Transformers: Softmax Attention Adapts to Function Lipschitzness\nConference/Book: Advances in Neural Information Processing Systems",
+  "verdict": "REAL",
+  "confidence": 100,
+  "reason": "Paper confirmed by Semantic Scholar and web search with matching title, authors, year, and venue. arXiv ID and NeurIPS 2024 proceedings link provide strong validation.",
+  "tool_calls": 2,
+  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
+  "_search_results": [
+    "**Yes, the paper exists.**\n\n**Exact title:** In-Context Learning with Transformers: Softmax Attention Adapts to Function Lipschitzness[1][2][3][6][9].\n\n**Authors:** Liam Collins, Aryan Mokhtari, Advait Parulekar, Amirali Mokhtari, Sanjay Shakkottai[1][6][9].\n\n**Venue:** NeurIPS 2024 (Conference Track)[1][3].\n\n**Year:** 2024[1][2][3].\n\n**DOI/URL:** No DOI in results; available at https://proceedings.neurips.cc/paper_files/paper/2024/file/a8633d27d782f66fe660c2fb4bae446e-Paper-Conference.pdf (PDF), arXiv:2402.11639[1][2].",
+    "Semantic Scholar result:\n  Title: In-Context Learning with Transformers: Softmax Attention Adapts to Function Lipschitzness\n  Authors: Liam Collins, Advait Parulekar, Aryan Mokhtari, Sujay Sanghavi, Sanjay Shakkottai\n  Year: 2024\n  Venue: Neural Information Processing Systems\n  DOI: 10.48550/arXiv.2402.11639\n  arXiv: 2402.11639\n  PDF: n/a\n  Citations: 28\n  URL: https://www.semanticscholar.org/paper/aba4949ea029543da347b080f6acbb4e6a05aaa7"
+  ],
+  "_s2": {
+    "paper_id": "aba4949ea029543da347b080f6acbb4e6a05aaa7",
+    "title": "In-Context Learning with Transformers: Softmax Attention Adapts to Function Lipschitzness",
+    "authors": [
+      "Liam Collins",
+      "Advait Parulekar",
+      "Aryan Mokhtari",
+      "Sujay Sanghavi",
+      "Sanjay Shakkottai"
+    ],
+    "year": 2024,
+    "venue": "Neural Information Processing Systems",
+    "doi": "10.48550/arXiv.2402.11639",
+    "arxiv_id": "2402.11639",
+    "pdf_url": "",
+    "paper_url": "https://www.semanticscholar.org/paper/aba4949ea029543da347b080f6acbb4e6a05aaa7",
+    "citation_count": 28
+  }
+}

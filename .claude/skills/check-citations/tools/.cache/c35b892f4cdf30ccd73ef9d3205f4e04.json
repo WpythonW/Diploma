@@ -1,0 +1,32 @@
+{
+  "key": "kojima2022large",
+  "type": "inproceedings",
+  "description": "Authors: Kojima, T. and Gu, S. S. and Reid, M. and Matsuo, Y. and Iwasawa, Y.\nTitle: Large language models are zero-shot reasoners\nConference/Book: Advances in Neural Information Processing Systems\nYear: 2022\nVolume: 35",
+  "verdict": "REAL",
+  "confidence": 100,
+  "reason": "Paper confirmed by both Semantic Scholar and web search via Perplexity. Matching title, authors, year, and venue (NeurIPS 2022). Supported by arXiv ID (2205.11916), official proceedings link, and high citation count (6,734).",
+  "tool_calls": 2,
+  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
+  "_search_results": [
+    "**Yes, the paper exists.**\n\n**Exact title:** Large Language Models are Zero-Shot Reasoners[1][2][3][4][5][6]\n\n**Authors:** Takeshi Kojima, Shixiang (Shane) Gu, Machel Reid, Yutaka Matsuo, Yusuke Iwasawa[2][3][4][5][6]\n\n**Venue:** Advances in Neural Information Processing Systems 35 (NeurIPS 2022), Main Conference Track[3][4][6]\n\n**Year:** 2022[1][2][3][4][5][6]\n\n**DOI/URL:** No DOI listed in sources; available at https://proceedings.neurips.cc/paper_files/paper/2022/hash/8bb0d291acd4acf06ef112099c16f326-Abstract-Conference.html[3][4]; arXiv preprint at https://arxiv.org/pdf/2205.11916[2]; PDF at https://machelreid.github.io/resources/kojima2022zeroshotcot.pdf[1]",
+    "Semantic Scholar result:\n  Title: Large Language Models are Zero-Shot Reasoners\n  Authors: Takeshi Kojima, S. Gu, Machel Reid, Yutaka Matsuo, Yusuke Iwasawa\n  Year: 2022\n  Venue: Neural Information Processing Systems\n  DOI: 10.52202/068431-1613\n  arXiv: 2205.11916\n  PDF: n/a\n  Citations: 6734\n  URL: https://www.semanticscholar.org/paper/e7ad08848d5d7c5c47673ffe0da06af443643bda"
+  ],
+  "_s2": {
+    "paper_id": "e7ad08848d5d7c5c47673ffe0da06af443643bda",
+    "title": "Large Language Models are Zero-Shot Reasoners",
+    "authors": [
+      "Takeshi Kojima",
+      "S. Gu",
+      "Machel Reid",
+      "Yutaka Matsuo",
+      "Yusuke Iwasawa"
+    ],
+    "year": 2022,
+    "venue": "Neural Information Processing Systems",
+    "doi": "10.52202/068431-1613",
+    "arxiv_id": "2205.11916",
+    "pdf_url": "",
+    "paper_url": "https://www.semanticscholar.org/paper/e7ad08848d5d7c5c47673ffe0da06af443643bda",
+    "citation_count": 6734
+  }
+}

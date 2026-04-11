@@ -1,0 +1,15 @@
+{
+  "key": "nickerson1998confirmation",
+  "type": "article",
+  "description": "Authors: Nickerson, R. S.\nTitle: Confirmation bias: A ubiquitous phenomenon in many guises\nJournal: Review of General Psychology\nYear: 1998\nVolume: 2",
+  "verdict": "REAL",
+  "confidence": 98,
+  "reason": "Bibliographic details including title, author, year, journal, volume, pages, and DOI match authoritative sources via Perplexity. Minor discrepancy due to Semantic Scholar not returning result, but external verification confirms publication.",
+  "tool_calls": 2,
+  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
+  "_search_results": [
+    "This paper **exists** and is a foundational work on confirmation bias in psychology.\n\n**Exact Title:** \"Confirmation Bias: A Ubiquitous Phenomenon in Many Guises\"[1]\n\n**Author:** Raymond S. Nickerson, Tufts University[1]\n\n**Venue:** Review of General Psychology[1]\n\n**Year:** 1998[1]\n\n**Volume/Issue:** Volume 2, Issue 2[1]\n\n**Pages:** 175-220[1]\n\n**DOI:** 10.1037/1089-2680.2.2.175[1]\n\nThe paper defines **confirmation bias** as \"the seeking or interpreting of evidence in ways that are partial to existing beliefs, expectations, or a hypothesis in hand.\"[1] Nickerson's review examines evidence of this bias across multiple experimental contexts and discusses its operation in practical applications, along with possible explanations and questions about its utility.[1]",
+    "Semantic Scholar: no matching paper found."
+  ],
+  "_s2": {}
+}

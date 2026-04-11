@@ -1,0 +1,34 @@
+{
+  "key": "koo2024benchmarking",
+  "type": "inproceedings",
+  "description": "Authors: Koo, R. and Lee, M. and Raheja, V. and Park, J. I. and Kim, Z. S. and Kang, D.\nTitle: Benchmarking cognitive biases in large language models as evaluators\nConference/Book: Findings of the Association for Computational Linguistics: ACL 2024\nYear: 2024",
+  "verdict": "REAL",
+  "confidence": 98,
+  "reason": "The paper is published in Findings of ACL 2024 with the exact title, full author list, and official DOI. Discrepancies in Semantic Scholar (missing author, 2023 year) are due to it indexing the arXiv preprint. The ACL Anthology entry is authoritative and confirms the paper's existence and details.",
+  "tool_calls": 3,
+  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
+  "_search_results": [
+    "The paper **\"Benchmarking Cognitive Biases in Large Language Models as Evaluators\"** exists and was published in the ACL 2024 Findings.[1]\n\n**Full Citation:**\nRyan Koo, Minhwa Lee, Vipul Raheja, Jong Inn Park, Zae Myung Kim, and Dongyeop Kang. 2024. Benchmarking Cognitive Biases in Large Language Models as Evaluators. In *Findings of the Association for Computational Linguistics: ACL 2024*, pages 517–545, Bangkok, Thailand. Association for Computational Linguistics.[1]\n\n**Key Details:**\n- **Exact Title:** Benchmarking Cognitive Biases in Large Language Models as Evaluators\n- **Authors:** Ryan Koo, Minhwa Lee, Vipul Raheja, Jong Inn Park, Zae Myung Kim, Dongyeop Kang\n- **Venue:** Findings of the Association for Computational Linguistics: ACL 2024\n- **Year:** 2024\n- **Pages:** 517–545\n- **Location:** Bangkok, Thailand\n- **DOI/URL:** https://aclanthology.org/2024.findings-acl.29/\n\n**Overview:**\nThe paper introduces **CoBBLEr** (COgnitive Bias Benchmark for LLMs as EvaluatoRs), a benchmark measuring six different cognitive biases in LLM evaluation outputs, including egocentric bias where models prefer to rank their own outputs highly.[1] The study found that LLMs exhibit significant biases as evaluators, with approximately 40% of comparisons showing bias indicators, and demonstrated a Rank-Biased Overlap score of 44% with human preferences, indicating substantial misalignment.[1]",
+    "Semantic Scholar: no matching paper found.",
+    "Semantic Scholar result:\n  Title: Benchmarking Cognitive Biases in Large Language Models as Evaluators\n  Authors: Ryan Koo, Minhwa Lee, Vipul Raheja, Jong Inn Park, Zae Myung Kim\n  Year: 2023\n  Venue: Annual Meeting of the Association for Computational Linguistics\n  DOI: 10.48550/arXiv.2309.17012\n  arXiv: 2309.17012\n  PDF: https://arxiv.org/pdf/2309.17012\n  Citations: 148\n  URL: https://www.semanticscholar.org/paper/d55ed10e6a77e8f0a2359eb92221915f56481843"
+  ],
+  "_s2": {
+    "paper_id": "d55ed10e6a77e8f0a2359eb92221915f56481843",
+    "title": "Benchmarking Cognitive Biases in Large Language Models as Evaluators",
+    "authors": [
+      "Ryan Koo",
+      "Minhwa Lee",
+      "Vipul Raheja",
+      "Jong Inn Park",
+      "Zae Myung Kim",
+      "Dongyeop Kang"
+    ],
+    "year": 2023,
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "doi": "10.48550/arXiv.2309.17012",
+    "arxiv_id": "2309.17012",
+    "pdf_url": "https://arxiv.org/pdf/2309.17012",
+    "paper_url": "https://www.semanticscholar.org/paper/d55ed10e6a77e8f0a2359eb92221915f56481843",
+    "citation_count": 148
+  }
+}

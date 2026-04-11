@@ -1,0 +1,15 @@
+{
+  "key": "cheng1985pragmatic",
+  "type": "article",
+  "description": "Authors: Cheng, P. W. and Holyoak, K. J.\nTitle: Pragmatic reasoning schemas\nJournal: Cognitive Psychology\nYear: 1985\nVolume: 17",
+  "verdict": "REAL",
+  "confidence": 95,
+  "reason": "Confirmed by multiple external sources via Perplexity with exact match on title, authors, journal, year, volume, and DOI. Semantic Scholar's lack of result may reflect a database gap, but other evidence is strong and consistent.",
+  "tool_calls": 2,
+  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
+  "_search_results": [
+    "**Yes, the paper exists.**\n\nExact title: **Pragmatic reasoning schemas**  \nAuthors: **P. W. Cheng** and **K. J. Holyoak**  \nVenue: **Cognitive Psychology**, volume 17, issue 4, pages 391–416  \nYear: **1985**  \nDOI: **10.1016/0010-0285(85)90014-3**[1][2][3][6][7]",
+    "Semantic Scholar: no matching paper found."
+  ],
+  "_s2": {}
+}

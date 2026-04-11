@@ -1,0 +1,14 @@
+{
+  "key": "usdl2024oews",
+  "type": "misc",
+  "description": "Authors: U.S. Bureau of Labor Statistics\nTitle: Occupational Employment and Wage Statistics (OEWS)\nYear: 2024\nURL: URL: https://www.bls.gov/oes/",
+  "verdict": "REAL",
+  "confidence": 98,
+  "reason": "The OEWS is a real, official publication by the U.S. Bureau of Labor Statistics. The title, author (BLS), URL, and 2024 data release are all confirmed by official sources. Lack of Semantic Scholar indexing is expected for government statistical reports.",
+  "tool_calls": 1,
+  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
+  "_search_results": [
+    "**The official U.S. Bureau of Labor Statistics (BLS) site for Occupational Employment and Wage Statistics (OEWS) is https://www.bls.gov/oes/.**[5]\n\nThis is the OEWS home page, which provides employment and wage estimates for approximately 830 occupations at national, state, metropolitan, and industry levels.[1][5] The latest available data as of the search results is for **May 2024**, including:\n- National estimates: https://www.bls.gov/oes/current/oes_nat.htm (via tables at https://www.bls.gov/oes/tables.htm).[4]\n- State estimates: Interactive map and lists at https://www.bls.gov/oes/current/oessrcst.htm.[6]\n- Industry-specific estimates: https://www.bls.gov/oes/2024/may/oessrci.htm.[3]\n- Technical notes: https://www.bls.gov/oes/current/oes_tec.htm, covering the 2018 SOC system, 2022 NAICS, and model-based estimation using three years of data.[1][2]\n\nAdditional resources include data tables (HTML/XLSX), charts, maps, and a respondent portal at https://www.bls.gov/respondents/oes/home.htm.[4][7][8] The May 2024 estimates for Colorado were highlighted as newly available, with a last modified date of July 23, 2025 on some pages.[4][6] No later-than-May-2024 data (e.g., full 2024 or 2025/2026 releases) appears in the results.[1][2][4][6]"
+  ],
+  "_s2": {}
+}

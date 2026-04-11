@@ -1,0 +1,29 @@
+{
+  "key": "tversky1983extensional",
+  "type": "article",
+  "description": "Authors: Tversky, A. and Kahneman, D.\nTitle: Extensional versus intuitive reasoning: The conjunction fallacy in probability judgment\nJournal: Psychological Review\nYear: 1983\nVolume: 90",
+  "verdict": "REAL",
+  "confidence": 98,
+  "reason": "Paper confirmed by Semantic Scholar with matching title, authors, year, and DOI. The DOI 10.1037/0033-295X.90.4.293 corresponds to Psychological Review volume 90, issue 4, pages 293–315, 1983. High citation count and widespread academic recognition further validate authenticity.",
+  "tool_calls": 2,
+  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
+  "_search_results": [
+    "**No, there is no paper by Tversky and Kahneman from 1983 titled \"Extensional versus intuitive reasoning\" in *Psychological Review*.**\n\nThe paper referenced across multiple sources is titled **\"Extensional versus intuitive reasoning: The conjunction fallacy in probability judgment\"**, published in **Psychological Review** in **1983**. Authors are **Amos Tversky** and **Daniel Kahneman**. It introduced the famous \"Linda problem\" demonstrating the **conjunction fallacy**, where people judge a conjunction of events (e.g., \"Linda is a bank teller and feminist\") as more probable than one conjunct alone, violating probability theory[1][2][3][4][5].\n\nNo DOI is provided in the search results, but the paper is widely cited and available via academic databases (e.g., as a PDF linked in economics course materials)[5]. It remains a foundational work in behavioral economics and cognitive psychology, with ongoing debates about its robustness under incentives or group consultation[3].",
+    "Semantic Scholar result:\n  Title: Extensional versus intuitive reasoning: the conjunction fallacy in probability judgment\n  Authors: A. Tversky, D. Kahneman\n  Year: 1983\n  Venue: \n  DOI: 10.1037/0033-295X.90.4.293\n  arXiv: n/a\n  PDF: http://psy.ucsd.edu/%7Emckenzie/TverskyKahneman1983PsychRev.pdf\n  Citations: 3618\n  URL: https://www.semanticscholar.org/paper/b455189ca678237659f001316b2425667f04c286"
+  ],
+  "_s2": {
+    "paper_id": "b455189ca678237659f001316b2425667f04c286",
+    "title": "Extensional versus intuitive reasoning: the conjunction fallacy in probability judgment",
+    "authors": [
+      "A. Tversky",
+      "D. Kahneman"
+    ],
+    "year": 1983,
+    "venue": "",
+    "doi": "10.1037/0033-295X.90.4.293",
+    "arxiv_id": null,
+    "pdf_url": "http://psy.ucsd.edu/%7Emckenzie/TverskyKahneman1983PsychRev.pdf",
+    "paper_url": "https://www.semanticscholar.org/paper/b455189ca678237659f001316b2425667f04c286",
+    "citation_count": 3618
+  }
+}

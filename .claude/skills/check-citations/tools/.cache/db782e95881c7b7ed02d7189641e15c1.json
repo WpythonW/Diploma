@@ -1,0 +1,29 @@
+{
+  "key": "cosmides1992cognitive",
+  "type": "incollection",
+  "description": "Authors: Cosmides, L. and Tooby, J.\nTitle: Cognitive adaptations for social exchange\nConference/Book: The Adapted Mind: Evolutionary Psychology and the Generation of Culture\nYear: 1992\nPublisher: Oxford University Press",
+  "verdict": "REAL",
+  "confidence": 98,
+  "reason": "Both Semantic Scholar and Perplexity confirm the existence of the chapter with matching authors, title, year, and book title. Semantic Scholar lists 2104 citations, indicating a well-established academic work. Publisher (Oxford University Press) and editors are corroborated by Perplexity.",
+  "tool_calls": 2,
+  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
+  "_search_results": [
+    "Based on the search results, this work does exist, but the publication details you provided require clarification.\n\n**Exact Title:** \"Cognitive Adaptations for Social Exchange\"[2]\n\n**Authors:** Leda Cosmides and John Tooby[2]\n\n**Year:** 1992[2]\n\n**Venue:** The work appears in an edited volume. According to the search results, it was published in *The Adapted Mind: Evolutionary Psychology and the Generation of Culture*, edited by Jerome H. Barkow, Leda Cosmides, and John Tooby[6]. However, the search results also reference a 2005 chapter version in the *Evolutionary Psychology Handbook* edited by D. M. Buss[1], suggesting the work may have been republished or updated across multiple collections.\n\n**Publisher:** The Adapted Mind was published by Oxford University Press[6], which aligns with your query.\n\n**DOI/URL:** The search results do not provide a DOI for the 1992 original publication. However, a PDF version appears to be available through academic repositories[1][2].\n\nThe core argument of this seminal work is that humans possess **evolved cognitive specializations for reasoning about social exchange**, including mechanisms for detecting cheaters in reciprocal interactions[4].",
+    "Semantic Scholar result:\n  Title: Cognitive adaptations for social exchange.\n  Authors: L. Cosmides, J. Tooby\n  Year: 1992\n  Venue: \n  DOI: n/a\n  arXiv: n/a\n  PDF: n/a\n  Citations: 2104\n  URL: https://www.semanticscholar.org/paper/28061ee54490ed51099a999a572c45f627f74f13"
+  ],
+  "_s2": {
+    "paper_id": "28061ee54490ed51099a999a572c45f627f74f13",
+    "title": "Cognitive adaptations for social exchange.",
+    "authors": [
+      "L. Cosmides",
+      "J. Tooby"
+    ],
+    "year": 1992,
+    "venue": "",
+    "doi": null,
+    "arxiv_id": null,
+    "pdf_url": "",
+    "paper_url": "https://www.semanticscholar.org/paper/28061ee54490ed51099a999a572c45f627f74f13",
+    "citation_count": 2104
+  }
+}

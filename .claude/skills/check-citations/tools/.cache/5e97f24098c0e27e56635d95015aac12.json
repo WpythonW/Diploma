@@ -1,0 +1,18 @@
+{
+  "key": "suri2024large",
+  "type": "article",
+  "description": "Authors: Suri, G. and Slater, L. R. and Ziaee, A. and Nguyen, M.\nTitle: Do large language models show decision heuristics similar to humans? A case study using GPT-3.5\nJournal: Journal of Experimental Psychology: General\nYear: 2024\nVolume: 153",
+  "verdict": "REAL",
+  "confidence": 95,
+  "reason": "Paper confirmed via multiple authoritative sources including arXiv, author lab site, and Google Scholar; published in Journal of Experimental Psychology: General, Vol. 153, 2024. Initial Semantic Scholar absence does not invalidate publication.",
+  "tool_calls": 5,
+  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
+  "_search_results": [
+    "The paper you're asking about does exist, but with a correction to the publication year.\n\n**Exact Title:** Do Large Language Models Show Decision Heuristics Similar to Humans? A Case Study Using GPT-3.5[1]\n\n**Authors:** Gaurav Suri, Lily R. Slater, Ali Ziaee, Morgan Nguyen[1]\n\n**Year:** 2023 (not 2024)[3]\n\n**Venue:** Journal of Experimental Psychology: General[3]\n\n**Available at:** arXiv preprint at https://arxiv.org/abs/2305.04400[1]\n\n**Summary:** The study tested whether ChatGPT (powered by GPT-3.5) exhibits cognitive heuristics and decision biases similar to humans. Across four studies, the researchers found that ChatGPT showed the **anchoring heuristic**, **representativeness and availability heuristics**, **framing effects**, and **endowment effects**—all of which human participants also demonstrated. The findings suggest that language itself may play a role in generating these decision effects, independent of the cognitive and affective processes that drive them in humans.[1]",
+    "Semantic Scholar: no matching paper found.",
+    "Semantic Scholar: no matching paper found.",
+    "**Yes, the paper exists.**\n\n- **Exact title**: Do Large Language Models Show Decision Heuristics Similar to Humans? A Case Study Using GPT-3.5[1][2]\n- **Authors**: Gaurav Suri, Lily R. Slater, Ali Ziaee, Morgan Nguyen[1][2]\n- **Venue**: arXiv (preprint); later associated with Journal of Experimental Psychology: General[1][2]\n- **Year**: 2023 (submitted May 8)[1][2]\n- **arXiv ID**: 2305.04400[1]\n- **DOI/URL**: https://arxiv.org/abs/2305.04400[1]; Semantic Scholar CorpusID: 258556944[2]\n\nThe paper examines whether GPT-3.5 (via ChatGPT) exhibits human-like decision heuristics (e.g., anchoring, representativeness, framing, endowment effects) across four studies, finding similarities with human participants despite LLMs lacking cognitive/affective processes.[1][2]",
+    "**Yes, the paper exists and has been published.**\n\n- **Exact title**: Do Large Language Models Show Decision Heuristics Similar to Humans? A Case Study Using GPT-3.5.[1][2][3]\n- **Authors**: Gaurav Suri, Lily R. Slater (or L.R. Slater), Ali Ziaee (or A. Ziaee), Morgan Nguyen (or M. Nguyen).[1][2][3]\n- **Venue**: Journal of Experimental Psychology: General, volume 153, issue 4, pages 1066.[2][3]\n- **Year**: 2024.[2][3]\n- **DOI/URL**: No DOI provided in sources; available via Google Scholar and author lab page.[2][3]\n\nThe preprint appeared on arXiv in May 2023 (arXiv:2305.04400), with the lab site initially listing it under 2023 before updating to the 2024 publication.[1][2] It was not \"accepted\" or published in 2023.[3]"
+  ],
+  "_s2": {}
+}

@@ -1,0 +1,29 @@
+{
+  "key": "macmillan2024irrationality",
+  "type": "article",
+  "description": "Authors: Macmillan-Scott, O. and Musolesi, M.\nTitle: (Ir)rationality and cognitive biases in large language models\nJournal: Royal Society Open Science\nYear: 2024\nVolume: 11",
+  "verdict": "REAL",
+  "confidence": 100,
+  "reason": "Paper confirmed by both Semantic Scholar and Perplexity with matching title, authors, year, journal, DOI, and arXiv ID. Metadata is consistent and includes verifiable publication details and citation metrics.",
+  "tool_calls": 2,
+  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
+  "_search_results": [
+    "**Yes, the paper exists.**\n\n- **Exact title**: (Ir)rationality and Cognitive Biases in Large Language Models[1][2][4][5][8]\n- **Authors**: Olivia Macmillan-Scott (University College London), Mirco Musolesi (University College London, University of Bologna)[1][2][4]\n- **Venue**: Royal Society Open Science[4][6][8]\n- **Year**: 2024[2][4][6][8]\n- **DOI**: 10.1098/rsos.240255 (inferred from journal context and related citations)[4][6][8]\n\nIt originated as an arXiv preprint (arXiv:2402.09193, submitted February 14, 2024, revised February 15, 2024) with DOI 10.48550/arXiv.2402.09193[1][2], and was formally published in the journal, with an embargo until June 5, 2024[4]. The study evaluates seven LLMs on cognitive psychology tasks, finding they exhibit irrationality unlike human patterns, often with inconsistent responses[1][2][4][8].",
+    "Semantic Scholar result:\n  Title: (Ir)rationality and cognitive biases in large language models\n  Authors: Olivia Macmillan-Scott, Mirco Musolesi\n  Year: 2024\n  Venue: Royal Society Open Science\n  DOI: 10.1098/rsos.240255\n  arXiv: 2402.09193\n  PDF: https://royalsocietypublishing.org/doi/pdf/10.1098/rsos.240255\n  Citations: 42\n  URL: https://www.semanticscholar.org/paper/274bf622d6e28581c6f0fbb039e07c3723ff29f7"
+  ],
+  "_s2": {
+    "paper_id": "274bf622d6e28581c6f0fbb039e07c3723ff29f7",
+    "title": "(Ir)rationality and cognitive biases in large language models",
+    "authors": [
+      "Olivia Macmillan-Scott",
+      "Mirco Musolesi"
+    ],
+    "year": 2024,
+    "venue": "Royal Society Open Science",
+    "doi": "10.1098/rsos.240255",
+    "arxiv_id": "2402.09193",
+    "pdf_url": "https://royalsocietypublishing.org/doi/pdf/10.1098/rsos.240255",
+    "paper_url": "https://www.semanticscholar.org/paper/274bf622d6e28581c6f0fbb039e07c3723ff29f7",
+    "citation_count": 42
+  }
+}
