@@ -1,0 +1,31 @@
+{
+  "key": "dasgupta2024language",
+  "overall": "WARNING",
+  "fulltext_available": true,
+  "mentions": [
+    {
+      "file": "chapter1.tex",
+      "snippet": "Эмпирические данные остаются противоречивыми. Binz и Schulz~\\cite{binz2023using} продемонстрировали свидетельства в пользу memorization: GPT-3 решал",
+      "verdict": "WARNING",
+      "comment": "В статье Dasgupta и соавторов действительно обсуждаются контент-эффекты, но термин «деконтаминированные стимулы» и утверждение о «emergent bias» как противопоставление memorization не имеют прямого подтверждения в тексте. Авторы не утверждают, что их стимулы полностью свободны от контаминации или что эффекты объясняются исключительно emergent-механизмами. Это интерпретация, выходящая за рамки оригинального утверждения.",
+      "paper_quote": "We explore whether language models show human-like content effects on reasoning tasks, by testing them on variants of reasoning problems where content either supports or conflicts with logical validity."
+    },
+    {
+      "file": "chapter1.tex",
+      "snippet": "Dasgupta и соавторы~\\cite{dasgupta2024language} провели методологически строгое исследование деконтаминированных стимулов и обнаружили, что",
+      "verdict": "WARNING",
+      "comment": "Утверждение о «методологически строгом исследовании деконтаминированных стимулов» и явной поддержке теории прагматических схем Ченга и Холиоака является преувеличением. В статье действительно показано, что социальные и деонтические формулировки улучшают производительность, но прямая ссылка на теорию Ченга и Холиоака отсутствует, как и утверждение о полной деконтаминированности стимулов.",
+      "paper_quote": "In the Wason selection task, models showed higher accuracy on deontic (e.g., permission rule) versions compared to abstract versions, consistent with human data."
+    },
+    {
+      "file": "chapter1.tex",
+      "snippet": "\\textbf{Обоснование:} Традиционно в ML предполагается, что увеличение количества параметров ведет к монотонному улучшению метрик. Однако в задачах",
+      "verdict": "ERROR",
+      "comment": "В статье Dasgupta и соавторов отсутствует понятие «U-образного масштабирования» или «обратного масштабирования» (inverse scaling), а также утверждение о том, что более крупные модели сильнее подвержены когнитивным искажениям из-за богатых эмбеддингов. Авторы сравнивают модели, но не демонстрируют inverse scaling. Такое утверждение ошибочно приписывает результаты, которых в работе нет.",
+      "paper_quote": "We do not observe a consistent relationship between model size and the magnitude of content effects; some larger models show stronger effects, but this is not a universal trend."
+    }
+  ],
+  "summary": "Работа Dasgupta и соавторов действительно демонстрирует, что языковые модели проявляют контент-эффекты, аналогичные человеческим, в задачах логического вывода, включая повышение точности на деонтических формулировках задачи Уэйсона. Однако в оригинальной статье нет утверждений о деконтаминированных стимулах как таковых, прямой поддержке теории прагматических схем или inverse scaling. Некоторые интерпретации в дипломе выходят за рамки источника, одна из них — существенная — является ошибочной.",
+  "mention_count": 4,
+  "layer": 2
+}

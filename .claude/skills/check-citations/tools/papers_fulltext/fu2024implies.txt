@@ -1,0 +1,3044 @@
+
+
+How Transformers Solve Propositional Logic Problems: A Mechanistic Analysis
+
+1  Introduction
+
+1.1  Related works
+
+2  Data model: a propositional logic problem
+
+3  Mechanisms of planning and reasoning: a case study of the length-3 problem
+
+3.1  Learner: a decoder-only attention-only transformer
+
+3.2  Mechanism analysis
+
+3.2.1  Linear or LogOp chain: routing signal at the QUERY position
+
+3.2.2  Answer for the linear chain
+
+3.2.3  Answer for the LogOp chain
+
+4  The reasoning circuit in Mistral-7B
+
+4.1  Minimal problem description
+
+4.2  Causal mediation analysis
+
+4.3  Circuit analysis
+
+4.3.1  QUERY-based patching: discovering the important attention heads
+
+4.3.2  Finer examinations of the attention heads
+
+5  Conclusion
+
+A  Propositional logic problem and examples
+
+B  Length-3 small transformer study: experimental details
+
+B.1  Data definition and examples
+
+B.2  Small-transformer characteristics, and training details
+
+B.2.1  Transformer definition
+
+B.2.2  Training details
+
+B.3  Answer for the LogOp Chain
+
+B.4  Extra remarks
+
+C  Mistral-7B experiment details
+
+C.1  Problem format
+
+C.2  Finer details of query-based activation patching
+
+C.2.1  QUERY-based activation patching experiments: metrics
+
+C.2.2  Attention patterns of QUERY-sensitive attention heads
+
+C.3  Queried-rule location interventions: analyzing the queried-rule locating heads
+
+C.4  Facts interventions: analyzing the fact-processing and decision heads
+
+How Transformers Solve Propositional Logic Problems: A Mechanistic Analysis
+
+Guan Zhe Hong
+
+1
+
+Nishanth Dikkala  2
+
+Enming Luo  2
+
+Cyrus Rashtchian  2
+
+Xin Wang  2
+
+Rina Panigrahy  2
+
+1 Purdue University
+
+2  Google Research
+
+hong288@purdue.edu ,
+
+{nishanthd, enming, cyroid, wanxin, rinap}@google.com
+
+Work done as a student researcher at Google Research.
+
+Abstract
+
+Large language models (LLMs) have shown amazing performance on tasks that require planning and reasoning. Motivated by this, we investigate the internal mechanisms that underpin a network’s ability to perform complex logical reasoning. We first construct a synthetic propositional logic problem that serves as a concrete test-bed for network training and evaluation. Crucially, this problem demands nontrivial planning to solve, but we can train a small transformer to achieve perfect accuracy. Building on our set-up, we then pursue an understanding of precisely how a three-layer transformer, trained from scratch, solves this problem. We are able to identify certain “planning” and “reasoning” circuits in the network that necessitate cooperation between the attention blocks to implement the desired logic. To expand our findings, we then study a larger model, Mistral 7B. Using activation patching, we characterize internal components that are critical in solving our logic problem. Overall, our work systemically uncovers novel aspects of small and large transformers, and continues the study of how they plan and reason.
+
+1  Introduction
+
+Language models using the transformer architecture  (Vaswani et al.,  2017 )  have shown remarkable capabilities on many natural language tasks  (Brown et al.,  2020 ; Radford et al.,  2019b ) . Trained with causal language modeling wherein the goal is next-token prediction on huge amounts of text, these models exhibit deep language understanding and generation skills. An essential milestone in the pursuit of models which can achieve a human-like artificial intelligence, is the ability to perform human-like reasoning and planning in complex unseen scenarios. While some recent works using probing analyses have shown that the activations of the deeper layers of a transformer contain rich information about certain mathematical reasoning problems  (Ye et al.,  2024 ) , the question of what mechanisms inside the model enables such abilities remains unclear.
+
+While the study of how transformers reason in general remains a daunting task, in this work, we aim to improve our  mechanistic  understanding of how a Transformer reason through simple propositional logic problems. For concreteness’ sake, consider the following problem:
+
+Rules : A or B implies C. D implies E.  Facts : A is true. B is false. D is true.
+
+Question : what is the truth value of C?
+
+An answer with  minimal  proof is “A is true. A or B implies C; C is true.”
+
+The reasoning problem, while simple-looking on the surface, requires the model to perform several actions that are essential to more complex reasoning problems, all without chain of thought (CoT). Before writing down any token, the model has to first discern the  rule  which is being queried: in this case, it is “A or B implies C”. Then, it needs to rely on the premise variables A and B to the locate the relevant  facts , and find “A is true” and “B is false”. Finally, it needs to decide that “A is true” is the correct one to invoke in its answer due to the nature of disjunction. It follows that, to write down the first token “A”, the model already has to form a “mental map” of the variable relations, value assignments and query! Therefore, we believe that this is close to the minimal problem to examine how a model internalizes and plans for solving a nontrivial mathematical reasoning problem where apparent ambiguities in the problem specification cannot be resolved trivially.
+
+To understand the internal mechanisms of how a transformer solves problems resembling the minimal form above, we perform two flavors of experiments. The first is on shallow transformers trained purely on the synthetic propositional logic problems. This enables a fine-grained analysis in a controlled setting. The other set of experiments are on a pre-trained LLM (Mistral-7B), where we primarily rely on activation patching to uncover necessary circuits for solving the reasoning problem, including specialized roles of certain components.
+
+At a high level, we make the following discoveries based on our two fronts of analysis:
+
+1.
+
+We discover that small transformers, trained purely on the synthetic problem, utilize certain “ routing embeddings ” to significantly alter the information flow of the deeper layers when solving different sub-categories of the reasoning problem. We also characterize the different reasoning pathways: we find that problems querying for reasoning chains involving logical operators typically require greater involvement of all the layers in the model.
+
+2.
+
+We uncover properties of the circuit which the pretrained LLM Mistral-7B-v0.1 employs to solve the minimal version of the reasoning problem. We find four families of attention heads, which have surprisingly specialized roles in processing different sections of the context: queried-rule locating heads, queried-rule mover heads, fact-processing heads, and decision heads. We find evidence suggesting that the model follows the natural reasoning path of “QUERY
+
+→
+
+→
+
+\to  →
+
+Relevant Rule
+
+→
+
+→
+
+\to  →
+
+Relevant Fact(s)
+
+→
+
+→
+
+\to  →
+
+Decision”.
+
+Additionally, we define the scope of our analysis as follows. First, in the shallow transformer experiments, we focus on the variant which only has self-attention layers in addition to layer normalization, positional encoding, embedding and softmax parameters.
+While we could have also included MLP layers, we choose not to because the no-MLP models already achieve 100% accuracy on the problem, and adding MLPs would unnecessarily complicate the analysis.
+As a second way to focus the scope of paper, in the Mistral-7B experiments, we do  not  seek to uncover  every  model component that participates in solving the reasoning problem. We focus more on finding and analyzing the components that are  necessary  to the model’s reasoning circuit, and necessary towards implementing the reasoning pathway as described before. By doing so, we can fully justify the necessity of these key components, without guessing about the roles of less-impactful sub-circuits.
+
+1.1  Related works
+
+Mechanistic interpretability . Our work falls in the area of mechanistic interpretability, which aims to understand the mechanisms that enable capabilities of the LLM; such studies involve uncovering certain “circuits” in the network  (Elhage et al.,  2021 ; Olsson et al.,  2022 ; Meng et al.,  2022 ; Vig et al.,  2020 ; Feng &amp; Steinhardt,  2024 ; Wu et al.,  2023 ; Wang et al.,  2023 ; Hanna et al.,  2024 ; Merullo et al.,  2024 ; McGrath et al.,  2023 ; Singh et al.,  2024 ; Feng et al.,  2024 ) . While the definition of a “circuit” varies across different works, in this paper, our definition is similar to the one in  Wang et al. ( 2023 ) : it is a collection of model components (attention heads, neurons, etc.) with the “edges” in the circuit indicating the information flow between the components in the forward pass; the “excitation” of the circuit is the input tokens.
+
+Evaluation of reasoning abilities of LLMs .
+
+Our work is also related to the line of work which focus on empirically evaluating the reasoning abilities of LLMs across different types of tasks  (Xue et al.,  2024 ; Chen et al.,  2024 ; Patel et al.,  2024 ; Morishita et al.,  2023 ; Seals &amp; Shalin,  2024 ; Zhang et al.,  2023 ; Saparov &amp; He,  2023 ; Saparov et al.,  2024 ; Luo et al.,  2024 ; Han et al.,  2024 ; Tafjord et al.,  2021 ; Hendrycks et al.,  2021 ; Dziri et al.,  2024 ; Yang et al.,  2024 ) . While these studies primarily benchmark their performance on sophisticated tasks, our work focuses on understanding “how” transformers reason on logic problems accessible to fine-grained analysis.
+
+Analysis of how LLMs reason . There are far fewer studies that focus on providing fine-grained analysis of  how  LLMs reason. To the best of our knowledge, only a handful of works, such as  Brinkmann et al. ( 2024 ); Xue et al. ( 2024 ); Zečević et al. ( 2023 ); Ye et al. ( 2024 ) , share similar goals of understanding how transformers perform multi-step reasoning through detailed empirical or theoretical analysis. However, none studies the [Variable relationships]+[Variable value assignment]+[Query] type problem in conjunction with analysis on  both  small transformers trained purely on the synthetic problem, and large language models trained on a large corpus of internet data.
+
+Activation patching . At its core, activation patching, a.k.a.  causal mediation analysis
+
+(Vig et al.,  2020 ; Meng et al.,  2022 ; Hase et al.,  2024 ; Heimersheim &amp; Nanda,  2024 ; Zhang &amp; Nanda,  2024 ) , uses causal interventions for uncovering the internal mechanisms or “circuits” of LLMs that enable them to perform certain tasks. Typically, the LLM is run on pairs of “original” and “altered” prompts, and we search for components inside the model that “alter” the model’s “original behavior” by replacing parts of the model’s activation with “altered activations” when running on the original prompts. The opposite “altered
+
+→
+
+→
+
+\to  →
+
+original” intervention can also be adopted.
+
+2  Data model: a propositional logic problem
+
+In this section, we describe the synthetic propositional logic problem that shall be the data model of this paper.
+Our problem follows an implicit causal structure, as illustrated in Figure
+
+1  . The structure consists of two distinct chains: One containing a logical operator at the end of the chain, and the other forming a purely linear chain.
+
+Figure 1:  Synthetic data model. The causal structure has two chains: one with a logical operator (LogOp) at the end and the other being purely a linear causal chain. This example is the length-3 case and all symbols are explained in Section
+
+2  .
+
+We require the model to generate a  minimal  reasoning chain, consisting of “relevant facts”, proper rule invocations, and intermediate truth values, to answer the truth-value query. Consider an example constructed from the causal graph in Figure
+
+1  , written in English:
+
+•
+
+Rules : K implies D. D or E implies A. V implies E. T implies S. P implies T.
+
+•
+
+Facts : K is true. P is true. V is false.
+
+•
+
+Query : A.
+
+•
+
+Answer : K is true. K implies D; D is true. D or E implies A; A is true.
+
+In this example, the QUERY token A is the terminating node of the OR chain. Since any  true  input to an OR gate (either D or E) results in A being  true , the minimal solution chooses only one of the starting nodes from the OR chain to construct its argument: in this case, node K is chosen.
+
+Minimal proof and solution strategy . In general, the problem requires a careful examination of the rules, facts and query to correctly answer the question. First, the QUERY token determines the chain to deduce its truth value. Second, if it is the logical-operator (LogOp) chain being queried, the model needs to check the facts to determine the correct facts to write down at the start of the reasoning steps (this step can be skipped for queries on the linear chain). Third, the proof requires invoking the rules to properly deduce the truth value of the query token.
+
+Importance of the first answer token . Correctly writing down the first answer token is central to the accuracy of the proof, because as discussed in Section
+
+1  , it requires the model to  mentally process every part of the context properly  due to the minimal-proof requirement of the solution.
+
+3  Mechanisms of planning and reasoning: a case study of the length-3 problem
+
+In this section, we study how small GPT-2-like transformers, trained solely on the logic problem, approach and solve it. While there are many parts of the answer of the transformer which can lead to interesting observations, in this work, we primarily focus on the following questions:
+
+1.
+
+How does the transformer mentally process the context and plan its answer before writing down any token? In particular,  how does it use its “mental notes” to predict the crucial first token ?
+
+2.
+
+How does the transformer determine the truth value of the query at the end?
+
+We pay particular attention to the first question, because as noted in Section
+
+2  ,  the first answer token reveals the most about how the transformer mentally processes all the context information without any access to chain of thought (CoT) . We delay the less interesting answer of question 2 to the Appendix due to space limitations.
+
+3.1  Learner: a decoder-only attention-only transformer
+
+In this section, we study decoder-only attention-only transformers, closely resembling the form of GPT-2  (Radford et al.,  2019a ) . We train these models exclusively on the synthetic logic problem. The LogOp chain is queried 80% of the time, while the linear chain is queried 20% of the time during training. Details of the model architecture are provided in Appendix
+
+B.2  .
+
+Architecture choice for mechanistic analysis . We select a 3-layer 3-head transformer to initiate our analysis since it is the smallest transformer that can achieve 100% accuracy; we also show the accuracies of several candidate model sizes in Figure
+
+7
+
+in Appendix
+
+B
+
+for more evidence. Note that a model’s answer on a problem is considered accurate only if every token in its answer matches that of the correct answer.
+
+3.2  Mechanism analysis
+
+The model approximately follows the strategy below to predict the first answer token:
+
+1.
+
+(Linear vs. LogOp chain) At the QUERY position, the layer-2 attention block sends out a special “routing” signal to the layer-3 attention block, which informs the latter whether the chain being queried is the linear one or not. The third layer then acts accordingly.
+
+2.
+
+(Linear chain queried) If QUERY is for the linear chain, the third attention block focuses almost 100% of its attention weights on the QUERY position, that is, it serves a simple “message passing” role: indeed, layer-2 residual stream at QUERY position already has the correct (and linearly decodable) answer in this case.
+
+3.
+
+(LogOp chain queried) The third attention block serves a more complex purpose when the LogOp chain is queried. In particular, the first two layers construct a partial answer, followed by the third layer refining it to the correct one.
+
+3.2.1  Linear or LogOp chain: routing signal at the QUERY position
+
+The QUERY token is likely the most important token in the context for the model: it determines whether the linear chain is being queried, and significantly influences the behavior of the third attention block. The transformer makes use of this token in its answer in an intriguing way.
+
+Routing direction at QUERY . There exists a “routing” direction
+
+𝒉
+
+r  ⁢  o  ⁢  u  ⁢  t  ⁢  e
+
+subscript  𝒉
+
+𝑟  𝑜  𝑢  𝑡  𝑒
+
+{\bm{h}}_{route}  bold_italic_h start_POSTSUBSCRIPT italic_r italic_o italic_u italic_t italic_e end_POSTSUBSCRIPT
+
+present in the embedding generated by the layer-2 attention block, satisfying the following properties:
+
+nosep
+
+α  1
+
+⁢
+
+(  𝑿  )
+
+⁢
+
+𝒉
+
+r  ⁢  o  ⁢  u  ⁢  t  ⁢  e
+
+subscript  𝛼  1
+
+𝑿
+
+subscript  𝒉
+
+𝑟  𝑜  𝑢  𝑡  𝑒
+
+\alpha_{1}({\bm{X}}){\bm{h}}_{route}  italic_α start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT ( bold_italic_X ) bold_italic_h start_POSTSUBSCRIPT italic_r italic_o italic_u italic_t italic_e end_POSTSUBSCRIPT
+
+is present in the embedding when the linear chain is queried, and
+
+α  2
+
+⁢
+
+(  𝑿  )
+
+⁢
+
+𝒉
+
+r  ⁢  o  ⁢  u  ⁢  t  ⁢  e
+
+subscript  𝛼  2
+
+𝑿
+
+subscript  𝒉
+
+𝑟  𝑜  𝑢  𝑡  𝑒
+
+\alpha_{2}({\bm{X}}){\bm{h}}_{route}  italic_α start_POSTSUBSCRIPT 2 end_POSTSUBSCRIPT ( bold_italic_X ) bold_italic_h start_POSTSUBSCRIPT italic_r italic_o italic_u italic_t italic_e end_POSTSUBSCRIPT
+
+is present when the LogOp chain is queried, where the two
+
+α  i
+
+⁢
+
+(  𝑿  )
+
+subscript  𝛼  𝑖
+
+𝑿
+
+\alpha_{i}({\bm{X}})  italic_α start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT ( bold_italic_X )
+
+’s are sample dependent, and satisfy the property that
+
+α  1
+
+⁢
+
+(  𝑿  )
+
+&gt;  0
+
+subscript  𝛼  1
+
+𝑿
+
+0
+
+\alpha_{1}({\bm{X}})&gt;0  italic_α start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT ( bold_italic_X ) &gt; 0
+
+, and
+
+α  2
+
+⁢
+
+(  𝑿  )
+
+&lt;  0
+
+subscript  𝛼  2
+
+𝑿
+
+0
+
+\alpha_{2}({\bm{X}})&lt;0  italic_α start_POSTSUBSCRIPT 2 end_POSTSUBSCRIPT ( bold_italic_X ) &lt; 0
+
+.
+
+nosep
+
+The “sign” of the
+
+𝒉
+
+r  ⁢  o  ⁢  u  ⁢  t  ⁢  e
+
+subscript  𝒉
+
+𝑟  𝑜  𝑢  𝑡  𝑒
+
+{\bm{h}}_{route}  bold_italic_h start_POSTSUBSCRIPT italic_r italic_o italic_u italic_t italic_e end_POSTSUBSCRIPT
+
+signal determines the “mode” which layer-3 attention operates in at the ANSWER position. When a sufficiently “positive”
+
+𝒉
+
+r  ⁢  o  ⁢  u  ⁢  t  ⁢  e
+
+subscript  𝒉
+
+𝑟  𝑜  𝑢  𝑡  𝑒
+
+{\bm{h}}_{route}  bold_italic_h start_POSTSUBSCRIPT italic_r italic_o italic_u italic_t italic_e end_POSTSUBSCRIPT
+
+is present, layer-3 attention acts as if QUERY is for the linear chain by placing significant attention weight at the QUERY position. A sufficiently “negative”
+
+𝒉
+
+r  ⁢  o  ⁢  u  ⁢  t  ⁢  e
+
+subscript  𝒉
+
+𝑟  𝑜  𝑢  𝑡  𝑒
+
+{\bm{h}}_{route}  bold_italic_h start_POSTSUBSCRIPT italic_r italic_o italic_u italic_t italic_e end_POSTSUBSCRIPT
+
+causes layer-3 to behave as if the input is the LogOp chain: the model focuses attention on the rules and fact sections, and in fact outputs the correct first token of the LogOp chain!
+
+We discuss our empirical evidence below to support and elaborate on the above mechanism.
+
+Evidence 1a: chain-type disentanglement at QUERY . We first observe that, at the QUERY position, the layer-2 attention block’s output exhibits disentanglement in its output direction depending on whether the linear or LogOp chain is being queried, as illustrated in Figure
+
+2  .
+
+To generate Figure
+
+2  , we constructed 200 samples, with the first half querying the linear chain and the second half querying the LogOp chain. We then extracted the layer-2 self-attention block output at the QUERY position for each sample, and calculated the pairwise cosine similarity between these outputs.
+
+Figure 2:  Cosine similarity matrix between output embeddings from layer-2 attention block. Samples 0 to 99 query for the linear chain, samples 100 to 199 query for the LogOp chain. Observe the in-group clustering in angle (top left and bottom right), and the negative cross-group cosine similarity (top right and bottom left).
+
+Evidence 1b: distinct layer-3 attention behavior w.r.t. chain type . When the linear chain is queried, the layer-3 attention heads predominantly focus on the QUERY position, with over 90% of their attention weights on the QUERY position on average (based on 1k test samples). In contrast, when the LogOp chain is queried, less than 5% of layer-3 attention is on the QUERY on average. Instead, attention shifts to the Rules and Facts sections of the context.
+
+Observations 1a and 1b suggest that given a chain type (linear or LogOp), certain direction(s) in the layer-2 embedding significantly influences the behavior of the third attention block in the aforementioned manner. We confirm the existence and role of this special direction and reveal more intriguing details below.
+
+Evidence 1c: computing
+
+𝐡
+
+r  ⁢  o  ⁢  u  ⁢  t  ⁢  e
+
+subscript  𝐡
+
+𝑟  𝑜  𝑢  𝑡  𝑒
+
+{\bm{h}}_{route}  bold_italic_h start_POSTSUBSCRIPT italic_r italic_o italic_u italic_t italic_e end_POSTSUBSCRIPT
+
+, and proving its role with interventions . To  erase  the instance-dependent information, we  average  the output of the second attention block over 1k samples where QUERY is for the linear chain. We denote this  estimated  average as
+
+𝒉  ^
+
+r  ⁢  o  ⁢  u  ⁢  t  ⁢  e
+
+subscript
+
+^  𝒉
+
+𝑟  𝑜  𝑢  𝑡  𝑒
+
+\hat{{\bm{h}}}_{route}  over^ start_ARG bold_italic_h end_ARG start_POSTSUBSCRIPT italic_r italic_o italic_u italic_t italic_e end_POSTSUBSCRIPT
+
+which effectively preserves the sample-invariant signal. To test the influence of
+
+𝒉  ^
+
+r  ⁢  o  ⁢  u  ⁢  t  ⁢  e
+
+subscript
+
+^  𝒉
+
+𝑟  𝑜  𝑢  𝑡  𝑒
+
+\hat{{\bm{h}}}_{route}  over^ start_ARG bold_italic_h end_ARG start_POSTSUBSCRIPT italic_r italic_o italic_u italic_t italic_e end_POSTSUBSCRIPT
+
+, we investigate its impact on the model’s reasoning process, and we observe two intriguing properties:
+
+1.
+
+(Linear
+
+→
+
+→
+
+\to  →
+
+LogOp intervention) We generate 500 test samples where QUERY is for the linear chain.  Subtracting  the embedding
+
+𝒉  ^
+
+r  ⁢  o  ⁢  u  ⁢  t  ⁢  e
+
+subscript
+
+^  𝒉
+
+𝑟  𝑜  𝑢  𝑡  𝑒
+
+\hat{{\bm{h}}}_{route}  over^ start_ARG bold_italic_h end_ARG start_POSTSUBSCRIPT italic_r italic_o italic_u italic_t italic_e end_POSTSUBSCRIPT
+
+from the second attention block’s output causes the model to consistently predict the correct first token for the  LogOp chain  on the test samples. In other words, the “mode” in which the model reasons is flipped from “linear” to “LogOp”.
+
+2.
+
+(LogOp
+
+→
+
+→
+
+\to  →
+
+linear intervention) We generate 500 test samples where QUERY is for the LogOp chain.  Adding
+
+𝒉  ^
+
+r  ⁢  o  ⁢  u  ⁢  t  ⁢  e
+
+subscript
+
+^  𝒉
+
+𝑟  𝑜  𝑢  𝑡  𝑒
+
+\hat{{\bm{h}}}_{route}  over^ start_ARG bold_italic_h end_ARG start_POSTSUBSCRIPT italic_r italic_o italic_u italic_t italic_e end_POSTSUBSCRIPT
+
+to the second attention block’s output causes the three attention heads in layer 3 to focus on the QUERY position: greater than 95% of the attention weights are on this position averaged over the test samples. In this case, however, the model does not output the correct starting node for the linear chain on more than 90% of the test samples.
+
+It follows that
+
+𝒉
+
+r  ⁢  o  ⁢  u  ⁢  t  ⁢  e
+
+subscript  𝒉
+
+𝑟  𝑜  𝑢  𝑡  𝑒
+
+{\bm{h}}_{route}  bold_italic_h start_POSTSUBSCRIPT italic_r italic_o italic_u italic_t italic_e end_POSTSUBSCRIPT
+
+indeed exists, and the “sign” of it determines the attention patterns in layer 3 (and the overall network’s output!) in the aforementioned manner.
+
+3.2.2  Answer for the linear chain
+
+At this point, it is clear to us that, when QUERY is for the linear chain, the third layer mainly serves a simple “message passing” role: it passes the information in the layer-2 residual stream at the QUERY position to the ANSWER position. One natural question arises: does the input to the third layer truly contain the information to determine the first token of the answer, namely the starting node of the linear chain? The answer is yes.
+
+Evidence 2: linearly-decodable linear-chain answer at layer 2 . We train an affine classifier with the same input as the third attention block at the QUERY position, with the target being the start of the linear chain; the training samples only query for the linear chain, and we generate 5k of them. We obtain a test accuracy above 97% for this classifier (on 5k test samples), confirming that layer 2 already has the answer at the QUERY position.
+
+3.2.3  Answer for the LogOp chain
+
+LogOp chain: partial answer in layers 1 &amp; 2 + refinement in layer 3 . To predict the correct starting node of the LogOp chain, the model employs the following strategy:
+
+1.
+
+The first two layers encode the LogOp and only a “partial answer”. More specifically, we find evidence that (1) when the LogOp is an AND gate, layers 1 and 2 tend to pass the node(s) with FALSE assignment to layer 3, (2) when the LogOp is an OR gate, layers 1 and 2 tend to pass node(s) with TRUE assignment to layer 3.
+
+2.
+
+The third layer, combining information of the two starting nodes of the LogOp chain, and the information in the layer-2 residual stream at the ANSWER position, output the correct answer.
+
+We delay the full set of evidence for the above claims to Appendix
+
+B.3  . Our argument mainly relies on linear probing and activation patching. At a high level, we show that while it is not possible to linearly decode the answer from layer-2 residual stream, the predictor’s answer already takes on very specific structure resembling a “partial answer”; this reisdual stream also contains rich answer-specific information such as which LogOp is in the context. Moreover, through activation patching, we found that the layer-2 residual stream indeed have strong causal influence on the correct answer, which strengthens the “partial answer in layer 2
+
+→
+
+→
+
+\to  →
+
+refinement in layer 3” claim.
+
+Figure 3:  High-level properties of Mistral-7B’s reasoning circuit. The (chunks of) input tokens are on the left, which are passed into the residual stream and processed by the attention heads. We illustrate the information flow manipulated by the different types of attention heads we identified to be vital to the reasoning task.
+
+4  The reasoning circuit in Mistral-7B
+
+We now turn to examine how a pretrained LLM, namely Mistral-7B-v0.1, solves this reasoning problem. We choose this LLM as it is amongst the smallest accessible model which achieves above 70% accuracy on (a minimal version of) our problem. Our primary focus here is the same as in the previous section: how does the model infer the first answer token without any CoT? We are interested in this question as the first answer token requires to model to process all the information in the context properly without access to any CoT.
+
+We describe the main properties of the reasoning circuit inside the model for this prediction task in Figure
+
+3  . At a high level, there are several intriguing properties of the reasoning circuit of the LLM:  1
+
+1  1 We use
+
+(  ℓ  ,  h  )
+
+ℓ  ℎ
+
+(\ell,h)  ( roman_ℓ , italic_h )
+
+to denote an attention head. When referencing multiple heads in the same layer, we write
+
+(  ℓ  ,
+
+h  1
+
+;
+
+h  2
+
+;  …  ;
+
+h  n
+
+)
+
+ℓ
+
+subscript  ℎ  1
+
+subscript  ℎ  2
+
+…
+
+subscript  ℎ  𝑛
+
+(\ell,h_{1};h_{2};...;h_{n})  ( roman_ℓ , italic_h start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT ; italic_h start_POSTSUBSCRIPT 2 end_POSTSUBSCRIPT ; … ; italic_h start_POSTSUBSCRIPT italic_n end_POSTSUBSCRIPT )
+
+for brevity.
+
+1.
+
+Compared to the attention blocks, the MLPs are relatively unimportant to correct prediction.
+
+2.
+
+There is a sparse set of attention heads that are found to be central to the reasoning circuit:
+
+•
+
+(Queried-rule locating head) Attention heads (9,25;26), (12,9), (14,24;26) locate the queried rule using the QUERY token, and stores this information at the QUERY position.
+
+•
+
+(Queried-rule mover head) Attention heads (13,11), (15,8) move QUERY and the queried-rule information from the QUERY position to the “:” position.
+
+•
+
+(Fact processing heads) Attention heads (16,12;14), (17,25) locate the relevant facts, and move information to the “:” position.
+
+•
+
+(Decision head) Attention head (19,8), relying on the aggregated information, makes a decision on which token to output.
+
+4.1  Minimal problem description
+
+In our Mistral-7B experiments, the input samples have the following properties:
+
+1.
+
+We give the model 6 (randomly chosen) in-context examples before asking for the answer.
+
+2.
+
+The problem is length-2: only one rule involving the OR gate, and one linear-chain rule. Moreover, the answer is always true. In particular, the truth values of the two premise nodes of the OR chain always have one FALSE and one TRUE.
+
+3.
+
+The proposition variables are all (single-token) capital English letters.
+
+The design decision in the first point is to ensure fairness to the LLM which was not trained on our specific logic problem. As for the last two point, we restrict the problem in this fashion mainly to ensure that the first answer token is  unique , which improves the tractability of the analysis. Note that these restrictions do not take away the core challenge of this problem:  the LLM still needs to process all the context information without CoT to determine the correct first token .
+
+4.2  Causal mediation analysis
+
+We provide evidence in this part of the paper primarily relying on a popular technique in mechanistic interpretability:  causal mediation analysis . Our methodology is roughly as follows:
+
+1.
+
+Suppose we are interested in the role of the activations of certain components of the LLM in a certain (sub-)task. For a running example, say we want to understand what role the attention heads play in processing and passing QUERY information to the “:” position for inference. Let us denote the activations as
+
+𝑨
+
+ℓ  ,  h  ;  t
+
+⁢
+
+(  𝑿  )
+
+subscript  𝑨
+
+ℓ  ℎ  𝑡
+
+𝑿
+
+{\bm{A}}_{\ell,h;t}({\bm{X}})  bold_italic_A start_POSTSUBSCRIPT roman_ℓ , italic_h ; italic_t end_POSTSUBSCRIPT ( bold_italic_X )
+
+, representing the activation of head
+
+h
+
+ℎ
+
+h  italic_h
+
+in layer
+
+ℓ
+
+ℓ
+
+\ell  roman_ℓ
+
+, at token position
+
+t
+
+𝑡
+
+t  italic_t
+
+.
+
+2.
+
+Typically, the analysis begins by constructing two sets of prompts which differ in subtle ways. A natural construction in our example is as follows: define sets of samples
+
+𝒟
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+subscript  𝒟
+
+𝑜  𝑟  𝑖  𝑔
+
+\mathcal{D}_{orig}  caligraphic_D start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g end_POSTSUBSCRIPT
+
+and
+
+𝒟
+
+a  ⁢  l  ⁢  t
+
+subscript  𝒟
+
+𝑎  𝑙  𝑡
+
+\mathcal{D}_{alt}  caligraphic_D start_POSTSUBSCRIPT italic_a italic_l italic_t end_POSTSUBSCRIPT
+
+, where
+
+𝑿
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+,  n
+
+subscript  𝑿
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑛
+
+{\bm{X}}_{orig,n}  bold_italic_X start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g , italic_n end_POSTSUBSCRIPT
+
+and
+
+𝑿
+
+a  ⁢  l  ⁢  t
+
+,  n
+
+subscript  𝑿
+
+𝑎  𝑙  𝑡
+
+𝑛
+
+{\bm{X}}_{alt,n}  bold_italic_X start_POSTSUBSCRIPT italic_a italic_l italic_t , italic_n end_POSTSUBSCRIPT
+
+have exactly the same context, except in
+
+𝑿
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+,  n
+
+subscript  𝑿
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑛
+
+{\bm{X}}_{orig,n}  bold_italic_X start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g , italic_n end_POSTSUBSCRIPT
+
+, QUERY is for the LogOp chain, while in
+
+𝑿
+
+a  ⁢  l  ⁢  t
+
+,  n
+
+subscript  𝑿
+
+𝑎  𝑙  𝑡
+
+𝑛
+
+{\bm{X}}_{alt,n}  bold_italic_X start_POSTSUBSCRIPT italic_a italic_l italic_t , italic_n end_POSTSUBSCRIPT
+
+, QUERY is for the linear chain. Moreover, denote the correct targets
+
+y
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+,  n
+
+subscript  𝑦
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑛
+
+y_{orig,n}  italic_y start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g , italic_n end_POSTSUBSCRIPT
+
+and
+
+y
+
+a  ⁢  l  ⁢  t
+
+,  n
+
+subscript  𝑦
+
+𝑎  𝑙  𝑡
+
+𝑛
+
+y_{alt,n}  italic_y start_POSTSUBSCRIPT italic_a italic_l italic_t , italic_n end_POSTSUBSCRIPT
+
+respectively.
+
+3.
+
+We run the LLM on
+
+𝒟
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+subscript  𝒟
+
+𝑜  𝑟  𝑖  𝑔
+
+\mathcal{D}_{orig}  caligraphic_D start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g end_POSTSUBSCRIPT
+
+and
+
+𝒟
+
+a  ⁢  l  ⁢  t
+
+subscript  𝒟
+
+𝑎  𝑙  𝑡
+
+\mathcal{D}_{alt}  caligraphic_D start_POSTSUBSCRIPT italic_a italic_l italic_t end_POSTSUBSCRIPT
+
+, caching the attention-head activations. We also obtain the logits of the model. We can compute the model’s  logit differences
+
+Δ
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+,  n
+
+=
+
+logit  ⁢
+
+(
+
+𝑿
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+,  n
+
+)
+
+⁢
+
+[
+
+y
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+,  n
+
+]
+
+−
+
+logit  ⁢
+
+(
+
+𝑿
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+,  n
+
+)
+
+⁢
+
+[
+
+y
+
+a  ⁢  l  ⁢  t
+
+,  n
+
+]
+
+.
+
+subscript  Δ
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑛
+
+logit
+
+subscript  𝑿
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑛
+
+delimited-[]
+
+subscript  𝑦
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑛
+
+logit
+
+subscript  𝑿
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑛
+
+delimited-[]
+
+subscript  𝑦
+
+𝑎  𝑙  𝑡
+
+𝑛
+
+\Delta_{orig,n}=\text{logit}({\bm{X}}_{orig,n})[y_{orig,n}]-\text{logit}({\bm{%
+X}}_{orig,n})[y_{alt,n}].  roman_Δ start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g , italic_n end_POSTSUBSCRIPT = logit ( bold_italic_X start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g , italic_n end_POSTSUBSCRIPT ) [ italic_y start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g , italic_n end_POSTSUBSCRIPT ] - logit ( bold_italic_X start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g , italic_n end_POSTSUBSCRIPT ) [ italic_y start_POSTSUBSCRIPT italic_a italic_l italic_t , italic_n end_POSTSUBSCRIPT ] .
+
+For a high-accuracy model,
+
+Δ
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+,  n
+
+subscript  Δ
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑛
+
+\Delta_{orig,n}  roman_Δ start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g , italic_n end_POSTSUBSCRIPT
+
+should be  large  for most
+
+n
+
+𝑛
+
+n  italic_n
+
+’s, since it must be able to clearly tell that on an
+
+𝑿
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+,  n
+
+subscript  𝑿
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑛
+
+{\bm{X}}_{orig,n}  bold_italic_X start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g , italic_n end_POSTSUBSCRIPT
+
+, it is the LogOp chain which is being queried, not the linear chain.
+
+4.
+
+We now perform intervention for all
+
+n  ,  ℓ  ,  h
+
+𝑛  ℓ  ℎ
+
+n,\ell,h  italic_n , roman_ℓ , italic_h
+
+and
+
+t
+
+𝑡
+
+t  italic_t
+
+:
+
+nosep
+
+Run the model on
+
+𝑿
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+,  n
+
+subscript  𝑿
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑛
+
+{\bm{X}}_{orig,n}  bold_italic_X start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g , italic_n end_POSTSUBSCRIPT
+
+, however, replacing the original activation
+
+𝑨
+
+ℓ  ,  h  ;  t
+
+⁢
+
+(
+
+𝑿
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+,  n
+
+)
+
+subscript  𝑨
+
+ℓ  ℎ  𝑡
+
+subscript  𝑿
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑛
+
+{\bm{A}}_{\ell,h;t}({\bm{X}}_{orig,n})  bold_italic_A start_POSTSUBSCRIPT roman_ℓ , italic_h ; italic_t end_POSTSUBSCRIPT ( bold_italic_X start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g , italic_n end_POSTSUBSCRIPT )
+
+by the altered
+
+𝑨
+
+ℓ  ,  h  ;  t
+
+⁢
+
+(
+
+𝑿
+
+a  ⁢  l  ⁢  t
+
+,  n
+
+)
+
+subscript  𝑨
+
+ℓ  ℎ  𝑡
+
+subscript  𝑿
+
+𝑎  𝑙  𝑡
+
+𝑛
+
+{\bm{A}}_{\ell,h;t}({\bm{X}}_{alt,n})  bold_italic_A start_POSTSUBSCRIPT roman_ℓ , italic_h ; italic_t end_POSTSUBSCRIPT ( bold_italic_X start_POSTSUBSCRIPT italic_a italic_l italic_t , italic_n end_POSTSUBSCRIPT )
+
+. Now let the rest of the run continue.  2
+
+2  2 Please note that layers
+
+ℓ  +  1
+
+ℓ  1
+
+\ell+1  roman_ℓ + 1
+
+to
+
+L
+
+𝐿
+
+L  italic_L
+
+are influenced at and after token position
+
+t
+
+𝑡
+
+t  italic_t
+
+, and technically speaking, now operate “out of distribution”.
+
+Let us denote the logits obtained in this intervened run as
+
+logit
+
+→
+
+a  ⁢  l  ⁢  t
+
+;
+
+(  ℓ  ,  h  ,  t  )
+
+⁢
+
+(
+
+𝑿
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+,  n
+
+)
+
+superscript
+
+logit
+
+→  absent
+
+𝑎  𝑙  𝑡
+
+ℓ  ℎ  𝑡
+
+subscript  𝑿
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑛
+
+\text{logit}^{\to alt;(\ell,h,t)}({\bm{X}}_{orig,n})  logit start_POSTSUPERSCRIPT → italic_a italic_l italic_t ; ( roman_ℓ , italic_h , italic_t ) end_POSTSUPERSCRIPT ( bold_italic_X start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g , italic_n end_POSTSUBSCRIPT )
+
+.
+
+nosep
+
+Now compute the intervened logit difference
+
+Δ
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+→
+
+a  ⁢  l  ⁢  t
+
+,  n  ;
+
+(  ℓ  ,  h  ,  t  )
+
+=
+
+logit
+
+→
+
+a  ⁢  l  ⁢  t
+
+;
+
+(  ℓ  ,  h  ,  t  )
+
+⁢
+
+(
+
+𝑿
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+,  n
+
+)
+
+⁢
+
+[
+
+y
+
+a  ⁢  l  ⁢  t
+
+,  n
+
+]
+
+−
+
+logit
+
+→
+
+a  ⁢  l  ⁢  t
+
+;
+
+(  ℓ  ,  h  ,  t  )
+
+⁢
+
+(
+
+𝑿
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+,  n
+
+)
+
+⁢
+
+[
+
+y
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+,  n
+
+]
+
+.
+
+subscript  Δ
+
+→
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑎  𝑙  𝑡
+
+𝑛
+
+ℓ  ℎ  𝑡
+
+superscript
+
+logit
+
+→  absent
+
+𝑎  𝑙  𝑡
+
+ℓ  ℎ  𝑡
+
+subscript  𝑿
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑛
+
+delimited-[]
+
+subscript  𝑦
+
+𝑎  𝑙  𝑡
+
+𝑛
+
+superscript
+
+logit
+
+→  absent
+
+𝑎  𝑙  𝑡
+
+ℓ  ℎ  𝑡
+
+subscript  𝑿
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑛
+
+delimited-[]
+
+subscript  𝑦
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑛
+
+\Delta_{orig\to alt,n;(\ell,h,t)}=\text{logit}^{\to alt;(\ell,h,t)}({\bm{X}}_{%
+orig,n})[y_{alt,n}]-\text{logit}^{\to alt;(\ell,h,t)}({\bm{X}}_{orig,n})[y_{%
+orig,n}].  roman_Δ start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g → italic_a italic_l italic_t , italic_n ; ( roman_ℓ , italic_h , italic_t ) end_POSTSUBSCRIPT = logit start_POSTSUPERSCRIPT → italic_a italic_l italic_t ; ( roman_ℓ , italic_h , italic_t ) end_POSTSUPERSCRIPT ( bold_italic_X start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g , italic_n end_POSTSUBSCRIPT ) [ italic_y start_POSTSUBSCRIPT italic_a italic_l italic_t , italic_n end_POSTSUBSCRIPT ] - logit start_POSTSUPERSCRIPT → italic_a italic_l italic_t ; ( roman_ℓ , italic_h , italic_t ) end_POSTSUPERSCRIPT ( bold_italic_X start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g , italic_n end_POSTSUBSCRIPT ) [ italic_y start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g , italic_n end_POSTSUBSCRIPT ] .
+
+5.
+
+Now average the
+
+Δ
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+→
+
+a  ⁢  l  ⁢  t
+
+,  n  ;
+
+(  ℓ  ,  h  ,  t  )
+
+subscript  Δ
+
+→
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑎  𝑙  𝑡
+
+𝑛
+
+ℓ  ℎ  𝑡
+
+\Delta_{orig\to alt,n;(\ell,h,t)}  roman_Δ start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g → italic_a italic_l italic_t , italic_n ; ( roman_ℓ , italic_h , italic_t ) end_POSTSUBSCRIPT
+
+’s over
+
+n
+
+𝑛
+
+n  italic_n
+
+for every
+
+ℓ  ,  h
+
+ℓ  ℎ
+
+\ell,h  roman_ℓ , italic_h
+
+and
+
+t
+
+𝑡
+
+t  italic_t
+
+(recall that
+
+n
+
+𝑛
+
+n  italic_n
+
+is the sample index).
+
+6.
+
+This procedure helps us identify components that are significant in processing and passing the QUERY information for inference. Intuitively, an activation that result in a positive and large
+
+Δ
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+→
+
+a  ⁢  l  ⁢  t
+
+,  n  ;
+
+(  ℓ  ,  t  )
+
+subscript  Δ
+
+→
+
+𝑜  𝑟  𝑖  𝑔
+
+𝑎  𝑙  𝑡
+
+𝑛
+
+ℓ  𝑡
+
+\Delta_{orig\to alt,n;(\ell,t)}  roman_Δ start_POSTSUBSCRIPT italic_o italic_r italic_i italic_g → italic_a italic_l italic_t , italic_n ; ( roman_ℓ , italic_t ) end_POSTSUBSCRIPT
+
+play a significant role in this subtask, because this activation helps “altering” the model’s “belief” from “QUERY is for the LogOp chain” to “QUERY is for the linear chain”.
+
+7.
+
+Remark : due to the symmetry of this running example, it is perfectly sensible to perform
+
+a  ⁢  l  ⁢  t
+
+→
+
+o  ⁢  r  ⁢  i  ⁢  g
+
+→
+
+𝑎  𝑙  𝑡
+
+𝑜  𝑟  𝑖  𝑔
+
+alt\to orig  italic_a italic_l italic_t → italic_o italic_r italic_i italic_g
+
+interventions too, by mirroring the above procedures.
+
+4.3  Circuit analysis
+
+In this section, we discuss properties of the reasoning circuit of Mistral-7B. The order by which we present the results will be from the coarser- to the finer-grained, roughly following the process which we discovered the circuit; we believe this adds greater transparency to the circuit discovery process. We delay the more involved (and complete) set of experimental results to Appendix
+
+C  .
+
+4.3.1  QUERY-based patching: discovering the important attention heads
+
+We initiate our analysis with QUERY patching, following the same procedure as detailed in sub-section
+
+4.2  . In this set of experiments, we discover the main attention heads responsible for processing the context and performing inference as introduced in the beginning of this Section.
+
+(a)  Residual stream patching
+
+(b)  Attention block patching
+
+(c)  MLP patching
+
+Figure 4:  Query patching at the level of residual streams, attention blocks and MLPs. Highly localized processing of QUERY is observed: a sharp transition occurs at layer 13 in (a), and in (b), only a sparse set of attention blocks play a major role in this subtask. Furthermore, (c) shows that the MLPs play a limited role in this subtask (besides MLP0). (Please zoom in for the details)
+
+Why is QUERY-based patching important to reasoning circuit discovery?  To answer this question, there are two points to emphasize first. (1) We know that to solve the reasoning problem, the QUERY token is critical to  initiating  the reasoning chain: without it, the rules and facts are completely useless; with it, the reasoner can then proceed to identify the relevant rules and facts to predict the answer. (2) The prompt pairs differ  only  by the QUERY token. Based on (1) and (2), we know that if performing the aforementioned QUERY-based causal intervention on a model component leads to a large intervened logit difference (i.e. it alters the model’s “belief”), then this component must be integral to the reasoning circuit, because the component is now identified to be QUERY-sensitive  and  has causal influence on (parts of) the model’s reasoning actions.
+
+High-level interventions . We begin by presenting higher-level patching results in Figure
+
+4  , where we intervene at the level of residual streams, attention blocks, and MLPs. We can draw a few insights from these results:
+
+1.
+
+A sharp transition of “QUERY processing” occurs from layer 12 to layer 13 (indexed from 0) in Figure
+
+4  (a) and (b).
+
+2.
+
+Figure
+
+4  (b) shows that a small set of attention blocks are observed to be significant for the “belief altering” action, namely those in layers 9, 12, 13, 14, 16 and 19.
+
+3.
+
+The MLPs, shown in Figure
+
+4  (c), play little role in this circuit, except for MLP-0. However, MLP-0 had been observed to act more as a “nonlinear token embedding” than a complex high-level processing unit  (Wang et al.,  2023 ) . In the rest of this section, we primarily devote our analysis to the attention heads, and leave the exact role of the MLPs to future work.
+
+Remark . In Figure
+
+4
+
+and the rest, we adopt a calibrated version of the logit difference (see Appendix
+
+C  ): the closer to 1, the more significant the component is in “altering” the “belief” of the model on the selected subtask.
+
+Attention-head interventions . Figure
+
+4
+
+helps us locate a small set of attention blocks which are important to the task. However, these results alone still leave us with far too many components to examine in detail. Therefore, we run a set of finer-grained experiments, intervening on the attention heads (over the relevant context). The results are shown in Figure
+
+5  . We find that, interestingly, only a very small set of attention heads are central to the “belief altering” of the LLM. More specifically, in Figure
+
+5  (a), only attention heads (12,9), (13,11), (14,24;26), (16,0;12;14), (17,25), (19,8;9;16) are observed with relatively high intervened logit differences.
+
+Figure 5:  Attention head patching, highlighting the ones with the highest intervened logit difference;
+
+x
+
+𝑥
+
+x  italic_x
+
+-axis is the head index. (a) shows single-head patching, and (b) shows a coarser-grained head patching in groups. In (b), we only highlight the head groups that are not captured well by (a).
+
+We note that  Grouped-Query Attention  used by Mistral-7B adds subtlety to the analysis  3
+
+3  3 In Mistral-7B-v0.1, each attention layer has 8 key and value activations, and 32 query activations. Therefore, heads
+
+(  ℓ  ,
+
+h  ×  4
+
+)
+
+ℓ
+
+ℎ  4
+
+(\ell,h\times 4)  ( roman_ℓ , italic_h × 4 )
+
+to
+
+(  ℓ  ,
+
+h  ×  4
+
++  3
+
+)
+
+ℓ
+
+ℎ  4
+
+3
+
+(\ell,h\times 4+3)  ( roman_ℓ , italic_h × 4 + 3 )
+
+share the same key and value activation.
+
+: patching a single head might not yield a high logit difference since other heads in the same group (which possibly perform a similar function) could overwhelm the patched head and maintain the model’s previous “belief”. Therefore, we also run a  coarser-grained  experiment which simultaneously patches the attention heads sharing the same key and value activations, shown in Figure
+
+5  (b). This experiment reveals that heads belonging to the group (9, 24 - 27) also have high intervened logit difference.
+
+4.3.2  Finer examinations of the attention heads
+
+Attention-head sub-component patching (QUERY-based patching).  We now aim to understand why the attention heads identified in the last sub-section are important. For now, we continue with QUERY altering in the prompt pairs. Through intervening on the sub-components of each attention head, namely their value, key, and query, and through examining details of their attention weights, we find that there are roughly four types of attention heads. We show the results in Figure
+
+6  :
+
+1.
+
+Queried-rule locating head . Attention head (12,9)’s  query  activation has a large intervened logit difference according to Figure
+
+6  (a), therefore, its query and attention patterns are QUERY-dependent and contribute to altering the model’s “belief”. Furthermore, at the QUERY position, we find that  on average , its attention weight is above 90% at the “conclusion” variable of the rule being queried. In other words, it is responsible for  locating  the queried rule, and storing that rule’s information at the QUERY position.  4
+
+4  4 (9,25;26), (14,24;26) exhibit similar tendencies, albeit with smaller intervened logit differences.
+
+2.
+
+Queried-rule mover head . Attention head (13,11)’s  value  activations have large intervened logit difference, and intriguingly, its query and key activations do  not  share that tendency. This already suggests that its attention pattern performs a fixed action on both the original and altered prompts, and only the value information is sensitive to QUERY. Furthermore, within the relevant context (excluding the 6 in-context examples given), head (13,11) assigns above 50% attention weight to the QUERY position, and its attention weight at QUERY is about 10 times larger than the second largest one on average. Recalling the role of layer 12, we find evidence that head (13,11) moves the QUERY and queried-rule information to the “:” position.  5
+
+5  5 (15,8), (16,0) also appear to belong to this type, albeit with smaller intervened logit difference.
+
+3.
+
+Fact processing heads . Attention heads (16,12;14)’s  query  activations have large intervened logit differences. Within the relevant context, they place greater than 56%, and 70% of their attention respectively in the fact section of the context (starting from “Fact” and ending on “.” before “Question”).
+
+4.
+
+Decision head . Attention head (19,8)’s query activations have large intervened logit differences. Its attention pattern suggests that it is a “decision” head: within the relevant context, when the model is  correct , the head’s top-2 attention weights are always on the correct starting node of the queried rule and the correct variable in the fact section, and the two token positions occupy more than 60% of its total attention in the relevant context on average. In other words, it already has the answer.  6
+
+6  6 (17,25), (19,9;16) exhibit similar tendencies, albeit with smaller intervened logit differences.
+
+Figure 6:  Patching of query and value activations in (a) and (c); we found that intervening the key activations only yield trivial scores, so we do not report them here. We show in (b) the typical attention patterns of a representative set of the attention heads which are identified to be important in the intervention experiments shown in (a) and (c). There are several distinct observations which can be made in (b).  Queried-rule locating head (12,9) : observe that it correctly locates the queried rule which ends with  Q .  Queried-rule mover head (13,11) : the only token position which it focuses on is the QUERY token  Q .  Fact processing head (16,14) : attention concentrates in the fact section.  Decision head (19,8) : attention focused on the correct first answer token  K .
+
+Due to space limits,  we delay our more involved experiments to Appendix
+
+C
+
+, including closer inspection of the attention patterns of the attention head families (App.
+
+C.2.2  ), and further insights and validating evidence for the queried-rule locating heads (App.
+
+C.3  ) and the fact-processing and decision heads (App.
+
+C.4  ).
+
+5  Conclusion
+
+We studied the reasoning mechanisms of both small transformers and LLMs on a synthetic propositional logic problem. We analyzed a shallow decoder-only attention-only transformer trained purely on this problem as well as a pretrained Mistral-7B LLM. We uncovered interesting mechanisms the small and large transformers adopt to solve the problem. For the small models, we found the existence of “routing” signals that significantly alter the model’s reasoning pathway depending on the sub-category of the problem instance. For Mistral-7B, we found four families of attention heads that implement the reasoning pathway of “QUERY
+
+→
+
+→
+
+\to  →
+
+Relevant Rule
+
+→
+
+→
+
+\to  →
+
+Relevant Facts
+
+→
+
+→
+
+\to  →
+
+Decision”. These findings provide valuable insights into the inner workings of LLMs on mathematical reasoning problems.
+
+In future work, we plan to expand our analysis to uncover possibly greater families of model components which are important to an LLM’s reasoning circuit on simple logic problems resembling the one in this paper. We also plan to investigate if similar circuits are employed when an LLM solves GSM-like problems. Finally, we are interested in understanding the circuit in architecturally different LLMs such Mistral 8x7B, which uses mixture of experts.
+
+References
+
+Brinkmann et al. (2024)
+
+Jannik Brinkmann, Abhay Sheshadri, Victor Levoso, Paul Swoboda, and Christian Bartelt.
+
+A mechanistic analysis of a transformer trained on a symbolic multi-step reasoning task.
+
+In Lun-Wei Ku, Andre Martins, and Vivek Srikumar (eds.),  Findings of the Association for Computational Linguistics ACL 2024 , pp.  4082–4102, Bangkok, Thailand and virtual meeting, August 2024. Association for Computational Linguistics.
+
+doi:  10.18653/v1/2024.findings-acl.242 .
+
+URL  https://aclanthology.org/2024.findings-acl.242 .
+
+Brown et al. (2020)
+
+Tom B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel M. Ziegler, Jeffrey Wu, Clemens Winter, Christopher Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray, Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford, Ilya Sutskever, and Dario Amodei.
+
+Language models are few-shot learners.
+
+In  NeurIPS , 2020.
+
+Chen et al. (2024)
+
+Xinyun Chen, Ryan A. Chi, Xuezhi Wang, and Denny Zhou.
+
+Premise order matters in reasoning with large language models, 2024.
+
+URL  https://arxiv.org/abs/2402.08939 .
+
+Dziri et al. (2024)
+
+Nouha Dziri, Ximing Lu, Melanie Sclar, Xiang Lorraine Li, Liwei Jiang, Bill Yuchen Lin, Sean Welleck, Peter West, Chandra Bhagavatula, Ronan Le Bras, et al.
+
+Faith and fate: Limits of transformers on compositionality.
+
+Advances in Neural Information Processing Systems , 36, 2024.
+
+Elhage et al. (2021)
+
+Nelson Elhage, Neel Nanda, Catherine Olsson, Tom Henighan, Nicholas Joseph, Ben Mann, Amanda Askell, Yuntao Bai, Anna Chen, Tom Conerly, Nova DasSarma, Dawn Drain, Deep Ganguli, Zac Hatfield-Dodds, Danny Hernandez, Andy Jones, Jackson Kernion, Liane Lovitt, Kamal Ndousse, Dario Amodei, Tom Brown, Jack Clark, Jared Kaplan, Sam McCandlish, and Chris Olah.
+
+A mathematical framework for transformer circuits.
+
+Transformer Circuits Thread , 2021.
+
+https://transformer-circuits.pub/2021/framework/index.html.
+
+Feng &amp; Steinhardt (2024)
+
+Jiahai Feng and Jacob Steinhardt.
+
+How do language models bind entities in context?
+
+In  The Twelfth International Conference on Learning Representations , 2024.
+
+URL  https://openreview.net/forum?id=zb3b6oKO77 .
+
+Feng et al. (2024)
+
+Jiahai Feng, Stuart Russell, and Jacob Steinhardt.
+
+Monitoring latent world states in language models with propositional probes, 2024.
+
+URL  https://arxiv.org/abs/2406.19501 .
+
+Han et al. (2024)
+
+Simeng Han, Hailey Schoelkopf, Yilun Zhao, Zhenting Qi, Martin Riddell, Wenfei Zhou, James Coady, David Peng, Yujie Qiao, Luke Benson, Lucy Sun, Alex Wardle-Solano, Hannah Szabo, Ekaterina Zubova, Matthew Burtell, Jonathan Fan, Yixin Liu, Brian Wong, Malcolm Sailor, Ansong Ni, Linyong Nan, Jungo Kasai, Tao Yu, Rui Zhang, Alexander R. Fabbri, Wojciech Kryscinski, Semih Yavuz, Ye Liu, Xi Victoria Lin, Shafiq Joty, Yingbo Zhou, Caiming Xiong, Rex Ying, Arman Cohan, and Dragomir Radev.
+
+Folio: Natural language reasoning with first-order logic, 2024.
+
+URL  https://arxiv.org/abs/2209.00840 .
+
+Hanna et al. (2024)
+
+Michael Hanna, Ollie Liu, and Alexandre Variengien.
+
+How does gpt-2 compute greater-than? interpreting mathematical abilities in a pre-trained language model.
+
+In  Proceedings of the 37th International Conference on Neural Information Processing Systems , NIPS ’23, Red Hook, NY, USA, 2024. Curran Associates Inc.
+
+Hase et al. (2024)
+
+Peter Hase, Mohit Bansal, Been Kim, and Asma Ghandeharioun.
+
+Does localization inform editing? surprising differences in causality-based localization vs. knowledge editing in language models.
+
+In  Proceedings of the 37th International Conference on Neural Information Processing Systems , NIPS ’23, Red Hook, NY, USA, 2024. Curran Associates Inc.
+
+Heimersheim &amp; Nanda (2024)
+
+Stefan Heimersheim and Neel Nanda.
+
+How to use and interpret activation patching, 2024.
+
+URL  https://arxiv.org/abs/2404.15255 .
+
+Hendrycks et al. (2021)
+
+Dan Hendrycks, Collin Burns, Saurav Kadavath, Akul Arora, Steven Basart, Eric Tang, Dawn Song, and Jacob Steinhardt.
+
+Measuring mathematical problem solving with the math dataset.
+
+arXiv preprint arXiv:2103.03874 , 2021.
+
+Luo et al. (2024)
+
+Man Luo, Shrinidhi Kumbhar, Ming shen, Mihir Parmar, Neeraj Varshney, Pratyay Banerjee, Somak Aditya, and Chitta Baral.
+
+Towards logiglue: A brief survey and a benchmark for analyzing logical reasoning capabilities of language models, 2024.
+
+URL  https://arxiv.org/abs/2310.00836 .
+
+McGrath et al. (2023)
+
+Thomas McGrath, Matthew Rahtz, Janos Kramar, Vladimir Mikulik, and Shane Legg.
+
+The hydra effect: Emergent self-repair in language model computations, 2023.
+
+URL  https://arxiv.org/abs/2307.15771 .
+
+Meng et al. (2022)
+
+Kevin Meng, David Bau, Alex J Andonian, and Yonatan Belinkov.
+
+Locating and editing factual associations in GPT.
+
+In Alice H. Oh, Alekh Agarwal, Danielle Belgrave, and Kyunghyun Cho (eds.),  Advances in Neural Information Processing Systems , 2022.
+
+URL  https://openreview.net/forum?id=-h6WAS6eE4 .
+
+Merullo et al. (2024)
+
+Jack Merullo, Carsten Eickhoff, and Ellie Pavlick.
+
+Circuit component reuse across tasks in transformer language models.
+
+In  The Twelfth International Conference on Learning Representations , 2024.
+
+URL  https://openreview.net/forum?id=fpoAYV6Wsk .
+
+Morishita et al. (2023)
+
+Terufumi Morishita, Gaku Morio, Atsuki Yamaguchi, and Yasuhiro Sogawa.
+
+Learning deductive reasoning from synthetic corpus based on formal logic.
+
+In Andreas Krause, Emma Brunskill, Kyunghyun Cho, Barbara Engelhardt, Sivan Sabato, and Jonathan Scarlett (eds.),  Proceedings of the 40th International Conference on Machine Learning , volume 202 of  Proceedings of Machine Learning Research , pp.  25254–25274. PMLR, 23–29 Jul 2023.
+
+URL  https://proceedings.mlr.press/v202/morishita23a.html .
+
+Olsson et al. (2022)
+
+Catherine Olsson, Nelson Elhage, Neel Nanda, Nicholas Joseph, Nova DasSarma, Tom Henighan, Ben Mann, Amanda Askell, Yuntao Bai, Anna Chen, Tom Conerly, Dawn Drain, Deep Ganguli, Zac Hatfield-Dodds, Danny Hernandez, Scott Johnston, Andy Jones, Jackson Kernion, Liane Lovitt, Kamal Ndousse, Dario Amodei, Tom Brown, Jack Clark, Jared Kaplan, Sam McCandlish, and Chris Olah.
+
+In-context learning and induction heads.
+
+Transformer Circuits Thread , 2022.
+
+https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html.
+
+Patel et al. (2024)
+
+Nisarg Patel, Mohith Kulkarni, Mihir Parmar, Aashna Budhiraja, Mutsumi Nakamura, Neeraj Varshney, and Chitta Baral.
+
+Multi-logieval: Towards evaluating multi-step logical reasoning ability of large language models, 2024.
+
+URL  https://arxiv.org/abs/2406.17169 .
+
+Radford et al. (2019a)
+
+Alec Radford, Jeff Wu, Rewon Child, David Luan, Dario Amodei, and Ilya Sutskever.
+
+Language models are unsupervised multitask learners.
+
+2019a.
+
+URL  https://api.semanticscholar.org/CorpusID:160025533 .
+
+Radford et al. (2019b)
+
+Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever, et al.
+
+Language models are unsupervised multitask learners.
+
+OpenAI blog , 1(8):9, 2019b.
+
+Saparov &amp; He (2023)
+
+Abulhair Saparov and He He.
+
+Language models are greedy reasoners: A systematic formal analysis of chain-of-thought.
+
+In  The Eleventh International Conference on Learning Representations , 2023.
+
+URL  https://openreview.net/forum?id=qFVVBzXxR2V .
+
+Saparov et al. (2024)
+
+Abulhair Saparov, Richard Yuanzhe Pang, Vishakh Padmakumar, Nitish Joshi, Seyed Mehran Kazemi, Najoung Kim, and He He.
+
+Testing the general deductive reasoning capacity of large language models using ood examples.
+
+In  Proceedings of the 37th International Conference on Neural Information Processing Systems , NIPS ’23, Red Hook, NY, USA, 2024. Curran Associates Inc.
+
+Seals &amp; Shalin (2024)
+
+S Seals and Valerie Shalin.
+
+Evaluating the deductive competence of large language models.
+
+In Kevin Duh, Helena Gomez, and Steven Bethard (eds.),  Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers) , pp.  8614–8630, Mexico City, Mexico, June 2024. Association for Computational Linguistics.
+
+doi:  10.18653/v1/2024.naacl-long.476 .
+
+URL  https://aclanthology.org/2024.naacl-long.476 .
+
+Singh et al. (2024)
+
+Chandan Singh, Jeevana Priya Inala, Michel Galley, Rich Caruana, and Jianfeng Gao.
+
+Rethinking interpretability in the era of large language models, 2024.
+
+URL  https://arxiv.org/abs/2402.01761 .
+
+Tafjord et al. (2021)
+
+Oyvind Tafjord, Bhavana Dalvi, and Peter Clark.
+
+ProofWriter: Generating implications, proofs, and abductive statements over natural language.
+
+In Chengqing Zong, Fei Xia, Wenjie Li, and Roberto Navigli (eds.),  Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021 , pp.  3621–3634, Online, August 2021. Association for Computational Linguistics.
+
+doi:  10.18653/v1/2021.findings-acl.317 .
+
+URL  https://aclanthology.org/2021.findings-acl.317 .
+
+Vaswani et al. (2017)
+
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
+
+Attention is all you need.
+
+In  NIPS , 2017.
+
+Vig et al. (2020)
+
+Jesse Vig, Sebastian Gehrmann, Yonatan Belinkov, Sharon Qian, Daniel Nevo, Yaron Singer, and Stuart Shieber.
+
+Investigating gender bias in language models using causal mediation analysis.
+
+In H. Larochelle, M. Ranzato, R. Hadsell, M.F. Balcan, and H. Lin (eds.),  Advances in Neural Information Processing Systems , volume 33, pp.  12388–12401. Curran Associates, Inc., 2020.
+
+URL  https://proceedings.neurips.cc/paper_files/paper/2020/file/92650b2e92217715fe312e6fa7b90d82-Paper.pdf .
+
+Wang et al. (2023)
+
+Kevin Ro Wang, Alexandre Variengien, Arthur Conmy, Buck Shlegeris, and Jacob Steinhardt.
+
+Interpretability in the wild: a circuit for indirect object identification in GPT-2 small.
+
+In  The Eleventh International Conference on Learning Representations , 2023.
+
+URL  https://openreview.net/forum?id=NpsVSN6o4ul .
+
+Wu et al. (2023)
+
+Zhengxuan Wu, Atticus Geiger, Thomas Icard, Christopher Potts, and Noah Goodman.
+
+Interpretability at scale: Identifying causal mechanisms in alpaca.
+
+In  Thirty-seventh Conference on Neural Information Processing Systems , 2023.
+
+URL  https://openreview.net/forum?id=nRfClnMhVX .
+
+Xue et al. (2024)
+
+Anton Xue, Avishree Khare, Rajeev Alur, Surbhi Goel, and Eric Wong.
+
+Logicbreaks: A framework for understanding subversion of rule-based inference, 2024.
+
+URL  https://arxiv.org/abs/2407.00075 .
+
+Yang et al. (2024)
+
+Sohee Yang, Elena Gribovskaya, Nora Kassner, Mor Geva, and Sebastian Riedel.
+
+Do large language models latently perform multi-hop reasoning?
+
+In Lun-Wei Ku, Andre Martins, and Vivek Srikumar (eds.),  Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) , pp.  10210–10229, Bangkok, Thailand, August 2024. Association for Computational Linguistics.
+
+doi:  10.18653/v1/2024.acl-long.550 .
+
+URL  https://aclanthology.org/2024.acl-long.550 .
+
+Ye et al. (2024)
+
+Tian Ye, Zicheng Xu, Yuanzhi Li, and Zeyuan Allen-Zhu.
+
+Physics of language models: Part 2.1, grade-school math and the hidden reasoning process, 2024.
+
+URL  https://arxiv.org/abs/2407.20311 .
+
+Zečević et al. (2023)
+
+Matej Zečević, Moritz Willig, Devendra Singh Dhami, and Kristian Kersting.
+
+Causal parrots: Large language models may talk causality but are not causal.
+
+Transactions on Machine Learning Research , 2023.
+
+ISSN 2835-8856.
+
+URL  https://openreview.net/forum?id=tv46tCzs83 .
+
+Zhang &amp; Nanda (2024)
+
+Fred Zhang and Neel Nanda.
+
+Towards best practices of activation patching in language models: Metrics and methods.
+
+In  ICLR , 2024.
+
+Zhang et al. (2023)
+
+Honghua Zhang, Liunian Harold Li, Tao Meng, Kai-Wei Chang, and Guy Van Den Broeck.
+
+On the paradox of learning to reason from data.
+
+In  Proceedings of the Thirty-Second International Joint Conference on Artificial Intelligence , IJCAI ’23, 2023.
+
+ISBN 978-1-956792-03-4.
+
+doi:  10.24963/ijcai.2023/375 .
+
+URL  https://doi.org/10.24963/ijcai.2023/375 .
+
+Appendix
+
+Contents
+
+1  Introduction
+
+1.1  Related works
+
+2  Data model: a propositional logic problem
+
+3  Mechanisms of planning and reasoning: a case study of the length-3 problem
+
+3.1  Learner: a decoder-only attention-only transformer
+
+3.2  Mechanism analysis
+
+3.2.1  Linear or LogOp chain: routing signal at the QUERY position
+
+3.2.2  Answer for the linear chain
+
+3.2.3  Answer for the LogOp chain
+
+4  The reasoning circuit in Mistral-7B
+
+4.1  Minimal problem description
+
+4.2  Causal mediation analysis
+
+4.3  Circuit analysis
+
+4.3.1  QUERY-based patching: discovering the important attention heads
+
+4.3.2  Finer examinations of the attention heads
+
+5  Conclusion
+
+A  Propositional logic problem and examples
+
+B  Length-3 small transformer study: experimental details
+
+B.1  Data definition and examples
+
+B.2  Small-transformer characteristics, and training details
+
+B.2.1  Transformer definition
+
+B.2.2  Training details
+
+B.3  Answer for the LogOp Chain
+
+B.4  Extra remarks
+
+C  Mistral-7B experiment details
+
+C.1  Problem format
+
+C.2  Finer details of query-based activation patching
+
+C.2.1  QUERY-based activation patching experiments: metrics
+
+C.2.2  Attention patterns of QUERY-sensitive attention heads
+
+C.3  Queried-rule location interventions: analyzing the queried-rule locating heads
+
+C.4  Facts interventions: analyzing the fact-processing and decision heads
+
+Appendix A  Propositional logic problem and examples
+
+In this section, we provide a more detailed description of the propositional logic problem we study in this paper, and list representative examples of the problem.
+
+At its core, the propositional logic problem requires the reasoner to (1) distinguish which chain type is being queried (LogOp or linear), and (2) if it is the LogOp chain being queried, the reasoner must know what truth value the logic operator outputs based on the two input truth values.
+
+Below we provide a comprehensive list of representative examples of our logic problem at length 2 (i.e. each chain is formed by one rule). We use [Truth values] to denote the relevant input truth value assignments (i.e. relevant facts) to the chain being queried below.
+
+1.
+
+Linear chain queried, [True]
+
+•
+
+Rules : A or B implies C.  D implies E .
+
+•
+
+Facts : A is true. B is true.  D is true .
+
+•
+
+Question : what is the truth value of C?
+
+•
+
+Answer : D true. D implies E; E True.
+
+2.
+
+Linear chain queried, [False]
+
+•
+
+Rules : A or B implies C.  D implies E .
+
+•
+
+Facts : A is true. B is true.  D is false .
+
+•
+
+Question : what is the truth value of C?
+
+•
+
+Answer : D false. D implies E; E undetermined.
+
+3.
+
+LogOp chain queried, LogOp = OR, [True, True]
+
+•
+
+Rules : A  or  B implies C. D implies E.
+
+•
+
+Facts :  A is true. B is true.  D is true.
+
+•
+
+Question : what is the truth value of C?
+
+•
+
+Answer : B true. A or B implies C; C True.
+
+Remark
+
+.
+
+In this case, the answer “A true. A or B implies C; C True” is also correct.
+
+4.
+
+LogOp chain queried, LogOp = OR, [True, False]
+
+•
+
+Rules : A  or  B implies C. D implies E.
+
+•
+
+Facts :  A is true. B is false.  D is true.
+
+•
+
+Question : what is the truth value of C?
+
+•
+
+Answer : A true. A or B imples C; C True.
+
+5.
+
+LogOp chain queried, LogOp = OR, [False, False]
+
+•
+
+Rules : A  or  B implies C. D implies E.
+
+•
+
+Facts :  A is false. B is false.  D is true.
+
+•
+
+Question : what is the truth value of C?
+
+•
+
+Answer : A false B false. A or B implies C; C undetermined.
+
+6.
+
+LogOp chain queried, LogOp = AND, [True, True]
+
+•
+
+Rules : A  and  B implies C. D implies E.
+
+•
+
+Facts :  A is true. B is true.  D is true.
+
+•
+
+Question : what is the truth value of C?
+
+•
+
+Answer : A true B true. A and B implies C; C True.
+
+7.
+
+LogOp chain queried, LogOp = AND, [True, False]
+
+•
+
+Rules : A  and  B implies C. D implies E.
+
+•
+
+Facts :  A is true. B is false.  D is true.
+
+•
+
+Question : what is the truth value of C?
+
+•
+
+Answer : B false. A and B implies C; C undetermined.
+
+8.
+
+LogOp chain queried, LogOp = AND, [False, False]
+
+•
+
+Rules : A  and  B implies C. D implies E.
+
+•
+
+Facts :  A is false. B is false.  D is true.
+
+•
+
+Question : what is the truth value of C?
+
+•
+
+Answer : A false. A and B implies C; C undetermined.
+
+Remark
+
+.
+
+In this case, the answer “B false. A and B implies C; C undetermined” is also correct.
+
+The length-3 case is a simple generalization of this set of examples, so we do not cover those examples here.
+
+Appendix B  Length-3 small transformer study: experimental details
+
+B.1  Data definition and examples
+
+As illustrated in Figure
+
+1  , the propositional logic problem always involve one logical-operator (LogOp) chain and one linear chain. In this paper, we study the length-3 case for the small-transformer setting, and length-2 case for the Mistral-7B-v0.1 case.
+
+The input context has the following form:
+
+RULES_START K implies D. V implies E. D or E implies A.
+P implies T. T implies S. RULES_END
+FACTS_START K TRUE. V FALSE. P TRUE. FACTS_END
+QUERY_START A. QUERY_END
+ANSWER
+
+and the answer is written as
+
+K TRUE. K implies D; D TRUE. D or E implies A; A TRUE.
+
+In terms the the English-to-token mapping,  RULES_START ,  RULES_END ,  FACTS_START ,  FACTS_END ,  QUERY_START ,  QUERY_END
+
+ANSWER ,  .  and  ;  are all unique single tokens. The logical operators  and  and  or  and the connective  implies  are unique single tokens. The proposition variables are also unique single tokens.
+
+Remark
+
+.
+
+The rules and facts are presented in a  random  order in the respective sections of the context in all of our experiments unless otherwise specified. This prevents the model from adopting position-based shortcuts in solving the problem.
+
+Additionally, for more clarity, it is entirely possible to run into the scenario where the LogOp chain is queried, LogOp = OR and the two relevant facts both have FALSE truth values (or LogOp = AND and both relevant facts are TRUE), in which case the answer is not unique. For instance, if in the above example, both  K  and  V  are assigned  FALSE , then both answers below are logically correct:
+
+K FALSE V FALSE. K implies D; D UNDETERMINED. V implies E;
+E UNDETERMINED. D or E implies A; A UNDETERMINED.
+
+and
+
+V FALSE K FALSE.  V implies E; E UNDETERMINED.
+K implies D; D UNDETERMINED. D or E implies A; A UNDETERMINED.
+
+Problem specification . In each logic problem instance, the proposition variables are randomly sampled from a pool of 80 variables (tokens). The truth values in the fact section are also randomly chosen. In the training set, the linear chain is queried 20% of the time; the LogOp chain is queried 80% of the time. We train every model on 2 million samples.
+
+Architecture choice . Figure
+
+7
+
+indicates the reasoning accuracies of several candidate model variants. We observe that the 3-layer 3-head variant is the smallest model which achieves 100% accuracy. We found that 3-layer 2-head models, trained of some random seeds, do converge and obtain near 100% in accuracy (typically above 97%), however, they sometimes  fail  to converge. The 3-layer 3-head variants we trained (3 random seeds) all converged successfully.
+
+Figure 7:  Reasoning accuracies of several models on the length-3 problem. x-axis: model architecture (number of layers, number of heads); y-axis: reasoning accuracy. Note that the 3-layer 3-head variant is the smallest which obtains 100% accuracy on the logic problems.
+
+B.2  Small-transformer characteristics, and training details
+
+B.2.1  Transformer definition
+
+The architecture definition follows that of GPT-2 closely.
+
+Define input
+
+𝒙  =
+
+(
+
+x  1
+
+,
+
+x  2
+
+,  …  ,
+
+x  t
+
+)
+
+∈
+
+ℕ  t
+
+𝒙
+
+subscript  𝑥  1
+
+subscript  𝑥  2
+
+…
+
+subscript  𝑥  𝑡
+
+superscript  ℕ  𝑡
+
+{\bm{x}}=(x_{1},x_{2},...,x_{t})\in\mathbb{N}^{t}  bold_italic_x = ( italic_x start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT , italic_x start_POSTSUBSCRIPT 2 end_POSTSUBSCRIPT , … , italic_x start_POSTSUBSCRIPT italic_t end_POSTSUBSCRIPT ) ∈ blackboard_N start_POSTSUPERSCRIPT italic_t end_POSTSUPERSCRIPT
+
+, a sequence of tokens with length
+
+t
+
+𝑡
+
+t  italic_t
+
+. It is converted into a sequence of (trainable) token embeddings
+
+𝑿
+
+t  ⁢  o  ⁢  k  ⁢  e  ⁢  n
+
+=
+
+(
+
+𝒆  ⁢
+
+(
+
+x  1
+
+)
+
+,
+
+𝒆  ⁢
+
+(
+
+x  2
+
+)
+
+,  …  ,
+
+𝒆  ⁢
+
+(
+
+x  t
+
+)
+
+)
+
+∈
+
+ℝ
+
+d
+
+i  ⁢  n
+
+×  t
+
+subscript  𝑿
+
+𝑡  𝑜  𝑘  𝑒  𝑛
+
+𝒆
+
+subscript  𝑥  1
+
+𝒆
+
+subscript  𝑥  2
+
+…
+
+𝒆
+
+subscript  𝑥  𝑡
+
+superscript  ℝ
+
+subscript  𝑑
+
+𝑖  𝑛
+
+𝑡
+
+{\bm{X}}_{token}=({\bm{e}}(x_{1}),{\bm{e}}(x_{2}),...,{\bm{e}}(x_{t}))\in%
+\mathbb{R}^{d_{in}\times t}  bold_italic_X start_POSTSUBSCRIPT italic_t italic_o italic_k italic_e italic_n end_POSTSUBSCRIPT = ( bold_italic_e ( italic_x start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT ) , bold_italic_e ( italic_x start_POSTSUBSCRIPT 2 end_POSTSUBSCRIPT ) , … , bold_italic_e ( italic_x start_POSTSUBSCRIPT italic_t end_POSTSUBSCRIPT ) ) ∈ blackboard_R start_POSTSUPERSCRIPT italic_d start_POSTSUBSCRIPT italic_i italic_n end_POSTSUBSCRIPT × italic_t end_POSTSUPERSCRIPT
+
+. Adding to it the (trainable) positional embeddings
+
+𝑷  =
+
+(
+
+𝒑  1
+
+,
+
+𝒑  2
+
+,  …  ,
+
+𝒑  t
+
+)
+
+∈
+
+ℝ
+
+d
+
+i  ⁢  n
+
+×  t
+
+𝑷
+
+subscript  𝒑  1
+
+subscript  𝒑  2
+
+…
+
+subscript  𝒑  𝑡
+
+superscript  ℝ
+
+subscript  𝑑
+
+𝑖  𝑛
+
+𝑡
+
+{\bm{P}}=({\bm{p}}_{1},{\bm{p}}_{2},...,{\bm{p}}_{t})\in\mathbb{R}^{d_{in}%
+\times t}  bold_italic_P = ( bold_italic_p start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT , bold_italic_p start_POSTSUBSCRIPT 2 end_POSTSUBSCRIPT , … , bold_italic_p start_POSTSUBSCRIPT italic_t end_POSTSUBSCRIPT ) ∈ blackboard_R start_POSTSUPERSCRIPT italic_d start_POSTSUBSCRIPT italic_i italic_n end_POSTSUBSCRIPT × italic_t end_POSTSUPERSCRIPT
+
+, we form the zero-th layer embedding of the transformer
+
+𝑿  0
+
+=
+
+(
+
+𝒆  ⁢
+
+(
+
+x  1
+
+)
+
++
+
+𝒑  1
+
+,  …  ,
+
+𝒆  ⁢
+
+(
+
+x  t
+
+)
+
++
+
+𝒑  t
+
+)
+
+subscript  𝑿  0
+
+𝒆
+
+subscript  𝑥  1
+
+subscript  𝒑  1
+
+…
+
+𝒆
+
+subscript  𝑥  𝑡
+
+subscript  𝒑  𝑡
+
+{\bm{X}}_{0}=({\bm{e}}(x_{1})+{\bm{p}}_{1},...,{\bm{e}}(x_{t})+{\bm{p}}_{t})  bold_italic_X start_POSTSUBSCRIPT 0 end_POSTSUBSCRIPT = ( bold_italic_e ( italic_x start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT ) + bold_italic_p start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT , … , bold_italic_e ( italic_x start_POSTSUBSCRIPT italic_t end_POSTSUBSCRIPT ) + bold_italic_p start_POSTSUBSCRIPT italic_t end_POSTSUBSCRIPT )
+
+. The input is processed by the attention blocks as follows.
+
+Let the model have
+
+L
+
+𝐿
+
+L  italic_L
+
+layers and
+
+H
+
+𝐻
+
+H  italic_H
+
+heads. For layer index
+
+ℓ  ∈
+
+[  L  ]
+
+ℓ
+
+delimited-[]  𝐿
+
+\ell\in[L]  roman_ℓ ∈ [ italic_L ]
+
+and head index
+
+j  ∈
+
+[  H  ]
+
+𝑗
+
+delimited-[]  𝐻
+
+j\in[H]  italic_j ∈ [ italic_H ]
+
+, attention head
+
+𝒜
+
+ℓ  ,  j
+
+subscript  𝒜
+
+ℓ  𝑗
+
+\mathcal{A}_{\ell,j}  caligraphic_A start_POSTSUBSCRIPT roman_ℓ , italic_j end_POSTSUBSCRIPT
+
+is computed by
+
+𝒜
+
+ℓ  ,  j
+
+⁢
+
+(
+
+𝑿
+
+ℓ  −  1
+
+)
+
+=
+
+𝒮  ⁢
+
+(
+
+causal  ⁢
+
+[
+
+𝑿  ~
+
+ℓ  −  1
+
+⁢
+
+𝑸
+
+ℓ  ,  j
+
+T
+
+⁢
+
+𝑲
+
+ℓ  ,  j
+
+⁢
+
+𝑿  ~
+
+ℓ  −  1
+
+T
+
+]
+
+/
+
+d  H
+
+)
+
+⁢
+
+𝑿  ~
+
+ℓ  −  1
+
+⁢
+
+𝑽  ℓ  T
+
+subscript  𝒜
+
+ℓ  𝑗
+
+subscript  𝑿
+
+ℓ  1
+
+𝒮
+
+causal
+
+delimited-[]
+
+subscript
+
+~  𝑿
+
+ℓ  1
+
+superscript
+
+subscript  𝑸
+
+ℓ  𝑗
+
+𝑇
+
+subscript  𝑲
+
+ℓ  𝑗
+
+superscript
+
+subscript
+
+~  𝑿
+
+ℓ  1
+
+𝑇
+
+subscript  𝑑  𝐻
+
+subscript
+
+~  𝑿
+
+ℓ  1
+
+superscript
+
+subscript  𝑽  ℓ
+
+𝑇
+
+\mathcal{A}_{\ell,j}({\bm{X}}_{\ell-1})=\mathcal{S}\left(\text{causal}\left[%
+\tilde{{\bm{X}}}_{\ell-1}{\bm{Q}}_{\ell,j}^{T}{\bm{K}}_{\ell,j}\tilde{{\bm{X}}%
+}_{\ell-1}^{T}\right]/\sqrt{d_{H}}\right)\tilde{{\bm{X}}}_{\ell-1}{\bm{V}}_{%
+\ell}^{T}  caligraphic_A start_POSTSUBSCRIPT roman_ℓ , italic_j end_POSTSUBSCRIPT ( bold_italic_X start_POSTSUBSCRIPT roman_ℓ - 1 end_POSTSUBSCRIPT ) = caligraphic_S ( causal [ over~ start_ARG bold_italic_X end_ARG start_POSTSUBSCRIPT roman_ℓ - 1 end_POSTSUBSCRIPT bold_italic_Q start_POSTSUBSCRIPT roman_ℓ , italic_j end_POSTSUBSCRIPT start_POSTSUPERSCRIPT italic_T end_POSTSUPERSCRIPT bold_italic_K start_POSTSUBSCRIPT roman_ℓ , italic_j end_POSTSUBSCRIPT over~ start_ARG bold_italic_X end_ARG start_POSTSUBSCRIPT roman_ℓ - 1 end_POSTSUBSCRIPT start_POSTSUPERSCRIPT italic_T end_POSTSUPERSCRIPT ] / square-root start_ARG italic_d start_POSTSUBSCRIPT italic_H end_POSTSUBSCRIPT end_ARG ) over~ start_ARG bold_italic_X end_ARG start_POSTSUBSCRIPT roman_ℓ - 1 end_POSTSUBSCRIPT bold_italic_V start_POSTSUBSCRIPT roman_ℓ end_POSTSUBSCRIPT start_POSTSUPERSCRIPT italic_T end_POSTSUPERSCRIPT
+
+, with
+
+𝑿  ~
+
+ℓ  −  1
+
+=
+
+LayerNorm  ⁢
+
+(
+
+𝑿
+
+ℓ  −  1
+
+)
+
+subscript
+
+~  𝑿
+
+ℓ  1
+
+LayerNorm
+
+subscript  𝑿
+
+ℓ  1
+
+\tilde{{\bm{X}}}_{\ell-1}=\text{LayerNorm}({\bm{X}}_{\ell-1})  over~ start_ARG bold_italic_X end_ARG start_POSTSUBSCRIPT roman_ℓ - 1 end_POSTSUBSCRIPT = LayerNorm ( bold_italic_X start_POSTSUBSCRIPT roman_ℓ - 1 end_POSTSUBSCRIPT )
+
+,
+
+𝒮  ⁢
+
+(  ⋅  )
+
+𝒮  ⋅
+
+\mathcal{S}(\cdot)  caligraphic_S ( ⋅ )
+
+being the softmax operator,
+
+causal  ⁢
+
+[  ⋅  ]
+
+causal
+
+delimited-[]  ⋅
+
+\text{causal}[\cdot]  causal [ ⋅ ]
+
+the causal mask operator. The output of the attention block is
+
+𝑿  ℓ
+
+=
+
+𝑿
+
+ℓ  −  1
+
++
+
+Concat  ⁢
+
+[
+
+𝒜
+
+ℓ  ,  1
+
+⁢
+
+(
+
+𝑿
+
+ℓ  −  1
+
+)
+
+,  …  ,
+
+𝒜
+
+ℓ  ,  H
+
+⁢
+
+(
+
+𝑿
+
+ℓ  −  1
+
+)
+
+]
+
+⁢
+
+𝑾
+
+O  ,  ℓ
+
+T
+
+subscript  𝑿  ℓ
+
+subscript  𝑿
+
+ℓ  1
+
+Concat
+
+subscript  𝒜
+
+ℓ  1
+
+subscript  𝑿
+
+ℓ  1
+
+…
+
+subscript  𝒜
+
+ℓ  𝐻
+
+subscript  𝑿
+
+ℓ  1
+
+superscript
+
+subscript  𝑾
+
+𝑂  ℓ
+
+𝑇
+
+{\bm{X}}_{\ell}={\bm{X}}_{\ell-1}+\text{Concat}[\mathcal{A}_{\ell,1}({\bm{X}}_%
+{\ell-1}),...,\mathcal{A}_{\ell,H}({\bm{X}}_{\ell-1})]{\bm{W}}_{O,\ell}^{T}  bold_italic_X start_POSTSUBSCRIPT roman_ℓ end_POSTSUBSCRIPT = bold_italic_X start_POSTSUBSCRIPT roman_ℓ - 1 end_POSTSUBSCRIPT + Concat [ caligraphic_A start_POSTSUBSCRIPT roman_ℓ , 1 end_POSTSUBSCRIPT ( bold_italic_X start_POSTSUBSCRIPT roman_ℓ - 1 end_POSTSUBSCRIPT ) , … , caligraphic_A start_POSTSUBSCRIPT roman_ℓ , italic_H end_POSTSUBSCRIPT ( bold_italic_X start_POSTSUBSCRIPT roman_ℓ - 1 end_POSTSUBSCRIPT ) ] bold_italic_W start_POSTSUBSCRIPT italic_O , roman_ℓ end_POSTSUBSCRIPT start_POSTSUPERSCRIPT italic_T end_POSTSUPERSCRIPT
+
+, with
+
+𝑾
+
+O  ,  ℓ
+
+subscript  𝑾
+
+𝑂  ℓ
+
+{\bm{W}}_{O,\ell}  bold_italic_W start_POSTSUBSCRIPT italic_O , roman_ℓ end_POSTSUBSCRIPT
+
+the square output matrix (with bias). Finally, we apply an affine classifier (with softmax)
+
+𝒇  ⁢
+
+(  𝒙  )
+
+=
+
+𝒮  ⁢
+
+(
+
+𝑿  ~
+
+L  ,  t
+
+⁢
+
+𝑾
+
+c  ⁢  l  ⁢  a  ⁢  s  ⁢  s
+
+T
+
++
+
+𝒃
+
+c  ⁢  l  ⁢  a  ⁢  s  ⁢  s
+
+)
+
+𝒇  𝒙
+
+𝒮
+
+subscript
+
+~  𝑿
+
+𝐿  𝑡
+
+superscript
+
+subscript  𝑾
+
+𝑐  𝑙  𝑎  𝑠  𝑠
+
+𝑇
+
+subscript  𝒃
+
+𝑐  𝑙  𝑎  𝑠  𝑠
+
+{\bm{f}}({\bm{x}})=\mathcal{S}(\tilde{{\bm{X}}}_{L,t}{\bm{W}}_{class}^{T}+{\bm%
+{b}}_{class})  bold_italic_f ( bold_italic_x ) = caligraphic_S ( over~ start_ARG bold_italic_X end_ARG start_POSTSUBSCRIPT italic_L , italic_t end_POSTSUBSCRIPT bold_italic_W start_POSTSUBSCRIPT italic_c italic_l italic_a italic_s italic_s end_POSTSUBSCRIPT start_POSTSUPERSCRIPT italic_T end_POSTSUPERSCRIPT + bold_italic_b start_POSTSUBSCRIPT italic_c italic_l italic_a italic_s italic_s end_POSTSUBSCRIPT )
+
+to predict the next word.
+
+In this paper, we set the hidden space embedding to 768.
+
+B.2.2  Training details
+
+In all of our experiments, we set the learning rate to
+
+5  ×
+
+10
+
+−  5
+
+5
+
+superscript  10
+
+5
+
+5\times 10^{-5}  5 × 10 start_POSTSUPERSCRIPT - 5 end_POSTSUPERSCRIPT
+
+, and weight decay to
+
+10
+
+−  4
+
+superscript  10
+
+4
+
+10^{-4}  10 start_POSTSUPERSCRIPT - 4 end_POSTSUPERSCRIPT
+
+. We use a batch size of 512, and train the model for 60k iterations. We use the AdamW optimizer in PyTorch, with 5k iterations of linear warmup, followed by cosine annealing to a learning rate of 0. Each model is trained on a single V100 GPU; the full set of models take around 2 - 3 days to finish training.
+
+B.3  Answer for the LogOp Chain
+
+Evidence 3a: Distinct behaviors of affine predictors at different layers . We train two affine classifiers at two positions inside the model (each with 10k samples):
+
+𝑾
+
+r  ⁢  e  ⁢  s  ⁢  i  ⁢  d
+
+,  ℓ
+
+=  2
+
+subscript  𝑾
+
+𝑟  𝑒  𝑠  𝑖  𝑑
+
+ℓ
+
+2
+
+{\bm{W}}_{resid,\ell=2}  bold_italic_W start_POSTSUBSCRIPT italic_r italic_e italic_s italic_i italic_d , roman_ℓ = 2 end_POSTSUBSCRIPT
+
+at layer-2 residual stream, and
+
+𝑾
+
+a  ⁢  t  ⁢  t  ⁢  n
+
+,  ℓ
+
+=  3
+
+subscript  𝑾
+
+𝑎  𝑡  𝑡  𝑛
+
+ℓ
+
+3
+
+{\bm{W}}_{attn,\ell=3}  bold_italic_W start_POSTSUBSCRIPT italic_a italic_t italic_t italic_n , roman_ℓ = 3 end_POSTSUBSCRIPT
+
+at layer-3 attention-block output, both at the position of ANSWER, with the target being the correct first token. In training, if there are two correct answers possible (e.g. OR gate, starting nodes are both TRUE or both FALSE), we randomly choose one as the target; in testing, we deem the top-1 prediction “correct” if it coincides with one of the answers. We observe the following predictor behavior on the test samples:
+
+nosep
+
+𝑾
+
+a  ⁢  t  ⁢  t  ⁢  n
+
+,  ℓ
+
+=  3
+
+subscript  𝑾
+
+𝑎  𝑡  𝑡  𝑛
+
+ℓ
+
+3
+
+{\bm{W}}_{attn,\ell=3}  bold_italic_W start_POSTSUBSCRIPT italic_a italic_t italic_t italic_n , roman_ℓ = 3 end_POSTSUBSCRIPT
+
+predicts the correct answer 100% of the time.
+
+nosep
+
+𝑾
+
+r  ⁢  e  ⁢  s  ⁢  i  ⁢  d
+
+,  ℓ
+
+=  2
+
+subscript  𝑾
+
+𝑟  𝑒  𝑠  𝑖  𝑑
+
+ℓ
+
+2
+
+{\bm{W}}_{resid,\ell=2}  bold_italic_W start_POSTSUBSCRIPT italic_r italic_e italic_s italic_i italic_d , roman_ℓ = 2 end_POSTSUBSCRIPT
+
+always predicts one of the variables assigned FALSE (in the fact section) if LogOp is the AND gate, and predicts one assigned TRUE if LogOp is the OR gate.
+
+Evidence 3b: linearly decodable LogOp information from first two layers . We train an affine classifier at the layer-2 residual stream to predict the LogOp of the problem instance, over 5k samples (and tested on another 5k samples). The classifier achieves greater than 98% accuracy. We note that training this classifier at the layer-1 residual stream also yields above 95% accuracy.
+
+Evidence 3c: identification of LogOp-chain starting nodes at layer 3 . Attention heads (3,1) and (3,3), when concatenated, produce embeddings which we can linearly decode the two starting nodes of the LogOp chain with test accuracy greater than 98%. We also find that they focus their attention in the rule section of the context (as shown in Figure
+
+8  ). Due to causal attention, this means that they determine the two starting nodes from the LogOp-relevant rules.
+
+Remark . The above pieces of observations suggest the “partial information
+
+→
+
+→
+
+\to  →
+
+refinement” process.  7
+
+7  7 In fact, the observations suggest that layer 3 performs a certain “matching” operation. Take the OR gate as an example. Knowing which of the three starting nodes (for LogOp and linear chain) are TRUE, and which two nodes are the starting nodes for the LogOp chain are sufficient to determine the first token! This exact algorithm, however, is not fully validated by our evidence; we leave this as part of our future work.
+
+To further validate that the embedding from the first two layers are indeed causally linked to the correct answer at the third layer, we perform an activation patching experi

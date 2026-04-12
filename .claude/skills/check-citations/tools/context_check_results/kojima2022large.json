@@ -1,0 +1,17 @@
+{
+  "key": "kojima2022large",
+  "overall": "ERROR",
+  "fulltext_available": true,
+  "mentions": [
+    {
+      "file": "chapter2.tex",
+      "snippet": "Для открытых моделей картина дифференцирована. Четыре из шести показывают положительный delta: \\texttt{deepseek-v3.2} (+0,278), \\texttt{qwen3.5-397b-a17b}",
+      "verdict": "ERROR",
+      "comment": "В цитируемой работе Kojima et al. (2022) не исследуется влияние цепочки рассуждений (CoT) на когнитивные искажения, такие как confirmation bias или MBI, и не делается выводов о том, что CoT может усиливать предубеждения у моделей с низкой логической компетентностью. Работа посвящена демонстрации того, что LLM могут выполнять логические рассуждения в zero-shot режиме при использовании промпта «Let's think step by step». Утверждение в дипломе приписывает статье результаты и выводы, которых в ней нет.",
+      "paper_quote": "Pretrained large language models (LLMs) are widely used in many sub-fields of natural language processing (NLP) and generally known for their few-shot learning capabilities. However, they still struggle with reasoning tasks. In this work, we explore a simple yet powerful method: prompting the model to generate a step-by-step reasoning chain before answering. We show that this approach enables LLMs to perform complex reasoning in a zero-shot manner, achieving strong performance across arithmetic, commonsense, and symbolic reasoning tasks."
+    }
+  ],
+  "summary": "Работа Kojima et al. (2022) демонстрирует, что крупные языковые модели способны к нулевому логическому рассуждению при использовании простого промпта «Let's think step by step». В статье не рассматривается влияние цепочки рассуждений на когнитивные искажения, такие как confirmation bias или MBI. Утверждение в дипломе о том, что CoT может усиливать предубеждения у моделей с низкой логической компетентностью, не подтверждается цитируемой работой и является ошибочным. Следовательно, цитирование является некорректным.",
+  "mention_count": 2,
+  "layer": 2
+}

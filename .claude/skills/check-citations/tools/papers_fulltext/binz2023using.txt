@@ -1,0 +1,8 @@
+[https://arxiv.org/abs/2206.14576]
+Abstract:We study GPT-3, a recent large language model, using tools from cognitive psychology. More specifically, we assess GPT-3's
+
+[https://arxiv.org/pdf/2206.14576]
+ABSTRACT. We study GPT-3, a recent large language model, using tools from cognitive psychology. More specifically, we assess GPT-3's decision
+
+[https://arxiv.org/pdf/2406.09464]
+(2023). Using cognitive psychol- ogy to understand GPT-3. Proceedings of the National. Academy of Sciences, 120(6), e2218523120.

@@ -1,0 +1,147 @@
+The provided document, titled **"GPT-ology, Computational Models, Silicon Sampling: How should we think about LLMs in Cognitive Science?"**, does **not contain a traditional structure** (e.g., Introduction, Methods, Results, Conclusion sections) as commonly found in empirical research papers. Instead, it is a **review and conceptual paper** that presents a meta-level discussion of research methodologies, paradigms, assumptions, and challenges in applying Large Language Models (LLMs) to cognitive science.
+
+Therefore, there is **no separate section labeled “Methods” or “Results”** in the conventional sense—because it is not an experimental study. Rather, it synthesizes existing literature and proposes a **typology of research paradigms**, critically examining their logical underpinnings and limitations.
+
+Below is a **thorough extraction and reconstruction** of the requested components (**Title, Abstract, Introduction, Methods (interpreted as analytical approach), Results (interpreted as key insights/conclusions), and Conclusion**), based strictly on the content of the uploaded paper.
+
+---
+
+### **Title**
+
+**GPT-ology, Computational Models, Silicon Sampling: How should we think about LLMs in Cognitive Science?**
+
+---
+
+### **Abstract**
+
+Large Language Models have taken the cognitive science world by storm. It is perhaps timely now to take stock of the various research paradigms that have been used to make scientific inferences about “cognition” in these models or about human cognition. We review several emerging research paradigms—GPT-ology, LLMs-as-computational-models, and “silicon sampling”— and review recent papers that have used LLMs under these paradigms. In doing so, we discuss their claims as well as challenges to scientific inference under these various paradigms. We highlight several outstanding issues about LLMs that have to be addressed to push our science forward: closed-source vs open-sourced models; (the lack of visibility of) training data; and reproducibility in LLM research, including forming conventions on new task “hyperparameters” like instructions and prompts.
+
+**Keywords**: Large Language Models; Cognitive Science
+
+---
+
+### **Introduction**
+
+Recent scientific discourse in cognitive science in 2023 and 2024 seems to be all about Large Language Models (LLMs) (Binz and Schulz, 2023; Trott et al., 2023), including entire workshops at CogSci2023 (Hardy et al., 2023) and similar conferences. Over this short time, we have seen a variety of different research paradigms emerge.
+
+Some research focuses on evaluating the cognitive capacities of these LLM models – what they can or cannot do. One might call this type of research **“GPT-ology”**, which involves studying how LLMs like GPT-4 process information. These papers are usually characterized by inferences about the state of artificial cognition, and less on insights for human cognition.
+
+Other researchers suggest that we should instead abstract away from specific models, and use LLMs as a **computational model** of human cognition (e.g., Blank, 2023; Frank, 2023b). One example within this paradigm uses LLM performance as an **“Existence Proof”** about the sufficient conditions for certain cognitive capabilities to emerge (Contreras Kallens et al., 2023; Kauf et al., 2023; Piantadosi, 2023).
+
+Finally, some researchers have been using LLMs to simulate human behavior (Argyle et al., 2023; Dillion et al., 2023; Grossmann et al., 2023; Park et al., 2023), and explore how we can use these **“silicon samples”** to make inferences about people.
+
+These paradigms are not mutually exclusive — the same empirical evidence (e.g., having an LLM respond to questions like in a psychological experiment) could be used to support research questions in more than one paradigm.
+
+The goal of this paper is to lay out a framework for thinking about these different approaches to using or studying LLMs. We do not claim to have answers to all of the outstanding issues, although we provide some thoughts and suggestions.
+
+We focus on examining the **scientific logic and assumptions** inherent in these approaches — notably scientific reliability and validity, logical deductions, and epistemic support — rather than commenting on specific psychological claims.
+
+---
+
+### **Methods** (Interpreted as Analytical Approach / Framework)
+
+The paper employs a **conceptual and meta-scientific analysis** to categorize and evaluate current research practices involving LLMs in cognitive science. It is organized around a **typology of research paradigms**, derived from surveying recent literature.
+
+#### Typology of Research Paradigms:
+1. **GPT-ology**: Studying LLMs for insights about **LLM cognition**.
+2. **LLMs-as-Computational-Models**: Using LLMs as simulations or analogs for **human cognitive processes**.
+3. **Silicon Sampling**: Using LLMs to **simulate populations of human respondents** in behavioral tasks.
+
+For each paradigm, the author examines:
+- Example research questions
+- Typical experiments
+- Inferences drawn
+- Methodological and interpretive challenges
+
+Additionally, a set of **six “Outstanding Issues”** is systematically discussed, forming the core of the critique and recommendations. These include:
+1. Model availability (open- vs. closed-source)
+2. Inference from model variation (e.g., GPT-3 vs. GPT-4)
+3. Proprietary, commercial nature of most LLMs
+4. Opacity of training data
+5. Reproducibility and prompt engineering
+6. Longevity and generalizability of results
+
+The author does **not conduct primary experiments** but **reviews and synthesizes** a range of papers to highlight recurring methodological and interpretational pitfalls.
+
+---
+
+### **Results** (Interpreted as Key Insights / Findings)
+
+The paper’s main “results” are **conceptual findings and critical reflections**, organized around the three paradigms and the six outstanding issues. Below are the core findings:
+
+#### 1. **GPT-ology: Inferences about LLM capabilities**
+- **Studies include**: Person-ality assessments, moral judgments, reasoning tasks, theory of mind.
+- **Example inference**: "GPT can pass a false-belief task" (Gandhi et al., 2023).
+- **Challenges**:
+  - **Anthropomorphism**: Attributing human traits (e.g., empathy) may be misleading.
+  - **Unreliability**: Performance is fragile to minor changes in prompts (Binz & Schulz, 2023; Ullman, 2023).
+  - **Memorization**: Tasks may be present in training data (e.g., Sally-Anne task), making performance trivial.
+  - **Lack of perception of internal state**: No access to true reasoning process.
+
+#### 2. **LLMs-as-Computational-Models**
+- **Goal**: Use LLMs to infer what can be **learned from language input alone**, or how **human cognition** might work.
+- **Existence Proofs**:
+  - If an LLM learns X from text, then **statistical learning from language may be sufficient**.
+  - Example: Can LLMs learn **event knowledge** (Kauf et al., 2023) or **relational reasoning** (Geiger et al., 2023) from text?
+- **Internal Representations**:
+  - Techniques like **probing classifiers** and **mechanistic interpretability** (Wu et al., 2024) allow studying model internals.
+  - Some models predict **human neural responses** (Hosseini et al., 2024).
+- **Challenges**:
+  - Differences in **architecture and training** limit direct comparison with human cognition.
+  - **Null results are not informative**: If an LLM *fails* a task, it doesn’t mean humans need more (e.g., innate structure) — only that the current model is insufficient.
+  - **Prompt dependence**: Performance often depends on "right" prompting (e.g., chain-of-thought), suggesting brittle understanding.
+
+#### 3. **Silicon Sampling: Simulating human populations**
+- LLMs generate responses conditioned on **demographic backstories** (e.g., “a 25-year-old conservative voter”).
+- Used to simulate **voting behavior**, **consumer preferences**, or **social judgments**.
+- **Assumption**: LLMs compress and can re-express statistical regularities of human-generated text.
+- **Challenges**:
+  - **Fidelity concerns**: Are responses realistic or just stereotypes?
+  - **Training data bias**: LLMs trained on **WEIRD** (Western, educated, industrialized, rich, democratic) data — underrepresenting many populations.
+  - **Minority simulation problem**: Underrepresented groups in training data lead to **simulated stereotyping**.
+  - **Distribution mismatch**: LLM outputs may reflect **population averages** rather than individual-level variability — leading to misinterpretations if treated as individual subjects.
+
+#### 4. **Six Outstanding Issues**
+
+1. **Model choice and access**: 
+   - Open-source (e.g., LLaMA) vs. closed-source (e.g., GPT-4) models create **inequality** and hinder transparency.
+2. **Inference across model generations**:
+   - GPT-4 works, GPT-3 fails — but does this tell us about cognition or just engineering?
+3. **Proprietary, changing models**:
+   - No stable version: companies update models without notice.
+   - "Guardrails" affect responses (e.g., moral content refusal, happy endings), **skewing data**.
+4. **Training data opacity**:
+   - Unknown data sources, risks of **data leakage**, and **bias propagation** (e.g., cultural, social identity).
+   - Internet becoming **"LLM-saturated"** — future training data may no longer represent humans.
+5. **Reproducibility**:
+   - **Stochasticity**: Should be embraced (like human variability), not eliminated.
+   - **Prompt engineering**: Small changes (e.g., reordering answers) drastically affect outcomes.
+   - Need for **reporting hyperparameters**: temperature, timestamp, model version.
+6. **Longevity of findings**:
+   - LLMs evolve rapidly — today’s “failure” may be solved next month.
+   - Scientific results risk being **obsolete before publication**.
+
+---
+
+### **Conclusion**
+
+It has been an exciting 2023–2024 for cognitive science, with many papers and preprints using LLMs to explore cognition. These models are enabling **more creative experiments**, **larger-scale simulations**, and **increased external validity**.
+
+However, the paper argues that **many current research practices are scientifically fragile** due to:
+- Reliance on **closed, proprietary models**
+- Lack of **visibility into training data**
+- Poor **reproducibility practices**
+- **Anthropomorphic interpretations**
+- **Unstable findings** due to model updates
+
+The author stresses that while **GPT-ology** (studying LLMs per se) is a valid pursuit, it often yields **transient results**. More lasting scientific contributions may come from:
+- Using LLMs as **existence proofs** for what statistical learning can achieve
+- Improving **methodological rigor**: reporting prompts, sampling from models, counterbalancing inputs
+- Shifting toward **open-source models** to ensure transparency and reproducibility
+- Developing **new conventions** for prompts, evaluations, and reporting
+
+The paper concludes that **this is not a definitive framework**, but a call for **field-wide conversations** about the epistemology of LLM research in cognitive science — to build a more rigorous, lasting science of cognition in the age of AI.
+
+---
+
+**Note**: This paper does **not contain novel empirical results**, data, or a methods section in the traditional sense. It is a **review and methodological critique**, and thus the "Results" and "Methods" here are interpreted accordingly as **analytical approach and key conceptual insights**.

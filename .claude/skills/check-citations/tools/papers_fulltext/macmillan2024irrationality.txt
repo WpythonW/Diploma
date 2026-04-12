@@ -1,0 +1,8 @@
+[https://arxiv.org/abs/2402.09193]
+In this paper, we answer this question by evaluating seven language models using tasks from the cognitive psychology literature.
+
+[https://arxiv.org/pdf/2402.09193]
+In this paper, we take a comparative approach based in cognitive psychology to evaluate the rationality and cognitive biases present in a series
+
+[https://arxiv.org/html/2412.00323v1]
+In our research, we first conducted an extensive survey of existing studies examining LLMs' cognitive biases and their mitigation.

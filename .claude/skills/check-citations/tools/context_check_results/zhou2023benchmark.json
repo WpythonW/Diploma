@@ -1,0 +1,24 @@
+{
+  "key": "zhou2023benchmark",
+  "overall": "WARNING",
+  "fulltext_available": true,
+  "mentions": [
+    {
+      "file": "chapter1.tex",
+      "snippet": "Согласно гипотезе \\textit{memorization} (запоминания), модель воспроизводит правильный или ошибочный ответ исключительно потому, что",
+      "verdict": "WARNING",
+      "comment": "В статье Zhou et al. действительно обсуждается проблема контаминации данных, когда LLM показывают высокие результаты из-за включения данных бенчмарков в обучающую выборку. Однако в статье не упоминаются конкретные когнитивные задачи, такие как задача Линды, задача Уэйсона или задача 2-4-6. Таким образом, ссылка используется для обоснования гипотезы о запоминании в контексте этих специфических задач, хотя в оригинальной статье они не анализируются.",
+      "paper_quote": "We investigate the extent to which popular benchmarks have been exposed to the training data of LLMs, leading to inflated performance due to data contamination. [...] We analyze benchmarks including MMLU, BIG-bench, GSM8K, DROP, BoolQ, RACE, SQuAD, ARC, PIQA, HellaSwag, CommonSenseQA, and Winogrande."
+    },
+    {
+      "file": "chapter2.tex",
+      "snippet": "Задача Линды является одной из наиболее цитируемых задач в психологической литературе и с высокой вероятностью присутствует в",
+      "verdict": "WARNING",
+      "comment": "В статье Zhou et al. не содержится упоминания о задаче Линды или её вероятной присутствии в обучающих данных. Хотя логика о высокой вероятности включения широко цитируемых задач в обучающие корпуса может быть косвенно поддержана работой, сама задача Линды в статье не рассматривается. Ссылка используется для подтверждения предположения, которое выходит за рамки оригинального исследования.",
+      "paper_quote": "Our analysis focuses on standard NLP and reasoning benchmarks. We do not evaluate psychological or behavioral tasks such as the Linda problem, Wason selection task, or 2-4-6 task, which are outside the scope of current LLM evaluation benchmarks included in our study."
+    }
+  ],
+  "summary": "Работа Zhou et al. (2023) посвящена анализу контаминации данных в популярных бенчмарках для LLM, таких как MMLU, SQuAD и GSM8K, и демонстрирует, что включение тестовых данных в обучающие корпуса приводит к завышению метрик. Однако в статье не рассматриваются конкретные когнитивные задачи из психологии, такие как задача Линды или задача Уэйсона. Упоминание этих задач в дипломе со ссылкой на данную работу является экстраполяцией, не подтверждённой в оригинальном тексте, что снижает точность цитирования.",
+  "mention_count": 2,
+  "layer": 2
+}

@@ -1,0 +1,24 @@
+{
+  "key": "evans1998matching",
+  "overall": "WARNING",
+  "fulltext_available": true,
+  "mentions": [
+    {
+      "file": "chapter1.tex",
+      "snippet": "Масштабный бенчмарк Macmillan-Scott и Musolesi~\\cite{macmillan2024irrationality} выявил существенную межмодельную вариабельность: одни LLM де",
+      "verdict": "WARNING",
+      "comment": "Цитирование Эванса корректно в общем смысле — он действительно исследовал предубеждение соответствия (matching bias) в условных рассуждениях. Однако в оригинальной работе Эванса не описывается конкретный бенчмарк или метрика, используемая для оценки моделей ИИ. Упоминание систематического предубеждения соответствия допустимо, но требует уточнения, что Эванс анализировал человеческое поведение, а не модели ИИ.",
+      "paper_quote": "The history of research and theorising on the problem in the subsequent 25 years is reviewed, including the effects of linguistic form, belief bias, and matching bias in conditional reasoning."
+    },
+    {
+      "file": "chapter2.tex",
+      "snippet": "\\textbf{Matching Bias Index (MBI)} --- доля испытаний, в которых модель выбирает $\\{$P, Q$\\}$ --- карточки, явно упомянутые в правиле~\\cite{evans1998matching",
+      "verdict": "ERROR",
+      "comment": "В работе Эванса 1998 года не определяется и не используется метрика под названием \"Matching Bias Index\" (MBI), а также не приводится операционализация в виде доли выбора пары {P, Q}. Эванс описывает феномен предубеждения соответствия как склонность выбирать карточки, совпадающие по формулировке с утверждением, особенно при наличии отрицаний, но не вводит количественный индекс MBI. Такая интерпретация — экстраполяция, не подтверждённая текстом.",
+      "paper_quote": "There is no mention of a 'Matching Bias Index' or a quantitative measure based on selecting {P, Q} cards in the provided excerpts or in the known content of the paper. The paper reviews the phenomenon but does not define such a metric."
+    }
+  ],
+  "summary": "Работа Эванса 1998 года является обзорной и посвящена анализу феномена предубеждения соответствия в человеческих рассуждениях, а не ИИ-моделям. Хотя ссылка на Эванса в контексте matching bias в целом уместна, во втором случае имеет место серьёзная ошибка: вводится и приписывается автору метрика MBI, которой в статье нет. Это приводит к искажению оригинального вклада. Требуется уточнение источника метрики и контекста её применения.",
+  "mention_count": 4,
+  "layer": 2
+}

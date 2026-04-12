@@ -1,0 +1,77 @@
+{
+  "key": "binz2023using",
+  "overall": "ERROR",
+  "phase": 2,
+  "fulltext_available": true,
+  "fulltext_source": "https://arxiv.org/pdf/2306.03917",
+  "mentions": [
+    {
+      "file": "chapter1.tex",
+      "snippet": "Эмпирические данные остаются противоречивыми. Binz и Schulz~\\cite{binz2023using} продемонстрировали свидетельства в пользу memorization: GPT-3 решал каноническую версию задачи Уэйсона правильно, но немедленно давал ошибочные ответы при изменении поверхностных признаков (порядка карточек).",
+      "verdict": "ERROR",
+      "comment": "В извлеченном тексте нет упоминания о задаче Уэйсона, тестировании GPT-3 на ней или анализе memorization. Авторы исследуют поведение GPT-3 в задачах принятия решений, но не упоминают задачу выбора карточек или чувствительность к перестановке карточек.",
+      "paper_quote": "GPT-3 – an autoregressive language model designed by OpenAI [Brown et al., 2020] – outperformed human subjects in a sequential decision-making task that required to balance between exploitative and exploratory actions [Binz and Schulz, 2023]."
+    },
+    {
+      "file": "chapter1.tex",
+      "snippet": "Задача Линды была одной из первых классических психологических парадигм, применённых к тестированию языковых моделей. В ранних исследованиях Binz и Schulz~\\cite{binz2023using} обнаружили, что GPT-3 воспроизводит ошибку конъюнкции в условиях, аналогичных человеческому эксперименту.",
+      "verdict": "ERROR",
+      "comment": "В извлеченном тексте нет упоминания о задаче Линды или ошибке конъюнкции. Авторы ссылаются на свои предыдущие работы, но не описывают в данной статье тестирование GPT-3 на этой задаче.",
+      "paper_quote": "Previous work has shown that these models can even successfully navigate when they are placed into classic psychological experiments [Binz and Schulz, 2023, Coda-Forno et al., 2023, Dasgupta et al., 2022, Hagendorff et al., 2022]."
+    },
+    {
+      "file": "chapter1.tex",
+      "snippet": "Задача Уэйсона является наиболее изученной логической парадигмой в исследованиях LLM. В то время как абстрактная версия (A, B, 4, 7) часто решается современными моделями успешно, исследователи сходятся во мнении, что это результат запоминания (memorization). Binz и Schulz~\\cite{binz2023using} показали, что при простой перестановке карточек точность GPT-3 падает практически до нуля.",
+      "verdict": "ERROR",
+      "comment": "В статье Binz и Schulz (2023) не приводится эксперимент с перестановкой карточек в задаче Уэйсона. Упоминается только успешное поведение GPT-3 в задаче последовательного выбора, но не логическая задача с карточками.",
+      "paper_quote": "GPT-3 – an autoregressive language model designed by OpenAI [Brown et al., 2020] – outperformed human subjects in a sequential decision-making task that required to balance between exploitative and exploratory actions [Binz and Schulz, 2023]."
+    },
+    {
+      "file": "chapter2_exp1_linda.tex",
+      "snippet": "Задача была выбрана по трём причинам. Во-первых, она обладает чётко определённым нормативным ответом, что позволяет однозначно классифицировать ответы модели. Во-вторых, механизм ошибки --- нарративная правдоподобность конъюнктивного элемента --- поддаётся прямой экспериментальной манипуляции через замену этого элемента. В-третьих, задача широко использовалась в предшествующих исследованиях~\\cite{binz2023using, suri2024large, wang2024linda, jiang2024peek, macmillan2024irrationality}, что обеспечивает возможность сравнения результатов.",
+      "verdict": "ERROR",
+      "comment": "То же, что и выше: в статье Binz и Schulz (2023) не анализируется задача Линды. Цитирование этой работы как источника по данной задаче ошибочно.",
+      "paper_quote": "Previous work has shown that these models can even successfully navigate when they are placed into classic psychological experiments [Binz and Schulz, 2023, Coda-Forno et al., 2023, Dasgupta et al., 2022, Hagendorff et al., 2022]."
+    },
+    {
+      "file": "chapter2_exp2_wason.tex",
+      "snippet": "\\textbf{Формальная логика --- Каноническая.} Правила используют стандартные абстрактные символы из классической литературы по задаче Уэйсона (буквы, числа, геометрические фигуры). Условие включено для сравнения с предшествующими работами при признании риска контаминации~\\cite{binz2023using, arkoudas2023gpt4}.",
+      "verdict": "ERROR",
+      "comment": "Нет подтверждения, что Binz и Schulz (2023) изучали задачу Уэйсона. Ссылка на эту работу в контексте канонических правил необоснована.",
+      "paper_quote": "GPT-3 – an autoregressive language model designed by OpenAI [Brown et al., 2020] – outperformed human subjects in a sequential decision-making task that required to balance between exploitative and exploratory actions [Binz and Schulz, 2023]."
+    },
+    {
+      "file": "chapter2_exp2_wason.tex",
+      "snippet": "Ключевым методологическим вкладом дизайна является систематическая манипуляция порядком предъявления карточек. Каждый стимул предъявлялся каждой модели в \\textbf{пяти различных перестановках} четырёх позиций карточек. Это следует из наблюдения Binz и Schulz~\\cite{binz2023using} о том, что единственное изменение перестановки способно обратить ответ GPT-3 на каноническую задачу, и из данных Macmillan-Scott и Musolesi~\\cite{macmillan2024irrationality} о существенной нестабильности ответов LLM.",
+      "verdict": "ERROR",
+      "comment": "В извлеченном тексте нет упоминания о чувствительности GPT-3 к порядку карточек. Утверждение о перестановке как критическом факторе не подтверждается.",
+      "paper_quote": "GPT-3 – an autoregressive language model designed by OpenAI [Brown et al., 2020] – outperformed human subjects in a sequential decision-making task that required to balance between exploitative and exploratory actions [Binz and Schulz, 2023]."
+    },
+    {
+      "file": "chapter2_exp1_linda.tex",
+      "snippet": "Задача была выбрана по трём причинам. Во-первых, она обладает чётко определённым нормативным ответом, что позволяет однозначно классифицировать ответы модели. Во-вторых, механизм ошибки --- нарративная правдоподобность конъюнктивного элемента --- поддаётся прямой экспериментальной манипуляции через замену этого элемента. В-третьих, задача широко использовалась в предшествующих исследованиях~\\cite{binz2023using, suri2024large, wang2024linda, jiang2024peek, macmillan2024irrationality}, что обеспечивает возможность сравнения результатов.",
+      "verdict": "ERROR",
+      "comment": "То же, что и выше: в статье Binz и Schulz (2023) не анализируется задача Линды. Цитирование этой работы как источника по данной задаче ошибочно.",
+      "paper_quote": "Previous work has shown that these models can even successfully navigate when they are placed into classic psychological experiments [Binz and Schulz, 2023, Coda-Forno et al., 2023, Dasgupta et al., 2022, Hagendorff et al., 2022]."
+    },
+    {
+      "file": "intro.tex",
+      "snippet": "Несмотря на растущий массив литературы, посвящённой рациональности LLM~\\cite{binz2023using, suri2024large, macmillan2024irrationality}, большинство существующих работ сосредоточено на отдельных задачах или узком наборе моделей, не рассматривая предубеждения как феномен, существующий на спектре~--- от вероятностного суждения к классическому логическому рассуждению и далее к индуктивному открытию правил. Настоящая работа восполняет этот пробел, предлагая систематическое сравнительное исследование трёх парадигм когнитивной психологии на девяти современных языковых моделях.",
+      "verdict": "WARNING",
+      "comment": "Ссылка на Binz и Schulz в общем контексте изучения рациональности LLM допустима, так как их работа действительно исследует когнитивные искажения. Однако обобщение их вклада без уточнения реальных задач — вводит в заблуждение, хотя формально не противоречит карточке."
+    },
+    {
+      "file": "intro.tex",
+      "snippet": "\\textbf{Степень разработанности проблемы.}\nПервые систематические исследования когнитивных предубеждений в LLM появились в 2023--2024 годах. Binz и Schulz~\\cite{binz2023using} показали, что GPT-3 демонстрирует эффекты репрезентативности и предвзятости подтверждения на классических задачах из программы эвристик и предубеждений Канемана и Тверски. Suri и соавторы~\\cite{suri2024large} расширили эту линию, исследовав эффект фрейминга и ошибку конъюнкции в GPT-4. Macmillan-Scott и Musolesi~\\cite{macmillan2024irrationality} провели масштабный бенчмарк нескольких моделей на задаче Уэйсона. Тем не менее ни одна из указанных работ не рассматривает все три парадигмы~--- конъюнктивную ошибку, задачу выбора карточек и задачу открытия правила 2-4-6~--- в едином экспериментальном дизайне и не вводит непрерывных метрик, позволяющих измерить силу предубеждения за пределами бинарной классификации ответов.",
+      "verdict": "ERROR",
+      "comment": "Утверждается, что Binz и Schulz изучали эффекты репрезентативности и подтверждения, но в карточке указаны framing effects, probability matching и causal reasoning. Эти понятия не идентичны. Это искажение содержания работы."
+    }
+  ],
+  "summary": "Анализ извлеченного текста статьи Binz и Schulz (2023) показывает, что все упоминания о задачах Уэйсона, Линды, эффектах перестановки карточек и когнитивных искажениях, таких как ошибка конъюнкции, не подтверждаются. Работа посвящена адаптации больших языковых моделей для моделирования человеческого поведения через дообучение, а не анализ когнитивных искажений в GPT-3. Все ссылки на эту статью в контексте когнитивных парадигм являются ошибочными.",
+  "mention_count": 11,
+  "elapsed_sec": 342.3,
+  "timing": {
+    "fetch_sec": 2.3,
+    "llm_sec": 340.0
+  }
+}

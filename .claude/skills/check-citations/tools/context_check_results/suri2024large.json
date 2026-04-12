@@ -1,0 +1,9 @@
+{
+  "key": "suri2024large",
+  "overall": "ERROR",
+  "mentions": [],
+  "summary": "[Parse error] Raw: {\n  \"key\": \"suri2024large\",\n  \"overall\": \"ERROR\",\n  \"fulltext_available\": true,\n  \"mentions\": [\n    {\n      \"file\": \"chapter1.tex\",\n      \"snippet\": \"Для обхода этой проблемы предлагались различные стратегии: изменение нарративного фрейминга~\\\\cite{suri2024large}, динамическая генерация синтет\",\n   ",
+  "fulltext_available": true,
+  "mention_count": 5,
+  "layer": 2
+}

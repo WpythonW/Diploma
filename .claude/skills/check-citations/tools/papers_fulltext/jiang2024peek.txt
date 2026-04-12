@@ -1,0 +1,5 @@
+[https://arxiv.org/html/2502.10215v1]
+Abstract. Report issue for preceding element. Causal ... A peek into token bias: Large language models are not yet genuine reasoners.
+
+[https://arxiv.org/html/2602.06176v1]
+... Large language models are not strong abstract reasoners ... A peek into token bias: large language models are not yet genuine reasoners.

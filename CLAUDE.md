@@ -52,6 +52,15 @@ latexmk -xelatex -f -interaction=nonstopmode main.tex
 - `.claude/skills/check-citations/SKILL.md`
   - Local Claude skill for citation-check workflows.
 
+# Experiment Data
+
+Raw experimental results from cognitive bias studies with LLMs are stored in `experiments_raw_results/`.
+
+- `experiments_raw_results/README.md` — top-level map of all experiments (TODO if not yet created).
+- `experiments_raw_results/linda-problem/` — **Experiment 1**: Linda problem (conjunction fallacy). README TODO.
+- `experiments_raw_results/wason-selection/` — **Experiment 2**: Wason Selection Task. See `experiments_raw_results/wason-selection/README.md` for details (9 models x 5 conditions).
+- `experiments_raw_results/wason-2-4-6/` — **Experiment 3**: Rule discovery / 2-4-6 task. README TODO.
+
 # How To Work In This Project
 
 When helping in this repository:

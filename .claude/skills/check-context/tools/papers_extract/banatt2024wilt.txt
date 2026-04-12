@@ -1,0 +1,125 @@
+# WILT: A Multi-turn, Memorization-Robust Inductive Logic Benchmark for LLMs
+
+###### Abstract
+
+While large language models (LLMs) have shown impressive capabilities across a wide range of domains, they still encounter significant challenges in reasoning tasks that require gathering evidence over multiple turns and drawing logical conclusions from this evidence. These challenges present significant obstacles for LLM chat user interfaces, which rely on multi-turn interactions to facilitate effective collaboration. This limitation leads to real-world issues; for example, service chatbots must gather necessary information from customers over multiple turns to diagnose and resolve problems effectively. Despite the multi-turn nature of many real-world LLM use cases, most existing benchmarks rely on carefully curated single-turn tests, which often blur the line between memorization and genuine reasoning. To address this, we introduce the Wason Inductive Logic Test (WILT), a simple yet challenging multi-turn reasoning benchmark designed to resist memorization. WILT is inspired by the Wason 2-4-6 task (Wason, [1960](https://arxiv.org/html/2410.10998v1#bib.bib43)), where participants must infer a basic boolean function involving three variables (e.g., x<y<z𝑥𝑦𝑧x<y<zitalic\_x < italic\_y < italic\_z) by proposing test cases (such as (2,4,6)246(2,4,6)( 2 , 4 , 6 )). In WILT, each test starts from a clean slate, with only the initial instructions provided, preventing models from relying on pre-learned responses. Over several turns, models must interact with the environment by suggesting test cases to narrow the possible hypotheses and ultimately infer the hidden function based on the outcomes. Our findings reveal that LLMs struggle with this task, exhibiting distinct strengths and weaknesses: some are better at narrowing down the hypothesis space by proposing valuable test cases, while others are more adept at deducing the hidden function from observed cases. Despite these variations, the best-performing model achieves only 28% accuracy, highlighting a significant gap in LLM performance on complex multi-turn reasoning tasks.
+
+## 1 Introduction
+
+Large language models (LLMs) powered by the transformer architecture (Vaswani, [2017](https://arxiv.org/html/2410.10998v1#bib.bib38)) have enabled a new computing paradigm driven by natural language. These models are increasingly integrated into day-to-day life beyond the machine learning research space, where they help many people with common tasks. These models interact with users through multi-turn conversations, a capability of next-token-prediction models bolstered via instruction-tuning (Mishra et al., [2021](https://arxiv.org/html/2410.10998v1#bib.bib19)) and alignment post-training phases (Ouyang et al., [2022](https://arxiv.org/html/2410.10998v1#bib.bib25)). Despite their impressive single-turn performance, LLMs often falter in scenarios requiring multi-turn reasoning and evidence gathering.
+
+The reasoning capability of LLMs, particularly in multi-turn scenarios, is of substantial interest.
+A commonly reported failure pattern for LLMs is the “doom loop”, where after an initially unsatisfactory response, the model repeatedly responds with a near-identical message to one of its earlier messages, providing minimal utility.
+For example, in code generation tasks like the example shown in Figure [1](https://arxiv.org/html/2410.10998v1#S2.F1 "Figure 1 ‣ 2 WILT ‣ WILT: A Multi-turn, Memorization-Robust Inductive Logic Benchmark for LLMs"), a model may repeatedly reply with code blocks identical to ones it has already seen or produced, which impairs its subsequent usefulness.
+Strong multi-turn performance can be thought of as collecting evidence over multiple steps to reduce the hypothesis space of the model’s possible responses to only include useful ones: an important capability which remains critical beyond the first turn even in everyday LLM use cases.
+
+Measuring the performance of LLMs has been challenging for the research community. Existing benchmarks overwhelmingly focus on single-turn interactions (Hendrycks et al., [2020](https://arxiv.org/html/2410.10998v1#bib.bib15); [2021](https://arxiv.org/html/2410.10998v1#bib.bib16)), and are often subject to memorization or overfitting (Goodhart, [1984](https://arxiv.org/html/2410.10998v1#bib.bib12); Recht et al., [2019](https://arxiv.org/html/2410.10998v1#bib.bib27)). As a result, difficult benchmarks often keep a held-out, publicly unavailable test set to accurately evaluate models (Chollet, [2019](https://arxiv.org/html/2410.10998v1#bib.bib5)). While some multi-turn benchmarks have emerged to attempt to measure phenomena like the “doom loop” (McLaughlin, [2024](https://arxiv.org/html/2410.10998v1#bib.bib18)), none so far have done so for multi-turn, multi-step inductive reasoning.
+
+To bridge this gap, we introduce the Wason Inductive Logic Test (WILT), a multi-turn benchmark designed to assess LLMs’ ability to gather evidence and reason across multiple turns. Inspired by the Wason 2-4-6 task (Wason, [1960](https://arxiv.org/html/2410.10998v1#bib.bib43)), WILT requires models to propose test cases (e.g. (2,4,6)246(2,4,6)( 2 , 4 , 6 )), observe the results (True or False), and iteratively narrow down the hypothesis space in order to deduce a hidden rule (e.g. x<y<z𝑥𝑦𝑧x<y<zitalic\_x < italic\_y < italic\_z).
+Since the task always begins from an identical starting state, it cannot simply be solved by memorizing the answer to a prompt and forces the model to use multiple turns to gather evidence.
+Therefore, WILT explicitly tests for two important capabilities in an LLM: (1) whether the model can efficiently narrow down the hypothesis space of possible solutions by posing the right test cases over multiple turns, and (2) whether the model can recommend a simple and meaningful solution to the problem after accumulating evidence. While we find that LLMs struggle on this task overall, we find that some of them are better on one of aforementioned sub-tasks than the other. This knowledge can be useful for practitioners when choosing which models to deploy for real world use cases.
+
+In this work, we make the following contributions:
+
+Introducing WILT - We introduce a multi-turn inductive logic benchmark that cannot be solved in a single turn. This requires a model to gather information, reflect upon what it observes, and make decisions when sufficient evidence is gathered, mirroring real-world tasks like debugging code or reasoning over time.
+
+Evaluating LLMs - We show that state-of-the-art LLMs struggle significantly on this task, with the best model achieving only 28% accuracy. This highlights a significant deficiency in multi-turn performance of top-performing LLMs, suggesting that strong single-turn performance may not always transfer to multi-turn settings.
+
+Further Analysis - We perform several experiments analyzing hypothesis space reduction, response complexity, and the performance of models when provided test cases from a different model. We demonstrate that models have varied strengths and weaknesses on this task, and that combining models together in a multi-turn setting may increase performance compared to using a single strong model.
+
+## 2 WILT
+
+The Wason Inductive Logic Test (WILT) is a benchmark for LLM reasoning inspired by the Wason 2-4-6 task (Wason, [1960](https://arxiv.org/html/2410.10998v1#bib.bib43)). Models begin with the instruction that they must uncover the hidden rule and may pose up to 30 test cases of that rule. For example, they can pose the tuple (2,4,6)246(2,4,6)( 2 , 4 , 6 ) and the test will respond with “True, 29 Attempts Remaining.”
+
+All hidden rules take three numbers and return a boolean. These rules are simple and non-stochastic, so there is no additional value to posing the same test multiple times. Valid inputs include any float or integer that can be typed in three or fewer characters, excluding signs and the decimal point (e.g. -999, 1.23, 5). The hidden rules are written as Python lambda functions. After a maximum of thirty tries (or any turn before then), the model may make one attempt to guess the function, after which the test will terminate. The model must return a Python lambda function that is the same as or equivalent111For example, x−y=z𝑥𝑦𝑧x-y=zitalic\_x - italic\_y = italic\_z is equivalent to y+z=x𝑦𝑧𝑥y+z=xitalic\_y + italic\_z = italic\_x to the hidden rule in order to receive full points.
+
+![Refer to caption](extracted/5917577/figures/fig1-left.png)
+
+Instructions (Same always)
+
+Test Harness Initializes Hidden Rule (x<y<z𝑥𝑦𝑧x<y<zitalic\_x < italic\_y < italic\_z)
+
+Participant proposes test case
+(e.g., (2,4,6)246(2,4,6)( 2 , 4 , 6 ))
+
+System responds
+(e.g., True)
+
+Repeat up to 30 times
+
+Participant submits final guess
+
+Test Harness Initializes Hidden Rule (x=y=z𝑥𝑦𝑧x=y=zitalic\_x = italic\_y = italic\_z)
+
+Participant proposes test case
+(e.g., (1,3,5)135(1,3,5)( 1 , 3 , 5 ))
+
+System responds
+(e.g., False)
+
+Repeat up to 30 times
+
+Participant submits final guess
+
+WILT is conceptually simple, but very challenging. Humans are able to identify simple rules despite the infinitely large hypothesis space, the unbounded difficulty of a hidden function, and the impossibility of verifying the correctness of your response (Tweney et al., [1980](https://arxiv.org/html/2410.10998v1#bib.bib35); Tukey, [1986](https://arxiv.org/html/2410.10998v1#bib.bib34)).
+Without effective priors for what constitutes a “simple” or “reasonable” answer, it becomes trivial to construct an arbitrary counterexample to a current hypothesis.
+For example, consider the canonical Wason task rule of x<y<z𝑥𝑦𝑧x<y<zitalic\_x < italic\_y < italic\_z. This rule has very high overlap with the much more arbitrary rule (x<y<z)∧(x≠12)𝑥𝑦𝑧𝑥12(x<y<z)\land(x\neq 12)( italic\_x < italic\_y < italic\_z ) ∧ ( italic\_x ≠ 12 ).
+
+The WILT benchmark therefore tests a few high-value behaviors of interest:
+
+Multi-Turn Capability: Participants that fall into doom loops are punished by virtue of having less useful information with which to infer the hidden rule.
+
+Hypothesis Space Reduction: Participants are rewarded for proposing test cases that effectively narrow down the possible rules, despite that hypothesis space being infinitely large.
+
+Susceptibility to Confirmation Bias: Participants who are more prone to “confirming their hypothesis” rather than seeking falsification will perform poorly upon this task.
+
+Inductive Reasoning: Proposing good test cases is a useful test of inductive reasoning and the ability to generalize from a number of specific examples.
+
+Deductive Reasoning: Proposing sensible functions after observing many test cases is a useful test of deductive reasoning. Success in this task involves identifying a specific function that accurately fits a set of examples.
+
+Occam’s Razor: Participants are rewarded for finding the simplest explanation fitting the examples.
+
+We release two test suites: a lite split, with 10 very easy tests and a canonical full split with 50 moderately difficult tests222We will release the code for this benchmark with the final release of the full paper.. Future work will extend this to include a procedurally generated split for additional robustness to overfitting. We find that the lite split quickly produces a roughly similar ordering to the full split, but we report results upon the full split for the remainder of this work. Please see Appendix [A.4](https://arxiv.org/html/2410.10998v1#A1.SS4 "A.4 Selected Lite Split Results ‣ Appendix A Appendix / Supplemental Material ‣ WILT: A Multi-turn, Memorization-Robust Inductive Logic Benchmark for LLMs") for further details.
+
+## 3 Related Work
+
+Compared to other reasoning benchmarks, WILT stands out as both highly multi-turn focused and unusually robust to memorization. In contrast to other benchmarks, WILT requires models to interact with an environment by proposing their own test cases to uncover a hidden function without relying on pre-provided examples. This setup reduces the risk of overfitting, as each test begins with the same initial instructions, and the model must generate and interpret its own data.
+
+### 3.1 Reasoning Benchmarks
+
+There are a wide variety of reasoning benchmarks used to evaluate large language models. Some very notable among these are MATH (Hendrycks et al., [2021](https://arxiv.org/html/2410.10998v1#bib.bib16)), GSM8K (Cobbe et al., [2021](https://arxiv.org/html/2410.10998v1#bib.bib6)), CommonsenseQA (Talmor et al., [2018](https://arxiv.org/html/2410.10998v1#bib.bib30)), StrategyQA (Geva et al., [2021](https://arxiv.org/html/2410.10998v1#bib.bib11)), BIG-BENCH (Srivastava et al., [2022](https://arxiv.org/html/2410.10998v1#bib.bib29)), SciBench (Wang et al., [2023b](https://arxiv.org/html/2410.10998v1#bib.bib41)), SVAMP (Patel et al., [2021](https://arxiv.org/html/2410.10998v1#bib.bib26)), ARC-AGI (Chollet, [2019](https://arxiv.org/html/2410.10998v1#bib.bib5)), MMLU (Hendrycks et al., [2020](https://arxiv.org/html/2410.10998v1#bib.bib15)), GPQA (Rein et al., [2023](https://arxiv.org/html/2410.10998v1#bib.bib28)), and HumanEval (Chen et al., [2021](https://arxiv.org/html/2410.10998v1#bib.bib4)). These benchmarks are the standard for measuring LLM reasoning capabilities, but are overwhelmingly carefully chosen single-turn problems which aim to meaningfully separate the performance of different models on reasoning-like outputs such as math, code, or logic puzzles. However, these benchmarks are subject to train-on-test leakage, even if efforts are made to decontaminate the dataset (Yang et al., [2023](https://arxiv.org/html/2410.10998v1#bib.bib47)), and the majority are explicitly single-turn tests. Our benchmark directly measures the model’s ability to navigate multi-turn scenarios and does not require careful hiding of a test set to prevent misleading results.
+
+With respect to reasoning about simple functions, a benchmark that stands out as similar to ours is CRUXEval (Gu et al., [2024](https://arxiv.org/html/2410.10998v1#bib.bib14)), which assembles a list of 800 simple Python functions and input-output pairs, evaluating language models on their ability to predict input from output and output from input. Our work could be seen as a multi-turn, more difficult extension of this work – one where the function is replaced with a black box, where helpful and informative input-output pairs are not provided but instead need to be searched for by the language model, and where the objective is to infer the hidden function rather than the input or output.
+
+### 3.2 Multi-Turn Benchmarks
+
+There are a handful of multi-turn benchmarks used to evaluate LLMs. PlanBench (Valmeekam et al., [2022](https://arxiv.org/html/2410.10998v1#bib.bib36)) is one prominent benchmark that attempts to measure the ability of LLMs to navigate planning problems. This is a class of problems that is solved easily by classical planning algorithms such as STRIPS (Fikes & Nilsson, [1971](https://arxiv.org/html/2410.10998v1#bib.bib10)), and like our benchmark poses a significant challenge to LLMs. PlanBench is a primarily multi-step, single-turn benchmark with a multi-turn component (i.e. replanning based on unexpected events), which contrasts with our benchmark’s more direct multi-turn focus. This can be observed in the o1 models performing comparatively well on PlanBench (Valmeekam et al., [2024](https://arxiv.org/html/2410.10998v1#bib.bib37)), since scaling inference time compute within a single turn would be expected to improve performance substantially.
+
+Closest to ours are MINT (Wang et al., [2023c](https://arxiv.org/html/2410.10998v1#bib.bib42)) and Aidan-bench (McLaughlin, [2024](https://arxiv.org/html/2410.10998v1#bib.bib18)), which have more direct multi-turn focus. MINT repurposes existing single-turn benchmarks by allowing models to use tools before answering. While the range of tasks in MINT is therefore quite large, strong models can still solve these tasks in few (or one) turns, and the unmodified prompts remain subject to test set leakage. Aidan-bench measures the cosine similarity between multi-turn responses. This represents a more pure measurement of the doom loop phenomenon. In our benchmark, rather than directly measuring the doom loops, we are instead measuring how often those doom loops lead to failures of reasoning. We see similar surprising performances in our benchmark compared to Aidan-bench (e.g. Mistral Large), but with an ordering more tied to capabilities (e.g. Sonnet’s strong results, see Table [1](https://arxiv.org/html/2410.10998v1#S4.T1 "Table 1 ‣ 4.1 WILT Full split Results ‣ 4 Experiments ‣ WILT: A Multi-turn, Memorization-Robust Inductive Logic Benchmark for LLMs")).
+
+### 3.3 Hypothesis Space Reduction
+
+Hypothesis space representation is a commonly used framing in inductive logic tasks for LLMs. In Wang et al. ([2023a](https://arxiv.org/html/2410.10998v1#bib.bib40)), the authors show a technique called hypothesis search where the model will propose hypotheses in natural language and then implement these hypotheses as Python programs. This technique was shown to improve performance on ARC-AGI (Chollet, [2019](https://arxiv.org/html/2410.10998v1#bib.bib5)), but a similar approach could be used along with chain-of-thought (Wei et al., [2022](https://arxiv.org/html/2410.10998v1#bib.bib44)) for WILT as well.
+
+## 4 Experiments
+
+### 4.1 WILT Full split Results
+
+We evaluated several state-of-the-art LLMs on the full split of the WILT task. Experimental details can be found in Appendix [A.1](https://arxiv.org/html/2410.10998v1#A1.SS1 "A.1 Experimental Details ‣ Appendix A Appendix / Supplemental Material ‣ WILT: A Multi-turn, Memorization-Robust Inductive Logic Benchmark for LLMs"). Our results for this test can be found in Table [1](https://arxiv.org/html/2410.10998v1#S4.T1 "Table 1 ‣ 4.1 WILT Full split Results ‣ 4 Experiments ‣ WILT: A Multi-turn, Memorization-Robust Inductive Logic Benchmark for LLMs"). Claude 3.5 Sonnet narrowly performs the best on this task, with OpenAI’s o1 models close behind despite using fewer guesses.
+
+| Model | Accuracy | Approx. | Avg. | Avg. |
+| --- | --- | --- | --- | --- |
+|  |  | Correct | Guesses | Repeats |
+| Claude 3.5 Sonnet (Anthropic, [2024a](https://arxiv.org/html/2410.10998v1#bib.bib2)) | 14/50 | 10/50 | 16.38 | 0.54 |
+| o1-mini 2024-09-12 (OpenAI, [2024c](https://arxiv.org/html/2410.10998v1#bib.bib24)) | 13/50 | 8/50 | 12.1 | 0.06 |
+| o1-preview 2024-09-12 (OpenAI, [2024c](https://arxiv.org/html/2410.10998v1#bib.bib24)) | 12/50 | 6/50 | 8.12333We bold results for this column only if the models are also high performing. For example, Claude 3 Haiku uses fewer guesses than o1-preview, but this is because it is failing to make use of its available turns to uncover the behavior of the hidden rule, not because it efficiently solves the task. | 0.06 |
+| chatgpt-4o-latest (OpenAI, [2024a](https://arxiv.org/html/2410.10998v1#bib.bib22)) | 11/50 | 7/50 | 14.22 | 0.76 |
+| Mistral Large 2 (Mistral AI, [2024a](https://arxiv.org/html/2410.10998v1#bib.bib20)) | 11/50 | 5/50 | 26.56 | 2.84 |
+| GPT-4o 2024-08-06 (OpenAI, [2024a](https://arxiv.org/html/2410.10998v1#bib.bib22)) | 9/50 | 6/50 | 15.26 | 0.52 |
+| Llama 3.1 405B (Dubey et al., [2024](https://arxiv.org/html/2410.10998v1#bib.bib8)) | 8/50 | 9/50 | 12.21 | 0.60 |
+| Gemini 1.5 Flash 0827 (Google, [2024](https://arxiv.org/html/2410.10998v1#bib.bib13)) | 7/50 | 4/50 | 14.04 | 2.16 |
+| Llama 3.1 70B (Dubey et al., [2024](https://arxiv.org/html/2410.10998v1#bib.bib8)) | 7/50 | 2/50 | 15.18 | 1.48 |
+| Deepseek-v2.5-chat (Liu et al., [2024](https://arxiv.org/html/2410.10998v1#bib.bib17)) | 6/50 | 5/50 | 27.22 | 9.78 |
+| GPT-4o-mini (OpenAI, [2024b](https://arxiv.org/html/2410.10998v1#bib.bib23)) | 6/50 | 2/50 | 20.36 | 1.08 |
+| Gemini 1.5 Pro (Google, [2024](https://arxiv.org/html/2410.10998v1#bib.bib13)) | 5/50 | 6/50 | 16.78 | 0.82 |
+| Gemini 1.5 Flash (Google, [2024](https://arxi

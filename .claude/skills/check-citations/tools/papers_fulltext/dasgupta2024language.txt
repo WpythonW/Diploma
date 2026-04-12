@@ -1,0 +1,8 @@
+[https://arxiv.org/abs/2207.07051]
+We therefore hypothesized that language models would show human-like content effects on abstract reasoning problems. We explored this hypothesis
+
+[https://www.semanticscholar.org/paper/Language-models%2C-like-humans%2C-show-content-effects-Lampinen-Dasgupta/178e1186edcdcf7aeda33965484bdb596d1c6232]
+This work investigates whether language models—whose prior expectations capture some aspects of human knowledge—similarly mix content into their answers to
+
+[https://arxiv.org/html/2207.07051v4]
+Large language models (LMs) achieve above-chance performance on abstract reasoning tasks, but exhibit many imperfections. ... That is, abstract

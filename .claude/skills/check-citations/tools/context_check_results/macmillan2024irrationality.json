@@ -1,0 +1,52 @@
+{
+  "key": "macmillan2024irrationality",
+  "overall": "ERROR",
+  "fulltext_available": true,
+  "mentions": [
+    {
+      "file": "chapter1.tex",
+      "snippet": "Масштабный бенчмарк Macmillan-Scott и Musolesi~\\cite{macmillan2024irrationality} выявил существенную межмодельную вариабельность: одни LLM демонстрирую",
+      "verdict": "ERROR",
+      "comment": "В статье Macmillan-Scott и Musolesi не упоминается «предубеждение соответствия» (matching bias), описанное Эвансом, и не проводится анализ по задаче Уэйсона, связанной с этим эффектом. Также в работе не сообщается о высокой нестабильности ответов при повторных запросах (repetition variability), что является искажением результатов.",
+      "paper_quote": "In this paper, we answer this question by evaluating seven language models using tasks from the cognitive psychology literature."
+    },
+    {
+      "file": "chapter2.tex",
+      "snippet": "Задача была выбрана по трём причинам. Во-первых, она обладает чётко определённым нормативным ответом, что позволяет однозначно классифицировать отв",
+      "verdict": "WARNING",
+      "comment": "Тезис о широком использовании задачи в предыдущих исследованиях частично верен, но цитирование Macmillan-Scott и Musolesi в этом контексте избыточно: в их работе не представлена оригинальная задача, а лишь адаптированы классические парадигмы. Упоминание корректно, но может вводить в заблуждение о степени вклада.",
+      "paper_quote": "The authors evaluate seven prominent LLMs using established tasks from cognitive psychology literature that elicit well-known cognitive biases in humans."
+    },
+    {
+      "file": "chapter2.tex",
+      "snippet": "Ключевым методологическим вкладом дизайна является систематическая манипуляция порядком предъявления карточек. Каждый стимул предъявлялся каждой модели в",
+      "verdict": "ERROR",
+      "comment": "В работе Macmillan-Scott и Musolesi не описывается манипуляция порядком карточек или использование пяти перестановок. Также они не ссылаются на Binz и Schulz в контексте изменения порядка как способа реверсии ответа. Это утверждение ошибочно приписывает их работе методологические детали, которых там нет.",
+      "paper_quote": "The study uses both zero-shot and few-shot prompting to assess consistency across conditions."
+    },
+    {
+      "file": "chapter2.tex",
+      "snippet": "\\textbf{Expected Metric Accuracy (EMA)} --- доля испытаний, в которых модель выбирает ровно нормативно правильный набор карточек $\\{$P, $\\lnot$Q$\\}$",
+      "verdict": "ERROR",
+      "comment": "В статье Macmillan-Scott и Musolesi не используется метрика EMA, и не указано, что они применяли метрику точности, эквивалентную выбору набора $\\{P, \\lnot Q\\}$ в задаче Уэйсона. Их метрики — доля смещённых ответов и отклонение от рационального выбора, но не в контексте этой логической структуры.",
+      "paper_quote": "Metrics: Proportion of biased responses, deviation from rational choice, consistency across logically equivalent scenarios, and effect size of known cognitive biases."
+    },
+    {
+      "file": "intro.tex",
+      "snippet": "Несмотря на растущий массив литературы, посвящённой рациональности LLM~\\cite{binz2023using, suri2024large, macmillan2024irrationality}, большинство существующих",
+      "verdict": "WARNING",
+      "comment": "Общее упоминание работы в контексте изучения рациональности LLM корректно. Однако формулировка может создать впечатление, что работа охватывает широкий спектр парадигм, включая индуктивное открытие правил, чего в ней нет. Работа действительно вносит вклад, но не восполняет именно указанный пробел.",
+      "paper_quote": "The authors explore the extent to which LLMs replicate irrational human behaviors due to training on human-generated text."
+    },
+    {
+      "file": "intro.tex",
+      "snippet": "\\textbf{Степень разработанности проблемы.}\nПервые систематические исследования когнитивных предубеждений в LLM появились в 2023--2024 годах. Binz и Schulz~\\c",
+      "verdict": "ERROR",
+      "comment": "Работа Macmillan-Scott и Musolesi не проводила «масштабный бенчмарк нескольких моделей на задаче Уэйсона». В их методе не упоминается задача выбора карточек (Wason selection task), а используются другие парадигмы — фрейминг, привязка, ошибка конъюнкции, эффект затопленных затрат. Это грубое искажение содержания статьи.",
+      "paper_quote": "These include the framing effect, anchoring bias, conjunction fallacy, and sunk cost fallacy."
+    }
+  ],
+  "summary": "Работа Macmillan-Scott и Musolesi (2024) исследует когнитивные искажения в LLM, но не затрагивает задачу Уэйсона, не изучает matching bias и не анализирует стабильность ответов при повторных запросах. В дипломной работе неоднократно искажается содержание этой публикации: ей ошибочно приписывается использование Wason selection task, метрика EMA, манипуляция порядком карточек и другие элементы, отсутствующие в оригинале. Некоторые упоминания допустимы в общем контексте, но большинство — серьёзные искажения, что приводит к общему вердикту ERROR.",
+  "mention_count": 6,
+  "layer": 2
+}

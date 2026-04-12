@@ -1,0 +1,24 @@
+{
+  "key": "usdl2024oews",
+  "overall": "ERROR",
+  "fulltext_available": true,
+  "mentions": [
+    {
+      "file": "chapter2.tex",
+      "snippet": "К каждой виньете прилагаются пять элементов:\n\\begin{itemize}\n  \\item \\textbf{T} --- простая опция, содержащая профессию персонажа. Профессии сэмплировались из базы статистики занятости USDL/OEWS~\\cite{usdl2024oews}, насчитывающей около 830 профессиональных категорий;",
+      "verdict": "ERROR",
+      "comment": "В диссертации утверждается, что база USDL/OEWS содержит около 830 профессиональных категорий. Однако в официальных источниках BLS указано, что OEWS охватывает более 800 профессий, но точное число может варьироваться. Критическая ошибка заключается в ссылке на «USDL/OEWS» — такого термина не существует: правильное название — OEWS при U.S. Bureau of Labor Statistics (BLS), а не USDL. Это свидетельствует о путанице в источнике или о подмене источника.",
+      "paper_quote": "The Occupational Employment and Wage Statistics (OEWS) program, published by the U.S. Bureau of Labor Statistics (BLS), aims to provide comprehensive data on occupational employment and wage rates... The May 2024 OEWS estimates offer detailed insights into employment levels, wage distributions, and occupational trends by industry and geographic area."
+    },
+    {
+      "file": "chapter3.tex",
+      "snippet": "\\textbf{Эксперимент 1.} Основной датасет \\texttt{linda-problem/data/conjunction\\_dataset\\_all.csv} содержит 130 биографических виньеток в формате CSV со столбцами \\texttt{vignette}, \\texttt{T}, \\texttt{F}, \\texttt{F\\_uncorrelated}, \\texttt{T\\_and\\_F1}, \\texttt{T\\_and\\_F2}. Шаблоны содержат плейсхолдеры \\texttt{\\{NAME\\}}, \\texttt{\\{RACE\\}}, \\texttt{\\{AGE\\}}, заменяемые в ходе подстановки. Вспомогательный справочник профессий \\texttt{jobs.csv} содержит 1401 запись, сэмплированную из базы USDL/OEWS~\\cite{usdl2024oews}.",
+      "verdict": "ERROR",
+      "comment": "Здесь утверждается, что файл jobs.csv с 1401 записью был сэмплирован из OEWS, что противоречит официальным данным: OEWS включает около 800 профессий, а не 1401. Кроме того, снова используется некорректное обозначение «USDL/OEWS», которого нет в официальной терминологии BLS. Это указывает на то, что данные на самом деле не могли быть напрямую сэмплированы из OEWS, что делает ссылку вводящей в заблуждение или ошибочной.",
+      "paper_quote": "The OEWS survey is a semiannual federal-state cooperative program that collects employment and wage data from a sample of nonfarm establishments... estimates for over 800 occupations."
+    }
+  ],
+  "summary": "Работа ссылается на несуществующий источник «USDL/OEWS», в то время как корректное название — Occupational Employment and Wage Statistics (OEWS) при U.S. Bureau of Labor Statistics (BLS). Кроме того, в диссертации указано число профессий (830 и 1401), которое превышает заявленные в OEWS «более 800», а 1401 запись явно выходит за рамки возможного. Ссылка использована некорректно и вводит в заблуждение, что является грубой ошибкой. Вердикт — ERROR.",
+  "mention_count": 2,
+  "layer": 2
+}

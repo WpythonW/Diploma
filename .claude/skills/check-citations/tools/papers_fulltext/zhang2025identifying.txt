@@ -1,0 +1,1585 @@
+
+
+Identifying and Mitigating the Influence of the Prior Distribution in Large Language Models
+
+1  Introduction
+
+2  Related Work
+
+2.1  Hallucination in LLMs
+
+2.2  Mechanistic understanding of the effect of priors on text generation
+
+2.3  Controlling text generation
+
+3  Approach
+
+3.1  Model
+
+3.2  Tasks
+
+3.2.1  Prior-dominated tasks
+
+Counting.
+
+Shift cipher.
+
+Acronyms.
+
+3.2.2  Prior-insensitive tasks
+
+Multiplication.
+
+Make letters.
+
+3.3  LLM internal representations
+
+3.4  Mechanistic interpretability methods
+
+3.4.1  In-context prompting
+
+3.4.2  Probing
+
+3.4.3  Finetuning
+
+3.4.4  Linear intervention methods
+
+4  Empirical Evaluations
+
+4.1  Localization of prior influence
+
+Llama 3  prefers common answers.
+
+LLM layers exhibit an all-or-none pattern in encoding the prior.
+
+4.2  Using information from internal representations
+
+In-context prompting.
+
+Probing.
+
+Finetuning.
+
+4.3  Finetuning works better on prior-dominated tasks
+
+Performance improvement differs significantly across tasks related and not related to the prior.
+
+Finetuned answers do not show a preference towards common tokens.
+
+5  Conclusion
+
+A  Failed Techniques to Reduce Reliance on Prior
+
+A.1  Context vs. prior steering
+
+A.2  Ablating the unigram prior direction
+
+B  Prompt - Ground Truth Response Examples
+
+C  Implementation Details
+
+Identifying and Mitigating the Influence of the Prior
+
+Distribution in Large Language Models
+
+Liyi Zhang
+
+Department of Computer Science
+ Princeton University
+ Princeton, NJ 08540, USA
+
+zhang.liyi@princeton.edu
+
+&amp;Veniamin Veselovsky
+
+Department of Computer Science
+ Princeton University
+ Princeton, NJ 08540, USA
+
+veniamin@princeton.edu
+
+&amp;R. Thomas McCoy
+
+Department of Linguistics
+ Yale University
+ New Haven, CT 06511, USA
+
+tom.mccoy@yale.edu
+
+&amp;Thomas L. Griffiths
+
+Department of Psychology and Computer Science
+ Princeton University
+ Princeton, NJ 08540, USA
+
+tomg@princeton.edu
+
+Abstract
+
+Large language models (LLMs) sometimes fail to respond appropriately to deterministic tasks – such as counting or forming acronyms – because the implicit prior distribution they have learned over sequences of tokens influences their responses. In this work, we show that, in at least some cases, LLMs actually compute the information needed to perform these tasks correctly, and we identify some interventions that can allow them to access this information to improve their performance. First, we show that simply prompting the language model to not rely on its prior knowledge leads to dramatic improvements in prior-dominated tasks. We then use mechanistic interpretability techniques to localize the prior within the LLM and manipulate the extent to which that prior influences its responses. Specifically, we show that it is possible to identify layers of the underlying neural network that correlate with the prior probability of a response and that lightweight finetuning of these layers with basic prompts on prior-dominated tasks achieves high performance on held-out answers. These results suggest that the information required to produce a correct response is contained within the representations of the problems formed by the models. Furthermore, we show that this finetuning is significantly more effective for prior-dominated tasks, and that the error after finetuning is no longer correlated with the prior. Our results suggest that it may be possible to define effective methods for manipulating the extent to which LLMs rely upon their priors in solving problems, potentially increasing their performance in settings where LLMs hallucinate for reasons related to the prior probability of token sequences.
+
+1  Introduction
+
+Large language models (LLMs) are capable of producing coherent text in a variety of settings  (Radford et al.,  2019 ; Dou et al.,  2022 ; Bubeck et al.,  2023 ; Chang &amp; Bergen,  2024 ) , yet they often fail at simple tasks, producing hallucinations and having difficulty performing logical reasoning  (Lin et al.,  2022 ; McCoy et al.,  2023 ; Wu et al.,  2024a ; Mirzadeh et al.,  2024 ; Razeghi et al.,  2022 ; Stechly et al.,  2024 ) .  McCoy et al. ( 2023 )  argue that these failures are partly a consequence of LLMs having difficulty producing low-probability output. For example, when solving puzzles such as deciphering a message by shifting each letter in the message by one position in the alphabet, LLMs will perform better when the correct answer is a high-probability string than when it is a low-probability string, even though the underlying logic of these tasks is same (Figure
+
+1(a)
+
+provides an example of one of these errors being reproduced by  Llama 3 ).
+One way to understand these errors is to assume that LLMs perform Bayesian inference  (Griffiths et al.,  2024 ) , letting the prior distribution over word sequences that they have learned through pre-training on large amounts of text influence their output  (McCoy et al.,  2023 ) . However, it is unclear what the mechanisms behind this influence might be, and whether their effects can be mitigated.
+
+(a)  Shift-cipher - prompt-response example
+
+(b)  Pretrained model accuracy on three tasks
+
+Figure 1:  Influence of the prior on  Llama 3 ’s performance for deterministic tasks. (a): Although  Llama 3  reasons through the correct characters, it outputs a more likely token ‘in’, instead of the correct ‘inf’ (which is the first token of the correct answer ‘infidel’), followed by ‘field’. (b): Performance of the pretrained LLM  Llama 3  on three prior-related tasks. For counting, the common set is multiples of 10 from 20 to 100; the uncommon set is all the other numbers from 11 to 100. For shift-cipher and acronym, we take two sets of answer vocabulary items whose words appear relatively commonly and uncommonly in natural texts.
+
+Identifying the mechanisms underlying the behavior of LLMs is challenging.
+LLM residual streams (i.e. the internal representations produced by processing sequences of tokens) are known to be  polysemantic , where each hidden unit can be activated by multiple different concepts  (Templeton,  2024 ; Cunningham et al.,  2023 )  due to the way in which neural network representations naturally instantiate superpositions of multiple pieces of information  (Smolensky,  1986 ) . Creating probes – neural networks that are trained to predict information of interest based on the internal representations of the models  (Ettinger et al.,  2016 ; Adi et al.,  2017 ; Hupkes et al.,  2018 ; Belinkov,  2021 )  – is a common approach for evaluating the implicit knowledge of LLMs  (Nanda et al.,  2023 ; Gurnee &amp; Tegmark,  2024 ) . For example,
+ Orgad et al. ( 2024 )  showed that LLMs know more than they show by conducting probing experiments on multiple choice questions. However, probing can confound what is embedded inside LLMs with what is learned by the probe  (Wieting &amp; Kiela,  2019 ; Hewitt &amp; Liang,  2019 ) . This has led to the development of methods for mechanistic interpretability, such as logit-lens  (Belrose et al.,  2023 )  or using interventions on the values of hidden units to evaluate their causal effects  (Giulianelli et al.,  2018 ; Soulos et al.,  2020 ; Geiger et al.,  2021 ; Minder et al.,  2025 ) .
+
+In this paper, we show that the implicit prior learned by LLMs results in incorrect responses even though the model has internal representations that are sufficient to solve the problem. We identify potential sites for intervention by localizing the prior within the LLM. Analyzing individual layers in  Llama 3
+
+(Grattafiori et al.,  2024 )  with logit lens, we find that layers tend to either have a strong or no correlation with the prior. This suggests that the prior is encoded in the residual stream, but only at certain levels of the model. To find information leading to the correct answer that is potentially embedded in the LLMs, we explore two methods: adding a simple prompt in-context, and finetuning on a stratified train-validation setup. First, we find that simply adding “do not rely on your prior knowledge” to the prompt significantly improves performance across some prior-dominated tasks. However, the stratified finetuning method achieves even more consistent performance. Comparing the results of stratified finetuning across different tasks shows that its benefits are greatest for tasks where the prior influences behavior. This suggests that we are effectively eliciting knowledge already encoded in LLMs to improve performance in settings where the prior steers the model away from the correct answer.
+
+The performance increase from these methods suggests that the ability to solve the task already exists in the LLM, but the model is led away from these answers by its prior. We also show that for generative tasks where the LLM must output a word or a number, the probe itself can learn to perform the task, and thus that a stratified setup is needed to explore this problem. Finally, we demonstrate that the methods we have developed are appropriately targeted at reducing the influence of the prior in settings where the prior is not helpful: we show that the finetuned improvement in performance is significantly smaller for tasks where the prior is not problematic, and that finetuned performance no longer correlates with the probability of the answers but rather with the difficulty of the questions.
+
+Our main contributions are revealing how information about prior distributions and the task at hand is encoded by LLMs, and defining simple yet effective methods for manipulating the extent to which LLMs rely upon these priors, increasing their performance in settings where the LLM can already solve problems if the answers are high-probability tokens. More specifically:
+
+1.
+
+We find specific locations inside LLMs from which the prior probability over tokens can be decoded.
+
+2.
+
+We show that, in several deterministic tasks where LLMs show probability sensitivity, the residual stream encodes information needed to perform the task, suggesting that the incorrect responses can be attributed to the LLM getting distracted by the prior.
+
+3.
+
+We identify two approaches – one based on prompting and one based on fine-tuning – that are effective for intervening on the use of prior knowledge by LLMs, enabling their behavior to better reflect the information they contain that is relevant to the task.
+
+2  Related Work
+
+2.1  Hallucination in LLMs
+
+LLMs sometimes output incorrect content driven by a variety of factors including biases  (Kotek et al.,  2023 ) , factual inaccuracy  (Lin et al.,  2022 ; Liu et al.,  2022 ) , and errors in reasoning  (Wu et al.,  2024a ; Mirzadeh et al.,  2024 ; Zhu &amp; Griffiths,  2024 ) . These various types of errors are sometimes grouped together under the term  hallucination . Note that there is inconsistency in the field in how the term  hallucination  is used  (Venkit et al.,  2024 ) ; we follow  Orgad et al. ( 2024 )  in using it to mean any type of error produced by LLMs.
+
+Our work explores one type of hallucination, where an LLM prefers to output higher-probability sequences of tokens in settings where the correct response has lower probability.  McCoy et al. ( 2023 )  documented this phenomenon via extensive analysis of the behavior of LLMs.  Prabhakar et al. ( 2024 )  extended this work by using chain-of-thought prompting to show that LLM behavior involves a mixture of memorization and reasoning on shift-cipher problems. Our work builds on  McCoy et al. ( 2023 )  from a different angle, where we focus on localizing the influence of the prior and developing novel methods for removing its effect on a range of prior-dominated problems.  Orgad et al. ( 2024 )  reached a similar conclusion as ours – that LLMs know more than they show – but by focusing on problems that allow free responses (as opposed to the multiple choice questions that were the focus of their analysis), we generalize these results to a wider range of settings.
+
+2.2  Mechanistic understanding of the effect of priors on text generation
+
+Existing work has explored manipulating the impact of learned prior probabilities on text generation.  Minder et al. ( 2025 )  did this by identifying a one-dimensional subspace that controls whether text generation samples from the prior or from the context provided to the model. Other work has explored how an LLM functions under uncertainty and found that there exist two mechanisms that encode uncertainty: the entropy neuron  (Gurnee et al.,  2024 ; Katz &amp; Belinkov,  2023 )  and pushing generation towards the unigram prior  (Stolfo et al.,  2024 ) . This ability to push the LLM generation towards the unigram prior has been shown to be an effective strategy for controlling text generation  (Nielsen et al.,  2025 ) .
+
+2.3  Controlling text generation
+
+The ability of the user to control LLM text generation in general has been extensively researched. In this paper, we take inspiration from prompt engineering, finetuning, probing, and steering. Prompting has been shown to be able to control text generation through personas  (Hu &amp; Collier,  2024 ) , chain-of-thought reasoning  (Wei et al.,  2022 ; Yao et al.,  2023 ) , refinement, and more esoteric techniques  (Salinas &amp; Morstatter,  2024 ) . Other approaches focus on parameter updates including full finetuning  (Bommasani et al.,  2021 )  and parameter efficent finetuning (PEFT) techniques such as like LoRA or ReFT  (Hu et al.,  2021 ; Wu et al.,  2024b ) . Another line of work controls the model through steering techniques such as dictionary learning  (Cunningham et al.,  2023 ) , contrastive activation addition  (Rimsky et al.,  2023 ) , and distributed alignment search  (Geiger et al.,  2023 ; Minder et al.,  2025 ) .
+
+3  Approach
+
+3.1  Model
+
+For all tasks, the LLM that we evaluate is the instruction-tuned  Llama 3
+
+(Grattafiori et al.,  2024 )  with 8B parameters.
+We chose  Llama 3  because it satisfies the two criteria that are necessary for our analyses. First,
+its weights are open, which is a prerequisite for our goal of analyzing the model’s internal processing. Second, it is capable of achieving reasonably high performance on the tasks that we use ( McCoy et al. ( 2023 )  find that some open-weights models achieve scores of 0% on these tasks, preventing meaningful conclusions from being drawn from them).
+
+3.2  Tasks
+
+Our experiments focus on two kinds of tasks: tasks in which the prior tends to result in incorrect responses (“prior-dominated tasks”) and tasks in which the prior seems to have little effect (“prior-insensitive tasks”). We describe these two kinds of tasks in turn. Except for the “make letters” task, similar versions of all the tasks can also be found in  McCoy et al. ( 2023 ) .
+
+3.2.1  Prior-dominated tasks
+
+Counting.
+
+The LLM is presented with a sequence of identical letters (e.g. 23 “m”s), and then it is asked how many letters are there in this list (e.g. 23). The LLM prefers to output numbers that are common, such as multiples of 10 (Figure
+
+1  b, left).
+
+Shift cipher.
+
+The LLM is presented with a sequence of letters (e.g. “bqqmf”) and is asked to shift each letter forward by
+
+n
+
+𝑛
+
+n  italic_n
+
+. For example, if
+
+n  =  1
+
+𝑛  1
+
+n=1  italic_n = 1
+
+, the correct answer for “bqqmf” would be “apple”. The LLM prefers to output common words (Figure
+
+1  b, middle).
+
+Acronyms.
+
+The LLM is presented with a list of words (e.g. “Counter Affairs Trigram”) and is asked to concatenate the first letter of each word (e.g. “CAT”). The LLM prefers to output common words (Figure
+
+1  b, right).
+
+3.2.2  Prior-insensitive tasks
+
+Multiplication.
+
+The LLM is asked to multiply two three-digit positive integers. The answers for such queries are numbers that are so large that all of them are very rare in natural text; therefore, the LLM is unlikely to have strong priors over these output sequences, justifying our designation of this task as prior-insensitive.
+
+Make letters.
+
+This task can be considered as “reverse counting”, where the prompt asks the LLM to form a number of letters (e.g. “7 letter ‘c’s separated by spaces”). The correct answer would be “c c c c c c c”. As with the multiplication case, all correct answers for this task are such low-probability strings that the LLM is unlikely to have established strong priors over these strings, justifying our classification of this task as being largely prior-insensitive.
+
+3.3  LLM internal representations
+
+To describe the methods we use for exploring the internal representations of LLMs, we introduce some formal notation. We will denote an input sequence (such as the prompt used in our experiments) as
+
+x
+
+1  :
+
+T  1
+
+=
+
+{
+
+x  1
+
+,
+
+x  2
+
+,  …  ,
+
+x
+
+T  1
+
+}
+
+subscript  𝑥
+
+:  1
+
+subscript  𝑇  1
+
+subscript  𝑥  1
+
+subscript  𝑥  2
+
+…
+
+subscript  𝑥
+
+subscript  𝑇  1
+
+x_{1:T_{1}}=\{x_{1},x_{2},...,x_{T_{1}}\}  italic_x start_POSTSUBSCRIPT 1 : italic_T start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT end_POSTSUBSCRIPT = { italic_x start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT , italic_x start_POSTSUBSCRIPT 2 end_POSTSUBSCRIPT , … , italic_x start_POSTSUBSCRIPT italic_T start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT end_POSTSUBSCRIPT }
+
+. Given this input, the LLM produces the output sequence
+
+x
+
+T  1
+
++  1
+
+:
+
+T  1
+
++
+
+T  2
+
+=
+
+{
+
+x
+
+T  1
+
++  1
+
+,
+
+x
+
+T  1
+
++  2
+
+,  …  ,
+
+x
+
+T  1
+
++
+
+T  2
+
+}
+
+subscript  𝑥
+
+:
+
+subscript  𝑇  1
+
+1
+
+subscript  𝑇  1
+
+subscript  𝑇  2
+
+subscript  𝑥
+
+subscript  𝑇  1
+
+1
+
+subscript  𝑥
+
+subscript  𝑇  1
+
+2
+
+…
+
+subscript  𝑥
+
+subscript  𝑇  1
+
+subscript  𝑇  2
+
+x_{T_{1}+1:T_{1}+T_{2}}=\{x_{T_{1}+1},x_{T_{1}+2},...,x_{T_{1}+T_{2}}\}  italic_x start_POSTSUBSCRIPT italic_T start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT + 1 : italic_T start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT + italic_T start_POSTSUBSCRIPT 2 end_POSTSUBSCRIPT end_POSTSUBSCRIPT = { italic_x start_POSTSUBSCRIPT italic_T start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT + 1 end_POSTSUBSCRIPT , italic_x start_POSTSUBSCRIPT italic_T start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT + 2 end_POSTSUBSCRIPT , … , italic_x start_POSTSUBSCRIPT italic_T start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT + italic_T start_POSTSUBSCRIPT 2 end_POSTSUBSCRIPT end_POSTSUBSCRIPT }
+
+. In the transformer architecture  (Vaswani et al.,  2017 ) , each token
+
+x  i
+
+subscript  𝑥  𝑖
+
+x_{i}  italic_x start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT
+
+in the input and output sequence has an associated embedding
+
+z  i
+
+(  L  )
+
+subscript
+
+superscript  𝑧  𝐿
+
+𝑖
+
+z^{(L)}_{i}  italic_z start_POSTSUPERSCRIPT ( italic_L ) end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT
+
+in the final layer
+
+L
+
+𝐿
+
+L  italic_L
+
+of the model. These embeddings make up the residual stream. On lower layers
+
+l
+
+𝑙
+
+l  italic_l
+
+, we denote the token’s corresponding embedding as
+
+z  i
+
+(  l  )
+
+subscript
+
+superscript  𝑧  𝑙
+
+𝑖
+
+z^{(l)}_{i}  italic_z start_POSTSUPERSCRIPT ( italic_l ) end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT
+
+. Except for the last layer,
+
+z  i
+
+(  l  )
+
+subscript
+
+superscript  𝑧  𝑙
+
+𝑖
+
+z^{(l)}_{i}  italic_z start_POSTSUPERSCRIPT ( italic_l ) end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT
+
+is associated with
+
+z  i
+
+(
+
+l  −  1
+
+)
+
+subscript
+
+superscript  𝑧
+
+𝑙  1
+
+𝑖
+
+z^{(l-1)}_{i}  italic_z start_POSTSUPERSCRIPT ( italic_l - 1 ) end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT
+
+by the attention mechanism across
+
+i
+
+𝑖
+
+i  italic_i
+
+.
+
+3.4  Mechanistic interpretability methods
+
+3.4.1  In-context prompting
+
+Past work has demonstrated that LLMs can reason about their own generations  (Tian et al.,  2023 ; Kadavath et al.,  2022 )  and that they can obey instructions about how to carry out a task, such as performing it step-by-step  (Kojima et al.,  2022 ) . We hypothesize that LLMs may similarly capture meta-knowledge about their priors that could enable them to be guided to avoid relying on their priors when generating an answer.
+To investigate this possibility, we simply append the string “do not rely on your prior knowledge” (or “do not rely on your prior knowledge on the output” in the case of shift ciphers) to the end of the prompt.
+
+3.4.2  Probing
+
+We explore the efficacy of probing methods on what LLMs know about the answers to a task – a method that has previously been used for revealing knowledge about multiple choice questions  (Orgad et al.,  2024 ) . Probing aims to understand whether the target answer for a given task exists in the model’s internal representations. An intuitive way to do so is to use a linear probe on LLM embeddings. In a given experiment, we arbitrarily select a fixed token
+
+i
+
+𝑖
+
+i  italic_i
+
+and layer
+
+l
+
+𝑙
+
+l  italic_l
+
+. For each sequence in the dataset, the LLM produces internal embedding
+
+z  i
+
+(  l  )
+
+subscript
+
+superscript  𝑧  𝑙
+
+𝑖
+
+z^{(l)}_{i}  italic_z start_POSTSUPERSCRIPT ( italic_l ) end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT
+
+. The probe is defined as a parameterized function
+
+g  =
+
+Softmax  ⁢
+
+(
+
+Linear  ⁢
+
+(
+
+z  i
+
+(  l  )
+
+)
+
+)
+
+𝑔
+
+Softmax
+
+Linear
+
+subscript
+
+superscript  𝑧  𝑙
+
+𝑖
+
+g=\text{Softmax}(\text{Linear}(z^{(l)}_{i}))  italic_g = Softmax ( Linear ( italic_z start_POSTSUPERSCRIPT ( italic_l ) end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT ) )
+
+mapping from the space of embedding
+
+z  i
+
+(  l  )
+
+subscript
+
+superscript  𝑧  𝑙
+
+𝑖
+
+z^{(l)}_{i}  italic_z start_POSTSUPERSCRIPT ( italic_l ) end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT
+
+to a probability vector representing the answer for the task.
+
+Additional challenges exist in probing on word prediction tasks. If the probe targets the space of all LLM tokens, then the classes are sparse, and the probe would need to zero-shot predict classes during the validation stage. Thus, we insert the probe as a dense layer between an LLM hidden state and the LLM output layer. Similarly, for each sequence in the dataset, the LLM produces internal embedding
+
+z  i
+
+(  l  )
+
+subscript
+
+superscript  𝑧  𝑙
+
+𝑖
+
+z^{(l)}_{i}  italic_z start_POSTSUPERSCRIPT ( italic_l ) end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT
+
+at token
+
+i
+
+𝑖
+
+i  italic_i
+
+and layer
+
+l
+
+𝑙
+
+l  italic_l
+
+. The probe is defined as a parameterized function
+
+g  =  ReLU
+
+(
+
+(  Linear  )
+
+g=\text{ReLU}((\text{Linear})  italic_g = ReLU ( ( Linear )
+
+) mapping from the embedding space
+
+z  i
+
+(  l  )
+
+subscript
+
+superscript  𝑧  𝑙
+
+𝑖
+
+z^{(l)}_{i}  italic_z start_POSTSUPERSCRIPT ( italic_l ) end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT
+
+to a vector representing the input to the LLM output layer.
+
+3.4.3  Finetuning
+
+Because the relationship of the prior to model embeddings is non-linear (which we will discuss in Section
+
+3.4.4  ), finetuning is potentially a more effective approach than probing for removing the effect of the prior and bringing out knowledge encoded by the LLM.
+
+Unlike previous work, we use a stratified train-validation split to prevent influence from potential confounding variables and overfitting. In each task, it is ensured that all answer tokens used in the validation set do not appear in the training set. This ensures that the finetuned models do not memorize arbitrary relationships between the answer and patterns that appear in the question. For example, correctly answering that a sequence is 43 letters long means that the original model stores information about the concept of a 43-letters-long sequence, since the number 43 is unseen during training. A similar logic applies to piecing together letters into a word in other tasks.
+
+The stratified setup is important in determining that the LLM encodes knowledge necessary to solve the task. As the results we report later in the paper show, probing can achieve high accuracy on a random train-validation split, but it gets close to
+
+0  %
+
+percent  0
+
+0\%  0 %
+
+accuracy on a stratified split.
+
+3.4.4  Linear intervention methods
+
+In addition to the approaches outlined above, we also studied two additional techniques to reduce reliance on the prior motivated by previous work. In the first approach, we used the one-dimensional prior-context subspace from  (Minder et al.,  2025 ) . In the second approach, we ablate on the unigram latent direction found in  (Stolfo et al.,  2024 ) .
+Since these results did not lead to significant improvements, we relegate the results and explanations of methods to Appendix
+
+A  .
+
+4  Empirical Evaluations
+
+4.1  Localization of prior influence
+
+Llama 3  prefers common answers.
+
+In this paragraph, we illustrate a phenomenon that is reproduced from  McCoy et al. ( 2023 ) . Figure
+
+4(a)
+
+shows that on the counting task,  Llama 3  prefers to output answers that are common, which in this case is multiples of ten. In particular,  Llama 3  achieves high accuracy for sequence lengths that are common numbers, and yet has
+
+0  %
+
+percent  0
+
+0\%  0 %
+
+accuracy on most other sequence lengths. We also find that most numbers are never outputted as answers, although the lengths of sequences in our questions are evenly distributed across all integers from 1 to 100. Figure
+
+1(b)
+
+shows that similar probability sensitivity arises in the other tasks as well.
+
+Since this result suggests that  Llama 3  is capable of counting certain sequences, we explore which parts of the model steer its output away from the correct answer but instead towards common tokens, and whether we can target the removal of this prior influence and achieve high performance.
+
+Figure 2:  Accuracy of finetuned (blue) and original (red) models on six tasks (shown here is the best layer’s performance in each individual task). Of these tasks, the multiplication and make letters task involve little prior influence. This suggests that finetuning on a specific task is more effective for tasks where the prior steers the model away from the right answer.
+
+LLM layers exhibit an all-or-none pattern in encoding the prior.
+
+We use logit lens to investigate which individual layers embed the prior. To illustrate how the analysis of where the prior is embedded is constructed, we use the example of the shift-cipher task. Other tasks are investigated similarly. The construction of this analysis can be broken down into three steps:
+
+1.
+
+Dataset of tokens.  We use a dataset of two-token English words that are seven characters long. These serve as true answers to the shift-1 cipher questions. Logits that will be acquired later are recorded only for the first tokens of each of these words.
+
+2.
+
+Prompt construction.
+
+Llama 3  answers a shift-1 question with a prompt that is similar to the one we used previously to evaluate the LLM on the shift cipher, except that the prompt tells the LLM that it should attempt to guess the answer before the input (the encoded text) has been provided. This framing aims to encourage the LLM to fall back on its prior over possible answers because it has no other information that it can rely on. This prompt follows the actual question-answer prompts as closely as possible by, for example, making sure that there is no hint that the answer is an English word.
+
+3.
+
+Acquiring logits.  Finally, we record the logits for the relevant tokens gathered in the first step. The logits are  Llama 3 ’s output at the token where it makes its answer to the prompt in the above step.
+
+To inspect what information about the answer appears in individual layers, we employ logit lens. For each layer
+
+l
+
+𝑙
+
+l  italic_l
+
+, we acquire a list of LLM embeddings over its answer to each shift-cipher question,
+
+z  i
+
+(  l  )
+
+superscript
+
+subscript  𝑧  𝑖
+
+𝑙
+
+z_{i}^{(l)}  italic_z start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT start_POSTSUPERSCRIPT ( italic_l ) end_POSTSUPERSCRIPT
+
+, where
+
+i
+
+𝑖
+
+i  italic_i
+
+denotes the index of the output token corresponding to the answer position. We multiply each layer’s embedding with the unembedding layer to acquire a proxy of logits over the LLM answer. We compute the Spearman correlation between the rankings of the LLM prior logits (obtained as described in steps 1 through 3 above) and the LLM answer logits (obtained via logit lens applied to the LLM’s hidden state on standard prompts in which the input text has been provided, rather than requiring the LLM to guess without the input provided). For example, using a dataset of 10,000 words corresponding to 10,000 shift-cipher questions, we get 10,000 correlations.
+
+Results for three tasks are shown in Figure
+
+3  . The encoding of the prior is not evenly distributed: most layers either exhibit significant correlation on all questions, or on no questions at all. This pattern suggests that some layers do not focus on encoding the prior, which further suggests that one might be able to delineate knowledge of the true answer from prior knowledge.
+
+(a)  Counting
+
+(b)  Shift-cipher.
+
+(c)  Acronyms.
+
+Figure 3:  Percentage of questions (vertical axis) where the LLM answer logits have a positive correlation with the prior with p-value
+
+&lt;  0.05
+
+absent  0.05
+
+&lt;0.05  &lt; 0.05
+
+, versus LLM layer number (horizontal axis) in an LLM with 32 total layers. Dots colored in red have more answer logits with negative correlation.  Higher implies stronger correlation.
+
+4.2  Using information from internal representations
+
+The previous results suggest that LLMs encode the correct answers on tasks even when they are incorrectly influenced by the prior. This suggests that it should be possible to develop methods for extracting those correct answers. We did this in three ways: in-context prompting, probing, and finetuning. We found that probing generalized poorly but the other two methods were effective.
+
+In-context prompting.
+
+Table
+
+1
+
+shows that in-context prompting achieves significant improvement in two of the three tasks: counting and acronyms. Because we can be sure that the LLM receives no extra information with this extra line of the prompt (other than the encouragement to avoid relying on the prior), this result suggests that at least in some prior-dominated tasks, the LLM is capable of solving the problem but the prior steers its response away from the correct answer. A mild improvement is also observed on the shift-cipher task.
+
+Probing.
+
+We conducted probing on the counting, shift-cipher, and acronyms tasks. While probing improves performance significantly when the train-validation sets are randomly split, validation accuracy on the stratified set steadily drops from random-guessing to
+
+0  %
+
+percent  0
+
+0\%  0 %
+
+during probe training. This suggests that probing on these generative tasks (where the model outputs words or numbers instead of a multiple-choice) does not reliably decode knowledge from the model, but is subject to memorization within the probe.
+
+Finetuning.
+
+We used low-rank adaptation  (LoRA;  Hu et al.,  2021 )  in finetuning (for further implementational details, see Appendix
+
+C  ). Figure
+
+2
+
+and Table
+
+1
+
+show substantial improvement achieved by this lightweight finetuning across all prior-dominated tasks. All experiments are done in the stratified setup, so no validation answers are seen during finetuning. Because our previous evidence suggests that the relevant knowledge is already encoded within the LLM, lightweight finetuning on only 2000 to 8000 sequences with 50 epochs suffices to achieve high performance consistently across tasks. Just as probing fails in the stratified setup, finetuning the whole model can also be affected by overfitting as seen on the counting task in Table
+
+1  . However, finetuning only one layer in the earlier layers consistently achieves higher performance and mitigates the overfitting issue.
+
+Table 1:  Validation accuracy with standard error for the original model (which is the standard version of  Llama 3 ), finetuned models, and the original model with a prompt that discourages reliance on the prior. Finetune-layer refers to performance obtained by only finetuning the best-performing layer.
+
+Task
+
+Counting
+
+Shift-cipher
+
+Acronym
+
+Original
+
+11.5  %
+
+±
+
+1.4  %
+
+plus-or-minus
+
+percent  11.5
+
+percent  1.4
+
+11.5\%{\;\pm 1.4\%}  11.5 % ± 1.4 %
+
+31.9  %
+
+±
+
+1.0  %
+
+plus-or-minus
+
+percent  31.9
+
+percent  1.0
+
+31.9\%{\;\pm 1.0\%}  31.9 % ± 1.0 %
+
+12.8  %
+
+±
+
+1.1  %
+
+plus-or-minus
+
+percent  12.8
+
+percent  1.1
+
+12.8\%{\;\pm 1.1\%}  12.8 % ± 1.1 %
+
+Finetune
+
+37.5  %
+
+±
+
+2.1  %
+
+plus-or-minus
+
+percent  37.5
+
+percent  2.1
+
+37.5\%{\;\pm 2.1\%}  37.5 % ± 2.1 %
+
+99.2  %
+
+±
+
+0.2  %
+
+plus-or-minus
+
+percent  99.2
+
+percent  0.2
+
+99.2\%{\;\pm 0.2\%}  99.2 % ± 0.2 %
+
+97.5  %
+
+±
+
+0.5  %
+
+plus-or-minus
+
+percent  97.5
+
+percent  0.5
+
+97.5\%{\;\pm 0.5\%}  97.5 % ± 0.5 %
+
+Finetune-layer
+
+72.3  %
+
+±
+
+2.0  %
+
+plus-or-minus
+
+percent  72.3
+
+percent  2.0
+
+72.3\%{\;\pm 2.0\%}  72.3 % ± 2.0 %
+
+99.4  %
+
+±
+
+0.2  %
+
+plus-or-minus
+
+percent  99.4
+
+percent  0.2
+
+99.4\%{\;\pm 0.2\%}  99.4 % ± 0.2 %
+
+99.9  %
+
+±
+
+0.1  %
+
+plus-or-minus
+
+percent  99.9
+
+percent  0.1
+
+99.9\%{\;\pm 0.1\%}  99.9 % ± 0.1 %
+
+Prompting
+
+49.2  %
+
+±
+
+2.2  %
+
+plus-or-minus
+
+percent  49.2
+
+percent  2.2
+
+49.2\%{\;\pm 2.2\%}  49.2 % ± 2.2 %
+
+34.5  %
+
+±
+
+1.1  %
+
+plus-or-minus
+
+percent  34.5
+
+percent  1.1
+
+34.5\%{\;\pm 1.1\%}  34.5 % ± 1.1 %
+
+46.3  %
+
+±
+
+1.6  %
+
+plus-or-minus
+
+percent  46.3
+
+percent  1.6
+
+46.3\%{\;\pm 1.6\%}  46.3 % ± 1.6 %
+
+4.3  Finetuning works better on prior-dominated tasks
+
+Performance improvement differs significantly across tasks related and not related to the prior.
+
+Figure
+
+2
+
+compares our three prior-dominated tasks to our two tasks that we have argued are unlikely to have significant prior influence. The performance increase is significantly higher for the prior-dominated tasks. This pattern remains the same if all tasks use whole-model finetuning instead of best-layer finetuning (with a similar drop in both the counting task and the make-letters tasks). This suggests that our lightweight finetuning is most useful when the prior knowledge over outputs can be expected to sway LLM responses. It also suggests that while even stratified finetuning can provide the model with some ability to perform the task (as seen by the performance improvement that it provides even in prior insensitive tasks), it also performs the function of prior removal (as seen by the fact that it provides larger benefits when we would expect prior removal to be helpful than when we would not expect it to be).
+
+Finetuned answers do not show a preference towards common tokens.
+
+Figure
+
+4(a)
+
+and
+
+4(b)
+
+further support the view that the fine-tuning we have done serves the purpose of prior removal: post-finetuning performance on individual questions in the counting task correlates with the natural difficulty of the questions, where longer sequences have lower accuracy. There are no longer spikes at the common numbers, further showing that the bias towards prior knowledge is reduced with this approach.
+
+(a)  Counting - original model
+
+(b)  Counting - finetuned model
+
+Figure 4:  Accuracy of  Llama 3  (y-axis) when asked to count different lengths of sequences of letters (x-axis). The original LLM performance is biased towards common numbers such as multiples of ten (marked by grey dash lines). The finetuned performance is instead correlated with lengths of sequences.
+
+5  Conclusion
+
+In this work, we explore a set of problems where LLMs err but have strong potential of being correct on: prior-dominated problems where the LLM prefers to output common tokens even on deterministic tasks. It has been unknown whether the LLM encodes information needed to solve the task, or whether it simply relies on statistical heuristics because of its autoregressive maximum-likelihood training. Our work finds that the information necessary to solve the tasks we have analyzed is encoded by the model. We have also identified some challenges for the task of understanding the representation of the prior: the prior is encoded in the LLMs in a complex way such that linear methods such as steering do not improve performance, and probing cannot test the model’s understanding on a stratified validation setup. Meanwhile, other computationally efficient methods show that the LLM possesses the information needed to solve the task. Prompting a language model to reduce its reliance on the prior can increase performance, but the amount of increase is inconsistent. Complementary to prompting, we also use lightweight finetuning on the language model, which can result in significantly improved performance across prior-dominated tasks in the stratified setup. We hope that our work lends insight into the nuanced interplay between the errors that LLMs make and the information that LLMs encode, and that these insights can lead to future improvements in situations where LLMs hallucinate for reasons related to the prior probability of token sequences.
+
+Reproducibility Statement
+
+We use torchtune  (torchtune maintainers &amp; contributors,  2024 )  for finetuning. Implementation details are provided in Appendix
+
+C  . Code can be found at  https://github.com/zhang-liyi/llm-prior  .
+
+Acknowledgments
+
+This work was supported by ONR grant number N00014-23-1-2510.
+
+References
+
+Adi et al. (2017)
+
+Yossi Adi, Einat Kermany, Yonatan Belinkov, Ofer Lavi, and Yoav Goldberg.
+
+Fine-grained analysis of sentence embeddings using auxiliary prediction tasks.
+
+In  International Conference on Learning Representations , 2017.
+
+Belinkov (2021)
+
+Yonatan Belinkov.
+
+Probing classifiers: Promises, shortcomings, and alternatives.
+
+arXiv e-prints , pp.  arXiv–2102, 2021.
+
+Belrose et al. (2023)
+
+Nora Belrose, Zach Furman, Logan Smith, Danny Halawi, Igor V. Ostrovsky, Lev McKinney, Stella Biderman, and Jacob Steinhardt.
+
+Eliciting latent predictions from transformers with the tuned lens.
+
+ArXiv , abs/2303.08112, 2023.
+
+Bommasani et al. (2021)
+
+Rishi Bommasani, Drew A Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney von Arx, Michael S Bernstein, Jeannette Bohg, Antoine Bosselut, Emma Brunskill, et al.
+
+On the opportunities and risks of foundation models.
+
+arXiv preprint arXiv:2108.07258 , 2021.
+
+Bubeck et al. (2023)
+
+Sébastien Bubeck, Varun Chandrasekaran, Ronen Eldan, Johannes Gehrke, Eric Horvitz, Ece Kamar, Peter Lee, Yin Tat Lee, Yuanzhi Li, Scott Lundberg, et al.
+
+Sparks of artificial general intelligence: Early experiments with GPT-4.
+
+arXiv preprint arXiv:2303.12712 , 2023.
+
+Chang &amp; Bergen (2024)
+
+Tyler A Chang and Benjamin K Bergen.
+
+Language model behavior: A comprehensive survey.
+
+Computational Linguistics , 50(1):293–350, 2024.
+
+Cunningham et al. (2023)
+
+Hoagy Cunningham, Aidan Ewart, Logan Riggs, Robert Huben, and Lee Sharkey.
+
+Sparse autoencoders find highly interpretable features in language models.
+
+ArXiv , abs/2309.08600, 2023.
+
+Dou et al. (2022)
+
+Yao Dou, Maxwell Forbes, Rik Koncel-Kedziorski, Noah A. Smith, and Yejin Choi.
+
+Is GPT-3 text indistinguishable from human text? Scarecrow: A framework for scrutinizing machine text.
+
+In  Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) , pp.  7250–7274, Dublin, Ireland, May 2022. Association for Computational Linguistics.
+
+doi:  10.18653/v1/2022.acl-long.501 .
+
+Ettinger et al. (2016)
+
+Allyson Ettinger, Ahmed Elgohary, and Philip Resnik.
+
+Probing for semantic evidence of composition by means of simple classification tasks.
+
+In  Proceedings of the 1st Workshop on Evaluating Vector-Space Representations for NLP , pp.  134–139, 2016.
+
+Geiger et al. (2021)
+
+Atticus Geiger, Hanson Lu, Thomas Icard, and Christopher Potts.
+
+Causal abstractions of neural networks.
+
+Advances in Neural Information Processing Systems , 34:9574–9586, 2021.
+
+Geiger et al. (2023)
+
+Atticus Geiger, Zhengxuan Wu, Christopher Potts, Thomas F. Icard, and Noah D. Goodman.
+
+Finding alignments between interpretable causal variables and distributed neural representations.
+
+ArXiv , abs/2303.02536, 2023.
+
+Giulianelli et al. (2018)
+
+Mario Giulianelli, Jack Harding, Florian Mohnert, Dieuwke Hupkes, and Willem Zuidema.
+
+Under the hood: Using diagnostic classifiers to investigate and improve how language models track agreement information.
+
+In Tal Linzen, Grzegorz Chrupała, and Afra Alishahi (eds.),  Proceedings of the 2018 EMNLP Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP , pp.  240–248, Brussels, Belgium, November 2018. Association for Computational Linguistics.
+
+doi:  10.18653/v1/W18-5426 .
+
+Grattafiori et al. (2024)
+
+Aaron Grattafiori, Abhimanyu Dubey, Abhinav Jauhri, Abhinav Pandey, Abhishek Kadian, Ahmad Al-Dahle, Aiesha Letman, and Akhil Mathur.
+
+The llama 3 herd of models, 2024.
+
+Griffiths et al. (2024)
+
+Thomas L Griffiths, Jian-Qiao Zhu, Erin Grant, and R Thomas McCoy.
+
+Bayes in the age of intelligent machines.
+
+Current Directions in Psychological Science , 33(5):283–291, 2024.
+
+Gurnee &amp; Tegmark (2024)
+
+Wes Gurnee and Max Tegmark.
+
+Language models represent space and time, 2024.
+
+Gurnee et al. (2024)
+
+Wes Gurnee, Theo Horsley, Zifan Carl Guo, Tara Rezaei Kheirkhah, Qinyi Sun, Will Hathaway, Neel Nanda, and Dimitris Bertsimas.
+
+Universal neurons in gpt2 language models.
+
+arXiv preprint arXiv:2401.12181 , 2024.
+
+Hewitt &amp; Liang (2019)
+
+John Hewitt and Percy Liang.
+
+Designing and interpreting probes with control tasks.
+
+In Kentaro Inui, Jing Jiang, Vincent Ng, and Xiaojun Wan (eds.),  Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) , pp.  2733–2743, Hong Kong, China, November 2019. Association for Computational Linguistics.
+
+doi:  10.18653/v1/D19-1275 .
+
+Hu et al. (2021)
+
+J. Edward Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, and Weizhu Chen.
+
+Lora: Low-rank adaptation of large language models.
+
+ArXiv , abs/2106.09685, 2021.
+
+Hu &amp; Collier (2024)
+
+Tiancheng Hu and Nigel Collier.
+
+Quantifying the persona effect in llm simulations.
+
+ArXiv , abs/2402.10811, 2024.
+
+Hupkes et al. (2018)
+
+Dieuwke Hupkes, Sara Veldhoen, and Willem Zuidema.
+
+Visualisation and ‘diagnostic classifiers’ reveal how recurrent and recursive neural networks process hierarchical structure.
+
+Journal of Artificial Intelligence Research , 61:907–926, 2018.
+
+Kadavath et al. (2022)
+
+Saurav Kadavath, Tom Conerly, Amanda Askell, Tom Henighan, Dawn Drain, Ethan Perez, Nicholas Schiefer, Zac Hatfield-Dodds, Nova DasSarma, Eli Tran-Johnson, Scott Johnston, Sheer El-Showk, Andy Jones, Nelson Elhage, Tristan Hume, Anna Chen, Yuntao Bai, Sam Bowman, Stanislav Fort, Deep Ganguli, Danny Hernandez, Josh Jacobson, Jackson Kernion, Shauna Kravec, Liane Lovitt, Kamal Ndousse, Catherine Olsson, Sam Ringer, Dario Amodei, Tom Brown, Jack Clark, Nicholas Joseph, Ben Mann, Sam McCandlish, Chris Olah, and Jared Kaplan.
+
+Language models (mostly) know what they know.
+
+arXiv preprint arXiv:2207.05221 , 2022.
+
+Katz &amp; Belinkov (2023)
+
+Shahar Katz and Yonatan Belinkov.
+
+VISIT: Visualizing and interpreting the semantic information flow of transformers.
+
+In Houda Bouamor, Juan Pino, and Kalika Bali (eds.),  Findings of the Association for Computational Linguistics: EMNLP 2023 , pp.  14094–14113, Singapore, December 2023. Association for Computational Linguistics.
+
+doi:  10.18653/v1/2023.findings-emnlp.939 .
+
+Kojima et al. (2022)
+
+Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke Iwasawa.
+
+Large language models are zero-shot reasoners.
+
+Advances in Neural Information Processing Systems , 35:22199–22213, 2022.
+
+Kotek et al. (2023)
+
+Hadas Kotek, Rikker Dockum, and David Sun.
+
+Gender bias and stereotypes in large language models.
+
+In  Proceedings of the ACM collective intelligence conference , pp.  12–24, 2023.
+
+Lin et al. (2022)
+
+Stephanie Lin, Jacob Hilton, and Owain Evans.
+
+TruthfulQA: Measuring how models mimic human falsehoods.
+
+In Smaranda Muresan, Preslav Nakov, and Aline Villavicencio (eds.),  Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) , pp.  3214–3252, Dublin, Ireland, May 2022. Association for Computational Linguistics.
+
+doi:  10.18653/v1/2022.acl-long.229 .
+
+Liu et al. (2022)
+
+Tianyu Liu, Yizhe Zhang, Chris Brockett, Yi Mao, Zhifang Sui, Weizhu Chen, and Bill Dolan.
+
+A token-level reference-free hallucination detection benchmark for free-form text generation.
+
+In Smaranda Muresan, Preslav Nakov, and Aline Villavicencio (eds.),  Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) , pp.  6723–6737, Dublin, Ireland, May 2022. Association for Computational Linguistics.
+
+doi:  10.18653/v1/2022.acl-long.464 .
+
+McCoy et al. (2023)
+
+R. Thomas McCoy, Shunyu Yao, Dan Friedman, Matthew Hardy, and Thomas L. Griffiths.
+
+Embers of autoregression: Understanding large language models through the problem they are trained to solve, 2023.
+
+Minder et al. (2025)
+
+Julian Minder, Kevin Du, Niklas Stoehr, Giovanni Monea, Chris Wendler, Robert West, and Ryan Cotterell.
+
+Controllable context sensitivity and the knob behind it, 2025.
+
+Mirzadeh et al. (2024)
+
+Iman Mirzadeh, Keivan Alizadeh, Hooman Shahrokhi, Oncel Tuzel, Samy Bengio, and Mehrdad Farajtabar.
+
+GSM-Symbolic: Understanding the limitations of mathematical reasoning in large language models.
+
+arXiv preprint arXiv:2410.05229 , 2024.
+
+Nanda et al. (2023)
+
+Neel Nanda, Andrew Lee, and Martin Wattenberg.
+
+Emergent linear representations in world models of self-supervised sequence models.
+
+In Yonatan Belinkov, Sophie Hao, Jaap Jumelet, Najoung Kim, Arya McCarthy, and Hosein Mohebbi (eds.),  Proceedings of the 6th BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP , Singapore, December 2023. Association for Computational Linguistics.
+
+Nielsen et al. (2025)
+
+Beatrix M. G. Nielsen, Iuri Macocco, and Marco Baroni.
+
+Prediction hubs are context-informed frequent tokens in llms, 2025.
+
+Orgad et al. (2024)
+
+Hadas Orgad, Michael Toker, Zorik Gekhman, Roi Reichart, Idan Szpektor, Hadas Kotek, and Yonatan Belinkov.
+
+Llms know more than they show: On the intrinsic representation of llm hallucinations, 2024.
+
+Prabhakar et al. (2024)
+
+Akshara Prabhakar, Thomas L. Griffiths, and R. Thomas McCoy.
+
+Deciphering the factors influencing the efficacy of chain-of-thought: Probability, memorization, and noisy reasoning.
+
+ArXiv , abs/2407.01687, 2024.
+
+Radford et al. (2019)
+
+Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, and Ilya Sutskever.
+
+Language models are unsupervised multitask learners.
+
+OpenAI Blog , 2019.
+
+Raffel et al. (2023)
+
+Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J. Liu.
+
+Exploring the limits of transfer learning with a unified text-to-text transformer, 2023.
+
+Razeghi et al. (2022)
+
+Yasaman Razeghi, Robert L Logan IV, Matt Gardner, and Sameer Singh.
+
+Impact of pretraining term frequencies on few-shot numerical reasoning.
+
+In Yoav Goldberg, Zornitsa Kozareva, and Yue Zhang (eds.),  Findings of the Association for Computational Linguistics: EMNLP 2022 , pp.  840–854, Abu Dhabi, United Arab Emirates, December 2022. Association for Computational Linguistics.
+
+doi:  10.18653/v1/2022.findings-emnlp.59 .
+
+Rimsky et al. (2023)
+
+Nina Rimsky, Nick Gabrieli, Julian Schulz, Meg Tong, Evan Hubinger, and Alexander Matt Turner.
+
+Steering llama 2 via contrastive activation addition.
+
+ArXiv , abs/2312.06681, 2023.
+
+Salinas &amp; Morstatter (2024)
+
+Abel Salinas and Fred Morstatter.
+
+The butterfly effect of altering prompts: How small changes and jailbreaks affect large language model performance.
+
+arXiv preprint arXiv:2401.03729 , 2024.
+
+Smolensky (1986)
+
+Paul Smolensky.
+
+Neural and conceptual interpretation of pdp models.
+
+Parallel distributed processing: Explorations in the microstructure of cognition , 2:390–431, 1986.
+
+Soulos et al. (2020)
+
+Paul Soulos, R. Thomas McCoy, Tal Linzen, and Paul Smolensky.
+
+Discovering the compositional structure of vector representations with role learning networks.
+
+In Afra Alishahi, Yonatan Belinkov, Grzegorz Chrupała, Dieuwke Hupkes, Yuval Pinter, and Hassan Sajjad (eds.),  Proceedings of the Third BlackboxNLP Workshop on Analyzing and Interpreting Neural Networks for NLP , pp.  238–254, Online, November 2020. Association for Computational Linguistics.
+
+doi:  10.18653/v1/2020.blackboxnlp-1.23 .
+
+Stechly et al. (2024)
+
+Kaya Stechly, Karthik Valmeekam, and Subbarao Kambhampati.
+
+Chain of thoughtlessness? an analysis of cot in planning.
+
+In  The Thirty-eighth Annual Conference on Neural Information Processing Systems , 2024.
+
+Stolfo et al. (2024)
+
+Alessandro Stolfo, Ben Wu, Wes Gurnee, Yonatan Belinkov, Xingyi Song, Mrinmaya Sachan, and Neel Nanda.
+
+Confidence regulation neurons in language models, 2024.
+
+Templeton (2024)
+
+Adly Templeton.
+
+Scaling monosemanticity: Extracting interpretable features from claude 3 sonnet .
+
+Anthropic, 2024.
+
+Tian et al. (2023)
+
+Katherine Tian, Eric Mitchell, Allan Zhou, Archit Sharma, Rafael Rafailov, Huaxiu Yao, Chelsea Finn, and Christopher Manning.
+
+Just ask for calibration: Strategies for eliciting calibrated confidence scores from language models fine-tuned with human feedback.
+
+In Houda Bouamor, Juan Pino, and Kalika Bali (eds.),  Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing , pp.  5433–5442, Singapore, December 2023. Association for Computational Linguistics.
+
+doi:  10.18653/v1/2023.emnlp-main.330 .
+
+torchtune maintainers &amp; contributors (2024)
+
+torchtune maintainers and contributors.
+
+torchtune: Pytorch’s post-training library, 2024.
+
+URL  https//github.com/pytorch/torchtune .
+
+Vaswani et al. (2017)
+
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Ł ukasz Kaiser, and Illia Polosukhin.
+
+Attention is all you need.
+
+In  Advances in Neural Information Processing Systems , volume 30. Curran Associates, Inc., 2017.
+
+Venkit et al. (2024)
+
+Pranav Narayanan Venkit, Tatiana Chakravorti, Vipul Gupta, Heidi Biggs, Mukund Srinath, Koustava Goswami, Sarah Rajtmajer, and Shomir Wilson.
+
+An audit on the perspectives and challenges of hallucinations in nlp.
+
+arXiv preprint arXiv:2404.07461 , 2024.
+
+Wei et al. (2022)
+
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Ed H. Chi, F. Xia, Quoc Le, and Denny Zhou.
+
+Chain of thought prompting elicits reasoning in large language models.
+
+ArXiv , abs/2201.11903, 2022.
+
+Wieting &amp; Kiela (2019)
+
+John Wieting and Douwe Kiela.
+
+No training required: Exploring random encoders for sentence classification.
+
+In  International Conference on Learning Representations , 2019.
+
+Wu et al. (2024a)
+
+Zhaofeng Wu, Linlu Qiu, Alexis Ross, Ekin Akyürek, Boyuan Chen, Bailin Wang, Najoung Kim, Jacob Andreas, and Yoon Kim.
+
+Reasoning or reciting? exploring the capabilities and limitations of language models through counterfactual tasks.
+
+In  Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers) , pp.  1819–1862, 2024a.
+
+Wu et al. (2024b)
+
+Zhengxuan Wu, Aryaman Arora, Zheng Wang, Atticus Geiger, Daniel Jurafsky, Christopher D. Manning, and Christopher Potts.
+
+Reft: Representation finetuning for language models.
+
+ArXiv , abs/2404.03592, 2024b.
+
+Yao et al. (2023)
+
+Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas L. Griffiths, Yuan Cao, and Karthik Narasimhan.
+
+Tree of thoughts: Deliberate problem solving with large language models.
+
+ArXiv , abs/2305.10601, 2023.
+
+Zhu &amp; Griffiths (2024)
+
+Jian-Qiao Zhu and Thomas L. Griffiths.
+
+Incoherent probability judgments in large language models, 2024.
+
+Appendix A  Failed Techniques to Reduce Reliance on Prior
+
+In this section we share some of the techniques we tried to reduce the models reliance on the prior, but did not effectively do so.
+
+A.1  Context vs. prior steering
+
+Prior work has shown that there exists a one-dimensional subspace responsible for the language model attending to its prior or the context  (Minder et al.,  2025 ) . This work was motivated by the observation that often times we want to state facts in the context that conflict with the models prior; for example, the capital of France becomes London we want an in-context update to have the model answer London when asked what is the capital of France.
+
+We hypothesized that steering on this dimension to rely on the context more than the prior would result in comparable gains to probing, since the ability to overwrite what it “expects” the answer to be would be gone.
+
+To account for this, we took the approach from the original paper (see Table
+
+2
+
+for hyperparameters used) and re-ran the analysis using their exact setup. We found that this form of steering had a minimal impact on performance as illustrated in Table
+
+3  . We also tested different scaling parameters and found that they only dropped accuracy.
+
+Setting
+
+Scaling factor
+
+Layer
+
+Context vs. prior steering
+
+-1
+
+16
+
+Unigram prior removal
+
+-10
+
+-1
+
+Table 2:  Hyperparameters for using the context vs. prior and unigram prior removal steering.
+
+A.2  Ablating the unigram prior direction
+
+Past work has shown that LLMs have mechanisms for handling uncertainty  (Stolfo et al.,  2024 ) . One of these is the so-called unigram neuron that pushes a models response towards
+
+We take motivation from this approach an ablate out the unigram direction from the model. To do this we first projected the token-frequency direction as calculated by a sample of the C4 dataset  (Raffel et al.,  2023 )  and ablated on this direction. In other words, we no longer let the LLM write into the direction of the unigram distribution thereby limiting the effect of the unigram frequency neurons.
+
+Again, we found that this approach didn’t work as evidenced in Table
+
+3  .
+
+Counting
+
+Acronym
+
+Context vs. prior steering
+
+0.0953
+
+0.0953
+
+0.0953  0.0953
+
+0.0390
+
+0.0390
+
+0.0390  0.0390
+
+Unigram prior removal
+
+0.198
+
+0.198
+
+0.198  0.198
+
+0.067
+
+0.067
+
+0.067  0.067
+
+Table 3:  Performance using the context vs. prior and unigram prior removal steering.
+
+Appendix B  Prompt - Ground Truth Response Examples
+
+One example prompt and a ground truth response example for each task is shown in Figure
+
+5  .
+
+(a)  Multiplication.
+
+(b)  Produce letters.
+
+(c)  Counting
+
+(d)  Acronyms.
+
+Figure 5:  Prompt and ground truth examples of each task (shift-cipher example is included Figure
+
+1(a)  ). On multiplication, we tried arabic numbers, English caps, English lowercases in the prompt, but English caps achieved the highest base accuracy, so this is the version we use in our experiments, which is also the most conservative version.
+
+Appendix C  Implementation Details
+
+We use the torchtune package for finetuning  (torchtune maintainers &amp; contributors,  2024 ) . All experiments are trained for 50 epochs, use learning-rate
+
+=
+
+10
+
+−  4
+
+absent
+
+superscript  10
+
+4
+
+=10^{-4}  = 10 start_POSTSUPERSCRIPT - 4 end_POSTSUPERSCRIPT
+
+, weight-decay
+
+=  0.01
+
+absent  0.01
+
+=0.01  = 0.01
+
+, batch-size
+
+=  2
+
+absent  2
+
+=2  = 2
+
+, gradient accumulation steps
+
+=  8
+
+absent  8
+
+=8  = 8
+
+, LoRA rank
+
+=  8
+
+absent  8
+
+=8  = 8
+
+, LoRA alpha
+
+=  16
+
+absent  16
+
+=16  = 16
+
+, and LoRA is applied to attention modules and each MLP. Each model finetuning uses one Nvidia A100 GPU.
+
+Generated  on Thu Apr 17 01:56:56 2025 by
+
+L a T e
+
+XML
+

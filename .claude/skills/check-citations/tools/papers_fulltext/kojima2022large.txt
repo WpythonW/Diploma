@@ -1,0 +1,8 @@
+[https://arxiv.org/abs/2205.11916]
+Abstract:Pretrained large language models (LLMs) are widely used in many sub-fields of natural language processing (NLP) and generally known
+
+[https://arxiv.org/html/2504.00473v1]
+Large language models (LLMs) can perform complex reasoning by generating intermediate thoughts under zero-shot or few-shot settings. However,
+
+[https://arxiv.org/abs/2410.19000]
+Abstract:Zero-shot reasoning methods with Large Language Models (LLMs) offer significant advantages including great generalization to novel

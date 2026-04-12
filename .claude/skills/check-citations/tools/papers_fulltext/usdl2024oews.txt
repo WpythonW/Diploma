@@ -1,0 +1,8 @@
+[https://arxiv.org/html/2311.06310v3]
+The OEWS provides the number of workers across occupations within each industry. By calculating the proportion of employment for each occupation
+
+[https://arxiv.org/html/2603.05565v1]
+Using real data from the BLS Occupational Employment and Wage Statistics (OEWS) for May 2019 and May 2023, merged with the AI Occupational
+
+[https://arxiv.org/html/2510.13369v1]
+Employment and wage data are sourced from the BLS-OEWS survey conducted in May 2021 (for comparison with other indices, such as Eloundou et al.

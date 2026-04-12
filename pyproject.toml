@@ -8,6 +8,7 @@ dependencies = [
     "openai>=2.30.0",
     "python-dotenv>=1.0.0",
     "tqdm>=4.67.3",
+    "pandas>=2.0",
     "langchain-core>=0.3",
     "langchain-openai>=0.3",
     "langgraph>=0.2",

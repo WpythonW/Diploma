@@ -1,0 +1,17 @@
+{
+  "key": "fu2024implies",
+  "overall": "ERROR",
+  "fulltext_available": true,
+  "mentions": [
+    {
+      "file": "chapter1.tex",
+      "snippet": "Кроме того, исследования логических цепей в LLM~\\cite{fu2024implies} демонстрируют, что структурные логические операторы («И», «",
+      "verdict": "ERROR",
+      "comment": "В статье не упоминается понятие \"низкой салиентности\" (low-salience) логических операторов для голов внимания, а также термин \"ленивое рассуждение\" (lazy reasoning). Авторы описывают специализированные роли голов внимания (например, для поиска правила, обработки фактов), но не утверждают, что при отсутствии таких голов модель полагается только на семантическое сходство существительных. Напротив, анализ показывает целенаправленную обработку структуры задачи.",
+      "paper_quote": "We uncover properties of the circuit which the pretrained LLM Mistral-7B-v0.1 employs to solve the minimal version of the reasoning problem. We find four families of attention heads, which have surprisingly specialized roles in processing different sections of the context: queried-rule locating heads, queried-rule mover heads, fact-processing heads, and decision heads."
+    }
+  ],
+  "summary": "Анализ статьи fu2024implies показал, что в ней не содержится утверждение о низкой салиентности логических операторов или о «ленивом рассуждении» в случае отсутствия специализированных голов внимания. Напротив, в работе описаны чётко специализированные головы, участвующие в последовательной обработке запроса, правила и фактов. Утверждение из диплома является существенным искажением результатов оригинальной статьи, поэтому вынесен вердикт ERROR.",
+  "mention_count": 1,
+  "layer": 2
+}
