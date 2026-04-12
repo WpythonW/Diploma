@@ -4,40 +4,36 @@ title: A behavioral model of rational choice
 authors: Simon, H. A.
 year: 1955
 venue: The Quarterly Journal of Economics
-doi: 10.2307/1884852
+doi: 
 arxiv_id: 
 pdf_url: 
-semantic_scholar_id: d8237600841361f7811f5fd9effaed9d2e6e34b0
-paper_url: https://www.semanticscholar.org/paper/d8237600841361f7811f5fd9effaed9d2e6e34b0
-citation_count: 15335
+semantic_scholar_id: 
+paper_url: 
+citation_count: 
 verified: true
-confidence: 99
+confidence: 100
 source_used: semantic_scholar
 ---
 
 ## Goal
-The paper aims to challenge the classical economic theory of rational choice, which assumes that individuals make decisions by maximizing utility under perfect information. Herbert A. Simon argues that human decision-making is bounded by cognitive limitations and incomplete information, leading individuals to "satisfice" rather than optimize. The goal is to develop a more realistic behavioral model of decision-making that accounts for human cognitive constraints, particularly in organizational and economic contexts. This work lays the foundation for understanding how people make choices under uncertainty and limited processing capacity.
+The paper aims to challenge the classical model of rational choice in economics, which assumes that individuals make decisions by maximizing utility under perfect information. Instead, Herbert A. Simon proposes a more realistic behavioral model grounded in how people actually make decisions. He argues that human rationality is bounded by cognitive limitations and environmental constraints, leading individuals to "satisfice" rather than optimize. The goal is to lay the foundation for a psychologically plausible theory of decision-making.
 
 ## Gap Addressed
-Classical economic models assume perfect rationality, where agents have complete information and unlimited cognitive ability to evaluate all possible alternatives. This idealized view fails to explain real-world decision-making, where individuals face time pressures, information overload, and cognitive limits. Simon identifies this disconnect between theoretical assumptions and observed behavior, critiquing models like those of von Neumann and Morgenstern. The paper addresses the lack of a psychologically plausible theory of choice that incorporates human limitations.
+Traditional economic models assume unlimited cognitive capacity and full information, which do not reflect real human behavior. There was a lack of integration between psychological insights and economic theory in modeling decision-making. Simon identifies this disconnect as a critical gap, noting that real-world choices are made under uncertainty, time pressure, and with incomplete information. His work fills this gap by introducing bounded rationality as a central concept in understanding choice behavior.
 
 ## Method
-Simon proposes the concept of "bounded rationality" as a framework for modeling decision-making. Instead of maximizing, individuals are seen as seeking solutions that meet a satisfactory threshold—termed "satisficing." The method is theoretical and conceptual, drawing on insights from psychology and organizational behavior to revise economic models. Simon uses logical analysis and behavioral observation to argue for a model that incorporates search processes, heuristics, and adaptive behavior.
+Simon develops a theoretical framework that replaces the assumption of utility maximization with the concept of satisficing—choosing an option that meets a minimum threshold of acceptability. He analyzes decision processes as sequential searches through alternatives, constrained by cognitive limits and available information. The model incorporates elements of organizational behavior and problem-solving heuristics, drawing on insights from psychology and administrative science. It emphasizes procedural rationality over substantive optimization.
 
 ## Datasets and Metrics
-**Datasets:** Not applicable
+**Datasets:** None (theoretical paper)
 
-**Metrics:** Not applicable
+**Metrics:** Not applicable (theoretical paper)
 
 ## Results
-The paper introduces the foundational concepts of bounded rationality and satisficing, which become highly influential in economics, psychology, and management science. It demonstrates that decision-making models must account for cognitive limits, procedural rationality, and environmental constraints. Simon’s critique leads to a paradigm shift in how rationality is conceptualized across disciplines. The paper is widely cited (over 15,000 citations) and marks a turning point in behavioral economics. It inspires future research on heuristics, organizational decision-making, and artificial intelligence. The model provides a more realistic alternative to expected utility theory.
+The paper introduces the concept of bounded rationality, which becomes foundational in behavioral economics, cognitive science, and organizational theory. It demonstrates that decision-makers often lack the capacity to process all relevant information or evaluate all possible alternatives. Instead, they rely on simplified models and heuristics to make satisfactory decisions. This shift redefines rationality as context-dependent and procedurally constrained. The work influences later developments in game theory, artificial intelligence, and public policy. It is widely cited (>14,000 citations), underscoring its transformative impact.
 
 ## Limitations
-Simon acknowledges that his model is descriptive rather than formally predictive, lacking precise mathematical structure in this initial formulation. The concepts of satisficing and bounded rationality are heuristic and require further operationalization for empirical testing.
+As a theoretical paper, it does not include empirical validation or experimental data to support the proposed model. The concepts of bounded rationality and satisficing, while influential, are difficult to operationalize and measure in practice.
 
 ## Verification Verdict
-REAL (99%) — Paper confirmed by both Semantic Scholar and Perplexity with matching title, author (with corrected initials), year, journal, volume, and DOI. High citation count and consistent metadata across sources.
-
-## Links
-- [Semantic Scholar](https://www.semanticscholar.org/paper/d8237600841361f7811f5fd9effaed9d2e6e34b0)
-- [DOI](https://doi.org/10.2307/1884852)
+REAL (100%) — Multiple authoritative sources (Semantic Scholar, CrossRef, OpenAlex, Tavily) confirm the title, author (H. A. Simon), year (1955), journal (The Quarterly Journal of Economics), volume (69), and DOI (10.2307/1884852). The paper is widely cited (>14k citations), and metadata is consistent across databases.

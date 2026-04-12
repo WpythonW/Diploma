@@ -4,25 +4,19 @@
   "description": "Authors: Evans, J. St. B. T.\nTitle: Matching bias in conditional reasoning: Do we understand it after 25 years?\nJournal: Thinking and Reasoning\nYear: 1998\nVolume: 4",
   "verdict": "REAL",
   "confidence": 98,
-  "reason": "Paper confirmed by Semantic Scholar and web search with matching title, author, year, journal, volume, and DOI. High citation count and consistent metadata across sources.",
-  "tool_calls": 2,
+  "reason": "Multiple authoritative sources (CrossRef, OpenAlex, Semantic Scholar) confirm the paper's existence with matching title, author, year, journal, and DOI. The paper is widely cited and consistent with the author's body of work in cognitive psychology.",
+  "tool_calls": 6,
   "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
-  "_search_results": [
-    "**Yes, the paper exists.**\n\n**Exact title:** Matching bias in conditional reasoning: Do we understand it after 25 years?[1][2][7][8][9]\n\n**Authors:** J. St. B. T. Evans (also cited as Evans, J. St. B. T. or J.St.B.T. Evans)[1][2][7][8][9]\n\n**Venue:** *Thinking and Reasoning*, volume 4, pages 45–82[1][2][7][8][9]\n\n**Year:** 1998[1][2][7][8][9]\n\nNo DOI is provided in the search results, but it is referenced across multiple academic sources including abstracts, citations in later papers, and scholarly databases.[1][2][7][8][9]",
-    "Semantic Scholar result:\n  Title: Matching bias in conditional reasoning : Do we understand it after 25 years ?\n  Authors: Jonathan Evans\n  Year: 1998\n  Venue: \n  DOI: 10.1080/135467898394247\n  arXiv: n/a\n  PDF: n/a\n  Citations: 162\n  URL: https://www.semanticscholar.org/paper/4a94f9fc6c38ffc9e6398b0037141b988b56fd7a"
-  ],
-  "_s2": {
-    "paper_id": "4a94f9fc6c38ffc9e6398b0037141b988b56fd7a",
-    "title": "Matching bias in conditional reasoning : Do we understand it after 25 years ?",
-    "authors": [
-      "Jonathan Evans"
-    ],
-    "year": 1998,
-    "venue": "",
-    "doi": "10.1080/135467898394247",
-    "arxiv_id": null,
-    "pdf_url": "",
-    "paper_url": "https://www.semanticscholar.org/paper/4a94f9fc6c38ffc9e6398b0037141b988b56fd7a",
-    "citation_count": 162
+  "layer": "llm",
+  "api_calls": {
+    "arxiv": 0,
+    "arxiv_title": 1,
+    "s2_prefetch": 1,
+    "s2_tool": 1,
+    "crossref": 1,
+    "openalex": 1,
+    "tavily": 1,
+    "tavily_extract": 1,
+    "llm": 1
   }
 }

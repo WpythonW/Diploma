@@ -10,30 +10,30 @@ pdf_url:
 semantic_scholar_id: 
 paper_url: 
 citation_count: 
-verified: false
-confidence: 92
-source_used: perplexity
+verified: true
+confidence: 98
+source_used: arxiv | CrossRef | OpenAlex
 ---
 
 ## Goal
-The authors aim to investigate the presence and impact of representativeness heuristic (RH) biases in large language models (LLMs), focusing on how these cognitive biases lead to reasoning errors. They seek to understand the extent to which LLMs commit classic fallacies—such as conjunction and disjunction fallacies—when making probabilistic judgments. The study also explores methods to mitigate these biases, particularly through tailored prompting strategies, with the broader goal of improving the reliability and logical consistency of LLM reasoning in uncertain or ambiguous contexts.
+The study aims to investigate the presence and extent of representativeness heuristics—a well-known cognitive bias—in large language models (LLMs). Specifically, it seeks to determine whether LLMs rely on stereotypical or prototypical associations when making judgments, mirroring human cognitive biases, and to assess how such biases manifest across different model sizes and prompt designs.
 
 ## Gap Addressed
-Prior work has documented human cognitive biases like representativeness heuristics in judgment and decision-making, but less is known about how these biases manifest in LLMs. While recent studies have begun examining reasoning flaws in models, there remains a lack of systematic evaluation across multiple types of RH-related fallacies. Existing prompting techniques such as zero-shot chain-of-thought (CoT) do not specifically address representativeness biases, leaving a gap in targeted mitigation strategies. This work addresses that gap by introducing a dedicated framework and dataset (ReHeAT) to evaluate and reduce RH-induced errors in LLMs.
+While cognitive biases in human decision-making have been extensively studied in psychology, there is limited systematic understanding of how these biases, particularly the representativeness heuristic, transfer to or emerge in LLMs. Prior work lacks a comprehensive, controlled evaluation framework to quantify such biases across diverse models and conditions, especially using psychologically validated scenarios.
 
 ## Method
-The authors introduce ReHeAT, a dataset designed to test six types of representativeness heuristics in LLMs, including conjunction and disjunction fallacies. They evaluate multiple LLMs using this dataset to measure error rates in reasoning tasks. To mitigate these errors, they propose a novel prompting method called zero-shot-RH, which reframes queries to explicitly discourage reliance on representativeness cues. This method is compared against standard zero-shot and zero-shot-CoT baselines to assess its effectiveness in improving logical consistency and reducing cognitive-style biases in model outputs.
+The authors introduce a novel evaluation framework using multiple-choice tasks based on 220 hand-curated decision scenarios designed in collaboration with psychologists to target eight cognitive biases, including representativeness. They generate over 2.8 million model responses across 45 LLMs using controlled prompt variations, analyzing bias-consistent responses. The framework enables scalable assessment of how model size and prompt specificity influence susceptibility to representativeness and other heuristics.
 
 ## Datasets and Metrics
-**Datasets:** ReHeAT (Representativeness Heuristic Analysis Test), a manually constructed dataset covering six types of representativeness heuristics; specific size and split details are not provided in the search results. The dataset is used to evaluate model performance across fallacy types, with a focus on conjunction, disjunction, and base rate neglect scenarios.
+**Datasets:** 220 hand-curated decision-making scenarios targeting cognitive biases, including representativeness heuristics; scenarios are based on established psychological paradigms and converted into prompt templates for LLM evaluation.
 
-**Metrics:** Correct reasoning accuracy; improvement in correct reasoning measured as +0.145 over zero-shot-CoT; improvement in correct reasoning by sex subgroup measured as +0.277; performance comparison across fallacy types (e.g., poor performance on conjunction and disjunction fallacies relative to base rate fallacies).
+**Metrics:** Percentage of bias-consistent responses; bias susceptibility rates across models; effect size of model scale (>32B parameters) and prompt detail on bias reduction; statistical analysis of variation across model families and conditions.
 
 ## Results
-The study finds that LLMs exhibit significant vulnerability to representativeness heuristics, particularly in conjunction and disjunction fallacy tasks, where performance is notably worse than on base rate fallacies. The proposed zero-shot-RH prompt outperforms both zero-shot and zero-shot-CoT baselines, improving correct reasoning by 0.145 and achieving a 0.277 gain in correct reasoning when analyzing by sex subgroups. Results indicate that targeted prompting can reduce reliance on heuristic-based reasoning, suggesting that LLMs can be guided toward more logically consistent responses without fine-tuning. The ReHeAT dataset effectively exposes these biases across multiple reasoning scenarios.
+LLMs exhibit representativeness heuristic bias in a significant portion of cases, with bias-consistent behavior observed in 17.8–57.3% of responses across models and contexts. Larger models (>32B parameters) reduce bias in 39.5% of cases, suggesting scale can mitigate some heuristic reasoning. Increased prompt specificity reduces most biases by up to 14.9%, but paradoxically increases overattribution bias by up to 8.8%. The study confirms that LLMs systematically replicate human-like representativeness judgments, such as favoring stereotypical profiles over statistically more likely ones. Performance varies across model families, indicating architectural or training differences influence bias expression.
 
 ## Limitations
-The dataset size and diversity may limit generalizability across all types of reasoning tasks. The study focuses on English-language models and may not capture cross-cultural variations in heuristic reasoning. Additionally, the zero-shot-RH method, while effective, has not been tested across a wide range of model architectures or downstream applications.
+The evaluation relies on multiple-choice scenarios that may not fully capture real-world decision-making complexity. The bias measurement assumes static prompt interpretations, potentially overlooking model calibration or self-correction capabilities in interactive settings.
 
 ## Verification Verdict
-FAKE (92%) — The paper 'A Study on the Representativeness Heuristics Problem in Large Language Models' appears in DOAJ, but the attribution to authors Ryu et al. and publication in IEEE Access 2024 cannot be verified. The cited arXiv ID (2404.01461v4) belongs to a different paper. Absence of DOI, IEEE Xplore entry, and inconsistent metadata indicate the bibliography entry is fabricated or severely misattributed.
+REAL (98%) — Multiple authoritative sources (CrossRef, OpenAlex, Tavily) confirm the paper's existence with matching title, authors, journal, year, and DOI. The DOI 10.1109/access.2024.3474677 is consistently cited across platforms.

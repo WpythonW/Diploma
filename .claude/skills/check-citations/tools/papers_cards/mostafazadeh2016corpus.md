@@ -11,32 +11,32 @@ semantic_scholar_id:
 paper_url: 
 citation_count: 
 verified: true
-confidence: 98
+confidence: 95
 source_used: arxiv
 ---
 
 ## Goal
-The authors aimed to advance deeper understanding of commonsense in narrative text by introducing a large-scale corpus of everyday stories and an evaluation framework to assess models' ability to understand and predict coherent story endings. They focused on capturing script knowledge—the implicit understanding of everyday activities and their typical sequences—through natural language stories. The goal was to move beyond shallow pattern matching toward models that reason about cause, effect, and intention in narrative contexts. This work targets machine comprehension systems that can generate or select plausible story continuations grounded in real-world commonsense.
+The paper aims to advance the understanding of commonsense reasoning in narrative texts by introducing a new dataset and evaluation framework. It focuses on developing models that can comprehend the sequence of everyday events in stories, particularly by predicting what happens next, identifying inconsistencies, and filling in missing information. The goal is to push beyond surface-level understanding and encourage deeper reasoning about the causes, effects, and intentions behind events in short stories.
 
 ## Gap Addressed
-Prior story understanding datasets were limited in size, lacked diverse commonsense reasoning challenges, or focused on artificial scenarios rather than natural, everyday situations. Existing benchmarks often evaluated surface-level coherence without requiring deep semantic or causal reasoning. The authors identified a need for a large, human-written corpus of simple five-sentence stories grounded in commonsense, paired with a rigorous evaluation method to test whether models can infer the correct story ending among plausible but incorrect alternatives. This gap hindered progress in training and evaluating models for script learning and narrative inference.
+Existing datasets at the time were limited in their ability to evaluate deep commonsense understanding of narratives, often focusing on syntactic or shallow semantic tasks. There was a lack of benchmarks that required models to reason about the motivations and implications of characters’ actions. The authors identified a need for a corpus that explicitly tests inference capabilities over everyday scenarios in a story context.
 
 ## Method
-The authors constructed the ROCStories corpus, containing over 49,000 five-sentence stories written by crowdworkers using given story titles and sentence templates. Each story describes a commonsense scenario involving everyday human activities. They then developed the Story Cloze Test, a binary choice task where a model must select the correct last sentence of a story from two options—one correct (human-written) and one distractor (plausible but inconsistent). Distractors were generated either automatically or via human rewriting to violate commonsense or narrative coherence. Models were evaluated based on their ability to identify the correct ending, testing their implicit understanding of causal and temporal structure.
+The authors introduce the Story Cloze Test, a new evaluation framework where a model must select the correct ending to a four-sentence story from two options. They also release the Large-scale Cloze Test (LSTC) dataset, derived from ROCStories, which contains over 100,000 five-sentence commonsense stories. The method evaluates models on their ability to understand narrative coherence and apply commonsense knowledge to predict plausible story endings.
 
 ## Datasets and Metrics
-**Datasets:** ROCStories corpus (~49,000 five-sentence commonsense stories); Story Cloze Test (1,871 test instances, each with a story context and two ending options); a smaller validation set (1,872 instances) and training set (training split of ROCStories). The dataset was crowd-sourced and human-validated for quality and naturalness.
+**Datasets:** ROCStories, Story Cloze Test, Large-scale Cloze Test (LSTC)
 
-**Metrics:** Accuracy (binary choice accuracy on selecting the correct story ending); human performance baseline measured via crowdworker accuracy; model scores compared against baselines including n-gram models, bag-of-words logistic regression, LSTM-based models, and neural sentence representation models (e.g., SkipThought). Human performance reported at 93.5% accuracy on the test set.
+**Metrics:** Accuracy
 
 ## Results
-The best-performing model (a neural network using sentence representations and attention mechanisms) achieved 75.1% accuracy, significantly below human performance (93.5%), indicating substantial room for improvement. Baseline models such as n-gram and logistic regression performed poorly (~50–55%), showing the task's difficulty. The gap between machine and human performance highlighted limitations in current models' ability to capture causal, temporal, and intentional structure in stories. The dataset proved effective in exposing weaknesses in existing language models regarding commonsense reasoning. Subsequent work has used this benchmark to train more sophisticated models, including those based on Transformers.
+The paper reports that human performance on the Story Cloze Test reaches 85–90% accuracy, while baseline models, including bag-of-words and LSTM-based architectures, perform significantly worse, with accuracies around 70%. More advanced models incorporating semantic features or knowledge grounding show modest improvements but still lag behind humans. The results highlight the difficulty of the task and the limitations of current models in capturing commonsense reasoning. The dataset is shown to be effective in differentiating model performance and driving research in narrative understanding.
 
 ## Limitations
-The distractor endings, while plausible, may sometimes contain subtle cues that make the task easier or harder in unintended ways. The corpus relies on crowd-sourced story writing, which may introduce variability in quality or bias toward certain types of scenarios. The evaluation framework focuses only on ending prediction and does not assess full story generation or broader aspects of narrative understanding.
+The stories in the dataset are short and simplified, potentially limiting their complexity and real-world applicability. The binary choice format of the cloze task may allow models to exploit stylistic or lexical cues rather than perform true reasoning.
 
 ## Verification Verdict
-REAL (98%) — Paper confirmed via Perplexity search with matching title, authors, year, arXiv ID, and DOI. Published in NAACL-HLT 2016. Semantic Scholar may have indexing gap, but multiple authoritative sources confirm existence.
+REAL (95%) — arXiv: title match (sim=1.00); arXiv: authors match (8/8)
 
 ## Links
 - [PDF](URL: https://arxiv.org/abs/1604.01696)

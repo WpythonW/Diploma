@@ -3,15 +3,20 @@
   "type": "misc",
   "description": "Authors: Bommasani, R. and Hudson, D. A. and others\nTitle: On the opportunities and risks of foundation models\nYear: 2021\nURL: URL: https://arxiv.org/abs/2108.07258",
   "verdict": "REAL",
-  "confidence": 98,
-  "reason": "Paper confirmed via multiple Perplexity searches with consistent metadata: title, authors, year (2021), arXiv ID (2108.07258), DOI (10.48550/arXiv.2108.07258), and URL. Descriptions of content match across sources. High citation count and broad recognition in AI literature further support authenticity, despite temporary absence in Semantic Scholar index.",
-  "tool_calls": 4,
-  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
-  "_search_results": [
-    "This paper **exists**[6]. Here are the details:\n\n**Exact Title:** On the Opportunities and Risks of Foundation Models[6]\n\n**Authors:** Rishi Bommasani, Drew A. Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney von Arx, Michael S. Bernstein, Jeannette Bouyer, and others including Percy Liang[6][7]\n\n**Venue:** arXiv preprint[6]\n\n**Year:** 2021 (published August 16, 2021)[2][9]\n\n**Identifier:** arXiv:2108.07258[6]\n\n**URL:** https://arxiv.org/abs/2108.07258[6]\n\nThe report provides a comprehensive account of foundation models covering their capabilities (language, vision, robotics, reasoning, human interaction), technical principles (model architectures, training procedures, data, systems, security, evaluation, theory), applications (law, healthcare, education), and societal impact (inequity, misuse, economic and environmental considerations, legal and ethical implications)[6]. As of the time this information was indexed, the paper had been cited over 9,000 times[8].",
-    "Semantic Scholar: no matching paper found.",
-    "Semantic Scholar: no matching paper found.",
-    "**Title:** On the Opportunities and Risks of Foundation Models\n\n**Authors:** Rishi Bommasani, Drew A. Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney von Arx, Michael S. Bernstein, and others (Percy Liang is listed among the authors)[2][5]\n\n**Venue:** arXiv\n\n**Year:** Published August 16, 2021\n\n**arXiv ID:** 2108.07258\n\n**DOI:** https://doi.org/10.48550/arXiv.2108.07258[5]\n\n**Description:** This report provides a comprehensive analysis of foundation models, covering their capabilities (language, vision, robotics, reasoning), technical principles (architectures, training, data, security, evaluation), applications (law, healthcare, education), and societal impact (inequity, misuse, economic and environmental considerations).[5] The report defines a **foundation model** as any model trained on broad data using self-supervision at scale that can be adapted to a wide range of downstream tasks.[4] It examines both the opportunities and risks of this emerging AI paradigm, emphasizing that while foundation models enable new capabilities through emergent properties, their scale and homogenization effects require careful consideration of downstream impacts.[5]"
-  ],
-  "_s2": {}
+  "confidence": 95,
+  "reason": "arXiv: title match (sim=1.00); arXiv: authors match (2/2)",
+  "tool_calls": 0,
+  "prompt_variant": "deterministic",
+  "layer": "deterministic",
+  "api_calls": {
+    "arxiv": 1,
+    "arxiv_title": 0,
+    "s2_prefetch": 1,
+    "s2_tool": 0,
+    "crossref": 0,
+    "openalex": 0,
+    "tavily": 0,
+    "tavily_extract": 0,
+    "llm": 0
+  }
 }

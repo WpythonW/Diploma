@@ -3,13 +3,20 @@
   "type": "misc",
   "description": "Authors: Mostafazadeh, N. and Chambers, N. and He, X. and Parikh, D. and Batra, D. and Vanderwende, L. and Kohli, P. and Allen, J.\nTitle: A corpus and evaluation framework for deeper understanding of commonsense stories\nYear: 2016\nURL: URL: https://arxiv.org/abs/1604.01696",
   "verdict": "REAL",
-  "confidence": 98,
-  "reason": "Paper confirmed via Perplexity search with matching title, authors, year, arXiv ID, and DOI. Published in NAACL-HLT 2016. Semantic Scholar may have indexing gap, but multiple authoritative sources confirm existence.",
-  "tool_calls": 2,
-  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
-  "_search_results": [
-    "**Yes, the paper exists.**\n\n- **Exact title**: A Corpus and Evaluation Framework for Deeper Understanding of Commonsense Stories[1][5][7]\n- **Authors**: Nasrin Mostafazadeh, Nathanael Chambers, Xiaodong He, Devi Parikh, Dhruv Batra, Lucy Vanderwende, Pushmeet Kohli, James Allen[1][5][7]\n- **arXiv**: arXiv:1604.01696 (submitted April 6, 2016)[1][7]\n- **Published venue**: Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT 2016), pages 839–849, San Diego, California[5]\n- **Year**: 2016[1][4][5]\n- **DOI**: 10.18653/v1/N16-1098[5]\n\nThe paper introduces the ROCStories corpus (~50k five-sentence commonsense stories) and the Story Cloze Test evaluation framework for story understanding and script learning[1][4][5][7]. Note that the queried title uses \"Commonsense Stories\" (capitalized differently from the exact \"Commonsense Stories\"), but it matches precisely otherwise[1][5]. A peer-reviewed version appeared at NAACL 2016 alongside the arXiv preprint[5].",
-    "Semantic Scholar: no matching paper found."
-  ],
-  "_s2": {}
+  "confidence": 95,
+  "reason": "arXiv: title match (sim=1.00); arXiv: authors match (8/8)",
+  "tool_calls": 0,
+  "prompt_variant": "deterministic",
+  "layer": "deterministic",
+  "api_calls": {
+    "arxiv": 1,
+    "arxiv_title": 0,
+    "s2_prefetch": 1,
+    "s2_tool": 0,
+    "crossref": 0,
+    "openalex": 0,
+    "tavily": 0,
+    "tavily_extract": 0,
+    "llm": 0
+  }
 }

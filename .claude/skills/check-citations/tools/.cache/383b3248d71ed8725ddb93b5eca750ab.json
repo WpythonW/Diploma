@@ -4,25 +4,19 @@
   "description": "Authors: Tenenbaum, J. B.\nTitle: A Bayesian framework for concept learning",
   "verdict": "REAL",
   "confidence": 98,
-  "reason": "Both Perplexity and Semantic Scholar confirm the existence of the 1999 Ph.D. thesis by J. B. Tenenbaum with matching title and author. Semantic Scholar lists 154 citations, indicating academic recognition. The lack of DOI is expected for older theses.",
-  "tool_calls": 2,
+  "reason": "Multiple authoritative sources (OpenAlex, Tavily) confirm the existence of this work as a 1999 MIT PhD thesis by Joshua B. Tenenbaum, with consistent metadata and citation counts. The absence of a DOI is expected for a thesis.",
+  "tool_calls": 9,
   "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
-  "_search_results": [
-    "**Title:** A Bayesian Framework for Concept Learning\n\n**Author:** Joshua B. Tenenbaum\n\n**Venue:** Ph.D. Thesis, MIT Department of Brain and Cognitive Sciences\n\n**Year:** 1999\n\n**Additional Information:** This thesis introduced a foundational Bayesian framework for modeling concept learning[4]. The work has been highly influential in cognitive science and has spawned numerous follow-up publications. A related conference paper, \"Word Learning as Bayesian Inference,\" was published by Tenenbaum and Xu in the Proceedings of the Annual Meeting of the Cognitive Science Society in 2000[6]. Tenenbaum later co-authored \"Theory-based Bayesian models of inductive learning and reasoning,\" published in *Trends in Cognitive Sciences* in July 2006 (DOI: 10.1016/j.tics.2006.05.009)[1], which expanded on the theoretical framework.\n\n**Note:** The 1999 Ph.D. thesis does not have a DOI listed in the search results. The thesis itself appears to be accessible through academic repositories, though a direct DOI or stable URL was not provided in these search results.",
-    "Semantic Scholar result:\n  Title: A Bayesian framework for concept learning\n  Authors: J. Tenenbaum\n  Year: 1999\n  Venue: \n  DOI: n/a\n  arXiv: n/a\n  PDF: n/a\n  Citations: 154\n  URL: https://www.semanticscholar.org/paper/b1cd67acc177c04ce8ef7dd8359b2ad7310fa80a"
-  ],
-  "_s2": {
-    "paper_id": "b1cd67acc177c04ce8ef7dd8359b2ad7310fa80a",
-    "title": "A Bayesian framework for concept learning",
-    "authors": [
-      "J. Tenenbaum"
-    ],
-    "year": 1999,
-    "venue": "",
-    "doi": null,
-    "arxiv_id": null,
-    "pdf_url": "",
-    "paper_url": "https://www.semanticscholar.org/paper/b1cd67acc177c04ce8ef7dd8359b2ad7310fa80a",
-    "citation_count": 154
+  "layer": "llm",
+  "api_calls": {
+    "arxiv": 0,
+    "arxiv_title": 1,
+    "s2_prefetch": 1,
+    "s2_tool": 1,
+    "crossref": 2,
+    "openalex": 2,
+    "tavily": 2,
+    "tavily_extract": 1,
+    "llm": 1
   }
 }

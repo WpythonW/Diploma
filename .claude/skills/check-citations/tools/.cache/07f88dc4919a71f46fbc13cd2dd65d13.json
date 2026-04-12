@@ -4,14 +4,19 @@
   "description": "Authors: Zhang, L.\nTitle: Identifying and Mitigating the Influence of the Prior Distribution in Large Language Models\nYear: 2025\nURL: URL: https://arxiv.org/abs/2504.12585",
   "verdict": "REAL",
   "confidence": 95,
-  "reason": "Paper confirmed on arXiv with matching title, URL, arXiv ID, and year. First author Liyi Zhang matches 'Zhang, L.'; full author list is more complete. Semantic Scholar not yet indexed, but Perplexity confirms via multiple queries. High confidence despite missing Semantic Scholar entry due to recency.",
-  "tool_calls": 4,
-  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
-  "_search_results": [
-    "**Yes, the paper exists.**\n\n- **Exact title**: Identifying and Mitigating the Influence of the Prior Distribution in Large Language Models[1][2][3]\n- **Authors**: Liyi Zhang, Veniamin Veselovsky, R. Thomas McCoy, Thomas L. Griffiths[2][3]\n- **Venue**: arXiv preprint (cs.CL category); listed in Google Scholar under Proceedings of the Annual... (possibly forthcoming conference proceedings)[1][2]\n- **Year**: 2025[1][2]\n- **arXiv ID**: 2504.12585 (v1 submitted on 17 Apr 2025)[2]\n- **DOI/URL**: https://arxiv.org/abs/2504.12585[2]\n\nThe paper investigates how implicit priors in LLMs cause errors on deterministic tasks (e.g., counting), proposing prompting and mechanistic interpretability interventions like layer-specific finetuning to mitigate prior influence[2][3]. No conference acceptance (e.g., NAACL 2025, EMNLP 2025) is confirmed in results[4][5].",
-    "Semantic Scholar: no matching paper found.",
-    "Semantic Scholar: no matching paper found.",
-    "**Yes, the paper exists on arXiv.**\n\n- **Exact title**: Identifying and Mitigating the Influence of the Prior Distribution in Large Language Models[1][2]\n- **Authors**: Liyi Zhang, Veniamin Veselovsky, R. Thomas McCoy, Thomas L. Griffiths[2]\n- **Venue**: arXiv (cs category)[2]\n- **Year**: 2025 (submitted on 17 Apr 2025)[2]\n- **arXiv ID**: 2504.12585v1[1][2]\n\nThe abstract discusses how LLMs fail on deterministic tasks due to token prior distributions, shows prompting and mechanistic interpretability (e.g., logit lens, lightweight finetuning) improve performance on prior-dominated tasks like counting or acronyms, and suggests methods to reduce prior reliance.[1][2][3]"
-  ],
-  "_s2": {}
+  "reason": "arXiv: title match (sim=1.00); arXiv: authors match (1/1)",
+  "tool_calls": 0,
+  "prompt_variant": "deterministic",
+  "layer": "deterministic",
+  "api_calls": {
+    "arxiv": 1,
+    "arxiv_title": 0,
+    "s2_prefetch": 1,
+    "s2_tool": 0,
+    "crossref": 0,
+    "openalex": 0,
+    "tavily": 0,
+    "tavily_extract": 0,
+    "llm": 0
+  }
 }

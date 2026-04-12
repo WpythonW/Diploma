@@ -2,18 +2,21 @@
   "key": "ryu2024representativeness",
   "type": "article",
   "description": "Authors: Ryu, J. and others\nTitle: A study on the representativeness heuristics problem in large language models\nJournal: IEEE Access\nYear: 2024",
-  "verdict": "FAKE",
-  "confidence": 92,
-  "reason": "The paper 'A Study on the Representativeness Heuristics Problem in Large Language Models' appears in DOAJ, but the attribution to authors Ryu et al. and publication in IEEE Access 2024 cannot be verified. The cited arXiv ID (2404.01461v4) belongs to a different paper. Absence of DOI, IEEE Xplore entry, and inconsistent metadata indicate the bibliography entry is fabricated or severely misattributed.",
-  "tool_calls": 6,
+  "verdict": "REAL",
+  "confidence": 98,
+  "reason": "Multiple authoritative sources (CrossRef, OpenAlex, Tavily) confirm the paper's existence with matching title, authors, journal, year, and DOI. The DOI 10.1109/access.2024.3474677 is consistently cited across platforms.",
+  "tool_calls": 10,
   "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
-  "_search_results": [
-    "**Yes, the paper exists.**\n\n- **Exact title**: A Study on the Representativeness Heuristics Problem in Large Language Models[1][4][5]\n- **Authors**: Jongwon Ryu, Jungeun Kim, Junyeong Kim (also listed as J Ryu, J Kim, J Kim)[1][4][5]\n- **Venue**: IEEE Access[1][4][5]\n- **Year**: 2024[1][4][5]\n- **Volume/pages**: 12, 147958-147966[1]\n- **DOI/URL**: No DOI provided in results; available via IEEE Access, arXiv preprint (arXiv:2404.01461v4), Google Scholar, DOAJ, and Semantic Scholar[1][2][3][4][5]\n\nThe paper investigates representativeness heuristic biases in large language models (LLMs), testing multiple LLMs on a dataset called REHEAT covering six heuristic types, and proposes a zero-shot-RH prompt to improve reasoning and reduce errors[2][3][4]. It notes poor performance on conjunction and disjunction fallacies compared to base rate fallacies[2][3].",
-    "Semantic Scholar: no matching paper found.",
-    "**No, a paper titled \"A Study on the Representativeness Heuristics Problem in Large Language Models\" with arXiv:2404.01461v4 does not exist.**[1][2][4][6]\n\nThe arXiv identifier 2404.01461v4 corresponds to the paper **\"Will the Real Linda Please Stand Up…to Large Language Models?\"**[1][4]  \n- **Authors**: Not explicitly listed in search results, but the work introduces the ReHeAT dataset testing representativeness heuristics in LLMs across six types (e.g., conjunction fallacy, disjunction fallacy).[1][4][5]  \n- **Venue**: Published as a conference paper at COLM 2024.[4]  \n- **Year**: Submitted April 1, 2024 (v1); last revised July 23, 2024 (v4).[4]  \n- **DOI**: https://doi.org/10.48550/arXiv.2404.01461.[4]  \n\nA separate paper titled **\"A Study on the Representativeness Heuristics Problem in Large Language Models\"** exists but lacks the specified arXiv ID; it appears in DOAJ and Semantic Scholar, proposing a \"zero-shot-RH\" prompt to mitigate RH errors in LLMs.[2][6]  \n\nAnother related paper is **\"Examining Alignment of Large Language Models through Representative Heuristics: The Case of Political Stereotypes\"** (arXiv:2501.14294v3, authors: Sullam Jeoung, Yubin Ge, Haohan Wang, Jana Diesner).[3]",
-    "Semantic Scholar: no matching paper found.",
-    "**Yes, the paper \"A Study on the Representativeness Heuristics Problem in Large Language Models\" exists and is indexed in DOAJ.**\n\n- **Exact title**: A Study on the Representativeness Heuristics Problem in Large Language Models[2][6]\n- **Authors**: Not specified in available metadata[2][6]\n- **Venue**: DOAJ (Directory of Open Access Journals); appears as a journal article[2]\n- **Year**: Not explicitly stated, but context aligns with 2024 LLM research trends[2]\n- **DOI or URL**: https://doaj.org/article/c35f508d3e0e44c2837b180d4ea73f39[2]\n\nThe paper investigates representativeness heuristic (RH) errors in large language models (LLMs), analyzing RH scenarios, constructing datasets, and proposing a \"zero-shot-RH\" prompt that outperforms zero-shot-CoT by 0.145 in correct reasoning and 0.277 in correct reasonings by sex, without relying on RH biases[2][6]. This differs from a related arXiv preprint titled \"Will the Real Linda Please Stand up...to Large Language Models? Examining the Representativeness Heuristic in LLMs\" (arXiv:2404.01461, April 2024, published at COLM 2024)[1][3].",
-    "Based on the search results, a paper titled **\"A Study on the Representativeness Heuristics Problem in Large Language Models\"** exists and appears to be published in IEEE Access[4]. The paper proposes a novel prompt called **zero-shot-RH** to mitigate representativeness heuristic (RH) errors in LLMs and improve their logical reasoning capabilities[4].\n\nHowever, the search results do not provide complete bibliographic details such as the exact authors, publication year, DOI, or URL for this IEEE Access paper. For a comprehensive citation, I recommend searching IEEE Xplore directly or verifying the full publication details through the IEEE Access database."
-  ],
-  "_s2": {}
+  "layer": "llm",
+  "api_calls": {
+    "arxiv": 0,
+    "arxiv_title": 1,
+    "s2_prefetch": 1,
+    "s2_tool": 2,
+    "crossref": 1,
+    "openalex": 1,
+    "tavily": 2,
+    "tavily_extract": 3,
+    "llm": 1
+  }
 }

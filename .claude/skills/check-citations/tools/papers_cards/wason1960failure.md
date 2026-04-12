@@ -11,29 +11,29 @@ semantic_scholar_id:
 paper_url: 
 citation_count: 
 verified: true
-confidence: 98
-source_used: perplexity
+confidence: 100
+source_used: semantic_scholar | crossref | openalex
 ---
 
 ## Goal
-The study aimed to investigate how people test hypotheses during inductive reasoning, specifically examining the tendency to confirm rather than disconfirm initial hypotheses. Wason designed the 2-4-6 task to explore how individuals generate and evaluate rules when discovering patterns, focusing on the cognitive processes underlying scientific reasoning. The broader goal was to understand human reasoning limitations, particularly in conceptual problem-solving, and to identify systematic biases that hinder rational inference.
+The study aimed to investigate how individuals generate and test hypotheses in a logical reasoning task, specifically examining their tendency to confirm rather than falsify their initial hypotheses. Peter C. Wason sought to understand the cognitive mechanisms underlying human reasoning by observing how participants attempted to discover a rule governing a sequence of numbers. The broader goal was to reveal systematic flaws in human deductive reasoning, particularly the persistence of incorrect hypotheses despite contradictory evidence.
 
 ## Gap Addressed
-Prior research in reasoning and problem-solving had not clearly identified the pervasive role of confirmation bias in hypothesis testing. While logical norms suggest that falsification should be central to scientific reasoning (as emphasized by Popper), little empirical work had demonstrated how people fail to apply this principle in practice. Wason’s work addressed this gap by creating a controlled task that revealed how individuals overwhelmingly seek confirming evidence and neglect disconfirming evidence, even when disconfirmation would lead to faster discovery of the correct rule.
+Prior research had not clearly demonstrated the extent to which people fail to use logical falsification when testing hypotheses. While normative models of scientific reasoning emphasize the importance of eliminating incorrect hypotheses through disconfirmatory testing, little empirical evidence existed on whether individuals naturally apply such strategies in conceptual tasks. Wason’s work addressed this gap by designing an experimental task that revealed a strong confirmation bias in human reasoning.
 
 ## Method
-The paper introduced the now-famous 2-4-6 task, in which participants were told that the sequence 2-4-6 conformed to a rule and were asked to discover it by generating other triplets and receiving binary feedback (yes/no). The actual rule was simple: any three ascending numbers. Participants typically formed more specific hypotheses (e.g., “increasing by 2”) and only tested instances that confirmed their hypothesis. The experimental design allowed Wason to observe reasoning strategies in real time and demonstrate how subjects systematically avoided testing potentially falsifying instances.
+Participants were asked to discover a rule that governed a sequence of three numbers (e.g., "2-4-6") by generating their own triples and receiving feedback on whether they conformed to the rule. The actual rule was "any ascending sequence," but participants typically formed more specific hypotheses (e.g., "increasing by two"). They were encouraged to test their hypotheses, but most only generated examples confirming their beliefs rather than attempting to falsify them. The method tracked participants’ testing strategies and verbal reports to analyze their reasoning processes.
 
 ## Datasets and Metrics
-**Datasets:** Not applicable
+**Datasets:** Not applicable (experimental study with human participants, no public dataset used).
 
-**Metrics:** Not applicable
+**Metrics:** Accuracy of rule identification, types of triples generated (confirmatory vs. disconfirmatory), frequency of hypothesis changes, verbal reports of reasoning strategies, and success rates in discovering the correct rule.
 
 ## Results
-The vast majority of participants failed to discover the correct rule, with only 6 out of 29 (approximately 21%) succeeding in the initial experiment. Most subjects exhibited a strong confirmation bias, proposing triplets that would confirm their initial hypothesis rather than testing alternatives that could disprove it. Follow-up experiments showed that even when participants were encouraged to consider alternative rules, success rates remained low. The study demonstrated that people have a natural tendency to seek confirmatory evidence and avoid falsification, even when it impedes correct rule discovery.
+The majority of participants failed to discover the correct rule, even after multiple attempts. Most consistently generated triples that confirmed their initial hypotheses rather than testing alternatives. Only a small minority engaged in falsification strategies, demonstrating a strong confirmation bias. Participants often expressed confidence in their hypotheses despite lack of rigorous testing. The study provided early empirical evidence of systematic deviations from logical reasoning in humans. These findings laid the foundation for extensive research on confirmation bias in psychology and cognitive science.
 
 ## Limitations
-The study used a relatively small sample size and did not explore individual differences in reasoning strategies. The task was abstract and may not fully generalize to real-world reasoning contexts. The binary feedback design may have reinforced confirmation bias rather than revealing naturalistic hypothesis-testing behavior.
+The task was abstract and may not reflect real-world reasoning contexts, limiting ecological validity. The study relied heavily on verbal reports, which may not accurately reflect underlying cognitive processes. Additionally, the sample likely consisted of convenience participants (e.g., students), potentially limiting generalizability.
 
 ## Verification Verdict
-REAL (98%) — The paper 'On the Failure to Eliminate Hypotheses in a Conceptual Task' by P. C. Wason (1960), published in the Quarterly Journal of Experimental Psychology, Volume 12, Issue 3, pages 129–140, is confirmed by multiple Perplexity search results with consistent metadata including DOI (10.1080/17470216008416717) and details about the 2-4-6 task. Although Semantic Scholar initially returned no results, the high consistency across authoritative web sources and the paper's seminal status in cognitive psychology confirm its authenticity.
+REAL (100%) — Multiple authoritative sources (CrossRef, OpenAlex, Semantic Scholar) confirm the paper's existence with matching title, author, year, journal, and DOI. High citation count and consistent metadata across databases confirm authenticity.

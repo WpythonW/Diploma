@@ -1,34 +1,22 @@
 {
   "key": "coda2024cogbench",
   "type": "misc",
-  "description": "Authors: Coda-Forno, J. and Binz, M. and Akata, Z. and Botvinick, M. and Wang, J. X. and Schulz, E.\nTitle: CogBench: Large language models reason about cognition\nYear: 2024\nURL: URL: https://arxiv.org/abs/2403.09798",
-  "verdict": "FAKE",
-  "confidence": 98,
-  "reason": "The paper 'CogBench: Large language models reason about cognition' with the given authors and arXiv:2403.09798 does not exist. The actual CogBench paper has a different title, fewer authors (missing Akata and Botvinick), and a different arXiv ID (2402.18225). The provided arXiv ID belongs to a different paper entirely.",
-  "tool_calls": 5,
-  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
-  "_search_results": [
-    "**Yes, the paper exists.**\n\nExact title: **CogBench: a large language model walks into a psychology lab**[1][4][6][8][9][10].\n\nAuthors: **Julian Coda-Forno**<sup>1,2</sup>, **Marcel Binz**<sup>1,2</sup>, **Jane X. Wang**<sup>3</sup>, **Eric Schulz**<sup>1,2</sup> (note: Akata and Botvinick are not listed as authors; Schulz matches)[1][4][6].\n\nVenue: arXiv preprint (presented or reviewed at ICML 2024)[4][9][10].\n\nYear: **2024**.\n\narXiv: **2402.18225** (user-provided 2403.09798 does not match this paper; no results for that ID)[4][9].\n\nPDF available at: https://hcai-munich.com/pubs/CodaForno2024CogBench.pdf[1] and https://arxiv.org/pdf/2402.18225[9].\n\n**Abstract summary**: Introduces **CogBench**, a benchmark with **ten behavioral metrics** from **seven cognitive psychology experiments** to evaluate LLMs' cognitive behaviors (e.g., model size, RLHF effects on performance and human alignment). Applied to 35 LLMs using multilevel modeling[1][4][9].",
-    "Semantic Scholar: no matching paper found.",
-    "**No, the paper \"CogBench: Large language models reason about cognition\" with arXiv:2403.09798 does not exist.**\n\nThe arXiv ID 2403.09798 corresponds to a different paper titled **\"Comparing Rationality Between Large Language Models and Humans\"**, submitted on 14 March 2024, categorized under Computers and Society (cs.CY). Its abstract discusses Reinforcement Learning from Human Feedback (RLHF) enhancing LLMs' rationality and decision-making, with a focus on comparisons to humans, particularly ChatGPT[7][6].\n\nThe queried title closely matches the actual **CogBench** paper, titled **\"CogBench: a large language model walks into a psychology lab\"** (arXiv:2402.18225v1 [cs.CL], submitted earlier in 2024). This introduces CogBench, a benchmark with **ten behavioral metrics** from **seven cognitive psychology experiments** to evaluate LLMs' cognitive behaviors, applied to 35 models using multilevel modeling. Key findings include RLHF and model size improving human-like alignment, open-source models being less risk-prone, and prompt techniques like chain-of-thought aiding probabilistic reasoning[2][1][8][4][10][9].\n\nA unrelated later paper (arXiv:2508.03360, August 2025) uses the name **CogBench** for multilingual speech-based cognitive impairment assessment, not matching the query[3].",
-    "Semantic Scholar result:\n  Title: CogBench: a large language model walks into a psychology lab\n  Authors: Julian Coda-Forno, Marcel Binz, Jane X. Wang, Eric Schulz\n  Year: 2024\n  Venue: International Conference on Machine Learning\n  DOI: 10.48550/arXiv.2402.18225\n  arXiv: 2402.18225\n  PDF: n/a\n  Citations: 57\n  URL: https://www.semanticscholar.org/paper/b2991a4b2ecc9db0fbd9ca738022801b4e5ee001",
-    "**Yes, the paper exists.**\n\n**Exact title:** Comparing Rationality Between Large Language Models and Humans: Insights and Open Questions[3][4].\n\n**Authors:** Dana Alsagheer, Rabimba Karanjai, Nour Diallo, Weidong Shi, Yang Lu, Suha Beydoun, Qiaoning Zhang[3][4].\n\n**Venue:** arXiv (preprint)[3].\n\n**Year:** 2024 (submitted 14 Mar 2024)[3][4].\n\n**DOI:** https://doi.org/10.48550/arXiv.2403.09798[3].\n\nThe paper examines rationality in LLMs (focusing on ChatGPT) versus humans using specific rationality tests, highlighting RLHF's role in improving LLM decision-making and noting LLMs' advantages like resistance to cognitive biases[2][3][4]. Humans showed better reasoning articulation in complex tasks despite lower scores[2][4]. A related later paper (arXiv:2406.17055v2) finds LLMs assume humans are **more rational** than they actually are[1]."
-  ],
-  "_s2": {
-    "paper_id": "b2991a4b2ecc9db0fbd9ca738022801b4e5ee001",
-    "title": "CogBench: a large language model walks into a psychology lab",
-    "authors": [
-      "Julian Coda-Forno",
-      "Marcel Binz",
-      "Jane X. Wang",
-      "Eric Schulz"
-    ],
-    "year": 2024,
-    "venue": "International Conference on Machine Learning",
-    "doi": "10.48550/arXiv.2402.18225",
-    "arxiv_id": "2402.18225",
-    "pdf_url": "",
-    "paper_url": "https://www.semanticscholar.org/paper/b2991a4b2ecc9db0fbd9ca738022801b4e5ee001",
-    "citation_count": 57
+  "description": "Authors: Coda-Forno, J. and Binz, M. and Wang, J. X. and Schulz, E.\nTitle: CogBench: a large language model walks into a psychology lab\nYear: 2024\nURL: URL: https://arxiv.org/abs/2402.18225",
+  "verdict": "REAL",
+  "confidence": 95,
+  "reason": "arXiv: title match (sim=1.00); arXiv: authors match (4/4)",
+  "tool_calls": 0,
+  "prompt_variant": "deterministic",
+  "layer": "deterministic",
+  "api_calls": {
+    "arxiv": 1,
+    "arxiv_title": 0,
+    "s2_prefetch": 1,
+    "s2_tool": 0,
+    "crossref": 0,
+    "openalex": 0,
+    "tavily": 0,
+    "tavily_extract": 0,
+    "llm": 0
   }
 }

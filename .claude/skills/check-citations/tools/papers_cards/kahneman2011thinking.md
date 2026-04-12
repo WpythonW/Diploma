@@ -7,36 +7,33 @@ venue: Farrar, Straus and Giroux
 doi: 
 arxiv_id: 
 pdf_url: 
-semantic_scholar_id: b8573a2585db1164fe4a528a300750e97768fd8d
-paper_url: https://www.semanticscholar.org/paper/b8573a2585db1164fe4a528a300750e97768fd8d
-citation_count: 1375
+semantic_scholar_id: 
+paper_url: 
+citation_count: 
 verified: true
-confidence: 100
-source_used: semantic_scholar | perplexity
+confidence: 98
+source_used: semantic_scholar | openalex | tavily
 ---
 
 ## Goal
-The goal of *Thinking, Fast and Slow* is to present a comprehensive account of human judgment, decision-making, and the cognitive mechanisms underlying them, based on decades of psychological research by Daniel Kahneman and colleagues. The book aims to make complex findings in cognitive psychology and behavioral economics accessible to a broad, non-specialist audience. It explores how people think, decide, and form beliefs, emphasizing the role of cognitive biases and heuristics. The scope includes both theoretical frameworks and real-world implications in domains such as economics, medicine, and policy.
+The book *Thinking, Fast and Slow* aims to present a comprehensive exploration of human judgment, decision-making, and the cognitive biases that influence them. Daniel Kahneman synthesizes decades of research in psychology and behavioral economics to explain how the mind operates through two distinct systems: a fast, intuitive mode of thinking (System 1) and a slower, more deliberate mode (System 2). The goal is to improve understanding of how people think, make choices, and err in predictable ways, with implications for economics, policy, and personal decision-making.
 
 ## Gap Addressed
-Prior to this book, much of the research on cognitive biases, prospect theory, and dual-process models was scattered across academic journals and inaccessible to the general public. While scholars were aware of System 1 (fast, automatic thinking) and System 2 (slow, effortful thinking), there was no single, authoritative synthesis that connected these concepts into a coherent narrative for lay readers. Kahneman’s work fills this gap by integrating his Nobel Prize-winning research with broader insights into human irrationality, offering a unified framework that bridges psychology and behavioral economics.
+Prior to this work, much of cognitive psychology and behavioral economics was fragmented across academic papers and specialized literature, making it inaccessible to general audiences. There was a lack of a unified, accessible narrative that integrates the dual-process theory of cognition with real-world applications. Kahneman addresses this gap by consolidating empirical findings into a coherent framework that bridges academic research and public understanding.
 
 ## Method
-Kahneman employs a narrative, expository style grounded in empirical research from experimental psychology and behavioral economics. The book is structured around the dual-process theory of cognition, using illustrative experiments, real-world examples, and thought exercises to explain cognitive phenomena. Rather than presenting new experimental data, the method involves synthesizing decades of research—much of it conducted by Kahneman and Amos Tversky—into an accessible framework. The approach is interdisciplinary, drawing from psychology, economics, and neuroscience.
+Kahneman draws on a lifetime of experimental research, particularly his collaborative work with Amos Tversky, to illustrate how cognitive biases and heuristics shape judgment. He uses real-life examples, thought experiments, and summaries of key studies to explain complex psychological concepts in an accessible manner. The book is structured around the dual-system model, systematically exploring the strengths, flaws, and interactions of System 1 and System 2 thinking.
 
 ## Datasets and Metrics
-**Datasets:** Not applicable
+**Datasets:** Not applicable (the book is a synthesis of psychological experiments and theoretical work rather than original data collection).
 
-**Metrics:** Not applicable
+**Metrics:** Not applicable (no formal metrics are used; evaluation is based on conceptual coherence, empirical support from prior studies, and explanatory power).
 
 ## Results
-The book successfully popularized key concepts in cognitive psychology, including the dual-system model, cognitive biases (e.g., anchoring, availability, overconfidence), and prospect theory. It became a bestseller and has been cited over 1,375 times in academic literature according to Semantic Scholar, indicating significant scholarly impact. It influenced fields such as behavioral economics, public policy (e.g., "nudge" theory), and organizational decision-making. The clear exposition of System 1 and System 2 thinking has become a foundational reference in both academic and professional contexts.
+The book successfully popularized dual-process theory and brought widespread attention to cognitive biases such as anchoring, availability, and overconfidence. It influenced fields including economics, public policy, medicine, and artificial intelligence. With over 10,000 citations on OpenAlex and broad academic and public engagement, it has become a foundational text in behavioral science. The clear exposition of System 1 and System 2 thinking has shaped how both experts and laypeople understand decision-making. Its impact is evident in the proliferation of related research, applications in "nudge" theory, and integration into educational curricula.
 
 ## Limitations
-As a popular science book, it does not present original data or formal meta-analyses, and some critics argue that the System 1/System 2 dichotomy is a simplification of more complex cognitive processes. Kahneman also acknowledges that the model is descriptive rather than mechanistic, meaning it explains patterns of thought but does not detail the neural or computational underpinnings.
+As a non-empirical synthesis, the book does not present new data or statistical analyses, relying instead on previously published studies. Some critics argue that the System 1/System 2 framework is overly simplistic or metaphorical, potentially misrepresenting the complexity of cognitive processes.
 
 ## Verification Verdict
-REAL (100%) — Multiple reliable sources (Perplexity web results and Semantic Scholar) confirm the book's title, author, publisher, and year. Semantic Scholar attributes 1,375 citations to the work, and the publisher's official page matches the details.
-
-## Links
-- [Semantic Scholar](https://www.semanticscholar.org/paper/b8573a2585db1164fe4a528a300750e97768fd8d)
+REAL (98%) — Multiple independent sources (Tavily, OpenAlex) confirm the book's existence with matching author, title, publisher, year (2011), and ISBN. High citation count (10,447) on OpenAlex and consistent academic citations confirm authenticity.

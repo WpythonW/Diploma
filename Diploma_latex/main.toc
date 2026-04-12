@@ -47,31 +47,32 @@
 \contentsline {subsection}{\numberline {2.3.4}Промпт-условия}{25}{}%
 \contentsline {subsection}{\numberline {2.3.5}Метрики}{26}{}%
 \contentsline {subsection}{\numberline {2.3.6}Результаты и анализ}{26}{}%
-\contentsline {subsection}{\numberline {2.3.7}Выводы по эксперименту 2}{28}{}%
-\contentsline {section}{\numberline {2.4}Эксперимент 3: Задача открытия правила 2-4-6}{28}{}%
-\contentsline {subsection}{\numberline {2.4.1}Обоснование выбора парадигмы}{28}{}%
-\contentsline {subsection}{\numberline {2.4.2}Конструкция датасета правил: пять таксономических категорий}{28}{}%
-\contentsline {subsection}{\numberline {2.4.3}Многоходовой диалоговый протокол}{28}{}%
-\contentsline {subsection}{\numberline {2.4.4}Промпт-условия: Baseline и Adaptive}{29}{}%
-\contentsline {subsection}{\numberline {2.4.5}Метрики качества гипотез}{29}{}%
-\contentsline {subsection}{\numberline {2.4.6}Результаты и анализ}{30}{}%
-\contentsline {subsection}{\numberline {2.4.7}Выводы по эксперименту 3}{31}{}%
-\contentsline {section}{\numberline {2.5}Сквозной анализ: три парадигмы, девять моделей}{31}{}%
-\contentsline {subsection}{\numberline {2.5.1}Сравнительная таблица результатов по всем экспериментам}{31}{}%
-\contentsline {subsection}{\numberline {2.5.2}Проверка гипотез о масштабировании и внутрисемейный парадокс}{32}{}%
-\contentsline {subsection}{\numberline {2.5.3}Проверка гипотезы о спектральной природе предубеждений}{32}{}%
-\contentsline {subsection}{\numberline {2.5.4}Итоги: Proof-of-Concept фреймворка оценки когнитивных предубеждений}{32}{}%
-\contentsline {chapter}{\numberline {3}ЭКСПЕРИМЕНТАЛЬНЫЙ ФРЕЙМВОРК И ОБСУЖДЕНИЕ РЕЗУЛЬТАТОВ}{34}{}%
-\contentsline {section}{\numberline {3.1}Архитектура воспроизводимого экспериментального фреймворка}{34}{}%
-\contentsline {subsection}{\numberline {3.1.1}Общая структура кодовой базы}{34}{}%
-\contentsline {subsection}{\numberline {3.1.2}Параметры запросов и механизм отказоустойчивости}{34}{}%
-\contentsline {subsection}{\numberline {3.1.3}Структура датасетов}{35}{}%
-\contentsline {subsection}{\numberline {3.1.4}Реализация метрики IOU}{35}{}%
-\contentsline {section}{\numberline {3.2}Ограничения исследования}{36}{}%
-\contentsline {subsection}{\numberline {3.2.1}Методологические ограничения}{36}{}%
-\contentsline {subsection}{\numberline {3.2.2}Ограничения отдельных экспериментов}{36}{}%
-\contentsline {section}{\numberline {3.3}Апробация результатов}{36}{}%
-\contentsline {section}{\numberline {3.4}Направления будущих исследований}{37}{}%
-\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{38}{}%
-\contentsline {chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{38}{}%
-\contentsline {chapter}{\numberline {А}РУКОВОДСТВО ПО ИСПОЛЬЗОВАНИЮ ШАБЛОНА}{42}{}%
+\contentsline {subsection}{\numberline {2.3.7}Качественный анализ категорий ошибок}{29}{}%
+\contentsline {subsection}{\numberline {2.3.8}Выводы по эксперименту 2}{31}{}%
+\contentsline {section}{\numberline {2.4}Эксперимент 3: Задача открытия правила 2-4-6}{31}{}%
+\contentsline {subsection}{\numberline {2.4.1}Обоснование выбора парадигмы}{31}{}%
+\contentsline {subsection}{\numberline {2.4.2}Конструкция датасета правил: пять таксономических категорий}{32}{}%
+\contentsline {subsection}{\numberline {2.4.3}Многоходовой диалоговый протокол}{32}{}%
+\contentsline {subsection}{\numberline {2.4.4}Промпт-условия: Baseline и Adaptive}{32}{}%
+\contentsline {subsection}{\numberline {2.4.5}Метрики качества гипотез}{33}{}%
+\contentsline {subsection}{\numberline {2.4.6}Результаты и анализ}{33}{}%
+\contentsline {subsection}{\numberline {2.4.7}Выводы по эксперименту 3}{35}{}%
+\contentsline {section}{\numberline {2.5}Сквозной анализ: три парадигмы, девять моделей}{35}{}%
+\contentsline {subsection}{\numberline {2.5.1}Сравнительная таблица результатов по всем экспериментам}{35}{}%
+\contentsline {subsection}{\numberline {2.5.2}Проверка гипотез о масштабировании и внутрисемейный парадокс}{35}{}%
+\contentsline {subsection}{\numberline {2.5.3}Проверка гипотезы о спектральной природе предубеждений}{36}{}%
+\contentsline {subsection}{\numberline {2.5.4}Итоги: Proof-of-Concept фреймворка оценки когнитивных предубеждений}{36}{}%
+\contentsline {chapter}{\numberline {3}ЭКСПЕРИМЕНТАЛЬНЫЙ ФРЕЙМВОРК И ОБСУЖДЕНИЕ РЕЗУЛЬТАТОВ}{37}{}%
+\contentsline {section}{\numberline {3.1}Архитектура воспроизводимого экспериментального фреймворка}{37}{}%
+\contentsline {subsection}{\numberline {3.1.1}Общая структура кодовой базы}{37}{}%
+\contentsline {subsection}{\numberline {3.1.2}Параметры запросов и механизм отказоустойчивости}{37}{}%
+\contentsline {subsection}{\numberline {3.1.3}Структура датасетов}{38}{}%
+\contentsline {subsection}{\numberline {3.1.4}Реализация метрики IOU}{38}{}%
+\contentsline {section}{\numberline {3.2}Ограничения исследования}{39}{}%
+\contentsline {subsection}{\numberline {3.2.1}Методологические ограничения}{39}{}%
+\contentsline {subsection}{\numberline {3.2.2}Ограничения отдельных экспериментов}{39}{}%
+\contentsline {section}{\numberline {3.3}Апробация результатов}{39}{}%
+\contentsline {section}{\numberline {3.4}Направления будущих исследований}{40}{}%
+\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{41}{}%
+\contentsline {chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{41}{}%
+\contentsline {chapter}{\numberline {А}РУКОВОДСТВО ПО ИСПОЛЬЗОВАНИЮ ШАБЛОНА}{45}{}%

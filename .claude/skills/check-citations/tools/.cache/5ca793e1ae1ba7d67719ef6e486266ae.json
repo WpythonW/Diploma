@@ -3,27 +3,20 @@
   "type": "article",
   "description": "Authors: Simon, H. A.\nTitle: A behavioral model of rational choice\nJournal: The Quarterly Journal of Economics\nYear: 1955\nVolume: 69",
   "verdict": "REAL",
-  "confidence": 99,
-  "reason": "Paper confirmed by both Semantic Scholar and Perplexity with matching title, author (with corrected initials), year, journal, volume, and DOI. High citation count and consistent metadata across sources.",
-  "tool_calls": 3,
+  "confidence": 100,
+  "reason": "Multiple authoritative sources (Semantic Scholar, CrossRef, OpenAlex, Tavily) confirm the title, author (H. A. Simon), year (1955), journal (The Quarterly Journal of Economics), volume (69), and DOI (10.2307/1884852). The paper is widely cited (>14k citations), and metadata is consistent across databases.",
+  "tool_calls": 6,
   "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
-  "_search_results": [
-    "**Yes, the paper exists.** The exact title is **\"A Behavioral Model of Rational Choice\"**, authored by **Herbert A. Simon** (not \"Simon H. A.\" as queried), published in **The Quarterly Journal of Economics**, volume 69, issue 1, pages 99-118, in **1955**.[1][2][3][4] The DOI is **10.2307/1884852**.[3]",
-    "Semantic Scholar: no matching paper found.",
-    "Semantic Scholar result:\n  Title: A Behavioral Model of Rational Choice\n  Authors: H. Simon\n  Year: 1955\n  Venue: \n  DOI: 10.2307/1884852\n  arXiv: n/a\n  PDF: n/a\n  Citations: 15335\n  URL: https://www.semanticscholar.org/paper/d8237600841361f7811f5fd9effaed9d2e6e34b0"
-  ],
-  "_s2": {
-    "paper_id": "d8237600841361f7811f5fd9effaed9d2e6e34b0",
-    "title": "A Behavioral Model of Rational Choice",
-    "authors": [
-      "H. Simon"
-    ],
-    "year": 1955,
-    "venue": "",
-    "doi": "10.2307/1884852",
-    "arxiv_id": null,
-    "pdf_url": "",
-    "paper_url": "https://www.semanticscholar.org/paper/d8237600841361f7811f5fd9effaed9d2e6e34b0",
-    "citation_count": 15335
+  "layer": "llm",
+  "api_calls": {
+    "arxiv": 0,
+    "arxiv_title": 1,
+    "s2_prefetch": 1,
+    "s2_tool": 1,
+    "crossref": 1,
+    "openalex": 1,
+    "tavily": 1,
+    "tavily_extract": 1,
+    "llm": 1
   }
 }

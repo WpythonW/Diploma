@@ -4,13 +4,19 @@
   "description": "Authors: Jiang, B. and Xie, Y. and Hao, Z. and Wang, X. and Mallick, T. and Su, W. J. and Taylor, C. J. and Roth, D.\nTitle: A peek into token bias: Large language models are not yet genuine reasoners\nConference/Book: Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing\nYear: 2024",
   "verdict": "REAL",
   "confidence": 98,
-  "reason": "The paper 'A Peek into Token Bias: Large language models are not yet genuine reasoners' by Jiang, B. et al. is confirmed to be a real publication at EMNLP 2024. It is listed on the ACL Anthology with ID 2024.emnlp-main.272, has a preprint on arXiv (2406.11050), and the full text is available via the ACL Anthology. Author names, title, venue, and year match across multiple reliable sources including Perplexity search results and arXiv. Although Semantic Scholar initially returned no results, the paper's presence in the ACL Anthology and arXiv confirms its legitimacy.",
-  "tool_calls": 3,
+  "reason": "Multiple authoritative sources (ACL Anthology, arXiv, CrossRef, OpenAlex) confirm the paper's existence, authors, title, and publication at EMNLP 2024. The arXiv preprint explicitly states acceptance. Minor name formatting differences are normal.",
+  "tool_calls": 9,
   "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
-  "_search_results": [
-    "**Yes, the paper exists.**\n\n**Exact title:** A Peek into Token Bias: Large Language Models Are Not Yet Genuine Reasoners[1][2][3][4].\n\n**Authors:** Bowen Jiang, Yangxinyu Xie, Zhuoqun Hao, Xiaomeng Wang, Tanwi Mallick, Weijie J. Su, Camillo J. Taylor, Dan Roth[2][3][7].\n\n**Venue:** Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP 2024)[2].\n\n**Year:** 2024[2][3].\n\n**Anthology ID (functions as DOI):** 2024.emnlp-main.272[2].\n\n**PDF:** Available at https://aclanthology.org/2024.emnlp-main.272.pdf[2][3].\n\n**Preprint:** arXiv:2406.11050[4].",
-    "Semantic Scholar: no matching paper found.",
-    "The paper **\"A Peek into Token Bias: Large Language Models Are Not Yet Genuine Reasoners\"** exists and is a published research work.[6]\n\n**Full Citation Details:**\n\n- **Exact Title:** A Peek into Token Bias: Large Language Models Are Not Yet Genuine Reasoners[7]\n- **Authors:** Bowen Jiang, Yangxinyu Xie, Zhuoqun Hao, Xiaomeng Wang, Tanwi Mallick, Weijie J Su, Camillo Jose Taylor, and Dan Roth[7]\n- **Venue:** Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP 2024)[7]\n- **Year:** 2024[7]\n- **arXiv Identifier:** 2406.11050v2[6]\n- **arXiv Submission Date:** Submitted 16 June 2024 (v1), last revised 4 October 2024 (v2)[6]\n- **Pages:** 4722–4756[7]\n- **Conference Location:** Miami, Florida, USA[7]\n- **Publisher:** Association for Computational Linguistics[7]\n\n**Research Summary:**\n\nThe paper introduces a **hypothesis-testing framework** to evaluate whether large language models possess genuine reasoning abilities or rely on token bias—the tendency to recognize superficial patterns in task descriptions rather than understand underlying logic.[6] Using synthetic datasets with conjunction fallacy and syllogistic problems, the researchers employ token perturbation techniques to systematically test whether LLMs' performance shifts predictably when tokens are altered while logic remains intact.[4] The study concludes, with statistical guarantee, that most LLMs struggle with logical reasoning and primarily depend on recognizing superficial patterns.[6]\n\n**Code Availability:** Open-sourced at https://github.com/bowen-upenn/llm_token_bias[1]"
-  ],
-  "_s2": {}
+  "layer": "llm",
+  "api_calls": {
+    "arxiv": 0,
+    "arxiv_title": 1,
+    "s2_prefetch": 1,
+    "s2_tool": 2,
+    "crossref": 1,
+    "openalex": 1,
+    "tavily": 2,
+    "tavily_extract": 2,
+    "llm": 1
+  }
 }

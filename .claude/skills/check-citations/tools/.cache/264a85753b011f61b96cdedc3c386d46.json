@@ -4,12 +4,19 @@
   "description": "Authors: Arkoudas, K.\nTitle: GPT-4 can't reason\nYear: 2023\nURL: URL: https://arxiv.org/abs/2308.03762",
   "verdict": "REAL",
   "confidence": 95,
-  "reason": "Paper confirmed via Perplexity search with matching title, author, year, arXiv ID (2308.03762), and DOI (10.48550/arXiv.2308.03762). Hosted on arXiv and cited in academic contexts, despite initial Semantic Scholar tool failure.",
-  "tool_calls": 2,
-  "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
-  "_search_results": [
-    "**Yes, the paper exists.** Its exact title is **\"GPT-4 Can't Reason\"**, authored by **Konstantine Arkoudas**, published as a preprint on **arXiv** in **2023** with identifier **arXiv:2308.03762** (v1 submitted July 21, 2023; v2 revised August 10, 2023).[1][2][3]\n\nThe DOI is **10.48550/arXiv.2308.03762**.[2] It is a position paper critiquing GPT-4's reasoning abilities through qualitative analysis of 21 diverse problems, concluding the model is incapable of true reasoning despite occasional successes.[2][3] Semantic Scholar lists it with CorpusID 260704128 and notes 14 citations as of the latest data.[1]",
-    "Semantic Scholar: no matching paper found."
-  ],
-  "_s2": {}
+  "reason": "arXiv: title match (sim=1.00); arXiv: authors match (1/1)",
+  "tool_calls": 0,
+  "prompt_variant": "deterministic",
+  "layer": "deterministic",
+  "api_calls": {
+    "arxiv": 1,
+    "arxiv_title": 0,
+    "s2_prefetch": 1,
+    "s2_tool": 0,
+    "crossref": 0,
+    "openalex": 0,
+    "tavily": 0,
+    "tavily_extract": 0,
+    "llm": 0
+  }
 }

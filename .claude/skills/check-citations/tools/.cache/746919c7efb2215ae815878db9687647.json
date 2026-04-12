@@ -4,14 +4,19 @@
   "description": "Authors: An, J. and Huang, D. and Lin, C. and Tai, M.\nTitle: Measuring gender and racial biases in large language models: Intersectional evidence from automated resume evaluation\nJournal: PNAS Nexus\nYear: 2025\nVolume: 4",
   "verdict": "REAL",
   "confidence": 95,
-  "reason": "Paper confirmed via multiple Perplexity results with matching title, authors, year, journal, and DOI. Preprint existed on arXiv, and final version published in PNAS Nexus 2025. Semantic Scholar's lack of indexing does not invalidate publication.",
-  "tool_calls": 4,
+  "reason": "Multiple authoritative sources (Semantic Scholar, OpenAlex, Tavily-aggregated PDFs and arXiv references) consistently confirm the paper's title, authors, journal, year, volume, issue, and DOI. The DOI resolves to a valid record, and the paper is cited in recent literature, indicating real academic impact.",
+  "tool_calls": 10,
   "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
-  "_search_results": [
-    "**Yes, the paper exists.**\n\n- **Exact title**: Measuring gender and racial biases in large language models: Intersectional evidence from automated resume evaluation[1][2][3][6][7]\n- **Authors**: Jiafu An, Difang Huang, Chen Lin, Mingzhu Tai (note: user query lists \"An Huang Lin Tai,\" which matches these authors' surnames in different order; \"Lin Tai\" likely refers to Chen Lin and Mingzhu Tai)[6][7]\n- **Venue**: PNAS Nexus[1][2][3][7]\n- **Year/Volume/Issue**: 2025, Volume 4, Issue 3 (published March 2025)[1][7]\n- **DOI**: 10.1093/pnasnexus/pgaf089[1][2][7]\n\nPreprint available on arXiv (abs/2403.15281, dated March 2024), focusing initially on GPT models but expanded in the final version to include multiple LLMs like GPT-4o, Gemini, Claude, and Llama[4][5][7]. The study analyzes biases in resume scoring for ~361,000 fictitious resumes with randomized identities, finding pro-female and anti-Black male patterns persistent across models despite debiasing efforts[1][2][7].",
-    "Semantic Scholar: no matching paper found.",
-    "Semantic Scholar: no matching paper found.",
-    "**Yes, the paper exists.**\n\n**Exact title:** Measuring gender and racial biases in large language models: Intersectional evidence from automated resume evaluation[1][5].\n\n**Authors:** Jiafu An, Difang Huang, Chen Lin, Mingzhu Tai[5].\n\n**Venue:** PNAS Nexus[1][2][5].\n\n**Year:** 2025[5].\n\n**DOI:** 10.1093/pnasnexus/pgaf089[1][2][5]."
-  ],
-  "_s2": {}
+  "layer": "llm",
+  "api_calls": {
+    "arxiv": 0,
+    "arxiv_title": 0,
+    "s2_prefetch": 1,
+    "s2_tool": 2,
+    "crossref": 2,
+    "openalex": 1,
+    "tavily": 4,
+    "tavily_extract": 1,
+    "llm": 1
+  }
 }

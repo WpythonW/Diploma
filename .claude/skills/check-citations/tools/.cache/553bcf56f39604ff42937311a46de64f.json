@@ -3,26 +3,20 @@
   "type": "book",
   "description": "Authors: Kahneman, D.\nTitle: Thinking, Fast and Slow\nPublisher: Farrar, Straus and Giroux",
   "verdict": "REAL",
-  "confidence": 100,
-  "reason": "Multiple reliable sources (Perplexity web results and Semantic Scholar) confirm the book's title, author, publisher, and year. Semantic Scholar attributes 1,375 citations to the work, and the publisher's official page matches the details.",
-  "tool_calls": 2,
+  "confidence": 98,
+  "reason": "Multiple independent sources (Tavily, OpenAlex) confirm the book's existence with matching author, title, publisher, year (2011), and ISBN. High citation count (10,447) on OpenAlex and consistent academic citations confirm authenticity.",
+  "tool_calls": 10,
   "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
-  "_search_results": [
-    "**Yes, the book exists.** Its exact title is *Thinking, Fast and Slow*, authored by **Daniel Kahneman**, published by **Farrar, Straus and Giroux**.[1][2][3][5]\n\nKey publication details:\n- Year: 2011 (first edition); a 2013 1st edition is also referenced.[2][3]\n- ISBN: 9780374533557 (paperback).[3][5]\n- Format: Paperback, 512 pages.[5]\n- No DOI available, as it is a trade book rather than an academic paper; official publisher page: https://us.macmillan.com/books/9780374533557/thinkingfastandslow.[3]\n\nThe book is a popular science work on two cognitive systems: fast, intuitive **System 1** and slow, deliberative **System 2**.[1][2][3][4] It is not open access.[3]",
-    "Semantic Scholar result:\n  Title: Thinking, Fast and Slow\n  Authors: D. Kahneman\n  Year: 2011\n  Venue: \n  DOI: n/a\n  arXiv: n/a\n  PDF: n/a\n  Citations: 1375\n  URL: https://www.semanticscholar.org/paper/b8573a2585db1164fe4a528a300750e97768fd8d"
-  ],
-  "_s2": {
-    "paper_id": "b8573a2585db1164fe4a528a300750e97768fd8d",
-    "title": "Thinking, Fast and Slow",
-    "authors": [
-      "D. Kahneman"
-    ],
-    "year": 2011,
-    "venue": "",
-    "doi": null,
-    "arxiv_id": null,
-    "pdf_url": "",
-    "paper_url": "https://www.semanticscholar.org/paper/b8573a2585db1164fe4a528a300750e97768fd8d",
-    "citation_count": 1375
+  "layer": "llm",
+  "api_calls": {
+    "arxiv": 0,
+    "arxiv_title": 0,
+    "s2_prefetch": 1,
+    "s2_tool": 2,
+    "crossref": 2,
+    "openalex": 2,
+    "tavily": 3,
+    "tavily_extract": 1,
+    "llm": 1
   }
 }

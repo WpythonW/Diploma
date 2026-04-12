@@ -1,44 +1,42 @@
 ---
 key: fu2024implies
 title: A Implies B: Circuit Analysis in LLMs for Propositional Logical Reasoning
-authors: Fu, D. and Guo, R. and Sharan, V. and Jia, R.
+authors: Hong, G. Z. and Dikkala, N. and Luo, E. and Rashtchian, C. and Wang, X. and Panigrahy, R.
 year: 2024
 venue: Unknown
 doi: 
-arxiv_id: 2411.04105
+arxiv_id: 
 pdf_url: URL: https://arxiv.org/abs/2411.04105
-semantic_scholar_id: 99a25b62fd9ad86cff5898ff4fccdbc29b373b0a
-paper_url: https://www.semanticscholar.org/paper/99a25b62fd9ad86cff5898ff4fccdbc29b373b0a
-citation_count: 5
-verified: false
-confidence: 98
+semantic_scholar_id: 
+paper_url: 
+citation_count: 
+verified: true
+confidence: 95
 source_used: arxiv
 ---
 
 ## Goal
-The authors aim to investigate how large language models (LLMs) perform propositional logical reasoning, specifically focusing on whether LLMs internally implement logical circuits to process implications and other logical relationships. They seek to understand if models trained on natural language can learn and execute formal logic, using the simple yet fundamental "A implies B" structure as a test case. The study bridges the gap between symbolic reasoning and neural network behavior by probing for interpretable logical circuits within LLMs.
+The paper aims to investigate how large language models (LLMs) perform propositional logical reasoning, specifically focusing on whether LLMs can correctly infer logical implications (e.g., "A implies B") and understand basic propositional logic. It seeks to uncover the internal mechanisms within LLMs that support such reasoning by analyzing model weights and activations. The authors aim to determine if LLMs implement formal logical circuits or rely on heuristic, surface-level pattern matching.
 
 ## Gap Addressed
-Prior work has shown that LLMs can solve logical reasoning tasks, but it remains unclear whether they do so through genuine symbolic manipulation or via pattern recognition and heuristic shortcuts. Most existing analyses focus on input-output behavior or attention patterns, lacking mechanistic insight into how logical rules are implemented at the circuit level. This work addresses the open question of whether LLMs develop interpretable, human-verifiable circuits for basic propositional logic—such as modus ponens—during inference.
+While LLMs show strong performance on various reasoning tasks, it remains unclear whether they perform genuine logical deduction or exploit statistical patterns in training data. Prior work has not thoroughly analyzed the circuit-level mechanisms in LLMs responsible for propositional reasoning. There is a lack of understanding about whether logical implications are encoded explicitly in model weights or emerge implicitly through training.
 
 ## Method
-The authors use mechanistic interpretability techniques to reverse-engineer the internal computations of LLMs on propositional logic tasks. They train and analyze small transformer models on synthetic datasets involving logical implications (e.g., "A → B", "A is true, therefore B is true"). Using causal mediation analysis and direct logit attribution, they identify specific neuron pathways and attention heads that implement logical operations. They validate their findings by intervening on identified circuits and measuring performance degradation, confirming causal roles in logical inference.
+The authors perform circuit-level analysis of LLMs by examining weight patterns and activation pathways involved in propositional logic tasks. They construct minimal logical probes and analyze attention and MLP layers to identify components responsible for logical implication. Using synthetic datasets with controlled logical structures, they isolate reasoning behavior and apply causal mediation analysis to trace information flow. The study focuses on small transformer models trained on logical expressions to enable full interpretability.
 
 ## Datasets and Metrics
-**Datasets:** The study uses synthetically generated datasets based on propositional logic expressions involving implication, conjunction, and negation. The primary dataset includes sequences of logical premises and queries (e.g., "A → B", "A", "Therefore B?") with binary entailment labels. Dataset sizes are not explicitly stated, but experiments involve controlled, small-scale logic problems designed for interpretability. No external natural language datasets are used; all data are hand-crafted logic prompts.
+**Datasets:** Synthetic logical expressions datasets containing propositional statements and implications (e.g., "A → B", "A ∧ B", etc.), generated with controlled logical structures and varying complexity.
 
-**Metrics:** Metrics include accuracy on logical inference tasks, causal effect measures via intervention (e.g., ablation or activation patching), logit difference before and after circuit intervention, and proportion of heads/neurons contributing to correct predictions. Specific values include near-perfect accuracy (>99%) on test sets for trained models, with ablation of key circuits reducing performance to chance levels (~50%), indicating causal necessity.
+**Metrics:** Accuracy on logical inference tasks, causal influence scores from mediation analysis, circuit sparsity, and consistency with formal logic rules.
 
 ## Results
-The models achieve high accuracy (>99%) on logical reasoning tasks, suggesting competence in propositional logic. The analysis reveals sparse, interpretable circuits where specific attention heads copy premise tokens (e.g., "A") and others apply logical rules (e.g., "if A→B and A, then B"). Interventions on these circuits cause performance to drop to chance, confirming their causal role. The circuits generalize across different variable names (e.g., from A/B to C/D), indicating abstraction. These findings provide strong evidence that LLMs can learn to implement formal logical reasoning through identifiable neural pathways.
+The study finds that LLMs can learn to perform basic propositional reasoning, but often rely on shallow heuristics rather than systematic logical deduction. Specific circuits in MLP layers are identified that correspond to logical implication operations, suggesting some degree of structured reasoning. However, models frequently fail on out-of-distribution or negated forms, indicating limited generalization. Causal analysis reveals that certain neurons act as logical gates, but their behavior is context-dependent and not fully aligned with formal logic. The results suggest that logical reasoning in LLMs is partially implemented through identifiable circuits but remains fragile and data-dependent.
 
 ## Limitations
-The study focuses on small, specially trained models rather than large pre-trained LLMs, limiting generalizability to real-world models. The logical tasks are highly simplified and may not reflect complex, ambiguous reasoning in natural language. Additionally, the synthetic setup may encourage cleaner circuits than would emerge in large-scale training on diverse data.
+The analysis is primarily conducted on small, synthetically trained models, limiting generalizability to larger, real-world LLMs. The study focuses on propositional logic only, leaving more complex reasoning (e.g., first-order logic) unexplored. Logical circuits identified may not be robust across different architectures or training regimes.
 
 ## Verification Verdict
-FAKE (98%) — The paper 'A Implies B: Circuit Analysis in LLMs for Propositional Logical Reasoning' (arXiv:2411.04105) is real and published in 2024, but the authors listed in the query (Fu, D.; Guo, R.; Sharan, V.; Jia, R.) are incorrect. The actual authors are Guanzhe Hong, Nishanth Dikkala, Enming Luo, Cyrus Rashtchian, Xin Wang, and Rina Panigrahy. The mismatch in authorship renders the bibliography entry fabricated.
+REAL (95%) — arXiv: title match (sim=1.00); arXiv: authors match (6/6)
 
 ## Links
-- [Semantic Scholar](https://www.semanticscholar.org/paper/99a25b62fd9ad86cff5898ff4fccdbc29b373b0a)
-- [arXiv](https://arxiv.org/abs/2411.04105)
 - [PDF](URL: https://arxiv.org/abs/2411.04105)

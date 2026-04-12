@@ -78,10 +78,78 @@ For a thesis submitted in the scientific article format, the thesis topic matche
 
 The thesis may be defended either in Russian or in English. If it is defended in English, the full thesis text must also be in English.
 
+## Official Chapter Structure (4-Chapter Framework)
+
+> **Source:** Recommendation from MSc program supervisor (Magistratura track lead).
+> Applicable to all tracks; below is the **scientific track adaptation** (no deployment/engineering chapter).
+
+The recommended structure for a scientific-track thesis is **four chapters**:
+
+### Глава 1. Введение в предметную область. Анализ проблемы. Related Work. Постановка задачи и гипотезы.
+
+- Problem statement and relevance justification
+- Comprehensive literature review with critical analysis
+- Identification of gaps in the state of the art
+- Research question(s) and hypothesis formulation
+- Definition of scope, objectives, and evaluation criteria
+- *(Maps to Diploma Criteria: Relevance, Novelty)*
+
+### Глава 2. Исследование: эксперименты, выбор моделей / подходов, сравнение с базовыми линиями.
+
+- Experimental design and methodology
+- Model/approach selection rationale
+- Baseline comparisons and ablation studies
+- Data collection, dataset construction, contamination control
+- Metrics definition and statistical protocol
+- Experimental results (per-experiment or per-paradigm)
+- Cross-experiment comparison and hypothesis validation
+- *(Maps to Diploma Criteria: Effectiveness, Technical Complexity)*
+
+### Глава 3. Техническая реализация: архитектура, разработка, воспроизводимый пайплайн.
+
+> **Note for scientific track:** No deployment or production engineering. This chapter covers the **reproducible experimental framework** — code architecture, data pipelines, metric implementations, and infrastructure that enables the research.
+
+- Software architecture of the experimental framework
+- Data pipeline and dataset generation/management
+- Implementation of metrics and evaluation scripts
+- Reproducibility infrastructure (dependency management, config, logging)
+- Technical challenges encountered and solutions
+- *(Maps to Diploma Criteria: Technical Complexity and Implementation Quality)*
+
+### Глава 4. Валидация, ограничения, научная апробация.
+
+- Validation of results (statistical rigor, robustness checks)
+- Threats to validity and methodological limitations
+- Scientific impact: publications, presentations, peer feedback
+- Interpretation of findings in the context of hypotheses
+- Future research directions and scaling potential
+- *(Maps to Diploma Criteria: Scaling Potential, Practical Significance)*
+
+---
+
+### Mapping: 4-Chapter Structure ↔ Required Thesis Elements
+
+| Required Element (from DIPLOMA_CRITERIA §1–11) | Primary Chapter |
+|---|---|
+| 1. Problem description + relevance | Ch. 1 (Introduction) |
+| 2. Research/development task | Ch. 1 |
+| 3. Solution concept + hypotheses + metrics | Ch. 1 (end) / Ch. 2 (intro) |
+| 4. Statements submitted for defense | Conclusion |
+| 5. Review of known solutions + critical analysis | Ch. 1 |
+| 6. Scientific novelty | Ch. 1 (end) / Ch. 2 (intro) |
+| 7. Path toward solution + technical complexity | Ch. 2 + Ch. 3 |
+| 8. Degree of readiness + feedback | Ch. 4 |
+| 9. Author's personal contribution | Intro / Conclusion |
+| 10. Impact + validation approach | Ch. 4 |
+| 11. Use of AI Tools disclosure | Separate section |
+
+---
+
 ## Requirements for the Thesis Text
 
 - Special requirements for a thesis in the scientific article format are defined in Chapter 3 of the official document.
-- The thesis must comply with ITMO University’s local regulation `Requirements for Theses`, as well as with the requirements of the educational program.
+- The thesis must comply with ITMO University's local regulation `Requirements for Theses`, as well as with the requirements of the educational program.
+- The **4-chapter structure above** is the officially recommended framework for scientific-track MSc theses.
 
 The thesis includes the following structural elements:
 

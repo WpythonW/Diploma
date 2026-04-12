@@ -3,26 +3,20 @@
   "type": "article",
   "description": "Authors: Evans, J. St. B. T.\nTitle: In two minds: dual-process accounts of reasoning\nJournal: Trends in Cognitive Sciences\nYear: 2003\nVolume: 7",
   "verdict": "REAL",
-  "confidence": 100,
-  "reason": "Paper confirmed by both Semantic Scholar and Perplexity with matching title, author (Jonathan St. B. T. Evans), journal, year, and DOI. High citation count and presence in reputable database confirm authenticity.",
-  "tool_calls": 2,
+  "confidence": 99,
+  "reason": "Multiple authoritative sources (CrossRef, OpenAlex, Semantic Scholar via Tavily) confirm the paper's existence with matching title, author, journal, year, volume, and DOI. The paper is highly cited and formally published in Trends in Cognitive Sciences.",
+  "tool_calls": 7,
   "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
-  "_search_results": [
-    "**Yes, the paper exists.**\n\n**Exact title:** In two minds: dual-process accounts of reasoning[1][4][5][6].  \n**Author:** Jonathan St. B. T. Evans (also cited as Evans, J. St. B. T. or Jonathan St BT Evans)[1][4][5][6].  \n**Venue:** *Trends in Cognitive Sciences* (abbreviated *Trends Cogn Sci*)[1][4][5].  \n**Year:** 2003 (October issue, volume 7, issue 10, pages 454-459)[1][4][5].  \n**DOI:** 10.1016/j.tics.2003.08.012[4].  \n\nThe paper reviews dual-process theories of reasoning, proposing **two cognitive systems**: **System 1** (fast, automatic, evolutionarily older, shared with animals) and **System 2** (slow, deliberative, abstract, linked to working memory and intelligence). It argues these systems compete for control of inferences and actions, supported by experimental evidence[1][4]. PubMed lists the abstract confirming this content[4].",
-    "Semantic Scholar result:\n  Title: In two minds: dual-process accounts of reasoning.\n  Authors: Jonathan Evans\n  Year: 2003\n  Venue: Trends in Cognitive Sciences\n  DOI: 10.1016/J.TICS.2003.08.012\n  arXiv: n/a\n  PDF: n/a\n  Citations: 2171\n  URL: https://www.semanticscholar.org/paper/c73b58599d7dbbb3db987507218a67779dfc0c09"
-  ],
-  "_s2": {
-    "paper_id": "c73b58599d7dbbb3db987507218a67779dfc0c09",
-    "title": "In two minds: dual-process accounts of reasoning.",
-    "authors": [
-      "Jonathan Evans"
-    ],
-    "year": 2003,
-    "venue": "Trends in Cognitive Sciences",
-    "doi": "10.1016/J.TICS.2003.08.012",
-    "arxiv_id": null,
-    "pdf_url": "",
-    "paper_url": "https://www.semanticscholar.org/paper/c73b58599d7dbbb3db987507218a67779dfc0c09",
-    "citation_count": 2171
+  "layer": "llm",
+  "api_calls": {
+    "arxiv": 0,
+    "arxiv_title": 1,
+    "s2_prefetch": 1,
+    "s2_tool": 1,
+    "crossref": 1,
+    "openalex": 1,
+    "tavily": 2,
+    "tavily_extract": 1,
+    "llm": 1
   }
 }

@@ -20,9 +20,27 @@ S2_FIELDS = "title,authors,year,venue,externalIds,openAccessPdf,url,publicationT
 _API_KEY = os.environ.get("S2_API_KEY", "")
 _HEADERS = {"x-api-key": _API_KEY} if _API_KEY else {}
 
-# Semaphore: 1 req/s without key, 5/s with key
-_SEM = asyncio.Semaphore(1 if not _API_KEY else 5)
+_SEM_LIMIT = 1 if not _API_KEY else 5
 _DELAY = 2.0 if not _API_KEY else 0.2   # seconds between requests
+
+# Lazily created per-loop semaphore (avoids "bound to different event loop" errors
+# when called from thread-pool workers spun up by LangGraph ToolNode).
+_sem_lock = None
+_sem_loop = None
+_SEM: asyncio.Semaphore | None = None
+
+
+def _get_sem() -> asyncio.Semaphore:
+    """Return (or create) a semaphore bound to the *current* running loop."""
+    global _SEM, _sem_loop
+    try:
+        loop = asyncio.get_running_loop()
+    except RuntimeError:
+        loop = None
+    if _SEM is None or _sem_loop is not loop:
+        _SEM = asyncio.Semaphore(_SEM_LIMIT)
+        _sem_loop = loop
+    return _SEM
 
 
 @dataclass
@@ -43,7 +61,7 @@ class SemanticScholarResult:
 
 async def _get(client: httpx.AsyncClient, path: str, params: dict, retries: int = 3) -> dict | None:
     for attempt in range(retries):
-        async with _SEM:
+        async with _get_sem():
             try:
                 r = await client.get(f"{S2_BASE}{path}", params=params, headers=_HEADERS, timeout=15)
                 await asyncio.sleep(_DELAY)

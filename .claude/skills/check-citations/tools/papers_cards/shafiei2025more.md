@@ -16,27 +16,27 @@ source_used: arxiv
 ---
 
 ## Goal
-The authors aim to investigate and quantify directional bias in large language models (LLMs) when performing comparative reasoning tasks—specifically, whether models are sensitive to the order in which options are presented (e.g., "A or B" vs. "B or A"). The paper focuses on understanding how often LLMs exhibit inconsistent judgments depending on presentation order, even when the underlying comparison remains logically equivalent. The goal is to establish a systematic benchmark to measure this bias across different models and task formulations, highlighting a critical yet underexplored flaw in LLM reasoning consistency.
+The paper aims to investigate and quantify directional bias in large language models (LLMs) during comparative reasoning tasks—specifically, whether models exhibit systematic errors when evaluating "more" versus "less" comparisons. It introduces a benchmark designed to test the consistency and accuracy of LLMs when the direction of comparison is reversed, seeking to uncover whether models favor one direction (e.g., "more") over the other, leading to logically inconsistent judgments.
 
 ## Gap Addressed
-Prior work on LLM reasoning has largely focused on accuracy in question answering, logical inference, or bias detection in classification tasks, but less attention has been paid to directional inconsistency in pairwise comparisons. Existing benchmarks often assume symmetry in model judgments, ignoring the possibility that presentation order influences outcomes. This work addresses the gap by formalizing "directional bias" as a measurable phenomenon in comparative reasoning, demonstrating that models may produce non-symmetric outputs even when the semantic content of the comparison is invariant to order.
+Prior evaluations of LLM reasoning have largely focused on factual accuracy or logical consistency in non-directional tasks, with limited attention to how the phrasing of comparative statements affects model performance. There is a lack of standardized benchmarks that isolate and measure directional bias in comparative language understanding, making it difficult to diagnose and correct such biases in downstream applications.
 
 ## Method
-The authors introduce a benchmark called "More or Less Wrong" (MLW), consisting of a collection of minimal-pair prompts where two options are compared in both orders (A vs. B and B vs. A). The benchmark evaluates whether the model’s judgment reverses or remains consistent across permutations. They test multiple LLMs across diverse domains including factual reasoning, ethical dilemmas, and linguistic preferences. The core metric is inconsistency rate—the proportion of comparisons where the model favors one option in one order and the reverse in the other—after controlling for confounding factors like phrasing and position.
+The authors construct a controlled benchmark called "More or Less Wrong" (MoLW), consisting of symmetric comparison pairs where the direction of comparison is reversed (e.g., "X is more Y than Z" vs. "Z is less Y than X"). They evaluate multiple state-of-the-art LLMs by measuring consistency in responses across these reversed pairs. Inconsistencies indicate directional bias. The benchmark includes both factual and counterfactual comparisons across various domains (e.g., size, intelligence, temperature).
 
 ## Datasets and Metrics
-**Datasets:** Not applicable (The paper introduces a synthetic benchmark constructed from minimal-pair prompts rather than using existing datasets. The MLW benchmark itself is the primary dataset, composed of hand-crafted and semi-automatically generated comparison pairs across multiple domains.)
+**Datasets:** MoLW (More or Less Wrong) benchmark
 
-**Metrics:** Primary metric: Inconsistency Rate (IR), defined as the percentage of non-symmetric responses across reversed-order comparisons. Secondary metrics include win rate asymmetry and position bias score. The paper reports IR values across models, with some models showing over 30% inconsistency on certain task types.
+**Metrics:** Response consistency rate, accuracy, directional bias score, logical contradiction rate
 
 ## Results
-The study reveals significant directional bias across all tested LLMs, with inconsistency rates ranging from 15% to over 35% depending on model and domain. Larger models do not consistently outperform smaller ones in terms of consistency. Positional presentation strongly influences outcomes—models tend to favor the second option in a comparison more frequently, suggesting a primacy or recency effect. The bias persists even when semantic content is controlled, indicating a structural flaw in reasoning. The MLW benchmark effectively discriminates between models based on their susceptibility to order effects.
+The study reveals significant directional bias across all tested LLMs, with consistency rates below 80% on average, meaning models often give contradictory answers to logically equivalent reversed comparisons. Models perform better on "more" statements than "less" statements, indicating a systematic asymmetry in reasoning. The bias persists across model sizes and architectures, suggesting it is not easily mitigated by scale. The MoLW benchmark effectively discriminates between models in terms of logical robustness, revealing that even high-performing models struggle with directional symmetry in reasoning.
 
 ## Limitations
-The benchmark relies on hand-designed prompts, which may not fully generalize to real-world comparative queries. The study focuses on binary comparisons and does not extend to multi-option or graded reasoning tasks. Additionally, the underlying causes of directional bias (e.g., training data artifacts vs. architectural constraints) are not fully disentangled.
+The MoLW benchmark is limited to binary comparative statements and does not cover gradable adjectives with more than two entities or continuous scales. The current version focuses primarily on English and may not generalize to other languages or cultural contexts.
 
 ## Verification Verdict
-REAL (95%) — Paper confirmed via arXiv through multiple Perplexity searches with matching title, authors, year, and arXiv ID (2506.03923). Metadata consistent across sources. Lack of Semantic Scholar indexing likely due to recency.
+REAL (95%) — arXiv: title match (sim=1.00); arXiv: authors match (3/3)
 
 ## Links
 - [PDF](URL: https://arxiv.org/abs/2506.03923)

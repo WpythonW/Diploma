@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber main"] 1775498046.93316 "main.bcf" "main.bbl" "main" 1775501578.49303 0
-  "bibliography.bib" 1775497084.93959 16195 93bc0c8b4bf619b3c471426dbcb0add8 ""
-  "main.bcf" 1775498055.51678 163099 5813efcc89d7e6b1e8650a04b83bbf48 "xelatex"
+["biber main"] 1776010873.51027 "main.bcf" "main.bbl" "main" 1776011183.00284 0
+  "bibliography.bib" 1775999652.07468 15945 86bf1f0c7b049ca0f5114d73be00fa6f ""
+  "main.bcf" 1776011181.40319 163172 6441500d18c8d3724c576a88ebf8e381 "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1775501577.90679 "main.xdv" "main.pdf" "main" 1775501578.49428 0
-  "main.xdv" 1775498055.51819 1332028 315baa5e907063c8cf64dc21f64001db "xelatex"
+["xdvipdfmx"] 1776011181.48514 "main.xdv" "main.pdf" "main" 1776011183.00356 0
+  "main.xdv" 1776011181.40392 1393052 09469f7c6589f5311531a64683a29023 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1775498052.54804 "main.tex" "main.xdv" "main" 1775501578.49311 0
+["xelatex"] 1776011179.74467 "main.tex" "main.xdv" "main" 1776011183.0029 0
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty" 1734129479 7984 7dbb9280f03c0a315425f1b4f35d43ee ""
@@ -83,7 +83,7 @@
   "abbreviations.tex" 1773570772.96351 1295 5fc7619f4525535993a751f5a25cec31 ""
   "appA.tex" 1773563804.58278 5957 a9429ad7ecfab1547f4d07be52c50a4e ""
   "chapter1.tex" 1775496522.10932 73760 420adb5ab8cb0e32cc71176f807a7bd0 ""
-  "chapter2.tex" 1773600865.00163 73717 fe4bdac60d2ce10e2fcfe510b2958c98 ""
+  "chapter2.tex" 1776010956.04106 84650 d9d5dafbcb2e31992167d6ce7085822f ""
   "chapter3.tex" 1775495627.92284 20007 3f5815d411f5db8b7f7de5a258cc2b08 ""
   "conclusion.tex" 1773563804.58324 1777 d5f0f20d3b5e65e3b8953ff17951082a ""
   "config-formulas.tex" 1773563804.58336 1334 cb08dc56a31b613fdcde10d412105d1e ""
@@ -91,12 +91,17 @@
   "config-lists.tex" 1773571452.53381 489 8c743d7f652728d66d08bf8bd9f8fc13 ""
   "config-tables.tex" 1773571452.53682 3074 3dc84c64eca8900b308b24217b0f872d ""
   "example.jpg" 1773563804.5841 15817 236c908fdb8f33d3146ff144515dab16 ""
+  "fig_waston_context_effects.png" 1776009877.33211 161979 9ff28e4c91abaffd1c94d2046a525eb0 ""
+  "fig_waston_cot_delta.png" 1776009877.33432 65132 a64283d20827621f4e6646eb46b674c9 ""
+  "fig_waston_ema_conditions.png" 1776009877.32793 206414 69f5a8f30911d3cf26735102c63e8c58 ""
+  "fig_waston_ema_heatmap.png" 1776009877.32997 248492 af038cd518ef150a4da843843d0806cd ""
+  "fig_waston_ema_vs_consistency.png" 1776009877.33669 170991 9e2fe4de35b65fe8361dbe197370c524 ""
   "intro.tex" 1775498189.01867 25362 6ee3ed820200b5438885b6d2e233c017 ""
-  "main.aux" 1775498055.5047 28591 8b20df8c98098f97e5abb14a49d34d92 "xelatex"
-  "main.bbl" 1775498049.347 75017 1f99a57ab43e052fd68b7e4a42c512a9 "biber main"
-  "main.run.xml" 1775498055.51789 2539 53081166575ee613f3e7d12c0a8b9d49 "xelatex"
+  "main.aux" 1776011181.39706 32130 09779f1da48f381e4476b76244cadbd1 "xelatex"
+  "main.bbl" 1776010875.27252 73752 92af1fd45e3e499423380ff47f04d0ea "biber main"
+  "main.run.xml" 1776011181.40372 2539 53081166575ee613f3e7d12c0a8b9d49 "xelatex"
   "main.tex" 1773606362.48939 1696 a37cdfcb4fa3dfa4cc37f8f492d7eeee ""
-  "main.toc" 1775498055.51808 9855 d6980ab123ba333b75fbd2bfeaed22e1 "xelatex"
+  "main.toc" 1776011181.40383 9979 7bca335909c1c68a66381fcee1ea7f1a "xelatex"
   "preamble.tex" 1775501280.76637 4631 e6681b3bc257d5528802a9eeb9ba16ac ""
   "terms.tex" 1773570803.1959 2975 a4f88aba5269c976efa760e46d825291 ""
   (generated)

@@ -3,16 +3,20 @@
   "type": "article",
   "description": "Authors: Yax, N. and Anll\\'{o\nTitle: Studying and improving reasoning in humans and machines\nJournal: Communications Psychology\nYear: 2024\nVolume: 2",
   "verdict": "REAL",
-  "confidence": 95,
-  "reason": "Paper confirmed via multiple Perplexity searches with valid DOI, correct title, journal, year, and volume. Authors corrected to Nicolas Yax, Hernán Anlló, and Stefano Palminteri. Absence in Semantic Scholar likely due to indexing limitations, not fabrication.",
-  "tool_calls": 5,
+  "confidence": 98,
+  "reason": "Multiple authoritative sources (CrossRef, OpenAlex, publisher DOI) confirm the paper's existence with matching title, authors, journal, volume, and year. The DOI resolves to a valid Nature page with full metadata and abstract.",
+  "tool_calls": 7,
   "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
-  "_search_results": [
-    "**Yes, the paper exists.** The exact title is **\"Studying and improving reasoning in humans and machines\"**, with authors **Nicolas Yax***, **Hernan Anlló*** (note: \"Yax N. Anlló\" appears to be a minor misspelling or inversion of \"Nicolas Yax\" and \"Hernan Anlló\"), and **Stefano Palminteri§** (*equal contribution, §corresponding author).[1][2][3][6]\n\nIt was published in **Communications Psychology**, volume **2**, article **51**, in **2024**.[1][2][3][5]\n\n**DOI:** https://doi.org/10.1038/s44271-024-00091-8[1][2]\n\nAn earlier preprint version is available on arXiv: https://arxiv.org/abs/2309.12485 (submitted 21 Sep 2023).[6]",
-    "Semantic Scholar: no matching paper found.",
-    "The paper **\"Studying and improving reasoning in humans and machines\"** by Nicolas Yax, Hernán Anlló, and Stefano Palminteri exists and was published in *Communications Psychology* in 2024.[1][6]\n\n**Publication Details:**\n- **Title:** Studying and improving reasoning in humans and machines\n- **Authors:** Nicolas Yax, Hernán Anlló, Stefano Palminteri\n- **Journal:** Communications Psychology\n- **Volume/Issue:** 2(1)\n- **Article Number:** 51\n- **Publication Date:** June 3, 2024\n- **DOI:** 10.1038/s44271-024-00091-8[6]\n\n**Overview:**\nThe paper investigates and compares reasoning in large language models (LLMs) and humans using cognitive psychology tools traditionally used to study bounded rationality.[2] The researchers presented human participants and pretrained LLMs with new variants of classical cognitive experiments and cross-compared their performances. Key findings include that most models exhibited reasoning errors similar to human heuristic-based reasoning, though in-depth analysis revealed important differences, with limitations in more recent LLM releases largely disappearing.[2] The study also demonstrates that humans and machines respond differently to the same prompting schemes for improving performance.[2]\n\n**Preprint:**\nAn earlier version was submitted to arXiv on September 21, 2023, with identifier arXiv:2309.12485.[2]",
-    "Semantic Scholar: no matching paper found.",
-    "**Yes, the paper exists.**\n\n- **Exact title**: Studying and improving reasoning in humans and machines[1][2][3][5]\n- **Authors**: Nicolas Yax*, Hernán Anlló*, Stefano Palminteri (asterisks denote equal contribution; Palminteri as senior author in some listings)[3][5]\n- **Venue**: Communications Psychology (volume 2, article 51)[1][2][3][5]\n- **Year**: 2024 (published June 3)[2][3][5]\n- **DOI**: 10.1038/s44271-024-00091-8[1][2][3][5]\n\nThe paper compares reasoning in humans and large language models using cognitive psychology experiments, finding superficial similarities in errors but key differences, with newer LLMs showing fewer limitations and differing responses to prompting strategies.[3]"
-  ],
-  "_s2": {}
+  "layer": "llm",
+  "api_calls": {
+    "arxiv": 0,
+    "arxiv_title": 1,
+    "s2_prefetch": 1,
+    "s2_tool": 2,
+    "crossref": 1,
+    "openalex": 1,
+    "tavily": 1,
+    "tavily_extract": 1,
+    "llm": 1
+  }
 }

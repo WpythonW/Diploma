@@ -929,36 +929,46 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{URL: https://arxiv.org/abs/2305.12766}
       \field{note}{дата обращения: 01.03.2025}
-      \field{title}{Explaining Emergent In-Context Learning as Kernel Regression}
+      \field{title}{Understanding Emergent In-Context Learning as Kernel Regression}
       \field{year}{2023}
     \endentry
     \entry{fu2024implies}{misc}{useauthor=false}{}
-      \name{author}{4}{}{%
-        {{hash=4438008b396a9883066bd6b44dba034c}{%
-           family={Fu},
-           familyi={F\bibinitperiod},
-           given={D.},
-           giveni={D\bibinitperiod}}}%
-        {{hash=8cffbf4a075a4c2dbab485c4f96c5247}{%
-           family={Guo},
-           familyi={G\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=0b2564f257633cd6502e30582e46d0f3}{%
-           family={Sharan},
-           familyi={S\bibinitperiod},
-           given={V.},
-           giveni={V\bibinitperiod}}}%
-        {{hash=cf15c5d413b4f6e12211418a03f28611}{%
-           family={Jia},
-           familyi={J\bibinitperiod},
+      \name{author}{6}{}{%
+        {{hash=9fbfeb42b79dcf6236d2ece2dfc5882c}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={G.\bibnamedelimi Z.},
+           giveni={G\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=f1c798dddd7d2fb30a1a9a4d81f10d77}{%
+           family={Dikkala},
+           familyi={D\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=63100cbf721d28062c52b14529602685}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=fb24366b7e8abe97812c302ea3ce23b2}{%
+           family={Rashtchian},
+           familyi={R\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bbe869383a7d3458b82c516a21e4482c}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+        {{hash=460c57bc45aba6a6c73b865391f88aa9}{%
+           family={Panigrahy},
+           familyi={P\bibinitperiod},
            given={R.},
            giveni={R\bibinitperiod}}}%
       }
-      \strng{authorbibnamehash}{53e2ebf0597a34c83bf820d447dc7d89}
-      \strng{authornamehash}{53e2ebf0597a34c83bf820d447dc7d89}
-      \strng{authorfullhash}{7ffa791734a26eb4993ff2850c010792}
-      \strng{authorfullhashraw}{7ffa791734a26eb4993ff2850c010792}
+      \strng{authorbibnamehash}{0b98b7a37ea90a88d17a8060d2cb7ae4}
+      \strng{authornamehash}{0b98b7a37ea90a88d17a8060d2cb7ae4}
+      \strng{authorfullhash}{eaaf76aff9758efbc43b334c6b124aa1}
+      \strng{authorfullhashraw}{eaaf76aff9758efbc43b334c6b124aa1}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
@@ -1242,7 +1252,7 @@
       \range{volume}{1}
     \endentry
     \entry{coda2024cogbench}{misc}{useauthor=false}{}
-      \name{author}{6}{}{%
+      \name{author}{4}{}{%
         {{hash=07d39b24d9c615b89b15e1432b21a3c8}{%
            family={Coda-Forno},
            familyi={C\bibinithyphendelim F\bibinitperiod},
@@ -1250,16 +1260,6 @@
            giveni={J\bibinitperiod}}}%
         {{hash=f648f4bbf5c64080906cfa1053ed669c}{%
            family={Binz},
-           familyi={B\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=fd0eeea333a49c5640efc1f22531bbef}{%
-           family={Akata},
-           familyi={A\bibinitperiod},
-           given={Z.},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=4d6d9c1c3ac2c4dc896d8ee386120d1c}{%
-           family={Botvinick},
            familyi={B\bibinitperiod},
            given={M.},
            giveni={M\bibinitperiod}}}%
@@ -1276,14 +1276,14 @@
       }
       \strng{authorbibnamehash}{46cceadce24a6e1db042fe8ed7067505}
       \strng{authornamehash}{46cceadce24a6e1db042fe8ed7067505}
-      \strng{authorfullhash}{f79dbfd4f3da40547df5c490bcf7b6df}
-      \strng{authorfullhashraw}{f79dbfd4f3da40547df5c490bcf7b6df}
+      \strng{authorfullhash}{0eabfeedbf9d4a781fce8ff01cdd28cc}
+      \strng{authorfullhashraw}{0eabfeedbf9d4a781fce8ff01cdd28cc}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
-      \field{howpublished}{URL: https://arxiv.org/abs/2403.09798}
+      \field{howpublished}{URL: https://arxiv.org/abs/2402.18225}
       \field{note}{дата обращения: 01.03.2025}
-      \field{title}{{CogBench}: Large language models reason about cognition}
+      \field{title}{{CogBench}: a large language model walks into a psychology lab}
       \field{year}{2024}
     \endentry
     \entry{koo2024benchmarking}{inproceedings}{useauthor=false}{}
@@ -1574,8 +1574,8 @@
       \strng{authornamehash}{a5e1641dd1f5b76e42749336d2563b27}
       \strng{authorfullhash}{a5e1641dd1f5b76e42749336d2563b27}
       \strng{authorfullhashraw}{a5e1641dd1f5b76e42749336d2563b27}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Psychology of Reasoning: Structure and Content}
@@ -1675,37 +1675,6 @@
       \true{nocite}
       \field{pages}{8606\bibrangedash 8622}
       \range{pages}{17}
-    \endentry
-    \entry{saeedi2024gpt}{misc}{}{}
-      \name{author}{2}{}{%
-        {{hash=78e672c4ad904d36ef23a4ee047af113}{%
-           family={Saeedi},
-           familyi={S\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-        {{hash=b9697aaa8097aebdd5d6a469a341858e}{%
-           family={Goodarzi},
-           familyi={G\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{9c433d1aeae821d9bf46286a679ec1fd}
-      \strng{fullhash}{9c433d1aeae821d9bf46286a679ec1fd}
-      \strng{fullhashraw}{9c433d1aeae821d9bf46286a679ec1fd}
-      \strng{bibnamehash}{9c433d1aeae821d9bf46286a679ec1fd}
-      \strng{authorbibnamehash}{9c433d1aeae821d9bf46286a679ec1fd}
-      \strng{authornamehash}{9c433d1aeae821d9bf46286a679ec1fd}
-      \strng{authorfullhash}{9c433d1aeae821d9bf46286a679ec1fd}
-      \strng{authorfullhashraw}{9c433d1aeae821d9bf46286a679ec1fd}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{URL: https://arxiv.org/abs/2410.02820}
-      \field{note}{дата обращения: 01.03.2025}
-      \field{title}{{GPT}'s judgements under uncertainty}
-      \field{year}{2024}
-      \true{nocite}
     \endentry
     \entry{bazigaran2025concept}{misc}{}{}
       \name{author}{2}{}{%

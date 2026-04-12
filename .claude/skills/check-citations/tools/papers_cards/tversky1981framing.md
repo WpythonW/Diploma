@@ -9,34 +9,34 @@ arxiv_id:
 pdf_url: 
 semantic_scholar_id: e552054dbd030b8414058639389b4a63e727aedb
 paper_url: https://www.semanticscholar.org/paper/e552054dbd030b8414058639389b4a63e727aedb
-citation_count: 17336
+citation_count: 17345
 verified: true
-confidence: 100
+confidence: 95
 source_used: semantic_scholar
 ---
 
 ## Goal
-The authors aimed to investigate how the way choices are framed—specifically, whether outcomes are presented in terms of gains or losses—systematically influences decision-making, even when the objective outcomes are identical. They sought to demonstrate that human choices are not always rational and can be swayed by superficial differences in presentation. The study focused on identifying cognitive biases in judgment under risk, particularly the impact of framing effects on preferences in decision scenarios. This work contributes to a broader understanding of psychological mechanisms underlying economic and everyday decisions.
+The paper aims to investigate how the framing of decisions influences human choices, particularly in situations involving risk and uncertainty. It explores whether individuals make consistent decisions when equivalent options are presented in different ways (e.g., in terms of gains vs. losses). The authors seek to demonstrate that people's preferences can be systematically altered by re-framing the same choice, violating the principles of rational choice theory.
 
 ## Gap Addressed
-Prior models of decision-making, such as expected utility theory, assumed that individuals make rational choices consistent with objective outcomes, regardless of how those outcomes are described. However, these models failed to account for systematic deviations in human behavior observed in real-world contexts. Tversky and Kahneman addressed this gap by showing that people's preferences reverse depending on whether options are framed in terms of survival (gain frame) or mortality (loss frame), even when the factual content remains unchanged. Their work challenged normative models of rational choice and highlighted the descriptive inadequacy of assuming stable preferences.
+Traditional economic theories assume that individuals make rational, consistent decisions based on objective outcomes. However, there is limited understanding of how psychological factors, particularly the way choices are framed, affect decision-making. The paper addresses the gap in behavioral decision theory by providing empirical evidence that human choices are not solely determined by outcomes but are significantly influenced by the presentation of those outcomes.
 
 ## Method
-The authors conducted a series of experiments using hypothetical decision problems involving life-saving medical treatments and monetary gambles. Participants were presented with equivalent outcomes described in different frames (e.g., "saves 200 lives" vs. "400 people will die") and asked to choose between risky and sure options. The experimental design manipulated the linguistic framing of the same probabilistic outcomes to test whether preferences remained consistent across frames. Responses were analyzed to identify shifts in risk preference (risk-averse vs. risk-seeking) based on the framing of the choice.
+The authors conduct a series of experiments in which participants are presented with structurally identical decision problems framed either in terms of gains or losses. They use hypothetical and real-life scenarios (e.g., disease control programs) to examine preference reversals. The experimental design tests consistency in choices across frames, applying principles from prospect theory to explain observed patterns.
 
 ## Datasets and Metrics
-**Datasets:** Not applicable
+**Datasets:** Not applicable (the study uses controlled experimental scenarios rather than external datasets).
 
-**Metrics:** Proportion of participants selecting the risk-averse or risk-seeking option under gain vs. loss frames; consistency of choices across logically equivalent formulations; reversal rates in preference due to framing.
+**Metrics:** Choice consistency, preference reversal rates, proportion of participants selecting each option, alignment with predictions of prospect theory.
 
 ## Results
-In the classic "Asian disease" problem, 72% of participants chose a sure option when it was framed as saving 200 lives (gain frame), but only 22% chose the equivalent sure option when it was framed as 400 people dying (loss frame). Identical outcomes led to dramatically different choices depending on framing, demonstrating a strong effect on risk preferences. Similar reversals were observed in financial decision tasks, confirming the robustness of the framing effect. The findings contradicted expected utility theory and supported prospect theory, which posits that people evaluate outcomes relative to a reference point and are more sensitive to losses than gains. The study documented systematic violations of invariance, a key principle in rational choice models.
+Participants exhibit significant shifts in preferences depending on whether options are framed as gains (e.g., lives saved) or losses (e.g., lives lost), despite identical outcomes. For example, in a disease treatment scenario, a risk-averse preference emerged in the gain frame, while a risk-seeking preference appeared in the loss frame. These reversals contradict expected utility theory but align with prospect theory. The findings are robust across multiple scenarios and participant groups. The results demonstrate that framing effects are powerful and systematic in shaping decision-making.
 
 ## Limitations
-The experiments relied on hypothetical scenarios with student populations, which may limit generalizability to real-world decisions or other demographics. The study did not explore individual differences or contextual factors that might moderate framing effects.
+The experiments rely heavily on hypothetical scenarios, which may not fully capture real-world decision-making. The findings may be influenced by context-specific factors or cultural biases, limiting generalizability.
 
 ## Verification Verdict
-REAL (100%) — The paper 'The Framing of Decisions and the Psychology of Choice' by Tversky, A. and Kahneman, D. (1981) is confirmed by both Semantic Scholar and Perplexity search results. It was published in Science, volume 211, issue 4481, pages 453–458, with DOI 10.1126/science.7455683. The metadata (title, authors, year, journal, volume, DOI) matches perfectly across sources, and the paper has over 17,000 citations, indicating high academic impact.
+REAL (95%) — S2: title match (sim=0.86); S2: authors match (2/2)
 
 ## Links
 - [Semantic Scholar](https://www.semanticscholar.org/paper/e552054dbd030b8414058639389b4a63e727aedb)

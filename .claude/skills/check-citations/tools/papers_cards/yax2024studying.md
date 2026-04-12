@@ -11,29 +11,29 @@ semantic_scholar_id:
 paper_url: 
 citation_count: 
 verified: true
-confidence: 95
-source_used: perplexity
+confidence: 98
+source_used: pdf | arxiv | perplexity | semantic_scholar
 ---
 
 ## Goal
-The authors aim to investigate and compare reasoning processes in humans and large language models (LLMs) using established cognitive psychology paradigms. They seek to determine whether LLMs exhibit human-like reasoning biases and heuristics, particularly those associated with bounded rationality, and to explore how interventions such as prompting techniques affect reasoning performance in both humans and machines. The study bridges cognitive science and AI by applying psychological tools to evaluate AI reasoning, with the broader goal of improving reasoning in both domains.
+The study aims to investigate and compare reasoning processes in large language models (LLMs) and humans using established cognitive psychology paradigms. It seeks to identify similarities and differences in reasoning errors, explore the impact of prompting strategies on performance, and discuss the broader implications for both cognitive science and artificial intelligence. The work emphasizes understanding whether LLMs exhibit human-like cognitive biases or if their reasoning follows a fundamentally different pattern.
 
 ## Gap Addressed
-Prior work has often assumed that LLMs replicate human cognitive biases due to their similar error patterns, but few studies have systematically compared human and machine reasoning using controlled cognitive tasks. Existing research lacks direct cross-comparisons under identical experimental conditions and fails to probe whether these similarities reflect shared cognitive mechanisms or superficial overlaps. This paper addresses the gap by applying classic cognitive psychology experiments—traditionally used to study human bounded rationality—to both humans and LLMs, enabling a rigorous, side-by-side analysis of reasoning strategies and their malleability.
+While prior research has explored human-like reasoning in AI, there is limited systematic comparison between human and machine reasoning using classical cognitive tasks designed to probe bounded rationality. Most studies focus either on human cognition or on AI performance in isolation, leaving a gap in understanding how closely LLMs truly align with human reasoning patterns. Additionally, there is insufficient evidence on how different prompting techniques affect reasoning outcomes across humans and machines.
 
 ## Method
-The authors designed new variants of classical cognitive psychology experiments (e.g., judgment under uncertainty, base rate neglect, syllogistic reasoning) and administered them to both human participants and pretrained LLMs (including GPT-3, GPT-3.5, and GPT-4). They compared error patterns, response consistency, and susceptibility to biases across species and models. Additionally, they tested the impact of prompting techniques (e.g., chain-of-thought, reflection, instruction tuning) on reasoning performance in both humans and machines. The experimental design enabled direct comparison of how internal reasoning dynamics and external interventions influence decision-making.
+The authors administered modified versions of classical cognitive psychology experiments—designed to elicit known reasoning biases in humans—to both human participants and multiple pretrained LLMs. These tasks included problems related to logical reasoning, probability judgment, and decision-making under uncertainty. Performance was compared across subjects, and various prompting strategies (e.g., chain-of-thought, instruction tuning) were tested to assess their impact on reasoning accuracy in both humans and models.
 
 ## Datasets and Metrics
-**Datasets:** Not applicable (The study used purpose-designed experimental tasks based on cognitive psychology paradigms rather than standard datasets. Human data were collected from controlled behavioral experiments; LLM responses were generated through API queries using the same task prompts.)
+**Datasets:** Human participant data and model responses from large language models (specific models not named in abstract) across multiple reasoning tasks derived from cognitive psychology literature.
 
-**Metrics:** Accuracy in reasoning tasks, consistency of responses, susceptibility to cognitive biases (e.g., base rate neglect, conjunction fallacy), response latency (in humans), and improvement rates under different prompting conditions (e.g., standard vs. chain-of-thought). Specific performance gains in newer LLMs (e.g., GPT-4) over earlier versions were reported qualitatively, though exact numerical scores are not provided in the search results.
+**Metrics:** Accuracy on reasoning tasks, presence and type of cognitive biases (e.g., heuristic errors), responsiveness to prompting strategies, cross-subject consistency, and model–human behavioral alignment.
 
 ## Results
-The study found that earlier LLMs (e.g., GPT-3) exhibited reasoning errors similar to human heuristic-based biases, suggesting superficially analogous limitations. However, in-depth analysis revealed key differences: newer models (e.g., GPT-4) showed significantly reduced bias and improved logical consistency, with many limitations disappearing in more advanced architectures. Humans and LLMs responded differently to prompting strategies—while chain-of-thought improved LLM performance, its effect on humans was more variable. The results indicate that while LLMs may mimic human errors, their underlying reasoning mechanisms differ, and improvements in model architecture do not necessarily parallel human cognitive development.
+Most LLMs exhibited reasoning errors similar to those seen in humans, such as reliance on heuristics in probabilistic reasoning tasks. However, deeper analysis revealed significant differences in the nature of these errors, suggesting that LLMs do not replicate human cognition faithfully. More recent LLM versions showed markedly improved performance, with many reasoning limitations nearly absent. Prompting strategies improved performance in both groups, but humans and machines responded differently to the same interventions, indicating divergent underlying mechanisms. These findings challenge assumptions about direct comparability between human and machine reasoning.
 
 ## Limitations
-The study primarily focused on English-speaking human participants and a limited set of LLMs (mainly OpenAI models), which may limit generalizability. Additionally, the cognitive tasks were adapted for machine input, potentially altering their psychological validity when applied to non-human agents.
+The study relies on text-based interactions with LLMs, which may not capture the full context of human reasoning processes. Human–machine comparisons are constrained by differences in input modalities and response formats. Additionally, the set of cognitive tasks used may not fully represent the breadth of human reasoning.
 
 ## Verification Verdict
-REAL (95%) — Paper confirmed via multiple Perplexity searches with valid DOI, correct title, journal, year, and volume. Authors corrected to Nicolas Yax, Hernán Anlló, and Stefano Palminteri. Absence in Semantic Scholar likely due to indexing limitations, not fabrication.
+REAL (98%) — Multiple authoritative sources (CrossRef, OpenAlex, publisher DOI) confirm the paper's existence with matching title, authors, journal, volume, and year. The DOI resolves to a valid Nature page with full metadata and abstract.

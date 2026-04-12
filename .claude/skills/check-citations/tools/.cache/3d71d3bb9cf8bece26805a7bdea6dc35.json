@@ -3,14 +3,20 @@
   "type": "article",
   "description": "Authors: Wason, P. C.\nTitle: On the failure to eliminate hypotheses in a conceptual task\nJournal: Quarterly Journal of Experimental Psychology\nYear: 1960\nVolume: 12",
   "verdict": "REAL",
-  "confidence": 98,
-  "reason": "The paper 'On the Failure to Eliminate Hypotheses in a Conceptual Task' by P. C. Wason (1960), published in the Quarterly Journal of Experimental Psychology, Volume 12, Issue 3, pages 129–140, is confirmed by multiple Perplexity search results with consistent metadata including DOI (10.1080/17470216008416717) and details about the 2-4-6 task. Although Semantic Scholar initially returned no results, the high consistency across authoritative web sources and the paper's seminal status in cognitive psychology confirm its authenticity.",
-  "tool_calls": 3,
+  "confidence": 100,
+  "reason": "Multiple authoritative sources (CrossRef, OpenAlex, Semantic Scholar) confirm the paper's existence with matching title, author, year, journal, and DOI. High citation count and consistent metadata across databases confirm authenticity.",
+  "tool_calls": 5,
   "prompt_variant": "You are a critical academic research verifier. Your task: determine if a bibliog...",
-  "_search_results": [
-    "**Yes, the paper exists.**\n\n- **Exact title**: On the Failure to Eliminate Hypotheses in a Conceptual Task[1][2][4]\n- **Authors**: P. C. Wason (also cited as Peter Cathcart Wason)[1][2][4]\n- **Venue**: Quarterly Journal of Experimental Psychology[1][2][4]\n- **Year**: 1960 (first published July 1960)[1][2][4]\n- **Volume/Issue/Pages**: Volume 12, Issue 3, pages 129-140[1][2][4]\n- **DOI**: https://doi.org/10.1080/17470216008416717[1][2]\n\nPDF versions are available via academic repositories.[2][3] The paper introduces Wason's 2-4-6 rule discovery task, demonstrating confirmation bias where subjects fail to seek disconfirming evidence.[1][4][5]",
-    "Semantic Scholar: no matching paper found.",
-    "**Yes, the paper exists.**\n\n**Exact title:** On the Failure to Eliminate Hypotheses in a Conceptual Task[2][5][7].  \n**Author:** P. C. Wason[2][5][7].  \n**Venue:** Quarterly Journal of Experimental Psychology[2][5][7].  \n**Year:** 1960[2][5][7].  \n**Volume:** 12, Issue 3, pages 129-140[2][5][7].  \n**DOI:** 10.1080/17470216008416717[2][5].  \n\nThis paper introduced the **2-4-6 task** as a test of inductive reasoning and hypothesis testing, where participants guess a rule for number triples starting from 2-4-6 (actual rule: numbers in ascending order).[1][2][5] It demonstrated confirmation bias, with most subjects failing to eliminate incorrect hypotheses.[1][2][5][7]"
-  ],
-  "_s2": {}
+  "layer": "llm",
+  "api_calls": {
+    "arxiv": 0,
+    "arxiv_title": 1,
+    "s2_prefetch": 1,
+    "s2_tool": 1,
+    "crossref": 1,
+    "openalex": 1,
+    "tavily": 1,
+    "tavily_extract": 0,
+    "llm": 1
+  }
 }

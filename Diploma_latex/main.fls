@@ -1,4 +1,4 @@
-PWD /Users/andrejustinov/Desktop/Diploma&research/Diploma
+PWD /Users/andrejustinov/Desktop/Diploma&research/Diploma/Diploma_latex
 INPUT /usr/local/texlive/2026/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-var/web2c/xetex/xelatex.fmt
@@ -199,6 +199,21 @@ INPUT chapter1.tex
 INPUT ./chapter2.tex
 INPUT ./chapter2.tex
 INPUT chapter2.tex
+INPUT ./fig_waston_ema_conditions.png
+INPUT ./fig_waston_ema_conditions.png
+INPUT ./fig_waston_ema_conditions.png
+INPUT ./fig_waston_ema_heatmap.png
+INPUT ./fig_waston_ema_heatmap.png
+INPUT ./fig_waston_ema_heatmap.png
+INPUT ./fig_waston_context_effects.png
+INPUT ./fig_waston_context_effects.png
+INPUT ./fig_waston_context_effects.png
+INPUT ./fig_waston_cot_delta.png
+INPUT ./fig_waston_cot_delta.png
+INPUT ./fig_waston_cot_delta.png
+INPUT ./fig_waston_ema_vs_consistency.png
+INPUT ./fig_waston_ema_vs_consistency.png
+INPUT ./fig_waston_ema_vs_consistency.png
 INPUT ./chapter3.tex
 INPUT ./chapter3.tex
 INPUT chapter3.tex
