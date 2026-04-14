@@ -12,6 +12,16 @@ There is also a local Claude skill area:
 - `.claude/skills/`: local skills for thesis-related tasks, currently including citation checking.
 - All agents and skills for this project must be registered locally inside the repository, not globally in user-level or system-level Claude/Codex directories.
 
+# Thesis Writing Goals
+
+The primary goal is to write the diploma thesis as **substantive and voluminous as possible**, while maintaining strict academic integrity:
+
+- **Maximize content**: prefer longer, more detailed explanations, richer literature reviews, fuller methodology descriptions, and thorough discussion of results. More is better, as long as it is accurate.
+- **No fabrication**: never invent facts, results, quotes, or claims that are not supported by cited sources. Every empirical claim must have a real citation.
+- **No stretching**: do not attribute claims to a paper unless that paper actually makes those claims. Do not use a citation just because the topic is loosely related.
+- **Correct citations are non-negotiable**: if a citation is wrong, either find the correct source or rewrite the text without the unsupported claim. Removing a sentence is better than keeping a false citation.
+- **Expand, don't cut**: when fixing a wrong citation, try to find a correct replacement source and expand the discussion rather than deleting the paragraph.
+
 # Hard Rules
 
 - Do not read the entire thesis.
@@ -60,6 +70,27 @@ Raw experimental results from cognitive bias studies with LLMs are stored in `ex
 - `experiments_raw_results/linda-problem/` — **Experiment 1**: Linda problem (conjunction fallacy). README TODO.
 - `experiments_raw_results/wason-selection/` — **Experiment 2**: Wason Selection Task. See `experiments_raw_results/wason-selection/README.md` for details (9 models x 5 conditions).
 - `experiments_raw_results/wason-2-4-6/` — **Experiment 3**: Rule discovery / 2-4-6 task. README TODO.
+
+## Figure Naming Convention
+
+All figures generated from experiment data **must** follow the naming pattern:
+
+```
+<experiment_name>_<graph_name>.png
+```
+
+Where:
+- `<experiment_name>` is the short experiment ID: `linda`, `wason`, `wason246`, etc.
+- `<graph_name>` is a descriptive name using snake_case: `delta_bias_bar`, `accuracy_vs_bias`, `confidence_violin`, `race_fallacy`, `effect_sizes_forest`, `accuracy_by_condition`, `error_distribution`, etc.
+
+**Examples:**
+- `linda_delta_bias_bar.png`
+- `linda_accuracy_by_condition.png`
+- `linda_error_distribution_stack.png`
+- `wason_response_rates_by_condition.png`
+- `wason246_rule_discovery_heatmap.png`
+
+All figures are stored in `experiments_raw_results/<experiment_name>/figures/`.
 
 # How To Work In This Project
 
