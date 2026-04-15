@@ -1,0 +1,4 @@
+#!/bin/bash
+# Broken images, citations, references, includes
+cd "$(dirname "$0")/../.." || exit 1
+uv run python .claude/src/sanity_check.py "$@"
