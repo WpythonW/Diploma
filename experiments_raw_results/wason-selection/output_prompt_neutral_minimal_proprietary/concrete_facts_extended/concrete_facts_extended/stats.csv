@@ -1,0 +1,4 @@
+model,prompt_tokens,completion_tokens,reasoning_tokens
+claude-sonnet-4.6,40512,8241,0
+grok-4.1-fast,113925,2364,0
+gpt-5.2,34425,4495,0

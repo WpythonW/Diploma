@@ -1,0 +1,12 @@
+{
+  "model": "openai/gpt-5.2",
+  "context": "formal_logic",
+  "n_items": 30,
+  "n_prompt_permutations": 5,
+  "n_trials": 150,
+  "stats": {
+    "prompt_tokens": 19466,
+    "completion_tokens": 1147,
+    "reasoning_tokens": 0
+  }
+}

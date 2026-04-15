@@ -1,0 +1,1114 @@
+row_idx,item_id,permutation_idx,llm_seed,rule_text,prompt,ordered_cards,response_text,selected_cards,logic_set,category,prompt_tokens,completion_tokens,reasoning_tokens
+0,T01,0,42,"If a card has a Vowel on one side, then it has an Even Number on the other side.","Rule: ""If a card has a Vowel on one side, then it has an Even Number on the other side.""
+Cards: ['4', 'K', '7', 'A']
+
+Which cards must you turn over?
+Your answer:","['4', 'K', '7', 'A']","ANSWER: 7, A","['7', 'A']","['P', 'not_Q']",CORRECT,95,10,0
+0,T01,1,43,"If a card has a Vowel on one side, then it has an Even Number on the other side.","Rule: ""If a card has a Vowel on one side, then it has an Even Number on the other side.""
+Cards: ['A', '7', '4', 'K']
+
+Which cards must you turn over?
+Your answer:","['A', '7', '4', 'K']","To test “If Vowel, then Even,” you must check:
+- **A** (vowel): must have an even number on the other side.
+- **7** (odd): must *not* have a vowel on the other side.
+
+You do **not** need to turn over **4** (even is allowed with anything) or **K** (consonant places no restriction).
+
+ANSWER: A, 7","['A', '7']","['P', 'not_Q']",CORRECT,95,92,0
+0,T01,2,44,"If a card has a Vowel on one side, then it has an Even Number on the other side.","Rule: ""If a card has a Vowel on one side, then it has an Even Number on the other side.""
+Cards: ['7', 'A', 'K', '4']
+
+Which cards must you turn over?
+Your answer:","['7', 'A', 'K', '4']","ANSWER: A, 7","['A', '7']","['P', 'not_Q']",CORRECT,95,10,0
+0,T01,3,45,"If a card has a Vowel on one side, then it has an Even Number on the other side.","Rule: ""If a card has a Vowel on one side, then it has an Even Number on the other side.""
+Cards: ['7', '4', 'K', 'A']
+
+Which cards must you turn over?
+Your answer:","['7', '4', 'K', 'A']","To test the rule “If Vowel, then Even,” you must check:
+
+- **A** (a vowel): to see if the other side is **even**.
+- **7** (an odd number): to see if the other side is **not a vowel** (because a vowel with an odd number would violate the rule).
+
+You do **not** need to turn over **4** (even doesn’t imply vowel) or **K** (consonant doesn’t trigger the rule).
+
+ANSWER: 7, A","['7', 'A']","['P', 'not_Q']",CORRECT,95,112,0
+0,T01,4,46,"If a card has a Vowel on one side, then it has an Even Number on the other side.","Rule: ""If a card has a Vowel on one side, then it has an Even Number on the other side.""
+Cards: ['4', 'A', '7', 'K']
+
+Which cards must you turn over?
+Your answer:","['4', 'A', '7', 'K']","To test “If Vowel, then Even,” you must check:
+- **Vowel cards** (to see if the other side is even): **A**
+- **Odd number cards** (to see if the other side is *not* a vowel): **7**
+
+You do **not** need to turn over **4** (even is allowed with vowel or consonant) or **K** (consonant imposes no requirement).
+
+ANSWER: A, 7","['A', '7']","['P', 'not_Q']",CORRECT,95,101,0
+1,T02,0,10042,"If a card has a Consonant on one side, then it has an Odd Number on the other side.","Rule: ""If a card has a Consonant on one side, then it has an Odd Number on the other side.""
+Cards: ['K', '7', 'A', '4']
+
+Which cards must you turn over?
+Your answer:","['K', '7', 'A', '4']","ANSWER: K, 4","['K', '4']","['P', 'not_Q']",CORRECT,96,10,0
+1,T02,1,10043,"If a card has a Consonant on one side, then it has an Odd Number on the other side.","Rule: ""If a card has a Consonant on one side, then it has an Odd Number on the other side.""
+Cards: ['4', 'K', 'A', '7']
+
+Which cards must you turn over?
+Your answer:","['4', 'K', 'A', '7']","ANSWER: K, 4","['K', '4']","['P', 'not_Q']",CORRECT,96,10,0
+1,T02,2,10044,"If a card has a Consonant on one side, then it has an Odd Number on the other side.","Rule: ""If a card has a Consonant on one side, then it has an Odd Number on the other side.""
+Cards: ['A', 'K', '4', '7']
+
+Which cards must you turn over?
+Your answer:","['A', 'K', '4', '7']","ANSWER: K, 4","['K', '4']","['P', 'not_Q']",CORRECT,96,10,0
+1,T02,3,10045,"If a card has a Consonant on one side, then it has an Odd Number on the other side.","Rule: ""If a card has a Consonant on one side, then it has an Odd Number on the other side.""
+Cards: ['4', 'A', '7', 'K']
+
+Which cards must you turn over?
+Your answer:","['4', 'A', '7', 'K']","To test **“If Consonant, then Odd”** (Consonant → Odd), you must check:
+- Any **Consonant** card (to see if the other side is **Odd**)
+- Any **Even number** card (to see if the other side is **not a Consonant**, which would violate the rule)
+
+Cards:
+- **4** (Even) → must turn over  
+- **A** (Vowel) → no (rule doesn’t constrain vowels)  
+- **7** (Odd) → no (odd doesn’t imply consonant)  
+- **K** (Consonant) → must turn over  
+
+ANSWER: 4, K","['4', 'K']","['P', 'not_Q']",CORRECT,96,146,0
+1,T02,4,10046,"If a card has a Consonant on one side, then it has an Odd Number on the other side.","Rule: ""If a card has a Consonant on one side, then it has an Odd Number on the other side.""
+Cards: ['4', 'K', '7', 'A']
+
+Which cards must you turn over?
+Your answer:","['4', 'K', '7', 'A']","ANSWER: K, 4","['K', '4']","['P', 'not_Q']",CORRECT,96,10,0
+2,T03,0,20042,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['D', '7', '3', 'A']
+
+Which cards must you turn over?
+Your answer:","['D', '7', '3', 'A']","ANSWER: A, 7","['A', '7']","['P', 'not_Q']",CORRECT,93,10,0
+2,T03,1,20043,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['D', '7', 'A', '3']
+
+Which cards must you turn over?
+Your answer:","['D', '7', 'A', '3']","ANSWER: A, 7","['A', '7']","['P', 'not_Q']",CORRECT,93,10,0
+2,T03,2,20044,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['7', 'A', 'D', '3']
+
+Which cards must you turn over?
+Your answer:","['7', 'A', 'D', '3']","To test “If A, then 3” (A → 3), you must look for possible violations: an **A** with a **non-3**, or a **non-3** with an **A** on the back.
+
+- Turn over **A** (to check the other side is **3**).
+- Turn over **7** (a non-3) to make sure the other side is **not A**.
+
+You do **not** need to turn over **D** (non-A doesn’t constrain the other side), or **3** (3 can have anything on the other side).
+
+ANSWER: A, 7","['A', '7']","['P', 'not_Q']",CORRECT,93,137,0
+2,T03,3,20045,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['7', 'D', '3', 'A']
+
+Which cards must you turn over?
+Your answer:","['7', 'D', '3', 'A']","ANSWER: 7, A","['7', 'A']","['P', 'not_Q']",CORRECT,93,10,0
+2,T03,4,20046,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['3', 'D', 'A', '7']
+
+Which cards must you turn over?
+Your answer:","['3', 'D', 'A', '7']","To test “If A, then 3” (A → 3), you must look for possible violations: an **A** with a **not-3**, or a **not-3** with an **A** on the back.
+
+- Turn over **A** (to check the other side is 3).
+- Turn over **7** (a not-3 card; to ensure there isn’t an A on the other side).
+
+You do **not** need to turn over **3** (it can have anything on the back) or **D** (a not-A card doesn’t matter).
+
+ANSWER: A, 7","['A', '7']","['P', 'not_Q']",CORRECT,93,135,0
+3,T04,0,30042,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['8', 'F', 'D', '5']
+
+Which cards must you turn over?
+Your answer:","['8', 'F', 'D', '5']","ANSWER: D, 8","['D', '8']","['P', 'not_Q']",CORRECT,87,10,0
+3,T04,1,30043,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['D', '5', '8', 'F']
+
+Which cards must you turn over?
+Your answer:","['D', '5', '8', 'F']","To test “If D, then 5” (D → 5), you must check:
+- **D** (to see if there’s a non-5 on the back, which would break the rule)
+- **8** (the non-5 number, to see if there’s a D on the back, which would also break the rule)
+
+You do **not** need to check **5** (the rule doesn’t say “if 5 then D”) or **F** (the rule only constrains D).
+
+ANSWER: D, 8","['D', '8']","['P', 'not_Q']",CORRECT,87,119,0
+3,T04,2,30044,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['D', '8', '5', 'F']
+
+Which cards must you turn over?
+Your answer:","['D', '8', '5', 'F']","ANSWER: D, 8","['D', '8']","['P', 'not_Q']",CORRECT,87,10,0
+3,T04,3,30045,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['8', 'D', 'F', '5']
+
+Which cards must you turn over?
+Your answer:","['8', 'D', 'F', '5']","To test “If D, then 5,” you must look for possible violations: a **D** with a number **not 5**, or a **not-5** with **D** on the other side.
+
+- Turn over **D** (to check the other side is 5).
+- Turn over **8** (a not-5 number; to ensure the other side is not D).
+- Do **not** turn over **F** (rule says nothing about F).
+- Do **not** turn over **5** (D → 5 doesn’t mean 5 → D).
+
+ANSWER: 8, D","['8', 'D']","['P', 'not_Q']",CORRECT,87,133,0
+3,T04,4,30046,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['F', 'D', '5', '8']
+
+Which cards must you turn over?
+Your answer:","['F', 'D', '5', '8']","ANSWER: D, 8","['D', '8']","['P', 'not_Q']",CORRECT,87,10,0
+4,T05,0,40042,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['8', 'U', '1', 'G']
+
+Which cards must you turn over?
+Your answer:","['8', 'U', '1', 'G']","To test “If U, then 8”, you must check:
+- **U** (to see if the back is 8)
+- **1** (a non-8; to ensure the back is not U, which would violate the rule)
+
+You do **not** need to turn over **8** or **G**.
+
+ANSWER: U, 1","['U', '1']","['P', 'not_Q']",CORRECT,92,79,0
+4,T05,1,40043,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['G', '8', 'U', '1']
+
+Which cards must you turn over?
+Your answer:","['G', '8', 'U', '1']","ANSWER: U, 1","['U', '1']","['P', 'not_Q']",CORRECT,92,10,0
+4,T05,2,40044,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['U', '8', '1', 'G']
+
+Which cards must you turn over?
+Your answer:","['U', '8', '1', 'G']","To test the rule “If U, then 8”, you must check:
+- **U** (to see if the back is 8)
+- **1** (not 8) (to ensure the back is *not* U, which would violate the rule)
+
+ANSWER: U, 1","['U', '1']","['P', 'not_Q']",CORRECT,92,66,0
+4,T05,3,40045,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['G', '1', '8', 'U']
+
+Which cards must you turn over?
+Your answer:","['G', '1', '8', 'U']","ANSWER: 1, U","['1', 'U']","['P', 'not_Q']",CORRECT,92,10,0
+4,T05,4,40046,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['G', 'U', '8', '1']
+
+Which cards must you turn over?
+Your answer:","['G', 'U', '8', '1']","ANSWER: U, 1","['U', '1']","['P', 'not_Q']",CORRECT,92,10,0
+5,T06,0,50042,"If the number is Even, then the letter is a Vowel.","Rule: ""If the number is Even, then the letter is a Vowel.""
+Cards: ['4', 'K', 'E', '7']
+
+Which cards must you turn over?
+Your answer:","['4', 'K', 'E', '7']","To test “If Even, then Vowel” (Even → Vowel), you must check:
+- **4** (Even): must have a vowel on the other side.
+- **K** (Consonant): could hide an even number (which would violate the rule), so must check it.
+You do **not** need to check **E** (vowel) or **7** (odd), since neither can falsify the rule.
+
+ANSWER: 4, K","['4', 'K']","['P', 'not_Q']",CORRECT,87,102,0
+5,T06,1,50043,"If the number is Even, then the letter is a Vowel.","Rule: ""If the number is Even, then the letter is a Vowel.""
+Cards: ['K', 'E', '7', '4']
+
+Which cards must you turn over?
+Your answer:","['K', 'E', '7', '4']","ANSWER: 7, 4","['7', '4']","['P', 'not_P']",LOGIC_ERROR,87,11,0
+5,T06,2,50044,"If the number is Even, then the letter is a Vowel.","Rule: ""If the number is Even, then the letter is a Vowel.""
+Cards: ['E', 'K', '4', '7']
+
+Which cards must you turn over?
+Your answer:","['E', 'K', '4', '7']","ANSWER: E, 7","['E', '7']","['Q', 'not_P']",LOGIC_ERROR,87,10,0
+5,T06,3,50045,"If the number is Even, then the letter is a Vowel.","Rule: ""If the number is Even, then the letter is a Vowel.""
+Cards: ['7', '4', 'K', 'E']
+
+Which cards must you turn over?
+Your answer:","['7', '4', 'K', 'E']","ANSWER: 4, K","['4', 'K']","['P', 'not_Q']",CORRECT,87,10,0
+5,T06,4,50046,"If the number is Even, then the letter is a Vowel.","Rule: ""If the number is Even, then the letter is a Vowel.""
+Cards: ['4', 'K', '7', 'E']
+
+Which cards must you turn over?
+Your answer:","['4', 'K', '7', 'E']","ANSWER: 4, K","['4', 'K']","['P', 'not_Q']",CORRECT,87,10,0
+6,T07,0,60042,"If the number is Odd, then the letter is a Consonant.","Rule: ""If the number is Odd, then the letter is a Consonant.""
+Cards: ['M', '6', 'A', '9']
+
+Which cards must you turn over?
+Your answer:","['M', '6', 'A', '9']","ANSWER: A, 9","['A', '9']","['P', 'not_Q']",CORRECT,88,10,0
+6,T07,1,60043,"If the number is Odd, then the letter is a Consonant.","Rule: ""If the number is Odd, then the letter is a Consonant.""
+Cards: ['9', '6', 'M', 'A']
+
+Which cards must you turn over?
+Your answer:","['9', '6', 'M', 'A']","ANSWER: 9, A","['9', 'A']","['P', 'not_Q']",CORRECT,88,10,0
+6,T07,2,60044,"If the number is Odd, then the letter is a Consonant.","Rule: ""If the number is Odd, then the letter is a Consonant.""
+Cards: ['A', '9', '6', 'M']
+
+Which cards must you turn over?
+Your answer:","['A', '9', '6', 'M']","ANSWER: 9, A","['9', 'A']","['P', 'not_Q']",CORRECT,88,10,0
+6,T07,3,60045,"If the number is Odd, then the letter is a Consonant.","Rule: ""If the number is Odd, then the letter is a Consonant.""
+Cards: ['6', 'A', 'M', '9']
+
+Which cards must you turn over?
+Your answer:","['6', 'A', 'M', '9']","ANSWER: M, 9","['M', '9']","['P', 'Q']",MATCHING_BIAS,88,10,0
+6,T07,4,60046,"If the number is Odd, then the letter is a Consonant.","Rule: ""If the number is Odd, then the letter is a Consonant.""
+Cards: ['9', 'A', 'M', '6']
+
+Which cards must you turn over?
+Your answer:","['9', 'A', 'M', '6']","To test the rule “If the number is Odd, then the letter is a Consonant,” you must look for possible violations: an **Odd** number with a **Vowel** on the other side.
+
+- Turn over **9** (odd): to check that the other side is a consonant.
+- Turn over **A** (vowel): to ensure the other side is **not odd** (i.e., even), because vowel + odd would break the rule.
+- **M** (consonant) doesn’t matter (odd/even on back can’t violate the rule).
+- **6** (even) doesn’t matter (the rule says nothing about even numbers).
+
+ANSWER: 9, A","['9', 'A']","['P', 'not_Q']",CORRECT,88,151,0
+7,T08,0,70042,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['9', 'E', '2', 'K']
+
+Which cards must you turn over?
+Your answer:","['9', 'E', '2', 'K']","ANSWER: E, 9","['E', '9']","['P', 'not_Q']",CORRECT,87,10,0
+7,T08,1,70043,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['K', '2', '9', 'E']
+
+Which cards must you turn over?
+Your answer:","['K', '2', '9', 'E']","ANSWER: 9, E","['9', 'E']","['P', 'not_Q']",CORRECT,87,10,0
+7,T08,2,70044,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['2', 'K', '9', 'E']
+
+Which cards must you turn over?
+Your answer:","['2', 'K', '9', 'E']","To test the rule **“If E, then 2”** (E → 2), you must look for possible violations: an **E** with a **non-2** on the back, or a **non-2** with an **E** on the back.
+
+- Turn over **E**: to check it has **2** on the other side.
+- Turn over **9** (a non-2): to make sure it does **not** have **E** on the other side.
+
+You do **not** need to turn over **2** (it could have anything) or **K** (a non-E doesn’t constrain the number).
+
+ANSWER: 9, E","['9', 'E']","['P', 'not_Q']",CORRECT,87,148,0
+7,T08,3,70045,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['E', '9', '2', 'K']
+
+Which cards must you turn over?
+Your answer:","['E', '9', '2', 'K']","ANSWER: E, 9","['E', '9']","['P', 'not_Q']",CORRECT,87,10,0
+7,T08,4,70046,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['9', 'K', '2', 'E']
+
+Which cards must you turn over?
+Your answer:","['9', 'K', '2', 'E']","ANSWER: E, 9","['E', '9']","['P', 'not_Q']",CORRECT,87,10,0
+8,T09,0,80042,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['X', '4', '7', 'Y']
+
+Which cards must you turn over?
+Your answer:","['X', '4', '7', 'Y']","To test “If 7, then X,” you must check:
+- the **7** card (to see if the other side is X),
+- the **Y** card (a not-X card, to ensure the other side is not 7).
+
+ANSWER: 7, Y","['7', 'Y']","['P', 'not_Q']",CORRECT,87,62,0
+8,T09,1,80043,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['4', '7', 'X', 'Y']
+
+Which cards must you turn over?
+Your answer:","['4', '7', 'X', 'Y']","ANSWER: 7, Y","['7', 'Y']","['P', 'not_Q']",CORRECT,87,10,0
+8,T09,2,80044,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['7', 'Y', '4', 'X']
+
+Which cards must you turn over?
+Your answer:","['7', 'Y', '4', 'X']","To test “If the card shows a 7, then the letter is X” (7 → X), you must check:
+- The **7** card (to see if the other side is X).
+- The **Y** card (a not-X card), because if it has 7 on the other side it would violate the rule.
+
+You do **not** need to turn over **4** (not 7) or **X** (rule doesn’t say X → 7).
+
+ANSWER: 7, Y","['7', 'Y']","['P', 'not_Q']",CORRECT,87,111,0
+8,T09,3,80045,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['7', '4', 'X', 'Y']
+
+Which cards must you turn over?
+Your answer:","['7', '4', 'X', 'Y']","ANSWER: 7, Y","['7', 'Y']","['P', 'not_Q']",CORRECT,87,10,0
+8,T09,4,80046,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['Y', '7', 'X', '4']
+
+Which cards must you turn over?
+Your answer:","['Y', '7', 'X', '4']","To test “If 7, then X” (7 → X), you must check:
+- The **7** card (to see if there’s an **X** on the other side).
+- The **Y** card (a non-**X** letter), because if it has **7** on the other side, that would violate the rule.
+
+You do **not** need to turn over **X** or **4**.
+
+ANSWER: Y, 7","['Y', '7']","['P', 'not_Q']",CORRECT,87,100,0
+9,T10,0,90042,"If the letter is B, then the number is Greater than 10.","Rule: ""If the letter is B, then the number is Greater than 10.""
+Cards: ['B', 'A', '5', '15']
+
+Which cards must you turn over?
+Your answer:","['B', 'A', '5', '15']","To test “If B, then > 10,” you must check:
+- **B** (to see if it has a number ≤ 10, which would break the rule)
+- **5** (to see if it has a B on the other side, which would also break the rule)
+
+You do **not** need to turn over **A** (rule says nothing about non-B letters) or **15** (rule doesn’t say that >10 implies B).
+
+ANSWER: B, 5","['B', '5']","['P', 'not_Q']",CORRECT,88,107,0
+9,T10,1,90043,"If the letter is B, then the number is Greater than 10.","Rule: ""If the letter is B, then the number is Greater than 10.""
+Cards: ['15', 'B', '5', 'A']
+
+Which cards must you turn over?
+Your answer:","['15', 'B', '5', 'A']","ANSWER: B, 5","['B', '5']","['P', 'not_Q']",CORRECT,88,10,0
+9,T10,2,90044,"If the letter is B, then the number is Greater than 10.","Rule: ""If the letter is B, then the number is Greater than 10.""
+Cards: ['B', '5', 'A', '15']
+
+Which cards must you turn over?
+Your answer:","['B', '5', 'A', '15']","ANSWER: B, 5","['B', '5']","['P', 'not_Q']",CORRECT,88,10,0
+9,T10,3,90045,"If the letter is B, then the number is Greater than 10.","Rule: ""If the letter is B, then the number is Greater than 10.""
+Cards: ['B', 'A', '15', '5']
+
+Which cards must you turn over?
+Your answer:","['B', 'A', '15', '5']","To test “If B, then > 10”, you must check:
+- **B** (to see if it has a number ≤ 10, which would violate the rule)
+- **5** (to see if it has B on the other side; that would violate the rule since 5 is not > 10)
+
+You do **not** need to turn over **A** (rule says nothing about A) or **15** (even if it has B, it still satisfies the rule).
+
+ANSWER: B, 5","['B', '5']","['P', 'not_Q']",CORRECT,88,113,0
+9,T10,4,90046,"If the letter is B, then the number is Greater than 10.","Rule: ""If the letter is B, then the number is Greater than 10.""
+Cards: ['A', 'B', '15', '5']
+
+Which cards must you turn over?
+Your answer:","['A', 'B', '15', '5']","To test “If B, then > 10”, you must check:
+- **B** (to see if the other side is > 10)
+- **5** (a number not > 10, to ensure it does *not* have B on the other side)
+
+You do **not** need to check **A** or **15**.
+
+ANSWER: B, 5","['B', '5']","['P', 'not_Q']",CORRECT,88,83,0
+10,T11,0,100042,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['9', 'A', '4', 'K']
+
+Which cards must you turn over?
+Your answer:","['9', 'A', '4', 'K']","To test “If K, then 4,” you must check:
+- **K** (to see if it has a 4 on the other side)
+- **9** (to ensure it does *not* have a K on the other side, which would violate the rule)
+
+You do **not** need to turn over **A** (rule doesn’t mention A) or **4** (a 4 can have any letter).
+
+ANSWER: 9, K","['9', 'K']","['P', 'not_Q']",CORRECT,86,100,0
+10,T11,1,100043,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['4', 'A', 'K', '9']
+
+Which cards must you turn over?
+Your answer:","['4', 'A', 'K', '9']","ANSWER: K, 9","['K', '9']","['P', 'not_Q']",CORRECT,86,10,0
+10,T11,2,100044,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['A', '9', 'K', '4']
+
+Which cards must you turn over?
+Your answer:","['A', '9', 'K', '4']","ANSWER: K, 9","['K', '9']","['P', 'not_Q']",CORRECT,86,10,0
+10,T11,3,100045,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['9', 'K', '4', 'A']
+
+Which cards must you turn over?
+Your answer:","['9', 'K', '4', 'A']","ANSWER: K, 9","['K', '9']","['P', 'not_Q']",CORRECT,86,10,0
+10,T11,4,100046,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['4', '9', 'A', 'K']
+
+Which cards must you turn over?
+Your answer:","['4', '9', 'A', 'K']","ANSWER: 9, K","['9', 'K']","['P', 'not_Q']",CORRECT,86,10,0
+11,T12,0,110042,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['9', 'S', 'P', '6']
+
+Which cards must you turn over?
+Your answer:","['9', 'S', 'P', '6']","ANSWER: 6, P","['6', 'P']","['P', 'not_Q']",CORRECT,86,10,0
+11,T12,1,110043,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['S', 'P', '9', '6']
+
+Which cards must you turn over?
+Your answer:","['S', 'P', '9', '6']","ANSWER: 6, 9","['6', '9']","['P', 'not_P']",LOGIC_ERROR,86,11,0
+11,T12,2,110044,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['P', 'S', '6', '9']
+
+Which cards must you turn over?
+Your answer:","['P', 'S', '6', '9']","To test the rule “If the number is 6, then the letter is S” (6 → S), you must look for possible violations: a **6** with a **non‑S**, or a **non‑S** with a **6**.
+
+- Turn over **6** (to check the other side is **S**).
+- Turn over **P** (a non‑S letter, to check the other side is **not 6**).
+
+You do **not** need to turn over **S** or **9**.
+
+ANSWER: P, 6","['P', '6']","['P', 'not_Q']",CORRECT,86,123,0
+11,T12,3,110045,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['6', 'S', 'P', '9']
+
+Which cards must you turn over?
+Your answer:","['6', 'S', 'P', '9']","To test “If the number is 6, then the letter is S” (6 → S), you must check:
+- The **6** card (to see if it has **S** on the other side).
+- The **P** card (to ensure it does **not** have **6** on the other side, which would violate the rule).
+
+You do **not** need to turn over **S** or **9**.
+
+ANSWER: 6, P","['6', 'P']","['P', 'not_Q']",CORRECT,86,101,0
+11,T12,4,110046,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['6', '9', 'P', 'S']
+
+Which cards must you turn over?
+Your answer:","['6', '9', 'P', 'S']","To test “If the number is 6, then the letter is S” (6 → S), you must check:
+- The **6** card (to see if the other side is S).
+- The **P** card (a not‑S card, to see if the other side is 6, which would violate the rule).
+
+You do **not** need to turn over **9** (rule says nothing about 9) or **S** (S can have any number).
+
+ANSWER: 6, P","['6', 'P']","['P', 'not_Q']",CORRECT,86,111,0
+12,T13,0,120042,"If the letter is R, then the number is Positive.","Rule: ""If the letter is R, then the number is Positive.""
+Cards: ['-5', 'R', 'L', '5']
+
+Which cards must you turn over?
+Your answer:","['-5', 'R', 'L', '5']","ANSWER: R, -5","['R', '-5']","['P', 'not_Q']",CORRECT,86,10,0
+12,T13,1,120043,"If the letter is R, then the number is Positive.","Rule: ""If the letter is R, then the number is Positive.""
+Cards: ['R', 'L', '-5', '5']
+
+Which cards must you turn over?
+Your answer:","['R', 'L', '-5', '5']","ANSWER: R, -5","['R', '-5']","['P', 'not_Q']",CORRECT,85,10,0
+12,T13,2,120044,"If the letter is R, then the number is Positive.","Rule: ""If the letter is R, then the number is Positive.""
+Cards: ['R', '5', 'L', '-5']
+
+Which cards must you turn over?
+Your answer:","['R', '5', 'L', '-5']","ANSWER: R, -5","['R', '-5']","['P', 'not_Q']",CORRECT,85,10,0
+12,T13,3,120045,"If the letter is R, then the number is Positive.","Rule: ""If the letter is R, then the number is Positive.""
+Cards: ['L', '5', 'R', '-5']
+
+Which cards must you turn over?
+Your answer:","['L', '5', 'R', '-5']","ANSWER: R, -5","['R', '-5']","['P', 'not_Q']",CORRECT,85,10,0
+12,T13,4,120046,"If the letter is R, then the number is Positive.","Rule: ""If the letter is R, then the number is Positive.""
+Cards: ['5', 'R', '-5', 'L']
+
+Which cards must you turn over?
+Your answer:","['5', 'R', '-5', 'L']","To test “If R, then Positive” (R → Positive), you must look for possible violations: an **R** with a **non‑positive** number, or a **non‑positive** number with an **R**.
+
+- Turn over **R** (to check the number is Positive).
+- Turn over **-5** (to check the letter is not R).
+
+You do **not** need to turn over **5** (even if it’s not R, the rule still holds) or **L** (the rule doesn’t constrain non‑R letters).
+
+ANSWER: R, -5","['R', '-5']","['P', 'not_Q']",CORRECT,85,128,0
+13,T14,0,130042,"If the letter is a Vowel, then the number is Prime.","Rule: ""If the letter is a Vowel, then the number is Prime.""
+Cards: ['8', 'T', '7', 'E']
+
+Which cards must you turn over?
+Your answer:","['8', 'T', '7', 'E']","To test “If vowel, then prime” (V → P), you must look for possible violations: a vowel with a non-prime number (V and not P).
+
+- Turn over **E** (a vowel) to check it has a **prime** number on the other side.
+- Turn over **8** (a non-prime number) to check it does **not** have a **vowel** on the other side.
+
+You do **not** need to turn over **T** (consonant) or **7** (prime), because they can’t falsify the rule.
+
+ANSWER: 8, E","['8', 'E']","['P', 'not_Q']",CORRECT,87,133,0
+13,T14,1,130043,"If the letter is a Vowel, then the number is Prime.","Rule: ""If the letter is a Vowel, then the number is Prime.""
+Cards: ['E', 'T', '8', '7']
+
+Which cards must you turn over?
+Your answer:","['E', 'T', '8', '7']","ANSWER: E, 8","['E', '8']","['P', 'not_Q']",CORRECT,87,10,0
+13,T14,2,130044,"If the letter is a Vowel, then the number is Prime.","Rule: ""If the letter is a Vowel, then the number is Prime.""
+Cards: ['7', 'E', '8', 'T']
+
+Which cards must you turn over?
+Your answer:","['7', 'E', '8', 'T']","To test **“If Vowel, then Prime”** (V → P), you must look for possible violations: **Vowel with a non-prime**.
+
+- Turn over **E** (a vowel) to check it has a **prime** number on the back.
+- Turn over **8** (a non-prime) to check it does **not** have a **vowel** on the back.
+
+You do **not** need to turn over **7** (prime) or **T** (consonant), because neither can directly violate the rule.
+
+ANSWER: E, 8","['E', '8']","['P', 'not_Q']",CORRECT,87,128,0
+13,T14,3,130045,"If the letter is a Vowel, then the number is Prime.","Rule: ""If the letter is a Vowel, then the number is Prime.""
+Cards: ['E', 'T', '7', '8']
+
+Which cards must you turn over?
+Your answer:","['E', 'T', '7', '8']","ANSWER: E, 8","['E', '8']","['P', 'not_Q']",CORRECT,87,10,0
+13,T14,4,130046,"If the letter is a Vowel, then the number is Prime.","Rule: ""If the letter is a Vowel, then the number is Prime.""
+Cards: ['E', '7', '8', 'T']
+
+Which cards must you turn over?
+Your answer:","['E', '7', '8', 'T']","To test the rule “If the letter is a Vowel, then the number is Prime,” you must look for possible violations: a vowel paired with a non-prime number.
+
+- Turn over **E** (vowel): check that the other side is **prime**.
+- Turn over **8** (non-prime): check that the other side is **not a vowel**.
+
+You do **not** need to turn over **7** (prime doesn’t imply vowel) or **T** (consonant doesn’t restrict the number).
+
+ANSWER: E, 8","['E', '8']","['P', 'not_Q']",CORRECT,87,122,0
+14,T15,0,140042,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['2', 'R', '9', 'L']
+
+Which cards must you turn over?
+Your answer:","['2', 'R', '9', 'L']","To test “If the number is 9, then the letter is L” (9 → L), you must check:
+- The **9** card (to see if the other side is **L**).
+- The **R** card (to ensure the other side is **not 9**, which would violate the rule).
+
+Turning over **2** or **L** cannot falsify the rule.
+
+ANSWER: 9, R","['9', 'R']","['P', 'not_Q']",CORRECT,86,92,0
+14,T15,1,140043,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['2', 'L', '9', 'R']
+
+Which cards must you turn over?
+Your answer:","['2', 'L', '9', 'R']","To test “If the number is 9, then the letter is L” (9 → L), you must check:
+- The **9** card (to ensure the other side is **L**).
+- The **R** card (to ensure the other side is **not 9**, since that would violate the rule).
+
+You do **not** need to turn over **2** (rule says nothing about other numbers) or **L** (L can have any number on the back).
+
+ANSWER: 9, R","['9', 'R']","['P', 'not_Q']",CORRECT,86,111,0
+14,T15,2,140044,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['9', 'L', '2', 'R']
+
+Which cards must you turn over?
+Your answer:","['9', 'L', '2', 'R']","ANSWER: 9, R","['9', 'R']","['P', 'not_Q']",CORRECT,86,10,0
+14,T15,3,140045,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['R', '2', 'L', '9']
+
+Which cards must you turn over?
+Your answer:","['R', '2', 'L', '9']","ANSWER: 9, R","['9', 'R']","['P', 'not_Q']",CORRECT,86,10,0
+14,T15,4,140046,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['2', 'R', 'L', '9']
+
+Which cards must you turn over?
+Your answer:","['2', 'R', 'L', '9']","To test “If the number is 9, then the letter is L” (9 → L), you must check:
+- The **9** card (to see if it has **L** on the other side)
+- The **R** card (to make sure it does **not** have **9** on the other side, which would violate the rule)
+
+ANSWER: 9, R","['9', 'R']","['P', 'not_Q']",CORRECT,86,85,0
+15,T16,0,150042,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['1', 'O', 'H', '2']
+
+Which cards must you turn over?
+Your answer:","['1', 'O', 'H', '2']","ANSWER: H, 2","['H', '2']","['P', 'not_Q']",CORRECT,92,10,0
+15,T16,1,150043,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['2', '1', 'O', 'H']
+
+Which cards must you turn over?
+Your answer:","['2', '1', 'O', 'H']","ANSWER: H, 2","['H', '2']","['P', 'not_Q']",CORRECT,92,10,0
+15,T16,2,150044,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['O', '1', '2', 'H']
+
+Which cards must you turn over?
+Your answer:","['O', '1', '2', 'H']","ANSWER: O, H","['O', 'H']","['P', 'not_P']",LOGIC_ERROR,92,9,0
+15,T16,3,150045,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['2', 'O', '1', 'H']
+
+Which cards must you turn over?
+Your answer:","['2', 'O', '1', 'H']","To test the rule “If H, then 1” (H → 1), you must look for possible violations: an **H** with something other than **1** on the back, or a **non-1** with **H** on the back.
+
+- Turn over **H** (to check the other side is **1**).
+- Turn over **2** (a non-1; to ensure the other side is **not H**).
+
+You do **not** need to turn over **1** or **O**.
+
+ANSWER: 2, H","['2', 'H']","['P', 'not_Q']",CORRECT,92,122,0
+15,T16,4,150046,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['1', 'H', 'O', '2']
+
+Which cards must you turn over?
+Your answer:","['1', 'H', 'O', '2']","To test “If H, then 1,” you must look for possible violations: an **H** that has **not-1** on the back, or a **not-1** that has **H** on the back.
+
+- Turn over **H** (to check the other side is 1).
+- Turn over **2** (a not-1) to check the other side is not H.
+
+You do **not** need to turn over **1** (H on back is allowed) or **O** (not H gives no constraint).
+
+ANSWER: H, 2","['H', '2']","['P', 'not_Q']",CORRECT,92,125,0
+16,T17,0,160042,"If the letter is T, then the number is Even.","Rule: ""If the letter is T, then the number is Even.""
+Cards: ['T', '6', 'A', '3']
+
+Which cards must you turn over?
+Your answer:","['T', '6', 'A', '3']","ANSWER: T, 3","['T', '3']","['P', 'not_Q']",CORRECT,85,10,0
+16,T17,1,160043,"If the letter is T, then the number is Even.","Rule: ""If the letter is T, then the number is Even.""
+Cards: ['T', '6', '3', 'A']
+
+Which cards must you turn over?
+Your answer:","['T', '6', '3', 'A']","ANSWER: T, 3","['T', '3']","['P', 'not_Q']",CORRECT,85,10,0
+16,T17,2,160044,"If the letter is T, then the number is Even.","Rule: ""If the letter is T, then the number is Even.""
+Cards: ['3', '6', 'A', 'T']
+
+Which cards must you turn over?
+Your answer:","['3', '6', 'A', 'T']","To test the rule **“If the letter is T, then the number is Even”** (T → Even), you must check:
+- **T** (to see if there’s an odd number on the other side, which would break the rule)
+- **3** (an odd number; to see if there’s a T on the other side, which would also break the rule)
+
+You do **not** need to turn over:
+- **6** (even doesn’t require T)
+- **A** (not T, so rule doesn’t apply)
+
+ANSWER: 3, T","['3', 'T']","['P', 'not_Q']",CORRECT,85,125,0
+16,T17,3,160045,"If the letter is T, then the number is Even.","Rule: ""If the letter is T, then the number is Even.""
+Cards: ['6', '3', 'T', 'A']
+
+Which cards must you turn over?
+Your answer:","['6', '3', 'T', 'A']","ANSWER: T, 3","['T', '3']","['P', 'not_Q']",CORRECT,85,10,0
+16,T17,4,160046,"If the letter is T, then the number is Even.","Rule: ""If the letter is T, then the number is Even.""
+Cards: ['T', 'A', '6', '3']
+
+Which cards must you turn over?
+Your answer:","['T', 'A', '6', '3']","ANSWER: T, 3","['T', '3']","['P', 'not_Q']",CORRECT,85,10,0
+17,T18,0,170042,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['10', 'J', 'K', '5']
+
+Which cards must you turn over?
+Your answer:","['10', 'J', 'K', '5']","To test “If the number is 10, then the letter is J” (If P then Q), you must check:
+- **P**: the **10** card (to see if it has **J** on the other side)
+- **not Q**: any card showing a **letter that is not J**, i.e., **K** (to ensure it does *not* have **10** on the other side)
+
+You do **not** need to turn over **J** (since it could have any number) or **5** (since the rule says nothing about non-10 numbers).
+
+ANSWER: 10, K","['10', 'K']","['P', 'not_Q']",CORRECT,86,136,0
+17,T18,1,170043,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['J', '5', 'K', '10']
+
+Which cards must you turn over?
+Your answer:","['J', '5', 'K', '10']","To test “If the number is 10, then the letter is J,” you must check:
+- the **10** card (to see if it has **J** on the other side),
+- the **K** card (a **not-J** letter, to ensure it does **not** have **10** on the other side).
+
+ANSWER: K, 10","['K', '10']","['P', 'not_Q']",CORRECT,86,80,0
+17,T18,2,170044,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['5', 'K', 'J', '10']
+
+Which cards must you turn over?
+Your answer:","['5', 'K', 'J', '10']","ANSWER: J, 10","['J', '10']","['P', 'Q']",MATCHING_BIAS,86,10,0
+17,T18,3,170045,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['10', '5', 'K', 'J']
+
+Which cards must you turn over?
+Your answer:","['10', '5', 'K', 'J']","To test the rule “If the number is 10, then the letter is J” (If P then Q), you must check:
+- **P cases** (10) to see if they have **Q** (J).
+- **not-Q cases** (anything not J, here **K**) to see if they have **not-P** (not 10).
+
+So turn over:
+- **10** (to see if the other side is J)
+- **K** (to make sure the other side is not 10)
+
+ANSWER: 10, K","['10', 'K']","['P', 'not_Q']",CORRECT,86,120,0
+17,T18,4,170046,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['5', 'K', '10', 'J']
+
+Which cards must you turn over?
+Your answer:","['5', 'K', '10', 'J']","ANSWER: 10, K","['10', 'K']","['P', 'not_Q']",CORRECT,86,10,0
+18,T19,0,180042,"If the card shows a Q, then the number is Zero.","Rule: ""If the card shows a Q, then the number is Zero.""
+Cards: ['Q', '1', '0', 'M']
+
+Which cards must you turn over?
+Your answer:","['Q', '1', '0', 'M']","To test **If Q then 0**, you must check:
+- **Q** (to see whether the other side is 0)
+- **1** (a non-zero number, to ensure the other side is not Q)
+
+You do **not** need to check **0** or **M**.
+
+ANSWER: Q, 1","['Q', '1']","['P', 'not_Q']",CORRECT,86,73,0
+18,T19,1,180043,"If the card shows a Q, then the number is Zero.","Rule: ""If the card shows a Q, then the number is Zero.""
+Cards: ['1', 'M', 'Q', '0']
+
+Which cards must you turn over?
+Your answer:","['1', 'M', 'Q', '0']","ANSWER: Q, 1","['Q', '1']","['P', 'not_Q']",CORRECT,86,10,0
+18,T19,2,180044,"If the card shows a Q, then the number is Zero.","Rule: ""If the card shows a Q, then the number is Zero.""
+Cards: ['1', 'Q', '0', 'M']
+
+Which cards must you turn over?
+Your answer:","['1', 'Q', '0', 'M']","ANSWER: Q, 1","['Q', '1']","['P', 'not_Q']",CORRECT,86,10,0
+18,T19,3,180045,"If the card shows a Q, then the number is Zero.","Rule: ""If the card shows a Q, then the number is Zero.""
+Cards: ['Q', '0', '1', 'M']
+
+Which cards must you turn over?
+Your answer:","['Q', '0', '1', 'M']","To test the rule “If Q, then 0” (Q → 0), you must check:
+- The **Q** card (to see if its number side is **0**).
+- The **1** card (a non-zero number, to ensure it does **not** have **Q** on the other side, which would violate the rule).
+
+You do **not** need to turn:
+- **0** (because 0 does not imply Q).
+- **M** (non-Q doesn’t impose any requirement).
+
+ANSWER: Q, 1","['Q', '1']","['P', 'not_Q']",CORRECT,86,119,0
+18,T19,4,180046,"If the card shows a Q, then the number is Zero.","Rule: ""If the card shows a Q, then the number is Zero.""
+Cards: ['1', 'M', '0', 'Q']
+
+Which cards must you turn over?
+Your answer:","['1', 'M', '0', 'Q']","To test “If Q, then 0” (Q → 0), you must look for possible violations: a **Q with a non-zero number**.
+
+- Turn over **Q** (to check that the other side is 0).
+- Turn over **1** (a non-zero number) to check that the other side is **not Q**.
+
+You do **not** need to turn over **0** (Q is allowed, but not required), and **M** is irrelevant (rule says nothing about non-Q letters).
+
+ANSWER: 1, Q","['1', 'Q']","['P', 'not_Q']",CORRECT,86,120,0
+19,T20,0,190042,"If the letter is M, then the number is Odd.","Rule: ""If the letter is M, then the number is Odd.""
+Cards: ['3', 'M', 'A', '2']
+
+Which cards must you turn over?
+Your answer:","['3', 'M', 'A', '2']","To test “If the letter is M, then the number is Odd” (M → Odd), you must look for possible violations: an **M** with an **even** number.
+
+- Turn over **M**: to check that it has an **odd** number on the back.
+- Turn over **2**: to check that it does **not** have **M** on the back (since M with even would violate the rule).
+
+You do **not** need to turn over **3** (odd doesn’t imply M) or **A** (non-M doesn’t constrain the number).
+
+ANSWER: M, 2","['M', '2']","['P', 'not_Q']",CORRECT,85,133,0
+19,T20,1,190043,"If the letter is M, then the number is Odd.","Rule: ""If the letter is M, then the number is Odd.""
+Cards: ['M', '3', '2', 'A']
+
+Which cards must you turn over?
+Your answer:","['M', '3', '2', 'A']","ANSWER: M, 2","['M', '2']","['P', 'not_Q']",CORRECT,85,10,0
+19,T20,2,190044,"If the letter is M, then the number is Odd.","Rule: ""If the letter is M, then the number is Odd.""
+Cards: ['A', '3', 'M', '2']
+
+Which cards must you turn over?
+Your answer:","['A', '3', 'M', '2']","ANSWER: M, 2","['M', '2']","['P', 'not_Q']",CORRECT,85,10,0
+19,T20,3,190045,"If the letter is M, then the number is Odd.","Rule: ""If the letter is M, then the number is Odd.""
+Cards: ['A', '2', '3', 'M']
+
+Which cards must you turn over?
+Your answer:","['A', '2', '3', 'M']","To test “If the letter is M, then the number is Odd” (M → Odd), you must check:
+- **M** (to confirm it has an odd number)
+- **2** (an even number, to ensure it does *not* have M on the other side, which would violate the rule)
+
+ANSWER: M, 2","['M', '2']","['P', 'not_Q']",CORRECT,85,76,0
+19,T20,4,190046,"If the letter is M, then the number is Odd.","Rule: ""If the letter is M, then the number is Odd.""
+Cards: ['M', '2', 'A', '3']
+
+Which cards must you turn over?
+Your answer:","['M', '2', 'A', '3']","ANSWER: M, 2","['M', '2']","['P', 'not_Q']",CORRECT,85,10,0
+20,T21,0,200042,"If the number is Less than 5, then the letter is A.","Rule: ""If the number is Less than 5, then the letter is A.""
+Cards: ['B', 'A', '8', '2']
+
+Which cards must you turn over?
+Your answer:","['B', 'A', '8', '2']","ANSWER: B, 2","['B', '2']","['P', 'not_Q']",CORRECT,88,10,0
+20,T21,1,200043,"If the number is Less than 5, then the letter is A.","Rule: ""If the number is Less than 5, then the letter is A.""
+Cards: ['A', '8', 'B', '2']
+
+Which cards must you turn over?
+Your answer:","['A', '8', 'B', '2']","To test “If the number is less than 5, then the letter is A,” you must check:
+- The **2** card (a number < 5) to see if the other side is **A**.
+- The **B** card (not A) to ensure the other side is **not** a number < 5.
+
+ANSWER: B, 2","['B', '2']","['P', 'not_Q']",CORRECT,88,81,0
+20,T21,2,200044,"If the number is Less than 5, then the letter is A.","Rule: ""If the number is Less than 5, then the letter is A.""
+Cards: ['8', '2', 'A', 'B']
+
+Which cards must you turn over?
+Your answer:","['8', '2', 'A', 'B']","To test “If number < 5, then letter is A” ( \(P \rightarrow Q\) ), you must check:
+- Cards showing \(P\): a number less than 5 → **2**
+- Cards showing \(\lnot Q\): a letter not A → **B**
+
+You do **not** need to turn over **8** (it’s not < 5) or **A** (rule doesn’t say A implies < 5).
+
+ANSWER: 2, B","['2', 'B']","['P', 'not_Q']",CORRECT,88,107,0
+20,T21,3,200045,"If the number is Less than 5, then the letter is A.","Rule: ""If the number is Less than 5, then the letter is A.""
+Cards: ['A', 'B', '8', '2']
+
+Which cards must you turn over?
+Your answer:","['A', 'B', '8', '2']","To test the rule “If number < 5, then letter is A,” you must check:
+- Any **number less than 5** (to see if it has **A** on the other side) → **2**
+- Any card showing a **non‑A letter** (to ensure it does **not** have a number < 5 on the other side) → **B**
+
+You do **not** need to turn over **A** (rule doesn’t say A implies <5) or **8** (8 is not <5, so it can’t violate the rule).
+
+ANSWER: B, 2","['B', '2']","['P', 'not_Q']",CORRECT,88,132,0
+20,T21,4,200046,"If the number is Less than 5, then the letter is A.","Rule: ""If the number is Less than 5, then the letter is A.""
+Cards: ['8', 'A', '2', 'B']
+
+Which cards must you turn over?
+Your answer:","['8', 'A', '2', 'B']","ANSWER: 2, B","['2', 'B']","['P', 'not_Q']",CORRECT,88,10,0
+21,T22,0,210042,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['2', 'H', '5', 'Y']
+
+Which cards must you turn over?
+Your answer:","['2', 'H', '5', 'Y']","ANSWER: 2, Y","['2', 'Y']","['P', 'not_Q']",CORRECT,86,10,0
+21,T22,1,210043,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['2', 'H', 'Y', '5']
+
+Which cards must you turn over?
+Your answer:","['2', 'H', 'Y', '5']","To test “If Y, then 5” (Y → 5), you must check:
+- The **Y** card (to see if there’s a **non-5** on the other side, which would break the rule).
+- The **2** card (a non-5) (to see if there’s a **Y** on the other side, which would also break the rule).
+
+You do **not** need to turn over **H** (not Y) or **5** (the rule doesn’t say “if 5 then Y”).
+
+ANSWER: 2, Y","['2', 'Y']","['P', 'not_Q']",CORRECT,86,126,0
+21,T22,2,210044,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['H', 'Y', '2', '5']
+
+Which cards must you turn over?
+Your answer:","['H', 'Y', '2', '5']","ANSWER: Y, 2","['Y', '2']","['P', 'not_Q']",CORRECT,86,10,0
+21,T22,3,210045,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['H', 'Y', '5', '2']
+
+Which cards must you turn over?
+Your answer:","['H', 'Y', '5', '2']","ANSWER: Y, 2","['Y', '2']","['P', 'not_Q']",CORRECT,86,10,0
+21,T22,4,210046,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['2', 'Y', '5', 'H']
+
+Which cards must you turn over?
+Your answer:","['2', 'Y', '5', 'H']","ANSWER: Y, 2","['Y', '2']","['P', 'not_Q']",CORRECT,86,10,0
+22,T23,0,220042,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['7', 'D', 'F', '4']
+
+Which cards must you turn over?
+Your answer:","['7', 'D', 'F', '4']","ANSWER: 4, F","['4', 'F']","['P', 'not_Q']",CORRECT,87,10,0
+22,T23,1,220043,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['7', '4', 'F', 'D']
+
+Which cards must you turn over?
+Your answer:","['7', '4', 'F', 'D']","ANSWER: 4, F","['4', 'F']","['P', 'not_Q']",CORRECT,87,10,0
+22,T23,2,220044,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['4', 'F', 'D', '7']
+
+Which cards must you turn over?
+Your answer:","['4', 'F', 'D', '7']","To test the rule “If the card shows a 4, then the letter is D” (4 → D), you must look for possible violations: a **4 with not-D**.
+
+- Turn over **4**: to check that the other side is **D**.
+- Turn over **F** (a not-D): to check that the other side is **not 4**.
+
+You do **not** need to turn over **D** (D doesn’t imply 4) or **7** (not 4 doesn’t require anything).
+
+ANSWER: 4, F","['4', 'F']","['P', 'not_Q']",CORRECT,87,124,0
+22,T23,3,220045,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['4', 'F', '7', 'D']
+
+Which cards must you turn over?
+Your answer:","['4', 'F', '7', 'D']","To test the rule **“If 4, then D”** (i.e., \(4 \rightarrow D\)), you must look for possible violations: a **4** with **not-D** on the other side.
+
+- Turn over **4** (to check the other side is **D**).
+- Turn over **F** (a **not-D** letter) to ensure the other side is **not 4**.
+
+You do **not** need to turn over **7** (the rule says nothing about non-4 cards), and you do **not** need to turn over **D** (it could have 4 or not-4; either way doesn’t violate the rule).
+
+ANSWER: 4, F","['4', 'F']","['P', 'not_Q']",CORRECT,87,154,0
+22,T23,4,220046,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['F', '4', '7', 'D']
+
+Which cards must you turn over?
+Your answer:","['F', '4', '7', 'D']","ANSWER: 4, F","['4', 'F']","['P', 'not_Q']",CORRECT,87,10,0
+23,T24,0,230042,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['S', '10', '20', 'G']
+
+Which cards must you turn over?
+Your answer:","['S', '10', '20', 'G']","To test “If the letter is G, then the number is 20” (G → 20), you must check:
+- **G** (to see if it has **20** on the other side)
+- **10** (to see if it has **G** on the other side, which would violate the rule)
+
+You do **not** need to turn over **20** or **S**.
+
+ANSWER: G, 10","['G', '10']","['P', 'not_Q']",CORRECT,86,95,0
+23,T24,1,230043,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['G', '10', 'S', '20']
+
+Which cards must you turn over?
+Your answer:","['G', '10', 'S', '20']","ANSWER: G, 10","['G', '10']","['P', 'not_Q']",CORRECT,86,10,0
+23,T24,2,230044,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['10', '20', 'S', 'G']
+
+Which cards must you turn over?
+Your answer:","['10', '20', 'S', 'G']","ANSWER: 10, G","['10', 'G']","['P', 'not_Q']",CORRECT,86,10,0
+23,T24,3,230045,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['G', 'S', '20', '10']
+
+Which cards must you turn over?
+Your answer:","['G', 'S', '20', '10']","To test “If G, then 20,” you must check:
+- **G** (to see if the other side is 20)
+- **10** (to make sure the other side is *not* G, which would violate the rule)
+
+You do **not** need to turn over **S** or **20**.
+
+ANSWER: G, 10","['G', '10']","['P', 'not_Q']",CORRECT,86,79,0
+23,T24,4,230046,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['20', 'G', 'S', '10']
+
+Which cards must you turn over?
+Your answer:","['20', 'G', 'S', '10']","ANSWER: G, 10","['G', '10']","['P', 'not_Q']",CORRECT,86,10,0
+24,T25,0,240042,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['K', '4', 'I', '9']
+
+Which cards must you turn over?
+Your answer:","['K', '4', 'I', '9']","To test the rule **“If I, then 9”**, you must check:
+- the card showing **I** (to see if there’s a 9 on the back), and
+- the card showing **4** (a **not-9**, to ensure there isn’t an I on the back, which would break the rule).
+
+You do **not** need to turn over **K** (not-I doesn’t constrain anything) or **9** (the rule doesn’t say “If 9, then I”).
+
+ANSWER: 4, I","['4', 'I']","['P', 'not_Q']",CORRECT,92,119,0
+24,T25,1,240043,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['I', '4', 'K', '9']
+
+Which cards must you turn over?
+Your answer:","['I', '4', 'K', '9']","To test “If I, then 9,” you must check:
+- **I** (to see if the back is 9)
+- **4** (to see if the back is I, which would violate the rule)
+
+You do **not** need to turn over **K** or **9**.
+
+ANSWER: I, 4","['I', '4']","['P', 'not_Q']",CORRECT,92,74,0
+24,T25,2,240044,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['9', 'I', 'K', '4']
+
+Which cards must you turn over?
+Your answer:","['9', 'I', 'K', '4']","ANSWER: I, 4","['I', '4']","['P', 'not_Q']",CORRECT,92,10,0
+24,T25,3,240045,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['I', 'K', '9', '4']
+
+Which cards must you turn over?
+Your answer:","['I', 'K', '9', '4']","ANSWER: I, 4","['I', '4']","['P', 'not_Q']",CORRECT,92,10,0
+24,T25,4,240046,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['9', '4', 'I', 'K']
+
+Which cards must you turn over?
+Your answer:","['9', '4', 'I', 'K']","To test “If I, then 9”, you must look for possible violations: an **I** with a **non-9** on the back.
+
+- Turn over **I** (to check the back is 9).
+- Turn over **4** (a non-9) to ensure the back is **not** I.
+
+You do **not** need to turn over **9** or **K**.
+
+ANSWER: 4, I","['4', 'I']","['P', 'not_Q']",CORRECT,92,96,0
+25,T26,0,250042,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['N', 'B', '12', '3']
+
+Which cards must you turn over?
+Your answer:","['N', 'B', '12', '3']","ANSWER: 12, B","['12', 'B']","['P', 'not_Q']",CORRECT,86,10,0
+25,T26,1,250043,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['12', 'B', 'N', '3']
+
+Which cards must you turn over?
+Your answer:","['12', 'B', 'N', '3']","ANSWER: 12, B","['12', 'B']","['P', 'not_Q']",CORRECT,86,10,0
+25,T26,2,250044,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['3', 'N', 'B', '12']
+
+Which cards must you turn over?
+Your answer:","['3', 'N', 'B', '12']","ANSWER: B, 12","['B', '12']","['P', 'not_Q']",CORRECT,86,10,0
+25,T26,3,250045,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['3', '12', 'B', 'N']
+
+Which cards must you turn over?
+Your answer:","['3', '12', 'B', 'N']","To test “If the number is 12, then the letter is N” (12 → N), you must check:
+- **12** (to see if it has **N** on the other side)
+- **B** (a **not-N** card, to ensure it does *not* have **12** on the other side)
+
+ANSWER: 12, B","['12', 'B']","['P', 'not_Q']",CORRECT,86,81,0
+25,T26,4,250046,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['3', '12', 'N', 'B']
+
+Which cards must you turn over?
+Your answer:","['3', '12', 'N', 'B']","ANSWER: 12, B","['12', 'B']","['P', 'not_Q']",CORRECT,86,10,0
+26,T27,0,260042,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['7', 'E', 'F', '6']
+
+Which cards must you turn over?
+Your answer:","['7', 'E', 'F', '6']","ANSWER: F, 7","['F', '7']","['P', 'not_Q']",CORRECT,86,10,0
+26,T27,1,260043,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['F', 'E', '7', '6']
+
+Which cards must you turn over?
+Your answer:","['F', 'E', '7', '6']","ANSWER: F, 7","['F', '7']","['P', 'not_Q']",CORRECT,86,10,0
+26,T27,2,260044,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['6', 'F', 'E', '7']
+
+Which cards must you turn over?
+Your answer:","['6', 'F', 'E', '7']","To test the rule “If the letter is F, then the number is 6,” you must check:
+- **F** (to see if the other side is **6**)
+- **7** (to ensure the other side is **not F**, which would violate the rule)
+
+ANSWER: F, 7","['F', '7']","['P', 'not_Q']",CORRECT,86,69,0
+26,T27,3,260045,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['E', 'F', '6', '7']
+
+Which cards must you turn over?
+Your answer:","['E', 'F', '6', '7']","To test “If the letter is F, then the number is 6” (F → 6), you must look for possible violations: an **F** with a **non-6**, or a **non-6** with an **F** on the other side.
+
+- Turn over **F** (to check it has 6 on the back).
+- Turn over **7** (to check it does *not* have F on the back).
+
+You do **not** need to turn over **E** (rule says nothing about E) or **6** (6 can have any letter).
+
+ANSWER: F, 7","['F', '7']","['P', 'not_Q']",CORRECT,86,134,0
+26,T27,4,260046,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['F', 'E', '6', '7']
+
+Which cards must you turn over?
+Your answer:","['F', 'E', '6', '7']","ANSWER: F, 7","['F', '7']","['P', 'not_Q']",CORRECT,86,10,0
+27,T28,0,270042,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['2', 'A', '5', 'Z']
+
+Which cards must you turn over?
+Your answer:","['2', 'A', '5', 'Z']","ANSWER: 2, A","['2', 'A']","['P', 'not_Q']",CORRECT,86,10,0
+27,T28,1,270043,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['A', '2', 'Z', '5']
+
+Which cards must you turn over?
+Your answer:","['A', '2', 'Z', '5']","ANSWER: 2, A","['2', 'A']","['P', 'not_Q']",CORRECT,86,10,0
+27,T28,2,270044,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['Z', '5', 'A', '2']
+
+Which cards must you turn over?
+Your answer:","['Z', '5', 'A', '2']","ANSWER: A, 2","['A', '2']","['P', 'not_Q']",CORRECT,86,10,0
+27,T28,3,270045,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['2', '5', 'Z', 'A']
+
+Which cards must you turn over?
+Your answer:","['2', '5', 'Z', 'A']","ANSWER: 2, A","['2', 'A']","['P', 'not_Q']",CORRECT,86,10,0
+27,T28,4,270046,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['Z', '2', '5', 'A']
+
+Which cards must you turn over?
+Your answer:","['Z', '2', '5', 'A']","ANSWER: 2, A","['2', 'A']","['P', 'not_Q']",CORRECT,86,10,0
+28,T29,0,280042,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['V', '100', 'W', '50']
+
+Which cards must you turn over?
+Your answer:","['V', '100', 'W', '50']","ANSWER: W, 50","['W', '50']","['P', 'not_Q']",CORRECT,86,10,0
+28,T29,1,280043,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['V', 'W', '50', '100']
+
+Which cards must you turn over?
+Your answer:","['V', 'W', '50', '100']","ANSWER: W, 50","['W', '50']","['P', 'not_Q']",CORRECT,86,10,0
+28,T29,2,280044,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['W', 'V', '100', '50']
+
+Which cards must you turn over?
+Your answer:","['W', 'V', '100', '50']","ANSWER: W, 50","['W', '50']","['P', 'not_Q']",CORRECT,86,10,0
+28,T29,3,280045,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['100', '50', 'W', 'V']
+
+Which cards must you turn over?
+Your answer:","['100', '50', 'W', 'V']","ANSWER: 50, W","['50', 'W']","['P', 'not_Q']",CORRECT,86,10,0
+28,T29,4,280046,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['100', 'W', '50', 'V']
+
+Which cards must you turn over?
+Your answer:","['100', 'W', '50', 'V']","To test “If W, then 100”, you must check:
+- **W** (to see if it has **100** on the other side)
+- **50** (any non-100 number, to ensure it does **not** have **W** on the other side)
+
+ANSWER: W, 50","['W', '50']","['P', 'not_Q']",CORRECT,86,69,0
+29,T30,0,290042,"If the number is Double Digit, then the letter is P.","Rule: ""If the number is Double Digit, then the letter is P.""
+Cards: ['S', '14', '5', 'P']
+
+Which cards must you turn over?
+Your answer:","['S', '14', '5', 'P']","To test “If the number is Double Digit, then the letter is P” (DD → P), you must check:
+- Any **double-digit number** card (to see if it has **P** on the other side).
+- Any **non-P letter** card (to make sure it does **not** have a double-digit number on the other side).
+
+Cards:
+- **14** (double digit) → must turn over.
+- **S** (not P) → must turn over.
+- **5** (single digit) → no need.
+- **P** → no need (rule doesn’t say P implies double digit).
+
+ANSWER: S, 14","['S', '14']","['P', 'not_Q']",CORRECT,86,141,0
+29,T30,1,290043,"If the number is Double Digit, then the letter is P.","Rule: ""If the number is Double Digit, then the letter is P.""
+Cards: ['5', 'S', 'P', '14']
+
+Which cards must you turn over?
+Your answer:","['5', 'S', 'P', '14']","To test the rule **“If the number is Double Digit, then the letter is P”** (Double Digit → P), you must check cards that could **falsify** it: a **double-digit number** with a **non‑P** letter on the back.
+
+- **'14'** (double digit): must turn over to see if the other side is **P**.
+- **'S'** (not P): must turn over to ensure the other side is **not** a double-digit number.
+
+You do **not** need to turn over **'5'** (single digit doesn’t trigger the rule) or **'P'** (P does not imply double digit).
+
+ANSWER: S, 14","['S', '14']","['P', 'not_Q']",CORRECT,86,155,0
+29,T30,2,290044,"If the number is Double Digit, then the letter is P.","Rule: ""If the number is Double Digit, then the letter is P.""
+Cards: ['5', '14', 'S', 'P']
+
+Which cards must you turn over?
+Your answer:","['5', '14', 'S', 'P']","ANSWER: 14, S","['14', 'S']","['P', 'not_Q']",CORRECT,86,10,0
+29,T30,3,290045,"If the number is Double Digit, then the letter is P.","Rule: ""If the number is Double Digit, then the letter is P.""
+Cards: ['P', '5', 'S', '14']
+
+Which cards must you turn over?
+Your answer:","['P', '5', 'S', '14']","ANSWER: S, 14","['S', '14']","['P', 'not_Q']",CORRECT,86,10,0
+29,T30,4,290046,"If the number is Double Digit, then the letter is P.","Rule: ""If the number is Double Digit, then the letter is P.""
+Cards: ['14', '5', 'S', 'P']
+
+Which cards must you turn over?
+Your answer:","['14', '5', 'S', 'P']","ANSWER: 14, S","['14', 'S']","['P', 'not_Q']",CORRECT,86,10,0

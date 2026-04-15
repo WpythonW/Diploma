@@ -1,0 +1,4 @@
+#!/bin/bash
+# Map chapters, sections, figures, experiments
+cd "$(dirname "$0")/../.." || exit 1
+uv run python .claude/skills/thesis-structure/tools/structure.py "$@"

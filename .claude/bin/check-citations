@@ -1,0 +1,4 @@
+#!/bin/bash
+# Bibliography verification (REAL/FAKE/UNCERTAIN)
+cd "$(dirname "$0")/../.." || exit 1
+uv run python .claude/skills/check-citations/tools/check_papers.py "$@"

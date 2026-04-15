@@ -1,0 +1,4 @@
+model,model_slug,status,updated_at,n_trials,summary_path,message
+anthropic/claude-sonnet-4.6,anthropic__claude-sonnet-4.6,completed,2026-04-12T19:50:31+00:00,150,output_prompt_neutral_minimal_proprietary/formal_logic/formal_logic/anthropic__claude-sonnet-4.6/summary.json,run completed successfully
+openai/gpt-5.2,openai__gpt-5.2,completed,2026-04-12T19:50:40+00:00,150,output_prompt_neutral_minimal_proprietary/formal_logic/formal_logic/openai__gpt-5.2/summary.json,run completed successfully
+x-ai/grok-4.1-fast,x-ai__grok-4.1-fast,completed,2026-04-12T19:50:27+00:00,150,output_prompt_neutral_minimal_proprietary/formal_logic/formal_logic/x-ai__grok-4.1-fast/summary.json,run completed successfully

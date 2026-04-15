@@ -1,0 +1,12 @@
+{
+  "model": "deepseek/deepseek-v3.2",
+  "context": "concrete_facts_extended",
+  "n_items": 101,
+  "n_prompt_permutations": 5,
+  "n_trials": 505,
+  "stats": {
+    "prompt_tokens": 32765,
+    "completion_tokens": 2874,
+    "reasoning_tokens": 0
+  }
+}

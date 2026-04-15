@@ -1,0 +1,217 @@
+{
+  "total_words": 14240,
+  "total_citations": 45,
+  "bibliography_entries": 40,
+  "citation_density": 3.16,
+  "chapter_stats": {
+    "abbreviations.tex": {
+      "words": 86,
+      "citation_count": 0,
+      "citation_density": 0.0
+    },
+    "appA.tex": {
+      "words": 270,
+      "citation_count": 0,
+      "citation_density": 0.0
+    },
+    "chapter1.tex": {
+      "words": 3807,
+      "citation_count": 54,
+      "citation_density": 14.18
+    },
+    "chapter2.tex": {
+      "words": 0,
+      "citation_count": 0,
+      "citation_density": 0
+    },
+    "chapter2_cross.tex": {
+      "words": 454,
+      "citation_count": 0,
+      "citation_density": 0.0
+    },
+    "chapter2_exp1_linda.tex": {
+      "words": 3109,
+      "citation_count": 7,
+      "citation_density": 2.25
+    },
+    "chapter2_exp2_wason.tex": {
+      "words": 2037,
+      "citation_count": 16,
+      "citation_density": 7.85
+    },
+    "chapter2_exp3_246.tex": {
+      "words": 1309,
+      "citation_count": 4,
+      "citation_density": 3.06
+    },
+    "chapter2_intro.tex": {
+      "words": 220,
+      "citation_count": 0,
+      "citation_density": 0.0
+    },
+    "chapter3.tex": {
+      "words": 1058,
+      "citation_count": 1,
+      "citation_density": 0.95
+    },
+    "conclusion.tex": {
+      "words": 95,
+      "citation_count": 0,
+      "citation_density": 0.0
+    },
+    "config-formulas.tex": {
+      "words": 17,
+      "citation_count": 0,
+      "citation_density": 0.0
+    },
+    "config-images.tex": {
+      "words": 3,
+      "citation_count": 0,
+      "citation_density": 0.0
+    },
+    "config-lists.tex": {
+      "words": 4,
+      "citation_count": 0,
+      "citation_density": 0.0
+    },
+    "config-tables.tex": {
+      "words": 78,
+      "citation_count": 0,
+      "citation_density": 0.0
+    },
+    "intro.tex": {
+      "words": 1440,
+      "citation_count": 12,
+      "citation_density": 8.33
+    },
+    "main.tex": {
+      "words": 13,
+      "citation_count": 0,
+      "citation_density": 0.0
+    },
+    "preamble.tex": {
+      "words": 72,
+      "citation_count": 0,
+      "citation_density": 0.0
+    },
+    "terms.tex": {
+      "words": 168,
+      "citation_count": 0,
+      "citation_density": 0.0
+    }
+  },
+  "bibliography_coverage": {
+    "unused_entries": [
+      "cosmides1992cognitive",
+      "evans2003in",
+      "tversky1981framing",
+      "wang2024linda"
+    ],
+    "undefined_citations": [
+      "cheng1985pragmatic, cosmides1992cognitive",
+      "collins2024softmax, han2023explaining",
+      "evans2003in, kahneman2011thinking",
+      "jiang2024peek, shafiei2025more",
+      "suri2024large, macmillan2024irrationality, coda2024cogbench",
+      "suri2024large, wang2024linda, jiang2024peek, macmillan2024irrationality",
+      "tversky1981framing, tversky1983extensional",
+      "tversky1983extensional, wason1966reasoning, wason1960failure",
+      "zhou2023benchmark, macmillan2024irrationality"
+    ],
+    "coverage_percent": 112.5
+  },
+  "citation_distribution": {
+    "macmillan2024irrationality": 6,
+    "tversky1983extensional": 5,
+    "wason1966reasoning": 5,
+    "banatt2024wilt": 5,
+    "batista2026rational": 5,
+    "evans1998matching": 4,
+    "dasgupta2024language": 4,
+    "wason1960failure": 3,
+    "suri2024large": 3,
+    "jiang2024peek": 3,
+    "cheng1985pragmatic": 3,
+    "mcnemar1947note": 3,
+    "benjamini1995controlling": 3,
+    "kahneman2011thinking": 2,
+    "wei2022chain": 2,
+    "zhou2023benchmark": 2,
+    "zhang2025identifying": 2,
+    "shafiei2025more": 2,
+    "coda2024cogbench": 2,
+    "usdl2024oews": 2,
+    "cheng1985pragmatic, cosmides1992cognitive": 2,
+    "binz2023using": 2,
+    "kojima2022large": 2,
+    "tversky1981framing, tversky1983extensional": 1,
+    "simon1955behavioral": 1,
+    "evans2003in, kahneman2011thinking": 1,
+    "tenenbaum1999bayesian": 1,
+    "oaksford1994rational": 1,
+    "zhou2023benchmark, macmillan2024irrationality": 1,
+    "stolfo2024confidence": 1,
+    "collins2024softmax, han2023explaining": 1,
+    "collins2024softmax": 1,
+    "fu2024implies": 1,
+    "chadimova2024meaningless": 1,
+    "an2025measuring": 1,
+    "yang2025bias": 1,
+    "koo2024benchmarking": 1,
+    "han2023explaining": 1,
+    "jiang2024peek, shafiei2025more": 1,
+    "suri2024large, wang2024linda, jiang2024peek, macmillan2024irrationality": 1,
+    "nickerson1998confirmation": 1,
+    "arkoudas2023gpt4": 1,
+    "bommasani2021opportunities": 1,
+    "suri2024large, macmillan2024irrationality, coda2024cogbench": 1,
+    "tversky1983extensional, wason1966reasoning, wason1960failure": 1
+  },
+  "key_statuses": {
+    "tversky1981framing, tversky1983extensional": "OK",
+    "batista2026rational": "CONTEXT: WARNING",
+    "an2025measuring": "CONTEXT: WARNING",
+    "coda2024cogbench": "CONTEXT: ERROR",
+    "kojima2022large": "CONTEXT: WARNING",
+    "stolfo2024confidence": "CONTEXT: ERROR",
+    "zhou2023benchmark, macmillan2024irrationality": "OK",
+    "benjamini1995controlling": "OK",
+    "tversky1983extensional": "OK",
+    "oaksford1994rational": "CONTEXT: ERROR",
+    "nickerson1998confirmation": "CONTEXT: WARNING",
+    "simon1955behavioral": "CONTEXT: WARNING",
+    "suri2024large": "CONTEXT: ERROR",
+    "chadimova2024meaningless": "CONTEXT: WARNING",
+    "bommasani2021opportunities": "CONTEXT: WARNING",
+    "zhang2025identifying": "CONTEXT: ERROR",
+    "binz2023using": "CONTEXT: ERROR",
+    "collins2024softmax, han2023explaining": "OK",
+    "suri2024large, wang2024linda, jiang2024peek, macmillan2024irrationality": "OK",
+    "shafiei2025more": "CONTEXT: ERROR",
+    "evans2003in, kahneman2011thinking": "OK",
+    "yang2025bias": "OK",
+    "tversky1983extensional, wason1966reasoning, wason1960failure": "OK",
+    "fu2024implies": "CONTEXT: ERROR",
+    "wason1960failure": "OK",
+    "wei2022chain": "OK",
+    "wason1966reasoning": "OK",
+    "arkoudas2023gpt4": "CONTEXT: WARNING",
+    "banatt2024wilt": "CONTEXT: ERROR",
+    "evans1998matching": "CONTEXT: ERROR",
+    "mcnemar1947note": "OK",
+    "zhou2023benchmark": "CONTEXT: WARNING",
+    "jiang2024peek": "CONTEXT: ERROR",
+    "collins2024softmax": "CONTEXT: WARNING",
+    "jiang2024peek, shafiei2025more": "OK",
+    "kahneman2011thinking": "OK",
+    "usdl2024oews": "CONTEXT: ERROR",
+    "dasgupta2024language": "CONTEXT: ERROR",
+    "macmillan2024irrationality": "CONTEXT: ERROR",
+    "cheng1985pragmatic": "OK",
+    "suri2024large, macmillan2024irrationality, coda2024cogbench": "OK",
+    "koo2024benchmarking": "CONTEXT: WARNING",
+    "han2023explaining": "CONTEXT: WARNING",
+    "tenenbaum1999bayesian": "CONTEXT: WARNING",
+    "cheng1985pragmatic, cosmides1992cognitive": "OK"
+  }
+}

@@ -1,0 +1,7 @@
+model,model_slug,status,updated_at,n_trials,summary_path,message
+deepseek/deepseek-v3.2,deepseek__deepseek-v3.2,completed,2026-04-12T20:01:52+00:00,150,output_prompt_cot_answer/formal_logic/formal_logic/deepseek__deepseek-v3.2/summary.json,run completed successfully
+google/gemma-3-12b-it,google__gemma-3-12b-it,completed,2026-04-12T20:00:32+00:00,150,output_prompt_cot_answer/formal_logic/formal_logic/google__gemma-3-12b-it/summary.json,run completed successfully
+google/gemma-3-27b-it,google__gemma-3-27b-it,completed,2026-04-12T20:03:45+00:00,150,output_prompt_cot_answer/formal_logic/formal_logic/google__gemma-3-27b-it/summary.json,run completed successfully
+qwen/qwen3-next-80b-a3b-instruct,qwen__qwen3-next-80b-a3b-instruct,completed,2026-04-12T19:58:47+00:00,150,output_prompt_cot_answer/formal_logic/formal_logic/qwen__qwen3-next-80b-a3b-instruct/summary.json,run completed successfully
+qwen/qwen3.5-397b-a17b,qwen__qwen3.5-397b-a17b,completed,2026-04-12T19:58:09+00:00,150,output_prompt_cot_answer/formal_logic/formal_logic/qwen__qwen3.5-397b-a17b/summary.json,run completed successfully
+z-ai/glm-4.7-flash,z-ai__glm-4.7-flash,completed,2026-04-12T19:58:45+00:00,150,output_prompt_cot_answer/formal_logic/formal_logic/z-ai__glm-4.7-flash/summary.json,run completed successfully

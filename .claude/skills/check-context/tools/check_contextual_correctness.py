@@ -552,7 +552,6 @@ def _print_summary(results_dir: Path) -> None:
             pass
     total = sum(counts.values())
     print(flush=True)
-    print("=" * 60, flush=True)
     print(f"DONE — {total} keys", flush=True)
     print(f"  OK:         {counts.get('OK', 0)}", flush=True)
     print(f"  WARNING:    {counts.get('WARNING', 0)}", flush=True)

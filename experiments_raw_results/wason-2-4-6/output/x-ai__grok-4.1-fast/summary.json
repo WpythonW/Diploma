@@ -1,0 +1,22 @@
+{
+  "model": "x-ai/grok-4.1-fast",
+  "prompt_style": "baseline",
+  "reasoning_effort": "none",
+  "provider": null,
+  "n_rules": 50,
+  "n_success": 7,
+  "n_invalid_rules": 0,
+  "n_processed_rules": 50,
+  "max_turns": 19,
+  "stop_iou": 0.95,
+  "stats": {
+    "n_rules": 50,
+    "n_success": 7,
+    "n_invalid_rules": 0,
+    "n_processed_rules": 50,
+    "mean_turns": 17.08,
+    "prompt_tokens": 823411,
+    "completion_tokens": 27759,
+    "reasoning_tokens": 0
+  }
+}

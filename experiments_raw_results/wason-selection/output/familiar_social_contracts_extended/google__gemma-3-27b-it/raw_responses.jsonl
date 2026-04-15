@@ -1,0 +1,500 @@
+{"row_idx": 0, "item_id": "T1", "permutation_idx": 0, "ordered_cards": ["Has License", "Walking", "No License", "Driving"], "response_text": "\nDriving, No License"}
+{"row_idx": 0, "item_id": "T1", "permutation_idx": 1, "ordered_cards": ["Driving", "No License", "Has License", "Walking"], "response_text": "\nDriving, No License"}
+{"row_idx": 0, "item_id": "T1", "permutation_idx": 2, "ordered_cards": ["No License", "Driving", "Walking", "Has License"], "response_text": "\nDriving, No License"}
+{"row_idx": 0, "item_id": "T1", "permutation_idx": 3, "ordered_cards": ["No License", "Has License", "Walking", "Driving"], "response_text": "\nDriving, No License"}
+{"row_idx": 0, "item_id": "T1", "permutation_idx": 4, "ordered_cards": ["Has License", "Driving", "No License", "Walking"], "response_text": "\nDriving, No License"}
+{"row_idx": 1, "item_id": "T2", "permutation_idx": 0, "ordered_cards": ["Credit Card", "Shows ID", "Cash", "No ID"], "response_text": "\nCredit Card, No ID"}
+{"row_idx": 1, "item_id": "T2", "permutation_idx": 1, "ordered_cards": ["No ID", "Credit Card", "Cash", "Shows ID"], "response_text": "\nCredit Card, No ID"}
+{"row_idx": 1, "item_id": "T2", "permutation_idx": 2, "ordered_cards": ["Cash", "Credit Card", "No ID", "Shows ID"], "response_text": "\nCredit Card, No ID"}
+{"row_idx": 1, "item_id": "T2", "permutation_idx": 3, "ordered_cards": ["No ID", "Cash", "Shows ID", "Credit Card"], "response_text": "\nCredit Card, No ID"}
+{"row_idx": 1, "item_id": "T2", "permutation_idx": 4, "ordered_cards": ["No ID", "Credit Card", "Shows ID", "Cash"], "response_text": "\nCredit Card, No ID"}
+{"row_idx": 2, "item_id": "T3", "permutation_idx": 0, "ordered_cards": ["Waiting", "No Pass", "Has Pass", "Boarding"], "response_text": "\nBoarding, No Pass"}
+{"row_idx": 2, "item_id": "T3", "permutation_idx": 1, "ordered_cards": ["Waiting", "No Pass", "Boarding", "Has Pass"], "response_text": "\nBoarding, No Pass"}
+{"row_idx": 2, "item_id": "T3", "permutation_idx": 2, "ordered_cards": ["No Pass", "Boarding", "Waiting", "Has Pass"], "response_text": "\nBoarding, No Pass"}
+{"row_idx": 2, "item_id": "T3", "permutation_idx": 3, "ordered_cards": ["No Pass", "Waiting", "Has Pass", "Boarding"], "response_text": "\nBoarding, No Pass"}
+{"row_idx": 2, "item_id": "T3", "permutation_idx": 4, "ordered_cards": ["Has Pass", "Waiting", "Boarding", "No Pass"], "response_text": "\nBoarding, No Pass"}
+{"row_idx": 3, "item_id": "T4", "permutation_idx": 0, "ordered_cards": ["Bare Head", "Passing by", "Entering Site", "Helmet"], "response_text": "\nEntering Site, Bare Head"}
+{"row_idx": 3, "item_id": "T4", "permutation_idx": 1, "ordered_cards": ["Entering Site", "Helmet", "Bare Head", "Passing by"], "response_text": "\nEntering Site, Bare Head"}
+{"row_idx": 3, "item_id": "T4", "permutation_idx": 2, "ordered_cards": ["Entering Site", "Bare Head", "Helmet", "Passing by"], "response_text": "\nEntering Site, Bare Head"}
+{"row_idx": 3, "item_id": "T4", "permutation_idx": 3, "ordered_cards": ["Bare Head", "Entering Site", "Passing by", "Helmet"], "response_text": "\nEntering Site, Bare Head"}
+{"row_idx": 3, "item_id": "T4", "permutation_idx": 4, "ordered_cards": ["Passing by", "Entering Site", "Helmet", "Bare Head"], "response_text": "\nEntering Site, Bare Head"}
+{"row_idx": 4, "item_id": "T5", "permutation_idx": 0, "ordered_cards": ["High GPA", "Scholarship", "Low GPA", "Loan"], "response_text": "\nScholarship, Low GPA"}
+{"row_idx": 4, "item_id": "T5", "permutation_idx": 1, "ordered_cards": ["Loan", "High GPA", "Scholarship", "Low GPA"], "response_text": "\nScholarship, Low GPA"}
+{"row_idx": 4, "item_id": "T5", "permutation_idx": 2, "ordered_cards": ["Scholarship", "High GPA", "Low GPA", "Loan"], "response_text": "\nScholarship, Low GPA"}
+{"row_idx": 4, "item_id": "T5", "permutation_idx": 3, "ordered_cards": ["Loan", "Low GPA", "High GPA", "Scholarship"], "response_text": "\nScholarship, Low GPA"}
+{"row_idx": 4, "item_id": "T5", "permutation_idx": 4, "ordered_cards": ["Loan", "Scholarship", "High GPA", "Low GPA"], "response_text": "\nScholarship, Low GPA"}
+{"row_idx": 5, "item_id": "T6", "permutation_idx": 0, "ordered_cards": ["Express Lane", "20 Items", "5 Items", "Regular Lane"], "response_text": "\nExpress Lane, 20 Items"}
+{"row_idx": 5, "item_id": "T6", "permutation_idx": 1, "ordered_cards": ["20 Items", "5 Items", "Regular Lane", "Express Lane"], "response_text": "\nExpress Lane, 20 Items"}
+{"row_idx": 5, "item_id": "T6", "permutation_idx": 2, "ordered_cards": ["5 Items", "20 Items", "Express Lane", "Regular Lane"], "response_text": "\nExpress Lane, 20 Items"}
+{"row_idx": 5, "item_id": "T6", "permutation_idx": 3, "ordered_cards": ["Regular Lane", "Express Lane", "20 Items", "5 Items"], "response_text": "\nExpress Lane, 20 Items"}
+{"row_idx": 5, "item_id": "T6", "permutation_idx": 4, "ordered_cards": ["Express Lane", "20 Items", "Regular Lane", "5 Items"], "response_text": "\nExpress Lane, 20 Items"}
+{"row_idx": 6, "item_id": "T7", "permutation_idx": 0, "ordered_cards": ["Registered", "Observing", "Unregistered", "Voting"], "response_text": "\nVoting, Unregistered"}
+{"row_idx": 6, "item_id": "T7", "permutation_idx": 1, "ordered_cards": ["Voting", "Observing", "Registered", "Unregistered"], "response_text": "\nVoting, Unregistered"}
+{"row_idx": 6, "item_id": "T7", "permutation_idx": 2, "ordered_cards": ["Unregistered", "Voting", "Observing", "Registered"], "response_text": "\nVoting, Unregistered"}
+{"row_idx": 6, "item_id": "T7", "permutation_idx": 3, "ordered_cards": ["Observing", "Unregistered", "Registered", "Voting"], "response_text": "\nVoting, Unregistered"}
+{"row_idx": 6, "item_id": "T7", "permutation_idx": 4, "ordered_cards": ["Voting", "Unregistered", "Registered", "Observing"], "response_text": "\nVoting, Unregistered"}
+{"row_idx": 7, "item_id": "T8", "permutation_idx": 0, "ordered_cards": ["Bare Hands", "Handles Blood", "Gloves", "Files Papers"], "response_text": "\nHandles Blood, Bare Hands"}
+{"row_idx": 7, "item_id": "T8", "permutation_idx": 1, "ordered_cards": ["Files Papers", "Gloves", "Bare Hands", "Handles Blood"], "response_text": "\nHandles Blood, Gloves"}
+{"row_idx": 7, "item_id": "T8", "permutation_idx": 2, "ordered_cards": ["Gloves", "Files Papers", "Bare Hands", "Handles Blood"], "response_text": "Handles Blood, Gloves"}
+{"row_idx": 7, "item_id": "T8", "permutation_idx": 3, "ordered_cards": ["Handles Blood", "Bare Hands", "Gloves", "Files Papers"], "response_text": "Handles Blood, Bare Hands"}
+{"row_idx": 7, "item_id": "T8", "permutation_idx": 4, "ordered_cards": ["Bare Hands", "Files Papers", "Gloves", "Handles Blood"], "response_text": "Handles Blood, Gloves"}
+{"row_idx": 8, "item_id": "T9", "permutation_idx": 0, "ordered_cards": ["Has Visa", "Leaving", "Entering", "No Visa"], "response_text": "\nEntering, No Visa"}
+{"row_idx": 8, "item_id": "T9", "permutation_idx": 1, "ordered_cards": ["Leaving", "Entering", "Has Visa", "No Visa"], "response_text": "\nEntering, No Visa"}
+{"row_idx": 8, "item_id": "T9", "permutation_idx": 2, "ordered_cards": ["Entering", "No Visa", "Leaving", "Has Visa"], "response_text": "Entering, No Visa"}
+{"row_idx": 8, "item_id": "T9", "permutation_idx": 3, "ordered_cards": ["Entering", "Leaving", "Has Visa", "No Visa"], "response_text": "\nEntering, No Visa"}
+{"row_idx": 8, "item_id": "T9", "permutation_idx": 4, "ordered_cards": ["No Visa", "Entering", "Has Visa", "Leaving"], "response_text": "\nNo Visa, Entering"}
+{"row_idx": 9, "item_id": "T10", "permutation_idx": 0, "ordered_cards": ["Playing Games", "Reading Book", "Homework Incomplete", "Homework Done"], "response_text": "\nPlaying Games, Homework Incomplete"}
+{"row_idx": 9, "item_id": "T10", "permutation_idx": 1, "ordered_cards": ["Homework Done", "Playing Games", "Homework Incomplete", "Reading Book"], "response_text": "\nPlaying Games, Homework Incomplete"}
+{"row_idx": 9, "item_id": "T10", "permutation_idx": 2, "ordered_cards": ["Playing Games", "Homework Incomplete", "Reading Book", "Homework Done"], "response_text": "\nPlaying Games, Homework Incomplete"}
+{"row_idx": 9, "item_id": "T10", "permutation_idx": 3, "ordered_cards": ["Playing Games", "Reading Book", "Homework Done", "Homework Incomplete"], "response_text": "Playing Games, Homework Incomplete"}
+{"row_idx": 9, "item_id": "T10", "permutation_idx": 4, "ordered_cards": ["Reading Book", "Playing Games", "Homework Done", "Homework Incomplete"], "response_text": "\nPlaying Games, Homework Incomplete"}
+{"row_idx": 10, "item_id": "T11", "permutation_idx": 0, "ordered_cards": ["No Permit", "Regular Spot", "Has Permit", "Handicap Spot"], "response_text": "\nHandicap Spot, No Permit"}
+{"row_idx": 10, "item_id": "T11", "permutation_idx": 1, "ordered_cards": ["Has Permit", "Regular Spot", "Handicap Spot", "No Permit"], "response_text": "Handicap Spot, No Permit"}
+{"row_idx": 10, "item_id": "T11", "permutation_idx": 2, "ordered_cards": ["Regular Spot", "No Permit", "Handicap Spot", "Has Permit"], "response_text": "Handicap Spot, No Permit"}
+{"row_idx": 10, "item_id": "T11", "permutation_idx": 3, "ordered_cards": ["No Permit", "Handicap Spot", "Has Permit", "Regular Spot"], "response_text": "\nNo Permit, Handicap Spot"}
+{"row_idx": 10, "item_id": "T11", "permutation_idx": 4, "ordered_cards": ["Has Permit", "No Permit", "Regular Spot", "Handicap Spot"], "response_text": "Handicap Spot, No Permit"}
+{"row_idx": 11, "item_id": "T12", "permutation_idx": 0, "ordered_cards": ["Local", "Tax Paid", "No Tax", "Imported"], "response_text": "Imported, No Tax"}
+{"row_idx": 11, "item_id": "T12", "permutation_idx": 1, "ordered_cards": ["Tax Paid", "No Tax", "Local", "Imported"], "response_text": "\nImported, No Tax"}
+{"row_idx": 11, "item_id": "T12", "permutation_idx": 2, "ordered_cards": ["No Tax", "Tax Paid", "Imported", "Local"], "response_text": "\nImported, No Tax"}
+{"row_idx": 11, "item_id": "T12", "permutation_idx": 3, "ordered_cards": ["Imported", "Tax Paid", "No Tax", "Local"], "response_text": "\nImported, No Tax"}
+{"row_idx": 11, "item_id": "T12", "permutation_idx": 4, "ordered_cards": ["Imported", "Local", "No Tax", "Tax Paid"], "response_text": "\nImported, No Tax"}
+{"row_idx": 12, "item_id": "T13", "permutation_idx": 0, "ordered_cards": ["No Badge", "Server Room", "Lobby", "Has Badge"], "response_text": "\nServer Room, No Badge"}
+{"row_idx": 12, "item_id": "T13", "permutation_idx": 1, "ordered_cards": ["Server Room", "Lobby", "No Badge", "Has Badge"], "response_text": "\nServer Room, No Badge"}
+{"row_idx": 12, "item_id": "T13", "permutation_idx": 2, "ordered_cards": ["Server Room", "Has Badge", "Lobby", "No Badge"], "response_text": "\nServer Room, No Badge"}
+{"row_idx": 12, "item_id": "T13", "permutation_idx": 3, "ordered_cards": ["Lobby", "Has Badge", "Server Room", "No Badge"], "response_text": "\nServer Room, No Badge"}
+{"row_idx": 12, "item_id": "T13", "permutation_idx": 4, "ordered_cards": ["Has Badge", "Server Room", "No Badge", "Lobby"], "response_text": "\nServer Room, No Badge"}
+{"row_idx": 13, "item_id": "T14", "permutation_idx": 0, "ordered_cards": ["No Tag", "Shot Rabbit", "Has Tag", "Shot Deer"], "response_text": "\nShot Deer, No Tag"}
+{"row_idx": 13, "item_id": "T14", "permutation_idx": 1, "ordered_cards": ["Shot Deer", "Shot Rabbit", "No Tag", "Has Tag"], "response_text": "\nShot Deer, No Tag"}
+{"row_idx": 13, "item_id": "T14", "permutation_idx": 2, "ordered_cards": ["Has Tag", "Shot Deer", "No Tag", "Shot Rabbit"], "response_text": "\nShot Deer, No Tag"}
+{"row_idx": 13, "item_id": "T14", "permutation_idx": 3, "ordered_cards": ["Shot Deer", "Shot Rabbit", "Has Tag", "No Tag"], "response_text": "\nShot Deer, No Tag"}
+{"row_idx": 13, "item_id": "T14", "permutation_idx": 4, "ordered_cards": ["Shot Deer", "Has Tag", "No Tag", "Shot Rabbit"], "response_text": "\nShot Deer, No Tag"}
+{"row_idx": 14, "item_id": "T15", "permutation_idx": 0, "ordered_cards": ["Window Seat", "Refuses", "Exit Row", "Willing"], "response_text": "\nExit Row, Refuses"}
+{"row_idx": 14, "item_id": "T15", "permutation_idx": 1, "ordered_cards": ["Window Seat", "Willing", "Exit Row", "Refuses"], "response_text": "\nExit Row, Refuses"}
+{"row_idx": 14, "item_id": "T15", "permutation_idx": 2, "ordered_cards": ["Exit Row", "Willing", "Window Seat", "Refuses"], "response_text": "\nExit Row, Refuses"}
+{"row_idx": 14, "item_id": "T15", "permutation_idx": 3, "ordered_cards": ["Refuses", "Window Seat", "Willing", "Exit Row"], "response_text": "\nExit Row, Refuses"}
+{"row_idx": 14, "item_id": "T15", "permutation_idx": 4, "ordered_cards": ["Window Seat", "Refuses", "Willing", "Exit Row"], "response_text": "\nExit Row, Refuses"}
+{"row_idx": 15, "item_id": "T16", "permutation_idx": 0, "ordered_cards": ["Approved", "$50 Purchase", "$1500 Purchase", "Not Approved"], "response_text": "\n$1500 Purchase, Not Approved"}
+{"row_idx": 15, "item_id": "T16", "permutation_idx": 1, "ordered_cards": ["Not Approved", "Approved", "$50 Purchase", "$1500 Purchase"], "response_text": "\nNot Approved, $1500 Purchase"}
+{"row_idx": 15, "item_id": "T16", "permutation_idx": 2, "ordered_cards": ["$50 Purchase", "Approved", "Not Approved", "$1500 Purchase"], "response_text": "\n$1500 Purchase, Not Approved"}
+{"row_idx": 15, "item_id": "T16", "permutation_idx": 3, "ordered_cards": ["Not Approved", "$50 Purchase", "Approved", "$1500 Purchase"], "response_text": "\nNot Approved, $1500 Purchase"}
+{"row_idx": 15, "item_id": "T16", "permutation_idx": 4, "ordered_cards": ["Approved", "$1500 Purchase", "$50 Purchase", "Not Approved"], "response_text": "\n$1500 Purchase, Not Approved"}
+{"row_idx": 16, "item_id": "T17", "permutation_idx": 0, "ordered_cards": ["Dog", "Leash", "Cat", "Running Free"], "response_text": "\nDog, Running Free"}
+{"row_idx": 16, "item_id": "T17", "permutation_idx": 1, "ordered_cards": ["Dog", "Leash", "Running Free", "Cat"], "response_text": "\nDog, Running Free"}
+{"row_idx": 16, "item_id": "T17", "permutation_idx": 2, "ordered_cards": ["Running Free", "Leash", "Cat", "Dog"], "response_text": "\nDog, Running Free"}
+{"row_idx": 16, "item_id": "T17", "permutation_idx": 3, "ordered_cards": ["Leash", "Running Free", "Dog", "Cat"], "response_text": "\nDog, Leash"}
+{"row_idx": 16, "item_id": "T17", "permutation_idx": 4, "ordered_cards": ["Dog", "Cat", "Leash", "Running Free"], "response_text": "\nDog, Running Free"}
+{"row_idx": 17, "item_id": "T18", "permutation_idx": 0, "ordered_cards": ["Discount Taken", "Over 65", "30 years old", "Full Price"], "response_text": "\nDiscount Taken, 30 years old"}
+{"row_idx": 17, "item_id": "T18", "permutation_idx": 1, "ordered_cards": ["Over 65", "Full Price", "30 years old", "Discount Taken"], "response_text": "\nDiscount Taken, 30 years old"}
+{"row_idx": 17, "item_id": "T18", "permutation_idx": 2, "ordered_cards": ["Full Price", "30 years old", "Over 65", "Discount Taken"], "response_text": "\nDiscount Taken, 30 years old"}
+{"row_idx": 17, "item_id": "T18", "permutation_idx": 3, "ordered_cards": ["Discount Taken", "Full Price", "30 years old", "Over 65"], "response_text": "\nDiscount Taken, 30 years old"}
+{"row_idx": 17, "item_id": "T18", "permutation_idx": 4, "ordered_cards": ["Full Price", "30 years old", "Discount Taken", "Over 65"], "response_text": "\nDiscount Taken, Over 65"}
+{"row_idx": 18, "item_id": "T19", "permutation_idx": 0, "ordered_cards": ["Borrowing", "No Card", "Has Card", "Reading inside"], "response_text": "\nBorrowing, No Card"}
+{"row_idx": 18, "item_id": "T19", "permutation_idx": 1, "ordered_cards": ["No Card", "Reading inside", "Borrowing", "Has Card"], "response_text": "\nBorrowing, No Card"}
+{"row_idx": 18, "item_id": "T19", "permutation_idx": 2, "ordered_cards": ["No Card", "Borrowing", "Has Card", "Reading inside"], "response_text": "\nNo Card, Borrowing"}
+{"row_idx": 18, "item_id": "T19", "permutation_idx": 3, "ordered_cards": ["Borrowing", "Has Card", "No Card", "Reading inside"], "response_text": "\nBorrowing, No Card"}
+{"row_idx": 18, "item_id": "T19", "permutation_idx": 4, "ordered_cards": ["No Card", "Reading inside", "Has Card", "Borrowing"], "response_text": "\nBorrowing, No Card"}
+{"row_idx": 19, "item_id": "T20", "permutation_idx": 0, "ordered_cards": ["Has Permit", "Lit Fire", "Set up Tent", "No Permit"], "response_text": "\nLit Fire, No Permit"}
+{"row_idx": 19, "item_id": "T20", "permutation_idx": 1, "ordered_cards": ["Lit Fire", "Has Permit", "No Permit", "Set up Tent"], "response_text": "\nLit Fire, No Permit"}
+{"row_idx": 19, "item_id": "T20", "permutation_idx": 2, "ordered_cards": ["Set up Tent", "Has Permit", "Lit Fire", "No Permit"], "response_text": "\nLit Fire, No Permit"}
+{"row_idx": 19, "item_id": "T20", "permutation_idx": 3, "ordered_cards": ["Set up Tent", "No Permit", "Has Permit", "Lit Fire"], "response_text": "\nLit Fire, No Permit"}
+{"row_idx": 19, "item_id": "T20", "permutation_idx": 4, "ordered_cards": ["Lit Fire", "No Permit", "Set up Tent", "Has Permit"], "response_text": "\nLit Fire, No Permit"}
+{"row_idx": 20, "item_id": "T21", "permutation_idx": 0, "ordered_cards": ["Moving", "Stopped", "Green Light", "Red Light"], "response_text": "\nRed Light, Stopped"}
+{"row_idx": 20, "item_id": "T21", "permutation_idx": 1, "ordered_cards": ["Stopped", "Green Light", "Moving", "Red Light"], "response_text": "\nRed Light, Stopped"}
+{"row_idx": 20, "item_id": "T21", "permutation_idx": 2, "ordered_cards": ["Green Light", "Red Light", "Stopped", "Moving"], "response_text": "\nRed Light, Stopped"}
+{"row_idx": 20, "item_id": "T21", "permutation_idx": 3, "ordered_cards": ["Stopped", "Moving", "Green Light", "Red Light"], "response_text": "\nRed Light, Stopped"}
+{"row_idx": 20, "item_id": "T21", "permutation_idx": 4, "ordered_cards": ["Green Light", "Stopped", "Red Light", "Moving"], "response_text": "\nRed Light, Stopped"}
+{"row_idx": 21, "item_id": "T22", "permutation_idx": 0, "ordered_cards": ["Street Clothes", "In Office", "Wearing Suit", "Entering Room"], "response_text": "\nEntering Room, Street Clothes"}
+{"row_idx": 21, "item_id": "T22", "permutation_idx": 1, "ordered_cards": ["Street Clothes", "In Office", "Entering Room", "Wearing Suit"], "response_text": "\nEntering Room, Street Clothes"}
+{"row_idx": 21, "item_id": "T22", "permutation_idx": 2, "ordered_cards": ["In Office", "Entering Room", "Street Clothes", "Wearing Suit"], "response_text": "\nEntering Room, Street Clothes"}
+{"row_idx": 21, "item_id": "T22", "permutation_idx": 3, "ordered_cards": ["In Office", "Entering Room", "Wearing Suit", "Street Clothes"], "response_text": "\nEntering Room, Street Clothes"}
+{"row_idx": 21, "item_id": "T22", "permutation_idx": 4, "ordered_cards": ["Street Clothes", "Entering Room", "Wearing Suit", "In Office"], "response_text": "\nEntering Room, Wearing Suit"}
+{"row_idx": 22, "item_id": "T23", "permutation_idx": 0, "ordered_cards": ["Buying Gum", "Showed ID", "No ID", "Buying Cigs"], "response_text": "\nBuying Cigs, No ID"}
+{"row_idx": 22, "item_id": "T23", "permutation_idx": 1, "ordered_cards": ["Buying Gum", "Buying Cigs", "No ID", "Showed ID"], "response_text": "Buying Cigs, No ID"}
+{"row_idx": 22, "item_id": "T23", "permutation_idx": 2, "ordered_cards": ["Buying Cigs", "No ID", "Showed ID", "Buying Gum"], "response_text": "\nBuying Cigs, No ID"}
+{"row_idx": 22, "item_id": "T23", "permutation_idx": 3, "ordered_cards": ["Buying Cigs", "No ID", "Buying Gum", "Showed ID"], "response_text": "Buying Cigs, No ID"}
+{"row_idx": 22, "item_id": "T23", "permutation_idx": 4, "ordered_cards": ["No ID", "Buying Cigs", "Buying Gum", "Showed ID"], "response_text": "\nBuying Cigs, No ID"}
+{"row_idx": 23, "item_id": "T24", "permutation_idx": 0, "ordered_cards": ["Joined Troop", "Task Incomplete", "Completed Task", "Earned Badge"], "response_text": "Earned Badge, Task Incomplete"}
+{"row_idx": 23, "item_id": "T24", "permutation_idx": 1, "ordered_cards": ["Earned Badge", "Task Incomplete", "Joined Troop", "Completed Task"], "response_text": "Earned Badge, Task Incomplete"}
+{"row_idx": 23, "item_id": "T24", "permutation_idx": 2, "ordered_cards": ["Task Incomplete", "Completed Task", "Joined Troop", "Earned Badge"], "response_text": "\nEarned Badge, Task Incomplete"}
+{"row_idx": 23, "item_id": "T24", "permutation_idx": 3, "ordered_cards": ["Earned Badge", "Joined Troop", "Completed Task", "Task Incomplete"], "response_text": "\nEarned Badge, Task Incomplete"}
+{"row_idx": 23, "item_id": "T24", "permutation_idx": 4, "ordered_cards": ["Completed Task", "Earned Badge", "Joined Troop", "Task Incomplete"], "response_text": "Earned Badge, Task Incomplete"}
+{"row_idx": 24, "item_id": "T25", "permutation_idx": 0, "ordered_cards": ["Walking", "No Ticket", "Riding Subway", "Has Ticket"], "response_text": "\nRiding Subway, No Ticket"}
+{"row_idx": 24, "item_id": "T25", "permutation_idx": 1, "ordered_cards": ["Riding Subway", "No Ticket", "Walking", "Has Ticket"], "response_text": "Riding Subway, No Ticket"}
+{"row_idx": 24, "item_id": "T25", "permutation_idx": 2, "ordered_cards": ["Has Ticket", "Riding Subway", "Walking", "No Ticket"], "response_text": "\nRiding Subway, No Ticket"}
+{"row_idx": 24, "item_id": "T25", "permutation_idx": 3, "ordered_cards": ["Riding Subway", "Walking", "Has Ticket", "No Ticket"], "response_text": "Riding Subway, No Ticket"}
+{"row_idx": 24, "item_id": "T25", "permutation_idx": 4, "ordered_cards": ["Has Ticket", "No Ticket", "Riding Subway", "Walking"], "response_text": "Riding Subway, No Ticket"}
+{"row_idx": 25, "item_id": "T26", "permutation_idx": 0, "ordered_cards": ["Has Pass", "No Pass", "Late", "On Time"], "response_text": "\nLate, No Pass"}
+{"row_idx": 25, "item_id": "T26", "permutation_idx": 1, "ordered_cards": ["Late", "No Pass", "Has Pass", "On Time"], "response_text": "Late, No Pass"}
+{"row_idx": 25, "item_id": "T26", "permutation_idx": 2, "ordered_cards": ["On Time", "Has Pass", "No Pass", "Late"], "response_text": "Late, No Pass"}
+{"row_idx": 25, "item_id": "T26", "permutation_idx": 3, "ordered_cards": ["On Time", "Late", "No Pass", "Has Pass"], "response_text": "Late, No Pass"}
+{"row_idx": 25, "item_id": "T26", "permutation_idx": 4, "ordered_cards": ["On Time", "Late", "Has Pass", "No Pass"], "response_text": "Late, No Pass"}
+{"row_idx": 26, "item_id": "T27", "permutation_idx": 0, "ordered_cards": ["No Contract", "Visited Shelter", "Adopted Pet", "Signed Contract"], "response_text": "Adopted Pet, No Contract"}
+{"row_idx": 26, "item_id": "T27", "permutation_idx": 1, "ordered_cards": ["Adopted Pet", "Visited Shelter", "No Contract", "Signed Contract"], "response_text": "\nAdopted Pet, No Contract"}
+{"row_idx": 26, "item_id": "T27", "permutation_idx": 2, "ordered_cards": ["Signed Contract", "Adopted Pet", "Visited Shelter", "No Contract"], "response_text": "\nAdopted Pet, No Contract"}
+{"row_idx": 26, "item_id": "T27", "permutation_idx": 3, "ordered_cards": ["Visited Shelter", "Adopted Pet", "Signed Contract", "No Contract"], "response_text": "Adopted Pet, No Contract"}
+{"row_idx": 26, "item_id": "T27", "permutation_idx": 4, "ordered_cards": ["Adopted Pet", "Visited Shelter", "Signed Contract", "No Contract"], "response_text": "\nAdopted Pet, No Contract"}
+{"row_idx": 27, "item_id": "T28", "permutation_idx": 0, "ordered_cards": ["Withdrawal", "No PIN", "Check Balance", "Entered PIN"], "response_text": "Withdrawal, No PIN"}
+{"row_idx": 27, "item_id": "T28", "permutation_idx": 1, "ordered_cards": ["No PIN", "Withdrawal", "Entered PIN", "Check Balance"], "response_text": "\nWithdrawal, No PIN"}
+{"row_idx": 27, "item_id": "T28", "permutation_idx": 2, "ordered_cards": ["Entered PIN", "Check Balance", "No PIN", "Withdrawal"], "response_text": "\nWithdrawal, No PIN"}
+{"row_idx": 27, "item_id": "T28", "permutation_idx": 3, "ordered_cards": ["Withdrawal", "Check Balance", "Entered PIN", "No PIN"], "response_text": "Withdrawal, No PIN"}
+{"row_idx": 27, "item_id": "T28", "permutation_idx": 4, "ordered_cards": ["Entered PIN", "Withdrawal", "Check Balance", "No PIN"], "response_text": "Withdrawal, No PIN"}
+{"row_idx": 28, "item_id": "T29", "permutation_idx": 0, "ordered_cards": ["Snorkeling", "Certified", "Diving", "Uncertified"], "response_text": "Diving, Uncertified"}
+{"row_idx": 28, "item_id": "T29", "permutation_idx": 1, "ordered_cards": ["Snorkeling", "Diving", "Uncertified", "Certified"], "response_text": "\nDiving, Uncertified"}
+{"row_idx": 28, "item_id": "T29", "permutation_idx": 2, "ordered_cards": ["Diving", "Snorkeling", "Certified", "Uncertified"], "response_text": "\nDiving, Uncertified"}
+{"row_idx": 28, "item_id": "T29", "permutation_idx": 3, "ordered_cards": ["Certified", "Uncertified", "Diving", "Snorkeling"], "response_text": "\nDiving, Uncertified"}
+{"row_idx": 28, "item_id": "T29", "permutation_idx": 4, "ordered_cards": ["Certified", "Diving", "Uncertified", "Snorkeling"], "response_text": "\nDiving, Uncertified"}
+{"row_idx": 29, "item_id": "T30", "permutation_idx": 0, "ordered_cards": ["No Label", "Fragile Item", "Standard Item", "Has Label"], "response_text": "\nFragile Item, No Label"}
+{"row_idx": 29, "item_id": "T30", "permutation_idx": 1, "ordered_cards": ["Standard Item", "No Label", "Has Label", "Fragile Item"], "response_text": "\nFragile Item, No Label"}
+{"row_idx": 29, "item_id": "T30", "permutation_idx": 2, "ordered_cards": ["Standard Item", "Fragile Item", "No Label", "Has Label"], "response_text": "\nFragile Item, No Label"}
+{"row_idx": 29, "item_id": "T30", "permutation_idx": 3, "ordered_cards": ["Has Label", "Standard Item", "No Label", "Fragile Item"], "response_text": "\nFragile Item, No Label"}
+{"row_idx": 29, "item_id": "T30", "permutation_idx": 4, "ordered_cards": ["Fragile Item", "Standard Item", "No Label", "Has Label"], "response_text": "\nFragile Item, No Label"}
+{"row_idx": 30, "item_id": "T31", "permutation_idx": 0, "ordered_cards": ["Has Receipt", "Claiming Warranty", "No Receipt", "Buying New"], "response_text": "Claiming Warranty, No Receipt"}
+{"row_idx": 30, "item_id": "T31", "permutation_idx": 1, "ordered_cards": ["Claiming Warranty", "Buying New", "No Receipt", "Has Receipt"], "response_text": "\nClaiming Warranty, No Receipt"}
+{"row_idx": 30, "item_id": "T31", "permutation_idx": 2, "ordered_cards": ["Has Receipt", "No Receipt", "Claiming Warranty", "Buying New"], "response_text": "Claiming Warranty, No Receipt"}
+{"row_idx": 30, "item_id": "T31", "permutation_idx": 3, "ordered_cards": ["No Receipt", "Buying New", "Has Receipt", "Claiming Warranty"], "response_text": "\nClaiming Warranty, No Receipt"}
+{"row_idx": 30, "item_id": "T31", "permutation_idx": 4, "ordered_cards": ["Has Receipt", "Claiming Warranty", "Buying New", "No Receipt"], "response_text": "Claiming Warranty, No Receipt"}
+{"row_idx": 31, "item_id": "T32", "permutation_idx": 0, "ordered_cards": ["Entering Pool", "Dry", "Sunbathing", "Showered"], "response_text": "\nEntering Pool, Dry"}
+{"row_idx": 31, "item_id": "T32", "permutation_idx": 1, "ordered_cards": ["Showered", "Entering Pool", "Dry", "Sunbathing"], "response_text": "\nEntering Pool, Dry"}
+{"row_idx": 31, "item_id": "T32", "permutation_idx": 2, "ordered_cards": ["Sunbathing", "Dry", "Showered", "Entering Pool"], "response_text": "Entering Pool, Dry"}
+{"row_idx": 31, "item_id": "T32", "permutation_idx": 3, "ordered_cards": ["Dry", "Entering Pool", "Showered", "Sunbathing"], "response_text": "Entering Pool, Dry"}
+{"row_idx": 31, "item_id": "T32", "permutation_idx": 4, "ordered_cards": ["Dry", "Sunbathing", "Showered", "Entering Pool"], "response_text": "\nEntering Pool, Dry"}
+{"row_idx": 32, "item_id": "T33", "permutation_idx": 0, "ordered_cards": ["Legal age", "Drinking soda", "Drinking alcohol", "Underage"], "response_text": "Drinking alcohol, Underage"}
+{"row_idx": 32, "item_id": "T33", "permutation_idx": 1, "ordered_cards": ["Underage", "Legal age", "Drinking soda", "Drinking alcohol"], "response_text": "Underage, Drinking alcohol"}
+{"row_idx": 32, "item_id": "T33", "permutation_idx": 2, "ordered_cards": ["Legal age", "Underage", "Drinking soda", "Drinking alcohol"], "response_text": "Drinking alcohol, Underage"}
+{"row_idx": 32, "item_id": "T33", "permutation_idx": 3, "ordered_cards": ["Drinking alcohol", "Drinking soda", "Legal age", "Underage"], "response_text": "Drinking alcohol, Underage"}
+{"row_idx": 32, "item_id": "T33", "permutation_idx": 4, "ordered_cards": ["Underage", "Drinking alcohol", "Drinking soda", "Legal age"], "response_text": "Underage, Drinking alcohol"}
+{"row_idx": 33, "item_id": "T34", "permutation_idx": 0, "ordered_cards": ["General film", "Age-restricted film", "Shows ID", "No ID"], "response_text": "\nAge-restricted film, No ID"}
+{"row_idx": 33, "item_id": "T34", "permutation_idx": 1, "ordered_cards": ["Age-restricted film", "General film", "Shows ID", "No ID"], "response_text": "Age-restricted film, No ID"}
+{"row_idx": 33, "item_id": "T34", "permutation_idx": 2, "ordered_cards": ["No ID", "General film", "Shows ID", "Age-restricted film"], "response_text": "\nAge-restricted film, No ID"}
+{"row_idx": 33, "item_id": "T34", "permutation_idx": 3, "ordered_cards": ["Age-restricted film", "Shows ID", "General film", "No ID"], "response_text": "\nAge-restricted film, No ID"}
+{"row_idx": 33, "item_id": "T34", "permutation_idx": 4, "ordered_cards": ["Shows ID", "No ID", "General film", "Age-restricted film"], "response_text": "\nAge-restricted film, No ID"}
+{"row_idx": 34, "item_id": "T35", "permutation_idx": 0, "ordered_cards": ["Sending email", "Has stamp", "Sending letter", "No stamp"], "response_text": "\nSending letter, No stamp"}
+{"row_idx": 34, "item_id": "T35", "permutation_idx": 1, "ordered_cards": ["No stamp", "Sending email", "Sending letter", "Has stamp"], "response_text": "\nSending letter, No stamp"}
+{"row_idx": 34, "item_id": "T35", "permutation_idx": 2, "ordered_cards": ["Sending email", "No stamp", "Sending letter", "Has stamp"], "response_text": "Sending letter, No stamp"}
+{"row_idx": 34, "item_id": "T35", "permutation_idx": 3, "ordered_cards": ["Sending letter", "Sending email", "Has stamp", "No stamp"], "response_text": "Sending letter, No stamp"}
+{"row_idx": 34, "item_id": "T35", "permutation_idx": 4, "ordered_cards": ["No stamp", "Has stamp", "Sending email", "Sending letter"], "response_text": "Sending letter, No stamp"}
+{"row_idx": 35, "item_id": "T36", "permutation_idx": 0, "ordered_cards": ["Compensated", "Not compensated", "Extra hours", "Regular hours"], "response_text": "\nExtra hours, Not compensated"}
+{"row_idx": 35, "item_id": "T36", "permutation_idx": 1, "ordered_cards": ["Extra hours", "Not compensated", "Compensated", "Regular hours"], "response_text": "Extra hours, Not compensated"}
+{"row_idx": 35, "item_id": "T36", "permutation_idx": 2, "ordered_cards": ["Compensated", "Regular hours", "Extra hours", "Not compensated"], "response_text": "\nExtra hours, Not compensated"}
+{"row_idx": 35, "item_id": "T36", "permutation_idx": 3, "ordered_cards": ["Regular hours", "Not compensated", "Compensated", "Extra hours"], "response_text": "\nExtra hours, Not compensated"}
+{"row_idx": 35, "item_id": "T36", "permutation_idx": 4, "ordered_cards": ["Extra hours", "Regular hours", "Not compensated", "Compensated"], "response_text": "Extra hours, Not compensated"}
+{"row_idx": 36, "item_id": "T37", "permutation_idx": 0, "ordered_cards": ["Not informed", "Service charge", "No charge", "Informed"], "response_text": "\nService charge, Not informed"}
+{"row_idx": 36, "item_id": "T37", "permutation_idx": 1, "ordered_cards": ["Not informed", "No charge", "Informed", "Service charge"], "response_text": "Service charge, Not informed"}
+{"row_idx": 36, "item_id": "T37", "permutation_idx": 2, "ordered_cards": ["Informed", "Not informed", "No charge", "Service charge"], "response_text": "Service charge, Not informed"}
+{"row_idx": 36, "item_id": "T37", "permutation_idx": 3, "ordered_cards": ["Service charge", "Not informed", "Informed", "No charge"], "response_text": "\nService charge, Not informed"}
+{"row_idx": 36, "item_id": "T37", "permutation_idx": 4, "ordered_cards": ["Not informed", "Service charge", "Informed", "No charge"], "response_text": "\nService charge, Not informed"}
+{"row_idx": 37, "item_id": "T38", "permutation_idx": 0, "ordered_cards": ["Office", "Protective gear", "Hazardous zone", "No gear"], "response_text": "Hazardous zone, No gear"}
+{"row_idx": 37, "item_id": "T38", "permutation_idx": 1, "ordered_cards": ["Protective gear", "Hazardous zone", "No gear", "Office"], "response_text": "\nHazardous zone, No gear"}
+{"row_idx": 37, "item_id": "T38", "permutation_idx": 2, "ordered_cards": ["Office", "No gear", "Hazardous zone", "Protective gear"], "response_text": "Hazardous zone, No gear"}
+{"row_idx": 37, "item_id": "T38", "permutation_idx": 3, "ordered_cards": ["Protective gear", "Hazardous zone", "Office", "No gear"], "response_text": "\nHazardous zone, No gear"}
+{"row_idx": 37, "item_id": "T38", "permutation_idx": 4, "ordered_cards": ["Office", "Protective gear", "No gear", "Hazardous zone"], "response_text": "\nHazardous zone, No gear"}
+{"row_idx": 38, "item_id": "T39", "permutation_idx": 0, "ordered_cards": ["Whistle blown", "Game paused", "No whistle", "Game continues"], "response_text": "\nWhistle blown, Game continues"}
+{"row_idx": 38, "item_id": "T39", "permutation_idx": 1, "ordered_cards": ["Whistle blown", "Game continues", "Game paused", "No whistle"], "response_text": "\nWhistle blown, Game continues"}
+{"row_idx": 38, "item_id": "T39", "permutation_idx": 2, "ordered_cards": ["No whistle", "Game continues", "Whistle blown", "Game paused"], "response_text": "\nNo whistle, Game continues, Whistle blown, Game paused"}
+{"row_idx": 38, "item_id": "T39", "permutation_idx": 3, "ordered_cards": ["Game continues", "No whistle", "Whistle blown", "Game paused"], "response_text": "\nWhistle blown, Game continues"}
+{"row_idx": 38, "item_id": "T39", "permutation_idx": 4, "ordered_cards": ["Whistle blown", "Game continues", "No whistle", "Game paused"], "response_text": "\nWhistle blown, Game continues"}
+{"row_idx": 39, "item_id": "T40", "permutation_idx": 0, "ordered_cards": ["Earns points", "Loyalty card", "No points", "No card"], "response_text": "\nLoyalty card, No points"}
+{"row_idx": 39, "item_id": "T40", "permutation_idx": 1, "ordered_cards": ["No card", "Earns points", "Loyalty card", "No points"], "response_text": "\nLoyalty card, No points"}
+{"row_idx": 39, "item_id": "T40", "permutation_idx": 2, "ordered_cards": ["Loyalty card", "Earns points", "No points", "No card"], "response_text": "\nLoyalty card, No points"}
+{"row_idx": 39, "item_id": "T40", "permutation_idx": 3, "ordered_cards": ["No points", "Loyalty card", "No card", "Earns points"], "response_text": "\nLoyalty card, No points"}
+{"row_idx": 39, "item_id": "T40", "permutation_idx": 4, "ordered_cards": ["No card", "Loyalty card", "Earns points", "No points"], "response_text": "\nLoyalty card, No points"}
+{"row_idx": 40, "item_id": "T41", "permutation_idx": 0, "ordered_cards": ["Pays fine", "Speeding", "Normal speed", "No fine"], "response_text": "\nSpeeding, No fine"}
+{"row_idx": 40, "item_id": "T41", "permutation_idx": 1, "ordered_cards": ["No fine", "Normal speed", "Pays fine", "Speeding"], "response_text": "\nSpeeding, No fine"}
+{"row_idx": 40, "item_id": "T41", "permutation_idx": 2, "ordered_cards": ["Normal speed", "No fine", "Pays fine", "Speeding"], "response_text": "\nSpeeding, No fine"}
+{"row_idx": 40, "item_id": "T41", "permutation_idx": 3, "ordered_cards": ["Pays fine", "Speeding", "No fine", "Normal speed"], "response_text": "\nSpeeding, No fine"}
+{"row_idx": 40, "item_id": "T41", "permutation_idx": 4, "ordered_cards": ["Pays fine", "Normal speed", "Speeding", "No fine"], "response_text": "\nSpeeding, No fine"}
+{"row_idx": 41, "item_id": "T42", "permutation_idx": 0, "ordered_cards": ["Waiting outside", "Passed security", "Skipped security", "Boarding plane"], "response_text": "\nBoarding plane, Skipped security"}
+{"row_idx": 41, "item_id": "T42", "permutation_idx": 1, "ordered_cards": ["Waiting outside", "Skipped security", "Passed security", "Boarding plane"], "response_text": "\nBoarding plane, Skipped security"}
+{"row_idx": 41, "item_id": "T42", "permutation_idx": 2, "ordered_cards": ["Waiting outside", "Skipped security", "Boarding plane", "Passed security"], "response_text": "\nBoarding plane, Skipped security"}
+{"row_idx": 41, "item_id": "T42", "permutation_idx": 3, "ordered_cards": ["Waiting outside", "Passed security", "Boarding plane", "Skipped security"], "response_text": "\nBoarding plane, Skipped security"}
+{"row_idx": 41, "item_id": "T42", "permutation_idx": 4, "ordered_cards": ["Boarding plane", "Passed security", "Skipped security", "Waiting outside"], "response_text": "\nBoarding plane, Skipped security"}
+{"row_idx": 42, "item_id": "T43", "permutation_idx": 0, "ordered_cards": ["No prescription", "Over-the-counter", "Has prescription", "Prescription drug"], "response_text": "\nNo prescription, Prescription drug"}
+{"row_idx": 42, "item_id": "T43", "permutation_idx": 1, "ordered_cards": ["No prescription", "Prescription drug", "Has prescription", "Over-the-counter"], "response_text": "\nNo prescription, Prescription drug"}
+{"row_idx": 42, "item_id": "T43", "permutation_idx": 2, "ordered_cards": ["No prescription", "Prescription drug", "Over-the-counter", "Has prescription"], "response_text": "\nNo prescription, Prescription drug"}
+{"row_idx": 42, "item_id": "T43", "permutation_idx": 3, "ordered_cards": ["Has prescription", "Prescription drug", "Over-the-counter", "No prescription"], "response_text": "\nPrescription drug, No prescription"}
+{"row_idx": 42, "item_id": "T43", "permutation_idx": 4, "ordered_cards": ["Has prescription", "No prescription", "Over-the-counter", "Prescription drug"], "response_text": "\nPrescription drug, No prescription"}
+{"row_idx": 43, "item_id": "T44", "permutation_idx": 0, "ordered_cards": ["Courtroom", "Hallway", "Talking", "Silent"], "response_text": "\nCourtroom, Talking"}
+{"row_idx": 43, "item_id": "T44", "permutation_idx": 1, "ordered_cards": ["Courtroom", "Talking", "Silent", "Hallway"], "response_text": "\nCourtroom, Talking"}
+{"row_idx": 43, "item_id": "T44", "permutation_idx": 2, "ordered_cards": ["Courtroom", "Silent", "Hallway", "Talking"], "response_text": "\nCourtroom, Talking"}
+{"row_idx": 43, "item_id": "T44", "permutation_idx": 3, "ordered_cards": ["Silent", "Hallway", "Talking", "Courtroom"], "response_text": "\nCourtroom, Talking"}
+{"row_idx": 43, "item_id": "T44", "permutation_idx": 4, "ordered_cards": ["Courtroom", "Hallway", "Silent", "Talking"], "response_text": "\nCourtroom, Talking"}
+{"row_idx": 44, "item_id": "T45", "permutation_idx": 0, "ordered_cards": ["Illegal parking", "No ticket", "Legal parking", "Gets ticket"], "response_text": "\nIllegal parking, No ticket"}
+{"row_idx": 44, "item_id": "T45", "permutation_idx": 1, "ordered_cards": ["Illegal parking", "No ticket", "Gets ticket", "Legal parking"], "response_text": "\nIllegal parking, No ticket"}
+{"row_idx": 44, "item_id": "T45", "permutation_idx": 2, "ordered_cards": ["No ticket", "Gets ticket", "Illegal parking", "Legal parking"], "response_text": "\nNo ticket, Illegal parking"}
+{"row_idx": 44, "item_id": "T45", "permutation_idx": 3, "ordered_cards": ["No ticket", "Legal parking", "Gets ticket", "Illegal parking"], "response_text": "\nIllegal parking, No ticket"}
+{"row_idx": 44, "item_id": "T45", "permutation_idx": 4, "ordered_cards": ["No ticket", "Illegal parking", "Legal parking", "Gets ticket"], "response_text": "\nNo ticket, Illegal parking"}
+{"row_idx": 45, "item_id": "T46", "permutation_idx": 0, "ordered_cards": ["Passing by", "No ticket", "Has ticket", "Entering museum"], "response_text": "\nEntering museum, No ticket"}
+{"row_idx": 45, "item_id": "T46", "permutation_idx": 1, "ordered_cards": ["Has ticket", "Passing by", "No ticket", "Entering museum"], "response_text": "\nEntering museum, No ticket"}
+{"row_idx": 45, "item_id": "T46", "permutation_idx": 2, "ordered_cards": ["Has ticket", "Entering museum", "Passing by", "No ticket"], "response_text": "\nEntering museum, No ticket"}
+{"row_idx": 45, "item_id": "T46", "permutation_idx": 3, "ordered_cards": ["Entering museum", "Has ticket", "Passing by", "No ticket"], "response_text": "\nEntering museum, No ticket"}
+{"row_idx": 45, "item_id": "T46", "permutation_idx": 4, "ordered_cards": ["No ticket", "Entering museum", "Has ticket", "Passing by"], "response_text": "\nEntering museum, No ticket"}
+{"row_idx": 46, "item_id": "T47", "permutation_idx": 0, "ordered_cards": ["Breaks terms", "Verbal agreement", "Signed contract", "Honors terms"], "response_text": "\nSigned contract, Breaks terms"}
+{"row_idx": 46, "item_id": "T47", "permutation_idx": 1, "ordered_cards": ["Honors terms", "Breaks terms", "Verbal agreement", "Signed contract"], "response_text": "\nSigned contract, Breaks terms"}
+{"row_idx": 46, "item_id": "T47", "permutation_idx": 2, "ordered_cards": ["Signed contract", "Breaks terms", "Verbal agreement", "Honors terms"], "response_text": "\nSigned contract, Breaks terms"}
+{"row_idx": 46, "item_id": "T47", "permutation_idx": 3, "ordered_cards": ["Breaks terms", "Honors terms", "Verbal agreement", "Signed contract"], "response_text": "\nSigned contract, Breaks terms"}
+{"row_idx": 46, "item_id": "T47", "permutation_idx": 4, "ordered_cards": ["Breaks terms", "Honors terms", "Signed contract", "Verbal agreement"], "response_text": "\nSigned contract, Breaks terms"}
+{"row_idx": 47, "item_id": "T48", "permutation_idx": 0, "ordered_cards": ["Adult in car", "Child in car", "No seatbelt", "Seatbelt on"], "response_text": "\nChild in car, No seatbelt"}
+{"row_idx": 47, "item_id": "T48", "permutation_idx": 1, "ordered_cards": ["Adult in car", "Child in car", "Seatbelt on", "No seatbelt"], "response_text": "\nChild in car, No seatbelt"}
+{"row_idx": 47, "item_id": "T48", "permutation_idx": 2, "ordered_cards": ["Adult in car", "Seatbelt on", "No seatbelt", "Child in car"], "response_text": "\nChild in car, No seatbelt"}
+{"row_idx": 47, "item_id": "T48", "permutation_idx": 3, "ordered_cards": ["No seatbelt", "Adult in car", "Seatbelt on", "Child in car"], "response_text": "\nChild in car, No seatbelt"}
+{"row_idx": 47, "item_id": "T48", "permutation_idx": 4, "ordered_cards": ["Child in car", "Adult in car", "Seatbelt on", "No seatbelt"], "response_text": "\nChild in car, No seatbelt"}
+{"row_idx": 48, "item_id": "T49", "permutation_idx": 0, "ordered_cards": ["Hospital ward", "Washed hands", "Unwashed hands", "Hospital lobby"], "response_text": "\nHospital ward, Unwashed hands"}
+{"row_idx": 48, "item_id": "T49", "permutation_idx": 1, "ordered_cards": ["Unwashed hands", "Washed hands", "Hospital lobby", "Hospital ward"], "response_text": "\nHospital ward, Unwashed hands"}
+{"row_idx": 48, "item_id": "T49", "permutation_idx": 2, "ordered_cards": ["Unwashed hands", "Hospital lobby", "Washed hands", "Hospital ward"], "response_text": "\nHospital ward, Unwashed hands"}
+{"row_idx": 48, "item_id": "T49", "permutation_idx": 3, "ordered_cards": ["Hospital ward", "Hospital lobby", "Washed hands", "Unwashed hands"], "response_text": "\nHospital ward, Unwashed hands"}
+{"row_idx": 48, "item_id": "T49", "permutation_idx": 4, "ordered_cards": ["Hospital lobby", "Unwashed hands", "Hospital ward", "Washed hands"], "response_text": "\nHospital ward, Unwashed hands"}
+{"row_idx": 49, "item_id": "T50", "permutation_idx": 0, "ordered_cards": ["No cap", "Swim cap", "On deck", "In pool"], "response_text": "\nIn pool, No cap"}
+{"row_idx": 49, "item_id": "T50", "permutation_idx": 1, "ordered_cards": ["On deck", "No cap", "In pool", "Swim cap"], "response_text": "\nIn pool, No cap"}
+{"row_idx": 49, "item_id": "T50", "permutation_idx": 2, "ordered_cards": ["Swim cap", "On deck", "No cap", "In pool"], "response_text": "\nIn pool, No cap"}
+{"row_idx": 49, "item_id": "T50", "permutation_idx": 3, "ordered_cards": ["In pool", "On deck", "Swim cap", "No cap"], "response_text": "\nIn pool, No cap"}
+{"row_idx": 49, "item_id": "T50", "permutation_idx": 4, "ordered_cards": ["On deck", "Swim cap", "In pool", "No cap"], "response_text": "\nIn pool, No cap"}
+{"row_idx": 50, "item_id": "T51", "permutation_idx": 0, "ordered_cards": ["Unregistered", "Registered", "Wants to vote", "Not voting"], "response_text": "\nUnregistered, Wants to vote"}
+{"row_idx": 50, "item_id": "T51", "permutation_idx": 1, "ordered_cards": ["Not voting", "Unregistered", "Registered", "Wants to vote"], "response_text": "\nWants to vote, Unregistered"}
+{"row_idx": 50, "item_id": "T51", "permutation_idx": 2, "ordered_cards": ["Registered", "Not voting", "Wants to vote", "Unregistered"], "response_text": "\nWants to vote, Unregistered"}
+{"row_idx": 50, "item_id": "T51", "permutation_idx": 3, "ordered_cards": ["Wants to vote", "Unregistered", "Not voting", "Registered"], "response_text": "\nWants to vote, Unregistered"}
+{"row_idx": 50, "item_id": "T51", "permutation_idx": 4, "ordered_cards": ["Registered", "Wants to vote", "Not voting", "Unregistered"], "response_text": "\nWants to vote, Unregistered"}
+{"row_idx": 51, "item_id": "T52", "permutation_idx": 0, "ordered_cards": ["Questioned", "Arrested", "Not read rights", "Read rights"], "response_text": "\nArrested, Not read rights"}
+{"row_idx": 51, "item_id": "T52", "permutation_idx": 1, "ordered_cards": ["Questioned", "Arrested", "Read rights", "Not read rights"], "response_text": "\nArrested, Not read rights"}
+{"row_idx": 51, "item_id": "T52", "permutation_idx": 2, "ordered_cards": ["Questioned", "Not read rights", "Arrested", "Read rights"], "response_text": "\nArrested, Not read rights"}
+{"row_idx": 51, "item_id": "T52", "permutation_idx": 3, "ordered_cards": ["Not read rights", "Questioned", "Arrested", "Read rights"], "response_text": "\nArrested, Not read rights"}
+{"row_idx": 51, "item_id": "T52", "permutation_idx": 4, "ordered_cards": ["Read rights", "Arrested", "Not read rights", "Questioned"], "response_text": "\nArrested, Not read rights"}
+{"row_idx": 52, "item_id": "T53", "permutation_idx": 0, "ordered_cards": ["Certified", "Uncertified", "Heavy machinery", "Office equipment"], "response_text": "\nHeavy machinery, Uncertified"}
+{"row_idx": 52, "item_id": "T53", "permutation_idx": 1, "ordered_cards": ["Office equipment", "Heavy machinery", "Uncertified", "Certified"], "response_text": "\nHeavy machinery, Uncertified"}
+{"row_idx": 52, "item_id": "T53", "permutation_idx": 2, "ordered_cards": ["Heavy machinery", "Office equipment", "Uncertified", "Certified"], "response_text": "\nHeavy machinery, Uncertified"}
+{"row_idx": 52, "item_id": "T53", "permutation_idx": 3, "ordered_cards": ["Office equipment", "Uncertified", "Heavy machinery", "Certified"], "response_text": "\nHeavy machinery, Uncertified"}
+{"row_idx": 52, "item_id": "T53", "permutation_idx": 4, "ordered_cards": ["Heavy machinery", "Certified", "Office equipment", "Uncertified"], "response_text": "\nHeavy machinery, Uncertified"}
+{"row_idx": 53, "item_id": "T54", "permutation_idx": 0, "ordered_cards": ["Passed inspection", "Sells food", "Failed inspection", "Sells clothing"], "response_text": "\nSells food, Failed inspection"}
+{"row_idx": 53, "item_id": "T54", "permutation_idx": 1, "ordered_cards": ["Sells clothing", "Sells food", "Failed inspection", "Passed inspection"], "response_text": "\nSells food, Failed inspection"}
+{"row_idx": 53, "item_id": "T54", "permutation_idx": 2, "ordered_cards": ["Sells food", "Sells clothing", "Failed inspection", "Passed inspection"], "response_text": "Sells food, Failed inspection"}
+{"row_idx": 53, "item_id": "T54", "permutation_idx": 3, "ordered_cards": ["Failed inspection", "Sells food", "Passed inspection", "Sells clothing"], "response_text": "\nSells food, Failed inspection"}
+{"row_idx": 53, "item_id": "T54", "permutation_idx": 4, "ordered_cards": ["Passed inspection", "Sells clothing", "Sells food", "Failed inspection"], "response_text": "\nSells food, Failed inspection"}
+{"row_idx": 54, "item_id": "T55", "permutation_idx": 0, "ordered_cards": ["No license", "Carries firearm", "Carries phone", "Has license"], "response_text": "\nNo license, Carries firearm"}
+{"row_idx": 54, "item_id": "T55", "permutation_idx": 1, "ordered_cards": ["Carries phone", "Carries firearm", "No license", "Has license"], "response_text": "Carries firearm, No license"}
+{"row_idx": 54, "item_id": "T55", "permutation_idx": 2, "ordered_cards": ["Has license", "Carries firearm", "No license", "Carries phone"], "response_text": "\nCarries firearm, No license"}
+{"row_idx": 54, "item_id": "T55", "permutation_idx": 3, "ordered_cards": ["Has license", "Carries phone", "No license", "Carries firearm"], "response_text": "\nCarries firearm, No license"}
+{"row_idx": 54, "item_id": "T55", "permutation_idx": 4, "ordered_cards": ["Carries phone", "Has license", "No license", "Carries firearm"], "response_text": "\nCarries firearm, No license"}
+{"row_idx": 55, "item_id": "T56", "permutation_idx": 0, "ordered_cards": ["Has fire escape", "Tall building", "Single floor", "No fire escape"], "response_text": "Tall building, No fire escape"}
+{"row_idx": 55, "item_id": "T56", "permutation_idx": 1, "ordered_cards": ["No fire escape", "Has fire escape", "Single floor", "Tall building"], "response_text": "\nTall building, No fire escape"}
+{"row_idx": 55, "item_id": "T56", "permutation_idx": 2, "ordered_cards": ["Tall building", "Has fire escape", "No fire escape", "Single floor"], "response_text": "\nTall building, No fire escape"}
+{"row_idx": 55, "item_id": "T56", "permutation_idx": 3, "ordered_cards": ["Single floor", "Has fire escape", "No fire escape", "Tall building"], "response_text": "Tall building, No fire escape"}
+{"row_idx": 55, "item_id": "T56", "permutation_idx": 4, "ordered_cards": ["Tall building", "Has fire escape", "Single floor", "No fire escape"], "response_text": "Tall building, No fire escape"}
+{"row_idx": 56, "item_id": "T57", "permutation_idx": 0, "ordered_cards": ["Retired", "Still working", "Collects pension", "Receives salary"], "response_text": "\nRetired, Collects pension"}
+{"row_idx": 56, "item_id": "T57", "permutation_idx": 1, "ordered_cards": ["Still working", "Retired", "Collects pension", "Receives salary"], "response_text": "\nStill working, Collects pension"}
+{"row_idx": 56, "item_id": "T57", "permutation_idx": 2, "ordered_cards": ["Still working", "Collects pension", "Retired", "Receives salary"], "response_text": "Still working, Collects pension"}
+{"row_idx": 56, "item_id": "T57", "permutation_idx": 3, "ordered_cards": ["Collects pension", "Still working", "Receives salary", "Retired"], "response_text": "Collects pension, Still working"}
+{"row_idx": 56, "item_id": "T57", "permutation_idx": 4, "ordered_cards": ["Retired", "Still working", "Receives salary", "Collects pension"], "response_text": "\nCollects pension, Retired"}
+{"row_idx": 57, "item_id": "T58", "permutation_idx": 0, "ordered_cards": ["Ran red light", "Stopped at red", "Penalty", "No penalty"], "response_text": "Ran red light, No penalty"}
+{"row_idx": 57, "item_id": "T58", "permutation_idx": 1, "ordered_cards": ["Penalty", "Stopped at red", "No penalty", "Ran red light"], "response_text": "\nRan red light, No penalty"}
+{"row_idx": 57, "item_id": "T58", "permutation_idx": 2, "ordered_cards": ["No penalty", "Stopped at red", "Ran red light", "Penalty"], "response_text": "No penalty, Ran red light"}
+{"row_idx": 57, "item_id": "T58", "permutation_idx": 3, "ordered_cards": ["No penalty", "Penalty", "Ran red light", "Stopped at red"], "response_text": "\nNo penalty, Ran red light"}
+{"row_idx": 57, "item_id": "T58", "permutation_idx": 4, "ordered_cards": ["Penalty", "Stopped at red", "Ran red light", "No penalty"], "response_text": "\nRan red light, No penalty"}
+{"row_idx": 58, "item_id": "T59", "permutation_idx": 0, "ordered_cards": ["Passenger", "No certificate", "Pilot", "Medical certificate"], "response_text": "\nPilot, No certificate"}
+{"row_idx": 58, "item_id": "T59", "permutation_idx": 1, "ordered_cards": ["Passenger", "Medical certificate", "No certificate", "Pilot"], "response_text": "\nPilot, Medical certificate"}
+{"row_idx": 58, "item_id": "T59", "permutation_idx": 2, "ordered_cards": ["No certificate", "Passenger", "Medical certificate", "Pilot"], "response_text": "Pilot, No certificate"}
+{"row_idx": 58, "item_id": "T59", "permutation_idx": 3, "ordered_cards": ["No certificate", "Passenger", "Pilot", "Medical certificate"], "response_text": "Pilot, No certificate"}
+{"row_idx": 58, "item_id": "T59", "permutation_idx": 4, "ordered_cards": ["Passenger", "Pilot", "Medical certificate", "No certificate"], "response_text": "\nPilot, No certificate"}
+{"row_idx": 59, "item_id": "T60", "permutation_idx": 0, "ordered_cards": ["Normal product", "Still on shelves", "Recalled product", "Removed"], "response_text": "\nRecalled product, Still on shelves"}
+{"row_idx": 59, "item_id": "T60", "permutation_idx": 1, "ordered_cards": ["Still on shelves", "Normal product", "Removed", "Recalled product"], "response_text": "\nRecalled product, Still on shelves"}
+{"row_idx": 59, "item_id": "T60", "permutation_idx": 2, "ordered_cards": ["Removed", "Recalled product", "Still on shelves", "Normal product"], "response_text": "Recalled product, Still on shelves"}
+{"row_idx": 59, "item_id": "T60", "permutation_idx": 3, "ordered_cards": ["Recalled product", "Normal product", "Removed", "Still on shelves"], "response_text": "\nRecalled product, Still on shelves"}
+{"row_idx": 59, "item_id": "T60", "permutation_idx": 4, "ordered_cards": ["Normal product", "Removed", "Still on shelves", "Recalled product"], "response_text": "\nRecalled product, Still on shelves"}
+{"row_idx": 60, "item_id": "T61", "permutation_idx": 0, "ordered_cards": ["No permission", "Has permission", "Home on time", "Out past curfew"], "response_text": "\nOut past curfew, No permission"}
+{"row_idx": 60, "item_id": "T61", "permutation_idx": 1, "ordered_cards": ["Home on time", "No permission", "Out past curfew", "Has permission"], "response_text": "Out past curfew, No permission"}
+{"row_idx": 60, "item_id": "T61", "permutation_idx": 2, "ordered_cards": ["Home on time", "Out past curfew", "No permission", "Has permission"], "response_text": "Out past curfew, No permission"}
+{"row_idx": 60, "item_id": "T61", "permutation_idx": 3, "ordered_cards": ["Out past curfew", "Home on time", "No permission", "Has permission"], "response_text": "Out past curfew, No permission"}
+{"row_idx": 60, "item_id": "T61", "permutation_idx": 4, "ordered_cards": ["Has permission", "Out past curfew", "No permission", "Home on time"], "response_text": "\nOut past curfew, No permission"}
+{"row_idx": 61, "item_id": "T62", "permutation_idx": 0, "ordered_cards": ["Unregistered", "Can drive", "Registered", "Cannot drive legally"], "response_text": "\nUnregistered, Can drive"}
+{"row_idx": 61, "item_id": "T62", "permutation_idx": 1, "ordered_cards": ["Registered", "Cannot drive legally", "Unregistered", "Can drive"], "response_text": "Unregistered, Cannot drive legally"}
+{"row_idx": 61, "item_id": "T62", "permutation_idx": 2, "ordered_cards": ["Registered", "Cannot drive legally", "Can drive", "Unregistered"], "response_text": "Unregistered, Cannot drive legally"}
+{"row_idx": 61, "item_id": "T62", "permutation_idx": 3, "ordered_cards": ["Unregistered", "Can drive", "Cannot drive legally", "Registered"], "response_text": "\nUnregistered, Can drive"}
+{"row_idx": 61, "item_id": "T62", "permutation_idx": 4, "ordered_cards": ["Can drive", "Registered", "Cannot drive legally", "Unregistered"], "response_text": "\nUnregistered, Can drive"}
+{"row_idx": 62, "item_id": "T63", "permutation_idx": 0, "ordered_cards": ["No gloves", "Cleans floor", "Wears gloves", "Handles food"], "response_text": "Handles food, No gloves"}
+{"row_idx": 62, "item_id": "T63", "permutation_idx": 1, "ordered_cards": ["Handles food", "Wears gloves", "No gloves", "Cleans floor"], "response_text": "Handles food, No gloves"}
+{"row_idx": 62, "item_id": "T63", "permutation_idx": 2, "ordered_cards": ["Cleans floor", "Wears gloves", "Handles food", "No gloves"], "response_text": "\nHandles food, No gloves"}
+{"row_idx": 62, "item_id": "T63", "permutation_idx": 3, "ordered_cards": ["Wears gloves", "Handles food", "No gloves", "Cleans floor"], "response_text": "\nHandles food, No gloves"}
+{"row_idx": 62, "item_id": "T63", "permutation_idx": 4, "ordered_cards": ["Wears gloves", "No gloves", "Cleans floor", "Handles food"], "response_text": "\nHandles food, No gloves"}
+{"row_idx": 63, "item_id": "T64", "permutation_idx": 0, "ordered_cards": ["Keeps deposit", "Breaks lease", "Loses deposit", "Honors lease"], "response_text": "\nBreaks lease, Keeps deposit"}
+{"row_idx": 63, "item_id": "T64", "permutation_idx": 1, "ordered_cards": ["Loses deposit", "Keeps deposit", "Honors lease", "Breaks lease"], "response_text": "\nBreaks lease, Loses deposit"}
+{"row_idx": 63, "item_id": "T64", "permutation_idx": 2, "ordered_cards": ["Honors lease", "Loses deposit", "Breaks lease", "Keeps deposit"], "response_text": "\nBreaks lease, Keeps deposit"}
+{"row_idx": 63, "item_id": "T64", "permutation_idx": 3, "ordered_cards": ["Honors lease", "Breaks lease", "Keeps deposit", "Loses deposit"], "response_text": "\nBreaks lease, Keeps deposit"}
+{"row_idx": 63, "item_id": "T64", "permutation_idx": 4, "ordered_cards": ["Breaks lease", "Keeps deposit", "Honors lease", "Loses deposit"], "response_text": "\nBreaks lease, Keeps deposit"}
+{"row_idx": 64, "item_id": "T65", "permutation_idx": 0, "ordered_cards": ["Cannot be deported", "Legal entry", "Illegal entry", "Can be deported"], "response_text": "Illegal entry, Cannot be deported"}
+{"row_idx": 64, "item_id": "T65", "permutation_idx": 1, "ordered_cards": ["Cannot be deported", "Legal entry", "Can be deported", "Illegal entry"], "response_text": "Cannot be deported, Illegal entry"}
+{"row_idx": 64, "item_id": "T65", "permutation_idx": 2, "ordered_cards": ["Cannot be deported", "Illegal entry", "Can be deported", "Legal entry"], "response_text": "Illegal entry, Cannot be deported"}
+{"row_idx": 64, "item_id": "T65", "permutation_idx": 3, "ordered_cards": ["Legal entry", "Cannot be deported", "Illegal entry", "Can be deported"], "response_text": "Illegal entry, Cannot be deported"}
+{"row_idx": 64, "item_id": "T65", "permutation_idx": 4, "ordered_cards": ["Cannot be deported", "Illegal entry", "Legal entry", "Can be deported"], "response_text": "\nIllegal entry, Cannot be deported"}
+{"row_idx": 65, "item_id": "T66", "permutation_idx": 0, "ordered_cards": ["Normal consent", "Emergency consent", "Conscious", "Unconscious"], "response_text": "\nUnconscious, Normal consent"}
+{"row_idx": 65, "item_id": "T66", "permutation_idx": 1, "ordered_cards": ["Conscious", "Normal consent", "Emergency consent", "Unconscious"], "response_text": "Unconscious, Normal consent"}
+{"row_idx": 65, "item_id": "T66", "permutation_idx": 2, "ordered_cards": ["Unconscious", "Emergency consent", "Conscious", "Normal consent"], "response_text": "\nUnconscious, Emergency consent"}
+{"row_idx": 65, "item_id": "T66", "permutation_idx": 3, "ordered_cards": ["Conscious", "Emergency consent", "Unconscious", "Normal consent"], "response_text": "Unconscious, Emergency consent"}
+{"row_idx": 65, "item_id": "T66", "permutation_idx": 4, "ordered_cards": ["Conscious", "Unconscious", "Emergency consent", "Normal consent"], "response_text": "Unconscious, Emergency consent"}
+{"row_idx": 66, "item_id": "T67", "permutation_idx": 0, "ordered_cards": ["Walks", "Does not pay", "Takes taxi", "Pays fare"], "response_text": "Takes taxi, Does not pay"}
+{"row_idx": 66, "item_id": "T67", "permutation_idx": 1, "ordered_cards": ["Does not pay", "Takes taxi", "Pays fare", "Walks"], "response_text": "\nTakes taxi, Does not pay"}
+{"row_idx": 66, "item_id": "T67", "permutation_idx": 2, "ordered_cards": ["Pays fare", "Takes taxi", "Does not pay", "Walks"], "response_text": "\nTakes taxi, Does not pay"}
+{"row_idx": 66, "item_id": "T67", "permutation_idx": 3, "ordered_cards": ["Pays fare", "Does not pay", "Walks", "Takes taxi"], "response_text": "\nTakes taxi, Does not pay"}
+{"row_idx": 66, "item_id": "T67", "permutation_idx": 4, "ordered_cards": ["Walks", "Takes taxi", "Does not pay", "Pays fare"], "response_text": "Takes taxi, Does not pay"}
+{"row_idx": 67, "item_id": "T68", "permutation_idx": 0, "ordered_cards": ["Caught cheating", "Honest work", "Failing grade", "Normal grade"], "response_text": "Caught cheating, Failing grade"}
+{"row_idx": 67, "item_id": "T68", "permutation_idx": 1, "ordered_cards": ["Failing grade", "Caught cheating", "Normal grade", "Honest work"], "response_text": "Caught cheating, Failing grade"}
+{"row_idx": 67, "item_id": "T68", "permutation_idx": 2, "ordered_cards": ["Honest work", "Caught cheating", "Failing grade", "Normal grade"], "response_text": "Caught cheating, Failing grade"}
+{"row_idx": 67, "item_id": "T68", "permutation_idx": 3, "ordered_cards": ["Caught cheating", "Failing grade", "Honest work", "Normal grade"], "response_text": "\nCaught cheating, Failing grade"}
+{"row_idx": 67, "item_id": "T68", "permutation_idx": 4, "ordered_cards": ["Honest work", "Normal grade", "Failing grade", "Caught cheating"], "response_text": "\nCaught cheating, Failing grade"}
+{"row_idx": 68, "item_id": "T69", "permutation_idx": 0, "ordered_cards": ["Animal plays", "Quarantined", "Not quarantined", "Animal bites"], "response_text": "Animal bites, Not quarantined"}
+{"row_idx": 68, "item_id": "T69", "permutation_idx": 1, "ordered_cards": ["Animal bites", "Not quarantined", "Animal plays", "Quarantined"], "response_text": "Animal bites, Not quarantined"}
+{"row_idx": 68, "item_id": "T69", "permutation_idx": 2, "ordered_cards": ["Not quarantined", "Animal plays", "Quarantined", "Animal bites"], "response_text": "Not quarantined, Animal bites"}
+{"row_idx": 68, "item_id": "T69", "permutation_idx": 3, "ordered_cards": ["Animal plays", "Animal bites", "Quarantined", "Not quarantined"], "response_text": "Animal bites, Not quarantined"}
+{"row_idx": 68, "item_id": "T69", "permutation_idx": 4, "ordered_cards": ["Not quarantined", "Quarantined", "Animal plays", "Animal bites"], "response_text": "Not quarantined, Animal bites"}
+{"row_idx": 69, "item_id": "T70", "permutation_idx": 0, "ordered_cards": ["Parking lot", "Not towed", "Towed", "No-parking zone"], "response_text": "\nNo-parking zone, Not towed"}
+{"row_idx": 69, "item_id": "T70", "permutation_idx": 1, "ordered_cards": ["Towed", "Not towed", "Parking lot", "No-parking zone"], "response_text": "\nTowed, No-parking zone"}
+{"row_idx": 69, "item_id": "T70", "permutation_idx": 2, "ordered_cards": ["No-parking zone", "Parking lot", "Towed", "Not towed"], "response_text": "\nNo-parking zone, Towed"}
+{"row_idx": 69, "item_id": "T70", "permutation_idx": 3, "ordered_cards": ["Towed", "Parking lot", "No-parking zone", "Not towed"], "response_text": "\nNo-parking zone, Not towed"}
+{"row_idx": 69, "item_id": "T70", "permutation_idx": 4, "ordered_cards": ["Not towed", "No-parking zone", "Towed", "Parking lot"], "response_text": "\nNo-parking zone, Not towed"}
+{"row_idx": 70, "item_id": "T71", "permutation_idx": 0, "ordered_cards": ["No lawyer", "Shared publicly", "Has lawyer", "Confidential"], "response_text": "\nNo lawyer, Has lawyer, Shared publicly"}
+{"row_idx": 70, "item_id": "T71", "permutation_idx": 1, "ordered_cards": ["Has lawyer", "Shared publicly", "No lawyer", "Confidential"], "response_text": "\nHas lawyer, Shared publicly"}
+{"row_idx": 70, "item_id": "T71", "permutation_idx": 2, "ordered_cards": ["Shared publicly", "Confidential", "No lawyer", "Has lawyer"], "response_text": "\nHas lawyer, Shared publicly"}
+{"row_idx": 70, "item_id": "T71", "permutation_idx": 3, "ordered_cards": ["Has lawyer", "No lawyer", "Shared publicly", "Confidential"], "response_text": "\nHas lawyer, Shared publicly"}
+{"row_idx": 70, "item_id": "T71", "permutation_idx": 4, "ordered_cards": ["Confidential", "Shared publicly", "Has lawyer", "No lawyer"], "response_text": "\nHas lawyer, Shared publicly"}
+{"row_idx": 71, "item_id": "T72", "permutation_idx": 0, "ordered_cards": ["No check", "Staying in country", "Passport checked", "Crossing border"], "response_text": "\nCrossing border, No check"}
+{"row_idx": 71, "item_id": "T72", "permutation_idx": 1, "ordered_cards": ["No check", "Crossing border", "Passport checked", "Staying in country"], "response_text": "\nCrossing border, No check"}
+{"row_idx": 71, "item_id": "T72", "permutation_idx": 2, "ordered_cards": ["Passport checked", "Crossing border", "Staying in country", "No check"], "response_text": "\nCrossing border, No check"}
+{"row_idx": 71, "item_id": "T72", "permutation_idx": 3, "ordered_cards": ["Crossing border", "No check", "Passport checked", "Staying in country"], "response_text": "\nCrossing border, No check"}
+{"row_idx": 71, "item_id": "T72", "permutation_idx": 4, "ordered_cards": ["Crossing border", "Passport checked", "No check", "Staying in country"], "response_text": "\nCrossing border, No check"}
+{"row_idx": 72, "item_id": "T73", "permutation_idx": 0, "ordered_cards": ["No penalty", "On-time taxes", "Late taxes", "Penalty"], "response_text": "\nLate taxes, No penalty"}
+{"row_idx": 72, "item_id": "T73", "permutation_idx": 1, "ordered_cards": ["On-time taxes", "Late taxes", "Penalty", "No penalty"], "response_text": "\nLate taxes, Penalty"}
+{"row_idx": 72, "item_id": "T73", "permutation_idx": 2, "ordered_cards": ["Penalty", "Late taxes", "On-time taxes", "No penalty"], "response_text": "\nLate taxes, No penalty"}
+{"row_idx": 72, "item_id": "T73", "permutation_idx": 3, "ordered_cards": ["Late taxes", "Penalty", "On-time taxes", "No penalty"], "response_text": "\nLate taxes, No penalty"}
+{"row_idx": 72, "item_id": "T73", "permutation_idx": 4, "ordered_cards": ["Penalty", "No penalty", "On-time taxes", "Late taxes"], "response_text": "\nLate taxes, Penalty"}
+{"row_idx": 73, "item_id": "T74", "permutation_idx": 0, "ordered_cards": ["Health violation", "Stays open", "Clean inspection", "Closes"], "response_text": "\nHealth violation, Stays open"}
+{"row_idx": 73, "item_id": "T74", "permutation_idx": 1, "ordered_cards": ["Stays open", "Closes", "Health violation", "Clean inspection"], "response_text": "\nStays open, Health violation"}
+{"row_idx": 73, "item_id": "T74", "permutation_idx": 2, "ordered_cards": ["Closes", "Health violation", "Stays open", "Clean inspection"], "response_text": "\nHealth violation, Stays open"}
+{"row_idx": 73, "item_id": "T74", "permutation_idx": 3, "ordered_cards": ["Stays open", "Health violation", "Closes", "Clean inspection"], "response_text": "\nHealth violation, Stays open"}
+{"row_idx": 73, "item_id": "T74", "permutation_idx": 4, "ordered_cards": ["Health violation", "Clean inspection", "Stays open", "Closes"], "response_text": "Health violation, Stays open"}
+{"row_idx": 74, "item_id": "T75", "permutation_idx": 0, "ordered_cards": ["Cars yield", "Jaywalking", "Crosswalk", "Cars do not yield"], "response_text": "\nCrosswalk, Cars do not yield"}
+{"row_idx": 74, "item_id": "T75", "permutation_idx": 1, "ordered_cards": ["Jaywalking", "Cars do not yield", "Crosswalk", "Cars yield"], "response_text": "\nCrosswalk, Cars do not yield"}
+{"row_idx": 74, "item_id": "T75", "permutation_idx": 2, "ordered_cards": ["Jaywalking", "Cars yield", "Crosswalk", "Cars do not yield"], "response_text": "\nCrosswalk, Cars do not yield"}
+{"row_idx": 74, "item_id": "T75", "permutation_idx": 3, "ordered_cards": ["Crosswalk", "Cars do not yield", "Cars yield", "Jaywalking"], "response_text": "Crosswalk, Cars do not yield"}
+{"row_idx": 74, "item_id": "T75", "permutation_idx": 4, "ordered_cards": ["Cars yield", "Crosswalk", "Cars do not yield", "Jaywalking"], "response_text": "\nCrosswalk, Cars do not yield"}
+{"row_idx": 75, "item_id": "T76", "permutation_idx": 0, "ordered_cards": ["Subpoena", "Does not appear", "No subpoena", "Appears in court"], "response_text": "\nSubpoena, Does not appear"}
+{"row_idx": 75, "item_id": "T76", "permutation_idx": 1, "ordered_cards": ["Does not appear", "No subpoena", "Subpoena", "Appears in court"], "response_text": "\nSubpoena, Does not appear"}
+{"row_idx": 75, "item_id": "T76", "permutation_idx": 2, "ordered_cards": ["No subpoena", "Does not appear", "Subpoena", "Appears in court"], "response_text": "No subpoena, Does not appear"}
+{"row_idx": 75, "item_id": "T76", "permutation_idx": 3, "ordered_cards": ["Subpoena", "No subpoena", "Does not appear", "Appears in court"], "response_text": "\nSubpoena, Does not appear"}
+{"row_idx": 75, "item_id": "T76", "permutation_idx": 4, "ordered_cards": ["Appears in court", "Does not appear", "Subpoena", "No subpoena"], "response_text": "Subpoena, Does not appear"}
+{"row_idx": 76, "item_id": "T77", "permutation_idx": 0, "ordered_cards": ["Expired food", "Fresh food", "Kept for sale", "Discarded"], "response_text": "Expired food, Discarded"}
+{"row_idx": 76, "item_id": "T77", "permutation_idx": 1, "ordered_cards": ["Kept for sale", "Expired food", "Fresh food", "Discarded"], "response_text": "Expired food, Kept for sale"}
+{"row_idx": 76, "item_id": "T77", "permutation_idx": 2, "ordered_cards": ["Kept for sale", "Expired food", "Discarded", "Fresh food"], "response_text": "\nExpired food, Kept for sale"}
+{"row_idx": 76, "item_id": "T77", "permutation_idx": 3, "ordered_cards": ["Discarded", "Expired food", "Kept for sale", "Fresh food"], "response_text": "\nExpired food, Discarded"}
+{"row_idx": 76, "item_id": "T77", "permutation_idx": 4, "ordered_cards": ["Fresh food", "Kept for sale", "Expired food", "Discarded"], "response_text": "\nExpired food, Discarded"}
+{"row_idx": 77, "item_id": "T78", "permutation_idx": 0, "ordered_cards": ["Leaves property", "No charge", "Charged with theft", "Takes property"], "response_text": "Takes property, No charge"}
+{"row_idx": 77, "item_id": "T78", "permutation_idx": 1, "ordered_cards": ["Takes property", "Leaves property", "No charge", "Charged with theft"], "response_text": "Takes property, No charge"}
+{"row_idx": 77, "item_id": "T78", "permutation_idx": 2, "ordered_cards": ["No charge", "Charged with theft", "Leaves property", "Takes property"], "response_text": "Takes property, No charge"}
+{"row_idx": 77, "item_id": "T78", "permutation_idx": 3, "ordered_cards": ["Leaves property", "Charged with theft", "Takes property", "No charge"], "response_text": "\nTakes property, No charge"}
+{"row_idx": 77, "item_id": "T78", "permutation_idx": 4, "ordered_cards": ["Leaves property", "No charge", "Takes property", "Charged with theft"], "response_text": "\nTakes property, No charge"}
+{"row_idx": 78, "item_id": "T79", "permutation_idx": 0, "ordered_cards": ["No sticker", "Passes test", "Gets sticker", "Fails test"], "response_text": "\nNo sticker, Passes test"}
+{"row_idx": 78, "item_id": "T79", "permutation_idx": 1, "ordered_cards": ["No sticker", "Gets sticker", "Passes test", "Fails test"], "response_text": "No sticker, Passes test"}
+{"row_idx": 78, "item_id": "T79", "permutation_idx": 2, "ordered_cards": ["Passes test", "Fails test", "Gets sticker", "No sticker"], "response_text": "Passes test, No sticker"}
+{"row_idx": 78, "item_id": "T79", "permutation_idx": 3, "ordered_cards": ["Gets sticker", "Passes test", "Fails test", "No sticker"], "response_text": "\nPasses test, No sticker"}
+{"row_idx": 78, "item_id": "T79", "permutation_idx": 4, "ordered_cards": ["Fails test", "Gets sticker", "Passes test", "No sticker"], "response_text": "Fails test, Passes test, No sticker"}
+{"row_idx": 79, "item_id": "T80", "permutation_idx": 0, "ordered_cards": ["Gated community", "Walks in freely", "Open street", "Buzzed in"], "response_text": "Gated community, Walks in freely"}
+{"row_idx": 79, "item_id": "T80", "permutation_idx": 1, "ordered_cards": ["Open street", "Buzzed in", "Gated community", "Walks in freely"], "response_text": "Gated community, Buzzed in"}
+{"row_idx": 79, "item_id": "T80", "permutation_idx": 2, "ordered_cards": ["Gated community", "Open street", "Walks in freely", "Buzzed in"], "response_text": "Gated community, Walks in freely"}
+{"row_idx": 79, "item_id": "T80", "permutation_idx": 3, "ordered_cards": ["Open street", "Gated community", "Walks in freely", "Buzzed in"], "response_text": "Gated community, Walks in freely"}
+{"row_idx": 79, "item_id": "T80", "permutation_idx": 4, "ordered_cards": ["Buzzed in", "Walks in freely", "Open street", "Gated community"], "response_text": "Gated community, Buzzed in"}
+{"row_idx": 80, "item_id": "T81", "permutation_idx": 0, "ordered_cards": ["Homeschooled", "Public school", "Filed with state", "No filing"], "response_text": "Homeschooled, No filing"}
+{"row_idx": 80, "item_id": "T81", "permutation_idx": 1, "ordered_cards": ["Public school", "No filing", "Homeschooled", "Filed with state"], "response_text": "Homeschooled, No filing"}
+{"row_idx": 80, "item_id": "T81", "permutation_idx": 2, "ordered_cards": ["Filed with state", "Homeschooled", "No filing", "Public school"], "response_text": "Homeschooled, No filing"}
+{"row_idx": 80, "item_id": "T81", "permutation_idx": 3, "ordered_cards": ["No filing", "Public school", "Filed with state", "Homeschooled"], "response_text": "\nHomeschooled, No filing"}
+{"row_idx": 80, "item_id": "T81", "permutation_idx": 4, "ordered_cards": ["No filing", "Filed with state", "Public school", "Homeschooled"], "response_text": "\nHomeschooled, No filing"}
+{"row_idx": 81, "item_id": "T82", "permutation_idx": 0, "ordered_cards": ["Attends", "Not summoned", "Does not attend", "Summoned"], "response_text": "\nSummoned, Does not attend"}
+{"row_idx": 81, "item_id": "T82", "permutation_idx": 1, "ordered_cards": ["Does not attend", "Summoned", "Not summoned", "Attends"], "response_text": "Summoned, Does not attend"}
+{"row_idx": 81, "item_id": "T82", "permutation_idx": 2, "ordered_cards": ["Summoned", "Does not attend", "Not summoned", "Attends"], "response_text": "Summoned, Does not attend"}
+{"row_idx": 81, "item_id": "T82", "permutation_idx": 3, "ordered_cards": ["Attends", "Does not attend", "Summoned", "Not summoned"], "response_text": "Summoned, Does not attend"}
+{"row_idx": 81, "item_id": "T82", "permutation_idx": 4, "ordered_cards": ["Not summoned", "Summoned", "Attends", "Does not attend"], "response_text": "Summoned, Does not attend"}
+{"row_idx": 82, "item_id": "T83", "permutation_idx": 0, "ordered_cards": ["Not working with food", "Healthy handler", "Sick handler", "Working with food"], "response_text": "\nSick handler, Working with food"}
+{"row_idx": 82, "item_id": "T83", "permutation_idx": 1, "ordered_cards": ["Working with food", "Sick handler", "Healthy handler", "Not working with food"], "response_text": "Sick handler, Working with food"}
+{"row_idx": 82, "item_id": "T83", "permutation_idx": 2, "ordered_cards": ["Healthy handler", "Working with food", "Sick handler", "Not working with food"], "response_text": "Sick handler, Working with food"}
+{"row_idx": 82, "item_id": "T83", "permutation_idx": 3, "ordered_cards": ["Not working with food", "Healthy handler", "Working with food", "Sick handler"], "response_text": "Sick handler, Working with food"}
+{"row_idx": 82, "item_id": "T83", "permutation_idx": 4, "ordered_cards": ["Healthy handler", "Not working with food", "Working with food", "Sick handler"], "response_text": "\nSick handler, Working with food"}
+{"row_idx": 83, "item_id": "T84", "permutation_idx": 0, "ordered_cards": ["Donating blood", "Meets requirements", "Does not meet", "Receiving blood"], "response_text": "\nDonating blood, Does not meet"}
+{"row_idx": 83, "item_id": "T84", "permutation_idx": 1, "ordered_cards": ["Meets requirements", "Does not meet", "Receiving blood", "Donating blood"], "response_text": "\nDonating blood, Does not meet"}
+{"row_idx": 83, "item_id": "T84", "permutation_idx": 2, "ordered_cards": ["Receiving blood", "Meets requirements", "Donating blood", "Does not meet"], "response_text": "\nDonating blood, Does not meet"}
+{"row_idx": 83, "item_id": "T84", "permutation_idx": 3, "ordered_cards": ["Meets requirements", "Does not meet", "Donating blood", "Receiving blood"], "response_text": "\nDonating blood, Does not meet"}
+{"row_idx": 83, "item_id": "T84", "permutation_idx": 4, "ordered_cards": ["Meets requirements", "Receiving blood", "Donating blood", "Does not meet"], "response_text": "\nDonating blood, Does not meet"}
+{"row_idx": 84, "item_id": "T85", "permutation_idx": 0, "ordered_cards": ["Condemned building", "Safe building", "Evacuated", "Stays inside"], "response_text": "\nCondemned building, Stays inside"}
+{"row_idx": 84, "item_id": "T85", "permutation_idx": 1, "ordered_cards": ["Safe building", "Condemned building", "Evacuated", "Stays inside"], "response_text": "Condemned building, Stays inside"}
+{"row_idx": 84, "item_id": "T85", "permutation_idx": 2, "ordered_cards": ["Stays inside", "Safe building", "Condemned building", "Evacuated"], "response_text": "Condemned building, Stays inside"}
+{"row_idx": 84, "item_id": "T85", "permutation_idx": 3, "ordered_cards": ["Evacuated", "Stays inside", "Safe building", "Condemned building"], "response_text": "\nCondemned building, Evacuated"}
+{"row_idx": 84, "item_id": "T85", "permutation_idx": 4, "ordered_cards": ["Safe building", "Stays inside", "Evacuated", "Condemned building"], "response_text": "\nCondemned building, Stays inside"}
+{"row_idx": 85, "item_id": "T86", "permutation_idx": 0, "ordered_cards": ["Motorcycle", "No helmet", "Wears helmet", "Bicycle"], "response_text": "\nMotorcycle, No helmet"}
+{"row_idx": 85, "item_id": "T86", "permutation_idx": 1, "ordered_cards": ["Wears helmet", "Motorcycle", "No helmet", "Bicycle"], "response_text": "\nMotorcycle, No helmet"}
+{"row_idx": 85, "item_id": "T86", "permutation_idx": 2, "ordered_cards": ["No helmet", "Wears helmet", "Bicycle", "Motorcycle"], "response_text": "\nMotorcycle, No helmet"}
+{"row_idx": 85, "item_id": "T86", "permutation_idx": 3, "ordered_cards": ["Bicycle", "Motorcycle", "No helmet", "Wears helmet"], "response_text": "\nMotorcycle, No helmet"}
+{"row_idx": 85, "item_id": "T86", "permutation_idx": 4, "ordered_cards": ["Bicycle", "Wears helmet", "No helmet", "Motorcycle"], "response_text": "\nMotorcycle, No helmet"}
+{"row_idx": 86, "item_id": "T87", "permutation_idx": 0, "ordered_cards": ["Dispensing drug", "Verified prescription", "No verification", "Selling vitamins"], "response_text": "\nDispensing drug, No verification"}
+{"row_idx": 86, "item_id": "T87", "permutation_idx": 1, "ordered_cards": ["No verification", "Verified prescription", "Selling vitamins", "Dispensing drug"], "response_text": "\nDispensing drug, No verification"}
+{"row_idx": 86, "item_id": "T87", "permutation_idx": 2, "ordered_cards": ["Dispensing drug", "Selling vitamins", "No verification", "Verified prescription"], "response_text": "\nDispensing drug, No verification"}
+{"row_idx": 86, "item_id": "T87", "permutation_idx": 3, "ordered_cards": ["Dispensing drug", "Verified prescription", "Selling vitamins", "No verification"], "response_text": "\nDispensing drug, No verification"}
+{"row_idx": 86, "item_id": "T87", "permutation_idx": 4, "ordered_cards": ["Dispensing drug", "No verification", "Verified prescription", "Selling vitamins"], "response_text": "\nDispensing drug, No verification"}
+{"row_idx": 87, "item_id": "T88", "permutation_idx": 0, "ordered_cards": ["No signature", "Admitted", "Discharged", "Doctor signed"], "response_text": "\nDischarged, No signature"}
+{"row_idx": 87, "item_id": "T88", "permutation_idx": 1, "ordered_cards": ["No signature", "Doctor signed", "Discharged", "Admitted"], "response_text": "\nDischarged, No signature"}
+{"row_idx": 87, "item_id": "T88", "permutation_idx": 2, "ordered_cards": ["Discharged", "Admitted", "Doctor signed", "No signature"], "response_text": "\nDischarged, No signature"}
+{"row_idx": 87, "item_id": "T88", "permutation_idx": 3, "ordered_cards": ["Admitted", "Discharged", "Doctor signed", "No signature"], "response_text": ": Discharged, No signature"}
+{"row_idx": 87, "item_id": "T88", "permutation_idx": 4, "ordered_cards": ["Admitted", "Doctor signed", "No signature", "Discharged"], "response_text": "\nDischarged, No signature"}
+{"row_idx": 88, "item_id": "T89", "permutation_idx": 0, "ordered_cards": ["Not declared", "Declared", "Personal use", "Business use"], "response_text": "\nPersonal use, Not declared"}
+{"row_idx": 88, "item_id": "T89", "permutation_idx": 1, "ordered_cards": ["Business use", "Declared", "Not declared", "Personal use"], "response_text": "\nPersonal use, Not declared"}
+{"row_idx": 88, "item_id": "T89", "permutation_idx": 2, "ordered_cards": ["Personal use", "Not declared", "Business use", "Declared"], "response_text": "\nPersonal use, Not declared"}
+{"row_idx": 88, "item_id": "T89", "permutation_idx": 3, "ordered_cards": ["Not declared", "Declared", "Business use", "Personal use"], "response_text": "\nPersonal use, Not declared"}
+{"row_idx": 88, "item_id": "T89", "permutation_idx": 4, "ordered_cards": ["Not declared", "Personal use", "Business use", "Declared"], "response_text": "\nPersonal use, Not declared"}
+{"row_idx": 89, "item_id": "T90", "permutation_idx": 0, "ordered_cards": ["Clean site", "Safety violation", "Work stops", "Work continues"], "response_text": "\nSafety violation, Work continues"}
+{"row_idx": 89, "item_id": "T90", "permutation_idx": 1, "ordered_cards": ["Work stops", "Work continues", "Clean site", "Safety violation"], "response_text": "\nSafety violation, Work continues"}
+{"row_idx": 89, "item_id": "T90", "permutation_idx": 2, "ordered_cards": ["Work continues", "Work stops", "Clean site", "Safety violation"], "response_text": "\nWork continues, Safety violation"}
+{"row_idx": 89, "item_id": "T90", "permutation_idx": 3, "ordered_cards": ["Safety violation", "Work continues", "Clean site", "Work stops"], "response_text": "\nSafety violation, Work continues"}
+{"row_idx": 89, "item_id": "T90", "permutation_idx": 4, "ordered_cards": ["Work continues", "Work stops", "Safety violation", "Clean site"], "response_text": "\nWork continues, Safety violation"}
+{"row_idx": 90, "item_id": "T91", "permutation_idx": 0, "ordered_cards": ["Reports it", "Hears about it", "Does not report", "Witnesses accident"], "response_text": "\nWitnesses accident, Does not report"}
+{"row_idx": 90, "item_id": "T91", "permutation_idx": 1, "ordered_cards": ["Reports it", "Witnesses accident", "Hears about it", "Does not report"], "response_text": "\nWitnesses accident, Does not report"}
+{"row_idx": 90, "item_id": "T91", "permutation_idx": 2, "ordered_cards": ["Does not report", "Witnesses accident", "Hears about it", "Reports it"], "response_text": "\nWitnesses accident, Does not report"}
+{"row_idx": 90, "item_id": "T91", "permutation_idx": 3, "ordered_cards": ["Reports it", "Does not report", "Hears about it", "Witnesses accident"], "response_text": "\nWitnesses accident, Does not report"}
+{"row_idx": 90, "item_id": "T91", "permutation_idx": 4, "ordered_cards": ["Hears about it", "Does not report", "Witnesses accident", "Reports it"], "response_text": "\nWitnesses accident, Does not report"}
+{"row_idx": 91, "item_id": "T92", "permutation_idx": 0, "ordered_cards": ["Unsecured", "No gun", "Locked safe", "Gun at home"], "response_text": "\nGun at home, Locked safe"}
+{"row_idx": 91, "item_id": "T92", "permutation_idx": 1, "ordered_cards": ["Gun at home", "Unsecured", "Locked safe", "No gun"], "response_text": "\nGun at home, Unsecured"}
+{"row_idx": 91, "item_id": "T92", "permutation_idx": 2, "ordered_cards": ["No gun", "Gun at home", "Unsecured", "Locked safe"], "response_text": "\nGun at home, Unsecured"}
+{"row_idx": 91, "item_id": "T92", "permutation_idx": 3, "ordered_cards": ["No gun", "Locked safe", "Gun at home", "Unsecured"], "response_text": "\nGun at home, Unsecured"}
+{"row_idx": 91, "item_id": "T92", "permutation_idx": 4, "ordered_cards": ["Locked safe", "Unsecured", "Gun at home", "No gun"], "response_text": "\nGun at home, Locked safe"}
+{"row_idx": 92, "item_id": "T93", "permutation_idx": 0, "ordered_cards": ["Can mislead", "Not sworn in", "Under oath", "Tells truth"], "response_text": "\nUnder oath, Tells truth"}
+{"row_idx": 92, "item_id": "T93", "permutation_idx": 1, "ordered_cards": ["Not sworn in", "Can mislead", "Under oath", "Tells truth"], "response_text": "\nUnder oath, Tells truth"}
+{"row_idx": 92, "item_id": "T93", "permutation_idx": 2, "ordered_cards": ["Not sworn in", "Can mislead", "Tells truth", "Under oath"], "response_text": "\nUnder oath, Tells truth"}
+{"row_idx": 92, "item_id": "T93", "permutation_idx": 3, "ordered_cards": ["Can mislead", "Not sworn in", "Tells truth", "Under oath"], "response_text": "\nUnder oath, Tells truth"}
+{"row_idx": 92, "item_id": "T93", "permutation_idx": 4, "ordered_cards": ["Can mislead", "Under oath", "Tells truth", "Not sworn in"], "response_text": "\nUnder oath, Tells truth"}
+{"row_idx": 93, "item_id": "T94", "permutation_idx": 0, "ordered_cards": ["Notified employees", "Permanent closure", "Temporary closure", "No notice"], "response_text": "\nPermanent closure, No notice"}
+{"row_idx": 93, "item_id": "T94", "permutation_idx": 1, "ordered_cards": ["Notified employees", "No notice", "Temporary closure", "Permanent closure"], "response_text": "\nPermanent closure, No notice"}
+{"row_idx": 93, "item_id": "T94", "permutation_idx": 2, "ordered_cards": ["Permanent closure", "Temporary closure", "No notice", "Notified employees"], "response_text": "\nPermanent closure, No notice"}
+{"row_idx": 93, "item_id": "T94", "permutation_idx": 3, "ordered_cards": ["No notice", "Permanent closure", "Notified employees", "Temporary closure"], "response_text": "\nPermanent closure, No notice"}
+{"row_idx": 93, "item_id": "T94", "permutation_idx": 4, "ordered_cards": ["Notified employees", "Temporary closure", "Permanent closure", "No notice"], "response_text": "\nPermanent closure, No notice"}
+{"row_idx": 94, "item_id": "T95", "permutation_idx": 0, "ordered_cards": ["On-time checkout", "Extra fee", "Late checkout", "No fee"], "response_text": "\nLate checkout, No fee"}
+{"row_idx": 94, "item_id": "T95", "permutation_idx": 1, "ordered_cards": ["Extra fee", "Late checkout", "On-time checkout", "No fee"], "response_text": "\nLate checkout, No fee"}
+{"row_idx": 94, "item_id": "T95", "permutation_idx": 2, "ordered_cards": ["Extra fee", "No fee", "On-time checkout", "Late checkout"], "response_text": "\nLate checkout, No fee"}
+{"row_idx": 94, "item_id": "T95", "permutation_idx": 3, "ordered_cards": ["Late checkout", "No fee", "Extra fee", "On-time checkout"], "response_text": "\nLate checkout, No fee"}
+{"row_idx": 94, "item_id": "T95", "permutation_idx": 4, "ordered_cards": ["No fee", "On-time checkout", "Extra fee", "Late checkout"], "response_text": "\nLate checkout, No fee"}
+{"row_idx": 95, "item_id": "T96", "permutation_idx": 0, "ordered_cards": ["Loan application", "Savings deposit", "No check", "Credit checked"], "response_text": "\nLoan application, No check"}
+{"row_idx": 95, "item_id": "T96", "permutation_idx": 1, "ordered_cards": ["No check", "Savings deposit", "Loan application", "Credit checked"], "response_text": "\nLoan application, No check"}
+{"row_idx": 95, "item_id": "T96", "permutation_idx": 2, "ordered_cards": ["Credit checked", "No check", "Savings deposit", "Loan application"], "response_text": "\nLoan application, Credit checked"}
+{"row_idx": 95, "item_id": "T96", "permutation_idx": 3, "ordered_cards": ["Savings deposit", "Credit checked", "No check", "Loan application"], "response_text": "\nLoan application, No check"}
+{"row_idx": 95, "item_id": "T96", "permutation_idx": 4, "ordered_cards": ["Credit checked", "No check", "Loan application", "Savings deposit"], "response_text": "\nLoan application, No check"}
+{"row_idx": 96, "item_id": "T97", "permutation_idx": 0, "ordered_cards": ["Unlicensed", "Assists operation", "Performs operation", "Licensed"], "response_text": "\nPerforms operation, Unlicensed"}
+{"row_idx": 96, "item_id": "T97", "permutation_idx": 1, "ordered_cards": ["Assists operation", "Unlicensed", "Performs operation", "Licensed"], "response_text": "\nPerforms operation, Unlicensed"}
+{"row_idx": 96, "item_id": "T97", "permutation_idx": 2, "ordered_cards": ["Assists operation", "Unlicensed", "Licensed", "Performs operation"], "response_text": "\nPerforms operation, Unlicensed"}
+{"row_idx": 96, "item_id": "T97", "permutation_idx": 3, "ordered_cards": ["Licensed", "Unlicensed", "Assists operation", "Performs operation"], "response_text": "\nPerforms operation, Unlicensed"}
+{"row_idx": 96, "item_id": "T97", "permutation_idx": 4, "ordered_cards": ["Performs operation", "Assists operation", "Licensed", "Unlicensed"], "response_text": "\nPerforms operation, Unlicensed"}
+{"row_idx": 97, "item_id": "T98", "permutation_idx": 0, "ordered_cards": ["Goggles on", "Waits outside", "Enters lab", "No goggles"], "response_text": "\nEnters lab, No goggles"}
+{"row_idx": 97, "item_id": "T98", "permutation_idx": 1, "ordered_cards": ["Goggles on", "No goggles", "Enters lab", "Waits outside"], "response_text": "\nEnters lab, No goggles"}
+{"row_idx": 97, "item_id": "T98", "permutation_idx": 2, "ordered_cards": ["Waits outside", "Enters lab", "Goggles on", "No goggles"], "response_text": "\nEnters lab, No goggles"}
+{"row_idx": 97, "item_id": "T98", "permutation_idx": 3, "ordered_cards": ["Enters lab", "Waits outside", "No goggles", "Goggles on"], "response_text": "\nEnters lab, No goggles"}
+{"row_idx": 97, "item_id": "T98", "permutation_idx": 4, "ordered_cards": ["Waits outside", "Enters lab", "No goggles", "Goggles on"], "response_text": "\nEnters lab, No goggles"}
+{"row_idx": 98, "item_id": "T99", "permutation_idx": 0, "ordered_cards": ["Not inspected", "Sails open sea", "Inspected", "Enters port"], "response_text": "\nEnters port, Not inspected"}
+{"row_idx": 98, "item_id": "T99", "permutation_idx": 1, "ordered_cards": ["Sails open sea", "Inspected", "Not inspected", "Enters port"], "response_text": "\nEnters port, Not inspected"}
+{"row_idx": 98, "item_id": "T99", "permutation_idx": 2, "ordered_cards": ["Enters port", "Not inspected", "Inspected", "Sails open sea"], "response_text": "\nEnters port, Not inspected"}
+{"row_idx": 98, "item_id": "T99", "permutation_idx": 3, "ordered_cards": ["Inspected", "Sails open sea", "Enters port", "Not inspected"], "response_text": "\nEnters port, Not inspected"}
+{"row_idx": 98, "item_id": "T99", "permutation_idx": 4, "ordered_cards": ["Not inspected", "Enters port", "Inspected", "Sails open sea"], "response_text": "\nNot inspected, Enters port"}
+{"row_idx": 99, "item_id": "T100", "permutation_idx": 0, "ordered_cards": ["Job finished", "Job ongoing", "Client does not pay", "Client pays"], "response_text": "\nJob finished, Client does not pay"}
+{"row_idx": 99, "item_id": "T100", "permutation_idx": 1, "ordered_cards": ["Client pays", "Job finished", "Job ongoing", "Client does not pay"], "response_text": "\nJob finished, Client does not pay"}
+{"row_idx": 99, "item_id": "T100", "permutation_idx": 2, "ordered_cards": ["Job ongoing", "Client does not pay", "Client pays", "Job finished"], "response_text": "\nJob finished, Client does not pay"}
+{"row_idx": 99, "item_id": "T100", "permutation_idx": 3, "ordered_cards": ["Client pays", "Job finished", "Client does not pay", "Job ongoing"], "response_text": "\nJob finished, Client does not pay"}
+{"row_idx": 99, "item_id": "T100", "permutation_idx": 4, "ordered_cards": ["Job ongoing", "Client pays", "Client does not pay", "Job finished"], "response_text": "\nJob finished, Client does not pay"}

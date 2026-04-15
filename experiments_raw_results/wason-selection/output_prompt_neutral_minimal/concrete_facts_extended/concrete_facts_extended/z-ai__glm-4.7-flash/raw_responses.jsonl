@@ -1,0 +1,505 @@
+{"row_idx": 0, "item_id": "T1", "permutation_idx": 0, "ordered_cards": ["Trunk", "Rhino", "No trunk", "Elephant"], "response_text": "Elephant, No trunk"}
+{"row_idx": 0, "item_id": "T1", "permutation_idx": 1, "ordered_cards": ["Elephant", "No trunk", "Trunk", "Rhino"], "response_text": "Elephant, No trunk"}
+{"row_idx": 0, "item_id": "T1", "permutation_idx": 2, "ordered_cards": ["No trunk", "Elephant", "Rhino", "Trunk"], "response_text": "Elephant, No trunk"}
+{"row_idx": 0, "item_id": "T1", "permutation_idx": 3, "ordered_cards": ["No trunk", "Trunk", "Rhino", "Elephant"], "response_text": "Elephant"}
+{"row_idx": 0, "item_id": "T1", "permutation_idx": 4, "ordered_cards": ["Trunk", "Elephant", "No trunk", "Rhino"], "response_text": "Elephant, No trunk"}
+{"row_idx": 1, "item_id": "T2", "permutation_idx": 0, "ordered_cards": ["Clownfish", "Anemones", "Salmon", "Open water"], "response_text": "Clownfish, Anemones"}
+{"row_idx": 1, "item_id": "T2", "permutation_idx": 1, "ordered_cards": ["Open water", "Clownfish", "Salmon", "Anemones"], "response_text": "Clownfish, Anemones"}
+{"row_idx": 1, "item_id": "T2", "permutation_idx": 2, "ordered_cards": ["Salmon", "Clownfish", "Open water", "Anemones"], "response_text": "Clownfish, Open water"}
+{"row_idx": 1, "item_id": "T2", "permutation_idx": 3, "ordered_cards": ["Open water", "Salmon", "Anemones", "Clownfish"], "response_text": "Clownfish, Anemones"}
+{"row_idx": 1, "item_id": "T2", "permutation_idx": 4, "ordered_cards": ["Open water", "Clownfish", "Anemones", "Salmon"], "response_text": "Clownfish, Anemones"}
+{"row_idx": 2, "item_id": "T3", "permutation_idx": 0, "ordered_cards": ["Wood", "Does not conduct", "Conducts electricity", "Silver"], "response_text": "Silver, Wood"}
+{"row_idx": 2, "item_id": "T3", "permutation_idx": 1, "ordered_cards": ["Wood", "Does not conduct", "Silver", "Conducts electricity"], "response_text": "Silver, Does not conduct"}
+{"row_idx": 2, "item_id": "T3", "permutation_idx": 2, "ordered_cards": ["Does not conduct", "Silver", "Wood", "Conducts electricity"], "response_text": "Silver"}
+{"row_idx": 2, "item_id": "T3", "permutation_idx": 3, "ordered_cards": ["Does not conduct", "Wood", "Conducts electricity", "Silver"], "response_text": "Conducts electricity, Silver"}
+{"row_idx": 2, "item_id": "T3", "permutation_idx": 4, "ordered_cards": ["Conducts electricity", "Wood", "Silver", "Does not conduct"], "response_text": "Silver, Conducts electricity"}
+{"row_idx": 3, "item_id": "T4", "permutation_idx": 0, "ordered_cards": ["Brown", "Kiwi", "Banana", "Yellow"], "response_text": "Banana, Kiwi"}
+{"row_idx": 3, "item_id": "T4", "permutation_idx": 1, "ordered_cards": ["Banana", "Yellow", "Brown", "Kiwi"], "response_text": "Banana, Kiwi"}
+{"row_idx": 3, "item_id": "T4", "permutation_idx": 2, "ordered_cards": ["Banana", "Brown", "Yellow", "Kiwi"], "response_text": "Banana, Kiwi"}
+{"row_idx": 3, "item_id": "T4", "permutation_idx": 3, "ordered_cards": ["Brown", "Banana", "Kiwi", "Yellow"], "response_text": "Banana, Kiwi"}
+{"row_idx": 3, "item_id": "T4", "permutation_idx": 4, "ordered_cards": ["Kiwi", "Banana", "Yellow", "Brown"], "response_text": "Banana, Brown"}
+{"row_idx": 4, "item_id": "T5", "permutation_idx": 0, "ordered_cards": ["Cold-blooded", "Crocodile", "Warm-blooded", "Lion"], "response_text": "Crocodile, Warm-blooded"}
+{"row_idx": 4, "item_id": "T5", "permutation_idx": 1, "ordered_cards": ["Lion", "Cold-blooded", "Crocodile", "Warm-blooded"], "response_text": "Crocodile, Warm-blooded"}
+{"row_idx": 4, "item_id": "T5", "permutation_idx": 2, "ordered_cards": ["Crocodile", "Cold-blooded", "Warm-blooded", "Lion"], "response_text": "Crocodile, Warm-blooded"}
+{"row_idx": 4, "item_id": "T5", "permutation_idx": 3, "ordered_cards": ["Lion", "Warm-blooded", "Cold-blooded", "Crocodile"], "response_text": "Crocodile"}
+{"row_idx": 4, "item_id": "T5", "permutation_idx": 4, "ordered_cards": ["Lion", "Crocodile", "Cold-blooded", "Warm-blooded"], "response_text": "Crocodile, Warm-blooded"}
+{"row_idx": 5, "item_id": "T6", "permutation_idx": 0, "ordered_cards": ["Car", "Electric", "Gas", "Bike"], "response_text": "Car, Gas"}
+{"row_idx": 5, "item_id": "T6", "permutation_idx": 1, "ordered_cards": ["Electric", "Gas", "Bike", "Car"], "response_text": "Car, Gas"}
+{"row_idx": 5, "item_id": "T6", "permutation_idx": 2, "ordered_cards": ["Gas", "Electric", "Car", "Bike"], "response_text": "Car, Gas"}
+{"row_idx": 5, "item_id": "T6", "permutation_idx": 3, "ordered_cards": ["Bike", "Car", "Electric", "Gas"], "response_text": "Car, Gas"}
+{"row_idx": 5, "item_id": "T6", "permutation_idx": 4, "ordered_cards": ["Car", "Electric", "Bike", "Gas"], "response_text": "Car, Gas"}
+{"row_idx": 6, "item_id": "T7", "permutation_idx": 0, "ordered_cards": ["Summer", "December", "Winter", "June"], "response_text": "June"}
+{"row_idx": 6, "item_id": "T7", "permutation_idx": 1, "ordered_cards": ["June", "December", "Summer", "Winter"], "response_text": "June"}
+{"row_idx": 6, "item_id": "T7", "permutation_idx": 2, "ordered_cards": ["Winter", "June", "December", "Summer"], "response_text": "June"}
+{"row_idx": 6, "item_id": "T7", "permutation_idx": 3, "ordered_cards": ["December", "Winter", "Summer", "June"], "response_text": "June, December"}
+{"row_idx": 6, "item_id": "T7", "permutation_idx": 4, "ordered_cards": ["June", "Winter", "Summer", "December"], "response_text": "June, Winter"}
+{"row_idx": 7, "item_id": "T8", "permutation_idx": 0, "ordered_cards": ["Metal", "Hammer", "Wood", "Wrench"], "response_text": "Hammer, Wood"}
+{"row_idx": 7, "item_id": "T8", "permutation_idx": 1, "ordered_cards": ["Wrench", "Wood", "Metal", "Hammer"], "response_text": "Hammer, Wood"}
+{"row_idx": 7, "item_id": "T8", "permutation_idx": 2, "ordered_cards": ["Wood", "Wrench", "Metal", "Hammer"], "response_text": "Hammer, Wood"}
+{"row_idx": 7, "item_id": "T8", "permutation_idx": 3, "ordered_cards": ["Hammer", "Metal", "Wood", "Wrench"], "response_text": "Hammer, Wood"}
+{"row_idx": 7, "item_id": "T8", "permutation_idx": 4, "ordered_cards": ["Metal", "Wrench", "Wood", "Hammer"], "response_text": "Hammer, Wood"}
+{"row_idx": 8, "item_id": "T9", "permutation_idx": 0, "ordered_cards": ["Extremely hot", "Water", "Lava", "Room temperature"], "response_text": "Lava"}
+{"row_idx": 8, "item_id": "T9", "permutation_idx": 1, "ordered_cards": ["Water", "Lava", "Extremely hot", "Room temperature"], "response_text": "Lava, Extremely hot"}
+{"row_idx": 8, "item_id": "T9", "permutation_idx": 2, "ordered_cards": ["Lava", "Room temperature", "Water", "Extremely hot"], "response_text": "Lava, Extremely hot"}
+{"row_idx": 8, "item_id": "T9", "permutation_idx": 3, "ordered_cards": ["Lava", "Water", "Extremely hot", "Room temperature"], "response_text": "Lava, Extremely hot"}
+{"row_idx": 8, "item_id": "T9", "permutation_idx": 4, "ordered_cards": ["Room temperature", "Lava", "Extremely hot", "Water"], "response_text": "Lava, Water"}
+{"row_idx": 9, "item_id": "T10", "permutation_idx": 0, "ordered_cards": ["Hedgehog", "Squirrel", "Fur", "Spines"], "response_text": "Hedgehog, Spines"}
+{"row_idx": 9, "item_id": "T10", "permutation_idx": 1, "ordered_cards": ["Spines", "Hedgehog", "Fur", "Squirrel"], "response_text": "Hedgehog"}
+{"row_idx": 9, "item_id": "T10", "permutation_idx": 2, "ordered_cards": ["Hedgehog", "Fur", "Squirrel", "Spines"], "response_text": "Hedgehog, Spines"}
+{"row_idx": 9, "item_id": "T10", "permutation_idx": 3, "ordered_cards": ["Hedgehog", "Squirrel", "Spines", "Fur"], "response_text": "Hedgehog, Spines"}
+{"row_idx": 9, "item_id": "T10", "permutation_idx": 4, "ordered_cards": ["Squirrel", "Hedgehog", "Spines", "Fur"], "response_text": "Hedgehog, Spines"}
+{"row_idx": 10, "item_id": "T11", "permutation_idx": 0, "ordered_cards": ["Blue", "Venus", "Pink", "Mars"], "response_text": "Mars, Pink"}
+{"row_idx": 10, "item_id": "T11", "permutation_idx": 1, "ordered_cards": ["Pink", "Venus", "Mars", "Blue"], "response_text": "Mars, Pink"}
+{"row_idx": 10, "item_id": "T11", "permutation_idx": 2, "ordered_cards": ["Venus", "Blue", "Mars", "Pink"], "response_text": "Mars, Pink"}
+{"row_idx": 10, "item_id": "T11", "permutation_idx": 3, "ordered_cards": ["Blue", "Mars", "Pink", "Venus"], "response_text": "Mars, Blue"}
+{"row_idx": 10, "item_id": "T11", "permutation_idx": 4, "ordered_cards": ["Pink", "Blue", "Venus", "Mars"], "response_text": "Mars"}
+{"row_idx": 11, "item_id": "T12", "permutation_idx": 0, "ordered_cards": ["Squid", "Eight arms", "Ten arms", "Octopus"], "response_text": "Octopus, Eight arms"}
+{"row_idx": 11, "item_id": "T12", "permutation_idx": 1, "ordered_cards": ["Eight arms", "Ten arms", "Squid", "Octopus"], "response_text": "Octopus"}
+{"row_idx": 11, "item_id": "T12", "permutation_idx": 2, "ordered_cards": ["Ten arms", "Eight arms", "Octopus", "Squid"], "response_text": "Octopus, Eight arms"}
+{"row_idx": 11, "item_id": "T12", "permutation_idx": 3, "ordered_cards": ["Octopus", "Eight arms", "Ten arms", "Squid"], "response_text": "Octopus, Ten arms"}
+{"row_idx": 11, "item_id": "T12", "permutation_idx": 4, "ordered_cards": ["Octopus", "Squid", "Ten arms", "Eight arms"], "response_text": "Octopus, Ten arms"}
+{"row_idx": 12, "item_id": "T13", "permutation_idx": 0, "ordered_cards": ["Air", "Fish", "Bird", "Water"], "response_text": "Fish, Water"}
+{"row_idx": 12, "item_id": "T13", "permutation_idx": 1, "ordered_cards": ["Fish", "Bird", "Air", "Water"], "response_text": "Fish, Water"}
+{"row_idx": 12, "item_id": "T13", "permutation_idx": 2, "ordered_cards": ["Fish", "Water", "Bird", "Air"], "response_text": "Fish, Water"}
+{"row_idx": 12, "item_id": "T13", "permutation_idx": 3, "ordered_cards": ["Bird", "Water", "Fish", "Air"], "response_text": "Fish, Water"}
+{"row_idx": 12, "item_id": "T13", "permutation_idx": 4, "ordered_cards": ["Water", "Fish", "Air", "Bird"], "response_text": "Fish, Water"}
+{"row_idx": 13, "item_id": "T14", "permutation_idx": 0, "ordered_cards": ["Quiet", "Flute", "Loud", "Drum"], "response_text": "Drum"}
+{"row_idx": 13, "item_id": "T14", "permutation_idx": 1, "ordered_cards": ["Drum", "Flute", "Quiet", "Loud"], "response_text": "Drum"}
+{"row_idx": 13, "item_id": "T14", "permutation_idx": 2, "ordered_cards": ["Loud", "Drum", "Quiet", "Flute"], "response_text": "Drum"}
+{"row_idx": 13, "item_id": "T14", "permutation_idx": 3, "ordered_cards": ["Drum", "Flute", "Loud", "Quiet"], "response_text": "Drum"}
+{"row_idx": 13, "item_id": "T14", "permutation_idx": 4, "ordered_cards": ["Drum", "Loud", "Quiet", "Flute"], "response_text": "Drum"}
+{"row_idx": 14, "item_id": "T15", "permutation_idx": 0, "ordered_cards": ["Venus", "Not closest", "Mercury", "Closest to Sun"], "response_text": "Mercury, Not closest"}
+{"row_idx": 14, "item_id": "T15", "permutation_idx": 1, "ordered_cards": ["Venus", "Closest to Sun", "Mercury", "Not closest"], "response_text": "Mercury, Closest to Sun"}
+{"row_idx": 14, "item_id": "T15", "permutation_idx": 2, "ordered_cards": ["Mercury", "Closest to Sun", "Venus", "Not closest"], "response_text": "Mercury, Closest to Sun"}
+{"row_idx": 14, "item_id": "T15", "permutation_idx": 3, "ordered_cards": ["Not closest", "Venus", "Closest to Sun", "Mercury"], "response_text": "Mercury, Closest to Sun"}
+{"row_idx": 14, "item_id": "T15", "permutation_idx": 4, "ordered_cards": ["Venus", "Not closest", "Closest to Sun", "Mercury"], "response_text": "Mercury, Not closest"}
+{"row_idx": 15, "item_id": "T16", "permutation_idx": 0, "ordered_cards": ["Ruble", "Poland", "Russia", "Zloty"], "response_text": "Russia"}
+{"row_idx": 15, "item_id": "T16", "permutation_idx": 1, "ordered_cards": ["Zloty", "Ruble", "Poland", "Russia"], "response_text": "Ruble, Russia"}
+{"row_idx": 15, "item_id": "T16", "permutation_idx": 2, "ordered_cards": ["Poland", "Ruble", "Zloty", "Russia"], "response_text": "Russia, Zloty"}
+{"row_idx": 15, "item_id": "T16", "permutation_idx": 3, "ordered_cards": ["Zloty", "Poland", "Ruble", "Russia"], "response_text": "Poland, Russia"}
+{"row_idx": 15, "item_id": "T16", "permutation_idx": 4, "ordered_cards": ["Ruble", "Russia", "Poland", "Zloty"], "response_text": "Russia"}
+{"row_idx": 16, "item_id": "T17", "permutation_idx": 0, "ordered_cards": ["Woodpecker", "Pecks trees", "Robin", "Does not peck"], "response_text": "Woodpecker, Pecks trees"}
+{"row_idx": 16, "item_id": "T17", "permutation_idx": 1, "ordered_cards": ["Woodpecker", "Pecks trees", "Does not peck", "Robin"], "response_text": "Woodpecker, Pecks trees"}
+{"row_idx": 16, "item_id": "T17", "permutation_idx": 2, "ordered_cards": ["Does not peck", "Pecks trees", "Robin", "Woodpecker"], "response_text": "Woodpecker, Pecks trees"}
+{"row_idx": 16, "item_id": "T17", "permutation_idx": 3, "ordered_cards": ["Pecks trees", "Does not peck", "Woodpecker", "Robin"], "response_text": "Woodpecker, Pecks trees"}
+{"row_idx": 16, "item_id": "T17", "permutation_idx": 4, "ordered_cards": ["Woodpecker", "Robin", "Pecks trees", "Does not peck"], "response_text": "Woodpecker, Pecks trees"}
+{"row_idx": 17, "item_id": "T18", "permutation_idx": 0, "ordered_cards": ["Oak", "Brown", "Green", "Pine"], "response_text": "Oak"}
+{"row_idx": 17, "item_id": "T18", "permutation_idx": 1, "ordered_cards": ["Brown", "Pine", "Green", "Oak"], "response_text": "Oak"}
+{"row_idx": 17, "item_id": "T18", "permutation_idx": 2, "ordered_cards": ["Pine", "Green", "Brown", "Oak"], "response_text": "Oak, Green"}
+{"row_idx": 17, "item_id": "T18", "permutation_idx": 3, "ordered_cards": ["Oak", "Pine", "Green", "Brown"], "response_text": "Oak, Green"}
+{"row_idx": 17, "item_id": "T18", "permutation_idx": 4, "ordered_cards": ["Pine", "Green", "Oak", "Brown"], "response_text": "Oak, Green"}
+{"row_idx": 18, "item_id": "T19", "permutation_idx": 0, "ordered_cards": ["Plus", "Negative", "Positive", "Minus"], "response_text": "Plus, Negative"}
+{"row_idx": 18, "item_id": "T19", "permutation_idx": 1, "ordered_cards": ["Negative", "Minus", "Plus", "Positive"], "response_text": "Minus, Positive"}
+{"row_idx": 18, "item_id": "T19", "permutation_idx": 2, "ordered_cards": ["Negative", "Plus", "Positive", "Minus"], "response_text": "Plus"}
+{"row_idx": 18, "item_id": "T19", "permutation_idx": 3, "ordered_cards": ["Plus", "Positive", "Negative", "Minus"], "response_text": "Plus, Negative"}
+{"row_idx": 18, "item_id": "T19", "permutation_idx": 4, "ordered_cards": ["Negative", "Minus", "Positive", "Plus"], "response_text": "Minus, Plus"}
+{"row_idx": 19, "item_id": "T20", "permutation_idx": 0, "ordered_cards": ["Longest neck", "Giraffe", "Horse", "Short neck"], "response_text": "Giraffe, Short neck"}
+{"row_idx": 19, "item_id": "T20", "permutation_idx": 1, "ordered_cards": ["Giraffe", "Longest neck", "Short neck", "Horse"], "response_text": "Giraffe, Short neck"}
+{"row_idx": 19, "item_id": "T20", "permutation_idx": 2, "ordered_cards": ["Horse", "Longest neck", "Giraffe", "Short neck"], "response_text": "Giraffe, Short neck"}
+{"row_idx": 19, "item_id": "T20", "permutation_idx": 3, "ordered_cards": ["Horse", "Short neck", "Longest neck", "Giraffe"], "response_text": "Giraffe, Short neck"}
+{"row_idx": 19, "item_id": "T20", "permutation_idx": 4, "ordered_cards": ["Giraffe", "Short neck", "Horse", "Longest neck"], "response_text": "Giraffe, Longest neck"}
+{"row_idx": 20, "item_id": "T21", "permutation_idx": 0, "ordered_cards": ["Not fastest", "Fastest land animal", "Lion", "Cheetah"], "response_text": "Cheetah, Not fastest"}
+{"row_idx": 20, "item_id": "T21", "permutation_idx": 1, "ordered_cards": ["Fastest land animal", "Lion", "Not fastest", "Cheetah"], "response_text": "Cheetah, Fastest land animal"}
+{"row_idx": 20, "item_id": "T21", "permutation_idx": 2, "ordered_cards": ["Lion", "Cheetah", "Fastest land animal", "Not fastest"], "response_text": "Cheetah, Fastest land animal"}
+{"row_idx": 20, "item_id": "T21", "permutation_idx": 3, "ordered_cards": ["Fastest land animal", "Not fastest", "Lion", "Cheetah"], "response_text": "Cheetah, Fastest land animal"}
+{"row_idx": 20, "item_id": "T21", "permutation_idx": 4, "ordered_cards": ["Lion", "Fastest land animal", "Cheetah", "Not fastest"], "response_text": "Cheetah, Fastest land animal"}
+{"row_idx": 21, "item_id": "T22", "permutation_idx": 0, "ordered_cards": ["Nectar", "Butterfly", "Blood", "Mosquito"], "response_text": "Mosquito, Blood"}
+{"row_idx": 21, "item_id": "T22", "permutation_idx": 1, "ordered_cards": ["Nectar", "Butterfly", "Mosquito", "Blood"], "response_text": "Mosquito, Blood"}
+{"row_idx": 21, "item_id": "T22", "permutation_idx": 2, "ordered_cards": ["Butterfly", "Mosquito", "Nectar", "Blood"], "response_text": "Mosquito"}
+{"row_idx": 21, "item_id": "T22", "permutation_idx": 3, "ordered_cards": ["Butterfly", "Mosquito", "Blood", "Nectar"], "response_text": "Mosquito, Blood"}
+{"row_idx": 21, "item_id": "T22", "permutation_idx": 4, "ordered_cards": ["Nectar", "Mosquito", "Blood", "Butterfly"], "response_text": "Mosquito, Blood"}
+{"row_idx": 22, "item_id": "T23", "permutation_idx": 0, "ordered_cards": ["South", "Cold", "Warm", "North"], "response_text": "North"}
+{"row_idx": 22, "item_id": "T23", "permutation_idx": 1, "ordered_cards": ["South", "North", "Warm", "Cold"], "response_text": "North"}
+{"row_idx": 22, "item_id": "T23", "permutation_idx": 2, "ordered_cards": ["North", "Warm", "Cold", "South"], "response_text": "North, Warm"}
+{"row_idx": 22, "item_id": "T23", "permutation_idx": 3, "ordered_cards": ["North", "Warm", "South", "Cold"], "response_text": "North, South"}
+{"row_idx": 22, "item_id": "T23", "permutation_idx": 4, "ordered_cards": ["Warm", "North", "South", "Cold"], "response_text": "North, Cold"}
+{"row_idx": 23, "item_id": "T24", "permutation_idx": 0, "ordered_cards": ["Cheese", "Milk", "Soybeans", "Tofu"], "response_text": "Tofu, Cheese"}
+{"row_idx": 23, "item_id": "T24", "permutation_idx": 1, "ordered_cards": ["Tofu", "Milk", "Cheese", "Soybeans"], "response_text": "Tofu, Milk"}
+{"row_idx": 23, "item_id": "T24", "permutation_idx": 2, "ordered_cards": ["Milk", "Soybeans", "Cheese", "Tofu"], "response_text": "Tofu, Milk"}
+{"row_idx": 23, "item_id": "T24", "permutation_idx": 3, "ordered_cards": ["Tofu", "Cheese", "Soybeans", "Milk"], "response_text": "Tofu, Soybeans"}
+{"row_idx": 23, "item_id": "T24", "permutation_idx": 4, "ordered_cards": ["Soybeans", "Tofu", "Cheese", "Milk"], "response_text": "Tofu, Cheese"}
+{"row_idx": 24, "item_id": "T25", "permutation_idx": 0, "ordered_cards": ["Rabbit", "Above ground", "Mole", "Underground"], "response_text": "Mole, Above ground"}
+{"row_idx": 24, "item_id": "T25", "permutation_idx": 1, "ordered_cards": ["Mole", "Above ground", "Rabbit", "Underground"], "response_text": "Mole, Above ground"}
+{"row_idx": 24, "item_id": "T25", "permutation_idx": 2, "ordered_cards": ["Underground", "Mole", "Rabbit", "Above ground"], "response_text": "Mole"}
+{"row_idx": 24, "item_id": "T25", "permutation_idx": 3, "ordered_cards": ["Mole", "Rabbit", "Underground", "Above ground"], "response_text": "Mole, Above ground"}
+{"row_idx": 24, "item_id": "T25", "permutation_idx": 4, "ordered_cards": ["Underground", "Above ground", "Mole", "Rabbit"], "response_text": "Mole, Underground"}
+{"row_idx": 25, "item_id": "T26", "permutation_idx": 0, "ordered_cards": ["Red", "Blue", "Acid", "Base"], "response_text": "Red, Acid"}
+{"row_idx": 25, "item_id": "T26", "permutation_idx": 1, "ordered_cards": ["Acid", "Blue", "Red", "Base"], "response_text": "Acid"}
+{"row_idx": 25, "item_id": "T26", "permutation_idx": 2, "ordered_cards": ["Base", "Red", "Blue", "Acid"], "response_text": "Acid, Red"}
+{"row_idx": 25, "item_id": "T26", "permutation_idx": 3, "ordered_cards": ["Base", "Acid", "Blue", "Red"], "response_text": "Acid, Blue"}
+{"row_idx": 25, "item_id": "T26", "permutation_idx": 4, "ordered_cards": ["Base", "Acid", "Red", "Blue"], "response_text": "Acid, Red"}
+{"row_idx": 26, "item_id": "T27", "permutation_idx": 0, "ordered_cards": ["Mild", "Bell pepper", "Chili pepper", "Spicy"], "response_text": "Chili pepper"}
+{"row_idx": 26, "item_id": "T27", "permutation_idx": 1, "ordered_cards": ["Chili pepper", "Bell pepper", "Mild", "Spicy"], "response_text": "Chili pepper, Mild"}
+{"row_idx": 26, "item_id": "T27", "permutation_idx": 2, "ordered_cards": ["Spicy", "Chili pepper", "Bell pepper", "Mild"], "response_text": "Chili pepper, Mild"}
+{"row_idx": 26, "item_id": "T27", "permutation_idx": 3, "ordered_cards": ["Bell pepper", "Chili pepper", "Spicy", "Mild"], "response_text": "Chili pepper, Spicy"}
+{"row_idx": 26, "item_id": "T27", "permutation_idx": 4, "ordered_cards": ["Chili pepper", "Bell pepper", "Spicy", "Mild"], "response_text": "Chili pepper, Mild"}
+{"row_idx": 27, "item_id": "T28", "permutation_idx": 0, "ordered_cards": ["Earth", "Two", "Mars", "One"], "response_text": "Earth, Two"}
+{"row_idx": 27, "item_id": "T28", "permutation_idx": 1, "ordered_cards": ["Two", "Earth", "One", "Mars"], "response_text": "Earth, One"}
+{"row_idx": 27, "item_id": "T28", "permutation_idx": 2, "ordered_cards": ["One", "Mars", "Two", "Earth"], "response_text": "One, Earth"}
+{"row_idx": 27, "item_id": "T28", "permutation_idx": 3, "ordered_cards": ["Earth", "Mars", "One", "Two"], "response_text": "Earth, One"}
+{"row_idx": 27, "item_id": "T28", "permutation_idx": 4, "ordered_cards": ["One", "Earth", "Mars", "Two"], "response_text": "One, Earth"}
+{"row_idx": 28, "item_id": "T29", "permutation_idx": 0, "ordered_cards": ["Shark", "Male carries young", "Seahorse", "Female carries young"], "response_text": "Seahorse, Male carries young"}
+{"row_idx": 28, "item_id": "T29", "permutation_idx": 1, "ordered_cards": ["Shark", "Seahorse", "Female carries young", "Male carries young"], "response_text": "Seahorse, Female carries young"}
+{"row_idx": 28, "item_id": "T29", "permutation_idx": 2, "ordered_cards": ["Seahorse", "Shark", "Male carries young", "Female carries young"], "response_text": "Seahorse"}
+{"row_idx": 28, "item_id": "T29", "permutation_idx": 3, "ordered_cards": ["Male carries young", "Female carries young", "Seahorse", "Shark"], "response_text": "Seahorse, Male carries young"}
+{"row_idx": 28, "item_id": "T29", "permutation_idx": 4, "ordered_cards": ["Male carries young", "Seahorse", "Female carries young", "Shark"], "response_text": "Seahorse"}
+{"row_idx": 29, "item_id": "T30", "permutation_idx": 0, "ordered_cards": ["9", "AA", "9V", "1.5"], "response_text": "AA"}
+{"row_idx": 29, "item_id": "T30", "permutation_idx": 1, "ordered_cards": ["9V", "9", "1.5", "AA"], "response_text": "AA, 9"}
+{"row_idx": 29, "item_id": "T30", "permutation_idx": 2, "ordered_cards": ["9V", "AA", "9", "1.5"], "response_text": "AA"}
+{"row_idx": 29, "item_id": "T30", "permutation_idx": 3, "ordered_cards": ["1.5", "9V", "9", "AA"], "response_text": "AA, 1.5"}
+{"row_idx": 29, "item_id": "T30", "permutation_idx": 4, "ordered_cards": ["AA", "9V", "9", "1.5"], "response_text": "AA, 9"}
+{"row_idx": 30, "item_id": "T31", "permutation_idx": 0, "ordered_cards": ["Mimics speech", "Parrot", "Cannot mimic", "Crow"], "response_text": "Parrot, Mimics speech"}
+{"row_idx": 30, "item_id": "T31", "permutation_idx": 1, "ordered_cards": ["Parrot", "Crow", "Cannot mimic", "Mimics speech"], "response_text": "Parrot, Cannot mimic"}
+{"row_idx": 30, "item_id": "T31", "permutation_idx": 2, "ordered_cards": ["Mimics speech", "Cannot mimic", "Parrot", "Crow"], "response_text": "Parrot, Mimics speech"}
+{"row_idx": 30, "item_id": "T31", "permutation_idx": 3, "ordered_cards": ["Cannot mimic", "Crow", "Mimics speech", "Parrot"], "response_text": "Parrot, Mimics speech"}
+{"row_idx": 30, "item_id": "T31", "permutation_idx": 4, "ordered_cards": ["Mimics speech", "Parrot", "Crow", "Cannot mimic"], "response_text": "Parrot, Mimics speech"}
+{"row_idx": 31, "item_id": "T32", "permutation_idx": 0, "ordered_cards": ["Shark", "Land", "Eagle", "Water"], "response_text": "Shark, Land"}
+{"row_idx": 31, "item_id": "T32", "permutation_idx": 1, "ordered_cards": ["Water", "Shark", "Land", "Eagle"], "response_text": "Shark, Water"}
+{"row_idx": 31, "item_id": "T32", "permutation_idx": 2, "ordered_cards": ["Eagle", "Land", "Water", "Shark"], "response_text": "Shark, Water"}
+{"row_idx": 31, "item_id": "T32", "permutation_idx": 3, "ordered_cards": ["Land", "Shark", "Water", "Eagle"], "response_text": "Shark, Water"}
+{"row_idx": 31, "item_id": "T32", "permutation_idx": 4, "ordered_cards": ["Land", "Eagle", "Water", "Shark"], "response_text": "Shark, Water"}
+{"row_idx": 32, "item_id": "T33", "permutation_idx": 0, "ordered_cards": ["Magnetic", "Copper", "Iron", "Non-magnetic"], "response_text": "Iron"}
+{"row_idx": 32, "item_id": "T33", "permutation_idx": 1, "ordered_cards": ["Non-magnetic", "Magnetic", "Copper", "Iron"], "response_text": "Iron, Non-magnetic"}
+{"row_idx": 32, "item_id": "T33", "permutation_idx": 2, "ordered_cards": ["Magnetic", "Non-magnetic", "Copper", "Iron"], "response_text": "Iron, Non-magnetic"}
+{"row_idx": 32, "item_id": "T33", "permutation_idx": 3, "ordered_cards": ["Iron", "Copper", "Magnetic", "Non-magnetic"], "response_text": "Iron, Non-magnetic"}
+{"row_idx": 32, "item_id": "T33", "permutation_idx": 4, "ordered_cards": ["Non-magnetic", "Iron", "Copper", "Magnetic"], "response_text": "Iron"}
+{"row_idx": 33, "item_id": "T34", "permutation_idx": 0, "ordered_cards": ["Mango", "Lemon", "Sour", "Sweet"], "response_text": "Lemon"}
+{"row_idx": 33, "item_id": "T34", "permutation_idx": 1, "ordered_cards": ["Lemon", "Mango", "Sour", "Sweet"], "response_text": "Lemon"}
+{"row_idx": 33, "item_id": "T34", "permutation_idx": 2, "ordered_cards": ["Sweet", "Mango", "Sour", "Lemon"], "response_text": "Lemon"}
+{"row_idx": 33, "item_id": "T34", "permutation_idx": 3, "ordered_cards": ["Lemon", "Sour", "Mango", "Sweet"], "response_text": "Lemon"}
+{"row_idx": 33, "item_id": "T34", "permutation_idx": 4, "ordered_cards": ["Sour", "Sweet", "Mango", "Lemon"], "response_text": "Lemon"}
+{"row_idx": 34, "item_id": "T35", "permutation_idx": 0, "ordered_cards": ["Mars", "Rings", "Saturn", "No rings"], "response_text": "Saturn, No rings"}
+{"row_idx": 34, "item_id": "T35", "permutation_idx": 1, "ordered_cards": ["No rings", "Mars", "Saturn", "Rings"], "response_text": "Saturn"}
+{"row_idx": 34, "item_id": "T35", "permutation_idx": 2, "ordered_cards": ["Mars", "No rings", "Saturn", "Rings"], "response_text": "Saturn"}
+{"row_idx": 34, "item_id": "T35", "permutation_idx": 3, "ordered_cards": ["Saturn", "Mars", "Rings", "No rings"], "response_text": "Saturn, Rings"}
+{"row_idx": 34, "item_id": "T35", "permutation_idx": 4, "ordered_cards": ["No rings", "Rings", "Mars", "Saturn"], "response_text": "Saturn"}
+{"row_idx": 35, "item_id": "T36", "permutation_idx": 0, "ordered_cards": ["Glows", "Does not glow", "Firefly", "Beetle"], "response_text": "Firefly, Does not glow"}
+{"row_idx": 35, "item_id": "T36", "permutation_idx": 1, "ordered_cards": ["Firefly", "Does not glow", "Glows", "Beetle"], "response_text": "Firefly, Does not glow"}
+{"row_idx": 35, "item_id": "T36", "permutation_idx": 2, "ordered_cards": ["Glows", "Beetle", "Firefly", "Does not glow"], "response_text": "Firefly, Does not glow"}
+{"row_idx": 35, "item_id": "T36", "permutation_idx": 3, "ordered_cards": ["Beetle", "Does not glow", "Glows", "Firefly"], "response_text": "Firefly, Does not glow"}
+{"row_idx": 35, "item_id": "T36", "permutation_idx": 4, "ordered_cards": ["Firefly", "Beetle", "Does not glow", "Glows"], "response_text": "Firefly, Does not glow"}
+{"row_idx": 36, "item_id": "T37", "permutation_idx": 0, "ordered_cards": ["Can fly", "Penguin", "Eagle", "Cannot fly"], "response_text": "Penguin"}
+{"row_idx": 36, "item_id": "T37", "permutation_idx": 1, "ordered_cards": ["Can fly", "Eagle", "Cannot fly", "Penguin"], "response_text": "Eagle, Penguin"}
+{"row_idx": 36, "item_id": "T37", "permutation_idx": 2, "ordered_cards": ["Cannot fly", "Can fly", "Eagle", "Penguin"], "response_text": "Cannot fly, Eagle"}
+{"row_idx": 36, "item_id": "T37", "permutation_idx": 3, "ordered_cards": ["Penguin", "Can fly", "Cannot fly", "Eagle"], "response_text": "Penguin, Can fly"}
+{"row_idx": 36, "item_id": "T37", "permutation_idx": 4, "ordered_cards": ["Can fly", "Penguin", "Cannot fly", "Eagle"], "response_text": "Penguin, Can fly"}
+{"row_idx": 37, "item_id": "T38", "permutation_idx": 0, "ordered_cards": ["Nitrogen", "Supports combustion", "Oxygen", "Does not support combustion"], "response_text": "Oxygen"}
+{"row_idx": 37, "item_id": "T38", "permutation_idx": 1, "ordered_cards": ["Supports combustion", "Oxygen", "Does not support combustion", "Nitrogen"], "response_text": "Oxygen, Supports combustion"}
+{"row_idx": 37, "item_id": "T38", "permutation_idx": 2, "ordered_cards": ["Nitrogen", "Does not support combustion", "Oxygen", "Supports combustion"], "response_text": "Oxygen"}
+{"row_idx": 37, "item_id": "T38", "permutation_idx": 3, "ordered_cards": ["Supports combustion", "Oxygen", "Nitrogen", "Does not support combustion"], "response_text": "Oxygen, Supports combustion"}
+{"row_idx": 37, "item_id": "T38", "permutation_idx": 4, "ordered_cards": ["Nitrogen", "Supports combustion", "Does not support combustion", "Oxygen"], "response_text": "Oxygen, Supports combustion"}
+{"row_idx": 38, "item_id": "T39", "permutation_idx": 0, "ordered_cards": ["Wood", "Floats", "Steel", "Sinks"], "response_text": "Wood"}
+{"row_idx": 38, "item_id": "T39", "permutation_idx": 1, "ordered_cards": ["Wood", "Sinks", "Floats", "Steel"], "response_text": "Wood"}
+{"row_idx": 38, "item_id": "T39", "permutation_idx": 2, "ordered_cards": ["Steel", "Sinks", "Wood", "Floats"], "response_text": "Wood"}
+{"row_idx": 38, "item_id": "T39", "permutation_idx": 3, "ordered_cards": ["Sinks", "Steel", "Wood", "Floats"], "response_text": "Wood"}
+{"row_idx": 38, "item_id": "T39", "permutation_idx": 4, "ordered_cards": ["Wood", "Sinks", "Steel", "Floats"], "response_text": "Wood"}
+{"row_idx": 39, "item_id": "T40", "permutation_idx": 0, "ordered_cards": ["Changes color", "Chameleon", "Stays same color", "Lizard"], "response_text": "Chameleon, Changes color"}
+{"row_idx": 39, "item_id": "T40", "permutation_idx": 1, "ordered_cards": ["Lizard", "Changes color", "Chameleon", "Stays same color"], "response_text": "Chameleon, Changes color"}
+{"row_idx": 39, "item_id": "T40", "permutation_idx": 2, "ordered_cards": ["Chameleon", "Changes color", "Stays same color", "Lizard"], "response_text": "Chameleon, Changes color"}
+{"row_idx": 39, "item_id": "T40", "permutation_idx": 3, "ordered_cards": ["Stays same color", "Chameleon", "Lizard", "Changes color"], "response_text": "Chameleon, Changes color"}
+{"row_idx": 39, "item_id": "T40", "permutation_idx": 4, "ordered_cards": ["Lizard", "Chameleon", "Changes color", "Stays same color"], "response_text": "Chameleon, Changes color"}
+{"row_idx": 40, "item_id": "T41", "permutation_idx": 0, "ordered_cards": ["Center of solar system", "Sun", "Moon", "Not center"], "response_text": "Sun, Center of solar system"}
+{"row_idx": 40, "item_id": "T41", "permutation_idx": 1, "ordered_cards": ["Not center", "Moon", "Center of solar system", "Sun"], "response_text": "Sun, Not center"}
+{"row_idx": 40, "item_id": "T41", "permutation_idx": 2, "ordered_cards": ["Moon", "Not center", "Center of solar system", "Sun"], "response_text": "Sun, Not center"}
+{"row_idx": 40, "item_id": "T41", "permutation_idx": 3, "ordered_cards": ["Center of solar system", "Sun", "Not center", "Moon"], "response_text": "Sun, Center of solar system"}
+{"row_idx": 40, "item_id": "T41", "permutation_idx": 4, "ordered_cards": ["Center of solar system", "Moon", "Sun", "Not center"], "response_text": "Sun, Center of solar system"}
+{"row_idx": 41, "item_id": "T42", "permutation_idx": 0, "ordered_cards": ["Water", "Metal", "Non-metal", "Mercury"], "response_text": "Mercury, Metal"}
+{"row_idx": 41, "item_id": "T42", "permutation_idx": 1, "ordered_cards": ["Water", "Non-metal", "Metal", "Mercury"], "response_text": "Mercury"}
+{"row_idx": 41, "item_id": "T42", "permutation_idx": 2, "ordered_cards": ["Water", "Non-metal", "Mercury", "Metal"], "response_text": "Mercury"}
+{"row_idx": 41, "item_id": "T42", "permutation_idx": 3, "ordered_cards": ["Water", "Metal", "Mercury", "Non-metal"], "response_text": "Mercury, Non-metal"}
+{"row_idx": 41, "item_id": "T42", "permutation_idx": 4, "ordered_cards": ["Mercury", "Metal", "Non-metal", "Water"], "response_text": "Mercury"}
+{"row_idx": 42, "item_id": "T43", "permutation_idx": 0, "ordered_cards": ["No echolocation", "Cat", "Echolocation", "Bat"], "response_text": "Bat, No echolocation"}
+{"row_idx": 42, "item_id": "T43", "permutation_idx": 1, "ordered_cards": ["No echolocation", "Bat", "Echolocation", "Cat"], "response_text": "Bat, No echolocation"}
+{"row_idx": 42, "item_id": "T43", "permutation_idx": 2, "ordered_cards": ["No echolocation", "Bat", "Cat", "Echolocation"], "response_text": "Bat"}
+{"row_idx": 42, "item_id": "T43", "permutation_idx": 3, "ordered_cards": ["Echolocation", "Bat", "Cat", "No echolocation"], "response_text": "Bat, Echolocation"}
+{"row_idx": 42, "item_id": "T43", "permutation_idx": 4, "ordered_cards": ["Echolocation", "No echolocation", "Cat", "Bat"], "response_text": "Bat, Echolocation"}
+{"row_idx": 43, "item_id": "T44", "permutation_idx": 0, "ordered_cards": ["Carrot", "Tomato", "Above ground", "Underground"], "response_text": "Carrot, Above ground"}
+{"row_idx": 43, "item_id": "T44", "permutation_idx": 1, "ordered_cards": ["Carrot", "Above ground", "Underground", "Tomato"], "response_text": "Carrot, Tomato"}
+{"row_idx": 43, "item_id": "T44", "permutation_idx": 2, "ordered_cards": ["Carrot", "Underground", "Tomato", "Above ground"], "response_text": "Carrot, Tomato"}
+{"row_idx": 43, "item_id": "T44", "permutation_idx": 3, "ordered_cards": ["Underground", "Tomato", "Above ground", "Carrot"], "response_text": "Carrot, Tomato"}
+{"row_idx": 43, "item_id": "T44", "permutation_idx": 4, "ordered_cards": ["Carrot", "Tomato", "Underground", "Above ground"], "response_text": "Carrot, Above ground"}
+{"row_idx": 44, "item_id": "T45", "permutation_idx": 0, "ordered_cards": ["Gold", "Rusts", "Iron", "Does not rust"], "response_text": "Gold, Rusts"}
+{"row_idx": 44, "item_id": "T45", "permutation_idx": 1, "ordered_cards": ["Gold", "Rusts", "Does not rust", "Iron"], "response_text": "Gold, Iron"}
+{"row_idx": 44, "item_id": "T45", "permutation_idx": 2, "ordered_cards": ["Rusts", "Does not rust", "Gold", "Iron"], "response_text": "Gold, Iron"}
+{"row_idx": 44, "item_id": "T45", "permutation_idx": 3, "ordered_cards": ["Rusts", "Iron", "Does not rust", "Gold"], "response_text": "Iron, Gold"}
+{"row_idx": 44, "item_id": "T45", "permutation_idx": 4, "ordered_cards": ["Rusts", "Gold", "Iron", "Does not rust"], "response_text": "Gold, Iron"}
+{"row_idx": 45, "item_id": "T46", "permutation_idx": 0, "ordered_cards": ["Horse", "No hump", "Hump", "Camel"], "response_text": "Camel, No hump"}
+{"row_idx": 45, "item_id": "T46", "permutation_idx": 1, "ordered_cards": ["Hump", "Horse", "No hump", "Camel"], "response_text": "Camel, Hump"}
+{"row_idx": 45, "item_id": "T46", "permutation_idx": 2, "ordered_cards": ["Hump", "Camel", "Horse", "No hump"], "response_text": "Camel, No hump"}
+{"row_idx": 45, "item_id": "T46", "permutation_idx": 3, "ordered_cards": ["Camel", "Hump", "Horse", "No hump"], "response_text": "Camel, No hump"}
+{"row_idx": 45, "item_id": "T46", "permutation_idx": 4, "ordered_cards": ["No hump", "Camel", "Hump", "Horse"], "response_text": "Camel, No hump"}
+{"row_idx": 46, "item_id": "T47", "permutation_idx": 0, "ordered_cards": ["Does not pump blood", "Liver", "Heart", "Pumps blood"], "response_text": "Heart, Does not pump blood"}
+{"row_idx": 46, "item_id": "T47", "permutation_idx": 1, "ordered_cards": ["Pumps blood", "Does not pump blood", "Liver", "Heart"], "response_text": "Heart, Pumps blood"}
+{"row_idx": 46, "item_id": "T47", "permutation_idx": 2, "ordered_cards": ["Heart", "Does not pump blood", "Liver", "Pumps blood"], "response_text": "Heart, Does not pump blood"}
+{"row_idx": 46, "item_id": "T47", "permutation_idx": 3, "ordered_cards": ["Does not pump blood", "Pumps blood", "Liver", "Heart"], "response_text": "Pumps blood, Heart"}
+{"row_idx": 46, "item_id": "T47", "permutation_idx": 4, "ordered_cards": ["Does not pump blood", "Pumps blood", "Heart", "Liver"], "response_text": "Heart, Does not pump blood"}
+{"row_idx": 47, "item_id": "T48", "permutation_idx": 0, "ordered_cards": ["Summer", "Winter", "Hot", "Cold"], "response_text": "Winter, Hot"}
+{"row_idx": 47, "item_id": "T48", "permutation_idx": 1, "ordered_cards": ["Summer", "Winter", "Cold", "Hot"], "response_text": "Winter"}
+{"row_idx": 47, "item_id": "T48", "permutation_idx": 2, "ordered_cards": ["Summer", "Cold", "Hot", "Winter"], "response_text": "Winter, Hot"}
+{"row_idx": 47, "item_id": "T48", "permutation_idx": 3, "ordered_cards": ["Hot", "Summer", "Cold", "Winter"], "response_text": "Winter"}
+{"row_idx": 47, "item_id": "T48", "permutation_idx": 4, "ordered_cards": ["Winter", "Summer", "Cold", "Hot"], "response_text": "Winter, Cold"}
+{"row_idx": 48, "item_id": "T49", "permutation_idx": 0, "ordered_cards": ["Bread", "Flour", "No flour", "Butter"], "response_text": "Bread, Flour"}
+{"row_idx": 48, "item_id": "T49", "permutation_idx": 1, "ordered_cards": ["No flour", "Flour", "Butter", "Bread"], "response_text": "Flour, Bread"}
+{"row_idx": 48, "item_id": "T49", "permutation_idx": 2, "ordered_cards": ["No flour", "Butter", "Flour", "Bread"], "response_text": "Flour, Bread"}
+{"row_idx": 48, "item_id": "T49", "permutation_idx": 3, "ordered_cards": ["Bread", "Butter", "Flour", "No flour"], "response_text": "Bread, No flour"}
+{"row_idx": 48, "item_id": "T49", "permutation_idx": 4, "ordered_cards": ["Butter", "No flour", "Bread", "Flour"], "response_text": "Bread, No flour"}
+{"row_idx": 49, "item_id": "T50", "permutation_idx": 0, "ordered_cards": ["Yuan", "Yen", "China", "Japan"], "response_text": "Yen, China"}
+{"row_idx": 49, "item_id": "T50", "permutation_idx": 1, "ordered_cards": ["China", "Yuan", "Japan", "Yen"], "response_text": "Japan, Yuan"}
+{"row_idx": 49, "item_id": "T50", "permutation_idx": 2, "ordered_cards": ["Yen", "China", "Yuan", "Japan"], "response_text": "Yen, China"}
+{"row_idx": 49, "item_id": "T50", "permutation_idx": 3, "ordered_cards": ["Japan", "China", "Yen", "Yuan"], "response_text": "Japan"}
+{"row_idx": 49, "item_id": "T50", "permutation_idx": 4, "ordered_cards": ["China", "Yen", "Japan", "Yuan"], "response_text": "Japan, Yuan"}
+{"row_idx": 50, "item_id": "T51", "permutation_idx": 0, "ordered_cards": ["Water", "Air", "Dolphin", "Tuna"], "response_text": "Dolphin, Water"}
+{"row_idx": 50, "item_id": "T51", "permutation_idx": 1, "ordered_cards": ["Tuna", "Water", "Air", "Dolphin"], "response_text": "Dolphin, Air"}
+{"row_idx": 50, "item_id": "T51", "permutation_idx": 2, "ordered_cards": ["Air", "Tuna", "Dolphin", "Water"], "response_text": "Dolphin, Water"}
+{"row_idx": 50, "item_id": "T51", "permutation_idx": 3, "ordered_cards": ["Dolphin", "Water", "Tuna", "Air"], "response_text": "Dolphin, Air"}
+{"row_idx": 50, "item_id": "T51", "permutation_idx": 4, "ordered_cards": ["Air", "Dolphin", "Tuna", "Water"], "response_text": "Dolphin, Tuna"}
+{"row_idx": 51, "item_id": "T52", "permutation_idx": 0, "ordered_cards": ["Mars", "Venus", "Cooler than Mercury", "Hotter than Mercury"], "response_text": "Venus"}
+{"row_idx": 51, "item_id": "T52", "permutation_idx": 1, "ordered_cards": ["Mars", "Venus", "Hotter than Mercury", "Cooler than Mercury"], "response_text": "Venus"}
+{"row_idx": 51, "item_id": "T52", "permutation_idx": 2, "ordered_cards": ["Mars", "Cooler than Mercury", "Venus", "Hotter than Mercury"], "response_text": "Venus"}
+{"row_idx": 51, "item_id": "T52", "permutation_idx": 3, "ordered_cards": ["Cooler than Mercury", "Mars", "Venus", "Hotter than Mercury"], "response_text": "Venus"}
+{"row_idx": 51, "item_id": "T52", "permutation_idx": 4, "ordered_cards": ["Hotter than Mercury", "Venus", "Cooler than Mercury", "Mars"], "response_text": "Venus"}
+{"row_idx": 52, "item_id": "T53", "permutation_idx": 0, "ordered_cards": ["Eight legs", "Six legs", "Spider", "Ant"], "response_text": "Eight legs, Spider"}
+{"row_idx": 52, "item_id": "T53", "permutation_idx": 1, "ordered_cards": ["Ant", "Spider", "Six legs", "Eight legs"], "response_text": "Spider"}
+{"row_idx": 52, "item_id": "T53", "permutation_idx": 2, "ordered_cards": ["Spider", "Ant", "Six legs", "Eight legs"], "response_text": "Spider, Six legs"}
+{"row_idx": 52, "item_id": "T53", "permutation_idx": 3, "ordered_cards": ["Ant", "Six legs", "Spider", "Eight legs"], "response_text": "Spider, Six legs"}
+{"row_idx": 52, "item_id": "T53", "permutation_idx": 4, "ordered_cards": ["Spider", "Eight legs", "Ant", "Six legs"], "response_text": "Spider, Six legs"}
+{"row_idx": 53, "item_id": "T54", "permutation_idx": 0, "ordered_cards": ["Stores water", "Cactus", "Does not store water", "Oak"], "response_text": "Cactus, Stores water"}
+{"row_idx": 53, "item_id": "T54", "permutation_idx": 1, "ordered_cards": ["Oak", "Cactus", "Does not store water", "Stores water"], "response_text": "Cactus, Does not store water"}
+{"row_idx": 53, "item_id": "T54", "permutation_idx": 2, "ordered_cards": ["Cactus", "Oak", "Does not store water", "Stores water"], "response_text": "Cactus, Does not store water"}
+{"row_idx": 53, "item_id": "T54", "permutation_idx": 3, "ordered_cards": ["Does not store water", "Cactus", "Stores water", "Oak"], "response_text": "Cactus"}
+{"row_idx": 53, "item_id": "T54", "permutation_idx": 4, "ordered_cards": ["Stores water", "Oak", "Cactus", "Does not store water"], "response_text": "Cactus, Stores water"}
+{"row_idx": 54, "item_id": "T55", "permutation_idx": 0, "ordered_cards": ["Does not conduct", "Copper", "Rubber", "Conducts electricity"], "response_text": "Copper, Does not conduct"}
+{"row_idx": 54, "item_id": "T55", "permutation_idx": 1, "ordered_cards": ["Rubber", "Copper", "Does not conduct", "Conducts electricity"], "response_text": "Copper, Does not conduct"}
+{"row_idx": 54, "item_id": "T55", "permutation_idx": 2, "ordered_cards": ["Conducts electricity", "Copper", "Does not conduct", "Rubber"], "response_text": "Copper, Does not conduct"}
+{"row_idx": 54, "item_id": "T55", "permutation_idx": 3, "ordered_cards": ["Conducts electricity", "Rubber", "Does not conduct", "Copper"], "response_text": "Copper, Does not conduct"}
+{"row_idx": 54, "item_id": "T55", "permutation_idx": 4, "ordered_cards": ["Rubber", "Conducts electricity", "Does not conduct", "Copper"], "response_text": "Copper, Does not conduct"}
+{"row_idx": 55, "item_id": "T56", "permutation_idx": 0, "ordered_cards": ["No legs", "Snake", "Lizard", "Has legs"], "response_text": "Snake, No legs"}
+{"row_idx": 55, "item_id": "T56", "permutation_idx": 1, "ordered_cards": ["Has legs", "No legs", "Lizard", "Snake"], "response_text": "No legs, Snake"}
+{"row_idx": 55, "item_id": "T56", "permutation_idx": 2, "ordered_cards": ["Snake", "No legs", "Has legs", "Lizard"], "response_text": "Snake, No legs"}
+{"row_idx": 55, "item_id": "T56", "permutation_idx": 3, "ordered_cards": ["Lizard", "No legs", "Has legs", "Snake"], "response_text": "Snake, No legs"}
+{"row_idx": 55, "item_id": "T56", "permutation_idx": 4, "ordered_cards": ["Snake", "No legs", "Lizard", "Has legs"], "response_text": "Snake, No legs"}
+{"row_idx": 56, "item_id": "T57", "permutation_idx": 0, "ordered_cards": ["Cannot fly", "Can fly", "Ostrich", "Sparrow"], "response_text": "Ostrich, Cannot fly"}
+{"row_idx": 56, "item_id": "T57", "permutation_idx": 1, "ordered_cards": ["Can fly", "Cannot fly", "Ostrich", "Sparrow"], "response_text": "Cannot fly, Ostrich"}
+{"row_idx": 56, "item_id": "T57", "permutation_idx": 2, "ordered_cards": ["Can fly", "Ostrich", "Cannot fly", "Sparrow"], "response_text": "Ostrich"}
+{"row_idx": 56, "item_id": "T57", "permutation_idx": 3, "ordered_cards": ["Ostrich", "Can fly", "Sparrow", "Cannot fly"], "response_text": "Ostrich, Can fly"}
+{"row_idx": 56, "item_id": "T57", "permutation_idx": 4, "ordered_cards": ["Cannot fly", "Can fly", "Sparrow", "Ostrich"], "response_text": "Ostrich"}
+{"row_idx": 57, "item_id": "T58", "permutation_idx": 0, "ordered_cards": ["Watermelon", "Grape", "Contains seeds", "Seedless"], "response_text": "Watermelon, Contains seeds"}
+{"row_idx": 57, "item_id": "T58", "permutation_idx": 1, "ordered_cards": ["Contains seeds", "Grape", "Seedless", "Watermelon"], "response_text": "Watermelon, Seedless"}
+{"row_idx": 57, "item_id": "T58", "permutation_idx": 2, "ordered_cards": ["Seedless", "Grape", "Watermelon", "Contains seeds"], "response_text": "Watermelon, Contains seeds"}
+{"row_idx": 57, "item_id": "T58", "permutation_idx": 3, "ordered_cards": ["Seedless", "Contains seeds", "Watermelon", "Grape"], "response_text": "Watermelon, Contains seeds"}
+{"row_idx": 57, "item_id": "T58", "permutation_idx": 4, "ordered_cards": ["Contains seeds", "Grape", "Watermelon", "Seedless"], "response_text": "Watermelon, Seedless"}
+{"row_idx": 58, "item_id": "T59", "permutation_idx": 0, "ordered_cards": ["Carbon dioxide", "Heavier than air", "Helium", "Lighter than air"], "response_text": "Helium"}
+{"row_idx": 58, "item_id": "T59", "permutation_idx": 1, "ordered_cards": ["Carbon dioxide", "Lighter than air", "Heavier than air", "Helium"], "response_text": "Helium"}
+{"row_idx": 58, "item_id": "T59", "permutation_idx": 2, "ordered_cards": ["Heavier than air", "Carbon dioxide", "Lighter than air", "Helium"], "response_text": "Helium"}
+{"row_idx": 58, "item_id": "T59", "permutation_idx": 3, "ordered_cards": ["Heavier than air", "Carbon dioxide", "Helium", "Lighter than air"], "response_text": "Helium, Lighter than air"}
+{"row_idx": 58, "item_id": "T59", "permutation_idx": 4, "ordered_cards": ["Carbon dioxide", "Helium", "Lighter than air", "Heavier than air"], "response_text": "Helium"}
+{"row_idx": 59, "item_id": "T60", "permutation_idx": 0, "ordered_cards": ["Wasp", "Does not produce honey", "Bee", "Produces honey"], "response_text": "Bee, Does not produce honey"}
+{"row_idx": 59, "item_id": "T60", "permutation_idx": 1, "ordered_cards": ["Does not produce honey", "Wasp", "Produces honey", "Bee"], "response_text": "Bee, Does not produce honey"}
+{"row_idx": 59, "item_id": "T60", "permutation_idx": 2, "ordered_cards": ["Produces honey", "Bee", "Does not produce honey", "Wasp"], "response_text": "Produces honey, Bee"}
+{"row_idx": 59, "item_id": "T60", "permutation_idx": 3, "ordered_cards": ["Bee", "Wasp", "Produces honey", "Does not produce honey"], "response_text": "Bee, Does not produce honey"}
+{"row_idx": 59, "item_id": "T60", "permutation_idx": 4, "ordered_cards": ["Wasp", "Produces honey", "Does not produce honey", "Bee"], "response_text": "Bee, Produces honey"}
+{"row_idx": 60, "item_id": "T61", "permutation_idx": 0, "ordered_cards": ["Land", "Ocean", "Elephant", "Whale"], "response_text": "Whale"}
+{"row_idx": 60, "item_id": "T61", "permutation_idx": 1, "ordered_cards": ["Elephant", "Land", "Whale", "Ocean"], "response_text": "Whale, Land"}
+{"row_idx": 60, "item_id": "T61", "permutation_idx": 2, "ordered_cards": ["Elephant", "Whale", "Land", "Ocean"], "response_text": "Whale, Land"}
+{"row_idx": 60, "item_id": "T61", "permutation_idx": 3, "ordered_cards": ["Whale", "Elephant", "Land", "Ocean"], "response_text": "Whale, Land"}
+{"row_idx": 60, "item_id": "T61", "permutation_idx": 4, "ordered_cards": ["Ocean", "Whale", "Land", "Elephant"], "response_text": "Whale, Ocean"}
+{"row_idx": 61, "item_id": "T62", "permutation_idx": 0, "ordered_cards": ["Carbon", "Cannot form diamonds", "Nitrogen", "Can form diamonds"], "response_text": "Carbon"}
+{"row_idx": 61, "item_id": "T62", "permutation_idx": 1, "ordered_cards": ["Nitrogen", "Can form diamonds", "Carbon", "Cannot form diamonds"], "response_text": "Carbon"}
+{"row_idx": 61, "item_id": "T62", "permutation_idx": 2, "ordered_cards": ["Nitrogen", "Can form diamonds", "Cannot form diamonds", "Carbon"], "response_text": "Carbon, Can form diamonds"}
+{"row_idx": 61, "item_id": "T62", "permutation_idx": 3, "ordered_cards": ["Carbon", "Cannot form diamonds", "Can form diamonds", "Nitrogen"], "response_text": "Carbon, Cannot form diamonds"}
+{"row_idx": 61, "item_id": "T62", "permutation_idx": 4, "ordered_cards": ["Cannot form diamonds", "Nitrogen", "Can form diamonds", "Carbon"], "response_text": "Carbon, Cannot form diamonds"}
+{"row_idx": 62, "item_id": "T63", "permutation_idx": 0, "ordered_cards": ["Spanish", "Argentina", "Portuguese", "Brazil"], "response_text": "Brazil, Portuguese"}
+{"row_idx": 62, "item_id": "T63", "permutation_idx": 1, "ordered_cards": ["Brazil", "Portuguese", "Spanish", "Argentina"], "response_text": "Brazil"}
+{"row_idx": 62, "item_id": "T63", "permutation_idx": 2, "ordered_cards": ["Argentina", "Portuguese", "Brazil", "Spanish"], "response_text": "Brazil, Portuguese"}
+{"row_idx": 62, "item_id": "T63", "permutation_idx": 3, "ordered_cards": ["Portuguese", "Brazil", "Spanish", "Argentina"], "response_text": "Brazil"}
+{"row_idx": 62, "item_id": "T63", "permutation_idx": 4, "ordered_cards": ["Portuguese", "Spanish", "Argentina", "Brazil"], "response_text": "Portuguese, Brazil"}
+{"row_idx": 63, "item_id": "T64", "permutation_idx": 0, "ordered_cards": ["No milk", "Cheese", "Milk", "Bread"], "response_text": "Cheese, No milk"}
+{"row_idx": 63, "item_id": "T64", "permutation_idx": 1, "ordered_cards": ["Milk", "No milk", "Bread", "Cheese"], "response_text": "Cheese, No milk"}
+{"row_idx": 63, "item_id": "T64", "permutation_idx": 2, "ordered_cards": ["Bread", "Milk", "Cheese", "No milk"], "response_text": "Cheese, No milk"}
+{"row_idx": 63, "item_id": "T64", "permutation_idx": 3, "ordered_cards": ["Bread", "Cheese", "No milk", "Milk"], "response_text": "Cheese, Milk"}
+{"row_idx": 63, "item_id": "T64", "permutation_idx": 4, "ordered_cards": ["Cheese", "No milk", "Bread", "Milk"], "response_text": "Cheese, No milk"}
+{"row_idx": 64, "item_id": "T65", "permutation_idx": 0, "ordered_cards": ["Not amphibious", "Lizard", "Frog", "Amphibious"], "response_text": "Frog, Not amphibious"}
+{"row_idx": 64, "item_id": "T65", "permutation_idx": 1, "ordered_cards": ["Not amphibious", "Lizard", "Amphibious", "Frog"], "response_text": "Frog, Not amphibious"}
+{"row_idx": 64, "item_id": "T65", "permutation_idx": 2, "ordered_cards": ["Not amphibious", "Frog", "Amphibious", "Lizard"], "response_text": "Frog"}
+{"row_idx": 64, "item_id": "T65", "permutation_idx": 3, "ordered_cards": ["Lizard", "Not amphibious", "Frog", "Amphibious"], "response_text": "Frog, Not amphibious"}
+{"row_idx": 64, "item_id": "T65", "permutation_idx": 4, "ordered_cards": ["Not amphibious", "Frog", "Lizard", "Amphibious"], "response_text": "Frog, Not amphibious"}
+{"row_idx": 65, "item_id": "T66", "permutation_idx": 0, "ordered_cards": ["Does not face sun", "Faces sun", "Rose", "Sunflower"], "response_text": "Sunflower, Does not face sun"}
+{"row_idx": 65, "item_id": "T66", "permutation_idx": 1, "ordered_cards": ["Rose", "Does not face sun", "Faces sun", "Sunflower"], "response_text": "Sunflower, Does not face sun"}
+{"row_idx": 65, "item_id": "T66", "permutation_idx": 2, "ordered_cards": ["Sunflower", "Faces sun", "Rose", "Does not face sun"], "response_text": "Sunflower, Rose"}
+{"row_idx": 65, "item_id": "T66", "permutation_idx": 3, "ordered_cards": ["Rose", "Faces sun", "Sunflower", "Does not face sun"], "response_text": "Sunflower, Does not face sun"}
+{"row_idx": 65, "item_id": "T66", "permutation_idx": 4, "ordered_cards": ["Rose", "Sunflower", "Faces sun", "Does not face sun"], "response_text": "Sunflower, Faces sun"}
+{"row_idx": 66, "item_id": "T67", "permutation_idx": 0, "ordered_cards": ["Atlantic", "Not largest", "Pacific", "Largest"], "response_text": "Pacific, Not largest"}
+{"row_idx": 66, "item_id": "T67", "permutation_idx": 1, "ordered_cards": ["Not largest", "Pacific", "Largest", "Atlantic"], "response_text": "Pacific, Largest"}
+{"row_idx": 66, "item_id": "T67", "permutation_idx": 2, "ordered_cards": ["Largest", "Pacific", "Not largest", "Atlantic"], "response_text": "Pacific, Largest"}
+{"row_idx": 66, "item_id": "T67", "permutation_idx": 3, "ordered_cards": ["Largest", "Not largest", "Atlantic", "Pacific"], "response_text": "Pacific, Largest"}
+{"row_idx": 66, "item_id": "T67", "permutation_idx": 4, "ordered_cards": ["Atlantic", "Pacific", "Not largest", "Largest"], "response_text": "Pacific, Largest"}
+{"row_idx": 67, "item_id": "T68", "permutation_idx": 0, "ordered_cards": ["Femur", "Humerus", "Leg", "Arm"], "response_text": "Femur, Leg"}
+{"row_idx": 67, "item_id": "T68", "permutation_idx": 1, "ordered_cards": ["Leg", "Femur", "Arm", "Humerus"], "response_text": "Femur"}
+{"row_idx": 67, "item_id": "T68", "permutation_idx": 2, "ordered_cards": ["Humerus", "Femur", "Leg", "Arm"], "response_text": "Femur, Leg"}
+{"row_idx": 67, "item_id": "T68", "permutation_idx": 3, "ordered_cards": ["Femur", "Leg", "Humerus", "Arm"], "response_text": "Femur, Humerus"}
+{"row_idx": 67, "item_id": "T68", "permutation_idx": 4, "ordered_cards": ["Humerus", "Arm", "Leg", "Femur"], "response_text": "Femur, Leg"}
+{"row_idx": 68, "item_id": "T69", "permutation_idx": 0, "ordered_cards": ["Frog", "Regenerates limbs", "Cannot regenerate", "Axolotl"], "response_text": "Axolotl, Regenerates limbs"}
+{"row_idx": 68, "item_id": "T69", "permutation_idx": 1, "ordered_cards": ["Axolotl", "Cannot regenerate", "Frog", "Regenerates limbs"], "response_text": "Axolotl, Cannot regenerate"}
+{"row_idx": 68, "item_id": "T69", "permutation_idx": 2, "ordered_cards": ["Cannot regenerate", "Frog", "Regenerates limbs", "Axolotl"], "response_text": "Axolotl"}
+{"row_idx": 68, "item_id": "T69", "permutation_idx": 3, "ordered_cards": ["Frog", "Axolotl", "Regenerates limbs", "Cannot regenerate"], "response_text": "Axolotl, Regenerates limbs"}
+{"row_idx": 68, "item_id": "T69", "permutation_idx": 4, "ordered_cards": ["Cannot regenerate", "Regenerates limbs", "Frog", "Axolotl"], "response_text": "Axolotl"}
+{"row_idx": 69, "item_id": "T70", "permutation_idx": 0, "ordered_cards": ["Apple", "No vitamin C", "Vitamin C", "Orange"], "response_text": "Orange"}
+{"row_idx": 69, "item_id": "T70", "permutation_idx": 1, "ordered_cards": ["Vitamin C", "No vitamin C", "Apple", "Orange"], "response_text": "Orange, Apple"}
+{"row_idx": 69, "item_id": "T70", "permutation_idx": 2, "ordered_cards": ["Orange", "Apple", "Vitamin C", "No vitamin C"], "response_text": "Orange, Vitamin C"}
+{"row_idx": 69, "item_id": "T70", "permutation_idx": 3, "ordered_cards": ["Vitamin C", "Apple", "Orange", "No vitamin C"], "response_text": "Orange"}
+{"row_idx": 69, "item_id": "T70", "permutation_idx": 4, "ordered_cards": ["No vitamin C", "Orange", "Vitamin C", "Apple"], "response_text": "Orange, No vitamin C"}
+{"row_idx": 70, "item_id": "T71", "permutation_idx": 0, "ordered_cards": ["Wood", "Opaque", "Glass", "Transparent"], "response_text": "Glass"}
+{"row_idx": 70, "item_id": "T71", "permutation_idx": 1, "ordered_cards": ["Glass", "Opaque", "Wood", "Transparent"], "response_text": "Glass, Opaque"}
+{"row_idx": 70, "item_id": "T71", "permutation_idx": 2, "ordered_cards": ["Opaque", "Transparent", "Wood", "Glass"], "response_text": "Glass"}
+{"row_idx": 70, "item_id": "T71", "permutation_idx": 3, "ordered_cards": ["Glass", "Wood", "Opaque", "Transparent"], "response_text": "Glass, Opaque"}
+{"row_idx": 70, "item_id": "T71", "permutation_idx": 4, "ordered_cards": ["Transparent", "Opaque", "Glass", "Wood"], "response_text": "Glass"}
+{"row_idx": 71, "item_id": "T72", "permutation_idx": 0, "ordered_cards": ["Carnivore", "Tiger", "Herbivore", "Cow"], "response_text": "Cow, Tiger"}
+{"row_idx": 71, "item_id": "T72", "permutation_idx": 1, "ordered_cards": ["Carnivore", "Cow", "Herbivore", "Tiger"], "response_text": "Cow, Tiger"}
+{"row_idx": 71, "item_id": "T72", "permutation_idx": 2, "ordered_cards": ["Herbivore", "Cow", "Tiger", "Carnivore"], "response_text": "Cow, Tiger"}
+{"row_idx": 71, "item_id": "T72", "permutation_idx": 3, "ordered_cards": ["Cow", "Carnivore", "Herbivore", "Tiger"], "response_text": "Cow, Carnivore"}
+{"row_idx": 71, "item_id": "T72", "permutation_idx": 4, "ordered_cards": ["Cow", "Herbivore", "Carnivore", "Tiger"], "response_text": "Cow, Carnivore"}
+{"row_idx": 72, "item_id": "T73", "permutation_idx": 0, "ordered_cards": ["Red", "Mars", "Neptune", "Blue"], "response_text": "Neptune, Blue"}
+{"row_idx": 72, "item_id": "T73", "permutation_idx": 1, "ordered_cards": ["Mars", "Neptune", "Blue", "Red"], "response_text": "Neptune, Blue"}
+{"row_idx": 72, "item_id": "T73", "permutation_idx": 2, "ordered_cards": ["Blue", "Neptune", "Mars", "Red"], "response_text": "Neptune"}
+{"row_idx": 72, "item_id": "T73", "permutation_idx": 3, "ordered_cards": ["Neptune", "Blue", "Mars", "Red"], "response_text": "Neptune, Blue"}
+{"row_idx": 72, "item_id": "T73", "permutation_idx": 4, "ordered_cards": ["Blue", "Red", "Mars", "Neptune"], "response_text": "Neptune"}
+{"row_idx": 73, "item_id": "T74", "permutation_idx": 0, "ordered_cards": ["Bicep", "Leg", "Quadricep", "Arm"], "response_text": "Bicep, Leg"}
+{"row_idx": 73, "item_id": "T74", "permutation_idx": 1, "ordered_cards": ["Leg", "Arm", "Bicep", "Quadricep"], "response_text": "Arm, Bicep"}
+{"row_idx": 73, "item_id": "T74", "permutation_idx": 2, "ordered_cards": ["Arm", "Bicep", "Leg", "Quadricep"], "response_text": "Arm, Bicep"}
+{"row_idx": 73, "item_id": "T74", "permutation_idx": 3, "ordered_cards": ["Leg", "Bicep", "Arm", "Quadricep"], "response_text": "Bicep, Arm"}
+{"row_idx": 73, "item_id": "T74", "permutation_idx": 4, "ordered_cards": ["Bicep", "Quadricep", "Leg", "Arm"], "response_text": "Bicep, Quadricep"}
+{"row_idx": 74, "item_id": "T75", "permutation_idx": 0, "ordered_cards": ["Europe", "Dollar", "Euro", "America"], "response_text": "Europe, Euro"}
+{"row_idx": 74, "item_id": "T75", "permutation_idx": 1, "ordered_cards": ["Dollar", "America", "Euro", "Europe"], "response_text": "Euro, America"}
+{"row_idx": 74, "item_id": "T75", "permutation_idx": 2, "ordered_cards": ["Dollar", "Europe", "Euro", "America"], "response_text": "Euro"}
+{"row_idx": 74, "item_id": "T75", "permutation_idx": 3, "ordered_cards": ["Euro", "America", "Europe", "Dollar"], "response_text": "Euro, America"}
+{"row_idx": 74, "item_id": "T75", "permutation_idx": 4, "ordered_cards": ["Europe", "Euro", "America", "Dollar"], "response_text": "Euro"}
+{"row_idx": 75, "item_id": "T76", "permutation_idx": 0, "ordered_cards": ["Tortoise", "No shell", "Crocodile", "Shell"], "response_text": "Tortoise, No shell"}
+{"row_idx": 75, "item_id": "T76", "permutation_idx": 1, "ordered_cards": ["No shell", "Crocodile", "Tortoise", "Shell"], "response_text": "Tortoise, Shell"}
+{"row_idx": 75, "item_id": "T76", "permutation_idx": 2, "ordered_cards": ["Crocodile", "No shell", "Tortoise", "Shell"], "response_text": "Tortoise, No shell"}
+{"row_idx": 75, "item_id": "T76", "permutation_idx": 3, "ordered_cards": ["Tortoise", "Crocodile", "No shell", "Shell"], "response_text": "Tortoise, No shell"}
+{"row_idx": 75, "item_id": "T76", "permutation_idx": 4, "ordered_cards": ["Shell", "No shell", "Tortoise", "Crocodile"], "response_text": "Tortoise, Shell"}
+{"row_idx": 76, "item_id": "T77", "permutation_idx": 0, "ordered_cards": ["CO2", "O2", "Not used", "Used in photosynthesis"], "response_text": "CO2, Not used"}
+{"row_idx": 76, "item_id": "T77", "permutation_idx": 1, "ordered_cards": ["Not used", "CO2", "O2", "Used in photosynthesis"], "response_text": "CO2, Not used"}
+{"row_idx": 76, "item_id": "T77", "permutation_idx": 2, "ordered_cards": ["Not used", "CO2", "Used in photosynthesis", "O2"], "response_text": "CO2, Not used"}
+{"row_idx": 76, "item_id": "T77", "permutation_idx": 3, "ordered_cards": ["Used in photosynthesis", "CO2", "Not used", "O2"], "response_text": "CO2, Used in photosynthesis"}
+{"row_idx": 76, "item_id": "T77", "permutation_idx": 4, "ordered_cards": ["O2", "Not used", "CO2", "Used in photosynthesis"], "response_text": "CO2, Not used"}
+{"row_idx": 77, "item_id": "T78", "permutation_idx": 0, "ordered_cards": ["Trout", "Swims downstream", "Swims upstream", "Salmon"], "response_text": "Salmon, Swims upstream"}
+{"row_idx": 77, "item_id": "T78", "permutation_idx": 1, "ordered_cards": ["Salmon", "Trout", "Swims downstream", "Swims upstream"], "response_text": "Salmon, Swims upstream"}
+{"row_idx": 77, "item_id": "T78", "permutation_idx": 2, "ordered_cards": ["Swims downstream", "Swims upstream", "Trout", "Salmon"], "response_text": "Salmon, Swims upstream"}
+{"row_idx": 77, "item_id": "T78", "permutation_idx": 3, "ordered_cards": ["Trout", "Swims upstream", "Salmon", "Swims downstream"], "response_text": "Salmon, Swims upstream"}
+{"row_idx": 77, "item_id": "T78", "permutation_idx": 4, "ordered_cards": ["Trout", "Swims downstream", "Salmon", "Swims upstream"], "response_text": "Salmon, Swims downstream"}
+{"row_idx": 78, "item_id": "T79", "permutation_idx": 0, "ordered_cards": ["No ice", "Antarctica", "Ice", "Africa"], "response_text": "Antarctica"}
+{"row_idx": 78, "item_id": "T79", "permutation_idx": 1, "ordered_cards": ["No ice", "Ice", "Antarctica", "Africa"], "response_text": "Antarctica"}
+{"row_idx": 78, "item_id": "T79", "permutation_idx": 2, "ordered_cards": ["Antarctica", "Africa", "Ice", "No ice"], "response_text": "Antarctica"}
+{"row_idx": 78, "item_id": "T79", "permutation_idx": 3, "ordered_cards": ["Ice", "Antarctica", "Africa", "No ice"], "response_text": "Antarctica"}
+{"row_idx": 78, "item_id": "T79", "permutation_idx": 4, "ordered_cards": ["Africa", "Ice", "Antarctica", "No ice"], "response_text": "Antarctica"}
+{"row_idx": 79, "item_id": "T80", "permutation_idx": 0, "ordered_cards": ["Honey", "Expires", "Milk", "Never expires"], "response_text": "Honey, Expires"}
+{"row_idx": 79, "item_id": "T80", "permutation_idx": 1, "ordered_cards": ["Milk", "Never expires", "Honey", "Expires"], "response_text": "Honey"}
+{"row_idx": 79, "item_id": "T80", "permutation_idx": 2, "ordered_cards": ["Honey", "Milk", "Expires", "Never expires"], "response_text": "Honey"}
+{"row_idx": 79, "item_id": "T80", "permutation_idx": 3, "ordered_cards": ["Milk", "Honey", "Expires", "Never expires"], "response_text": "Honey"}
+{"row_idx": 79, "item_id": "T80", "permutation_idx": 4, "ordered_cards": ["Never expires", "Expires", "Milk", "Honey"], "response_text": "Never expires, Honey"}
+{"row_idx": 80, "item_id": "T81", "permutation_idx": 0, "ordered_cards": ["Platypus", "Dog", "Lays eggs", "Does not lay eggs"], "response_text": "Platypus, Lays eggs"}
+{"row_idx": 80, "item_id": "T81", "permutation_idx": 1, "ordered_cards": ["Dog", "Does not lay eggs", "Platypus", "Lays eggs"], "response_text": "Platypus, Does not lay eggs"}
+{"row_idx": 80, "item_id": "T81", "permutation_idx": 2, "ordered_cards": ["Lays eggs", "Platypus", "Does not lay eggs", "Dog"], "response_text": "Platypus, Lays eggs"}
+{"row_idx": 80, "item_id": "T81", "permutation_idx": 3, "ordered_cards": ["Does not lay eggs", "Dog", "Lays eggs", "Platypus"], "response_text": "Platypus, Does not lay eggs"}
+{"row_idx": 80, "item_id": "T81", "permutation_idx": 4, "ordered_cards": ["Does not lay eggs", "Lays eggs", "Dog", "Platypus"], "response_text": "Platypus, Does not lay eggs"}
+{"row_idx": 81, "item_id": "T82", "permutation_idx": 0, "ordered_cards": ["Reacts with water", "Gold", "Does not react", "Sodium"], "response_text": "Sodium, Reacts with water"}
+{"row_idx": 81, "item_id": "T82", "permutation_idx": 1, "ordered_cards": ["Does not react", "Sodium", "Gold", "Reacts with water"], "response_text": "Sodium, Reacts with water"}
+{"row_idx": 81, "item_id": "T82", "permutation_idx": 2, "ordered_cards": ["Sodium", "Does not react", "Gold", "Reacts with water"], "response_text": "Sodium, Reacts with water"}
+{"row_idx": 81, "item_id": "T82", "permutation_idx": 3, "ordered_cards": ["Reacts with water", "Does not react", "Sodium", "Gold"], "response_text": "Sodium, Reacts with water"}
+{"row_idx": 81, "item_id": "T82", "permutation_idx": 4, "ordered_cards": ["Gold", "Sodium", "Reacts with water", "Does not react"], "response_text": "Sodium, Reacts with water"}
+{"row_idx": 82, "item_id": "T83", "permutation_idx": 0, "ordered_cards": ["Bill pouch", "Crow", "Pelican", "No pouch"], "response_text": "Pelican, No pouch"}
+{"row_idx": 82, "item_id": "T83", "permutation_idx": 1, "ordered_cards": ["No pouch", "Pelican", "Crow", "Bill pouch"], "response_text": "Pelican"}
+{"row_idx": 82, "item_id": "T83", "permutation_idx": 2, "ordered_cards": ["Crow", "No pouch", "Pelican", "Bill pouch"], "response_text": "Pelican"}
+{"row_idx": 82, "item_id": "T83", "permutation_idx": 3, "ordered_cards": ["Bill pouch", "Crow", "No pouch", "Pelican"], "response_text": "Pelican, Bill pouch"}
+{"row_idx": 82, "item_id": "T83", "permutation_idx": 4, "ordered_cards": ["Crow", "Bill pouch", "No pouch", "Pelican"], "response_text": "Pelican, Bill pouch"}
+{"row_idx": 83, "item_id": "T84", "permutation_idx": 0, "ordered_cards": ["Kangaroo", "Pouch", "No pouch", "Rabbit"], "response_text": "Kangaroo, No pouch"}
+{"row_idx": 83, "item_id": "T84", "permutation_idx": 1, "ordered_cards": ["Pouch", "No pouch", "Rabbit", "Kangaroo"], "response_text": "Kangaroo, Pouch"}
+{"row_idx": 83, "item_id": "T84", "permutation_idx": 2, "ordered_cards": ["Rabbit", "Pouch", "Kangaroo", "No pouch"], "response_text": "Kangaroo, Pouch"}
+{"row_idx": 83, "item_id": "T84", "permutation_idx": 3, "ordered_cards": ["Pouch", "No pouch", "Kangaroo", "Rabbit"], "response_text": "Kangaroo, Pouch"}
+{"row_idx": 83, "item_id": "T84", "permutation_idx": 4, "ordered_cards": ["Pouch", "Rabbit", "Kangaroo", "No pouch"], "response_text": "Kangaroo, No pouch"}
+{"row_idx": 84, "item_id": "T85", "permutation_idx": 0, "ordered_cards": ["Mars", "Venus", "Two moons", "No moons"], "response_text": "Mars, No moons"}
+{"row_idx": 84, "item_id": "T85", "permutation_idx": 1, "ordered_cards": ["Venus", "Mars", "Two moons", "No moons"], "response_text": "Mars, Two moons"}
+{"row_idx": 84, "item_id": "T85", "permutation_idx": 2, "ordered_cards": ["No moons", "Venus", "Mars", "Two moons"], "response_text": "Mars, Two moons"}
+{"row_idx": 84, "item_id": "T85", "permutation_idx": 3, "ordered_cards": ["Two moons", "No moons", "Venus", "Mars"], "response_text": "Two moons, Mars"}
+{"row_idx": 84, "item_id": "T85", "permutation_idx": 4, "ordered_cards": ["Venus", "No moons", "Two moons", "Mars"], "response_text": "Mars, No moons"}
+{"row_idx": 85, "item_id": "T86", "permutation_idx": 0, "ordered_cards": ["Vinegar", "Sweet", "Sour", "Sugar"], "response_text": "Vinegar"}
+{"row_idx": 85, "item_id": "T86", "permutation_idx": 1, "ordered_cards": ["Sour", "Vinegar", "Sweet", "Sugar"], "response_text": "Vinegar"}
+{"row_idx": 85, "item_id": "T86", "permutation_idx": 2, "ordered_cards": ["Sweet", "Sour", "Sugar", "Vinegar"], "response_text": "Vinegar"}
+{"row_idx": 85, "item_id": "T86", "permutation_idx": 3, "ordered_cards": ["Sugar", "Vinegar", "Sweet", "Sour"], "response_text": "Vinegar"}
+{"row_idx": 85, "item_id": "T86", "permutation_idx": 4, "ordered_cards": ["Sugar", "Sour", "Sweet", "Vinegar"], "response_text": "Vinegar"}
+{"row_idx": 86, "item_id": "T87", "permutation_idx": 0, "ordered_cards": ["Diamond", "Hardest", "Not hardest", "Quartz"], "response_text": "Diamond"}
+{"row_idx": 86, "item_id": "T87", "permutation_idx": 1, "ordered_cards": ["Not hardest", "Hardest", "Quartz", "Diamond"], "response_text": "Diamond"}
+{"row_idx": 86, "item_id": "T87", "permutation_idx": 2, "ordered_cards": ["Diamond", "Quartz", "Not hardest", "Hardest"], "response_text": "Diamond, Not hardest"}
+{"row_idx": 86, "item_id": "T87", "permutation_idx": 3, "ordered_cards": ["Diamond", "Hardest", "Quartz", "Not hardest"], "response_text": "Diamond, Not hardest"}
+{"row_idx": 86, "item_id": "T87", "permutation_idx": 4, "ordered_cards": ["Diamond", "Not hardest", "Hardest", "Quartz"], "response_text": "Diamond, Not hardest"}
+{"row_idx": 87, "item_id": "T88", "permutation_idx": 0, "ordered_cards": ["No quills", "Beaver", "Porcupine", "Quills"], "response_text": "Porcupine, No quills"}
+{"row_idx": 87, "item_id": "T88", "permutation_idx": 1, "ordered_cards": ["No quills", "Quills", "Porcupine", "Beaver"], "response_text": "Porcupine, No quills"}
+{"row_idx": 87, "item_id": "T88", "permutation_idx": 2, "ordered_cards": ["Porcupine", "Beaver", "Quills", "No quills"], "response_text": "Porcupine, Quills"}
+{"row_idx": 87, "item_id": "T88", "permutation_idx": 3, "ordered_cards": ["Beaver", "Porcupine", "Quills", "No quills"], "response_text": "Porcupine, Quills"}
+{"row_idx": 87, "item_id": "T88", "permutation_idx": 4, "ordered_cards": ["Beaver", "Quills", "No quills", "Porcupine"], "response_text": "Porcupine, Quills"}
+{"row_idx": 88, "item_id": "T89", "permutation_idx": 0, "ordered_cards": ["Not a country", "Also a country", "Australia", "Europe"], "response_text": "Australia"}
+{"row_idx": 88, "item_id": "T89", "permutation_idx": 1, "ordered_cards": ["Europe", "Also a country", "Not a country", "Australia"], "response_text": "Australia"}
+{"row_idx": 88, "item_id": "T89", "permutation_idx": 2, "ordered_cards": ["Australia", "Not a country", "Europe", "Also a country"], "response_text": "Australia, Not a country"}
+{"row_idx": 88, "item_id": "T89", "permutation_idx": 3, "ordered_cards": ["Not a country", "Also a country", "Europe", "Australia"], "response_text": "Also a country, Europe"}
+{"row_idx": 88, "item_id": "T89", "permutation_idx": 4, "ordered_cards": ["Not a country", "Australia", "Europe", "Also a country"], "response_text": "Australia, Europe"}
+{"row_idx": 89, "item_id": "T90", "permutation_idx": 0, "ordered_cards": ["Alcohol", "Water", "100 Celsius", "78 Celsius"], "response_text": "Water, 100 Celsius"}
+{"row_idx": 89, "item_id": "T90", "permutation_idx": 1, "ordered_cards": ["100 Celsius", "78 Celsius", "Alcohol", "Water"], "response_text": "Water, 100 Celsius"}
+{"row_idx": 89, "item_id": "T90", "permutation_idx": 2, "ordered_cards": ["78 Celsius", "100 Celsius", "Alcohol", "Water"], "response_text": "Water, 100 Celsius"}
+{"row_idx": 89, "item_id": "T90", "permutation_idx": 3, "ordered_cards": ["Water", "78 Celsius", "Alcohol", "100 Celsius"], "response_text": "Water, 78 Celsius"}
+{"row_idx": 89, "item_id": "T90", "permutation_idx": 4, "ordered_cards": ["78 Celsius", "100 Celsius", "Water", "Alcohol"], "response_text": "Water"}
+{"row_idx": 90, "item_id": "T91", "permutation_idx": 0, "ordered_cards": ["Eats insects", "Fern", "Does not eat insects", "Venus flytrap"], "response_text": "Venus flytrap, Eats insects"}
+{"row_idx": 90, "item_id": "T91", "permutation_idx": 1, "ordered_cards": ["Eats insects", "Venus flytrap", "Fern", "Does not eat insects"], "response_text": "Venus flytrap, Fern"}
+{"row_idx": 90, "item_id": "T91", "permutation_idx": 2, "ordered_cards": ["Does not eat insects", "Venus flytrap", "Fern", "Eats insects"], "response_text": "Venus flytrap, Does not eat insects"}
+{"row_idx": 90, "item_id": "T91", "permutation_idx": 3, "ordered_cards": ["Eats insects", "Does not eat insects", "Fern", "Venus flytrap"], "response_text": "Venus flytrap, Eats insects"}
+{"row_idx": 90, "item_id": "T91", "permutation_idx": 4, "ordered_cards": ["Fern", "Does not eat insects", "Venus flytrap", "Eats insects"], "response_text": "Venus flytrap, Does not eat insects"}
+{"row_idx": 91, "item_id": "T92", "permutation_idx": 0, "ordered_cards": ["Slow", "Oak", "Very fast", "Bamboo"], "response_text": "Bamboo, Very fast"}
+{"row_idx": 91, "item_id": "T92", "permutation_idx": 1, "ordered_cards": ["Bamboo", "Slow", "Very fast", "Oak"], "response_text": "Bamboo, Very fast"}
+{"row_idx": 91, "item_id": "T92", "permutation_idx": 2, "ordered_cards": ["Oak", "Bamboo", "Slow", "Very fast"], "response_text": "Bamboo, Slow"}
+{"row_idx": 91, "item_id": "T92", "permutation_idx": 3, "ordered_cards": ["Oak", "Very fast", "Bamboo", "Slow"], "response_text": "Bamboo, Very fast"}
+{"row_idx": 91, "item_id": "T92", "permutation_idx": 4, "ordered_cards": ["Very fast", "Slow", "Bamboo", "Oak"], "response_text": "Bamboo, Very fast"}
+{"row_idx": 92, "item_id": "T93", "permutation_idx": 0, "ordered_cards": ["Brown", "Grizzly", "Polar bear", "White"], "response_text": "Polar bear"}
+{"row_idx": 92, "item_id": "T93", "permutation_idx": 1, "ordered_cards": ["Grizzly", "Brown", "Polar bear", "White"], "response_text": "Polar bear, White"}
+{"row_idx": 92, "item_id": "T93", "permutation_idx": 2, "ordered_cards": ["Grizzly", "Brown", "White", "Polar bear"], "response_text": "Polar bear"}
+{"row_idx": 92, "item_id": "T93", "permutation_idx": 3, "ordered_cards": ["Brown", "Grizzly", "White", "Polar bear"], "response_text": "Polar bear"}
+{"row_idx": 92, "item_id": "T93", "permutation_idx": 4, "ordered_cards": ["Brown", "Polar bear", "White", "Grizzly"], "response_text": "Polar bear"}
+{"row_idx": 93, "item_id": "T94", "permutation_idx": 0, "ordered_cards": ["Nile", "Egypt", "Sudan", "Congo"], "response_text": "Egypt, Nile"}
+{"row_idx": 93, "item_id": "T94", "permutation_idx": 1, "ordered_cards": ["Nile", "Congo", "Sudan", "Egypt"], "response_text": "Egypt, Nile"}
+{"row_idx": 93, "item_id": "T94", "permutation_idx": 2, "ordered_cards": ["Egypt", "Sudan", "Congo", "Nile"], "response_text": "Egypt, Nile"}
+{"row_idx": 93, "item_id": "T94", "permutation_idx": 3, "ordered_cards": ["Congo", "Egypt", "Nile", "Sudan"], "response_text": "Egypt"}
+{"row_idx": 93, "item_id": "T94", "permutation_idx": 4, "ordered_cards": ["Nile", "Sudan", "Egypt", "Congo"], "response_text": "Egypt, Nile"}
+{"row_idx": 94, "item_id": "T95", "permutation_idx": 0, "ordered_cards": ["Raccoon", "Bad smell", "Skunk", "No smell"], "response_text": "Skunk"}
+{"row_idx": 94, "item_id": "T95", "permutation_idx": 1, "ordered_cards": ["Bad smell", "Skunk", "Raccoon", "No smell"], "response_text": "Skunk, Bad smell"}
+{"row_idx": 94, "item_id": "T95", "permutation_idx": 2, "ordered_cards": ["Bad smell", "No smell", "Raccoon", "Skunk"], "response_text": "Skunk"}
+{"row_idx": 94, "item_id": "T95", "permutation_idx": 3, "ordered_cards": ["Skunk", "No smell", "Bad smell", "Raccoon"], "response_text": "Skunk, No smell"}
+{"row_idx": 94, "item_id": "T95", "permutation_idx": 4, "ordered_cards": ["No smell", "Raccoon", "Bad smell", "Skunk"], "response_text": "Skunk"}
+{"row_idx": 95, "item_id": "T96", "permutation_idx": 0, "ordered_cards": ["Salt", "Sand", "Does not dissolve", "Dissolves"], "response_text": "Salt, Does not dissolve"}
+{"row_idx": 95, "item_id": "T96", "permutation_idx": 1, "ordered_cards": ["Does not dissolve", "Sand", "Salt", "Dissolves"], "response_text": "Salt"}
+{"row_idx": 95, "item_id": "T96", "permutation_idx": 2, "ordered_cards": ["Dissolves", "Does not dissolve", "Sand", "Salt"], "response_text": "Salt"}
+{"row_idx": 95, "item_id": "T96", "permutation_idx": 3, "ordered_cards": ["Sand", "Dissolves", "Does not dissolve", "Salt"], "response_text": "Salt, Does not dissolve"}
+{"row_idx": 95, "item_id": "T96", "permutation_idx": 4, "ordered_cards": ["Dissolves", "Does not dissolve", "Salt", "Sand"], "response_text": "Salt"}
+{"row_idx": 96, "item_id": "T97", "permutation_idx": 0, "ordered_cards": ["Does not hover", "Pigeon", "Hummingbird", "Hovers"], "response_text": "Hummingbird, Does not hover"}
+{"row_idx": 96, "item_id": "T97", "permutation_idx": 1, "ordered_cards": ["Pigeon", "Does not hover", "Hummingbird", "Hovers"], "response_text": "Hummingbird, Does not hover"}
+{"row_idx": 96, "item_id": "T97", "permutation_idx": 2, "ordered_cards": ["Pigeon", "Does not hover", "Hovers", "Hummingbird"], "response_text": "Hummingbird, Does not hover"}
+{"row_idx": 96, "item_id": "T97", "permutation_idx": 3, "ordered_cards": ["Hovers", "Does not hover", "Pigeon", "Hummingbird"], "response_text": "Hummingbird, Pigeon"}
+{"row_idx": 96, "item_id": "T97", "permutation_idx": 4, "ordered_cards": ["Hummingbird", "Pigeon", "Hovers", "Does not hover"], "response_text": "Hummingbird, Pigeon"}
+{"row_idx": 97, "item_id": "T98", "permutation_idx": 0, "ordered_cards": ["Very slowly", "Cheetah", "Sloth", "Very fast"], "response_text": "Sloth"}
+{"row_idx": 97, "item_id": "T98", "permutation_idx": 1, "ordered_cards": ["Very slowly", "Very fast", "Sloth", "Cheetah"], "response_text": "Sloth"}
+{"row_idx": 97, "item_id": "T98", "permutation_idx": 2, "ordered_cards": ["Cheetah", "Sloth", "Very slowly", "Very fast"], "response_text": "Sloth, Very fast"}
+{"row_idx": 97, "item_id": "T98", "permutation_idx": 3, "ordered_cards": ["Sloth", "Cheetah", "Very fast", "Very slowly"], "response_text": "Sloth, Very fast"}
+{"row_idx": 97, "item_id": "T98", "permutation_idx": 4, "ordered_cards": ["Cheetah", "Sloth", "Very fast", "Very slowly"], "response_text": "Sloth, Very fast"}
+{"row_idx": 98, "item_id": "T99", "permutation_idx": 0, "ordered_cards": ["Not largest", "Saturn", "Largest", "Jupiter"], "response_text": "Jupiter, Not largest"}
+{"row_idx": 98, "item_id": "T99", "permutation_idx": 1, "ordered_cards": ["Saturn", "Largest", "Not largest", "Jupiter"], "response_text": "Jupiter, Largest"}
+{"row_idx": 98, "item_id": "T99", "permutation_idx": 2, "ordered_cards": ["Jupiter", "Not largest", "Largest", "Saturn"], "response_text": "Jupiter, Not largest"}
+{"row_idx": 98, "item_id": "T99", "permutation_idx": 3, "ordered_cards": ["Largest", "Saturn", "Jupiter", "Not largest"], "response_text": "Jupiter, Not largest"}
+{"row_idx": 98, "item_id": "T99", "permutation_idx": 4, "ordered_cards": ["Not largest", "Jupiter", "Largest", "Saturn"], "response_text": "Jupiter"}
+{"row_idx": 99, "item_id": "T100", "permutation_idx": 0, "ordered_cards": ["Rubber", "Copper", "Conductor", "Insulator"], "response_text": "Rubber"}
+{"row_idx": 99, "item_id": "T100", "permutation_idx": 1, "ordered_cards": ["Insulator", "Rubber", "Copper", "Conductor"], "response_text": "Rubber, Copper"}
+{"row_idx": 99, "item_id": "T100", "permutation_idx": 2, "ordered_cards": ["Copper", "Conductor", "Insulator", "Rubber"], "response_text": "Rubber"}
+{"row_idx": 99, "item_id": "T100", "permutation_idx": 3, "ordered_cards": ["Insulator", "Rubber", "Conductor", "Copper"], "response_text": "Rubber"}
+{"row_idx": 99, "item_id": "T100", "permutation_idx": 4, "ordered_cards": ["Copper", "Insulator", "Conductor", "Rubber"], "response_text": "Rubber"}
+{"row_idx": 100, "item_id": "T101", "permutation_idx": 0, "ordered_cards": ["Lobster", "Crab", "Forward", "Sideways"], "response_text": "Crab, Forward"}
+{"row_idx": 100, "item_id": "T101", "permutation_idx": 1, "ordered_cards": ["Crab", "Sideways", "Forward", "Lobster"], "response_text": "Crab, Lobster"}
+{"row_idx": 100, "item_id": "T101", "permutation_idx": 2, "ordered_cards": ["Sideways", "Lobster", "Crab", "Forward"], "response_text": "Crab, Lobster"}
+{"row_idx": 100, "item_id": "T101", "permutation_idx": 3, "ordered_cards": ["Lobster", "Forward", "Crab", "Sideways"], "response_text": "Crab, Forward"}
+{"row_idx": 100, "item_id": "T101", "permutation_idx": 4, "ordered_cards": ["Sideways", "Forward", "Crab", "Lobster"], "response_text": "Crab, Sideways"}

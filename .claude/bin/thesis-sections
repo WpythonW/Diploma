@@ -1,0 +1,4 @@
+#!/bin/bash
+# Read whole sections by chapter or citation key
+cd "$(dirname "$0")/../.." || exit 1
+uv run python .claude/skills/thesis-sections/tools/read_section.py "$@"

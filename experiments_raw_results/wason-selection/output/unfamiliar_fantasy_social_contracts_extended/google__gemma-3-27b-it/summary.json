@@ -1,0 +1,12 @@
+{
+  "model": "google/gemma-3-27b-it",
+  "context": "unfamiliar_fantasy_social_contracts_extended",
+  "n_items": 100,
+  "n_prompt_permutations": 5,
+  "n_trials": 500,
+  "stats": {
+    "prompt_tokens": 74096,
+    "completion_tokens": 4255,
+    "reasoning_tokens": 0
+  }
+}

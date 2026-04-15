@@ -1,0 +1,18 @@
+{
+  "n_trials": 1040,
+  "n_pairs": 520,
+  "n11": 519,
+  "n12": 0.0,
+  "n21": 1.0,
+  "n22": 0,
+  "discordant": 1.0,
+  "mcnemar_statistic_cc": 0.0,
+  "mcnemar_exact_pvalue": 1.0,
+  "mean_bias_correlated": 0.14388461538461536,
+  "mean_bias_uncorrelated": 0.0389423076923077,
+  "delta_bias": 0.10494230769230767,
+  "paired_t_statistic": 36.923927238764286,
+  "paired_t_pvalue": 2.591052434254715e-147,
+  "wilcoxon_statistic": 43.0,
+  "wilcoxon_pvalue": 9.597547759220003e-83
+}

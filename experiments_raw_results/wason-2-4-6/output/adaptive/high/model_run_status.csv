@@ -1,0 +1,3 @@
+model,model_slug,prompt_style,reasoning_effort,status,updated_at,n_rules,summary_path,message
+anthropic/claude-sonnet-4.6,anthropic__claude-sonnet-4.6,adaptive,high,running,2026-03-14T19:23:52+00:00,50,/Users/andrejustinov/Desktop/research/wason-2-4-6/output/adaptive/high/anthropic__claude-sonnet-4.6/summary.json,run started
+openai/gpt-5.2,openai__gpt-5.2,adaptive,high,completed,2026-03-10T22:22:27+00:00,50,/Users/andrejustinov/Desktop/research/wason-2-4-6/output/adaptive/high/openai__gpt-5.2/summary.json,run completed successfully; invalid_rules=0

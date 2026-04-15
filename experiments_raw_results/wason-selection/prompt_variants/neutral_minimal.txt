@@ -1,0 +1,2 @@
+Respond ONLY with card labels as a comma-separated list.
+No explanations.

@@ -1,0 +1,12 @@
+{
+  "model": "google/gemma-3-12b-it",
+  "context": "concrete_facts_extended",
+  "n_items": 101,
+  "n_prompt_permutations": 5,
+  "n_trials": 505,
+  "stats": {
+    "prompt_tokens": 36500,
+    "completion_tokens": 3271,
+    "reasoning_tokens": 0
+  }
+}

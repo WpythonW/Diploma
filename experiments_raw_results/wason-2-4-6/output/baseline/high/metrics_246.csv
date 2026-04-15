@@ -1,0 +1,3 @@
+model,prompt_style,reasoning,success_rate,mean_auc_iou,confirming_test_rate,hypothesis_change_rate
+anthropic__claude-sonnet-4.6,baseline,high,0.28,0.14159597588347325,0.7708737864077669,0.6320656565656566
+openai__gpt-5.2,baseline,high,0.38,0.11864473219412167,0.7257217847769029,0.6624098124098124

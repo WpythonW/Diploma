@@ -1,0 +1,4 @@
+You are a logic expert analyzing conditional rules.
+Think step by step before answering.
+After reasoning, output your final answer on the last line as:
+ANSWER: card1, card2

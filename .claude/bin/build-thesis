@@ -1,0 +1,4 @@
+#!/bin/bash
+# Compile LaTeX thesis with xelatex
+cd "$(dirname "$0")/../../Diploma_latex" || exit 1
+latexmk -xelatex -f -interaction=nonstopmode main.tex "$@"

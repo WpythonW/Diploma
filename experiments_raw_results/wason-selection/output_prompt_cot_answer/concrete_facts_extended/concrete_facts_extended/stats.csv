@@ -1,0 +1,7 @@
+model,prompt_tokens,completion_tokens,reasoning_tokens
+qwen3.5-397b-a17b,52865,342922,0
+glm-4.7-flash,44285,264766,0
+qwen3-next-80b-a3b-instruct,47845,324152,0
+deepseek-v3.2,42865,202826,0
+gemma-3-27b-it,49236,175850,0
+gemma-3-12b-it,48115,165426,0

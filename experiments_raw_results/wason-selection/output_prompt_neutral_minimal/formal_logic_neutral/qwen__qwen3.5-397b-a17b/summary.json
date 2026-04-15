@@ -1,0 +1,12 @@
+{
+  "model": "qwen/qwen3.5-397b-a17b",
+  "context": "formal_logic_neutral",
+  "n_items": 100,
+  "n_prompt_permutations": 5,
+  "n_trials": 500,
+  "stats": {
+    "prompt_tokens": 38395,
+    "completion_tokens": 2111,
+    "reasoning_tokens": 0
+  }
+}

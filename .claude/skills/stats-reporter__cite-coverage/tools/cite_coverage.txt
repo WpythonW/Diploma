@@ -1,0 +1,133 @@
+CITATION COVERAGE ANALYSIS
+
+Total keys cited: 45
+
+COVERAGE TABLE (sorted by usage count)
+Key                            | Status                                   | Chapters                       | Count
+macmillan2024irrationality     | CONTEXT:ERROR                            | chapter1.tex, chapter2_exp2_wason.tex, intro.tex |     6
+tversky1983extensional         | OK                                       | chapter1.tex, chapter2_exp1_linda.tex, intro.tex |     5
+wason1966reasoning             | OK                                       | chapter1.tex, chapter2_exp2_wason.tex, intro.tex |     5
+banatt2024wilt                 | CONTEXT:ERROR                            | chapter1.tex, chapter2_exp3_246.tex, intro.tex |     5
+batista2026rational            | CONTEXT:WARNING                          | chapter1.tex, chapter2_exp3_246.tex |     5
+evans1998matching              | CONTEXT:ERROR                            | chapter1.tex, chapter2_exp2_wason.tex |     4
+dasgupta2024language           | CONTEXT:ERROR                            | chapter1.tex, chapter2_exp2_wason.tex |     4
+wason1960failure               | OK                                       | chapter1.tex, chapter2_exp3_246.tex |     3
+suri2024large                  | CONTEXT:ERROR                            | chapter1.tex, intro.tex        |     3
+jiang2024peek                  | CONTEXT:ERROR                            | chapter1.tex                   |     3
+cheng1985pragmatic             | OK                                       | chapter1.tex, chapter2_exp2_wason.tex |     3
+mcnemar1947note                | OK                                       | chapter1.tex, chapter2_exp1_linda.tex, intro.tex |     3
+benjamini1995controlling       | OK                                       | chapter1.tex, chapter2_exp1_linda.tex, intro.tex |     3
+kahneman2011thinking           | OK                                       | chapter1.tex, intro.tex        |     2
+wei2022chain                   | OK                                       | chapter1.tex, chapter2_exp2_wason.tex |     2
+zhou2023benchmark              | CONTEXT:WARNING                          | chapter1.tex, chapter2_exp1_linda.tex |     2
+zhang2025identifying           | CONTEXT:ERROR                            | chapter1.tex                   |     2
+shafiei2025more                | CONTEXT:ERROR                            | chapter1.tex                   |     2
+coda2024cogbench               | CONTEXT:ERROR                            | chapter1.tex                   |     2
+usdl2024oews                   | CONTEXT:ERROR                            | chapter2_exp1_linda.tex, chapter3.tex |     2
+cheng1985pragmatic, cosmides1992cognitive | OK                                       | chapter2_exp2_wason.tex        |     2
+binz2023using                  | CONTEXT:ERROR                            | chapter2_exp2_wason.tex, intro.tex |     2
+kojima2022large                | CONTEXT:WARNING                          | chapter2_exp2_wason.tex        |     2
+tversky1981framing, tversky1983extensional | OK                                       | chapter1.tex                   |     1
+simon1955behavioral            | CONTEXT:WARNING                          | chapter1.tex                   |     1
+evans2003in, kahneman2011thinking | OK                                       | chapter1.tex                   |     1
+tenenbaum1999bayesian          | CONTEXT:WARNING                          | chapter1.tex                   |     1
+oaksford1994rational           | CONTEXT:ERROR                            | chapter1.tex                   |     1
+zhou2023benchmark, macmillan2024irrationality | OK                                       | chapter1.tex                   |     1
+stolfo2024confidence           | CONTEXT:ERROR                            | chapter1.tex                   |     1
+collins2024softmax, han2023explaining | OK                                       | chapter1.tex                   |     1
+collins2024softmax             | CONTEXT:WARNING                          | chapter1.tex                   |     1
+fu2024implies                  | CONTEXT:ERROR                            | chapter1.tex                   |     1
+chadimova2024meaningless       | CONTEXT:WARNING                          | chapter1.tex                   |     1
+an2025measuring                | CONTEXT:WARNING                          | chapter1.tex                   |     1
+yang2025bias                   | OK                                       | chapter1.tex                   |     1
+koo2024benchmarking            | CONTEXT:WARNING                          | chapter1.tex                   |     1
+han2023explaining              | CONTEXT:WARNING                          | chapter1.tex                   |     1
+jiang2024peek, shafiei2025more | OK                                       | chapter1.tex                   |     1
+suri2024large, wang2024linda, jiang2024peek, macmillan2024irrationality | OK                                       | chapter2_exp1_linda.tex        |     1
+nickerson1998confirmation      | CONTEXT:WARNING                          | chapter2_exp2_wason.tex        |     1
+arkoudas2023gpt4               | CONTEXT:WARNING                          | chapter2_exp2_wason.tex        |     1
+bommasani2021opportunities     | CONTEXT:WARNING                          | intro.tex                      |     1
+suri2024large, macmillan2024irrationality, coda2024cogbench | OK                                       | intro.tex                      |     1
+tversky1983extensional, wason1966reasoning, wason1960failure | OK                                       | intro.tex                      |     1
+
+PER-CHAPTER BREAKDOWN
+
+chapter1.tex:
+  ✓ batista2026rational            |  4x | CONTEXT:WARNING
+  ✓ wason1966reasoning             |  3x | OK
+  ⚠️ dasgupta2024language           |  3x | CONTEXT:ERROR
+  ⚠️ jiang2024peek                  |  3x | CONTEXT:ERROR
+  ⚠️ macmillan2024irrationality     |  3x | CONTEXT:ERROR
+  ✓ tversky1983extensional         |  2x | OK
+  ⚠️ evans1998matching              |  2x | CONTEXT:ERROR
+  ✓ wason1960failure               |  2x | OK
+  ⚠️ banatt2024wilt                 |  2x | CONTEXT:ERROR
+  ⚠️ zhang2025identifying           |  2x | CONTEXT:ERROR
+  ⚠️ suri2024large                  |  2x | CONTEXT:ERROR
+  ⚠️ shafiei2025more                |  2x | CONTEXT:ERROR
+  ⚠️ coda2024cogbench               |  2x | CONTEXT:ERROR
+  ✓ tversky1981framing, tversky1983extensional |  1x | OK
+  ✓ simon1955behavioral            |  1x | CONTEXT:WARNING
+  ✓ kahneman2011thinking           |  1x | OK
+  ✓ evans2003in, kahneman2011thinking |  1x | OK
+  ✓ wei2022chain                   |  1x | OK
+  ✓ tenenbaum1999bayesian          |  1x | CONTEXT:WARNING
+  ⚠️ oaksford1994rational           |  1x | CONTEXT:ERROR
+  ✓ zhou2023benchmark              |  1x | CONTEXT:WARNING
+  ✓ zhou2023benchmark, macmillan2024irrationality |  1x | OK
+  ⚠️ stolfo2024confidence           |  1x | CONTEXT:ERROR
+  ✓ collins2024softmax, han2023explaining |  1x | OK
+  ✓ collins2024softmax             |  1x | CONTEXT:WARNING
+  ⚠️ fu2024implies                  |  1x | CONTEXT:ERROR
+  ✓ chadimova2024meaningless       |  1x | CONTEXT:WARNING
+  ✓ an2025measuring                |  1x | CONTEXT:WARNING
+  ✓ yang2025bias                   |  1x | OK
+  ✓ cheng1985pragmatic             |  1x | OK
+  ✓ koo2024benchmarking            |  1x | CONTEXT:WARNING
+  ✓ han2023explaining              |  1x | CONTEXT:WARNING
+  ✓ jiang2024peek, shafiei2025more |  1x | OK
+  ✓ mcnemar1947note                |  1x | OK
+  ✓ benjamini1995controlling       |  1x | OK
+
+chapter2_exp1_linda.tex:
+  ✓ tversky1983extensional         |  2x | OK
+  ✓ suri2024large, wang2024linda, jiang2024peek, macmillan2024irrationality |  1x | OK
+  ✓ zhou2023benchmark              |  1x | CONTEXT:WARNING
+  ⚠️ usdl2024oews                   |  1x | CONTEXT:ERROR
+  ✓ benjamini1995controlling       |  1x | OK
+  ✓ mcnemar1947note                |  1x | OK
+
+chapter2_exp2_wason.tex:
+  ✓ cheng1985pragmatic, cosmides1992cognitive |  2x | OK
+  ✓ cheng1985pragmatic             |  2x | OK
+  ⚠️ macmillan2024irrationality     |  2x | CONTEXT:ERROR
+  ✓ kojima2022large                |  2x | CONTEXT:WARNING
+  ⚠️ evans1998matching              |  2x | CONTEXT:ERROR
+  ✓ wason1966reasoning             |  1x | OK
+  ✓ nickerson1998confirmation      |  1x | CONTEXT:WARNING
+  ✓ arkoudas2023gpt4               |  1x | CONTEXT:WARNING
+  ⚠️ binz2023using                  |  1x | CONTEXT:ERROR
+  ✓ wei2022chain                   |  1x | OK
+  ⚠️ dasgupta2024language           |  1x | CONTEXT:ERROR
+
+chapter2_exp3_246.tex:
+  ⚠️ banatt2024wilt                 |  2x | CONTEXT:ERROR
+  ✓ wason1960failure               |  1x | OK
+  ✓ batista2026rational            |  1x | CONTEXT:WARNING
+
+chapter3.tex:
+  ⚠️ usdl2024oews                   |  1x | CONTEXT:ERROR
+
+intro.tex:
+  ✓ bommasani2021opportunities     |  1x | CONTEXT:WARNING
+  ✓ kahneman2011thinking           |  1x | OK
+  ✓ tversky1983extensional         |  1x | OK
+  ✓ wason1966reasoning             |  1x | OK
+  ✓ suri2024large, macmillan2024irrationality, coda2024cogbench |  1x | OK
+  ⚠️ binz2023using                  |  1x | CONTEXT:ERROR
+  ⚠️ suri2024large                  |  1x | CONTEXT:ERROR
+  ⚠️ macmillan2024irrationality     |  1x | CONTEXT:ERROR
+  ✓ tversky1983extensional, wason1966reasoning, wason1960failure |  1x | OK
+  ✓ mcnemar1947note                |  1x | OK
+  ✓ benjamini1995controlling       |  1x | OK
+  ⚠️ banatt2024wilt                 |  1x | CONTEXT:ERROR

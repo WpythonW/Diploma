@@ -1,0 +1,22 @@
+{
+  "model": "openai/gpt-5.2",
+  "prompt_style": "baseline",
+  "reasoning_effort": "none",
+  "provider": null,
+  "n_rules": 50,
+  "n_success": 9,
+  "n_invalid_rules": 0,
+  "n_processed_rules": 50,
+  "max_turns": 19,
+  "stop_iou": 0.95,
+  "stats": {
+    "n_rules": 50,
+    "n_success": 9,
+    "n_invalid_rules": 0,
+    "n_processed_rules": 50,
+    "mean_turns": 16.44,
+    "prompt_tokens": 637798,
+    "completion_tokens": 32175,
+    "reasoning_tokens": 0
+  }
+}

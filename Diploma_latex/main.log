@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.1)  12 APR 2026 19:26
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.1)  14 APR 2026 23:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -913,7 +913,7 @@ Underfull \hbox (badness 1400) in paragraph at lines 10--12
 
 Underfull \hbox (badness 1661) in paragraph at lines 10--12
 \TU/TimesNewRoman(0)/m/n/10 предубеждений Канемана и Тверски. Suri и соавторы [
-6] расширили эту линию, исследовав эффект
+5] расширили эту линию, исследовав эффект
  []
 
 
@@ -976,7 +976,7 @@ Underfull \hbox (badness 4205) in paragraph at lines 51--52
 
 
 Underfull \hbox (badness 1082) in paragraph at lines 54--56
-\TU/TimesNewRoman(0)/m/n/10 4; 8], адаптированные для тестирования языковых мод
+\TU/TimesNewRoman(0)/m/n/10 4; 9], адаптированные для тестирования языковых мод
 елей. В качестве статистических инструментов
  []
 
@@ -1077,21 +1077,15 @@ Underfull \hbox (badness 3108) in paragraph at lines 77--78
  []
 
 
-Underfull \hbox (badness 2961) in paragraph at lines 79--80
-\TU/TimesNewRoman(0)/m/n/10 давал ошибочные ответы при изменении поверхностных 
-признаков (порядка карточек). Dasgupta и
+Underfull \hbox (badness 2096) in paragraph at lines 79--80
+\TU/TimesNewRoman(0)/m/n/10 их усвоения. Данный методологический выбор является
+ сознательным ограничением: применяемый
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 79--80
-\TU/TimesNewRoman(0)/m/n/10 вне зависимости от первичного механизма их усвоения
-. Данный методологический выбор является
- []
-
-
-Underfull \hbox (badness 2582) in paragraph at lines 79--80
-\TU/TimesNewRoman(0)/m/n/10 сознательным ограничением: применяемый эксперимента
-льный дизайн позволяет зафиксировать факт
+Underfull \hbox (badness 3199) in paragraph at lines 79--80
+\TU/TimesNewRoman(0)/m/n/10 не позволяет атрибутировать его источник — memoriza
+tion или emergent bias. Разграничение этих
  []
 
 
@@ -1128,7 +1122,7 @@ Underfull \hbox (badness 1057) in paragraph at lines 90--92
 [12]
 Underfull \hbox (badness 1360) in paragraph at lines 93--94
 []\TU/TimesNewRoman(0)/m/n/10 Кроме того, исследования логических цепей в LLM [
-25] демонстрируют, что структурные логические
+26] демонстрируют, что структурные логические
  []
 
 
@@ -1224,14 +1218,14 @@ Underfull \hbox (badness 2065) in paragraph at lines 150--151
 
 
 Underfull \hbox (badness 2205) in paragraph at lines 154--155
-[]\TU/TimesNewRoman(0)/m/n/10 An и соавторы (PNAS 2025) [30] подтвердили этот э
+[]\TU/TimesNewRoman(0)/m/n/10 An и соавторы (PNAS 2025) [31] подтвердили этот э
 ффект на задачах скоринга резюме, где замена
  []
 
 
 Underfull \hbox (badness 1527) in paragraph at lines 154--155
 \TU/TimesNewRoman(0)/m/n/10 этот эффект объясняется работами Yang et al. (2025)
- [31], показавшими, что специфические головы
+ [32], показавшими, что специфические головы
  []
 
 
@@ -1241,8 +1235,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--165
  []
 
 [15]
-Underfull \hbox (badness 2103) in paragraph at lines 172--173
-[]\TU/TimesNewRoman(0)/m/n/10 Banatt и соавторы [11] сделали важный шаг, разраб
+Underfull \hbox (badness 2050) in paragraph at lines 172--173
+[]\TU/TimesNewRoman(0)/m/n/10 Banatt и соавторы [12] сделали важный шаг, разраб
 отав бенчмарк WILT — первый систематический
  []
 
@@ -1302,7 +1296,7 @@ Underfull \hbox (badness 1097) in paragraph at lines 194--195
 
 
 Underfull \hbox (badness 5802) in paragraph at lines 194--195
-\TU/TimesNewRoman(0)/m/n/10 поощряя ее угождать пользователю [26] — стремление 
+\TU/TimesNewRoman(0)/m/n/10 поощряя ее угождать пользователю [27] — стремление 
 подтверждать имплицитные предположения
  []
 
@@ -1475,7 +1469,7 @@ Underfull \hbox (badness 3000) in paragraph at lines 268--38
 у разных провайдеров, все модели должны
  []
 
-(./chapter2.tex [19]
+(./chapter2.tex (./chapter2_intro.tex [19]
 Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -1501,8 +1495,8 @@ Underfull \hbox (badness 2772) in paragraph at lines 23--24
 . Детали контроля контаминации описаны в
  []
 
-
-Underfull \hbox (badness 1895) in paragraph at lines 35--36
+) (./chapter2_exp1_linda.tex
+Underfull \hbox (badness 1895) in paragraph at lines 7--8
 \TU/TimesNewRoman(0)/m/n/10 прочтения испытуемые оценивали относительную вероят
 ность двух утверждений: (a) Линда является
  []
@@ -1510,299 +1504,432 @@ Underfull \hbox (badness 1895) in paragraph at lines 35--36
 [20
 
 ]
-Underfull \hbox (badness 1320) in paragraph at lines 41--42
+Underfull \hbox (badness 1320) in paragraph at lines 13--14
 \TU/TimesNewRoman(0)/m/n/10 вероятностью присутствует в обучающих данных больши
-нства современных LLM [19]. Для решения
+нства современных LLM [20]. Для решения
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 41--42
+Underfull \hbox (badness 5316) in paragraph at lines 13--14
 \TU/TimesNewRoman(0)/m/n/10 проблемы контаминации был сформирован оригинальный 
 датасет с использованием фиксированных
  []
 
 [21]
-Underfull \hbox (badness 2600) in paragraph at lines 95--96
+Underfull \hbox (badness 2600) in paragraph at lines 67--68
 []\TU/TimesNewRoman(0)/m/n/10 Все модели запрашивались с параметром temperature
  = 0. Сырые ответы сохранялись отдельно от
  []
 
 [22]
-Underfull \hbox (badness 2671) in paragraph at lines 147--148
+Underfull \hbox (badness 2671) in paragraph at lines 119--120
 \TU/TimesNewRoman(0)/m/n/10 у \TU/lmtt/m/n/10 gemma-3-27b-it $\OML/cmm/m/it/10 
 n[] \OT1/cmr/m/n/10 = 305$ \TU/TimesNewRoman(0)/m/n/10 и delta_bias $\OT1/cmr/m
 /n/10 = 0[]4975$ \TU/TimesNewRoman(0)/m/n/10 против $\OML/cmm/m/it/10 n[] \OT1/
-cmr/m/n/10 = 14$ \TU/TimesNewRoman(0)/m/n/10 и delta_bias $\OT1/cmr/m/n/10 = 0[
-]0370$
+cmr/m/n/10 = 15$ \TU/TimesNewRoman(0)/m/n/10 и delta_bias $\OT1/cmr/m/n/10 = 0[
+]0389$
  []
 
 
-Underfull \hbox (badness 1412) in paragraph at lines 147--148
+Underfull \hbox (badness 1412) in paragraph at lines 119--120
 \TU/TimesNewRoman(0)/m/n/10 у \TU/lmtt/m/n/10 gemma-3-12b-it\TU/TimesNewRoman(0
 )/m/n/10 . Это прямо противоречит гипотезе H2 о монотонном снижении предубежден
 ий с
  []
 
 [23]
-Underfull \hbox (badness 5388) in paragraph at lines 161--162
+Underfull \hbox (badness 3049) in paragraph at lines 125--126
+[]\TU/TimesNewRoman(0)/m/n/10 Для исследования влияния содержимого биографическ
+их виньеток на интенсивность конъюнктивного
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 125--126
+\TU/TimesNewRoman(0)/m/n/10 классифицированы в восемь категорий: Social Service
+s/Community (24 виньетки), Finance/Banking (23),
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 127--128
+[]\TU/TimesNewRoman(0)/m/n/10 Таблица 2.2[] показывает среднюю частоту конъюнкт
+ивных ошибок по профессиональным категориям,
+ []
+
+
+Underfull \hbox (badness 5331) in paragraph at lines 152--153
+\TU/TimesNewRoman(0)/m/n/10 Наиболее уязвимыми оказались профессии из сферы \TU
+/TimesNewRoman(0)/m/it/10 социального служения и образования\TU/TimesNewRoman(0
+)/m/n/10 : Social
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 152--153
+\TU/TimesNewRoman(0)/m/n/10 Services/Community, Education/Academia и Healthcare
+/Medical демонстрируют среднюю fallacy rate 35–
+ []
+
+
+Underfull \hbox (badness 1521) in paragraph at lines 152--153
+\TU/TimesNewRoman(0)/m/n/10 40%. Профессии этих категорий связаны с моральными 
+обязательствами, альтруизмом и социальной
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24]
+Underfull \hbox (badness 3612) in paragraph at lines 230--231
+[]\TU/TimesNewRoman(0)/m/n/10 Три модели (\TU/lmtt/m/n/10 claude-sonnet-4.6\TU/
+TimesNewRoman(0)/m/n/10 , \TU/lmtt/m/n/10 qwen3-next-80b\TU/TimesNewRoman(0)/m/
+n/10 , \TU/lmtt/m/n/10 gemma-3-27b-it\TU/TimesNewRoman(0)/m/n/10 ) демонстрирую
+т \TU/TimesNewRoman(0)/m/it/10 очень большие
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 230--231
+\TU/TimesNewRoman(0)/m/n/10 размеры эффекта ($\OML/cmm/m/it/10 d > \OT1/cmr/m/n
+/10 1[]3$\TU/TimesNewRoman(0)/m/n/10 ), что подтверждает мощную и надёжную выра
+женность конъюнктивного
+ []
+
+[25]
+Underfull \hbox (badness 3049) in paragraph at lines 238--239
+[]\TU/TimesNewRoman(0)/m/n/10 Этот результат подтверждает \TU/TimesNewRoman(0)/
+m/it/10 строго однонаправленную асимметрию \TU/TimesNewRoman(0)/m/n/10 конъюнкт
+ивного предубеждения:
+ []
+
+
+Underfull \hbox (badness 5667) in paragraph at lines 238--239
+\TU/TimesNewRoman(0)/m/n/10 ошибка возникает \TU/TimesNewRoman(0)/m/it/10 исклю
+чительно \TU/TimesNewRoman(0)/m/n/10 под воздействием нарративной согласованнос
+ти correlated-условия.
+ []
+
+
+Underfull \hbox (badness 4531) in paragraph at lines 238--239
+\TU/TimesNewRoman(0)/m/n/10 характеристика токена-bias у LLM, отличающая их от 
+человеческих испытуемых: в оригинальных
+ []
+
+[26]
+Underfull \hbox (badness 1448) in paragraph at lines 296--297
+[]\TU/TimesNewRoman(0)/m/n/10 Полный демографический анализ проведён для всех д
+евяти моделей. Две модели (\TU/lmtt/m/n/10 glm-4.7-flash \TU/TimesNewRoman(0)/m
+/n/10 и
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
+[]\TU/TimesNewRoman(0)/b/n/10 Выводы по демографическому анализу: \TU/TimesNewR
+oman(0)/m/n/10 (1) Расовые эффекты присутствуют, но не являются
+ []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 352--353
+\TU/TimesNewRoman(0)/m/n/10 является устойчивым и субъективно обоснованным; (7)
+ почти все модели менее уверены в correlated-
+ []
+
+
+Underfull \hbox (badness 2205) in paragraph at lines 352--353
+\TU/TimesNewRoman(0)/m/n/10 условии, чем в uncorrelated ($\OT1/cmr/m/n/10 ^^A$\
+TU/TimesNewRoman(0)/m/n/10 Conf от $\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 13[]71$
+ \TU/TimesNewRoman(0)/m/n/10 до $\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1[]29$\TU/
+TimesNewRoman(0)/m/n/10 ), что может свидетельствовать о частичной
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 352--353
+\TU/TimesNewRoman(0)/m/n/10 (35–40% fallacy rate), тогда как финансовые и управ
+ленческие профессии — наименьший (15–20%);
+ []
+
+[28]) (./chapter2_exp2_wason.tex
+Underfull \hbox (badness 5388) in paragraph at lines 7--8
 []\TU/TimesNewRoman(0)/m/n/10 Задача выбора карточек Уэйсона [4] была выбрана к
 ак каноническая парадигма для исследования
  []
 
 
-Underfull \hbox (badness 6016) in paragraph at lines 161--162
+Underfull \hbox (badness 6016) in paragraph at lines 7--8
 \TU/TimesNewRoman(0)/m/n/10 предубеждения подтверждения в дедуктивном рассужден
 ии. В оригинальной версии испытуемым
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 169--170
+Underfull \hbox (badness 2245) in paragraph at lines 15--16
 []\TU/TimesNewRoman(0)/b/n/10 Формальная логика — Каноническая. \TU/TimesNewRom
 an(0)/m/n/10 Правила используют стандартные абстрактные символы из
  []
 
 
-Underfull \hbox (badness 4291) in paragraph at lines 171--172
+Underfull \hbox (badness 4291) in paragraph at lines 17--18
 []\TU/TimesNewRoman(0)/b/n/10 Формальная логика — Нейтральная. \TU/TimesNewRoma
 n(0)/m/n/10 Правила используют оригинальные абстрактные пары, не
  []
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 []\TU/TimesNewRoman(0)/m/n/10 Ключевым методологическим вкладом дизайна являетс
 я систематическая манипуляция порядком
  []
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 181--182
+Underfull \hbox (badness 1184) in paragraph at lines 27--28
 \TU/TimesNewRoman(0)/m/n/10 перестановки способно обратить ответ GPT-3 на канон
 ическую задачу, и из данных Macmillan-Scott и
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 195--196
+Underfull \hbox (badness 1337) in paragraph at lines 41--42
 []\TU/TimesNewRoman(0)/m/n/10 Условие обеспечивает два независимых фасилитирующ
 их сигнала: ролевое прайминирование и явный
  []
 
 
-Underfull \hbox (badness 1237) in paragraph at lines 197--198
+Underfull \hbox (badness 1237) in paragraph at lines 43--44
 []\TU/TimesNewRoman(0)/b/n/10 Neutral. \TU/TimesNewRoman(0)/m/n/10 Системный пр
 омпт содержит только инструкцию по формату без персоны и без фрейминга
  []
 
 
-Underfull \hbox (badness 2197) in paragraph at lines 203--204
+Underfull \hbox (badness 2197) in paragraph at lines 49--50
 []\TU/TimesNewRoman(0)/m/n/10 Наиболее близко воспроизводит оригинальную челове
 ческую экспериментальную парадигму и служит
  []
 
 
-Underfull \hbox (badness 2653) in paragraph at lines 205--206
+Underfull \hbox (badness 2653) in paragraph at lines 51--52
 []\TU/TimesNewRoman(0)/b/n/10 Chain-of-Thought (CoT). \TU/TimesNewRoman(0)/m/n/
 10 Системный промпт инструктирует модель рассуждать пошагово и выводить
  []
 
-[25]
-Underfull \hbox (badness 1308) in paragraph at lines 217--218
+[30]
+Underfull \hbox (badness 1308) in paragraph at lines 63--64
 []\TU/TimesNewRoman(0)/b/n/10 Expected Metric Accuracy (EMA) \TU/TimesNewRoman(
 0)/m/n/10 — доля испытаний, в которых модель выбирает ровно нормативно
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 223--224
+Underfull \hbox (badness 1052) in paragraph at lines 69--70
 []\TU/TimesNewRoman(0)/b/n/10 Consistency Rate \TU/TimesNewRoman(0)/m/n/10 — до
 ля правил, для которых модель даёт идентичный выбор карточек во всех пяти
  []
 
-File: fig_waston_ema_conditions.png Graphic file (type bmp)
-<fig_waston_ema_conditions.png>
-File: fig_waston_ema_heatmap.png Graphic file (type bmp)
-<fig_waston_ema_heatmap.png>
+File: ../experiments_raw_results/wason-selection/figures/wason_ema_conditions.p
+ng Graphic file (type bmp)
+<../experiments_raw_results/wason-selection/figures/wason_ema_conditions.png>
+File: ../experiments_raw_results/wason-selection/figures/wason_ema_heatmap.png 
+Graphic file (type bmp)
+<../experiments_raw_results/wason-selection/figures/wason_ema_heatmap.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 2799) in paragraph at lines 264--265
+Underfull \hbox (badness 2799) in paragraph at lines 110--111
 []\TU/TimesNewRoman(0)/b/n/10 Контент-эффект \TU/TimesNewRoman(0)/m/n/10 являет
 ся наиболее устойчивым результатом эксперимента и воспроизводится у всех
  []
 
 
-Underfull \hbox (badness 1394) in paragraph at lines 264--265
+Underfull \hbox (badness 1394) in paragraph at lines 110--111
 \TU/TimesNewRoman(0)/m/n/10 девяти моделей. Переход от абстрактного нейтральног
 о условия к знакомым социальным контрактам
  []
 
-[26]
-File: fig_waston_context_effects.png Graphic file (type bmp)
-<fig_waston_context_effects.png>
+[31]
+File: ../experiments_raw_results/wason-selection/figures/wason_context_effects.
+png Graphic file (type bmp)
+<../experiments_raw_results/wason-selection/figures/wason_context_effects.png>
+ [32]
+File: ../experiments_raw_results/wason-selection/output/thesis_graphs/wason_cot
+_delta.png Graphic file (type bmp)
+<../experiments_raw_results/wason-selection/output/thesis_graphs/wason_cot_delt
+a.png>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[27]
-File: fig_waston_cot_delta.png Graphic file (type bmp)
-<fig_waston_cot_delta.png>
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 1533) in paragraph at lines 332--333
+Underfull \hbox (badness 1533) in paragraph at lines 178--179
 []\TU/TimesNewRoman(0)/m/n/10 Для проприетарных моделей CoT даёт положительный 
 эффект у всех трёх: \TU/lmtt/m/n/10 grok-4.1-fast \TU/TimesNewRoman(0)/m/n/10 (
 +0,240),
  []
 
-[28]
-File: fig_waston_ema_vs_consistency.png Graphic file (type bmp)
-<fig_waston_ema_vs_consistency.png>
+[33]
+File: ../experiments_raw_results/wason-selection/figures/wason_ema_vs_consisten
+cy.png Graphic file (type bmp)
+<../experiments_raw_results/wason-selection/figures/wason_ema_vs_consistency.pn
+g>
 
+Underfull \hbox (badness 1117) in paragraph at lines 187--187
+[]\TU/TimesNewRoman(0)/m/n/10 Figure 2.5: |Связь EMA и Consistency Rate в FL Ne
+utral. Идеальная модель находилась бы в правом
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[29]
-Underfull \hbox (badness 1924) in paragraph at lines 374--375
+[34]
+Underfull \hbox (badness 1924) in paragraph at lines 220--221
 []\TU/TimesNewRoman(0)/b/n/10 5. OVER-SELECTION \TU/TimesNewRoman(0)/m/n/10 (бо
 лее 2 карточек, но не все 4). Редкая категория (0,4–2,2%), встречается
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--379
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
 \TU/TimesNewRoman(0)/m/it/10 Ответ glm-4.7-flash: \TU/lmtt/m/n/10 ['Gold', 'Doe
 s not rust', 'Iron'] \TU/TimesNewRoman(0)/m/n/10 — 3 карточки, попытка
  []
 
-[30]
-Underfull \hbox (badness 1297) in paragraph at lines 395--396
+[35]
+Underfull \hbox (badness 1297) in paragraph at lines 241--242
 []\TU/TimesNewRoman(0)/b/n/10 Предубеждение подтверждения \TU/TimesNewRoman(0)/
 m/n/10 в дедуктивном рассуждении у всех девяти моделей в нейтральном
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 401--402
+Underfull \hbox (badness 1902) in paragraph at lines 247--248
 \TU/TimesNewRoman(0)/m/n/10 тогда как 2 из 6 открытых моделей показывают отрица
 тельный delta: \TU/lmtt/m/n/10 glm-4.7-flash \TU/TimesNewRoman(0)/m/n/10 ($\OMS
 /cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 0[]074$\TU/TimesNewRoman(0)/m/n/10 ) и
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
 \TU/TimesNewRoman(0)/m/n/10 12b в логической задаче, но была более уязвима в ве
 роятностной, что свидетельствует о
  []
 
-
-Underfull \hbox (badness 1038) in paragraph at lines 414--415
+) (./chapter2_exp3_246.tex
+Underfull \hbox (badness 1038) in paragraph at lines 7--8
 \TU/TimesNewRoman(0)/m/n/10 новые тройки и получая бинарную обратную связь. Кан
 онический результат: испытуемые тестируют
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 414--415
+Underfull \hbox (badness 2221) in paragraph at lines 7--8
 \TU/TimesNewRoman(0)/m/n/10 возрастания»), вместо попыток фальсифицировать её, 
 и не обнаруживают истинное правило («любая
  []
 
-[31]
-Underfull \hbox (badness 1622) in paragraph at lines 430--431
+[36]
+Underfull \hbox (badness 1622) in paragraph at lines 23--24
 \TU/TimesNewRoman(0)/m/n/10 (проверка через экстенсиональную эквивалентность) и
  отсутствие тавтологий. Ряд правил намеренно
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 430--431
+Underfull \hbox (badness 1668) in paragraph at lines 23--24
 \TU/TimesNewRoman(0)/m/n/10 сконструирован как \TU/TimesNewRoman(0)/m/it/10 лов
 ушки специфичности\TU/TimesNewRoman(0)/m/n/10 : правила, являющиеся строго боле
 е специфичными, чем
  []
 
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 482--484
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
 \TU/TimesNewRoman(0)/m/n/10 Напрямую операционализирует предубеждение подтвержд
 ения: низкий CTR соответствует
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[33]
-Underfull \hbox (badness 4013) in paragraph at lines 521--522
+File: ../experiments_raw_results/wason-2-4-6/figures/wason246_ctr_bars.png Grap
+hic file (type bmp)
+<../experiments_raw_results/wason-2-4-6/figures/wason246_ctr_bars.png>
+[38]
+Underfull \hbox (badness 4013) in paragraph at lines 122--123
 []\TU/TimesNewRoman(0)/b/n/10 Success Rate низкий у всех non-reasoning моделей.
  \TU/TimesNewRoman(0)/m/n/10 Лучший результат в baseline среди них —
  []
 
+File: ../experiments_raw_results/wason-2-4-6/figures/wason246_iou_trajectories.
+png Graphic file (type bmp)
+<../experiments_raw_results/wason-2-4-6/figures/wason246_iou_trajectories.png>
+File: ../experiments_raw_results/wason-2-4-6/figures/wason246_reasoning_iou_tra
+jectories.png Graphic file (type bmp)
+<../experiments_raw_results/wason-2-4-6/figures/wason246_reasoning_iou_trajecto
+ries.png>
+[39]
+File: ../experiments_raw_results/wason-2-4-6/figures/wason246_scatter_sr_correl
+ation.png Graphic file (type bmp)
+<../experiments_raw_results/wason-2-4-6/figures/wason246_scatter_sr_correlation
+.png>
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 527.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 149.
 
-Underfull \hbox (badness 2426) in paragraph at lines 527--528
+Underfull \hbox (badness 2426) in paragraph at lines 149--150
 []\TU/TimesNewRoman(0)/m/n/10 Наиболее интригующим является \TU/TimesNewRoman(0
 )/b/n/10 парадокс \TU/lmtt/b/n/10 qwen3.5-397b-a17b\TU/TimesNewRoman(0)/m/n/10 
 : adaptive-промпт вызвал крупнейшее
  []
 
+File: ../experiments_raw_results/wason-2-4-6/figures/wason246_category_heatmap.
+png Graphic file (type bmp)
+<../experiments_raw_results/wason-2-4-6/figures/wason246_category_heatmap.png>
 
-Underfull \hbox (badness 3068) in paragraph at lines 529--530
+Underfull \hbox (badness 3068) in paragraph at lines 158--159
 []\TU/TimesNewRoman(0)/b/n/10 Контринтуитивный эффект у \TU/lmtt/b/n/10 gemma-3
 -27b-it\TU/TimesNewRoman(0)/b/n/10 : \TU/TimesNewRoman(0)/m/n/10 adaptive-промп
 т, направленный на фальсификацию,
  []
 
-
-Underfull \hbox (badness 1546) in paragraph at lines 537--538
-\TU/TimesNewRoman(0)/m/n/10 промпт нестабилен: снижение CTR не конвертируется в
- рост SR у половины моделей; (4) парадокс
+File: ../experiments_raw_results/wason-2-4-6/figures/wason246_turns_to_success.
+png Graphic file (type bmp)
+<../experiments_raw_results/wason-2-4-6/figures/wason246_turns_to_success.png>
+[40]) (./chapter2_cross.tex
+Underfull \hbox (badness 2735) in paragraph at lines 173--2
+\TU/TimesNewRoman(0)/m/n/10 — CTR $\OMS/cmsy/m/n/10 ^^U \OT1/cmr/m/n/10 0[]629$
+ \TU/TimesNewRoman(0)/m/n/10 у всех non-reasoning моделей в baseline; (2) reaso
+ning даёт качественный скачок,
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 537--538
-\TU/TimesNewRoman(0)/m/n/10 на то, что предубеждение подтверждения имеет как ми
-нимум два независимых компонента: выбор
+Underfull \hbox (badness 1275) in paragraph at lines 173--2
+\TU/TimesNewRoman(0)/m/n/10 недостижимый через prompt engineering: SR \TU/lmtt/
+m/n/10 gpt-5.2 \TU/TimesNewRoman(0)/m/n/10 reasoning = 0,48 против максимума 0,
+28 у non-
  []
 
-[34]
-Underfull \hbox (badness 2626) in paragraph at lines 574--575
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 36--37
 []\TU/TimesNewRoman(0)/m/n/10 Гипотеза H2 о снижении предубеждений с ростом мод
 ели получила частичное подтверждение. На
  []
 
-
-Underfull \hbox (badness 1275) in paragraph at lines 576--577
+[41]
+Underfull \hbox (badness 1275) in paragraph at lines 38--39
 []\TU/TimesNewRoman(0)/m/n/10 В семействе Gemma направление эффекта противоречи
 т ожидаемому: \TU/lmtt/m/n/10 gemma-3-27b-it \TU/TimesNewRoman(0)/m/n/10 демонс
 трирует
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 576--577
+Underfull \hbox (badness 1931) in paragraph at lines 38--39
 \OT1/cmr/m/n/10 = 0[]037$\TU/TimesNewRoman(0)/m/n/10 , fallacy rate $\OT1/cmr/m
 /n/10 2[]7[]$\TU/TimesNewRoman(0)/m/n/10 ). Это является наиболее ярким проявле
 нием внутрисемейного парадокса
  []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 580--581
+Underfull \hbox (badness 2376) in paragraph at lines 42--43
 []\TU/TimesNewRoman(0)/m/n/10 Гипотеза H3 подтверждена: уровень предубеждений с
 истематически возрастает от эксперимента 1 к
  []
 
-[35]
-Underfull \hbox (badness 7704) in paragraph at lines 590--591
+[42]
+Underfull \hbox (badness 7704) in paragraph at lines 52--53
 []\TU/TimesNewRoman(0)/m/n/10 В-третьих, масштаб модели не является надёжным пр
 едиктором устойчивости к предубеждениям.
  []
 
 
-Underfull \hbox (badness 1831) in paragraph at lines 590--591
+Underfull \hbox (badness 1831) in paragraph at lines 52--53
 \TU/TimesNewRoman(0)/m/n/10 Внутрисемейный парадокс Gemma проявляется по-разном
 у в разных экспериментах: в задаче Линды
  []
 
-) (./chapter3.tex [36]
+)) [43] (./chapter3.tex [44]
 Chapter 3.
 
 Underfull \hbox (badness 1067) in paragraph at lines 13--14
@@ -1876,7 +2003,7 @@ ns=1000\TU/TimesNewRoman(0)/m/n/10 , \TU/lmtt/m/n/10 random_seed=42\TU/TimesNew
 Roman(0)/m/n/10 , до 60 одновременных запросов, 5
  []
 
-[37
+[45
 
 ]
 Underfull \hbox (badness 2689) in paragraph at lines 36--37
@@ -1937,7 +2064,7 @@ eed перед вызовом \TU/lmtt/m/n/10 numpy.random.randint \TU/TimesNewR
 /10 в
  []
 
-[38]
+[46]
 Underfull \hbox (badness 3735) in paragraph at lines 62--63
 \TU/TimesNewRoman(0)/m/n/10 В частности, за рамками исследования остались: спец
 иализированные модели для математического
@@ -1968,7 +2095,7 @@ Underfull \hbox (badness 3646) in paragraph at lines 80--81
 лена рукопись статьи, планируемая к подаче в
  []
 
-[39]
+[47]
 Underfull \hbox (badness 7221) in paragraph at lines 88--89
 \TU/TimesNewRoman(0)/m/n/10 и индуктивный типы рассуждения, однако спектр когни
 тивных предубеждений значительно шире.
@@ -1992,7 +2119,7 @@ Underfull \hbox (badness 2205) in paragraph at lines 96--97
 ирование или сравнение с логарифмическими
  []
 
-) (./conclusion.tex [40]
+) (./conclusion.tex [48]
 Underfull \hbox (badness 3679) in paragraph at lines 4--5
 \TU/TimesNewRoman(0)/m/n/10 глубокого обучения для классификации данных показал
 а свою эффективность на тестовых наборах.
@@ -2004,9 +2131,9 @@ Underfull \hbox (badness 3439) in paragraph at lines 9--10
 щества глубоких нейронных сетей для задач
  []
 
-) [41
+) [49
 
-] [42
+] [50
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 51--51
@@ -2014,7 +2141,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--51
 ращения: 01.03.2025. URL:
  []
 
-[43] (./appA.tex [44]
+(./appA.tex [51]
 ПРИЛОЖЕНИЕ А.
 File: example.jpg Graphic file (type bmp)
 <example.jpg>
@@ -2024,30 +2151,39 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[45
+[52
 
-] [46])
+] [53])
 Underfull \hbox (badness 1019) in paragraph at lines 121--56
 \TU/TimesNewRoman(0)/m/n/10 В него можно включать изображения, таблицы, програм
 мный код, результаты экспериментов и другие
  []
 
-[47] (./main.aux)
+[54] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17155 strings out of 468168
- 371219 string characters out of 5432816
- 1430549 words of memory out of 5000000
- 45668 multiletter control sequences out of 15000+600000
+ 17235 strings out of 468168
+ 377500 string characters out of 5432816
+ 1435931 words of memory out of 5000000
+ 45724 multiletter control sequences out of 15000+600000
  628383 words of font info for 68 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  78i,12n,96p,1832b,5203s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (47 pages, 1393052 bytes).
+Output written on main.xdv (54 pages, 1557048 bytes).

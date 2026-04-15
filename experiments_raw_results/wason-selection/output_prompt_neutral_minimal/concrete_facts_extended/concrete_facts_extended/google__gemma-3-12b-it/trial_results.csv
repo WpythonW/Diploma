@@ -1,0 +1,2529 @@
+row_idx,item_id,permutation_idx,llm_seed,rule_text,prompt,ordered_cards,response_text,selected_cards,logic_set,category,prompt_tokens,completion_tokens,reasoning_tokens
+0,T1,0,42,"If the animal is an Elephant, then it has a Trunk.","Rule: ""If the animal is an Elephant, then it has a Trunk.""
+Cards: ['Trunk', 'Rhino', 'No trunk', 'Elephant']
+
+Which cards must you turn over?
+Your answer:","['Trunk', 'Rhino', 'No trunk', 'Elephant']","Rhino, No trunk","['Rhino', 'No trunk']","['not_P', 'not_Q']",LOGIC_ERROR,72,6,0
+0,T1,1,43,"If the animal is an Elephant, then it has a Trunk.","Rule: ""If the animal is an Elephant, then it has a Trunk.""
+Cards: ['Elephant', 'No trunk', 'Trunk', 'Rhino']
+
+Which cards must you turn over?
+Your answer:","['Elephant', 'No trunk', 'Trunk', 'Rhino']","Elephant, No trunk","['Elephant', 'No trunk']","['P', 'not_Q']",CORRECT,72,5,0
+0,T1,2,44,"If the animal is an Elephant, then it has a Trunk.","Rule: ""If the animal is an Elephant, then it has a Trunk.""
+Cards: ['No trunk', 'Elephant', 'Rhino', 'Trunk']
+
+Which cards must you turn over?
+Your answer:","['No trunk', 'Elephant', 'Rhino', 'Trunk']","No trunk, Rhino","['No trunk', 'Rhino']","['not_P', 'not_Q']",LOGIC_ERROR,72,5,0
+0,T1,3,45,"If the animal is an Elephant, then it has a Trunk.","Rule: ""If the animal is an Elephant, then it has a Trunk.""
+Cards: ['No trunk', 'Trunk', 'Rhino', 'Elephant']
+
+Which cards must you turn over?
+Your answer:","['No trunk', 'Trunk', 'Rhino', 'Elephant']","No trunk, Rhino","['No trunk', 'Rhino']","['not_P', 'not_Q']",LOGIC_ERROR,72,5,0
+0,T1,4,46,"If the animal is an Elephant, then it has a Trunk.","Rule: ""If the animal is an Elephant, then it has a Trunk.""
+Cards: ['Trunk', 'Elephant', 'No trunk', 'Rhino']
+
+Which cards must you turn over?
+Your answer:","['Trunk', 'Elephant', 'No trunk', 'Rhino']","No trunk, Rhino","['No trunk', 'Rhino']","['not_P', 'not_Q']",LOGIC_ERROR,72,5,0
+1,T2,0,10042,"If the fish is a Clownfish, then it lives near Anemones.","Rule: ""If the fish is a Clownfish, then it lives near Anemones.""
+Cards: ['Clownfish', 'Anemones', 'Salmon', 'Open water']
+
+Which cards must you turn over?
+Your answer:","['Clownfish', 'Anemones', 'Salmon', 'Open water']","Clownfish, Anemones","['Clownfish', 'Anemones']","['P', 'Q']",MATCHING_BIAS,77,8,0
+1,T2,1,10043,"If the fish is a Clownfish, then it lives near Anemones.","Rule: ""If the fish is a Clownfish, then it lives near Anemones.""
+Cards: ['Open water', 'Clownfish', 'Salmon', 'Anemones']
+
+Which cards must you turn over?
+Your answer:","['Open water', 'Clownfish', 'Salmon', 'Anemones']","Clownfish, Anemones","['Clownfish', 'Anemones']","['P', 'Q']",MATCHING_BIAS,77,8,0
+1,T2,2,10044,"If the fish is a Clownfish, then it lives near Anemones.","Rule: ""If the fish is a Clownfish, then it lives near Anemones.""
+Cards: ['Salmon', 'Clownfish', 'Open water', 'Anemones']
+
+Which cards must you turn over?
+Your answer:","['Salmon', 'Clownfish', 'Open water', 'Anemones']","Clownfish, Anemones","['Clownfish', 'Anemones']","['P', 'Q']",MATCHING_BIAS,77,8,0
+1,T2,3,10045,"If the fish is a Clownfish, then it lives near Anemones.","Rule: ""If the fish is a Clownfish, then it lives near Anemones.""
+Cards: ['Open water', 'Salmon', 'Anemones', 'Clownfish']
+
+Which cards must you turn over?
+Your answer:","['Open water', 'Salmon', 'Anemones', 'Clownfish']","Clownfish, Anemones","['Clownfish', 'Anemones']","['P', 'Q']",MATCHING_BIAS,77,8,0
+1,T2,4,10046,"If the fish is a Clownfish, then it lives near Anemones.","Rule: ""If the fish is a Clownfish, then it lives near Anemones.""
+Cards: ['Open water', 'Clownfish', 'Anemones', 'Salmon']
+
+Which cards must you turn over?
+Your answer:","['Open water', 'Clownfish', 'Anemones', 'Salmon']","Clownfish, Anemones","['Clownfish', 'Anemones']","['P', 'Q']",MATCHING_BIAS,77,8,0
+2,T3,0,20042,"If the metal is Silver, then it conducts Electricity.","Rule: ""If the metal is Silver, then it conducts Electricity.""
+Cards: ['Wood', 'Does not conduct', 'Conducts electricity', 'Silver']
+
+Which cards must you turn over?
+Your answer:","['Wood', 'Does not conduct', 'Conducts electricity', 'Silver']","Wood, Does not conduct","['Wood', 'Does not conduct']","['not_P', 'not_Q']",LOGIC_ERROR,71,6,0
+2,T3,1,20043,"If the metal is Silver, then it conducts Electricity.","Rule: ""If the metal is Silver, then it conducts Electricity.""
+Cards: ['Wood', 'Does not conduct', 'Silver', 'Conducts electricity']
+
+Which cards must you turn over?
+Your answer:","['Wood', 'Does not conduct', 'Silver', 'Conducts electricity']","Wood, Does not conduct","['Wood', 'Does not conduct']","['not_P', 'not_Q']",LOGIC_ERROR,71,6,0
+2,T3,2,20044,"If the metal is Silver, then it conducts Electricity.","Rule: ""If the metal is Silver, then it conducts Electricity.""
+Cards: ['Does not conduct', 'Silver', 'Wood', 'Conducts electricity']
+
+Which cards must you turn over?
+Your answer:","['Does not conduct', 'Silver', 'Wood', 'Conducts electricity']","Wood, Does not conduct","['Wood', 'Does not conduct']","['not_P', 'not_Q']",LOGIC_ERROR,71,6,0
+2,T3,3,20045,"If the metal is Silver, then it conducts Electricity.","Rule: ""If the metal is Silver, then it conducts Electricity.""
+Cards: ['Does not conduct', 'Wood', 'Conducts electricity', 'Silver']
+
+Which cards must you turn over?
+Your answer:","['Does not conduct', 'Wood', 'Conducts electricity', 'Silver']","Wood, Does not conduct","['Wood', 'Does not conduct']","['not_P', 'not_Q']",LOGIC_ERROR,71,6,0
+2,T3,4,20046,"If the metal is Silver, then it conducts Electricity.","Rule: ""If the metal is Silver, then it conducts Electricity.""
+Cards: ['Conducts electricity', 'Wood', 'Silver', 'Does not conduct']
+
+Which cards must you turn over?
+Your answer:","['Conducts electricity', 'Wood', 'Silver', 'Does not conduct']","Wood, Does not conduct","['Wood', 'Does not conduct']","['not_P', 'not_Q']",LOGIC_ERROR,71,6,0
+3,T4,0,30042,"If the fruit is a Banana, then the peel is Yellow.","Rule: ""If the fruit is a Banana, then the peel is Yellow.""
+Cards: ['Brown', 'Kiwi', 'Banana', 'Yellow']
+
+Which cards must you turn over?
+Your answer:","['Brown', 'Kiwi', 'Banana', 'Yellow']","Brown, Kiwi, Yellow","['Brown', 'Kiwi', 'Yellow']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,70,6,0
+3,T4,1,30043,"If the fruit is a Banana, then the peel is Yellow.","Rule: ""If the fruit is a Banana, then the peel is Yellow.""
+Cards: ['Banana', 'Yellow', 'Brown', 'Kiwi']
+
+Which cards must you turn over?
+Your answer:","['Banana', 'Yellow', 'Brown', 'Kiwi']","Banana, Yellow","['Banana', 'Yellow']","['P', 'Q']",MATCHING_BIAS,70,4,0
+3,T4,2,30044,"If the fruit is a Banana, then the peel is Yellow.","Rule: ""If the fruit is a Banana, then the peel is Yellow.""
+Cards: ['Banana', 'Brown', 'Yellow', 'Kiwi']
+
+Which cards must you turn over?
+Your answer:","['Banana', 'Brown', 'Yellow', 'Kiwi']","Banana, Yellow","['Banana', 'Yellow']","['P', 'Q']",MATCHING_BIAS,70,4,0
+3,T4,3,30045,"If the fruit is a Banana, then the peel is Yellow.","Rule: ""If the fruit is a Banana, then the peel is Yellow.""
+Cards: ['Brown', 'Banana', 'Kiwi', 'Yellow']
+
+Which cards must you turn over?
+Your answer:","['Brown', 'Banana', 'Kiwi', 'Yellow']","Banana, Yellow","['Banana', 'Yellow']","['P', 'Q']",MATCHING_BIAS,70,4,0
+3,T4,4,30046,"If the fruit is a Banana, then the peel is Yellow.","Rule: ""If the fruit is a Banana, then the peel is Yellow.""
+Cards: ['Kiwi', 'Banana', 'Yellow', 'Brown']
+
+Which cards must you turn over?
+Your answer:","['Kiwi', 'Banana', 'Yellow', 'Brown']","Banana, Yellow","['Banana', 'Yellow']","['P', 'Q']",MATCHING_BIAS,70,4,0
+4,T5,0,40042,"If the animal is a Crocodile, then it is Cold-blooded.","Rule: ""If the animal is a Crocodile, then it is Cold-blooded.""
+Cards: ['Cold-blooded', 'Crocodile', 'Warm-blooded', 'Lion']
+
+Which cards must you turn over?
+Your answer:","['Cold-blooded', 'Crocodile', 'Warm-blooded', 'Lion']","Warm-blooded, Lion","['Warm-blooded', 'Lion']","['not_P', 'not_Q']",LOGIC_ERROR,75,6,0
+4,T5,1,40043,"If the animal is a Crocodile, then it is Cold-blooded.","Rule: ""If the animal is a Crocodile, then it is Cold-blooded.""
+Cards: ['Lion', 'Cold-blooded', 'Crocodile', 'Warm-blooded']
+
+Which cards must you turn over?
+Your answer:","['Lion', 'Cold-blooded', 'Crocodile', 'Warm-blooded']","Lion, Warm-blooded","['Lion', 'Warm-blooded']","['not_P', 'not_Q']",LOGIC_ERROR,75,6,0
+4,T5,2,40044,"If the animal is a Crocodile, then it is Cold-blooded.","Rule: ""If the animal is a Crocodile, then it is Cold-blooded.""
+Cards: ['Crocodile', 'Cold-blooded', 'Warm-blooded', 'Lion']
+
+Which cards must you turn over?
+Your answer:","['Crocodile', 'Cold-blooded', 'Warm-blooded', 'Lion']","Lion, Warm-blooded","['Lion', 'Warm-blooded']","['not_P', 'not_Q']",LOGIC_ERROR,75,6,0
+4,T5,3,40045,"If the animal is a Crocodile, then it is Cold-blooded.","Rule: ""If the animal is a Crocodile, then it is Cold-blooded.""
+Cards: ['Lion', 'Warm-blooded', 'Cold-blooded', 'Crocodile']
+
+Which cards must you turn over?
+Your answer:","['Lion', 'Warm-blooded', 'Cold-blooded', 'Crocodile']","Lion, Crocodile","['Lion', 'Crocodile']","['P', 'not_P']",LOGIC_ERROR,75,4,0
+4,T5,4,40046,"If the animal is a Crocodile, then it is Cold-blooded.","Rule: ""If the animal is a Crocodile, then it is Cold-blooded.""
+Cards: ['Lion', 'Crocodile', 'Cold-blooded', 'Warm-blooded']
+
+Which cards must you turn over?
+Your answer:","['Lion', 'Crocodile', 'Cold-blooded', 'Warm-blooded']","Lion, Warm-blooded","['Lion', 'Warm-blooded']","['not_P', 'not_Q']",LOGIC_ERROR,75,6,0
+5,T6,0,50042,"If the vehicle is a Car, then the fuel is Gas.","Rule: ""If the vehicle is a Car, then the fuel is Gas.""
+Cards: ['Car', 'Electric', 'Gas', 'Bike']
+
+Which cards must you turn over?
+Your answer:","['Car', 'Electric', 'Gas', 'Bike']","Car, Electric, Bike","['Car', 'Electric', 'Bike']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,69,6,0
+5,T6,1,50043,"If the vehicle is a Car, then the fuel is Gas.","Rule: ""If the vehicle is a Car, then the fuel is Gas.""
+Cards: ['Electric', 'Gas', 'Bike', 'Car']
+
+Which cards must you turn over?
+Your answer:","['Electric', 'Gas', 'Bike', 'Car']","Electric, Bike","['Electric', 'Bike']","['not_P', 'not_Q']",LOGIC_ERROR,69,4,0
+5,T6,2,50044,"If the vehicle is a Car, then the fuel is Gas.","Rule: ""If the vehicle is a Car, then the fuel is Gas.""
+Cards: ['Gas', 'Electric', 'Car', 'Bike']
+
+Which cards must you turn over?
+Your answer:","['Gas', 'Electric', 'Car', 'Bike']","Electric, Bike","['Electric', 'Bike']","['not_P', 'not_Q']",LOGIC_ERROR,69,4,0
+5,T6,3,50045,"If the vehicle is a Car, then the fuel is Gas.","Rule: ""If the vehicle is a Car, then the fuel is Gas.""
+Cards: ['Bike', 'Car', 'Electric', 'Gas']
+
+Which cards must you turn over?
+Your answer:","['Bike', 'Car', 'Electric', 'Gas']","Bike, Electric","['Bike', 'Electric']","['not_P', 'not_Q']",LOGIC_ERROR,69,4,0
+5,T6,4,50046,"If the vehicle is a Car, then the fuel is Gas.","Rule: ""If the vehicle is a Car, then the fuel is Gas.""
+Cards: ['Car', 'Electric', 'Bike', 'Gas']
+
+Which cards must you turn over?
+Your answer:","['Car', 'Electric', 'Bike', 'Gas']","Car, Electric, Bike, Gas","['Car', 'Electric', 'Bike', 'Gas']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,69,8,0
+6,T7,0,60042,"If the month is June, then the season is Summer.","Rule: ""If the month is June, then the season is Summer.""
+Cards: ['Summer', 'December', 'Winter', 'June']
+
+Which cards must you turn over?
+Your answer:","['Summer', 'December', 'Winter', 'June']","December, Winter","['December', 'Winter']","['not_P', 'not_Q']",LOGIC_ERROR,68,4,0
+6,T7,1,60043,"If the month is June, then the season is Summer.","Rule: ""If the month is June, then the season is Summer.""
+Cards: ['June', 'December', 'Summer', 'Winter']
+
+Which cards must you turn over?
+Your answer:","['June', 'December', 'Summer', 'Winter']","June, Summer","['June', 'Summer']","['P', 'Q']",MATCHING_BIAS,68,4,0
+6,T7,2,60044,"If the month is June, then the season is Summer.","Rule: ""If the month is June, then the season is Summer.""
+Cards: ['Winter', 'June', 'December', 'Summer']
+
+Which cards must you turn over?
+Your answer:","['Winter', 'June', 'December', 'Summer']","Winter, December","['Winter', 'December']","['not_P', 'not_Q']",LOGIC_ERROR,68,4,0
+6,T7,3,60045,"If the month is June, then the season is Summer.","Rule: ""If the month is June, then the season is Summer.""
+Cards: ['December', 'Winter', 'Summer', 'June']
+
+Which cards must you turn over?
+Your answer:","['December', 'Winter', 'Summer', 'June']","December, Winter, Summer","['December', 'Winter', 'Summer']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,68,6,0
+6,T7,4,60046,"If the month is June, then the season is Summer.","Rule: ""If the month is June, then the season is Summer.""
+Cards: ['June', 'Winter', 'Summer', 'December']
+
+Which cards must you turn over?
+Your answer:","['June', 'Winter', 'Summer', 'December']","June, Winter, December","['June', 'Winter', 'December']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,68,6,0
+7,T8,0,70042,"If the tool is a Hammer, then the handle is Wood.","Rule: ""If the tool is a Hammer, then the handle is Wood.""
+Cards: ['Metal', 'Hammer', 'Wood', 'Wrench']
+
+Which cards must you turn over?
+Your answer:","['Metal', 'Hammer', 'Wood', 'Wrench']","Metal, Wrench","['Metal', 'Wrench']","['not_P', 'not_Q']",LOGIC_ERROR,70,5,0
+7,T8,1,70043,"If the tool is a Hammer, then the handle is Wood.","Rule: ""If the tool is a Hammer, then the handle is Wood.""
+Cards: ['Wrench', 'Wood', 'Metal', 'Hammer']
+
+Which cards must you turn over?
+Your answer:","['Wrench', 'Wood', 'Metal', 'Hammer']","Wrench, Metal","['Wrench', 'Metal']","['not_P', 'not_Q']",LOGIC_ERROR,70,5,0
+7,T8,2,70044,"If the tool is a Hammer, then the handle is Wood.","Rule: ""If the tool is a Hammer, then the handle is Wood.""
+Cards: ['Wood', 'Wrench', 'Metal', 'Hammer']
+
+Which cards must you turn over?
+Your answer:","['Wood', 'Wrench', 'Metal', 'Hammer']","Wrench, Metal","['Wrench', 'Metal']","['not_P', 'not_Q']",LOGIC_ERROR,70,5,0
+7,T8,3,70045,"If the tool is a Hammer, then the handle is Wood.","Rule: ""If the tool is a Hammer, then the handle is Wood.""
+Cards: ['Hammer', 'Metal', 'Wood', 'Wrench']
+
+Which cards must you turn over?
+Your answer:","['Hammer', 'Metal', 'Wood', 'Wrench']","Hammer, Wood","['Hammer', 'Wood']","['P', 'Q']",MATCHING_BIAS,70,4,0
+7,T8,4,70046,"If the tool is a Hammer, then the handle is Wood.","Rule: ""If the tool is a Hammer, then the handle is Wood.""
+Cards: ['Metal', 'Wrench', 'Wood', 'Hammer']
+
+Which cards must you turn over?
+Your answer:","['Metal', 'Wrench', 'Wood', 'Hammer']","Metal, Wrench","['Metal', 'Wrench']","['not_P', 'not_Q']",LOGIC_ERROR,70,5,0
+8,T9,0,80042,"If the liquid is Lava, then the temperature is Extremely hot.","Rule: ""If the liquid is Lava, then the temperature is Extremely hot.""
+Cards: ['Extremely hot', 'Water', 'Lava', 'Room temperature']
+
+Which cards must you turn over?
+Your answer:","['Extremely hot', 'Water', 'Lava', 'Room temperature']","Lava, Extremely hot","['Lava', 'Extremely hot']","['P', 'Q']",MATCHING_BIAS,73,6,0
+8,T9,1,80043,"If the liquid is Lava, then the temperature is Extremely hot.","Rule: ""If the liquid is Lava, then the temperature is Extremely hot.""
+Cards: ['Water', 'Lava', 'Extremely hot', 'Room temperature']
+
+Which cards must you turn over?
+Your answer:","['Water', 'Lava', 'Extremely hot', 'Room temperature']","Lava, Extremely hot","['Lava', 'Extremely hot']","['P', 'Q']",MATCHING_BIAS,73,6,0
+8,T9,2,80044,"If the liquid is Lava, then the temperature is Extremely hot.","Rule: ""If the liquid is Lava, then the temperature is Extremely hot.""
+Cards: ['Lava', 'Room temperature', 'Water', 'Extremely hot']
+
+Which cards must you turn over?
+Your answer:","['Lava', 'Room temperature', 'Water', 'Extremely hot']","Lava, Extremely hot","['Lava', 'Extremely hot']","['P', 'Q']",MATCHING_BIAS,73,6,0
+8,T9,3,80045,"If the liquid is Lava, then the temperature is Extremely hot.","Rule: ""If the liquid is Lava, then the temperature is Extremely hot.""
+Cards: ['Lava', 'Water', 'Extremely hot', 'Room temperature']
+
+Which cards must you turn over?
+Your answer:","['Lava', 'Water', 'Extremely hot', 'Room temperature']","Lava, Extremely hot","['Lava', 'Extremely hot']","['P', 'Q']",MATCHING_BIAS,73,6,0
+8,T9,4,80046,"If the liquid is Lava, then the temperature is Extremely hot.","Rule: ""If the liquid is Lava, then the temperature is Extremely hot.""
+Cards: ['Room temperature', 'Lava', 'Extremely hot', 'Water']
+
+Which cards must you turn over?
+Your answer:","['Room temperature', 'Lava', 'Extremely hot', 'Water']","Lava, Extremely hot","['Lava', 'Extremely hot']","['P', 'Q']",MATCHING_BIAS,73,6,0
+9,T10,0,90042,"If the animal is a Hedgehog, then it has Spines.","Rule: ""If the animal is a Hedgehog, then it has Spines.""
+Cards: ['Hedgehog', 'Squirrel', 'Fur', 'Spines']
+
+Which cards must you turn over?
+Your answer:","['Hedgehog', 'Squirrel', 'Fur', 'Spines']","Hedgehog, Squirrel, Fur, Spines","['Hedgehog', 'Squirrel', 'Fur', 'Spines']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,72,11,0
+9,T10,1,90043,"If the animal is a Hedgehog, then it has Spines.","Rule: ""If the animal is a Hedgehog, then it has Spines.""
+Cards: ['Spines', 'Hedgehog', 'Fur', 'Squirrel']
+
+Which cards must you turn over?
+Your answer:","['Spines', 'Hedgehog', 'Fur', 'Squirrel']","Hedgehog, Spines, Fur, Squirrel","['Hedgehog', 'Spines', 'Fur', 'Squirrel']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,72,11,0
+9,T10,2,90044,"If the animal is a Hedgehog, then it has Spines.","Rule: ""If the animal is a Hedgehog, then it has Spines.""
+Cards: ['Hedgehog', 'Fur', 'Squirrel', 'Spines']
+
+Which cards must you turn over?
+Your answer:","['Hedgehog', 'Fur', 'Squirrel', 'Spines']","Hedgehog, Spines","['Hedgehog', 'Spines']","['P', 'Q']",MATCHING_BIAS,72,7,0
+9,T10,3,90045,"If the animal is a Hedgehog, then it has Spines.","Rule: ""If the animal is a Hedgehog, then it has Spines.""
+Cards: ['Hedgehog', 'Squirrel', 'Spines', 'Fur']
+
+Which cards must you turn over?
+Your answer:","['Hedgehog', 'Squirrel', 'Spines', 'Fur']","Hedgehog, Squirrel, Spines, Fur","['Hedgehog', 'Squirrel', 'Spines', 'Fur']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,72,11,0
+9,T10,4,90046,"If the animal is a Hedgehog, then it has Spines.","Rule: ""If the animal is a Hedgehog, then it has Spines.""
+Cards: ['Squirrel', 'Hedgehog', 'Spines', 'Fur']
+
+Which cards must you turn over?
+Your answer:","['Squirrel', 'Hedgehog', 'Spines', 'Fur']","Squirrel, Fur","['Squirrel', 'Fur']","['not_P', 'not_Q']",LOGIC_ERROR,72,4,0
+10,T11,0,100042,"If the planet is Mars, then the sky is Pink.","Rule: ""If the planet is Mars, then the sky is Pink.""
+Cards: ['Blue', 'Venus', 'Pink', 'Mars']
+
+Which cards must you turn over?
+Your answer:","['Blue', 'Venus', 'Pink', 'Mars']","Mars, Pink","['Mars', 'Pink']","['P', 'Q']",MATCHING_BIAS,68,4,0
+10,T11,1,100043,"If the planet is Mars, then the sky is Pink.","Rule: ""If the planet is Mars, then the sky is Pink.""
+Cards: ['Pink', 'Venus', 'Mars', 'Blue']
+
+Which cards must you turn over?
+Your answer:","['Pink', 'Venus', 'Mars', 'Blue']","Mars, Pink","['Mars', 'Pink']","['P', 'Q']",MATCHING_BIAS,68,4,0
+10,T11,2,100044,"If the planet is Mars, then the sky is Pink.","Rule: ""If the planet is Mars, then the sky is Pink.""
+Cards: ['Venus', 'Blue', 'Mars', 'Pink']
+
+Which cards must you turn over?
+Your answer:","['Venus', 'Blue', 'Mars', 'Pink']","Venus, Blue, Mars, Pink","['Venus', 'Blue', 'Mars', 'Pink']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,68,8,0
+10,T11,3,100045,"If the planet is Mars, then the sky is Pink.","Rule: ""If the planet is Mars, then the sky is Pink.""
+Cards: ['Blue', 'Mars', 'Pink', 'Venus']
+
+Which cards must you turn over?
+Your answer:","['Blue', 'Mars', 'Pink', 'Venus']","Mars, Pink","['Mars', 'Pink']","['P', 'Q']",MATCHING_BIAS,68,4,0
+10,T11,4,100046,"If the planet is Mars, then the sky is Pink.","Rule: ""If the planet is Mars, then the sky is Pink.""
+Cards: ['Pink', 'Blue', 'Venus', 'Mars']
+
+Which cards must you turn over?
+Your answer:","['Pink', 'Blue', 'Venus', 'Mars']","Mars, Pink","['Mars', 'Pink']","['P', 'Q']",MATCHING_BIAS,68,4,0
+11,T12,0,110042,"If the animal is a Octopus, then it has Eight arms.","Rule: ""If the animal is a Octopus, then it has Eight arms.""
+Cards: ['Squid', 'Eight arms', 'Ten arms', 'Octopus']
+
+Which cards must you turn over?
+Your answer:","['Squid', 'Eight arms', 'Ten arms', 'Octopus']","Octopus, Eight arms","['Octopus', 'Eight arms']","['P', 'Q']",MATCHING_BIAS,73,6,0
+11,T12,1,110043,"If the animal is a Octopus, then it has Eight arms.","Rule: ""If the animal is a Octopus, then it has Eight arms.""
+Cards: ['Eight arms', 'Ten arms', 'Squid', 'Octopus']
+
+Which cards must you turn over?
+Your answer:","['Eight arms', 'Ten arms', 'Squid', 'Octopus']","Octopus, Squid","['Octopus', 'Squid']","['P', 'not_P']",LOGIC_ERROR,73,5,0
+11,T12,2,110044,"If the animal is a Octopus, then it has Eight arms.","Rule: ""If the animal is a Octopus, then it has Eight arms.""
+Cards: ['Ten arms', 'Eight arms', 'Octopus', 'Squid']
+
+Which cards must you turn over?
+Your answer:","['Ten arms', 'Eight arms', 'Octopus', 'Squid']","Octopus, Squid","['Octopus', 'Squid']","['P', 'not_P']",LOGIC_ERROR,73,5,0
+11,T12,3,110045,"If the animal is a Octopus, then it has Eight arms.","Rule: ""If the animal is a Octopus, then it has Eight arms.""
+Cards: ['Octopus', 'Eight arms', 'Ten arms', 'Squid']
+
+Which cards must you turn over?
+Your answer:","['Octopus', 'Eight arms', 'Ten arms', 'Squid']","Octopus, Eight arms","['Octopus', 'Eight arms']","['P', 'Q']",MATCHING_BIAS,73,6,0
+11,T12,4,110046,"If the animal is a Octopus, then it has Eight arms.","Rule: ""If the animal is a Octopus, then it has Eight arms.""
+Cards: ['Octopus', 'Squid', 'Ten arms', 'Eight arms']
+
+Which cards must you turn over?
+Your answer:","['Octopus', 'Squid', 'Ten arms', 'Eight arms']","Octopus, Squid, Ten arms","['Octopus', 'Squid', 'Ten arms']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,73,8,0
+12,T13,0,120042,"If the card shows a Fish, then the habitat is Water.","Rule: ""If the card shows a Fish, then the habitat is Water.""
+Cards: ['Air', 'Fish', 'Bird', 'Water']
+
+Which cards must you turn over?
+Your answer:","['Air', 'Fish', 'Bird', 'Water']",Fish,['Fish'],['P'],CONFIRMATION_BIAS,69,2,0
+12,T13,1,120043,"If the card shows a Fish, then the habitat is Water.","Rule: ""If the card shows a Fish, then the habitat is Water.""
+Cards: ['Fish', 'Bird', 'Air', 'Water']
+
+Which cards must you turn over?
+Your answer:","['Fish', 'Bird', 'Air', 'Water']","Fish, Bird, Air, Water","['Fish', 'Bird', 'Air', 'Water']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,69,8,0
+12,T13,2,120044,"If the card shows a Fish, then the habitat is Water.","Rule: ""If the card shows a Fish, then the habitat is Water.""
+Cards: ['Fish', 'Water', 'Bird', 'Air']
+
+Which cards must you turn over?
+Your answer:","['Fish', 'Water', 'Bird', 'Air']","Fish, Water","['Fish', 'Water']","['P', 'Q']",MATCHING_BIAS,69,4,0
+12,T13,3,120045,"If the card shows a Fish, then the habitat is Water.","Rule: ""If the card shows a Fish, then the habitat is Water.""
+Cards: ['Bird', 'Water', 'Fish', 'Air']
+
+Which cards must you turn over?
+Your answer:","['Bird', 'Water', 'Fish', 'Air']",Fish,['Fish'],['P'],CONFIRMATION_BIAS,69,2,0
+12,T13,4,120046,"If the card shows a Fish, then the habitat is Water.","Rule: ""If the card shows a Fish, then the habitat is Water.""
+Cards: ['Water', 'Fish', 'Air', 'Bird']
+
+Which cards must you turn over?
+Your answer:","['Water', 'Fish', 'Air', 'Bird']",Fish,['Fish'],['P'],CONFIRMATION_BIAS,69,2,0
+13,T14,0,130042,"If the instrument is a Drum, then the sound is Loud.","Rule: ""If the instrument is a Drum, then the sound is Loud.""
+Cards: ['Quiet', 'Flute', 'Loud', 'Drum']
+
+Which cards must you turn over?
+Your answer:","['Quiet', 'Flute', 'Loud', 'Drum']","Quiet, Flute","['Quiet', 'Flute']","['not_P', 'not_Q']",LOGIC_ERROR,71,5,0
+13,T14,1,130043,"If the instrument is a Drum, then the sound is Loud.","Rule: ""If the instrument is a Drum, then the sound is Loud.""
+Cards: ['Drum', 'Flute', 'Quiet', 'Loud']
+
+Which cards must you turn over?
+Your answer:","['Drum', 'Flute', 'Quiet', 'Loud']","Drum, Flute, Quiet, Loud","['Drum', 'Flute', 'Quiet', 'Loud']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,71,9,0
+13,T14,2,130044,"If the instrument is a Drum, then the sound is Loud.","Rule: ""If the instrument is a Drum, then the sound is Loud.""
+Cards: ['Loud', 'Drum', 'Quiet', 'Flute']
+
+Which cards must you turn over?
+Your answer:","['Loud', 'Drum', 'Quiet', 'Flute']","Drum, Quiet, Flute","['Drum', 'Quiet', 'Flute']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,71,7,0
+13,T14,3,130045,"If the instrument is a Drum, then the sound is Loud.","Rule: ""If the instrument is a Drum, then the sound is Loud.""
+Cards: ['Drum', 'Flute', 'Loud', 'Quiet']
+
+Which cards must you turn over?
+Your answer:","['Drum', 'Flute', 'Loud', 'Quiet']","Drum, Flute, Loud, Quiet","['Drum', 'Flute', 'Loud', 'Quiet']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,71,9,0
+13,T14,4,130046,"If the instrument is a Drum, then the sound is Loud.","Rule: ""If the instrument is a Drum, then the sound is Loud.""
+Cards: ['Drum', 'Loud', 'Quiet', 'Flute']
+
+Which cards must you turn over?
+Your answer:","['Drum', 'Loud', 'Quiet', 'Flute']","Drum, Loud, Quiet, Flute","['Drum', 'Loud', 'Quiet', 'Flute']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,71,9,0
+14,T15,0,140042,"If the planet is Mercury, then it is closest to the Sun.","Rule: ""If the planet is Mercury, then it is closest to the Sun.""
+Cards: ['Venus', 'Not closest', 'Mercury', 'Closest to Sun']
+
+Which cards must you turn over?
+Your answer:","['Venus', 'Not closest', 'Mercury', 'Closest to Sun']","Venus, Not closest","['Venus', 'Not closest']","['not_P', 'not_Q']",LOGIC_ERROR,73,5,0
+14,T15,1,140043,"If the planet is Mercury, then it is closest to the Sun.","Rule: ""If the planet is Mercury, then it is closest to the Sun.""
+Cards: ['Venus', 'Closest to Sun', 'Mercury', 'Not closest']
+
+Which cards must you turn over?
+Your answer:","['Venus', 'Closest to Sun', 'Mercury', 'Not closest']","Mercury, Closest to Sun, Venus, Not closest","['Mercury', 'Closest to Sun', 'Venus', 'Not closest']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,73,12,0
+14,T15,2,140044,"If the planet is Mercury, then it is closest to the Sun.","Rule: ""If the planet is Mercury, then it is closest to the Sun.""
+Cards: ['Mercury', 'Closest to Sun', 'Venus', 'Not closest']
+
+Which cards must you turn over?
+Your answer:","['Mercury', 'Closest to Sun', 'Venus', 'Not closest']","Mercury, Closest to Sun, Venus","['Mercury', 'Closest to Sun', 'Venus']","['P', 'Q', 'not_P']",LOGIC_ERROR,73,9,0
+14,T15,3,140045,"If the planet is Mercury, then it is closest to the Sun.","Rule: ""If the planet is Mercury, then it is closest to the Sun.""
+Cards: ['Not closest', 'Venus', 'Closest to Sun', 'Mercury']
+
+Which cards must you turn over?
+Your answer:","['Not closest', 'Venus', 'Closest to Sun', 'Mercury']","Mercury, Closest to Sun","['Mercury', 'Closest to Sun']","['P', 'Q']",MATCHING_BIAS,73,7,0
+14,T15,4,140046,"If the planet is Mercury, then it is closest to the Sun.","Rule: ""If the planet is Mercury, then it is closest to the Sun.""
+Cards: ['Venus', 'Not closest', 'Closest to Sun', 'Mercury']
+
+Which cards must you turn over?
+Your answer:","['Venus', 'Not closest', 'Closest to Sun', 'Mercury']","Mercury, Closest to Sun, Venus, Not closest","['Mercury', 'Closest to Sun', 'Venus', 'Not closest']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,73,12,0
+15,T16,0,150042,"If the country is Russia, then the currency is Ruble.","Rule: ""If the country is Russia, then the currency is Ruble.""
+Cards: ['Ruble', 'Poland', 'Russia', 'Zloty']
+
+Which cards must you turn over?
+Your answer:","['Ruble', 'Poland', 'Russia', 'Zloty']","Russia, Ruble","['Russia', 'Ruble']","['P', 'Q']",MATCHING_BIAS,72,5,0
+15,T16,1,150043,"If the country is Russia, then the currency is Ruble.","Rule: ""If the country is Russia, then the currency is Ruble.""
+Cards: ['Zloty', 'Ruble', 'Poland', 'Russia']
+
+Which cards must you turn over?
+Your answer:","['Zloty', 'Ruble', 'Poland', 'Russia']","Poland, Russia","['Poland', 'Russia']","['P', 'not_P']",LOGIC_ERROR,72,4,0
+15,T16,2,150044,"If the country is Russia, then the currency is Ruble.","Rule: ""If the country is Russia, then the currency is Ruble.""
+Cards: ['Poland', 'Ruble', 'Zloty', 'Russia']
+
+Which cards must you turn over?
+Your answer:","['Poland', 'Ruble', 'Zloty', 'Russia']","Russia, Ruble
+","['Russia', 'Ruble']","['P', 'Q']",MATCHING_BIAS,72,6,0
+15,T16,3,150045,"If the country is Russia, then the currency is Ruble.","Rule: ""If the country is Russia, then the currency is Ruble.""
+Cards: ['Zloty', 'Poland', 'Ruble', 'Russia']
+
+Which cards must you turn over?
+Your answer:","['Zloty', 'Poland', 'Ruble', 'Russia']","Poland, Russia, Ruble","['Poland', 'Russia', 'Ruble']","['P', 'Q', 'not_P']",LOGIC_ERROR,72,7,0
+15,T16,4,150046,"If the country is Russia, then the currency is Ruble.","Rule: ""If the country is Russia, then the currency is Ruble.""
+Cards: ['Ruble', 'Russia', 'Poland', 'Zloty']
+
+Which cards must you turn over?
+Your answer:","['Ruble', 'Russia', 'Poland', 'Zloty']","Russia, Ruble","['Russia', 'Ruble']","['P', 'Q']",MATCHING_BIAS,72,5,0
+16,T17,0,160042,"If the bird is a Woodpecker, then it pecks Trees.","Rule: ""If the bird is a Woodpecker, then it pecks Trees.""
+Cards: ['Woodpecker', 'Pecks trees', 'Robin', 'Does not peck']
+
+Which cards must you turn over?
+Your answer:","['Woodpecker', 'Pecks trees', 'Robin', 'Does not peck']","Robin, Does not peck","['Robin', 'Does not peck']","['not_P', 'not_Q']",LOGIC_ERROR,77,6,0
+16,T17,1,160043,"If the bird is a Woodpecker, then it pecks Trees.","Rule: ""If the bird is a Woodpecker, then it pecks Trees.""
+Cards: ['Woodpecker', 'Pecks trees', 'Does not peck', 'Robin']
+
+Which cards must you turn over?
+Your answer:","['Woodpecker', 'Pecks trees', 'Does not peck', 'Robin']","Woodpecker, Does not peck","['Woodpecker', 'Does not peck']","['P', 'not_Q']",CORRECT,77,8,0
+16,T17,2,160044,"If the bird is a Woodpecker, then it pecks Trees.","Rule: ""If the bird is a Woodpecker, then it pecks Trees.""
+Cards: ['Does not peck', 'Pecks trees', 'Robin', 'Woodpecker']
+
+Which cards must you turn over?
+Your answer:","['Does not peck', 'Pecks trees', 'Robin', 'Woodpecker']","Robin, Does not peck","['Robin', 'Does not peck']","['not_P', 'not_Q']",LOGIC_ERROR,77,6,0
+16,T17,3,160045,"If the bird is a Woodpecker, then it pecks Trees.","Rule: ""If the bird is a Woodpecker, then it pecks Trees.""
+Cards: ['Pecks trees', 'Does not peck', 'Woodpecker', 'Robin']
+
+Which cards must you turn over?
+Your answer:","['Pecks trees', 'Does not peck', 'Woodpecker', 'Robin']","Pecks trees, Does not peck, Robin","['Pecks trees', 'Does not peck', 'Robin']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,77,10,0
+16,T17,4,160046,"If the bird is a Woodpecker, then it pecks Trees.","Rule: ""If the bird is a Woodpecker, then it pecks Trees.""
+Cards: ['Woodpecker', 'Robin', 'Pecks trees', 'Does not peck']
+
+Which cards must you turn over?
+Your answer:","['Woodpecker', 'Robin', 'Pecks trees', 'Does not peck']","Woodpecker, Robin, Does not peck","['Woodpecker', 'Robin', 'Does not peck']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,77,10,0
+17,T18,0,170042,"If the tree is an Oak, then the acorn is Brown.","Rule: ""If the tree is an Oak, then the acorn is Brown.""
+Cards: ['Oak', 'Brown', 'Green', 'Pine']
+
+Which cards must you turn over?
+Your answer:","['Oak', 'Brown', 'Green', 'Pine']","Oak, Brown, Green, Pine","['Oak', 'Brown', 'Green', 'Pine']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,69,8,0
+17,T18,1,170043,"If the tree is an Oak, then the acorn is Brown.","Rule: ""If the tree is an Oak, then the acorn is Brown.""
+Cards: ['Brown', 'Pine', 'Green', 'Oak']
+
+Which cards must you turn over?
+Your answer:","['Brown', 'Pine', 'Green', 'Oak']","Oak, Pine, Green","['Oak', 'Pine', 'Green']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,69,6,0
+17,T18,2,170044,"If the tree is an Oak, then the acorn is Brown.","Rule: ""If the tree is an Oak, then the acorn is Brown.""
+Cards: ['Pine', 'Green', 'Brown', 'Oak']
+
+Which cards must you turn over?
+Your answer:","['Pine', 'Green', 'Brown', 'Oak']","Pine, Green, Oak","['Pine', 'Green', 'Oak']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,69,6,0
+17,T18,3,170045,"If the tree is an Oak, then the acorn is Brown.","Rule: ""If the tree is an Oak, then the acorn is Brown.""
+Cards: ['Oak', 'Pine', 'Green', 'Brown']
+
+Which cards must you turn over?
+Your answer:","['Oak', 'Pine', 'Green', 'Brown']","Oak, Pine, Green, Brown","['Oak', 'Pine', 'Green', 'Brown']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,69,8,0
+17,T18,4,170046,"If the tree is an Oak, then the acorn is Brown.","Rule: ""If the tree is an Oak, then the acorn is Brown.""
+Cards: ['Pine', 'Green', 'Oak', 'Brown']
+
+Which cards must you turn over?
+Your answer:","['Pine', 'Green', 'Oak', 'Brown']","Pine, Green, Oak, Brown","['Pine', 'Green', 'Oak', 'Brown']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,69,8,0
+18,T19,0,180042,"If the operator is Plus, then the result is Positive.","Rule: ""If the operator is Plus, then the result is Positive.""
+Cards: ['Plus', 'Negative', 'Positive', 'Minus']
+
+Which cards must you turn over?
+Your answer:","['Plus', 'Negative', 'Positive', 'Minus']","Plus, Negative, Positive, Minus","['Plus', 'Negative', 'Positive', 'Minus']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,68,8,0
+18,T19,1,180043,"If the operator is Plus, then the result is Positive.","Rule: ""If the operator is Plus, then the result is Positive.""
+Cards: ['Negative', 'Minus', 'Plus', 'Positive']
+
+Which cards must you turn over?
+Your answer:","['Negative', 'Minus', 'Plus', 'Positive']","Negative, Minus, Positive","['Negative', 'Minus', 'Positive']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,68,6,0
+18,T19,2,180044,"If the operator is Plus, then the result is Positive.","Rule: ""If the operator is Plus, then the result is Positive.""
+Cards: ['Negative', 'Plus', 'Positive', 'Minus']
+
+Which cards must you turn over?
+Your answer:","['Negative', 'Plus', 'Positive', 'Minus']","Negative, Minus","['Negative', 'Minus']","['not_P', 'not_Q']",LOGIC_ERROR,68,4,0
+18,T19,3,180045,"If the operator is Plus, then the result is Positive.","Rule: ""If the operator is Plus, then the result is Positive.""
+Cards: ['Plus', 'Positive', 'Negative', 'Minus']
+
+Which cards must you turn over?
+Your answer:","['Plus', 'Positive', 'Negative', 'Minus']","Plus, Positive","['Plus', 'Positive']","['P', 'Q']",MATCHING_BIAS,68,4,0
+18,T19,4,180046,"If the operator is Plus, then the result is Positive.","Rule: ""If the operator is Plus, then the result is Positive.""
+Cards: ['Negative', 'Minus', 'Positive', 'Plus']
+
+Which cards must you turn over?
+Your answer:","['Negative', 'Minus', 'Positive', 'Plus']","Negative, Minus, Positive, Plus","['Negative', 'Minus', 'Positive', 'Plus']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,68,8,0
+19,T20,0,190042,"If the animal is a Giraffe, then it has the Longest neck.","Rule: ""If the animal is a Giraffe, then it has the Longest neck.""
+Cards: ['Longest neck', 'Giraffe', 'Horse', 'Short neck']
+
+Which cards must you turn over?
+Your answer:","['Longest neck', 'Giraffe', 'Horse', 'Short neck']","Horse, Short neck","['Horse', 'Short neck']","['not_P', 'not_Q']",LOGIC_ERROR,76,5,0
+19,T20,1,190043,"If the animal is a Giraffe, then it has the Longest neck.","Rule: ""If the animal is a Giraffe, then it has the Longest neck.""
+Cards: ['Giraffe', 'Longest neck', 'Short neck', 'Horse']
+
+Which cards must you turn over?
+Your answer:","['Giraffe', 'Longest neck', 'Short neck', 'Horse']","Short neck, Horse","['Short neck', 'Horse']","['not_P', 'not_Q']",LOGIC_ERROR,76,5,0
+19,T20,2,190044,"If the animal is a Giraffe, then it has the Longest neck.","Rule: ""If the animal is a Giraffe, then it has the Longest neck.""
+Cards: ['Horse', 'Longest neck', 'Giraffe', 'Short neck']
+
+Which cards must you turn over?
+Your answer:","['Horse', 'Longest neck', 'Giraffe', 'Short neck']","Horse, Short neck","['Horse', 'Short neck']","['not_P', 'not_Q']",LOGIC_ERROR,76,5,0
+19,T20,3,190045,"If the animal is a Giraffe, then it has the Longest neck.","Rule: ""If the animal is a Giraffe, then it has the Longest neck.""
+Cards: ['Horse', 'Short neck', 'Longest neck', 'Giraffe']
+
+Which cards must you turn over?
+Your answer:","['Horse', 'Short neck', 'Longest neck', 'Giraffe']","Horse, Short neck","['Horse', 'Short neck']","['not_P', 'not_Q']",LOGIC_ERROR,76,5,0
+19,T20,4,190046,"If the animal is a Giraffe, then it has the Longest neck.","Rule: ""If the animal is a Giraffe, then it has the Longest neck.""
+Cards: ['Giraffe', 'Short neck', 'Horse', 'Longest neck']
+
+Which cards must you turn over?
+Your answer:","['Giraffe', 'Short neck', 'Horse', 'Longest neck']","Horse, Short neck","['Horse', 'Short neck']","['not_P', 'not_Q']",LOGIC_ERROR,76,5,0
+20,T21,0,200042,"If the animal is a Cheetah, then it is the Fastest land animal.","Rule: ""If the animal is a Cheetah, then it is the Fastest land animal.""
+Cards: ['Not fastest', 'Fastest land animal', 'Lion', 'Cheetah']
+
+Which cards must you turn over?
+Your answer:","['Not fastest', 'Fastest land animal', 'Lion', 'Cheetah']","Not fastest, Lion","['Not fastest', 'Lion']","['not_P', 'not_Q']",LOGIC_ERROR,76,5,0
+20,T21,1,200043,"If the animal is a Cheetah, then it is the Fastest land animal.","Rule: ""If the animal is a Cheetah, then it is the Fastest land animal.""
+Cards: ['Fastest land animal', 'Lion', 'Not fastest', 'Cheetah']
+
+Which cards must you turn over?
+Your answer:","['Fastest land animal', 'Lion', 'Not fastest', 'Cheetah']","Lion, Not fastest","['Lion', 'Not fastest']","['not_P', 'not_Q']",LOGIC_ERROR,76,5,0
+20,T21,2,200044,"If the animal is a Cheetah, then it is the Fastest land animal.","Rule: ""If the animal is a Cheetah, then it is the Fastest land animal.""
+Cards: ['Lion', 'Cheetah', 'Fastest land animal', 'Not fastest']
+
+Which cards must you turn over?
+Your answer:","['Lion', 'Cheetah', 'Fastest land animal', 'Not fastest']","Lion, Not fastest","['Lion', 'Not fastest']","['not_P', 'not_Q']",LOGIC_ERROR,76,5,0
+20,T21,3,200045,"If the animal is a Cheetah, then it is the Fastest land animal.","Rule: ""If the animal is a Cheetah, then it is the Fastest land animal.""
+Cards: ['Fastest land animal', 'Not fastest', 'Lion', 'Cheetah']
+
+Which cards must you turn over?
+Your answer:","['Fastest land animal', 'Not fastest', 'Lion', 'Cheetah']","Not fastest, Lion","['Not fastest', 'Lion']","['not_P', 'not_Q']",LOGIC_ERROR,76,5,0
+20,T21,4,200046,"If the animal is a Cheetah, then it is the Fastest land animal.","Rule: ""If the animal is a Cheetah, then it is the Fastest land animal.""
+Cards: ['Lion', 'Fastest land animal', 'Cheetah', 'Not fastest']
+
+Which cards must you turn over?
+Your answer:","['Lion', 'Fastest land animal', 'Cheetah', 'Not fastest']","Lion, Not fastest","['Lion', 'Not fastest']","['not_P', 'not_Q']",LOGIC_ERROR,76,5,0
+21,T22,0,210042,"If the insect is a Mosquito, then it feeds on Blood.","Rule: ""If the insect is a Mosquito, then it feeds on Blood.""
+Cards: ['Nectar', 'Butterfly', 'Blood', 'Mosquito']
+
+Which cards must you turn over?
+Your answer:","['Nectar', 'Butterfly', 'Blood', 'Mosquito']","Mosquito, Blood","['Mosquito', 'Blood']","['P', 'Q']",MATCHING_BIAS,71,5,0
+21,T22,1,210043,"If the insect is a Mosquito, then it feeds on Blood.","Rule: ""If the insect is a Mosquito, then it feeds on Blood.""
+Cards: ['Nectar', 'Butterfly', 'Mosquito', 'Blood']
+
+Which cards must you turn over?
+Your answer:","['Nectar', 'Butterfly', 'Mosquito', 'Blood']","Mosquito, Blood","['Mosquito', 'Blood']","['P', 'Q']",MATCHING_BIAS,71,5,0
+21,T22,2,210044,"If the insect is a Mosquito, then it feeds on Blood.","Rule: ""If the insect is a Mosquito, then it feeds on Blood.""
+Cards: ['Butterfly', 'Mosquito', 'Nectar', 'Blood']
+
+Which cards must you turn over?
+Your answer:","['Butterfly', 'Mosquito', 'Nectar', 'Blood']","Mosquito, Blood","['Mosquito', 'Blood']","['P', 'Q']",MATCHING_BIAS,71,5,0
+21,T22,3,210045,"If the insect is a Mosquito, then it feeds on Blood.","Rule: ""If the insect is a Mosquito, then it feeds on Blood.""
+Cards: ['Butterfly', 'Mosquito', 'Blood', 'Nectar']
+
+Which cards must you turn over?
+Your answer:","['Butterfly', 'Mosquito', 'Blood', 'Nectar']","Mosquito, Blood","['Mosquito', 'Blood']","['P', 'Q']",MATCHING_BIAS,71,5,0
+21,T22,4,210046,"If the insect is a Mosquito, then it feeds on Blood.","Rule: ""If the insect is a Mosquito, then it feeds on Blood.""
+Cards: ['Nectar', 'Mosquito', 'Blood', 'Butterfly']
+
+Which cards must you turn over?
+Your answer:","['Nectar', 'Mosquito', 'Blood', 'Butterfly']","Mosquito, Blood","['Mosquito', 'Blood']","['P', 'Q']",MATCHING_BIAS,71,5,0
+22,T23,0,220042,"If the direction is North, then the wind is Cold.","Rule: ""If the direction is North, then the wind is Cold.""
+Cards: ['South', 'Cold', 'Warm', 'North']
+
+Which cards must you turn over?
+Your answer:","['South', 'Cold', 'Warm', 'North']","North, Cold","['North', 'Cold']","['P', 'Q']",MATCHING_BIAS,68,4,0
+22,T23,1,220043,"If the direction is North, then the wind is Cold.","Rule: ""If the direction is North, then the wind is Cold.""
+Cards: ['South', 'North', 'Warm', 'Cold']
+
+Which cards must you turn over?
+Your answer:","['South', 'North', 'Warm', 'Cold']","North, Cold","['North', 'Cold']","['P', 'Q']",MATCHING_BIAS,68,4,0
+22,T23,2,220044,"If the direction is North, then the wind is Cold.","Rule: ""If the direction is North, then the wind is Cold.""
+Cards: ['North', 'Warm', 'Cold', 'South']
+
+Which cards must you turn over?
+Your answer:","['North', 'Warm', 'Cold', 'South']","North, Cold","['North', 'Cold']","['P', 'Q']",MATCHING_BIAS,68,4,0
+22,T23,3,220045,"If the direction is North, then the wind is Cold.","Rule: ""If the direction is North, then the wind is Cold.""
+Cards: ['North', 'Warm', 'South', 'Cold']
+
+Which cards must you turn over?
+Your answer:","['North', 'Warm', 'South', 'Cold']","North, Cold","['North', 'Cold']","['P', 'Q']",MATCHING_BIAS,68,4,0
+22,T23,4,220046,"If the direction is North, then the wind is Cold.","Rule: ""If the direction is North, then the wind is Cold.""
+Cards: ['Warm', 'North', 'South', 'Cold']
+
+Which cards must you turn over?
+Your answer:","['Warm', 'North', 'South', 'Cold']","North, Cold","['North', 'Cold']","['P', 'Q']",MATCHING_BIAS,68,4,0
+23,T24,0,230042,"If the food is Tofu, then it is made from Soybeans.","Rule: ""If the food is Tofu, then it is made from Soybeans.""
+Cards: ['Cheese', 'Milk', 'Soybeans', 'Tofu']
+
+Which cards must you turn over?
+Your answer:","['Cheese', 'Milk', 'Soybeans', 'Tofu']","Tofu, Soybeans","['Tofu', 'Soybeans']","['P', 'Q']",MATCHING_BIAS,73,6,0
+23,T24,1,230043,"If the food is Tofu, then it is made from Soybeans.","Rule: ""If the food is Tofu, then it is made from Soybeans.""
+Cards: ['Tofu', 'Milk', 'Cheese', 'Soybeans']
+
+Which cards must you turn over?
+Your answer:","['Tofu', 'Milk', 'Cheese', 'Soybeans']","Tofu, Soybeans","['Tofu', 'Soybeans']","['P', 'Q']",MATCHING_BIAS,73,6,0
+23,T24,2,230044,"If the food is Tofu, then it is made from Soybeans.","Rule: ""If the food is Tofu, then it is made from Soybeans.""
+Cards: ['Milk', 'Soybeans', 'Cheese', 'Tofu']
+
+Which cards must you turn over?
+Your answer:","['Milk', 'Soybeans', 'Cheese', 'Tofu']","Tofu, Soybeans","['Tofu', 'Soybeans']","['P', 'Q']",MATCHING_BIAS,73,6,0
+23,T24,3,230045,"If the food is Tofu, then it is made from Soybeans.","Rule: ""If the food is Tofu, then it is made from Soybeans.""
+Cards: ['Tofu', 'Cheese', 'Soybeans', 'Milk']
+
+Which cards must you turn over?
+Your answer:","['Tofu', 'Cheese', 'Soybeans', 'Milk']","Tofu, Soybeans","['Tofu', 'Soybeans']","['P', 'Q']",MATCHING_BIAS,73,6,0
+23,T24,4,230046,"If the food is Tofu, then it is made from Soybeans.","Rule: ""If the food is Tofu, then it is made from Soybeans.""
+Cards: ['Soybeans', 'Tofu', 'Cheese', 'Milk']
+
+Which cards must you turn over?
+Your answer:","['Soybeans', 'Tofu', 'Cheese', 'Milk']","Tofu, Soybeans","['Tofu', 'Soybeans']","['P', 'Q']",MATCHING_BIAS,73,6,0
+24,T25,0,240042,"If the animal is a Mole, then it lives Underground.","Rule: ""If the animal is a Mole, then it lives Underground.""
+Cards: ['Rabbit', 'Above ground', 'Mole', 'Underground']
+
+Which cards must you turn over?
+Your answer:","['Rabbit', 'Above ground', 'Mole', 'Underground']","Rabbit, Above ground","['Rabbit', 'Above ground']","['not_P', 'not_Q']",LOGIC_ERROR,70,5,0
+24,T25,1,240043,"If the animal is a Mole, then it lives Underground.","Rule: ""If the animal is a Mole, then it lives Underground.""
+Cards: ['Mole', 'Above ground', 'Rabbit', 'Underground']
+
+Which cards must you turn over?
+Your answer:","['Mole', 'Above ground', 'Rabbit', 'Underground']","Mole, Above ground","['Mole', 'Above ground']","['P', 'not_Q']",CORRECT,70,5,0
+24,T25,2,240044,"If the animal is a Mole, then it lives Underground.","Rule: ""If the animal is a Mole, then it lives Underground.""
+Cards: ['Underground', 'Mole', 'Rabbit', 'Above ground']
+
+Which cards must you turn over?
+Your answer:","['Underground', 'Mole', 'Rabbit', 'Above ground']","Mole, Rabbit","['Mole', 'Rabbit']","['P', 'not_P']",LOGIC_ERROR,70,4,0
+24,T25,3,240045,"If the animal is a Mole, then it lives Underground.","Rule: ""If the animal is a Mole, then it lives Underground.""
+Cards: ['Mole', 'Rabbit', 'Underground', 'Above ground']
+
+Which cards must you turn over?
+Your answer:","['Mole', 'Rabbit', 'Underground', 'Above ground']","Mole, Underground","['Mole', 'Underground']","['P', 'Q']",MATCHING_BIAS,70,4,0
+24,T25,4,240046,"If the animal is a Mole, then it lives Underground.","Rule: ""If the animal is a Mole, then it lives Underground.""
+Cards: ['Underground', 'Above ground', 'Mole', 'Rabbit']
+
+Which cards must you turn over?
+Your answer:","['Underground', 'Above ground', 'Mole', 'Rabbit']","Mole, Underground","['Mole', 'Underground']","['P', 'Q']",MATCHING_BIAS,70,4,0
+25,T26,0,250042,"If the liquid is Acid, then the litmus is Red.","Rule: ""If the liquid is Acid, then the litmus is Red.""
+Cards: ['Red', 'Blue', 'Acid', 'Base']
+
+Which cards must you turn over?
+Your answer:","['Red', 'Blue', 'Acid', 'Base']","Acid, Blue, Base","['Acid', 'Blue', 'Base']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,68,6,0
+25,T26,1,250043,"If the liquid is Acid, then the litmus is Red.","Rule: ""If the liquid is Acid, then the litmus is Red.""
+Cards: ['Acid', 'Blue', 'Red', 'Base']
+
+Which cards must you turn over?
+Your answer:","['Acid', 'Blue', 'Red', 'Base']","Acid, Blue, Red, Base","['Acid', 'Blue', 'Red', 'Base']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,68,8,0
+25,T26,2,250044,"If the liquid is Acid, then the litmus is Red.","Rule: ""If the liquid is Acid, then the litmus is Red.""
+Cards: ['Base', 'Red', 'Blue', 'Acid']
+
+Which cards must you turn over?
+Your answer:","['Base', 'Red', 'Blue', 'Acid']","Base, Blue","['Base', 'Blue']","['not_P', 'not_Q']",LOGIC_ERROR,68,4,0
+25,T26,3,250045,"If the liquid is Acid, then the litmus is Red.","Rule: ""If the liquid is Acid, then the litmus is Red.""
+Cards: ['Base', 'Acid', 'Blue', 'Red']
+
+Which cards must you turn over?
+Your answer:","['Base', 'Acid', 'Blue', 'Red']","Acid, Base, Blue, Red","['Acid', 'Base', 'Blue', 'Red']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,68,8,0
+25,T26,4,250046,"If the liquid is Acid, then the litmus is Red.","Rule: ""If the liquid is Acid, then the litmus is Red.""
+Cards: ['Base', 'Acid', 'Red', 'Blue']
+
+Which cards must you turn over?
+Your answer:","['Base', 'Acid', 'Red', 'Blue']","Acid, Base, Red, Blue","['Acid', 'Base', 'Red', 'Blue']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,68,8,0
+26,T27,0,260042,"If the food is Chili pepper, then it tastes Spicy.","Rule: ""If the food is Chili pepper, then it tastes Spicy.""
+Cards: ['Mild', 'Bell pepper', 'Chili pepper', 'Spicy']
+
+Which cards must you turn over?
+Your answer:","['Mild', 'Bell pepper', 'Chili pepper', 'Spicy']","Bell pepper, Chili pepper, Spicy","['Bell pepper', 'Chili pepper', 'Spicy']","['P', 'Q', 'not_P']",LOGIC_ERROR,72,8,0
+26,T27,1,260043,"If the food is Chili pepper, then it tastes Spicy.","Rule: ""If the food is Chili pepper, then it tastes Spicy.""
+Cards: ['Chili pepper', 'Bell pepper', 'Mild', 'Spicy']
+
+Which cards must you turn over?
+Your answer:","['Chili pepper', 'Bell pepper', 'Mild', 'Spicy']","Chili pepper, Bell pepper, Mild, Spicy","['Chili pepper', 'Bell pepper', 'Mild', 'Spicy']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,72,11,0
+26,T27,2,260044,"If the food is Chili pepper, then it tastes Spicy.","Rule: ""If the food is Chili pepper, then it tastes Spicy.""
+Cards: ['Spicy', 'Chili pepper', 'Bell pepper', 'Mild']
+
+Which cards must you turn over?
+Your answer:","['Spicy', 'Chili pepper', 'Bell pepper', 'Mild']","Chili pepper, Spicy, Bell pepper, Mild","['Chili pepper', 'Spicy', 'Bell pepper', 'Mild']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,72,11,0
+26,T27,3,260045,"If the food is Chili pepper, then it tastes Spicy.","Rule: ""If the food is Chili pepper, then it tastes Spicy.""
+Cards: ['Bell pepper', 'Chili pepper', 'Spicy', 'Mild']
+
+Which cards must you turn over?
+Your answer:","['Bell pepper', 'Chili pepper', 'Spicy', 'Mild']","Bell pepper, Chili pepper, Spicy, Mild","['Bell pepper', 'Chili pepper', 'Spicy', 'Mild']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,72,10,0
+26,T27,4,260046,"If the food is Chili pepper, then it tastes Spicy.","Rule: ""If the food is Chili pepper, then it tastes Spicy.""
+Cards: ['Chili pepper', 'Bell pepper', 'Spicy', 'Mild']
+
+Which cards must you turn over?
+Your answer:","['Chili pepper', 'Bell pepper', 'Spicy', 'Mild']","Chili pepper, Bell pepper, Spicy, Mild","['Chili pepper', 'Bell pepper', 'Spicy', 'Mild']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,72,11,0
+27,T28,0,270042,"If the planet is Earth, then the moon is One.","Rule: ""If the planet is Earth, then the moon is One.""
+Cards: ['Earth', 'Two', 'Mars', 'One']
+
+Which cards must you turn over?
+Your answer:","['Earth', 'Two', 'Mars', 'One']","Earth, One","['Earth', 'One']","['P', 'Q']",MATCHING_BIAS,68,4,0
+27,T28,1,270043,"If the planet is Earth, then the moon is One.","Rule: ""If the planet is Earth, then the moon is One.""
+Cards: ['Two', 'Earth', 'One', 'Mars']
+
+Which cards must you turn over?
+Your answer:","['Two', 'Earth', 'One', 'Mars']","Earth, One","['Earth', 'One']","['P', 'Q']",MATCHING_BIAS,68,4,0
+27,T28,2,270044,"If the planet is Earth, then the moon is One.","Rule: ""If the planet is Earth, then the moon is One.""
+Cards: ['One', 'Mars', 'Two', 'Earth']
+
+Which cards must you turn over?
+Your answer:","['One', 'Mars', 'Two', 'Earth']","Earth, One","['Earth', 'One']","['P', 'Q']",MATCHING_BIAS,68,4,0
+27,T28,3,270045,"If the planet is Earth, then the moon is One.","Rule: ""If the planet is Earth, then the moon is One.""
+Cards: ['Earth', 'Mars', 'One', 'Two']
+
+Which cards must you turn over?
+Your answer:","['Earth', 'Mars', 'One', 'Two']","Earth, One","['Earth', 'One']","['P', 'Q']",MATCHING_BIAS,68,4,0
+27,T28,4,270046,"If the planet is Earth, then the moon is One.","Rule: ""If the planet is Earth, then the moon is One.""
+Cards: ['One', 'Earth', 'Mars', 'Two']
+
+Which cards must you turn over?
+Your answer:","['One', 'Earth', 'Mars', 'Two']","Earth, One","['Earth', 'One']","['P', 'Q']",MATCHING_BIAS,68,4,0
+28,T29,0,280042,"If the animal is a Seahorse, then the Male carries the Young.","Rule: ""If the animal is a Seahorse, then the Male carries the Young.""
+Cards: ['Shark', 'Male carries young', 'Seahorse', 'Female carries young']
+
+Which cards must you turn over?
+Your answer:","['Shark', 'Male carries young', 'Seahorse', 'Female carries young']","Male carries young, Female carries young","['Male carries young', 'Female carries young']","['Q', 'not_Q']",NOISE,76,8,0
+28,T29,1,280043,"If the animal is a Seahorse, then the Male carries the Young.","Rule: ""If the animal is a Seahorse, then the Male carries the Young.""
+Cards: ['Shark', 'Seahorse', 'Female carries young', 'Male carries young']
+
+Which cards must you turn over?
+Your answer:","['Shark', 'Seahorse', 'Female carries young', 'Male carries young']","Shark, Female carries young","['Shark', 'Female carries young']","['not_P', 'not_Q']",LOGIC_ERROR,76,6,0
+28,T29,2,280044,"If the animal is a Seahorse, then the Male carries the Young.","Rule: ""If the animal is a Seahorse, then the Male carries the Young.""
+Cards: ['Seahorse', 'Shark', 'Male carries young', 'Female carries young']
+
+Which cards must you turn over?
+Your answer:","['Seahorse', 'Shark', 'Male carries young', 'Female carries young']","Seahorse, Shark, Female carries young","['Seahorse', 'Shark', 'Female carries young']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,76,9,0
+28,T29,3,280045,"If the animal is a Seahorse, then the Male carries the Young.","Rule: ""If the animal is a Seahorse, then the Male carries the Young.""
+Cards: ['Male carries young', 'Female carries young', 'Seahorse', 'Shark']
+
+Which cards must you turn over?
+Your answer:","['Male carries young', 'Female carries young', 'Seahorse', 'Shark']","Male carries young, Female carries young, Shark","['Male carries young', 'Female carries young', 'Shark']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,76,10,0
+28,T29,4,280046,"If the animal is a Seahorse, then the Male carries the Young.","Rule: ""If the animal is a Seahorse, then the Male carries the Young.""
+Cards: ['Male carries young', 'Seahorse', 'Female carries young', 'Shark']
+
+Which cards must you turn over?
+Your answer:","['Male carries young', 'Seahorse', 'Female carries young', 'Shark']","Male carries young, Female carries young, Shark","['Male carries young', 'Female carries young', 'Shark']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,76,10,0
+29,T30,0,290042,"If the battery is AA, then the volts are 1.5.","Rule: ""If the battery is AA, then the volts are 1.5.""
+Cards: ['9', 'AA', '9V', '1.5']
+
+Which cards must you turn over?
+Your answer:","['9', 'AA', '9V', '1.5']","9, 9V, 1.5","['9', '9V', '1.5']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,74,11,0
+29,T30,1,290043,"If the battery is AA, then the volts are 1.5.","Rule: ""If the battery is AA, then the volts are 1.5.""
+Cards: ['9V', '9', '1.5', 'AA']
+
+Which cards must you turn over?
+Your answer:","['9V', '9', '1.5', 'AA']","9V, 9, AA","['9V', '9', 'AA']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,74,8,0
+29,T30,2,290044,"If the battery is AA, then the volts are 1.5.","Rule: ""If the battery is AA, then the volts are 1.5.""
+Cards: ['9V', 'AA', '9', '1.5']
+
+Which cards must you turn over?
+Your answer:","['9V', 'AA', '9', '1.5']","9V, 9","['9V', '9']","['not_P', 'not_Q']",LOGIC_ERROR,74,6,0
+29,T30,3,290045,"If the battery is AA, then the volts are 1.5.","Rule: ""If the battery is AA, then the volts are 1.5.""
+Cards: ['1.5', '9V', '9', 'AA']
+
+Which cards must you turn over?
+Your answer:","['1.5', '9V', '9', 'AA']","AA, 9V, 9","['AA', '9V', '9']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,74,9,0
+29,T30,4,290046,"If the battery is AA, then the volts are 1.5.","Rule: ""If the battery is AA, then the volts are 1.5.""
+Cards: ['AA', '9V', '9', '1.5']
+
+Which cards must you turn over?
+Your answer:","['AA', '9V', '9', '1.5']","AA, 9V, 9","['AA', '9V', '9']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,74,9,0
+30,T31,0,300042,"If the animal is a Parrot, then it can Mimic speech.","Rule: ""If the animal is a Parrot, then it can Mimic speech.""
+Cards: ['Mimics speech', 'Parrot', 'Cannot mimic', 'Crow']
+
+Which cards must you turn over?
+Your answer:","['Mimics speech', 'Parrot', 'Cannot mimic', 'Crow']","Mimics speech, Cannot mimic","['Mimics speech', 'Cannot mimic']","['Q', 'not_Q']",NOISE,74,7,0
+30,T31,1,300043,"If the animal is a Parrot, then it can Mimic speech.","Rule: ""If the animal is a Parrot, then it can Mimic speech.""
+Cards: ['Parrot', 'Crow', 'Cannot mimic', 'Mimics speech']
+
+Which cards must you turn over?
+Your answer:","['Parrot', 'Crow', 'Cannot mimic', 'Mimics speech']","Parrot, Crow, Cannot mimic","['Parrot', 'Crow', 'Cannot mimic']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,74,8,0
+30,T31,2,300044,"If the animal is a Parrot, then it can Mimic speech.","Rule: ""If the animal is a Parrot, then it can Mimic speech.""
+Cards: ['Mimics speech', 'Cannot mimic', 'Parrot', 'Crow']
+
+Which cards must you turn over?
+Your answer:","['Mimics speech', 'Cannot mimic', 'Parrot', 'Crow']","Parrot, Crow","['Parrot', 'Crow']","['P', 'not_P']",LOGIC_ERROR,74,5,0
+30,T31,3,300045,"If the animal is a Parrot, then it can Mimic speech.","Rule: ""If the animal is a Parrot, then it can Mimic speech.""
+Cards: ['Cannot mimic', 'Crow', 'Mimics speech', 'Parrot']
+
+Which cards must you turn over?
+Your answer:","['Cannot mimic', 'Crow', 'Mimics speech', 'Parrot']","Cannot mimic, Crow","['Cannot mimic', 'Crow']","['not_P', 'not_Q']",LOGIC_ERROR,74,5,0
+30,T31,4,300046,"If the animal is a Parrot, then it can Mimic speech.","Rule: ""If the animal is a Parrot, then it can Mimic speech.""
+Cards: ['Mimics speech', 'Parrot', 'Crow', 'Cannot mimic']
+
+Which cards must you turn over?
+Your answer:","['Mimics speech', 'Parrot', 'Crow', 'Cannot mimic']","Parrot, Crow, Cannot mimic","['Parrot', 'Crow', 'Cannot mimic']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,74,8,0
+31,T32,0,310042,"If the animal is a Shark, then it lives in Water.","Rule: ""If the animal is a Shark, then it lives in Water.""
+Cards: ['Shark', 'Land', 'Eagle', 'Water']
+
+Which cards must you turn over?
+Your answer:","['Shark', 'Land', 'Eagle', 'Water']","Shark, Land","['Shark', 'Land']","['P', 'not_Q']",CORRECT,69,4,0
+31,T32,1,310043,"If the animal is a Shark, then it lives in Water.","Rule: ""If the animal is a Shark, then it lives in Water.""
+Cards: ['Water', 'Shark', 'Land', 'Eagle']
+
+Which cards must you turn over?
+Your answer:","['Water', 'Shark', 'Land', 'Eagle']","Land, Eagle","['Land', 'Eagle']","['not_P', 'not_Q']",LOGIC_ERROR,69,4,0
+31,T32,2,310044,"If the animal is a Shark, then it lives in Water.","Rule: ""If the animal is a Shark, then it lives in Water.""
+Cards: ['Eagle', 'Land', 'Water', 'Shark']
+
+Which cards must you turn over?
+Your answer:","['Eagle', 'Land', 'Water', 'Shark']","Eagle, Land, Shark","['Eagle', 'Land', 'Shark']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,69,6,0
+31,T32,3,310045,"If the animal is a Shark, then it lives in Water.","Rule: ""If the animal is a Shark, then it lives in Water.""
+Cards: ['Land', 'Shark', 'Water', 'Eagle']
+
+Which cards must you turn over?
+Your answer:","['Land', 'Shark', 'Water', 'Eagle']","Land, Eagle","['Land', 'Eagle']","['not_P', 'not_Q']",LOGIC_ERROR,69,4,0
+31,T32,4,310046,"If the animal is a Shark, then it lives in Water.","Rule: ""If the animal is a Shark, then it lives in Water.""
+Cards: ['Land', 'Eagle', 'Water', 'Shark']
+
+Which cards must you turn over?
+Your answer:","['Land', 'Eagle', 'Water', 'Shark']","Eagle, Land","['Eagle', 'Land']","['not_P', 'not_Q']",LOGIC_ERROR,69,4,0
+32,T33,0,320042,"If the metal is Iron, then it is magnetic.","Rule: ""If the metal is Iron, then it is magnetic.""
+Cards: ['Magnetic', 'Copper', 'Iron', 'Non-magnetic']
+
+Which cards must you turn over?
+Your answer:","['Magnetic', 'Copper', 'Iron', 'Non-magnetic']","Copper, Non-magnetic","['Copper', 'Non-magnetic']","['not_P', 'not_Q']",LOGIC_ERROR,69,6,0
+32,T33,1,320043,"If the metal is Iron, then it is magnetic.","Rule: ""If the metal is Iron, then it is magnetic.""
+Cards: ['Non-magnetic', 'Magnetic', 'Copper', 'Iron']
+
+Which cards must you turn over?
+Your answer:","['Non-magnetic', 'Magnetic', 'Copper', 'Iron']","Copper, Non-magnetic","['Copper', 'Non-magnetic']","['not_P', 'not_Q']",LOGIC_ERROR,69,6,0
+32,T33,2,320044,"If the metal is Iron, then it is magnetic.","Rule: ""If the metal is Iron, then it is magnetic.""
+Cards: ['Magnetic', 'Non-magnetic', 'Copper', 'Iron']
+
+Which cards must you turn over?
+Your answer:","['Magnetic', 'Non-magnetic', 'Copper', 'Iron']","Copper, Non-magnetic","['Copper', 'Non-magnetic']","['not_P', 'not_Q']",LOGIC_ERROR,69,6,0
+32,T33,3,320045,"If the metal is Iron, then it is magnetic.","Rule: ""If the metal is Iron, then it is magnetic.""
+Cards: ['Iron', 'Copper', 'Magnetic', 'Non-magnetic']
+
+Which cards must you turn over?
+Your answer:","['Iron', 'Copper', 'Magnetic', 'Non-magnetic']","Iron, Copper, Non-magnetic","['Iron', 'Copper', 'Non-magnetic']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,69,8,0
+32,T33,4,320046,"If the metal is Iron, then it is magnetic.","Rule: ""If the metal is Iron, then it is magnetic.""
+Cards: ['Non-magnetic', 'Iron', 'Copper', 'Magnetic']
+
+Which cards must you turn over?
+Your answer:","['Non-magnetic', 'Iron', 'Copper', 'Magnetic']","Non-magnetic, Copper","['Non-magnetic', 'Copper']","['not_P', 'not_Q']",LOGIC_ERROR,69,6,0
+33,T34,0,330042,"If the fruit is a Lemon, then the taste is Sour.","Rule: ""If the fruit is a Lemon, then the taste is Sour.""
+Cards: ['Mango', 'Lemon', 'Sour', 'Sweet']
+
+Which cards must you turn over?
+Your answer:","['Mango', 'Lemon', 'Sour', 'Sweet']","Lemon, Sour","['Lemon', 'Sour']","['P', 'Q']",MATCHING_BIAS,69,4,0
+33,T34,1,330043,"If the fruit is a Lemon, then the taste is Sour.","Rule: ""If the fruit is a Lemon, then the taste is Sour.""
+Cards: ['Lemon', 'Mango', 'Sour', 'Sweet']
+
+Which cards must you turn over?
+Your answer:","['Lemon', 'Mango', 'Sour', 'Sweet']","Lemon, Sour","['Lemon', 'Sour']","['P', 'Q']",MATCHING_BIAS,69,4,0
+33,T34,2,330044,"If the fruit is a Lemon, then the taste is Sour.","Rule: ""If the fruit is a Lemon, then the taste is Sour.""
+Cards: ['Sweet', 'Mango', 'Sour', 'Lemon']
+
+Which cards must you turn over?
+Your answer:","['Sweet', 'Mango', 'Sour', 'Lemon']","Lemon, Sour","['Lemon', 'Sour']","['P', 'Q']",MATCHING_BIAS,69,4,0
+33,T34,3,330045,"If the fruit is a Lemon, then the taste is Sour.","Rule: ""If the fruit is a Lemon, then the taste is Sour.""
+Cards: ['Lemon', 'Sour', 'Mango', 'Sweet']
+
+Which cards must you turn over?
+Your answer:","['Lemon', 'Sour', 'Mango', 'Sweet']","Lemon, Sour","['Lemon', 'Sour']","['P', 'Q']",MATCHING_BIAS,69,4,0
+33,T34,4,330046,"If the fruit is a Lemon, then the taste is Sour.","Rule: ""If the fruit is a Lemon, then the taste is Sour.""
+Cards: ['Sour', 'Sweet', 'Mango', 'Lemon']
+
+Which cards must you turn over?
+Your answer:","['Sour', 'Sweet', 'Mango', 'Lemon']","Lemon, Sour","['Lemon', 'Sour']","['P', 'Q']",MATCHING_BIAS,69,4,0
+34,T35,0,340042,"If the planet is Saturn, then it has Rings.","Rule: ""If the planet is Saturn, then it has Rings.""
+Cards: ['Mars', 'Rings', 'Saturn', 'No rings']
+
+Which cards must you turn over?
+Your answer:","['Mars', 'Rings', 'Saturn', 'No rings']","Saturn, Rings, Mars, No rings","['Saturn', 'Rings', 'Mars', 'No rings']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,70,10,0
+34,T35,1,340043,"If the planet is Saturn, then it has Rings.","Rule: ""If the planet is Saturn, then it has Rings.""
+Cards: ['No rings', 'Mars', 'Saturn', 'Rings']
+
+Which cards must you turn over?
+Your answer:","['No rings', 'Mars', 'Saturn', 'Rings']","No rings, Mars, Saturn, Rings","['No rings', 'Mars', 'Saturn', 'Rings']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,70,9,0
+34,T35,2,340044,"If the planet is Saturn, then it has Rings.","Rule: ""If the planet is Saturn, then it has Rings.""
+Cards: ['Mars', 'No rings', 'Saturn', 'Rings']
+
+Which cards must you turn over?
+Your answer:","['Mars', 'No rings', 'Saturn', 'Rings']","Mars, No rings, Rings","['Mars', 'No rings', 'Rings']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,70,7,0
+34,T35,3,340045,"If the planet is Saturn, then it has Rings.","Rule: ""If the planet is Saturn, then it has Rings.""
+Cards: ['Saturn', 'Mars', 'Rings', 'No rings']
+
+Which cards must you turn over?
+Your answer:","['Saturn', 'Mars', 'Rings', 'No rings']","Saturn, Rings, Mars, No rings","['Saturn', 'Rings', 'Mars', 'No rings']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,70,10,0
+34,T35,4,340046,"If the planet is Saturn, then it has Rings.","Rule: ""If the planet is Saturn, then it has Rings.""
+Cards: ['No rings', 'Rings', 'Mars', 'Saturn']
+
+Which cards must you turn over?
+Your answer:","['No rings', 'Rings', 'Mars', 'Saturn']","Saturn, Rings","['Saturn', 'Rings']","['P', 'Q']",MATCHING_BIAS,70,5,0
+35,T36,0,350042,"If the insect is a Firefly, then it Glows.","Rule: ""If the insect is a Firefly, then it Glows.""
+Cards: ['Glows', 'Does not glow', 'Firefly', 'Beetle']
+
+Which cards must you turn over?
+Your answer:","['Glows', 'Does not glow', 'Firefly', 'Beetle']","Firefly, Beetle","['Firefly', 'Beetle']","['P', 'not_P']",LOGIC_ERROR,76,5,0
+35,T36,1,350043,"If the insect is a Firefly, then it Glows.","Rule: ""If the insect is a Firefly, then it Glows.""
+Cards: ['Firefly', 'Does not glow', 'Glows', 'Beetle']
+
+Which cards must you turn over?
+Your answer:","['Firefly', 'Does not glow', 'Glows', 'Beetle']","Firefly, Does not glow","['Firefly', 'Does not glow']","['P', 'not_Q']",CORRECT,76,7,0
+35,T36,2,350044,"If the insect is a Firefly, then it Glows.","Rule: ""If the insect is a Firefly, then it Glows.""
+Cards: ['Glows', 'Beetle', 'Firefly', 'Does not glow']
+
+Which cards must you turn over?
+Your answer:","['Glows', 'Beetle', 'Firefly', 'Does not glow']","Beetle, Does not glow","['Beetle', 'Does not glow']","['not_P', 'not_Q']",LOGIC_ERROR,76,8,0
+35,T36,3,350045,"If the insect is a Firefly, then it Glows.","Rule: ""If the insect is a Firefly, then it Glows.""
+Cards: ['Beetle', 'Does not glow', 'Glows', 'Firefly']
+
+Which cards must you turn over?
+Your answer:","['Beetle', 'Does not glow', 'Glows', 'Firefly']","Beetle, Does not glow","['Beetle', 'Does not glow']","['not_P', 'not_Q']",LOGIC_ERROR,76,8,0
+35,T36,4,350046,"If the insect is a Firefly, then it Glows.","Rule: ""If the insect is a Firefly, then it Glows.""
+Cards: ['Firefly', 'Beetle', 'Does not glow', 'Glows']
+
+Which cards must you turn over?
+Your answer:","['Firefly', 'Beetle', 'Does not glow', 'Glows']","Beetle, Does not glow","['Beetle', 'Does not glow']","['not_P', 'not_Q']",LOGIC_ERROR,76,8,0
+36,T37,0,360042,"If the bird is a Penguin, then it cannot Fly.","Rule: ""If the bird is a Penguin, then it cannot Fly.""
+Cards: ['Can fly', 'Penguin', 'Eagle', 'Cannot fly']
+
+Which cards must you turn over?
+Your answer:","['Can fly', 'Penguin', 'Eagle', 'Cannot fly']","Penguin, Eagle","['Penguin', 'Eagle']","['P', 'not_P']",LOGIC_ERROR,71,5,0
+36,T37,1,360043,"If the bird is a Penguin, then it cannot Fly.","Rule: ""If the bird is a Penguin, then it cannot Fly.""
+Cards: ['Can fly', 'Eagle', 'Cannot fly', 'Penguin']
+
+Which cards must you turn over?
+Your answer:","['Can fly', 'Eagle', 'Cannot fly', 'Penguin']","Cannot fly, Penguin","['Cannot fly', 'Penguin']","['P', 'Q']",MATCHING_BIAS,71,5,0
+36,T37,2,360044,"If the bird is a Penguin, then it cannot Fly.","Rule: ""If the bird is a Penguin, then it cannot Fly.""
+Cards: ['Cannot fly', 'Can fly', 'Eagle', 'Penguin']
+
+Which cards must you turn over?
+Your answer:","['Cannot fly', 'Can fly', 'Eagle', 'Penguin']","Eagle, Cannot fly","['Eagle', 'Cannot fly']","['Q', 'not_P']",LOGIC_ERROR,71,5,0
+36,T37,3,360045,"If the bird is a Penguin, then it cannot Fly.","Rule: ""If the bird is a Penguin, then it cannot Fly.""
+Cards: ['Penguin', 'Can fly', 'Cannot fly', 'Eagle']
+
+Which cards must you turn over?
+Your answer:","['Penguin', 'Can fly', 'Cannot fly', 'Eagle']","Penguin, Can fly","['Penguin', 'Can fly']","['P', 'not_Q']",CORRECT,71,6,0
+36,T37,4,360046,"If the bird is a Penguin, then it cannot Fly.","Rule: ""If the bird is a Penguin, then it cannot Fly.""
+Cards: ['Can fly', 'Penguin', 'Cannot fly', 'Eagle']
+
+Which cards must you turn over?
+Your answer:","['Can fly', 'Penguin', 'Cannot fly', 'Eagle']","Penguin, Eagle","['Penguin', 'Eagle']","['P', 'not_P']",LOGIC_ERROR,71,5,0
+37,T38,0,370042,"If the gas is Oxygen, then it supports Combustion.","Rule: ""If the gas is Oxygen, then it supports Combustion.""
+Cards: ['Nitrogen', 'Supports combustion', 'Oxygen', 'Does not support combustion']
+
+Which cards must you turn over?
+Your answer:","['Nitrogen', 'Supports combustion', 'Oxygen', 'Does not support combustion']","Nitrogen, Does not support combustion","['Nitrogen', 'Does not support combustion']","['not_P', 'not_Q']",LOGIC_ERROR,72,8,0
+37,T38,1,370043,"If the gas is Oxygen, then it supports Combustion.","Rule: ""If the gas is Oxygen, then it supports Combustion.""
+Cards: ['Supports combustion', 'Oxygen', 'Does not support combustion', 'Nitrogen']
+
+Which cards must you turn over?
+Your answer:","['Supports combustion', 'Oxygen', 'Does not support combustion', 'Nitrogen']","Oxygen, Nitrogen","['Oxygen', 'Nitrogen']","['P', 'not_P']",LOGIC_ERROR,72,4,0
+37,T38,2,370044,"If the gas is Oxygen, then it supports Combustion.","Rule: ""If the gas is Oxygen, then it supports Combustion.""
+Cards: ['Nitrogen', 'Does not support combustion', 'Oxygen', 'Supports combustion']
+
+Which cards must you turn over?
+Your answer:","['Nitrogen', 'Does not support combustion', 'Oxygen', 'Supports combustion']","Nitrogen, Does not support combustion","['Nitrogen', 'Does not support combustion']","['not_P', 'not_Q']",LOGIC_ERROR,72,8,0
+37,T38,3,370045,"If the gas is Oxygen, then it supports Combustion.","Rule: ""If the gas is Oxygen, then it supports Combustion.""
+Cards: ['Supports combustion', 'Oxygen', 'Nitrogen', 'Does not support combustion']
+
+Which cards must you turn over?
+Your answer:","['Supports combustion', 'Oxygen', 'Nitrogen', 'Does not support combustion']","Oxygen, Nitrogen, Does not support combustion","['Oxygen', 'Nitrogen', 'Does not support combustion']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,72,9,0
+37,T38,4,370046,"If the gas is Oxygen, then it supports Combustion.","Rule: ""If the gas is Oxygen, then it supports Combustion.""
+Cards: ['Nitrogen', 'Supports combustion', 'Does not support combustion', 'Oxygen']
+
+Which cards must you turn over?
+Your answer:","['Nitrogen', 'Supports combustion', 'Does not support combustion', 'Oxygen']","Nitrogen, Does not support combustion","['Nitrogen', 'Does not support combustion']","['not_P', 'not_Q']",LOGIC_ERROR,72,8,0
+38,T39,0,380042,"If the material is Wood, then it Floats on water.","Rule: ""If the material is Wood, then it Floats on water.""
+Cards: ['Wood', 'Floats', 'Steel', 'Sinks']
+
+Which cards must you turn over?
+Your answer:","['Wood', 'Floats', 'Steel', 'Sinks']","Steel, Sinks","['Steel', 'Sinks']","['not_P', 'not_Q']",LOGIC_ERROR,71,5,0
+38,T39,1,380043,"If the material is Wood, then it Floats on water.","Rule: ""If the material is Wood, then it Floats on water.""
+Cards: ['Wood', 'Sinks', 'Floats', 'Steel']
+
+Which cards must you turn over?
+Your answer:","['Wood', 'Sinks', 'Floats', 'Steel']","Steel, Sinks","['Steel', 'Sinks']","['not_P', 'not_Q']",LOGIC_ERROR,71,5,0
+38,T39,2,380044,"If the material is Wood, then it Floats on water.","Rule: ""If the material is Wood, then it Floats on water.""
+Cards: ['Steel', 'Sinks', 'Wood', 'Floats']
+
+Which cards must you turn over?
+Your answer:","['Steel', 'Sinks', 'Wood', 'Floats']","Steel, Sinks, Wood, Floats","['Steel', 'Sinks', 'Wood', 'Floats']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,71,10,0
+38,T39,3,380045,"If the material is Wood, then it Floats on water.","Rule: ""If the material is Wood, then it Floats on water.""
+Cards: ['Sinks', 'Steel', 'Wood', 'Floats']
+
+Which cards must you turn over?
+Your answer:","['Sinks', 'Steel', 'Wood', 'Floats']","Steel, Sinks","['Steel', 'Sinks']","['not_P', 'not_Q']",LOGIC_ERROR,71,5,0
+38,T39,4,380046,"If the material is Wood, then it Floats on water.","Rule: ""If the material is Wood, then it Floats on water.""
+Cards: ['Wood', 'Sinks', 'Steel', 'Floats']
+
+Which cards must you turn over?
+Your answer:","['Wood', 'Sinks', 'Steel', 'Floats']","Sinks, Steel","['Sinks', 'Steel']","['not_P', 'not_Q']",LOGIC_ERROR,71,5,0
+39,T40,0,390042,"If the reptile is a Chameleon, then it Changes color.","Rule: ""If the reptile is a Chameleon, then it Changes color.""
+Cards: ['Changes color', 'Chameleon', 'Stays same color', 'Lizard']
+
+Which cards must you turn over?
+Your answer:","['Changes color', 'Chameleon', 'Stays same color', 'Lizard']","Chameleon, Stays same color","['Chameleon', 'Stays same color']","['P', 'not_Q']",CORRECT,74,8,0
+39,T40,1,390043,"If the reptile is a Chameleon, then it Changes color.","Rule: ""If the reptile is a Chameleon, then it Changes color.""
+Cards: ['Lizard', 'Changes color', 'Chameleon', 'Stays same color']
+
+Which cards must you turn over?
+Your answer:","['Lizard', 'Changes color', 'Chameleon', 'Stays same color']","Lizard, Changes color, Chameleon, Stays same color","['Lizard', 'Changes color', 'Chameleon', 'Stays same color']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,74,13,0
+39,T40,2,390044,"If the reptile is a Chameleon, then it Changes color.","Rule: ""If the reptile is a Chameleon, then it Changes color.""
+Cards: ['Chameleon', 'Changes color', 'Stays same color', 'Lizard']
+
+Which cards must you turn over?
+Your answer:","['Chameleon', 'Changes color', 'Stays same color', 'Lizard']","Chameleon, Changes color","['Chameleon', 'Changes color']","['P', 'Q']",MATCHING_BIAS,74,6,0
+39,T40,3,390045,"If the reptile is a Chameleon, then it Changes color.","Rule: ""If the reptile is a Chameleon, then it Changes color.""
+Cards: ['Stays same color', 'Chameleon', 'Lizard', 'Changes color']
+
+Which cards must you turn over?
+Your answer:","['Stays same color', 'Chameleon', 'Lizard', 'Changes color']","Chameleon, Changes color","['Chameleon', 'Changes color']","['P', 'Q']",MATCHING_BIAS,74,6,0
+39,T40,4,390046,"If the reptile is a Chameleon, then it Changes color.","Rule: ""If the reptile is a Chameleon, then it Changes color.""
+Cards: ['Lizard', 'Chameleon', 'Changes color', 'Stays same color']
+
+Which cards must you turn over?
+Your answer:","['Lizard', 'Chameleon', 'Changes color', 'Stays same color']","Lizard, Chameleon, Changes color, Stays same color","['Lizard', 'Chameleon', 'Changes color', 'Stays same color']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,74,13,0
+40,T41,0,400042,"If the star is the Sun, then it is at the center of our Solar system.","Rule: ""If the star is the Sun, then it is at the center of our Solar system.""
+Cards: ['Center of solar system', 'Sun', 'Moon', 'Not center']
+
+Which cards must you turn over?
+Your answer:","['Center of solar system', 'Sun', 'Moon', 'Not center']","Sun, Moon, Not center","['Sun', 'Moon', 'Not center']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,78,7,0
+40,T41,1,400043,"If the star is the Sun, then it is at the center of our Solar system.","Rule: ""If the star is the Sun, then it is at the center of our Solar system.""
+Cards: ['Not center', 'Moon', 'Center of solar system', 'Sun']
+
+Which cards must you turn over?
+Your answer:","['Not center', 'Moon', 'Center of solar system', 'Sun']","Moon, Not center","['Moon', 'Not center']","['not_P', 'not_Q']",LOGIC_ERROR,78,5,0
+40,T41,2,400044,"If the star is the Sun, then it is at the center of our Solar system.","Rule: ""If the star is the Sun, then it is at the center of our Solar system.""
+Cards: ['Moon', 'Not center', 'Center of solar system', 'Sun']
+
+Which cards must you turn over?
+Your answer:","['Moon', 'Not center', 'Center of solar system', 'Sun']","Moon, Not center, Center of solar system","['Moon', 'Not center', 'Center of solar system']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,78,10,0
+40,T41,3,400045,"If the star is the Sun, then it is at the center of our Solar system.","Rule: ""If the star is the Sun, then it is at the center of our Solar system.""
+Cards: ['Center of solar system', 'Sun', 'Not center', 'Moon']
+
+Which cards must you turn over?
+Your answer:","['Center of solar system', 'Sun', 'Not center', 'Moon']","Sun, Moon","['Sun', 'Moon']","['P', 'not_P']",LOGIC_ERROR,78,4,0
+40,T41,4,400046,"If the star is the Sun, then it is at the center of our Solar system.","Rule: ""If the star is the Sun, then it is at the center of our Solar system.""
+Cards: ['Center of solar system', 'Moon', 'Sun', 'Not center']
+
+Which cards must you turn over?
+Your answer:","['Center of solar system', 'Moon', 'Sun', 'Not center']","Sun, Moon, Not center","['Sun', 'Moon', 'Not center']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,78,7,0
+41,T42,0,410042,"If the liquid is Mercury, then it is a Metal.","Rule: ""If the liquid is Mercury, then it is a Metal.""
+Cards: ['Water', 'Metal', 'Non-metal', 'Mercury']
+
+Which cards must you turn over?
+Your answer:","['Water', 'Metal', 'Non-metal', 'Mercury']","Mercury, Metal, Water, Non-metal","['Mercury', 'Metal', 'Water', 'Non-metal']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,70,10,0
+41,T42,1,410043,"If the liquid is Mercury, then it is a Metal.","Rule: ""If the liquid is Mercury, then it is a Metal.""
+Cards: ['Water', 'Non-metal', 'Metal', 'Mercury']
+
+Which cards must you turn over?
+Your answer:","['Water', 'Non-metal', 'Metal', 'Mercury']","Mercury, Non-metal","['Mercury', 'Non-metal']","['P', 'not_Q']",CORRECT,70,6,0
+41,T42,2,410044,"If the liquid is Mercury, then it is a Metal.","Rule: ""If the liquid is Mercury, then it is a Metal.""
+Cards: ['Water', 'Non-metal', 'Mercury', 'Metal']
+
+Which cards must you turn over?
+Your answer:","['Water', 'Non-metal', 'Mercury', 'Metal']","Mercury, Metal, Water, Non-metal","['Mercury', 'Metal', 'Water', 'Non-metal']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,70,10,0
+41,T42,3,410045,"If the liquid is Mercury, then it is a Metal.","Rule: ""If the liquid is Mercury, then it is a Metal.""
+Cards: ['Water', 'Metal', 'Mercury', 'Non-metal']
+
+Which cards must you turn over?
+Your answer:","['Water', 'Metal', 'Mercury', 'Non-metal']","Mercury, Metal","['Mercury', 'Metal']","['P', 'Q']",MATCHING_BIAS,70,4,0
+41,T42,4,410046,"If the liquid is Mercury, then it is a Metal.","Rule: ""If the liquid is Mercury, then it is a Metal.""
+Cards: ['Mercury', 'Metal', 'Non-metal', 'Water']
+
+Which cards must you turn over?
+Your answer:","['Mercury', 'Metal', 'Non-metal', 'Water']","Mercury, Metal","['Mercury', 'Metal']","['P', 'Q']",MATCHING_BIAS,70,4,0
+42,T43,0,420042,"If the mammal is a Bat, then it uses Echolocation.","Rule: ""If the mammal is a Bat, then it uses Echolocation.""
+Cards: ['No echolocation', 'Cat', 'Echolocation', 'Bat']
+
+Which cards must you turn over?
+Your answer:","['No echolocation', 'Cat', 'Echolocation', 'Bat']","Cat, No echolocation","['Cat', 'No echolocation']","['not_P', 'not_Q']",LOGIC_ERROR,74,6,0
+42,T43,1,420043,"If the mammal is a Bat, then it uses Echolocation.","Rule: ""If the mammal is a Bat, then it uses Echolocation.""
+Cards: ['No echolocation', 'Bat', 'Echolocation', 'Cat']
+
+Which cards must you turn over?
+Your answer:","['No echolocation', 'Bat', 'Echolocation', 'Cat']","No echolocation, Cat","['No echolocation', 'Cat']","['not_P', 'not_Q']",LOGIC_ERROR,74,6,0
+42,T43,2,420044,"If the mammal is a Bat, then it uses Echolocation.","Rule: ""If the mammal is a Bat, then it uses Echolocation.""
+Cards: ['No echolocation', 'Bat', 'Cat', 'Echolocation']
+
+Which cards must you turn over?
+Your answer:","['No echolocation', 'Bat', 'Cat', 'Echolocation']","Bat, Cat","['Bat', 'Cat']","['P', 'not_P']",LOGIC_ERROR,74,4,0
+42,T43,3,420045,"If the mammal is a Bat, then it uses Echolocation.","Rule: ""If the mammal is a Bat, then it uses Echolocation.""
+Cards: ['Echolocation', 'Bat', 'Cat', 'No echolocation']
+
+Which cards must you turn over?
+Your answer:","['Echolocation', 'Bat', 'Cat', 'No echolocation']","Bat, Cat","['Bat', 'Cat']","['P', 'not_P']",LOGIC_ERROR,74,4,0
+42,T43,4,420046,"If the mammal is a Bat, then it uses Echolocation.","Rule: ""If the mammal is a Bat, then it uses Echolocation.""
+Cards: ['Echolocation', 'No echolocation', 'Cat', 'Bat']
+
+Which cards must you turn over?
+Your answer:","['Echolocation', 'No echolocation', 'Cat', 'Bat']","Cat, No echolocation","['Cat', 'No echolocation']","['not_P', 'not_Q']",LOGIC_ERROR,74,6,0
+43,T44,0,430042,"If the vegetable is a Carrot, then it grows Underground.","Rule: ""If the vegetable is a Carrot, then it grows Underground.""
+Cards: ['Carrot', 'Tomato', 'Above ground', 'Underground']
+
+Which cards must you turn over?
+Your answer:","['Carrot', 'Tomato', 'Above ground', 'Underground']","Carrot, Tomato, Above ground, Underground","['Carrot', 'Tomato', 'Above ground', 'Underground']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,71,10,0
+43,T44,1,430043,"If the vegetable is a Carrot, then it grows Underground.","Rule: ""If the vegetable is a Carrot, then it grows Underground.""
+Cards: ['Carrot', 'Above ground', 'Underground', 'Tomato']
+
+Which cards must you turn over?
+Your answer:","['Carrot', 'Above ground', 'Underground', 'Tomato']","Carrot, Above ground, Tomato","['Carrot', 'Above ground', 'Tomato']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,71,8,0
+43,T44,2,430044,"If the vegetable is a Carrot, then it grows Underground.","Rule: ""If the vegetable is a Carrot, then it grows Underground.""
+Cards: ['Carrot', 'Underground', 'Tomato', 'Above ground']
+
+Which cards must you turn over?
+Your answer:","['Carrot', 'Underground', 'Tomato', 'Above ground']","Carrot, Underground, Tomato","['Carrot', 'Underground', 'Tomato']","['P', 'Q', 'not_P']",LOGIC_ERROR,71,7,0
+43,T44,3,430045,"If the vegetable is a Carrot, then it grows Underground.","Rule: ""If the vegetable is a Carrot, then it grows Underground.""
+Cards: ['Underground', 'Tomato', 'Above ground', 'Carrot']
+
+Which cards must you turn over?
+Your answer:","['Underground', 'Tomato', 'Above ground', 'Carrot']","Carrot, Tomato","['Carrot', 'Tomato']","['P', 'not_P']",LOGIC_ERROR,71,5,0
+43,T44,4,430046,"If the vegetable is a Carrot, then it grows Underground.","Rule: ""If the vegetable is a Carrot, then it grows Underground.""
+Cards: ['Carrot', 'Tomato', 'Underground', 'Above ground']
+
+Which cards must you turn over?
+Your answer:","['Carrot', 'Tomato', 'Underground', 'Above ground']","Carrot, Tomato","['Carrot', 'Tomato']","['P', 'not_P']",LOGIC_ERROR,71,5,0
+44,T45,0,440042,"If the element is Gold, then it does not Rust.","Rule: ""If the element is Gold, then it does not Rust.""
+Cards: ['Gold', 'Rusts', 'Iron', 'Does not rust']
+
+Which cards must you turn over?
+Your answer:","['Gold', 'Rusts', 'Iron', 'Does not rust']","Gold, Rusts, Iron, Does not rust","['Gold', 'Rusts', 'Iron', 'Does not rust']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,71,11,0
+44,T45,1,440043,"If the element is Gold, then it does not Rust.","Rule: ""If the element is Gold, then it does not Rust.""
+Cards: ['Gold', 'Rusts', 'Does not rust', 'Iron']
+
+Which cards must you turn over?
+Your answer:","['Gold', 'Rusts', 'Does not rust', 'Iron']","Gold, Rusts, Does not rust, Iron","['Gold', 'Rusts', 'Does not rust', 'Iron']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,71,11,0
+44,T45,2,440044,"If the element is Gold, then it does not Rust.","Rule: ""If the element is Gold, then it does not Rust.""
+Cards: ['Rusts', 'Does not rust', 'Gold', 'Iron']
+
+Which cards must you turn over?
+Your answer:","['Rusts', 'Does not rust', 'Gold', 'Iron']","Rusts, Does not rust, Gold, Iron","['Rusts', 'Does not rust', 'Gold', 'Iron']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,71,11,0
+44,T45,3,440045,"If the element is Gold, then it does not Rust.","Rule: ""If the element is Gold, then it does not Rust.""
+Cards: ['Rusts', 'Iron', 'Does not rust', 'Gold']
+
+Which cards must you turn over?
+Your answer:","['Rusts', 'Iron', 'Does not rust', 'Gold']","Rusts, Iron, Does not rust","['Rusts', 'Iron', 'Does not rust']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,71,9,0
+44,T45,4,440046,"If the element is Gold, then it does not Rust.","Rule: ""If the element is Gold, then it does not Rust.""
+Cards: ['Rusts', 'Gold', 'Iron', 'Does not rust']
+
+Which cards must you turn over?
+Your answer:","['Rusts', 'Gold', 'Iron', 'Does not rust']","Rusts, Gold, Iron, Does not rust","['Rusts', 'Gold', 'Iron', 'Does not rust']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,71,11,0
+45,T46,0,450042,"If the animal is a Camel, then it has a Hump.","Rule: ""If the animal is a Camel, then it has a Hump.""
+Cards: ['Horse', 'No hump', 'Hump', 'Camel']
+
+Which cards must you turn over?
+Your answer:","['Horse', 'No hump', 'Hump', 'Camel']","Horse, No hump, Hump","['Horse', 'No hump', 'Hump']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,72,8,0
+45,T46,1,450043,"If the animal is a Camel, then it has a Hump.","Rule: ""If the animal is a Camel, then it has a Hump.""
+Cards: ['Hump', 'Horse', 'No hump', 'Camel']
+
+Which cards must you turn over?
+Your answer:","['Hump', 'Horse', 'No hump', 'Camel']","Camel, Horse","['Camel', 'Horse']","['P', 'not_P']",LOGIC_ERROR,72,4,0
+45,T46,2,450044,"If the animal is a Camel, then it has a Hump.","Rule: ""If the animal is a Camel, then it has a Hump.""
+Cards: ['Hump', 'Camel', 'Horse', 'No hump']
+
+Which cards must you turn over?
+Your answer:","['Hump', 'Camel', 'Horse', 'No hump']","Camel, Horse","['Camel', 'Horse']","['P', 'not_P']",LOGIC_ERROR,72,4,0
+45,T46,3,450045,"If the animal is a Camel, then it has a Hump.","Rule: ""If the animal is a Camel, then it has a Hump.""
+Cards: ['Camel', 'Hump', 'Horse', 'No hump']
+
+Which cards must you turn over?
+Your answer:","['Camel', 'Hump', 'Horse', 'No hump']","Camel, Hump, Horse, No hump","['Camel', 'Hump', 'Horse', 'No hump']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,72,10,0
+45,T46,4,450046,"If the animal is a Camel, then it has a Hump.","Rule: ""If the animal is a Camel, then it has a Hump.""
+Cards: ['No hump', 'Camel', 'Hump', 'Horse']
+
+Which cards must you turn over?
+Your answer:","['No hump', 'Camel', 'Hump', 'Horse']","Camel, Hump, Horse","['Camel', 'Hump', 'Horse']","['P', 'Q', 'not_P']",LOGIC_ERROR,72,7,0
+46,T47,0,460042,"If the organ is the Heart, then it Pumps blood.","Rule: ""If the organ is the Heart, then it Pumps blood.""
+Cards: ['Does not pump blood', 'Liver', 'Heart', 'Pumps blood']
+
+Which cards must you turn over?
+Your answer:","['Does not pump blood', 'Liver', 'Heart', 'Pumps blood']","Liver, Does not pump blood","['Liver', 'Does not pump blood']","['not_P', 'not_Q']",LOGIC_ERROR,73,7,0
+46,T47,1,460043,"If the organ is the Heart, then it Pumps blood.","Rule: ""If the organ is the Heart, then it Pumps blood.""
+Cards: ['Pumps blood', 'Does not pump blood', 'Liver', 'Heart']
+
+Which cards must you turn over?
+Your answer:","['Pumps blood', 'Does not pump blood', 'Liver', 'Heart']","Heart, Liver","['Heart', 'Liver']","['P', 'not_P']",LOGIC_ERROR,73,4,0
+46,T47,2,460044,"If the organ is the Heart, then it Pumps blood.","Rule: ""If the organ is the Heart, then it Pumps blood.""
+Cards: ['Heart', 'Does not pump blood', 'Liver', 'Pumps blood']
+
+Which cards must you turn over?
+Your answer:","['Heart', 'Does not pump blood', 'Liver', 'Pumps blood']","Heart, Liver","['Heart', 'Liver']","['P', 'not_P']",LOGIC_ERROR,73,4,0
+46,T47,3,460045,"If the organ is the Heart, then it Pumps blood.","Rule: ""If the organ is the Heart, then it Pumps blood.""
+Cards: ['Does not pump blood', 'Pumps blood', 'Liver', 'Heart']
+
+Which cards must you turn over?
+Your answer:","['Does not pump blood', 'Pumps blood', 'Liver', 'Heart']","Liver, Does not pump blood","['Liver', 'Does not pump blood']","['not_P', 'not_Q']",LOGIC_ERROR,73,7,0
+46,T47,4,460046,"If the organ is the Heart, then it Pumps blood.","Rule: ""If the organ is the Heart, then it Pumps blood.""
+Cards: ['Does not pump blood', 'Pumps blood', 'Heart', 'Liver']
+
+Which cards must you turn over?
+Your answer:","['Does not pump blood', 'Pumps blood', 'Heart', 'Liver']","Does not pump blood, Liver","['Does not pump blood', 'Liver']","['not_P', 'not_Q']",LOGIC_ERROR,73,7,0
+47,T48,0,470042,"If the season is Winter, then the temperature is Cold.","Rule: ""If the season is Winter, then the temperature is Cold.""
+Cards: ['Summer', 'Winter', 'Hot', 'Cold']
+
+Which cards must you turn over?
+Your answer:","['Summer', 'Winter', 'Hot', 'Cold']","Winter, Cold","['Winter', 'Cold']","['P', 'Q']",MATCHING_BIAS,68,4,0
+47,T48,1,470043,"If the season is Winter, then the temperature is Cold.","Rule: ""If the season is Winter, then the temperature is Cold.""
+Cards: ['Summer', 'Winter', 'Cold', 'Hot']
+
+Which cards must you turn over?
+Your answer:","['Summer', 'Winter', 'Cold', 'Hot']","Summer, Hot","['Summer', 'Hot']","['not_P', 'not_Q']",LOGIC_ERROR,68,4,0
+47,T48,2,470044,"If the season is Winter, then the temperature is Cold.","Rule: ""If the season is Winter, then the temperature is Cold.""
+Cards: ['Summer', 'Cold', 'Hot', 'Winter']
+
+Which cards must you turn over?
+Your answer:","['Summer', 'Cold', 'Hot', 'Winter']","Summer, Hot","['Summer', 'Hot']","['not_P', 'not_Q']",LOGIC_ERROR,68,4,0
+47,T48,3,470045,"If the season is Winter, then the temperature is Cold.","Rule: ""If the season is Winter, then the temperature is Cold.""
+Cards: ['Hot', 'Summer', 'Cold', 'Winter']
+
+Which cards must you turn over?
+Your answer:","['Hot', 'Summer', 'Cold', 'Winter']","Hot, Summer","['Hot', 'Summer']","['not_P', 'not_Q']",LOGIC_ERROR,68,4,0
+47,T48,4,470046,"If the season is Winter, then the temperature is Cold.","Rule: ""If the season is Winter, then the temperature is Cold.""
+Cards: ['Winter', 'Summer', 'Cold', 'Hot']
+
+Which cards must you turn over?
+Your answer:","['Winter', 'Summer', 'Cold', 'Hot']","Winter, Cold","['Winter', 'Cold']","['P', 'Q']",MATCHING_BIAS,68,4,0
+48,T49,0,480042,"If the food is Bread, then it is made from Flour.","Rule: ""If the food is Bread, then it is made from Flour.""
+Cards: ['Bread', 'Flour', 'No flour', 'Butter']
+
+Which cards must you turn over?
+Your answer:","['Bread', 'Flour', 'No flour', 'Butter']","Bread, Flour","['Bread', 'Flour']","['P', 'Q']",MATCHING_BIAS,71,4,0
+48,T49,1,480043,"If the food is Bread, then it is made from Flour.","Rule: ""If the food is Bread, then it is made from Flour.""
+Cards: ['No flour', 'Flour', 'Butter', 'Bread']
+
+Which cards must you turn over?
+Your answer:","['No flour', 'Flour', 'Butter', 'Bread']","No flour, Bread","['No flour', 'Bread']","['P', 'not_Q']",CORRECT,71,5,0
+48,T49,2,480044,"If the food is Bread, then it is made from Flour.","Rule: ""If the food is Bread, then it is made from Flour.""
+Cards: ['No flour', 'Butter', 'Flour', 'Bread']
+
+Which cards must you turn over?
+Your answer:","['No flour', 'Butter', 'Flour', 'Bread']","No flour, Butter","['No flour', 'Butter']","['not_P', 'not_Q']",LOGIC_ERROR,71,5,0
+48,T49,3,480045,"If the food is Bread, then it is made from Flour.","Rule: ""If the food is Bread, then it is made from Flour.""
+Cards: ['Bread', 'Butter', 'Flour', 'No flour']
+
+Which cards must you turn over?
+Your answer:","['Bread', 'Butter', 'Flour', 'No flour']","Bread, Flour","['Bread', 'Flour']","['P', 'Q']",MATCHING_BIAS,71,4,0
+48,T49,4,480046,"If the food is Bread, then it is made from Flour.","Rule: ""If the food is Bread, then it is made from Flour.""
+Cards: ['Butter', 'No flour', 'Bread', 'Flour']
+
+Which cards must you turn over?
+Your answer:","['Butter', 'No flour', 'Bread', 'Flour']","Butter, No flour","['Butter', 'No flour']","['not_P', 'not_Q']",LOGIC_ERROR,71,5,0
+49,T50,0,490042,"If the country is Japan, then the currency is Yen.","Rule: ""If the country is Japan, then the currency is Yen.""
+Cards: ['Yuan', 'Yen', 'China', 'Japan']
+
+Which cards must you turn over?
+Your answer:","['Yuan', 'Yen', 'China', 'Japan']","China, Yuan","['China', 'Yuan']","['not_P', 'not_Q']",LOGIC_ERROR,70,4,0
+49,T50,1,490043,"If the country is Japan, then the currency is Yen.","Rule: ""If the country is Japan, then the currency is Yen.""
+Cards: ['China', 'Yuan', 'Japan', 'Yen']
+
+Which cards must you turn over?
+Your answer:","['China', 'Yuan', 'Japan', 'Yen']","China, Yuan, Japan, Yen","['China', 'Yuan', 'Japan', 'Yen']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,70,8,0
+49,T50,2,490044,"If the country is Japan, then the currency is Yen.","Rule: ""If the country is Japan, then the currency is Yen.""
+Cards: ['Yen', 'China', 'Yuan', 'Japan']
+
+Which cards must you turn over?
+Your answer:","['Yen', 'China', 'Yuan', 'Japan']","Japan, Yen","['Japan', 'Yen']","['P', 'Q']",MATCHING_BIAS,70,4,0
+49,T50,3,490045,"If the country is Japan, then the currency is Yen.","Rule: ""If the country is Japan, then the currency is Yen.""
+Cards: ['Japan', 'China', 'Yen', 'Yuan']
+
+Which cards must you turn over?
+Your answer:","['Japan', 'China', 'Yen', 'Yuan']","Japan, Yen","['Japan', 'Yen']","['P', 'Q']",MATCHING_BIAS,70,4,0
+49,T50,4,490046,"If the country is Japan, then the currency is Yen.","Rule: ""If the country is Japan, then the currency is Yen.""
+Cards: ['China', 'Yen', 'Japan', 'Yuan']
+
+Which cards must you turn over?
+Your answer:","['China', 'Yen', 'Japan', 'Yuan']","China, Yuan","['China', 'Yuan']","['not_P', 'not_Q']",LOGIC_ERROR,70,4,0
+50,T51,0,500042,"If the animal is a Dolphin, then it breathes Air.","Rule: ""If the animal is a Dolphin, then it breathes Air.""
+Cards: ['Water', 'Air', 'Dolphin', 'Tuna']
+
+Which cards must you turn over?
+Your answer:","['Water', 'Air', 'Dolphin', 'Tuna']","Water, Tuna","['Water', 'Tuna']","['not_P', 'not_Q']",LOGIC_ERROR,70,4,0
+50,T51,1,500043,"If the animal is a Dolphin, then it breathes Air.","Rule: ""If the animal is a Dolphin, then it breathes Air.""
+Cards: ['Tuna', 'Water', 'Air', 'Dolphin']
+
+Which cards must you turn over?
+Your answer:","['Tuna', 'Water', 'Air', 'Dolphin']","Tuna, Water, Air","['Tuna', 'Water', 'Air']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,70,7,0
+50,T51,2,500044,"If the animal is a Dolphin, then it breathes Air.","Rule: ""If the animal is a Dolphin, then it breathes Air.""
+Cards: ['Air', 'Tuna', 'Dolphin', 'Water']
+
+Which cards must you turn over?
+Your answer:","['Air', 'Tuna', 'Dolphin', 'Water']","Dolphin, Tuna","['Dolphin', 'Tuna']","['P', 'not_P']",LOGIC_ERROR,70,5,0
+50,T51,3,500045,"If the animal is a Dolphin, then it breathes Air.","Rule: ""If the animal is a Dolphin, then it breathes Air.""
+Cards: ['Dolphin', 'Water', 'Tuna', 'Air']
+
+Which cards must you turn over?
+Your answer:","['Dolphin', 'Water', 'Tuna', 'Air']","Dolphin, Air","['Dolphin', 'Air']","['P', 'Q']",MATCHING_BIAS,70,5,0
+50,T51,4,500046,"If the animal is a Dolphin, then it breathes Air.","Rule: ""If the animal is a Dolphin, then it breathes Air.""
+Cards: ['Air', 'Dolphin', 'Tuna', 'Water']
+
+Which cards must you turn over?
+Your answer:","['Air', 'Dolphin', 'Tuna', 'Water']","Dolphin, Air, Tuna","['Dolphin', 'Air', 'Tuna']","['P', 'Q', 'not_P']",LOGIC_ERROR,70,7,0
+51,T52,0,510042,"If the planet is Venus, then it is hotter than Mercury.","Rule: ""If the planet is Venus, then it is hotter than Mercury.""
+Cards: ['Mars', 'Venus', 'Cooler than Mercury', 'Hotter than Mercury']
+
+Which cards must you turn over?
+Your answer:","['Mars', 'Venus', 'Cooler than Mercury', 'Hotter than Mercury']","Venus, Hotter than Mercury, Cooler than Mercury","['Venus', 'Hotter than Mercury', 'Cooler than Mercury']","['P', 'Q', 'not_Q']",OVER_SELECTION,75,11,0
+51,T52,1,510043,"If the planet is Venus, then it is hotter than Mercury.","Rule: ""If the planet is Venus, then it is hotter than Mercury.""
+Cards: ['Mars', 'Venus', 'Hotter than Mercury', 'Cooler than Mercury']
+
+Which cards must you turn over?
+Your answer:","['Mars', 'Venus', 'Hotter than Mercury', 'Cooler than Mercury']","Venus, Hotter than Mercury, Mercury","['Venus', 'Hotter than Mercury', 'Mercury']","['P', 'Q']",MATCHING_BIAS,75,9,0
+51,T52,2,510044,"If the planet is Venus, then it is hotter than Mercury.","Rule: ""If the planet is Venus, then it is hotter than Mercury.""
+Cards: ['Mars', 'Cooler than Mercury', 'Venus', 'Hotter than Mercury']
+
+Which cards must you turn over?
+Your answer:","['Mars', 'Cooler than Mercury', 'Venus', 'Hotter than Mercury']","Venus, Hotter than Mercury, Mercury","['Venus', 'Hotter than Mercury', 'Mercury']","['P', 'Q']",MATCHING_BIAS,75,9,0
+51,T52,3,510045,"If the planet is Venus, then it is hotter than Mercury.","Rule: ""If the planet is Venus, then it is hotter than Mercury.""
+Cards: ['Cooler than Mercury', 'Mars', 'Venus', 'Hotter than Mercury']
+
+Which cards must you turn over?
+Your answer:","['Cooler than Mercury', 'Mars', 'Venus', 'Hotter than Mercury']","Venus, Mercury","['Venus', 'Mercury']",['P'],CONFIRMATION_BIAS,75,4,0
+51,T52,4,510046,"If the planet is Venus, then it is hotter than Mercury.","Rule: ""If the planet is Venus, then it is hotter than Mercury.""
+Cards: ['Hotter than Mercury', 'Venus', 'Cooler than Mercury', 'Mars']
+
+Which cards must you turn over?
+Your answer:","['Hotter than Mercury', 'Venus', 'Cooler than Mercury', 'Mars']","Venus, Mercury","['Venus', 'Mercury']",['P'],CONFIRMATION_BIAS,75,4,0
+52,T53,0,520042,"If the animal is a Spider, then it has Eight legs.","Rule: ""If the animal is a Spider, then it has Eight legs.""
+Cards: ['Eight legs', 'Six legs', 'Spider', 'Ant']
+
+Which cards must you turn over?
+Your answer:","['Eight legs', 'Six legs', 'Spider', 'Ant']","Spider, Eight legs","['Spider', 'Eight legs']","['P', 'Q']",MATCHING_BIAS,71,5,0
+52,T53,1,520043,"If the animal is a Spider, then it has Eight legs.","Rule: ""If the animal is a Spider, then it has Eight legs.""
+Cards: ['Ant', 'Spider', 'Six legs', 'Eight legs']
+
+Which cards must you turn over?
+Your answer:","['Ant', 'Spider', 'Six legs', 'Eight legs']","Ant, Six legs","['Ant', 'Six legs']","['not_P', 'not_Q']",LOGIC_ERROR,71,5,0
+52,T53,2,520044,"If the animal is a Spider, then it has Eight legs.","Rule: ""If the animal is a Spider, then it has Eight legs.""
+Cards: ['Spider', 'Ant', 'Six legs', 'Eight legs']
+
+Which cards must you turn over?
+Your answer:","['Spider', 'Ant', 'Six legs', 'Eight legs']","Spider, Eight legs","['Spider', 'Eight legs']","['P', 'Q']",MATCHING_BIAS,71,5,0
+52,T53,3,520045,"If the animal is a Spider, then it has Eight legs.","Rule: ""If the animal is a Spider, then it has Eight legs.""
+Cards: ['Ant', 'Six legs', 'Spider', 'Eight legs']
+
+Which cards must you turn over?
+Your answer:","['Ant', 'Six legs', 'Spider', 'Eight legs']","Ant, Six legs","['Ant', 'Six legs']","['not_P', 'not_Q']",LOGIC_ERROR,71,5,0
+52,T53,4,520046,"If the animal is a Spider, then it has Eight legs.","Rule: ""If the animal is a Spider, then it has Eight legs.""
+Cards: ['Spider', 'Eight legs', 'Ant', 'Six legs']
+
+Which cards must you turn over?
+Your answer:","['Spider', 'Eight legs', 'Ant', 'Six legs']","Spider, Eight legs","['Spider', 'Eight legs']","['P', 'Q']",MATCHING_BIAS,71,5,0
+53,T54,0,530042,"If the tree is a Cactus, then it stores Water.","Rule: ""If the tree is a Cactus, then it stores Water.""
+Cards: ['Stores water', 'Cactus', 'Does not store water', 'Oak']
+
+Which cards must you turn over?
+Your answer:","['Stores water', 'Cactus', 'Does not store water', 'Oak']","Cactus, Oak","['Cactus', 'Oak']","['P', 'not_P']",LOGIC_ERROR,73,5,0
+53,T54,1,530043,"If the tree is a Cactus, then it stores Water.","Rule: ""If the tree is a Cactus, then it stores Water.""
+Cards: ['Oak', 'Cactus', 'Does not store water', 'Stores water']
+
+Which cards must you turn over?
+Your answer:","['Oak', 'Cactus', 'Does not store water', 'Stores water']","Cactus, Oak, Does not store water","['Cactus', 'Oak', 'Does not store water']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,73,10,0
+53,T54,2,530044,"If the tree is a Cactus, then it stores Water.","Rule: ""If the tree is a Cactus, then it stores Water.""
+Cards: ['Cactus', 'Oak', 'Does not store water', 'Stores water']
+
+Which cards must you turn over?
+Your answer:","['Cactus', 'Oak', 'Does not store water', 'Stores water']","Cactus, Oak, Does not store water","['Cactus', 'Oak', 'Does not store water']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,73,10,0
+53,T54,3,530045,"If the tree is a Cactus, then it stores Water.","Rule: ""If the tree is a Cactus, then it stores Water.""
+Cards: ['Does not store water', 'Cactus', 'Stores water', 'Oak']
+
+Which cards must you turn over?
+Your answer:","['Does not store water', 'Cactus', 'Stores water', 'Oak']","Cactus, Oak","['Cactus', 'Oak']","['P', 'not_P']",LOGIC_ERROR,73,5,0
+53,T54,4,530046,"If the tree is a Cactus, then it stores Water.","Rule: ""If the tree is a Cactus, then it stores Water.""
+Cards: ['Stores water', 'Oak', 'Cactus', 'Does not store water']
+
+Which cards must you turn over?
+Your answer:","['Stores water', 'Oak', 'Cactus', 'Does not store water']","Cactus, Oak","['Cactus', 'Oak']","['P', 'not_P']",LOGIC_ERROR,73,5,0
+54,T55,0,540042,"If the metal is Copper, then it conducts Electricity.","Rule: ""If the metal is Copper, then it conducts Electricity.""
+Cards: ['Does not conduct', 'Copper', 'Rubber', 'Conducts electricity']
+
+Which cards must you turn over?
+Your answer:","['Does not conduct', 'Copper', 'Rubber', 'Conducts electricity']","Rubber, Does not conduct","['Rubber', 'Does not conduct']","['not_P', 'not_Q']",LOGIC_ERROR,71,6,0
+54,T55,1,540043,"If the metal is Copper, then it conducts Electricity.","Rule: ""If the metal is Copper, then it conducts Electricity.""
+Cards: ['Rubber', 'Copper', 'Does not conduct', 'Conducts electricity']
+
+Which cards must you turn over?
+Your answer:","['Rubber', 'Copper', 'Does not conduct', 'Conducts electricity']","Rubber, Does not conduct","['Rubber', 'Does not conduct']","['not_P', 'not_Q']",LOGIC_ERROR,71,6,0
+54,T55,2,540044,"If the metal is Copper, then it conducts Electricity.","Rule: ""If the metal is Copper, then it conducts Electricity.""
+Cards: ['Conducts electricity', 'Copper', 'Does not conduct', 'Rubber']
+
+Which cards must you turn over?
+Your answer:","['Conducts electricity', 'Copper', 'Does not conduct', 'Rubber']","Copper, Rubber","['Copper', 'Rubber']","['P', 'not_P']",LOGIC_ERROR,71,4,0
+54,T55,3,540045,"If the metal is Copper, then it conducts Electricity.","Rule: ""If the metal is Copper, then it conducts Electricity.""
+Cards: ['Conducts electricity', 'Rubber', 'Does not conduct', 'Copper']
+
+Which cards must you turn over?
+Your answer:","['Conducts electricity', 'Rubber', 'Does not conduct', 'Copper']","Rubber, Does not conduct","['Rubber', 'Does not conduct']","['not_P', 'not_Q']",LOGIC_ERROR,71,6,0
+54,T55,4,540046,"If the metal is Copper, then it conducts Electricity.","Rule: ""If the metal is Copper, then it conducts Electricity.""
+Cards: ['Rubber', 'Conducts electricity', 'Does not conduct', 'Copper']
+
+Which cards must you turn over?
+Your answer:","['Rubber', 'Conducts electricity', 'Does not conduct', 'Copper']","Rubber, Conducts electricity, Does not conduct","['Rubber', 'Conducts electricity', 'Does not conduct']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,71,10,0
+55,T56,0,550042,"If the animal is a Snake, then it has no Legs.","Rule: ""If the animal is a Snake, then it has no Legs.""
+Cards: ['No legs', 'Snake', 'Lizard', 'Has legs']
+
+Which cards must you turn over?
+Your answer:","['No legs', 'Snake', 'Lizard', 'Has legs']","Snake, Lizard","['Snake', 'Lizard']","['P', 'not_P']",LOGIC_ERROR,72,4,0
+55,T56,1,550043,"If the animal is a Snake, then it has no Legs.","Rule: ""If the animal is a Snake, then it has no Legs.""
+Cards: ['Has legs', 'No legs', 'Lizard', 'Snake']
+
+Which cards must you turn over?
+Your answer:","['Has legs', 'No legs', 'Lizard', 'Snake']","Lizard, Snake","['Lizard', 'Snake']","['P', 'not_P']",LOGIC_ERROR,72,5,0
+55,T56,2,550044,"If the animal is a Snake, then it has no Legs.","Rule: ""If the animal is a Snake, then it has no Legs.""
+Cards: ['Snake', 'No legs', 'Has legs', 'Lizard']
+
+Which cards must you turn over?
+Your answer:","['Snake', 'No legs', 'Has legs', 'Lizard']","Snake, No legs, Has legs, Lizard","['Snake', 'No legs', 'Has legs', 'Lizard']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,72,10,0
+55,T56,3,550045,"If the animal is a Snake, then it has no Legs.","Rule: ""If the animal is a Snake, then it has no Legs.""
+Cards: ['Lizard', 'No legs', 'Has legs', 'Snake']
+
+Which cards must you turn over?
+Your answer:","['Lizard', 'No legs', 'Has legs', 'Snake']","Lizard, No legs, Has legs","['Lizard', 'No legs', 'Has legs']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,72,9,0
+55,T56,4,550046,"If the animal is a Snake, then it has no Legs.","Rule: ""If the animal is a Snake, then it has no Legs.""
+Cards: ['Snake', 'No legs', 'Lizard', 'Has legs']
+
+Which cards must you turn over?
+Your answer:","['Snake', 'No legs', 'Lizard', 'Has legs']","Snake, No legs, Lizard, Has legs","['Snake', 'No legs', 'Lizard', 'Has legs']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,72,10,0
+56,T57,0,560042,"If the bird is an Ostrich, then it cannot Fly.","Rule: ""If the bird is an Ostrich, then it cannot Fly.""
+Cards: ['Cannot fly', 'Can fly', 'Ostrich', 'Sparrow']
+
+Which cards must you turn over?
+Your answer:","['Cannot fly', 'Can fly', 'Ostrich', 'Sparrow']","Cannot fly, Can fly, Ostrich, Sparrow","['Cannot fly', 'Can fly', 'Ostrich', 'Sparrow']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,75,12,0
+56,T57,1,560043,"If the bird is an Ostrich, then it cannot Fly.","Rule: ""If the bird is an Ostrich, then it cannot Fly.""
+Cards: ['Can fly', 'Cannot fly', 'Ostrich', 'Sparrow']
+
+Which cards must you turn over?
+Your answer:","['Can fly', 'Cannot fly', 'Ostrich', 'Sparrow']","Can fly, Ostrich","['Can fly', 'Ostrich']","['P', 'not_Q']",CORRECT,75,7,0
+56,T57,2,560044,"If the bird is an Ostrich, then it cannot Fly.","Rule: ""If the bird is an Ostrich, then it cannot Fly.""
+Cards: ['Can fly', 'Ostrich', 'Cannot fly', 'Sparrow']
+
+Which cards must you turn over?
+Your answer:","['Can fly', 'Ostrich', 'Cannot fly', 'Sparrow']","Ostrich, Sparrow","['Ostrich', 'Sparrow']","['P', 'not_P']",LOGIC_ERROR,75,6,0
+56,T57,3,560045,"If the bird is an Ostrich, then it cannot Fly.","Rule: ""If the bird is an Ostrich, then it cannot Fly.""
+Cards: ['Ostrich', 'Can fly', 'Sparrow', 'Cannot fly']
+
+Which cards must you turn over?
+Your answer:","['Ostrich', 'Can fly', 'Sparrow', 'Cannot fly']","Ostrich, Can fly","['Ostrich', 'Can fly']","['P', 'not_Q']",CORRECT,75,7,0
+56,T57,4,560046,"If the bird is an Ostrich, then it cannot Fly.","Rule: ""If the bird is an Ostrich, then it cannot Fly.""
+Cards: ['Cannot fly', 'Can fly', 'Sparrow', 'Ostrich']
+
+Which cards must you turn over?
+Your answer:","['Cannot fly', 'Can fly', 'Sparrow', 'Ostrich']","Ostrich, Sparrow","['Ostrich', 'Sparrow']","['P', 'not_P']",LOGIC_ERROR,75,6,0
+57,T58,0,570042,"If the fruit is a Watermelon, then it contains Seeds.","Rule: ""If the fruit is a Watermelon, then it contains Seeds.""
+Cards: ['Watermelon', 'Grape', 'Contains seeds', 'Seedless']
+
+Which cards must you turn over?
+Your answer:","['Watermelon', 'Grape', 'Contains seeds', 'Seedless']","Watermelon, Grape, Contains seeds, Seedless","['Watermelon', 'Grape', 'Contains seeds', 'Seedless']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,73,11,0
+57,T58,1,570043,"If the fruit is a Watermelon, then it contains Seeds.","Rule: ""If the fruit is a Watermelon, then it contains Seeds.""
+Cards: ['Contains seeds', 'Grape', 'Seedless', 'Watermelon']
+
+Which cards must you turn over?
+Your answer:","['Contains seeds', 'Grape', 'Seedless', 'Watermelon']","Watermelon, Grape, Seedless","['Watermelon', 'Grape', 'Seedless']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,73,8,0
+57,T58,2,570044,"If the fruit is a Watermelon, then it contains Seeds.","Rule: ""If the fruit is a Watermelon, then it contains Seeds.""
+Cards: ['Seedless', 'Grape', 'Watermelon', 'Contains seeds']
+
+Which cards must you turn over?
+Your answer:","['Seedless', 'Grape', 'Watermelon', 'Contains seeds']","Watermelon, Contains seeds","['Watermelon', 'Contains seeds']","['P', 'Q']",MATCHING_BIAS,73,6,0
+57,T58,3,570045,"If the fruit is a Watermelon, then it contains Seeds.","Rule: ""If the fruit is a Watermelon, then it contains Seeds.""
+Cards: ['Seedless', 'Contains seeds', 'Watermelon', 'Grape']
+
+Which cards must you turn over?
+Your answer:","['Seedless', 'Contains seeds', 'Watermelon', 'Grape']","Watermelon, Grape","['Watermelon', 'Grape']","['P', 'not_P']",LOGIC_ERROR,73,5,0
+57,T58,4,570046,"If the fruit is a Watermelon, then it contains Seeds.","Rule: ""If the fruit is a Watermelon, then it contains Seeds.""
+Cards: ['Contains seeds', 'Grape', 'Watermelon', 'Seedless']
+
+Which cards must you turn over?
+Your answer:","['Contains seeds', 'Grape', 'Watermelon', 'Seedless']","Watermelon, Grape, Seedless","['Watermelon', 'Grape', 'Seedless']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,73,8,0
+58,T59,0,580042,"If the gas is Helium, then it is Lighter than air.","Rule: ""If the gas is Helium, then it is Lighter than air.""
+Cards: ['Carbon dioxide', 'Heavier than air', 'Helium', 'Lighter than air']
+
+Which cards must you turn over?
+Your answer:","['Carbon dioxide', 'Heavier than air', 'Helium', 'Lighter than air']","Carbon dioxide, Helium, Lighter than air, Heavier than air","['Carbon dioxide', 'Helium', 'Lighter than air', 'Heavier than air']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,78,15,0
+58,T59,1,580043,"If the gas is Helium, then it is Lighter than air.","Rule: ""If the gas is Helium, then it is Lighter than air.""
+Cards: ['Carbon dioxide', 'Lighter than air', 'Heavier than air', 'Helium']
+
+Which cards must you turn over?
+Your answer:","['Carbon dioxide', 'Lighter than air', 'Heavier than air', 'Helium']","Carbon dioxide, Helium","['Carbon dioxide', 'Helium']","['P', 'not_P']",LOGIC_ERROR,78,5,0
+58,T59,2,580044,"If the gas is Helium, then it is Lighter than air.","Rule: ""If the gas is Helium, then it is Lighter than air.""
+Cards: ['Heavier than air', 'Carbon dioxide', 'Lighter than air', 'Helium']
+
+Which cards must you turn over?
+Your answer:","['Heavier than air', 'Carbon dioxide', 'Lighter than air', 'Helium']","Heavier than air, Carbon dioxide","['Heavier than air', 'Carbon dioxide']","['not_P', 'not_Q']",LOGIC_ERROR,78,8,0
+58,T59,3,580045,"If the gas is Helium, then it is Lighter than air.","Rule: ""If the gas is Helium, then it is Lighter than air.""
+Cards: ['Heavier than air', 'Carbon dioxide', 'Helium', 'Lighter than air']
+
+Which cards must you turn over?
+Your answer:","['Heavier than air', 'Carbon dioxide', 'Helium', 'Lighter than air']","Carbon dioxide, Heavier than air","['Carbon dioxide', 'Heavier than air']","['not_P', 'not_Q']",LOGIC_ERROR,78,8,0
+58,T59,4,580046,"If the gas is Helium, then it is Lighter than air.","Rule: ""If the gas is Helium, then it is Lighter than air.""
+Cards: ['Carbon dioxide', 'Helium', 'Lighter than air', 'Heavier than air']
+
+Which cards must you turn over?
+Your answer:","['Carbon dioxide', 'Helium', 'Lighter than air', 'Heavier than air']","Carbon dioxide, Helium, Lighter than air, Heavier than air","['Carbon dioxide', 'Helium', 'Lighter than air', 'Heavier than air']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,78,15,0
+59,T60,0,590042,"If the insect is a Bee, then it produces Honey.","Rule: ""If the insect is a Bee, then it produces Honey.""
+Cards: ['Wasp', 'Does not produce honey', 'Bee', 'Produces honey']
+
+Which cards must you turn over?
+Your answer:","['Wasp', 'Does not produce honey', 'Bee', 'Produces honey']","Wasp, Does not produce honey","['Wasp', 'Does not produce honey']","['not_P', 'not_Q']",LOGIC_ERROR,73,8,0
+59,T60,1,590043,"If the insect is a Bee, then it produces Honey.","Rule: ""If the insect is a Bee, then it produces Honey.""
+Cards: ['Does not produce honey', 'Wasp', 'Produces honey', 'Bee']
+
+Which cards must you turn over?
+Your answer:","['Does not produce honey', 'Wasp', 'Produces honey', 'Bee']","Does not produce honey, Wasp","['Does not produce honey', 'Wasp']","['not_P', 'not_Q']",LOGIC_ERROR,73,8,0
+59,T60,2,590044,"If the insect is a Bee, then it produces Honey.","Rule: ""If the insect is a Bee, then it produces Honey.""
+Cards: ['Produces honey', 'Bee', 'Does not produce honey', 'Wasp']
+
+Which cards must you turn over?
+Your answer:","['Produces honey', 'Bee', 'Does not produce honey', 'Wasp']","Bee, Wasp","['Bee', 'Wasp']","['P', 'not_P']",LOGIC_ERROR,73,5,0
+59,T60,3,590045,"If the insect is a Bee, then it produces Honey.","Rule: ""If the insect is a Bee, then it produces Honey.""
+Cards: ['Bee', 'Wasp', 'Produces honey', 'Does not produce honey']
+
+Which cards must you turn over?
+Your answer:","['Bee', 'Wasp', 'Produces honey', 'Does not produce honey']","Wasp, Does not produce honey","['Wasp', 'Does not produce honey']","['not_P', 'not_Q']",LOGIC_ERROR,73,8,0
+59,T60,4,590046,"If the insect is a Bee, then it produces Honey.","Rule: ""If the insect is a Bee, then it produces Honey.""
+Cards: ['Wasp', 'Produces honey', 'Does not produce honey', 'Bee']
+
+Which cards must you turn over?
+Your answer:","['Wasp', 'Produces honey', 'Does not produce honey', 'Bee']","Wasp, Produces honey, Does not produce honey","['Wasp', 'Produces honey', 'Does not produce honey']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,73,12,0
+60,T61,0,600042,"If the mammal is a Whale, then it lives in the Ocean.","Rule: ""If the mammal is a Whale, then it lives in the Ocean.""
+Cards: ['Land', 'Ocean', 'Elephant', 'Whale']
+
+Which cards must you turn over?
+Your answer:","['Land', 'Ocean', 'Elephant', 'Whale']","Elephant, Land","['Elephant', 'Land']","['not_P', 'not_Q']",LOGIC_ERROR,71,4,0
+60,T61,1,600043,"If the mammal is a Whale, then it lives in the Ocean.","Rule: ""If the mammal is a Whale, then it lives in the Ocean.""
+Cards: ['Elephant', 'Land', 'Whale', 'Ocean']
+
+Which cards must you turn over?
+Your answer:","['Elephant', 'Land', 'Whale', 'Ocean']","Elephant, Land, Whale, Ocean","['Elephant', 'Land', 'Whale', 'Ocean']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,71,8,0
+60,T61,2,600044,"If the mammal is a Whale, then it lives in the Ocean.","Rule: ""If the mammal is a Whale, then it lives in the Ocean.""
+Cards: ['Elephant', 'Whale', 'Land', 'Ocean']
+
+Which cards must you turn over?
+Your answer:","['Elephant', 'Whale', 'Land', 'Ocean']","Whale, Ocean","['Whale', 'Ocean']","['P', 'Q']",MATCHING_BIAS,71,5,0
+60,T61,3,600045,"If the mammal is a Whale, then it lives in the Ocean.","Rule: ""If the mammal is a Whale, then it lives in the Ocean.""
+Cards: ['Whale', 'Elephant', 'Land', 'Ocean']
+
+Which cards must you turn over?
+Your answer:","['Whale', 'Elephant', 'Land', 'Ocean']","Whale, Elephant, Land, Ocean","['Whale', 'Elephant', 'Land', 'Ocean']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,71,9,0
+60,T61,4,600046,"If the mammal is a Whale, then it lives in the Ocean.","Rule: ""If the mammal is a Whale, then it lives in the Ocean.""
+Cards: ['Ocean', 'Whale', 'Land', 'Elephant']
+
+Which cards must you turn over?
+Your answer:","['Ocean', 'Whale', 'Land', 'Elephant']","Land, Elephant","['Land', 'Elephant']","['not_P', 'not_Q']",LOGIC_ERROR,71,4,0
+61,T62,0,610042,"If the element is Carbon, then it can form Diamonds.","Rule: ""If the element is Carbon, then it can form Diamonds.""
+Cards: ['Carbon', 'Cannot form diamonds', 'Nitrogen', 'Can form diamonds']
+
+Which cards must you turn over?
+Your answer:","['Carbon', 'Cannot form diamonds', 'Nitrogen', 'Can form diamonds']","Carbon, Cannot form diamonds, Nitrogen, Can form diamonds","['Carbon', 'Cannot form diamonds', 'Nitrogen', 'Can form diamonds']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,73,12,0
+61,T62,1,610043,"If the element is Carbon, then it can form Diamonds.","Rule: ""If the element is Carbon, then it can form Diamonds.""
+Cards: ['Nitrogen', 'Can form diamonds', 'Carbon', 'Cannot form diamonds']
+
+Which cards must you turn over?
+Your answer:","['Nitrogen', 'Can form diamonds', 'Carbon', 'Cannot form diamonds']","Nitrogen, Cannot form diamonds","['Nitrogen', 'Cannot form diamonds']","['not_P', 'not_Q']",LOGIC_ERROR,73,7,0
+61,T62,2,610044,"If the element is Carbon, then it can form Diamonds.","Rule: ""If the element is Carbon, then it can form Diamonds.""
+Cards: ['Nitrogen', 'Can form diamonds', 'Cannot form diamonds', 'Carbon']
+
+Which cards must you turn over?
+Your answer:","['Nitrogen', 'Can form diamonds', 'Cannot form diamonds', 'Carbon']","Carbon, Can form diamonds, Cannot form diamonds","['Carbon', 'Can form diamonds', 'Cannot form diamonds']","['P', 'Q', 'not_Q']",OVER_SELECTION,73,10,0
+61,T62,3,610045,"If the element is Carbon, then it can form Diamonds.","Rule: ""If the element is Carbon, then it can form Diamonds.""
+Cards: ['Carbon', 'Cannot form diamonds', 'Can form diamonds', 'Nitrogen']
+
+Which cards must you turn over?
+Your answer:","['Carbon', 'Cannot form diamonds', 'Can form diamonds', 'Nitrogen']","Carbon, Cannot form diamonds, Can form diamonds","['Carbon', 'Cannot form diamonds', 'Can form diamonds']","['P', 'Q', 'not_Q']",OVER_SELECTION,73,10,0
+61,T62,4,610046,"If the element is Carbon, then it can form Diamonds.","Rule: ""If the element is Carbon, then it can form Diamonds.""
+Cards: ['Cannot form diamonds', 'Nitrogen', 'Can form diamonds', 'Carbon']
+
+Which cards must you turn over?
+Your answer:","['Cannot form diamonds', 'Nitrogen', 'Can form diamonds', 'Carbon']","Nitrogen, Cannot form diamonds","['Nitrogen', 'Cannot form diamonds']","['not_P', 'not_Q']",LOGIC_ERROR,73,7,0
+62,T63,0,620042,"If the country is Brazil, then the language is Portuguese.","Rule: ""If the country is Brazil, then the language is Portuguese.""
+Cards: ['Spanish', 'Argentina', 'Portuguese', 'Brazil']
+
+Which cards must you turn over?
+Your answer:","['Spanish', 'Argentina', 'Portuguese', 'Brazil']","Argentina, Spanish, Portuguese","['Argentina', 'Spanish', 'Portuguese']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,68,6,0
+62,T63,1,620043,"If the country is Brazil, then the language is Portuguese.","Rule: ""If the country is Brazil, then the language is Portuguese.""
+Cards: ['Brazil', 'Portuguese', 'Spanish', 'Argentina']
+
+Which cards must you turn over?
+Your answer:","['Brazil', 'Portuguese', 'Spanish', 'Argentina']","Brazil, Portuguese","['Brazil', 'Portuguese']","['P', 'Q']",MATCHING_BIAS,68,4,0
+62,T63,2,620044,"If the country is Brazil, then the language is Portuguese.","Rule: ""If the country is Brazil, then the language is Portuguese.""
+Cards: ['Argentina', 'Portuguese', 'Brazil', 'Spanish']
+
+Which cards must you turn over?
+Your answer:","['Argentina', 'Portuguese', 'Brazil', 'Spanish']","Argentina, Spanish","['Argentina', 'Spanish']","['not_P', 'not_Q']",LOGIC_ERROR,68,4,0
+62,T63,3,620045,"If the country is Brazil, then the language is Portuguese.","Rule: ""If the country is Brazil, then the language is Portuguese.""
+Cards: ['Portuguese', 'Brazil', 'Spanish', 'Argentina']
+
+Which cards must you turn over?
+Your answer:","['Portuguese', 'Brazil', 'Spanish', 'Argentina']","Brazil, Portuguese, Spanish, Argentina","['Brazil', 'Portuguese', 'Spanish', 'Argentina']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,68,8,0
+62,T63,4,620046,"If the country is Brazil, then the language is Portuguese.","Rule: ""If the country is Brazil, then the language is Portuguese.""
+Cards: ['Portuguese', 'Spanish', 'Argentina', 'Brazil']
+
+Which cards must you turn over?
+Your answer:","['Portuguese', 'Spanish', 'Argentina', 'Brazil']","Brazil, Portuguese","['Brazil', 'Portuguese']","['P', 'Q']",MATCHING_BIAS,68,4,0
+63,T64,0,630042,"If the food is Cheese, then it is made from Milk.","Rule: ""If the food is Cheese, then it is made from Milk.""
+Cards: ['No milk', 'Cheese', 'Milk', 'Bread']
+
+Which cards must you turn over?
+Your answer:","['No milk', 'Cheese', 'Milk', 'Bread']","No milk, Cheese, Milk","['No milk', 'Cheese', 'Milk']","['P', 'Q', 'not_Q']",OVER_SELECTION,70,7,0
+63,T64,1,630043,"If the food is Cheese, then it is made from Milk.","Rule: ""If the food is Cheese, then it is made from Milk.""
+Cards: ['Milk', 'No milk', 'Bread', 'Cheese']
+
+Which cards must you turn over?
+Your answer:","['Milk', 'No milk', 'Bread', 'Cheese']","Cheese, Milk","['Cheese', 'Milk']","['P', 'Q']",MATCHING_BIAS,70,4,0
+63,T64,2,630044,"If the food is Cheese, then it is made from Milk.","Rule: ""If the food is Cheese, then it is made from Milk.""
+Cards: ['Bread', 'Milk', 'Cheese', 'No milk']
+
+Which cards must you turn over?
+Your answer:","['Bread', 'Milk', 'Cheese', 'No milk']","Cheese, Milk","['Cheese', 'Milk']","['P', 'Q']",MATCHING_BIAS,70,4,0
+63,T64,3,630045,"If the food is Cheese, then it is made from Milk.","Rule: ""If the food is Cheese, then it is made from Milk.""
+Cards: ['Bread', 'Cheese', 'No milk', 'Milk']
+
+Which cards must you turn over?
+Your answer:","['Bread', 'Cheese', 'No milk', 'Milk']","Cheese, Milk, No milk","['Cheese', 'Milk', 'No milk']","['P', 'Q', 'not_Q']",OVER_SELECTION,70,7,0
+63,T64,4,630046,"If the food is Cheese, then it is made from Milk.","Rule: ""If the food is Cheese, then it is made from Milk.""
+Cards: ['Cheese', 'No milk', 'Bread', 'Milk']
+
+Which cards must you turn over?
+Your answer:","['Cheese', 'No milk', 'Bread', 'Milk']","Cheese, Milk","['Cheese', 'Milk']","['P', 'Q']",MATCHING_BIAS,70,4,0
+64,T65,0,640042,"If the animal is a Frog, then it is Amphibious.","Rule: ""If the animal is a Frog, then it is Amphibious.""
+Cards: ['Not amphibious', 'Lizard', 'Frog', 'Amphibious']
+
+Which cards must you turn over?
+Your answer:","['Not amphibious', 'Lizard', 'Frog', 'Amphibious']","Not amphibious, Lizard","['Not amphibious', 'Lizard']","['not_P', 'not_Q']",LOGIC_ERROR,75,5,0
+64,T65,1,640043,"If the animal is a Frog, then it is Amphibious.","Rule: ""If the animal is a Frog, then it is Amphibious.""
+Cards: ['Not amphibious', 'Lizard', 'Amphibious', 'Frog']
+
+Which cards must you turn over?
+Your answer:","['Not amphibious', 'Lizard', 'Amphibious', 'Frog']","Not amphibious, Lizard","['Not amphibious', 'Lizard']","['not_P', 'not_Q']",LOGIC_ERROR,75,5,0
+64,T65,2,640044,"If the animal is a Frog, then it is Amphibious.","Rule: ""If the animal is a Frog, then it is Amphibious.""
+Cards: ['Not amphibious', 'Frog', 'Amphibious', 'Lizard']
+
+Which cards must you turn over?
+Your answer:","['Not amphibious', 'Frog', 'Amphibious', 'Lizard']","Not amphibious, Lizard","['Not amphibious', 'Lizard']","['not_P', 'not_Q']",LOGIC_ERROR,75,5,0
+64,T65,3,640045,"If the animal is a Frog, then it is Amphibious.","Rule: ""If the animal is a Frog, then it is Amphibious.""
+Cards: ['Lizard', 'Not amphibious', 'Frog', 'Amphibious']
+
+Which cards must you turn over?
+Your answer:","['Lizard', 'Not amphibious', 'Frog', 'Amphibious']","Lizard, Not amphibious","['Lizard', 'Not amphibious']","['not_P', 'not_Q']",LOGIC_ERROR,75,6,0
+64,T65,4,640046,"If the animal is a Frog, then it is Amphibious.","Rule: ""If the animal is a Frog, then it is Amphibious.""
+Cards: ['Not amphibious', 'Frog', 'Lizard', 'Amphibious']
+
+Which cards must you turn over?
+Your answer:","['Not amphibious', 'Frog', 'Lizard', 'Amphibious']","Not amphibious, Lizard","['Not amphibious', 'Lizard']","['not_P', 'not_Q']",LOGIC_ERROR,75,5,0
+65,T66,0,650042,"If the plant is a Sunflower, then it faces the Sun.","Rule: ""If the plant is a Sunflower, then it faces the Sun.""
+Cards: ['Does not face sun', 'Faces sun', 'Rose', 'Sunflower']
+
+Which cards must you turn over?
+Your answer:","['Does not face sun', 'Faces sun', 'Rose', 'Sunflower']","Rose, Does not face sun","['Rose', 'Does not face sun']","['not_P', 'not_Q']",LOGIC_ERROR,73,7,0
+65,T66,1,650043,"If the plant is a Sunflower, then it faces the Sun.","Rule: ""If the plant is a Sunflower, then it faces the Sun.""
+Cards: ['Rose', 'Does not face sun', 'Faces sun', 'Sunflower']
+
+Which cards must you turn over?
+Your answer:","['Rose', 'Does not face sun', 'Faces sun', 'Sunflower']","Rose, Does not face sun, Sunflower","['Rose', 'Does not face sun', 'Sunflower']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,73,9,0
+65,T66,2,650044,"If the plant is a Sunflower, then it faces the Sun.","Rule: ""If the plant is a Sunflower, then it faces the Sun.""
+Cards: ['Sunflower', 'Faces sun', 'Rose', 'Does not face sun']
+
+Which cards must you turn over?
+Your answer:","['Sunflower', 'Faces sun', 'Rose', 'Does not face sun']","Sunflower, Rose","['Sunflower', 'Rose']","['P', 'not_P']",LOGIC_ERROR,73,4,0
+65,T66,3,650045,"If the plant is a Sunflower, then it faces the Sun.","Rule: ""If the plant is a Sunflower, then it faces the Sun.""
+Cards: ['Rose', 'Faces sun', 'Sunflower', 'Does not face sun']
+
+Which cards must you turn over?
+Your answer:","['Rose', 'Faces sun', 'Sunflower', 'Does not face sun']","Rose, Faces sun, Does not face sun","['Rose', 'Faces sun', 'Does not face sun']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,73,10,0
+65,T66,4,650046,"If the plant is a Sunflower, then it faces the Sun.","Rule: ""If the plant is a Sunflower, then it faces the Sun.""
+Cards: ['Rose', 'Sunflower', 'Faces sun', 'Does not face sun']
+
+Which cards must you turn over?
+Your answer:","['Rose', 'Sunflower', 'Faces sun', 'Does not face sun']","Sunflower, Faces sun, Does not face sun","['Sunflower', 'Faces sun', 'Does not face sun']","['P', 'Q', 'not_Q']",OVER_SELECTION,73,10,0
+66,T67,0,660042,"If the ocean is the Pacific, then it is the Largest.","Rule: ""If the ocean is the Pacific, then it is the Largest.""
+Cards: ['Atlantic', 'Not largest', 'Pacific', 'Largest']
+
+Which cards must you turn over?
+Your answer:","['Atlantic', 'Not largest', 'Pacific', 'Largest']","Atlantic, Not largest","['Atlantic', 'Not largest']","['not_P', 'not_Q']",LOGIC_ERROR,70,5,0
+66,T67,1,660043,"If the ocean is the Pacific, then it is the Largest.","Rule: ""If the ocean is the Pacific, then it is the Largest.""
+Cards: ['Not largest', 'Pacific', 'Largest', 'Atlantic']
+
+Which cards must you turn over?
+Your answer:","['Not largest', 'Pacific', 'Largest', 'Atlantic']","Not largest, Atlantic","['Not largest', 'Atlantic']","['not_P', 'not_Q']",LOGIC_ERROR,70,5,0
+66,T67,2,660044,"If the ocean is the Pacific, then it is the Largest.","Rule: ""If the ocean is the Pacific, then it is the Largest.""
+Cards: ['Largest', 'Pacific', 'Not largest', 'Atlantic']
+
+Which cards must you turn over?
+Your answer:","['Largest', 'Pacific', 'Not largest', 'Atlantic']","Pacific, Atlantic","['Pacific', 'Atlantic']","['P', 'not_P']",LOGIC_ERROR,70,4,0
+66,T67,3,660045,"If the ocean is the Pacific, then it is the Largest.","Rule: ""If the ocean is the Pacific, then it is the Largest.""
+Cards: ['Largest', 'Not largest', 'Atlantic', 'Pacific']
+
+Which cards must you turn over?
+Your answer:","['Largest', 'Not largest', 'Atlantic', 'Pacific']","Atlantic, Not largest","['Atlantic', 'Not largest']","['not_P', 'not_Q']",LOGIC_ERROR,70,5,0
+66,T67,4,660046,"If the ocean is the Pacific, then it is the Largest.","Rule: ""If the ocean is the Pacific, then it is the Largest.""
+Cards: ['Atlantic', 'Pacific', 'Not largest', 'Largest']
+
+Which cards must you turn over?
+Your answer:","['Atlantic', 'Pacific', 'Not largest', 'Largest']","Atlantic, Pacific, Not largest","['Atlantic', 'Pacific', 'Not largest']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,70,7,0
+67,T68,0,670042,"If the bone is the Femur, then it is in the Leg.","Rule: ""If the bone is the Femur, then it is in the Leg.""
+Cards: ['Femur', 'Humerus', 'Leg', 'Arm']
+
+Which cards must you turn over?
+Your answer:","['Femur', 'Humerus', 'Leg', 'Arm']","Femur, Humerus, Leg, Arm","['Femur', 'Humerus', 'Leg', 'Arm']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,74,11,0
+67,T68,1,670043,"If the bone is the Femur, then it is in the Leg.","Rule: ""If the bone is the Femur, then it is in the Leg.""
+Cards: ['Leg', 'Femur', 'Arm', 'Humerus']
+
+Which cards must you turn over?
+Your answer:","['Leg', 'Femur', 'Arm', 'Humerus']","Femur, Leg","['Femur', 'Leg']","['P', 'Q']",MATCHING_BIAS,74,5,0
+67,T68,2,670044,"If the bone is the Femur, then it is in the Leg.","Rule: ""If the bone is the Femur, then it is in the Leg.""
+Cards: ['Humerus', 'Femur', 'Leg', 'Arm']
+
+Which cards must you turn over?
+Your answer:","['Humerus', 'Femur', 'Leg', 'Arm']","Humerus, Arm","['Humerus', 'Arm']","['not_P', 'not_Q']",LOGIC_ERROR,74,6,0
+67,T68,3,670045,"If the bone is the Femur, then it is in the Leg.","Rule: ""If the bone is the Femur, then it is in the Leg.""
+Cards: ['Femur', 'Leg', 'Humerus', 'Arm']
+
+Which cards must you turn over?
+Your answer:","['Femur', 'Leg', 'Humerus', 'Arm']","Femur, Leg, Humerus, Arm","['Femur', 'Leg', 'Humerus', 'Arm']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,74,11,0
+67,T68,4,670046,"If the bone is the Femur, then it is in the Leg.","Rule: ""If the bone is the Femur, then it is in the Leg.""
+Cards: ['Humerus', 'Arm', 'Leg', 'Femur']
+
+Which cards must you turn over?
+Your answer:","['Humerus', 'Arm', 'Leg', 'Femur']","Humerus, Arm, Leg","['Humerus', 'Arm', 'Leg']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,74,8,0
+68,T69,0,680042,"If the animal is an Axolotl, then it can Regenerate limbs.","Rule: ""If the animal is an Axolotl, then it can Regenerate limbs.""
+Cards: ['Frog', 'Regenerates limbs', 'Cannot regenerate', 'Axolotl']
+
+Which cards must you turn over?
+Your answer:","['Frog', 'Regenerates limbs', 'Cannot regenerate', 'Axolotl']","Frog, Cannot regenerate","['Frog', 'Cannot regenerate']","['not_P', 'not_Q']",LOGIC_ERROR,78,5,0
+68,T69,1,680043,"If the animal is an Axolotl, then it can Regenerate limbs.","Rule: ""If the animal is an Axolotl, then it can Regenerate limbs.""
+Cards: ['Axolotl', 'Cannot regenerate', 'Frog', 'Regenerates limbs']
+
+Which cards must you turn over?
+Your answer:","['Axolotl', 'Cannot regenerate', 'Frog', 'Regenerates limbs']","Axolotl, Cannot regenerate, Frog, Regenerates limbs","['Axolotl', 'Cannot regenerate', 'Frog', 'Regenerates limbs']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,78,13,0
+68,T69,2,680044,"If the animal is an Axolotl, then it can Regenerate limbs.","Rule: ""If the animal is an Axolotl, then it can Regenerate limbs.""
+Cards: ['Cannot regenerate', 'Frog', 'Regenerates limbs', 'Axolotl']
+
+Which cards must you turn over?
+Your answer:","['Cannot regenerate', 'Frog', 'Regenerates limbs', 'Axolotl']","Cannot regenerate, Frog, Cannot regenerate","['Cannot regenerate', 'Frog', 'Cannot regenerate']","['not_P', 'not_Q']",LOGIC_ERROR,78,8,0
+68,T69,3,680045,"If the animal is an Axolotl, then it can Regenerate limbs.","Rule: ""If the animal is an Axolotl, then it can Regenerate limbs.""
+Cards: ['Frog', 'Axolotl', 'Regenerates limbs', 'Cannot regenerate']
+
+Which cards must you turn over?
+Your answer:","['Frog', 'Axolotl', 'Regenerates limbs', 'Cannot regenerate']","Frog, Cannot regenerate","['Frog', 'Cannot regenerate']","['not_P', 'not_Q']",LOGIC_ERROR,78,5,0
+68,T69,4,680046,"If the animal is an Axolotl, then it can Regenerate limbs.","Rule: ""If the animal is an Axolotl, then it can Regenerate limbs.""
+Cards: ['Cannot regenerate', 'Regenerates limbs', 'Frog', 'Axolotl']
+
+Which cards must you turn over?
+Your answer:","['Cannot regenerate', 'Regenerates limbs', 'Frog', 'Axolotl']","Cannot regenerate, Frog","['Cannot regenerate', 'Frog']","['not_P', 'not_Q']",LOGIC_ERROR,78,5,0
+69,T70,0,690042,"If the fruit is an Orange, then it contains Vitamin C.","Rule: ""If the fruit is an Orange, then it contains Vitamin C.""
+Cards: ['Apple', 'No vitamin C', 'Vitamin C', 'Orange']
+
+Which cards must you turn over?
+Your answer:","['Apple', 'No vitamin C', 'Vitamin C', 'Orange']","Apple, Orange","['Apple', 'Orange']","['P', 'not_P']",LOGIC_ERROR,72,4,0
+69,T70,1,690043,"If the fruit is an Orange, then it contains Vitamin C.","Rule: ""If the fruit is an Orange, then it contains Vitamin C.""
+Cards: ['Vitamin C', 'No vitamin C', 'Apple', 'Orange']
+
+Which cards must you turn over?
+Your answer:","['Vitamin C', 'No vitamin C', 'Apple', 'Orange']","Orange, Apple","['Orange', 'Apple']","['P', 'not_P']",LOGIC_ERROR,72,4,0
+69,T70,2,690044,"If the fruit is an Orange, then it contains Vitamin C.","Rule: ""If the fruit is an Orange, then it contains Vitamin C.""
+Cards: ['Orange', 'Apple', 'Vitamin C', 'No vitamin C']
+
+Which cards must you turn over?
+Your answer:","['Orange', 'Apple', 'Vitamin C', 'No vitamin C']","Orange, Vitamin C, Apple, No vitamin C","['Orange', 'Vitamin C', 'Apple', 'No vitamin C']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,72,11,0
+69,T70,3,690045,"If the fruit is an Orange, then it contains Vitamin C.","Rule: ""If the fruit is an Orange, then it contains Vitamin C.""
+Cards: ['Vitamin C', 'Apple', 'Orange', 'No vitamin C']
+
+Which cards must you turn over?
+Your answer:","['Vitamin C', 'Apple', 'Orange', 'No vitamin C']","Orange, Apple, No vitamin C","['Orange', 'Apple', 'No vitamin C']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,72,8,0
+69,T70,4,690046,"If the fruit is an Orange, then it contains Vitamin C.","Rule: ""If the fruit is an Orange, then it contains Vitamin C.""
+Cards: ['No vitamin C', 'Orange', 'Vitamin C', 'Apple']
+
+Which cards must you turn over?
+Your answer:","['No vitamin C', 'Orange', 'Vitamin C', 'Apple']","Orange, Vitamin C","['Orange', 'Vitamin C']","['P', 'Q']",MATCHING_BIAS,72,5,0
+70,T71,0,700042,"If the material is Glass, then it is Transparent.","Rule: ""If the material is Glass, then it is Transparent.""
+Cards: ['Wood', 'Opaque', 'Glass', 'Transparent']
+
+Which cards must you turn over?
+Your answer:","['Wood', 'Opaque', 'Glass', 'Transparent']","Wood, Opaque","['Wood', 'Opaque']","['not_P', 'not_Q']",LOGIC_ERROR,68,5,0
+70,T71,1,700043,"If the material is Glass, then it is Transparent.","Rule: ""If the material is Glass, then it is Transparent.""
+Cards: ['Glass', 'Opaque', 'Wood', 'Transparent']
+
+Which cards must you turn over?
+Your answer:","['Glass', 'Opaque', 'Wood', 'Transparent']","Opaque, Wood","['Opaque', 'Wood']","['not_P', 'not_Q']",LOGIC_ERROR,68,5,0
+70,T71,2,700044,"If the material is Glass, then it is Transparent.","Rule: ""If the material is Glass, then it is Transparent.""
+Cards: ['Opaque', 'Transparent', 'Wood', 'Glass']
+
+Which cards must you turn over?
+Your answer:","['Opaque', 'Transparent', 'Wood', 'Glass']","Opaque, Wood","['Opaque', 'Wood']","['not_P', 'not_Q']",LOGIC_ERROR,68,5,0
+70,T71,3,700045,"If the material is Glass, then it is Transparent.","Rule: ""If the material is Glass, then it is Transparent.""
+Cards: ['Glass', 'Wood', 'Opaque', 'Transparent']
+
+Which cards must you turn over?
+Your answer:","['Glass', 'Wood', 'Opaque', 'Transparent']","Wood, Opaque","['Wood', 'Opaque']","['not_P', 'not_Q']",LOGIC_ERROR,68,5,0
+70,T71,4,700046,"If the material is Glass, then it is Transparent.","Rule: ""If the material is Glass, then it is Transparent.""
+Cards: ['Transparent', 'Opaque', 'Glass', 'Wood']
+
+Which cards must you turn over?
+Your answer:","['Transparent', 'Opaque', 'Glass', 'Wood']","Opaque, Wood","['Opaque', 'Wood']","['not_P', 'not_Q']",LOGIC_ERROR,68,5,0
+71,T72,0,710042,"If the animal is a Cow, then it is a Herbivore.","Rule: ""If the animal is a Cow, then it is a Herbivore.""
+Cards: ['Carnivore', 'Tiger', 'Herbivore', 'Cow']
+
+Which cards must you turn over?
+Your answer:","['Carnivore', 'Tiger', 'Herbivore', 'Cow']","Carnivore, Tiger","['Carnivore', 'Tiger']","['not_P', 'not_Q']",LOGIC_ERROR,72,5,0
+71,T72,1,710043,"If the animal is a Cow, then it is a Herbivore.","Rule: ""If the animal is a Cow, then it is a Herbivore.""
+Cards: ['Carnivore', 'Cow', 'Herbivore', 'Tiger']
+
+Which cards must you turn over?
+Your answer:","['Carnivore', 'Cow', 'Herbivore', 'Tiger']","Carnivore, Tiger","['Carnivore', 'Tiger']","['not_P', 'not_Q']",LOGIC_ERROR,72,5,0
+71,T72,2,710044,"If the animal is a Cow, then it is a Herbivore.","Rule: ""If the animal is a Cow, then it is a Herbivore.""
+Cards: ['Herbivore', 'Cow', 'Tiger', 'Carnivore']
+
+Which cards must you turn over?
+Your answer:","['Herbivore', 'Cow', 'Tiger', 'Carnivore']","Cow, Tiger, Carnivore","['Cow', 'Tiger', 'Carnivore']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,72,7,0
+71,T72,3,710045,"If the animal is a Cow, then it is a Herbivore.","Rule: ""If the animal is a Cow, then it is a Herbivore.""
+Cards: ['Cow', 'Carnivore', 'Herbivore', 'Tiger']
+
+Which cards must you turn over?
+Your answer:","['Cow', 'Carnivore', 'Herbivore', 'Tiger']","Cow, Carnivore, Tiger","['Cow', 'Carnivore', 'Tiger']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,72,7,0
+71,T72,4,710046,"If the animal is a Cow, then it is a Herbivore.","Rule: ""If the animal is a Cow, then it is a Herbivore.""
+Cards: ['Cow', 'Herbivore', 'Carnivore', 'Tiger']
+
+Which cards must you turn over?
+Your answer:","['Cow', 'Herbivore', 'Carnivore', 'Tiger']","Cow, Herbivore, Carnivore, Tiger","['Cow', 'Herbivore', 'Carnivore', 'Tiger']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,72,10,0
+72,T73,0,720042,"If the planet is Neptune, then it has a Blue color.","Rule: ""If the planet is Neptune, then it has a Blue color.""
+Cards: ['Red', 'Mars', 'Neptune', 'Blue']
+
+Which cards must you turn over?
+Your answer:","['Red', 'Mars', 'Neptune', 'Blue']","Neptune, Blue","['Neptune', 'Blue']","['P', 'Q']",MATCHING_BIAS,71,6,0
+72,T73,1,720043,"If the planet is Neptune, then it has a Blue color.","Rule: ""If the planet is Neptune, then it has a Blue color.""
+Cards: ['Mars', 'Neptune', 'Blue', 'Red']
+
+Which cards must you turn over?
+Your answer:","['Mars', 'Neptune', 'Blue', 'Red']","Neptune, Blue","['Neptune', 'Blue']","['P', 'Q']",MATCHING_BIAS,71,6,0
+72,T73,2,720044,"If the planet is Neptune, then it has a Blue color.","Rule: ""If the planet is Neptune, then it has a Blue color.""
+Cards: ['Blue', 'Neptune', 'Mars', 'Red']
+
+Which cards must you turn over?
+Your answer:","['Blue', 'Neptune', 'Mars', 'Red']","Neptune, Mars, Red","['Neptune', 'Mars', 'Red']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,71,8,0
+72,T73,3,720045,"If the planet is Neptune, then it has a Blue color.","Rule: ""If the planet is Neptune, then it has a Blue color.""
+Cards: ['Neptune', 'Blue', 'Mars', 'Red']
+
+Which cards must you turn over?
+Your answer:","['Neptune', 'Blue', 'Mars', 'Red']","Neptune, Blue, Mars, Red","['Neptune', 'Blue', 'Mars', 'Red']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,71,10,0
+72,T73,4,720046,"If the planet is Neptune, then it has a Blue color.","Rule: ""If the planet is Neptune, then it has a Blue color.""
+Cards: ['Blue', 'Red', 'Mars', 'Neptune']
+
+Which cards must you turn over?
+Your answer:","['Blue', 'Red', 'Mars', 'Neptune']","Neptune, Blue","['Neptune', 'Blue']","['P', 'Q']",MATCHING_BIAS,71,6,0
+73,T74,0,730042,"If the muscle is the Bicep, then it is in the Arm.","Rule: ""If the muscle is the Bicep, then it is in the Arm.""
+Cards: ['Bicep', 'Leg', 'Quadricep', 'Arm']
+
+Which cards must you turn over?
+Your answer:","['Bicep', 'Leg', 'Quadricep', 'Arm']","Bicep, Leg, Quadricep","['Bicep', 'Leg', 'Quadricep']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,76,10,0
+73,T74,1,730043,"If the muscle is the Bicep, then it is in the Arm.","Rule: ""If the muscle is the Bicep, then it is in the Arm.""
+Cards: ['Leg', 'Arm', 'Bicep', 'Quadricep']
+
+Which cards must you turn over?
+Your answer:","['Leg', 'Arm', 'Bicep', 'Quadricep']","Bicep, Arm","['Bicep', 'Arm']","['P', 'Q']",MATCHING_BIAS,76,6,0
+73,T74,2,730044,"If the muscle is the Bicep, then it is in the Arm.","Rule: ""If the muscle is the Bicep, then it is in the Arm.""
+Cards: ['Arm', 'Bicep', 'Leg', 'Quadricep']
+
+Which cards must you turn over?
+Your answer:","['Arm', 'Bicep', 'Leg', 'Quadricep']","Arm, Bicep","['Arm', 'Bicep']","['P', 'Q']",MATCHING_BIAS,76,6,0
+73,T74,3,730045,"If the muscle is the Bicep, then it is in the Arm.","Rule: ""If the muscle is the Bicep, then it is in the Arm.""
+Cards: ['Leg', 'Bicep', 'Arm', 'Quadricep']
+
+Which cards must you turn over?
+Your answer:","['Leg', 'Bicep', 'Arm', 'Quadricep']","Bicep, Arm","['Bicep', 'Arm']","['P', 'Q']",MATCHING_BIAS,76,6,0
+73,T74,4,730046,"If the muscle is the Bicep, then it is in the Arm.","Rule: ""If the muscle is the Bicep, then it is in the Arm.""
+Cards: ['Bicep', 'Quadricep', 'Leg', 'Arm']
+
+Which cards must you turn over?
+Your answer:","['Bicep', 'Quadricep', 'Leg', 'Arm']","Bicep, Quadricep, Leg, Arm","['Bicep', 'Quadricep', 'Leg', 'Arm']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,76,12,0
+74,T75,0,740042,"If the currency is Euro, then it is used in Europe.","Rule: ""If the currency is Euro, then it is used in Europe.""
+Cards: ['Europe', 'Dollar', 'Euro', 'America']
+
+Which cards must you turn over?
+Your answer:","['Europe', 'Dollar', 'Euro', 'America']","Dollar, America
+","['Dollar', 'America']","['not_P', 'not_Q']",LOGIC_ERROR,69,5,0
+74,T75,1,740043,"If the currency is Euro, then it is used in Europe.","Rule: ""If the currency is Euro, then it is used in Europe.""
+Cards: ['Dollar', 'America', 'Euro', 'Europe']
+
+Which cards must you turn over?
+Your answer:","['Dollar', 'America', 'Euro', 'Europe']","Euro, Europe","['Euro', 'Europe']","['P', 'Q']",MATCHING_BIAS,69,4,0
+74,T75,2,740044,"If the currency is Euro, then it is used in Europe.","Rule: ""If the currency is Euro, then it is used in Europe.""
+Cards: ['Dollar', 'Europe', 'Euro', 'America']
+
+Which cards must you turn over?
+Your answer:","['Dollar', 'Europe', 'Euro', 'America']","Dollar, America
+","['Dollar', 'America']","['not_P', 'not_Q']",LOGIC_ERROR,69,5,0
+74,T75,3,740045,"If the currency is Euro, then it is used in Europe.","Rule: ""If the currency is Euro, then it is used in Europe.""
+Cards: ['Euro', 'America', 'Europe', 'Dollar']
+
+Which cards must you turn over?
+Your answer:","['Euro', 'America', 'Europe', 'Dollar']","Euro, America, Europe","['Euro', 'America', 'Europe']","['P', 'Q', 'not_Q']",OVER_SELECTION,69,6,0
+74,T75,4,740046,"If the currency is Euro, then it is used in Europe.","Rule: ""If the currency is Euro, then it is used in Europe.""
+Cards: ['Europe', 'Euro', 'America', 'Dollar']
+
+Which cards must you turn over?
+Your answer:","['Europe', 'Euro', 'America', 'Dollar']","Europe, Euro, America, Dollar","['Europe', 'Euro', 'America', 'Dollar']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,69,8,0
+75,T76,0,750042,"If the animal is a Tortoise, then it has a Shell.","Rule: ""If the animal is a Tortoise, then it has a Shell.""
+Cards: ['Tortoise', 'No shell', 'Crocodile', 'Shell']
+
+Which cards must you turn over?
+Your answer:","['Tortoise', 'No shell', 'Crocodile', 'Shell']","No shell, Crocodile","['No shell', 'Crocodile']","['not_P', 'not_Q']",LOGIC_ERROR,73,5,0
+75,T76,1,750043,"If the animal is a Tortoise, then it has a Shell.","Rule: ""If the animal is a Tortoise, then it has a Shell.""
+Cards: ['No shell', 'Crocodile', 'Tortoise', 'Shell']
+
+Which cards must you turn over?
+Your answer:","['No shell', 'Crocodile', 'Tortoise', 'Shell']","No shell, Crocodile","['No shell', 'Crocodile']","['not_P', 'not_Q']",LOGIC_ERROR,73,5,0
+75,T76,2,750044,"If the animal is a Tortoise, then it has a Shell.","Rule: ""If the animal is a Tortoise, then it has a Shell.""
+Cards: ['Crocodile', 'No shell', 'Tortoise', 'Shell']
+
+Which cards must you turn over?
+Your answer:","['Crocodile', 'No shell', 'Tortoise', 'Shell']","Crocodile, No shell","['Crocodile', 'No shell']","['not_P', 'not_Q']",LOGIC_ERROR,73,6,0
+75,T76,3,750045,"If the animal is a Tortoise, then it has a Shell.","Rule: ""If the animal is a Tortoise, then it has a Shell.""
+Cards: ['Tortoise', 'Crocodile', 'No shell', 'Shell']
+
+Which cards must you turn over?
+Your answer:","['Tortoise', 'Crocodile', 'No shell', 'Shell']","Crocodile, No shell","['Crocodile', 'No shell']","['not_P', 'not_Q']",LOGIC_ERROR,73,6,0
+75,T76,4,750046,"If the animal is a Tortoise, then it has a Shell.","Rule: ""If the animal is a Tortoise, then it has a Shell.""
+Cards: ['Shell', 'No shell', 'Tortoise', 'Crocodile']
+
+Which cards must you turn over?
+Your answer:","['Shell', 'No shell', 'Tortoise', 'Crocodile']","Tortoise, Crocodile","['Tortoise', 'Crocodile']","['P', 'not_P']",LOGIC_ERROR,73,5,0
+76,T77,0,760042,"If the gas is CO2, then plants use it for Photosynthesis.","Rule: ""If the gas is CO2, then plants use it for Photosynthesis.""
+Cards: ['CO2', 'O2', 'Not used', 'Used in photosynthesis']
+
+Which cards must you turn over?
+Your answer:","['CO2', 'O2', 'Not used', 'Used in photosynthesis']","CO2, Not used, Used in photosynthesis","['CO2', 'Not used', 'Used in photosynthesis']","['P', 'Q', 'not_Q']",OVER_SELECTION,76,10,0
+76,T77,1,760043,"If the gas is CO2, then plants use it for Photosynthesis.","Rule: ""If the gas is CO2, then plants use it for Photosynthesis.""
+Cards: ['Not used', 'CO2', 'O2', 'Used in photosynthesis']
+
+Which cards must you turn over?
+Your answer:","['Not used', 'CO2', 'O2', 'Used in photosynthesis']","Not used, O2","['Not used', 'O2']","['not_P', 'not_Q']",LOGIC_ERROR,76,6,0
+76,T77,2,760044,"If the gas is CO2, then plants use it for Photosynthesis.","Rule: ""If the gas is CO2, then plants use it for Photosynthesis.""
+Cards: ['Not used', 'CO2', 'Used in photosynthesis', 'O2']
+
+Which cards must you turn over?
+Your answer:","['Not used', 'CO2', 'Used in photosynthesis', 'O2']","Not used, O2","['Not used', 'O2']","['not_P', 'not_Q']",LOGIC_ERROR,76,6,0
+76,T77,3,760045,"If the gas is CO2, then plants use it for Photosynthesis.","Rule: ""If the gas is CO2, then plants use it for Photosynthesis.""
+Cards: ['Used in photosynthesis', 'CO2', 'Not used', 'O2']
+
+Which cards must you turn over?
+Your answer:","['Used in photosynthesis', 'CO2', 'Not used', 'O2']","CO2, Not used","['CO2', 'Not used']","['P', 'not_Q']",CORRECT,76,6,0
+76,T77,4,760046,"If the gas is CO2, then plants use it for Photosynthesis.","Rule: ""If the gas is CO2, then plants use it for Photosynthesis.""
+Cards: ['O2', 'Not used', 'CO2', 'Used in photosynthesis']
+
+Which cards must you turn over?
+Your answer:","['O2', 'Not used', 'CO2', 'Used in photosynthesis']","O2, Not used","['O2', 'Not used']","['not_P', 'not_Q']",LOGIC_ERROR,76,6,0
+77,T78,0,770042,"If the animal is a Salmon, then it swims Upstream to spawn.","Rule: ""If the animal is a Salmon, then it swims Upstream to spawn.""
+Cards: ['Trout', 'Swims downstream', 'Swims upstream', 'Salmon']
+
+Which cards must you turn over?
+Your answer:","['Trout', 'Swims downstream', 'Swims upstream', 'Salmon']","Salmon, Swims upstream","['Salmon', 'Swims upstream']","['P', 'Q']",MATCHING_BIAS,76,6,0
+77,T78,1,770043,"If the animal is a Salmon, then it swims Upstream to spawn.","Rule: ""If the animal is a Salmon, then it swims Upstream to spawn.""
+Cards: ['Salmon', 'Trout', 'Swims downstream', 'Swims upstream']
+
+Which cards must you turn over?
+Your answer:","['Salmon', 'Trout', 'Swims downstream', 'Swims upstream']","Salmon, Swims upstream","['Salmon', 'Swims upstream']","['P', 'Q']",MATCHING_BIAS,76,6,0
+77,T78,2,770044,"If the animal is a Salmon, then it swims Upstream to spawn.","Rule: ""If the animal is a Salmon, then it swims Upstream to spawn.""
+Cards: ['Swims downstream', 'Swims upstream', 'Trout', 'Salmon']
+
+Which cards must you turn over?
+Your answer:","['Swims downstream', 'Swims upstream', 'Trout', 'Salmon']","Salmon, Swims upstream","['Salmon', 'Swims upstream']","['P', 'Q']",MATCHING_BIAS,76,6,0
+77,T78,3,770045,"If the animal is a Salmon, then it swims Upstream to spawn.","Rule: ""If the animal is a Salmon, then it swims Upstream to spawn.""
+Cards: ['Trout', 'Swims upstream', 'Salmon', 'Swims downstream']
+
+Which cards must you turn over?
+Your answer:","['Trout', 'Swims upstream', 'Salmon', 'Swims downstream']","Trout, Swims downstream","['Trout', 'Swims downstream']","['not_P', 'not_Q']",LOGIC_ERROR,76,7,0
+77,T78,4,770046,"If the animal is a Salmon, then it swims Upstream to spawn.","Rule: ""If the animal is a Salmon, then it swims Upstream to spawn.""
+Cards: ['Trout', 'Swims downstream', 'Salmon', 'Swims upstream']
+
+Which cards must you turn over?
+Your answer:","['Trout', 'Swims downstream', 'Salmon', 'Swims upstream']","Salmon, Swims upstream","['Salmon', 'Swims upstream']","['P', 'Q']",MATCHING_BIAS,76,6,0
+78,T79,0,780042,"If the continent is Antarctica, then it is covered in Ice.","Rule: ""If the continent is Antarctica, then it is covered in Ice.""
+Cards: ['No ice', 'Antarctica', 'Ice', 'Africa']
+
+Which cards must you turn over?
+Your answer:","['No ice', 'Antarctica', 'Ice', 'Africa']","Antarctica, Africa","['Antarctica', 'Africa']","['P', 'not_P']",LOGIC_ERROR,71,5,0
+78,T79,1,780043,"If the continent is Antarctica, then it is covered in Ice.","Rule: ""If the continent is Antarctica, then it is covered in Ice.""
+Cards: ['No ice', 'Ice', 'Antarctica', 'Africa']
+
+Which cards must you turn over?
+Your answer:","['No ice', 'Ice', 'Antarctica', 'Africa']","Antarctica, Africa","['Antarctica', 'Africa']","['P', 'not_P']",LOGIC_ERROR,71,5,0
+78,T79,2,780044,"If the continent is Antarctica, then it is covered in Ice.","Rule: ""If the continent is Antarctica, then it is covered in Ice.""
+Cards: ['Antarctica', 'Africa', 'Ice', 'No ice']
+
+Which cards must you turn over?
+Your answer:","['Antarctica', 'Africa', 'Ice', 'No ice']","Antarctica, Africa, Ice, No ice","['Antarctica', 'Africa', 'Ice', 'No ice']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,71,10,0
+78,T79,3,780045,"If the continent is Antarctica, then it is covered in Ice.","Rule: ""If the continent is Antarctica, then it is covered in Ice.""
+Cards: ['Ice', 'Antarctica', 'Africa', 'No ice']
+
+Which cards must you turn over?
+Your answer:","['Ice', 'Antarctica', 'Africa', 'No ice']","Antarctica, Africa","['Antarctica', 'Africa']","['P', 'not_P']",LOGIC_ERROR,71,5,0
+78,T79,4,780046,"If the continent is Antarctica, then it is covered in Ice.","Rule: ""If the continent is Antarctica, then it is covered in Ice.""
+Cards: ['Africa', 'Ice', 'Antarctica', 'No ice']
+
+Which cards must you turn over?
+Your answer:","['Africa', 'Ice', 'Antarctica', 'No ice']","Antarctica, Ice, Africa, No ice","['Antarctica', 'Ice', 'Africa', 'No ice']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,71,10,0
+79,T80,0,790042,"If the food is Honey, then it never Expires.","Rule: ""If the food is Honey, then it never Expires.""
+Cards: ['Honey', 'Expires', 'Milk', 'Never expires']
+
+Which cards must you turn over?
+Your answer:","['Honey', 'Expires', 'Milk', 'Never expires']","Expires, Milk","['Expires', 'Milk']","['not_P', 'not_Q']",LOGIC_ERROR,68,4,0
+79,T80,1,790043,"If the food is Honey, then it never Expires.","Rule: ""If the food is Honey, then it never Expires.""
+Cards: ['Milk', 'Never expires', 'Honey', 'Expires']
+
+Which cards must you turn over?
+Your answer:","['Milk', 'Never expires', 'Honey', 'Expires']","Milk, Expires, Honey","['Milk', 'Expires', 'Honey']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,68,6,0
+79,T80,2,790044,"If the food is Honey, then it never Expires.","Rule: ""If the food is Honey, then it never Expires.""
+Cards: ['Honey', 'Milk', 'Expires', 'Never expires']
+
+Which cards must you turn over?
+Your answer:","['Honey', 'Milk', 'Expires', 'Never expires']","Honey, Expires, Never expires","['Honey', 'Expires', 'Never expires']","['P', 'Q', 'not_Q']",OVER_SELECTION,68,7,0
+79,T80,3,790045,"If the food is Honey, then it never Expires.","Rule: ""If the food is Honey, then it never Expires.""
+Cards: ['Milk', 'Honey', 'Expires', 'Never expires']
+
+Which cards must you turn over?
+Your answer:","['Milk', 'Honey', 'Expires', 'Never expires']","Milk, Expires, Never expires","['Milk', 'Expires', 'Never expires']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,68,7,0
+79,T80,4,790046,"If the food is Honey, then it never Expires.","Rule: ""If the food is Honey, then it never Expires.""
+Cards: ['Never expires', 'Expires', 'Milk', 'Honey']
+
+Which cards must you turn over?
+Your answer:","['Never expires', 'Expires', 'Milk', 'Honey']","Milk, Expires","['Milk', 'Expires']","['not_P', 'not_Q']",LOGIC_ERROR,68,4,0
+80,T81,0,800042,"If the animal is a Platypus, then it lays Eggs.","Rule: ""If the animal is a Platypus, then it lays Eggs.""
+Cards: ['Platypus', 'Dog', 'Lays eggs', 'Does not lay eggs']
+
+Which cards must you turn over?
+Your answer:","['Platypus', 'Dog', 'Lays eggs', 'Does not lay eggs']","Dog, Does not lay eggs","['Dog', 'Does not lay eggs']","['not_P', 'not_Q']",LOGIC_ERROR,78,7,0
+80,T81,1,800043,"If the animal is a Platypus, then it lays Eggs.","Rule: ""If the animal is a Platypus, then it lays Eggs.""
+Cards: ['Dog', 'Does not lay eggs', 'Platypus', 'Lays eggs']
+
+Which cards must you turn over?
+Your answer:","['Dog', 'Does not lay eggs', 'Platypus', 'Lays eggs']","Dog, Does not lay eggs","['Dog', 'Does not lay eggs']","['not_P', 'not_Q']",LOGIC_ERROR,78,7,0
+80,T81,2,800044,"If the animal is a Platypus, then it lays Eggs.","Rule: ""If the animal is a Platypus, then it lays Eggs.""
+Cards: ['Lays eggs', 'Platypus', 'Does not lay eggs', 'Dog']
+
+Which cards must you turn over?
+Your answer:","['Lays eggs', 'Platypus', 'Does not lay eggs', 'Dog']","Platypus, Dog","['Platypus', 'Dog']","['P', 'not_P']",LOGIC_ERROR,78,7,0
+80,T81,3,800045,"If the animal is a Platypus, then it lays Eggs.","Rule: ""If the animal is a Platypus, then it lays Eggs.""
+Cards: ['Does not lay eggs', 'Dog', 'Lays eggs', 'Platypus']
+
+Which cards must you turn over?
+Your answer:","['Does not lay eggs', 'Dog', 'Lays eggs', 'Platypus']","Dog, Does not lay eggs","['Dog', 'Does not lay eggs']","['not_P', 'not_Q']",LOGIC_ERROR,78,7,0
+80,T81,4,800046,"If the animal is a Platypus, then it lays Eggs.","Rule: ""If the animal is a Platypus, then it lays Eggs.""
+Cards: ['Does not lay eggs', 'Lays eggs', 'Dog', 'Platypus']
+
+Which cards must you turn over?
+Your answer:","['Does not lay eggs', 'Lays eggs', 'Dog', 'Platypus']","Does not lay eggs, Dog","['Does not lay eggs', 'Dog']","['not_P', 'not_Q']",LOGIC_ERROR,78,7,0
+81,T82,0,810042,"If the element is Sodium, then it reacts violently with Water.","Rule: ""If the element is Sodium, then it reacts violently with Water.""
+Cards: ['Reacts with water', 'Gold', 'Does not react', 'Sodium']
+
+Which cards must you turn over?
+Your answer:","['Reacts with water', 'Gold', 'Does not react', 'Sodium']","Sodium, Reacts with water","['Sodium', 'Reacts with water']","['P', 'Q']",MATCHING_BIAS,74,7,0
+81,T82,1,810043,"If the element is Sodium, then it reacts violently with Water.","Rule: ""If the element is Sodium, then it reacts violently with Water.""
+Cards: ['Does not react', 'Sodium', 'Gold', 'Reacts with water']
+
+Which cards must you turn over?
+Your answer:","['Does not react', 'Sodium', 'Gold', 'Reacts with water']","Sodium, Water","['Sodium', 'Water']",['P'],CONFIRMATION_BIAS,74,4,0
+81,T82,2,810044,"If the element is Sodium, then it reacts violently with Water.","Rule: ""If the element is Sodium, then it reacts violently with Water.""
+Cards: ['Sodium', 'Does not react', 'Gold', 'Reacts with water']
+
+Which cards must you turn over?
+Your answer:","['Sodium', 'Does not react', 'Gold', 'Reacts with water']","Sodium, Water","['Sodium', 'Water']",['P'],CONFIRMATION_BIAS,74,4,0
+81,T82,3,810045,"If the element is Sodium, then it reacts violently with Water.","Rule: ""If the element is Sodium, then it reacts violently with Water.""
+Cards: ['Reacts with water', 'Does not react', 'Sodium', 'Gold']
+
+Which cards must you turn over?
+Your answer:","['Reacts with water', 'Does not react', 'Sodium', 'Gold']","Sodium, Reacts with water","['Sodium', 'Reacts with water']","['P', 'Q']",MATCHING_BIAS,74,7,0
+81,T82,4,810046,"If the element is Sodium, then it reacts violently with Water.","Rule: ""If the element is Sodium, then it reacts violently with Water.""
+Cards: ['Gold', 'Sodium', 'Reacts with water', 'Does not react']
+
+Which cards must you turn over?
+Your answer:","['Gold', 'Sodium', 'Reacts with water', 'Does not react']","Sodium, Reacts with water","['Sodium', 'Reacts with water']","['P', 'Q']",MATCHING_BIAS,74,7,0
+82,T83,0,820042,"If the bird is a Pelican, then it has a large Bill pouch.","Rule: ""If the bird is a Pelican, then it has a large Bill pouch.""
+Cards: ['Bill pouch', 'Crow', 'Pelican', 'No pouch']
+
+Which cards must you turn over?
+Your answer:","['Bill pouch', 'Crow', 'Pelican', 'No pouch']","Pelican, Crow","['Pelican', 'Crow']","['P', 'not_P']",LOGIC_ERROR,74,5,0
+82,T83,1,820043,"If the bird is a Pelican, then it has a large Bill pouch.","Rule: ""If the bird is a Pelican, then it has a large Bill pouch.""
+Cards: ['No pouch', 'Pelican', 'Crow', 'Bill pouch']
+
+Which cards must you turn over?
+Your answer:","['No pouch', 'Pelican', 'Crow', 'Bill pouch']","No pouch, Crow","['No pouch', 'Crow']","['not_P', 'not_Q']",LOGIC_ERROR,74,5,0
+82,T83,2,820044,"If the bird is a Pelican, then it has a large Bill pouch.","Rule: ""If the bird is a Pelican, then it has a large Bill pouch.""
+Cards: ['Crow', 'No pouch', 'Pelican', 'Bill pouch']
+
+Which cards must you turn over?
+Your answer:","['Crow', 'No pouch', 'Pelican', 'Bill pouch']","Crow, No pouch","['Crow', 'No pouch']","['not_P', 'not_Q']",LOGIC_ERROR,74,5,0
+82,T83,3,820045,"If the bird is a Pelican, then it has a large Bill pouch.","Rule: ""If the bird is a Pelican, then it has a large Bill pouch.""
+Cards: ['Bill pouch', 'Crow', 'No pouch', 'Pelican']
+
+Which cards must you turn over?
+Your answer:","['Bill pouch', 'Crow', 'No pouch', 'Pelican']","Pelican, Crow","['Pelican', 'Crow']","['P', 'not_P']",LOGIC_ERROR,74,5,0
+82,T83,4,820046,"If the bird is a Pelican, then it has a large Bill pouch.","Rule: ""If the bird is a Pelican, then it has a large Bill pouch.""
+Cards: ['Crow', 'Bill pouch', 'No pouch', 'Pelican']
+
+Which cards must you turn over?
+Your answer:","['Crow', 'Bill pouch', 'No pouch', 'Pelican']","Crow, No pouch","['Crow', 'No pouch']","['not_P', 'not_Q']",LOGIC_ERROR,74,5,0
+83,T84,0,830042,"If the animal is a Kangaroo, then it carries young in a Pouch.","Rule: ""If the animal is a Kangaroo, then it carries young in a Pouch.""
+Cards: ['Kangaroo', 'Pouch', 'No pouch', 'Rabbit']
+
+Which cards must you turn over?
+Your answer:","['Kangaroo', 'Pouch', 'No pouch', 'Rabbit']","Kangaroo, Rabbit","['Kangaroo', 'Rabbit']","['P', 'not_P']",LOGIC_ERROR,75,5,0
+83,T84,1,830043,"If the animal is a Kangaroo, then it carries young in a Pouch.","Rule: ""If the animal is a Kangaroo, then it carries young in a Pouch.""
+Cards: ['Pouch', 'No pouch', 'Rabbit', 'Kangaroo']
+
+Which cards must you turn over?
+Your answer:","['Pouch', 'No pouch', 'Rabbit', 'Kangaroo']","Rabbit, No pouch","['Rabbit', 'No pouch']","['not_P', 'not_Q']",LOGIC_ERROR,75,5,0
+83,T84,2,830044,"If the animal is a Kangaroo, then it carries young in a Pouch.","Rule: ""If the animal is a Kangaroo, then it carries young in a Pouch.""
+Cards: ['Rabbit', 'Pouch', 'Kangaroo', 'No pouch']
+
+Which cards must you turn over?
+Your answer:","['Rabbit', 'Pouch', 'Kangaroo', 'No pouch']","Rabbit, No pouch","['Rabbit', 'No pouch']","['not_P', 'not_Q']",LOGIC_ERROR,75,5,0
+83,T84,3,830045,"If the animal is a Kangaroo, then it carries young in a Pouch.","Rule: ""If the animal is a Kangaroo, then it carries young in a Pouch.""
+Cards: ['Pouch', 'No pouch', 'Kangaroo', 'Rabbit']
+
+Which cards must you turn over?
+Your answer:","['Pouch', 'No pouch', 'Kangaroo', 'Rabbit']","Kangaroo, Rabbit","['Kangaroo', 'Rabbit']","['P', 'not_P']",LOGIC_ERROR,75,5,0
+83,T84,4,830046,"If the animal is a Kangaroo, then it carries young in a Pouch.","Rule: ""If the animal is a Kangaroo, then it carries young in a Pouch.""
+Cards: ['Pouch', 'Rabbit', 'Kangaroo', 'No pouch']
+
+Which cards must you turn over?
+Your answer:","['Pouch', 'Rabbit', 'Kangaroo', 'No pouch']","Rabbit, No pouch","['Rabbit', 'No pouch']","['not_P', 'not_Q']",LOGIC_ERROR,75,5,0
+84,T85,0,840042,"If the planet is Mars, then it has Two moons.","Rule: ""If the planet is Mars, then it has Two moons.""
+Cards: ['Mars', 'Venus', 'Two moons', 'No moons']
+
+Which cards must you turn over?
+Your answer:","['Mars', 'Venus', 'Two moons', 'No moons']","Mars, Two moons","['Mars', 'Two moons']","['P', 'Q']",MATCHING_BIAS,70,5,0
+84,T85,1,840043,"If the planet is Mars, then it has Two moons.","Rule: ""If the planet is Mars, then it has Two moons.""
+Cards: ['Venus', 'Mars', 'Two moons', 'No moons']
+
+Which cards must you turn over?
+Your answer:","['Venus', 'Mars', 'Two moons', 'No moons']","Mars, Two moons","['Mars', 'Two moons']","['P', 'Q']",MATCHING_BIAS,70,5,0
+84,T85,2,840044,"If the planet is Mars, then it has Two moons.","Rule: ""If the planet is Mars, then it has Two moons.""
+Cards: ['No moons', 'Venus', 'Mars', 'Two moons']
+
+Which cards must you turn over?
+Your answer:","['No moons', 'Venus', 'Mars', 'Two moons']","Mars, Two moons","['Mars', 'Two moons']","['P', 'Q']",MATCHING_BIAS,70,5,0
+84,T85,3,840045,"If the planet is Mars, then it has Two moons.","Rule: ""If the planet is Mars, then it has Two moons.""
+Cards: ['Two moons', 'No moons', 'Venus', 'Mars']
+
+Which cards must you turn over?
+Your answer:","['Two moons', 'No moons', 'Venus', 'Mars']","Mars, Two moons","['Mars', 'Two moons']","['P', 'Q']",MATCHING_BIAS,70,5,0
+84,T85,4,840046,"If the planet is Mars, then it has Two moons.","Rule: ""If the planet is Mars, then it has Two moons.""
+Cards: ['Venus', 'No moons', 'Two moons', 'Mars']
+
+Which cards must you turn over?
+Your answer:","['Venus', 'No moons', 'Two moons', 'Mars']","Mars, Two moons","['Mars', 'Two moons']","['P', 'Q']",MATCHING_BIAS,70,5,0
+85,T86,0,850042,"If the food is Vinegar, then it tastes Sour.","Rule: ""If the food is Vinegar, then it tastes Sour.""
+Cards: ['Vinegar', 'Sweet', 'Sour', 'Sugar']
+
+Which cards must you turn over?
+Your answer:","['Vinegar', 'Sweet', 'Sour', 'Sugar']","Vinegar, Sweet, Sugar","['Vinegar', 'Sweet', 'Sugar']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,68,7,0
+85,T86,1,850043,"If the food is Vinegar, then it tastes Sour.","Rule: ""If the food is Vinegar, then it tastes Sour.""
+Cards: ['Sour', 'Vinegar', 'Sweet', 'Sugar']
+
+Which cards must you turn over?
+Your answer:","['Sour', 'Vinegar', 'Sweet', 'Sugar']","Vinegar, Sour","['Vinegar', 'Sour']","['P', 'Q']",MATCHING_BIAS,68,5,0
+85,T86,2,850044,"If the food is Vinegar, then it tastes Sour.","Rule: ""If the food is Vinegar, then it tastes Sour.""
+Cards: ['Sweet', 'Sour', 'Sugar', 'Vinegar']
+
+Which cards must you turn over?
+Your answer:","['Sweet', 'Sour', 'Sugar', 'Vinegar']","Vinegar, Sweet","['Vinegar', 'Sweet']","['P', 'not_Q']",CORRECT,68,5,0
+85,T86,3,850045,"If the food is Vinegar, then it tastes Sour.","Rule: ""If the food is Vinegar, then it tastes Sour.""
+Cards: ['Sugar', 'Vinegar', 'Sweet', 'Sour']
+
+Which cards must you turn over?
+Your answer:","['Sugar', 'Vinegar', 'Sweet', 'Sour']","Vinegar, Sour","['Vinegar', 'Sour']","['P', 'Q']",MATCHING_BIAS,68,5,0
+85,T86,4,850046,"If the food is Vinegar, then it tastes Sour.","Rule: ""If the food is Vinegar, then it tastes Sour.""
+Cards: ['Sugar', 'Sour', 'Sweet', 'Vinegar']
+
+Which cards must you turn over?
+Your answer:","['Sugar', 'Sour', 'Sweet', 'Vinegar']","Vinegar, Sour","['Vinegar', 'Sour']","['P', 'Q']",MATCHING_BIAS,68,5,0
+86,T87,0,860042,"If the mineral is Diamond, then it is the Hardest natural substance.","Rule: ""If the mineral is Diamond, then it is the Hardest natural substance.""
+Cards: ['Diamond', 'Hardest', 'Not hardest', 'Quartz']
+
+Which cards must you turn over?
+Your answer:","['Diamond', 'Hardest', 'Not hardest', 'Quartz']","Diamond, Hardest, Not hardest","['Diamond', 'Hardest', 'Not hardest']","['P', 'Q', 'not_Q']",OVER_SELECTION,73,8,0
+86,T87,1,860043,"If the mineral is Diamond, then it is the Hardest natural substance.","Rule: ""If the mineral is Diamond, then it is the Hardest natural substance.""
+Cards: ['Not hardest', 'Hardest', 'Quartz', 'Diamond']
+
+Which cards must you turn over?
+Your answer:","['Not hardest', 'Hardest', 'Quartz', 'Diamond']","Diamond, Hardest","['Diamond', 'Hardest']","['P', 'Q']",MATCHING_BIAS,73,5,0
+86,T87,2,860044,"If the mineral is Diamond, then it is the Hardest natural substance.","Rule: ""If the mineral is Diamond, then it is the Hardest natural substance.""
+Cards: ['Diamond', 'Quartz', 'Not hardest', 'Hardest']
+
+Which cards must you turn over?
+Your answer:","['Diamond', 'Quartz', 'Not hardest', 'Hardest']","Diamond, Not hardest, Hardest","['Diamond', 'Not hardest', 'Hardest']","['P', 'Q', 'not_Q']",OVER_SELECTION,73,8,0
+86,T87,3,860045,"If the mineral is Diamond, then it is the Hardest natural substance.","Rule: ""If the mineral is Diamond, then it is the Hardest natural substance.""
+Cards: ['Diamond', 'Hardest', 'Quartz', 'Not hardest']
+
+Which cards must you turn over?
+Your answer:","['Diamond', 'Hardest', 'Quartz', 'Not hardest']","Diamond, Hardest, Quartz, Not hardest","['Diamond', 'Hardest', 'Quartz', 'Not hardest']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,73,10,0
+86,T87,4,860046,"If the mineral is Diamond, then it is the Hardest natural substance.","Rule: ""If the mineral is Diamond, then it is the Hardest natural substance.""
+Cards: ['Diamond', 'Not hardest', 'Hardest', 'Quartz']
+
+Which cards must you turn over?
+Your answer:","['Diamond', 'Not hardest', 'Hardest', 'Quartz']","Diamond, Not hardest, Hardest","['Diamond', 'Not hardest', 'Hardest']","['P', 'Q', 'not_Q']",OVER_SELECTION,73,8,0
+87,T88,0,870042,"If the animal is a Porcupine, then it has Quills.","Rule: ""If the animal is a Porcupine, then it has Quills.""
+Cards: ['No quills', 'Beaver', 'Porcupine', 'Quills']
+
+Which cards must you turn over?
+Your answer:","['No quills', 'Beaver', 'Porcupine', 'Quills']","Beaver, No quills","['Beaver', 'No quills']","['not_P', 'not_Q']",LOGIC_ERROR,75,7,0
+87,T88,1,870043,"If the animal is a Porcupine, then it has Quills.","Rule: ""If the animal is a Porcupine, then it has Quills.""
+Cards: ['No quills', 'Quills', 'Porcupine', 'Beaver']
+
+Which cards must you turn over?
+Your answer:","['No quills', 'Quills', 'Porcupine', 'Beaver']","No quills, Beaver","['No quills', 'Beaver']","['not_P', 'not_Q']",LOGIC_ERROR,75,6,0
+87,T88,2,870044,"If the animal is a Porcupine, then it has Quills.","Rule: ""If the animal is a Porcupine, then it has Quills.""
+Cards: ['Porcupine', 'Beaver', 'Quills', 'No quills']
+
+Which cards must you turn over?
+Your answer:","['Porcupine', 'Beaver', 'Quills', 'No quills']","Beaver, No quills","['Beaver', 'No quills']","['not_P', 'not_Q']",LOGIC_ERROR,75,7,0
+87,T88,3,870045,"If the animal is a Porcupine, then it has Quills.","Rule: ""If the animal is a Porcupine, then it has Quills.""
+Cards: ['Beaver', 'Porcupine', 'Quills', 'No quills']
+
+Which cards must you turn over?
+Your answer:","['Beaver', 'Porcupine', 'Quills', 'No quills']","Beaver, No quills","['Beaver', 'No quills']","['not_P', 'not_Q']",LOGIC_ERROR,75,7,0
+87,T88,4,870046,"If the animal is a Porcupine, then it has Quills.","Rule: ""If the animal is a Porcupine, then it has Quills.""
+Cards: ['Beaver', 'Quills', 'No quills', 'Porcupine']
+
+Which cards must you turn over?
+Your answer:","['Beaver', 'Quills', 'No quills', 'Porcupine']","Beaver, No quills","['Beaver', 'No quills']","['not_P', 'not_Q']",LOGIC_ERROR,75,7,0
+88,T89,0,880042,"If the continent is Australia, then it is also a Country.","Rule: ""If the continent is Australia, then it is also a Country.""
+Cards: ['Not a country', 'Also a country', 'Australia', 'Europe']
+
+Which cards must you turn over?
+Your answer:","['Not a country', 'Also a country', 'Australia', 'Europe']","Australia, Europe","['Australia', 'Europe']","['P', 'not_P']",LOGIC_ERROR,73,4,0
+88,T89,1,880043,"If the continent is Australia, then it is also a Country.","Rule: ""If the continent is Australia, then it is also a Country.""
+Cards: ['Europe', 'Also a country', 'Not a country', 'Australia']
+
+Which cards must you turn over?
+Your answer:","['Europe', 'Also a country', 'Not a country', 'Australia']","Europe, Not a country","['Europe', 'Not a country']","['not_P', 'not_Q']",LOGIC_ERROR,73,6,0
+88,T89,2,880044,"If the continent is Australia, then it is also a Country.","Rule: ""If the continent is Australia, then it is also a Country.""
+Cards: ['Australia', 'Not a country', 'Europe', 'Also a country']
+
+Which cards must you turn over?
+Your answer:","['Australia', 'Not a country', 'Europe', 'Also a country']","Not a country, Europe","['Not a country', 'Europe']","['not_P', 'not_Q']",LOGIC_ERROR,73,6,0
+88,T89,3,880045,"If the continent is Australia, then it is also a Country.","Rule: ""If the continent is Australia, then it is also a Country.""
+Cards: ['Not a country', 'Also a country', 'Europe', 'Australia']
+
+Which cards must you turn over?
+Your answer:","['Not a country', 'Also a country', 'Europe', 'Australia']","Europe, Not a country","['Europe', 'Not a country']","['not_P', 'not_Q']",LOGIC_ERROR,73,6,0
+88,T89,4,880046,"If the continent is Australia, then it is also a Country.","Rule: ""If the continent is Australia, then it is also a Country.""
+Cards: ['Not a country', 'Australia', 'Europe', 'Also a country']
+
+Which cards must you turn over?
+Your answer:","['Not a country', 'Australia', 'Europe', 'Also a country']","Not a country, Europe","['Not a country', 'Europe']","['not_P', 'not_Q']",LOGIC_ERROR,73,6,0
+89,T90,0,890042,"If the liquid is Water, then it boils at 100 Celsius.","Rule: ""If the liquid is Water, then it boils at 100 Celsius.""
+Cards: ['Alcohol', 'Water', '100 Celsius', '78 Celsius']
+
+Which cards must you turn over?
+Your answer:","['Alcohol', 'Water', '100 Celsius', '78 Celsius']","Alcohol, Water, 100 Celsius, 78 Celsius","['Alcohol', 'Water', '100 Celsius', '78 Celsius']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,77,15,0
+89,T90,1,890043,"If the liquid is Water, then it boils at 100 Celsius.","Rule: ""If the liquid is Water, then it boils at 100 Celsius.""
+Cards: ['100 Celsius', '78 Celsius', 'Alcohol', 'Water']
+
+Which cards must you turn over?
+Your answer:","['100 Celsius', '78 Celsius', 'Alcohol', 'Water']","Water, Alcohol","['Water', 'Alcohol']","['P', 'not_P']",LOGIC_ERROR,77,4,0
+89,T90,2,890044,"If the liquid is Water, then it boils at 100 Celsius.","Rule: ""If the liquid is Water, then it boils at 100 Celsius.""
+Cards: ['78 Celsius', '100 Celsius', 'Alcohol', 'Water']
+
+Which cards must you turn over?
+Your answer:","['78 Celsius', '100 Celsius', 'Alcohol', 'Water']","Alcohol, Water","['Alcohol', 'Water']","['P', 'not_P']",LOGIC_ERROR,77,4,0
+89,T90,3,890045,"If the liquid is Water, then it boils at 100 Celsius.","Rule: ""If the liquid is Water, then it boils at 100 Celsius.""
+Cards: ['Water', '78 Celsius', 'Alcohol', '100 Celsius']
+
+Which cards must you turn over?
+Your answer:","['Water', '78 Celsius', 'Alcohol', '100 Celsius']","Water, 78 Celsius, Alcohol, 100 Celsius","['Water', '78 Celsius', 'Alcohol', '100 Celsius']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,77,15,0
+89,T90,4,890046,"If the liquid is Water, then it boils at 100 Celsius.","Rule: ""If the liquid is Water, then it boils at 100 Celsius.""
+Cards: ['78 Celsius', '100 Celsius', 'Water', 'Alcohol']
+
+Which cards must you turn over?
+Your answer:","['78 Celsius', '100 Celsius', 'Water', 'Alcohol']","Water, 78 Celsius, 100 Celsius","['Water', '78 Celsius', '100 Celsius']","['P', 'Q', 'not_Q']",OVER_SELECTION,77,13,0
+90,T91,0,900042,"If the plant is a Venus flytrap, then it eats Insects.","Rule: ""If the plant is a Venus flytrap, then it eats Insects.""
+Cards: ['Eats insects', 'Fern', 'Does not eat insects', 'Venus flytrap']
+
+Which cards must you turn over?
+Your answer:","['Eats insects', 'Fern', 'Does not eat insects', 'Venus flytrap']","Eats insects, Fern, Does not eat insects","['Eats insects', 'Fern', 'Does not eat insects']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,77,11,0
+90,T91,1,900043,"If the plant is a Venus flytrap, then it eats Insects.","Rule: ""If the plant is a Venus flytrap, then it eats Insects.""
+Cards: ['Eats insects', 'Venus flytrap', 'Fern', 'Does not eat insects']
+
+Which cards must you turn over?
+Your answer:","['Eats insects', 'Venus flytrap', 'Fern', 'Does not eat insects']","Venus flytrap, Fern, Does not eat insects","['Venus flytrap', 'Fern', 'Does not eat insects']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,77,11,0
+90,T91,2,900044,"If the plant is a Venus flytrap, then it eats Insects.","Rule: ""If the plant is a Venus flytrap, then it eats Insects.""
+Cards: ['Does not eat insects', 'Venus flytrap', 'Fern', 'Eats insects']
+
+Which cards must you turn over?
+Your answer:","['Does not eat insects', 'Venus flytrap', 'Fern', 'Eats insects']","Does not eat insects, Fern","['Does not eat insects', 'Fern']","['not_P', 'not_Q']",LOGIC_ERROR,77,7,0
+90,T91,3,900045,"If the plant is a Venus flytrap, then it eats Insects.","Rule: ""If the plant is a Venus flytrap, then it eats Insects.""
+Cards: ['Eats insects', 'Does not eat insects', 'Fern', 'Venus flytrap']
+
+Which cards must you turn over?
+Your answer:","['Eats insects', 'Does not eat insects', 'Fern', 'Venus flytrap']","Venus flytrap, Eats insects, Does not eat insects","['Venus flytrap', 'Eats insects', 'Does not eat insects']","['P', 'Q', 'not_Q']",OVER_SELECTION,77,12,0
+90,T91,4,900046,"If the plant is a Venus flytrap, then it eats Insects.","Rule: ""If the plant is a Venus flytrap, then it eats Insects.""
+Cards: ['Fern', 'Does not eat insects', 'Venus flytrap', 'Eats insects']
+
+Which cards must you turn over?
+Your answer:","['Fern', 'Does not eat insects', 'Venus flytrap', 'Eats insects']","Fern, Does not eat insects","['Fern', 'Does not eat insects']","['not_P', 'not_Q']",LOGIC_ERROR,77,7,0
+91,T92,0,910042,"If the tree is a Bamboo, then it grows Very fast.","Rule: ""If the tree is a Bamboo, then it grows Very fast.""
+Cards: ['Slow', 'Oak', 'Very fast', 'Bamboo']
+
+Which cards must you turn over?
+Your answer:","['Slow', 'Oak', 'Very fast', 'Bamboo']","Bamboo, Very fast","['Bamboo', 'Very fast']","['P', 'Q']",MATCHING_BIAS,70,5,0
+91,T92,1,910043,"If the tree is a Bamboo, then it grows Very fast.","Rule: ""If the tree is a Bamboo, then it grows Very fast.""
+Cards: ['Bamboo', 'Slow', 'Very fast', 'Oak']
+
+Which cards must you turn over?
+Your answer:","['Bamboo', 'Slow', 'Very fast', 'Oak']","Bamboo, Very fast","['Bamboo', 'Very fast']","['P', 'Q']",MATCHING_BIAS,70,5,0
+91,T92,2,910044,"If the tree is a Bamboo, then it grows Very fast.","Rule: ""If the tree is a Bamboo, then it grows Very fast.""
+Cards: ['Oak', 'Bamboo', 'Slow', 'Very fast']
+
+Which cards must you turn over?
+Your answer:","['Oak', 'Bamboo', 'Slow', 'Very fast']","Oak, Slow","['Oak', 'Slow']","['not_P', 'not_Q']",LOGIC_ERROR,70,4,0
+91,T92,3,910045,"If the tree is a Bamboo, then it grows Very fast.","Rule: ""If the tree is a Bamboo, then it grows Very fast.""
+Cards: ['Oak', 'Very fast', 'Bamboo', 'Slow']
+
+Which cards must you turn over?
+Your answer:","['Oak', 'Very fast', 'Bamboo', 'Slow']","Bamboo, Very fast","['Bamboo', 'Very fast']","['P', 'Q']",MATCHING_BIAS,70,5,0
+91,T92,4,910046,"If the tree is a Bamboo, then it grows Very fast.","Rule: ""If the tree is a Bamboo, then it grows Very fast.""
+Cards: ['Very fast', 'Slow', 'Bamboo', 'Oak']
+
+Which cards must you turn over?
+Your answer:","['Very fast', 'Slow', 'Bamboo', 'Oak']","Bamboo, Oak","['Bamboo', 'Oak']","['P', 'not_P']",LOGIC_ERROR,70,4,0
+92,T93,0,920042,"If the animal is a Polar bear, then its fur appears White.","Rule: ""If the animal is a Polar bear, then its fur appears White.""
+Cards: ['Brown', 'Grizzly', 'Polar bear', 'White']
+
+Which cards must you turn over?
+Your answer:","['Brown', 'Grizzly', 'Polar bear', 'White']","Brown, Grizzly","['Brown', 'Grizzly']","['not_P', 'not_Q']",LOGIC_ERROR,73,5,0
+92,T93,1,920043,"If the animal is a Polar bear, then its fur appears White.","Rule: ""If the animal is a Polar bear, then its fur appears White.""
+Cards: ['Grizzly', 'Brown', 'Polar bear', 'White']
+
+Which cards must you turn over?
+Your answer:","['Grizzly', 'Brown', 'Polar bear', 'White']","Grizzly, Brown","['Grizzly', 'Brown']","['not_P', 'not_Q']",LOGIC_ERROR,73,6,0
+92,T93,2,920044,"If the animal is a Polar bear, then its fur appears White.","Rule: ""If the animal is a Polar bear, then its fur appears White.""
+Cards: ['Grizzly', 'Brown', 'White', 'Polar bear']
+
+Which cards must you turn over?
+Your answer:","['Grizzly', 'Brown', 'White', 'Polar bear']","Grizzly, Brown, Polar bear","['Grizzly', 'Brown', 'Polar bear']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,73,9,0
+92,T93,3,920045,"If the animal is a Polar bear, then its fur appears White.","Rule: ""If the animal is a Polar bear, then its fur appears White.""
+Cards: ['Brown', 'Grizzly', 'White', 'Polar bear']
+
+Which cards must you turn over?
+Your answer:","['Brown', 'Grizzly', 'White', 'Polar bear']","Brown, Grizzly","['Brown', 'Grizzly']","['not_P', 'not_Q']",LOGIC_ERROR,73,5,0
+92,T93,4,920046,"If the animal is a Polar bear, then its fur appears White.","Rule: ""If the animal is a Polar bear, then its fur appears White.""
+Cards: ['Brown', 'Polar bear', 'White', 'Grizzly']
+
+Which cards must you turn over?
+Your answer:","['Brown', 'Polar bear', 'White', 'Grizzly']","Brown, Grizzly","['Brown', 'Grizzly']","['not_P', 'not_Q']",LOGIC_ERROR,73,5,0
+93,T94,0,930042,"If the country is Egypt, then the river is Nile.","Rule: ""If the country is Egypt, then the river is Nile.""
+Cards: ['Nile', 'Egypt', 'Sudan', 'Congo']
+
+Which cards must you turn over?
+Your answer:","['Nile', 'Egypt', 'Sudan', 'Congo']","Egypt, Nile","['Egypt', 'Nile']","['P', 'Q']",MATCHING_BIAS,71,4,0
+93,T94,1,930043,"If the country is Egypt, then the river is Nile.","Rule: ""If the country is Egypt, then the river is Nile.""
+Cards: ['Nile', 'Congo', 'Sudan', 'Egypt']
+
+Which cards must you turn over?
+Your answer:","['Nile', 'Congo', 'Sudan', 'Egypt']","Egypt, Nile","['Egypt', 'Nile']","['P', 'Q']",MATCHING_BIAS,71,4,0
+93,T94,2,930044,"If the country is Egypt, then the river is Nile.","Rule: ""If the country is Egypt, then the river is Nile.""
+Cards: ['Egypt', 'Sudan', 'Congo', 'Nile']
+
+Which cards must you turn over?
+Your answer:","['Egypt', 'Sudan', 'Congo', 'Nile']","Egypt, Nile","['Egypt', 'Nile']","['P', 'Q']",MATCHING_BIAS,71,4,0
+93,T94,3,930045,"If the country is Egypt, then the river is Nile.","Rule: ""If the country is Egypt, then the river is Nile.""
+Cards: ['Congo', 'Egypt', 'Nile', 'Sudan']
+
+Which cards must you turn over?
+Your answer:","['Congo', 'Egypt', 'Nile', 'Sudan']","Egypt, Nile","['Egypt', 'Nile']","['P', 'Q']",MATCHING_BIAS,71,4,0
+93,T94,4,930046,"If the country is Egypt, then the river is Nile.","Rule: ""If the country is Egypt, then the river is Nile.""
+Cards: ['Nile', 'Sudan', 'Egypt', 'Congo']
+
+Which cards must you turn over?
+Your answer:","['Nile', 'Sudan', 'Egypt', 'Congo']","Egypt, Nile","['Egypt', 'Nile']","['P', 'Q']",MATCHING_BIAS,71,4,0
+94,T95,0,940042,"If the animal is a Skunk, then it can spray a bad Smell.","Rule: ""If the animal is a Skunk, then it can spray a bad Smell.""
+Cards: ['Raccoon', 'Bad smell', 'Skunk', 'No smell']
+
+Which cards must you turn over?
+Your answer:","['Raccoon', 'Bad smell', 'Skunk', 'No smell']","Raccoon, Bad smell, Skunk, No smell","['Raccoon', 'Bad smell', 'Skunk', 'No smell']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,76,12,0
+94,T95,1,940043,"If the animal is a Skunk, then it can spray a bad Smell.","Rule: ""If the animal is a Skunk, then it can spray a bad Smell.""
+Cards: ['Bad smell', 'Skunk', 'Raccoon', 'No smell']
+
+Which cards must you turn over?
+Your answer:","['Bad smell', 'Skunk', 'Raccoon', 'No smell']","Skunk, Raccoon, No smell","['Skunk', 'Raccoon', 'No smell']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,76,9,0
+94,T95,2,940044,"If the animal is a Skunk, then it can spray a bad Smell.","Rule: ""If the animal is a Skunk, then it can spray a bad Smell.""
+Cards: ['Bad smell', 'No smell', 'Raccoon', 'Skunk']
+
+Which cards must you turn over?
+Your answer:","['Bad smell', 'No smell', 'Raccoon', 'Skunk']","Skunk, Raccoon","['Skunk', 'Raccoon']","['P', 'not_P']",LOGIC_ERROR,76,6,0
+94,T95,3,940045,"If the animal is a Skunk, then it can spray a bad Smell.","Rule: ""If the animal is a Skunk, then it can spray a bad Smell.""
+Cards: ['Skunk', 'No smell', 'Bad smell', 'Raccoon']
+
+Which cards must you turn over?
+Your answer:","['Skunk', 'No smell', 'Bad smell', 'Raccoon']","Skunk, No smell, Bad smell","['Skunk', 'No smell', 'Bad smell']","['P', 'Q', 'not_Q']",OVER_SELECTION,76,9,0
+94,T95,4,940046,"If the animal is a Skunk, then it can spray a bad Smell.","Rule: ""If the animal is a Skunk, then it can spray a bad Smell.""
+Cards: ['No smell', 'Raccoon', 'Bad smell', 'Skunk']
+
+Which cards must you turn over?
+Your answer:","['No smell', 'Raccoon', 'Bad smell', 'Skunk']","Raccoon, No smell","['Raccoon', 'No smell']","['not_P', 'not_Q']",LOGIC_ERROR,76,6,0
+95,T96,0,950042,"If the food is Salt, then it dissolves in Water.","Rule: ""If the food is Salt, then it dissolves in Water.""
+Cards: ['Salt', 'Sand', 'Does not dissolve', 'Dissolves']
+
+Which cards must you turn over?
+Your answer:","['Salt', 'Sand', 'Does not dissolve', 'Dissolves']","Salt, Water, Dissolves, Does not dissolve","['Salt', 'Water', 'Dissolves', 'Does not dissolve']","['P', 'Q', 'not_Q']",OVER_SELECTION,72,12,0
+95,T96,1,950043,"If the food is Salt, then it dissolves in Water.","Rule: ""If the food is Salt, then it dissolves in Water.""
+Cards: ['Does not dissolve', 'Sand', 'Salt', 'Dissolves']
+
+Which cards must you turn over?
+Your answer:","['Does not dissolve', 'Sand', 'Salt', 'Dissolves']","Salt, Water, Sand, Dissolves","['Salt', 'Water', 'Sand', 'Dissolves']","['P', 'Q', 'not_P']",LOGIC_ERROR,72,10,0
+95,T96,2,950044,"If the food is Salt, then it dissolves in Water.","Rule: ""If the food is Salt, then it dissolves in Water.""
+Cards: ['Dissolves', 'Does not dissolve', 'Sand', 'Salt']
+
+Which cards must you turn over?
+Your answer:","['Dissolves', 'Does not dissolve', 'Sand', 'Salt']","Dissolves, Does not dissolve, Sand, Water","['Dissolves', 'Does not dissolve', 'Sand', 'Water']","['Q', 'not_P', 'not_Q']",LOGIC_ERROR,72,12,0
+95,T96,3,950045,"If the food is Salt, then it dissolves in Water.","Rule: ""If the food is Salt, then it dissolves in Water.""
+Cards: ['Sand', 'Dissolves', 'Does not dissolve', 'Salt']
+
+Which cards must you turn over?
+Your answer:","['Sand', 'Dissolves', 'Does not dissolve', 'Salt']","Dissolves, Water, Does not dissolve","['Dissolves', 'Water', 'Does not dissolve']","['Q', 'not_Q']",NOISE,72,10,0
+95,T96,4,950046,"If the food is Salt, then it dissolves in Water.","Rule: ""If the food is Salt, then it dissolves in Water.""
+Cards: ['Dissolves', 'Does not dissolve', 'Salt', 'Sand']
+
+Which cards must you turn over?
+Your answer:","['Dissolves', 'Does not dissolve', 'Salt', 'Sand']","Dissolves, Does not dissolve, Water, Salt","['Dissolves', 'Does not dissolve', 'Water', 'Salt']","['P', 'Q', 'not_Q']",OVER_SELECTION,72,12,0
+96,T97,0,960042,"If the bird is a Hummingbird, then it hovers in Mid-air.","Rule: ""If the bird is a Hummingbird, then it hovers in Mid-air.""
+Cards: ['Does not hover', 'Pigeon', 'Hummingbird', 'Hovers']
+
+Which cards must you turn over?
+Your answer:","['Does not hover', 'Pigeon', 'Hummingbird', 'Hovers']","Does not hover, Pigeon","['Does not hover', 'Pigeon']","['not_P', 'not_Q']",LOGIC_ERROR,79,6,0
+96,T97,1,960043,"If the bird is a Hummingbird, then it hovers in Mid-air.","Rule: ""If the bird is a Hummingbird, then it hovers in Mid-air.""
+Cards: ['Pigeon', 'Does not hover', 'Hummingbird', 'Hovers']
+
+Which cards must you turn over?
+Your answer:","['Pigeon', 'Does not hover', 'Hummingbird', 'Hovers']","Pigeon, Does not hover","['Pigeon', 'Does not hover']","['not_P', 'not_Q']",LOGIC_ERROR,79,7,0
+96,T97,2,960044,"If the bird is a Hummingbird, then it hovers in Mid-air.","Rule: ""If the bird is a Hummingbird, then it hovers in Mid-air.""
+Cards: ['Pigeon', 'Does not hover', 'Hovers', 'Hummingbird']
+
+Which cards must you turn over?
+Your answer:","['Pigeon', 'Does not hover', 'Hovers', 'Hummingbird']","Pigeon, Does not hover","['Pigeon', 'Does not hover']","['not_P', 'not_Q']",LOGIC_ERROR,79,7,0
+96,T97,3,960045,"If the bird is a Hummingbird, then it hovers in Mid-air.","Rule: ""If the bird is a Hummingbird, then it hovers in Mid-air.""
+Cards: ['Hovers', 'Does not hover', 'Pigeon', 'Hummingbird']
+
+Which cards must you turn over?
+Your answer:","['Hovers', 'Does not hover', 'Pigeon', 'Hummingbird']","Does not hover, Pigeon","['Does not hover', 'Pigeon']","['not_P', 'not_Q']",LOGIC_ERROR,79,6,0
+96,T97,4,960046,"If the bird is a Hummingbird, then it hovers in Mid-air.","Rule: ""If the bird is a Hummingbird, then it hovers in Mid-air.""
+Cards: ['Hummingbird', 'Pigeon', 'Hovers', 'Does not hover']
+
+Which cards must you turn over?
+Your answer:","['Hummingbird', 'Pigeon', 'Hovers', 'Does not hover']","Hummingbird, Pigeon, Hovers, Does not hover","['Hummingbird', 'Pigeon', 'Hovers', 'Does not hover']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,79,13,0
+97,T98,0,970042,"If the animal is a Sloth, then it moves Very slowly.","Rule: ""If the animal is a Sloth, then it moves Very slowly.""
+Cards: ['Very slowly', 'Cheetah', 'Sloth', 'Very fast']
+
+Which cards must you turn over?
+Your answer:","['Very slowly', 'Cheetah', 'Sloth', 'Very fast']","Sloth, Very slowly","['Sloth', 'Very slowly']","['P', 'Q']",MATCHING_BIAS,74,6,0
+97,T98,1,970043,"If the animal is a Sloth, then it moves Very slowly.","Rule: ""If the animal is a Sloth, then it moves Very slowly.""
+Cards: ['Very slowly', 'Very fast', 'Sloth', 'Cheetah']
+
+Which cards must you turn over?
+Your answer:","['Very slowly', 'Very fast', 'Sloth', 'Cheetah']","Sloth, Very slowly","['Sloth', 'Very slowly']","['P', 'Q']",MATCHING_BIAS,74,6,0
+97,T98,2,970044,"If the animal is a Sloth, then it moves Very slowly.","Rule: ""If the animal is a Sloth, then it moves Very slowly.""
+Cards: ['Cheetah', 'Sloth', 'Very slowly', 'Very fast']
+
+Which cards must you turn over?
+Your answer:","['Cheetah', 'Sloth', 'Very slowly', 'Very fast']","Cheetah, Sloth, Very slowly, Very fast","['Cheetah', 'Sloth', 'Very slowly', 'Very fast']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,74,12,0
+97,T98,3,970045,"If the animal is a Sloth, then it moves Very slowly.","Rule: ""If the animal is a Sloth, then it moves Very slowly.""
+Cards: ['Sloth', 'Cheetah', 'Very fast', 'Very slowly']
+
+Which cards must you turn over?
+Your answer:","['Sloth', 'Cheetah', 'Very fast', 'Very slowly']","Sloth, Cheetah, Very fast, Very slowly","['Sloth', 'Cheetah', 'Very fast', 'Very slowly']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,74,11,0
+97,T98,4,970046,"If the animal is a Sloth, then it moves Very slowly.","Rule: ""If the animal is a Sloth, then it moves Very slowly.""
+Cards: ['Cheetah', 'Sloth', 'Very fast', 'Very slowly']
+
+Which cards must you turn over?
+Your answer:","['Cheetah', 'Sloth', 'Very fast', 'Very slowly']","Cheetah, Very fast","['Cheetah', 'Very fast']","['not_P', 'not_Q']",LOGIC_ERROR,74,6,0
+98,T99,0,980042,"If the planet is Jupiter, then it is the Largest planet.","Rule: ""If the planet is Jupiter, then it is the Largest planet.""
+Cards: ['Not largest', 'Saturn', 'Largest', 'Jupiter']
+
+Which cards must you turn over?
+Your answer:","['Not largest', 'Saturn', 'Largest', 'Jupiter']","Not largest, Saturn","['Not largest', 'Saturn']","['not_P', 'not_Q']",LOGIC_ERROR,71,5,0
+98,T99,1,980043,"If the planet is Jupiter, then it is the Largest planet.","Rule: ""If the planet is Jupiter, then it is the Largest planet.""
+Cards: ['Saturn', 'Largest', 'Not largest', 'Jupiter']
+
+Which cards must you turn over?
+Your answer:","['Saturn', 'Largest', 'Not largest', 'Jupiter']","Jupiter, Largest, Not largest","['Jupiter', 'Largest', 'Not largest']","['P', 'Q', 'not_Q']",OVER_SELECTION,71,7,0
+98,T99,2,980044,"If the planet is Jupiter, then it is the Largest planet.","Rule: ""If the planet is Jupiter, then it is the Largest planet.""
+Cards: ['Jupiter', 'Not largest', 'Largest', 'Saturn']
+
+Which cards must you turn over?
+Your answer:","['Jupiter', 'Not largest', 'Largest', 'Saturn']","Jupiter, Not largest, Largest","['Jupiter', 'Not largest', 'Largest']","['P', 'Q', 'not_Q']",OVER_SELECTION,71,7,0
+98,T99,3,980045,"If the planet is Jupiter, then it is the Largest planet.","Rule: ""If the planet is Jupiter, then it is the Largest planet.""
+Cards: ['Largest', 'Saturn', 'Jupiter', 'Not largest']
+
+Which cards must you turn over?
+Your answer:","['Largest', 'Saturn', 'Jupiter', 'Not largest']","Jupiter, Largest, Saturn, Not largest","['Jupiter', 'Largest', 'Saturn', 'Not largest']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,71,9,0
+98,T99,4,980046,"If the planet is Jupiter, then it is the Largest planet.","Rule: ""If the planet is Jupiter, then it is the Largest planet.""
+Cards: ['Not largest', 'Jupiter', 'Largest', 'Saturn']
+
+Which cards must you turn over?
+Your answer:","['Not largest', 'Jupiter', 'Largest', 'Saturn']","Jupiter, Largest","['Jupiter', 'Largest']","['P', 'Q']",MATCHING_BIAS,71,4,0
+99,T100,0,990042,"If the material is Rubber, then it is an Insulator.","Rule: ""If the material is Rubber, then it is an Insulator.""
+Cards: ['Rubber', 'Copper', 'Conductor', 'Insulator']
+
+Which cards must you turn over?
+Your answer:","['Rubber', 'Copper', 'Conductor', 'Insulator']","Copper, Conductor","['Copper', 'Conductor']","['not_P', 'not_Q']",LOGIC_ERROR,71,5,0
+99,T100,1,990043,"If the material is Rubber, then it is an Insulator.","Rule: ""If the material is Rubber, then it is an Insulator.""
+Cards: ['Insulator', 'Rubber', 'Copper', 'Conductor']
+
+Which cards must you turn over?
+Your answer:","['Insulator', 'Rubber', 'Copper', 'Conductor']","Copper, Conductor","['Copper', 'Conductor']","['not_P', 'not_Q']",LOGIC_ERROR,71,5,0
+99,T100,2,990044,"If the material is Rubber, then it is an Insulator.","Rule: ""If the material is Rubber, then it is an Insulator.""
+Cards: ['Copper', 'Conductor', 'Insulator', 'Rubber']
+
+Which cards must you turn over?
+Your answer:","['Copper', 'Conductor', 'Insulator', 'Rubber']","Copper, Conductor","['Copper', 'Conductor']","['not_P', 'not_Q']",LOGIC_ERROR,71,5,0
+99,T100,3,990045,"If the material is Rubber, then it is an Insulator.","Rule: ""If the material is Rubber, then it is an Insulator.""
+Cards: ['Insulator', 'Rubber', 'Conductor', 'Copper']
+
+Which cards must you turn over?
+Your answer:","['Insulator', 'Rubber', 'Conductor', 'Copper']","Conductor, Copper","['Conductor', 'Copper']","['not_P', 'not_Q']",LOGIC_ERROR,71,5,0
+99,T100,4,990046,"If the material is Rubber, then it is an Insulator.","Rule: ""If the material is Rubber, then it is an Insulator.""
+Cards: ['Copper', 'Insulator', 'Conductor', 'Rubber']
+
+Which cards must you turn over?
+Your answer:","['Copper', 'Insulator', 'Conductor', 'Rubber']","Copper, Conductor","['Copper', 'Conductor']","['not_P', 'not_Q']",LOGIC_ERROR,71,5,0
+100,T101,0,1000042,"If the animal is a Crab, then it walks Sideways.","Rule: ""If the animal is a Crab, then it walks Sideways.""
+Cards: ['Lobster', 'Crab', 'Forward', 'Sideways']
+
+Which cards must you turn over?
+Your answer:","['Lobster', 'Crab', 'Forward', 'Sideways']","Lobster, Forward","['Lobster', 'Forward']","['not_P', 'not_Q']",LOGIC_ERROR,72,5,0
+100,T101,1,1000043,"If the animal is a Crab, then it walks Sideways.","Rule: ""If the animal is a Crab, then it walks Sideways.""
+Cards: ['Crab', 'Sideways', 'Forward', 'Lobster']
+
+Which cards must you turn over?
+Your answer:","['Crab', 'Sideways', 'Forward', 'Lobster']","Crab, Sideways, Lobster","['Crab', 'Sideways', 'Lobster']","['P', 'Q', 'not_P']",LOGIC_ERROR,72,8,0
+100,T101,2,1000044,"If the animal is a Crab, then it walks Sideways.","Rule: ""If the animal is a Crab, then it walks Sideways.""
+Cards: ['Sideways', 'Lobster', 'Crab', 'Forward']
+
+Which cards must you turn over?
+Your answer:","['Sideways', 'Lobster', 'Crab', 'Forward']","Lobster, Forward","['Lobster', 'Forward']","['not_P', 'not_Q']",LOGIC_ERROR,72,5,0
+100,T101,3,1000045,"If the animal is a Crab, then it walks Sideways.","Rule: ""If the animal is a Crab, then it walks Sideways.""
+Cards: ['Lobster', 'Forward', 'Crab', 'Sideways']
+
+Which cards must you turn over?
+Your answer:","['Lobster', 'Forward', 'Crab', 'Sideways']","Lobster, Forward, Crab, Sideways","['Lobster', 'Forward', 'Crab', 'Sideways']","['P', 'Q', 'not_P', 'not_Q']",ALL_CARDS,72,10,0
+100,T101,4,1000046,"If the animal is a Crab, then it walks Sideways.","Rule: ""If the animal is a Crab, then it walks Sideways.""
+Cards: ['Sideways', 'Forward', 'Crab', 'Lobster']
+
+Which cards must you turn over?
+Your answer:","['Sideways', 'Forward', 'Crab', 'Lobster']","Crab, Lobster","['Crab', 'Lobster']","['P', 'not_P']",LOGIC_ERROR,72,5,0

@@ -1,0 +1,7 @@
+model,model_slug,status,updated_at,n_trials,summary_path,message
+deepseek/deepseek-v3.2,deepseek__deepseek-v3.2,completed,2026-03-08T16:27:12+00:00,500,wason-selection/output_prompt_neutral_minimal/formal_logic_neutral/deepseek__deepseek-v3.2/summary.json,run completed successfully
+google/gemma-3-12b-it,google__gemma-3-12b-it,completed,2026-03-08T16:27:16+00:00,500,wason-selection/output_prompt_neutral_minimal/formal_logic_neutral/google__gemma-3-12b-it/summary.json,run completed successfully
+google/gemma-3-27b-it,google__gemma-3-27b-it,completed,2026-03-08T16:25:56+00:00,500,wason-selection/output_prompt_neutral_minimal/formal_logic_neutral/google__gemma-3-27b-it/summary.json,run completed successfully
+qwen/qwen3-next-80b-a3b-instruct,qwen__qwen3-next-80b-a3b-instruct,completed,2026-03-08T16:25:39+00:00,500,wason-selection/output_prompt_neutral_minimal/formal_logic_neutral/qwen__qwen3-next-80b-a3b-instruct/summary.json,run completed successfully
+qwen/qwen3.5-397b-a17b,qwen__qwen3.5-397b-a17b,completed,2026-03-08T16:24:32+00:00,500,wason-selection/output_prompt_neutral_minimal/formal_logic_neutral/qwen__qwen3.5-397b-a17b/summary.json,run completed successfully
+z-ai/glm-4.7-flash,z-ai__glm-4.7-flash,completed,2026-03-08T16:25:32+00:00,500,wason-selection/output_prompt_neutral_minimal/formal_logic_neutral/z-ai__glm-4.7-flash/summary.json,run completed successfully

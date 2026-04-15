@@ -1,0 +1,64 @@
+THESIS STATISTICS
+
+Total Words: 14,240
+Total Citations: 45
+Bibliography Entries: 40
+Citation Density: 3.16 per 1000 words
+
+CHAPTER BREAKDOWN
+  abbreviations.tex                        |     86 words |   0 cites | density:   0.00
+  appA.tex                                 |    270 words |   0 cites | density:   0.00
+  chapter1.tex                             |  3,807 words |  54 cites | density:  14.18
+  chapter2.tex                             |      0 words |   0 cites | density:   0.00
+  chapter2_cross.tex                       |    454 words |   0 cites | density:   0.00
+  chapter2_exp1_linda.tex                  |  3,109 words |   7 cites | density:   2.25
+  chapter2_exp2_wason.tex                  |  2,037 words |  16 cites | density:   7.85
+  chapter2_exp3_246.tex                    |  1,309 words |   4 cites | density:   3.06
+  chapter2_intro.tex                       |    220 words |   0 cites | density:   0.00
+  chapter3.tex                             |  1,058 words |   1 cites | density:   0.95
+  conclusion.tex                           |     95 words |   0 cites | density:   0.00
+  config-formulas.tex                      |     17 words |   0 cites | density:   0.00
+  config-images.tex                        |      3 words |   0 cites | density:   0.00
+  config-lists.tex                         |      4 words |   0 cites | density:   0.00
+  config-tables.tex                        |     78 words |   0 cites | density:   0.00
+  intro.tex                                |  1,440 words |  12 cites | density:   8.33
+  main.tex                                 |     13 words |   0 cites | density:   0.00
+  preamble.tex                             |     72 words |   0 cites | density:   0.00
+  terms.tex                                |    168 words |   0 cites | density:   0.00
+
+BIBLIOGRAPHY COVERAGE
+Coverage: 112.5% (45/40 entries used)
+
+⚠️  UNDEFINED CITATIONS (in .tex but NOT in .bib):
+  - cheng1985pragmatic, cosmides1992cognitive
+  - collins2024softmax, han2023explaining
+  - evans2003in, kahneman2011thinking
+  - jiang2024peek, shafiei2025more
+  - suri2024large, macmillan2024irrationality, coda2024cogbench
+  - suri2024large, wang2024linda, jiang2024peek, macmillan2024irrationality
+  - tversky1981framing, tversky1983extensional
+  - tversky1983extensional, wason1966reasoning, wason1960failure
+  - zhou2023benchmark, macmillan2024irrationality
+
+Unused entries (4 total):
+  - cosmides1992cognitive
+  - evans2003in
+  - tversky1981framing
+  - wang2024linda
+
+TOP CITED ENTRIES (by frequency)
+  ⚠️ macmillan2024irrationality     | used   6 times | CONTEXT: ERROR
+  ✓ tversky1983extensional         | used   5 times | OK
+  ✓ wason1966reasoning             | used   5 times | OK
+  ⚠️ banatt2024wilt                 | used   5 times | CONTEXT: ERROR
+  ⚠️ batista2026rational            | used   5 times | CONTEXT: WARNING
+  ⚠️ evans1998matching              | used   4 times | CONTEXT: ERROR
+  ⚠️ dasgupta2024language           | used   4 times | CONTEXT: ERROR
+  ✓ wason1960failure               | used   3 times | OK
+  ⚠️ suri2024large                  | used   3 times | CONTEXT: ERROR
+  ⚠️ jiang2024peek                  | used   3 times | CONTEXT: ERROR
+  ✓ cheng1985pragmatic             | used   3 times | OK
+  ✓ mcnemar1947note                | used   3 times | OK
+  ✓ benjamini1995controlling       | used   3 times | OK
+  ✓ kahneman2011thinking           | used   2 times | OK
+  ✓ wei2022chain                   | used   2 times | OK

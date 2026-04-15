@@ -1,0 +1,22 @@
+{
+  "model": "qwen/qwen3.5-397b-a17b",
+  "prompt_style": "baseline",
+  "reasoning_effort": "none",
+  "provider": null,
+  "n_rules": 50,
+  "n_success": 11,
+  "n_invalid_rules": 0,
+  "n_processed_rules": 50,
+  "max_turns": 19,
+  "stop_iou": 0.95,
+  "stats": {
+    "n_rules": 50,
+    "n_success": 11,
+    "n_invalid_rules": 0,
+    "n_processed_rules": 50,
+    "mean_turns": 16.64,
+    "prompt_tokens": 572775,
+    "completion_tokens": 30727,
+    "reasoning_tokens": 3171
+  }
+}

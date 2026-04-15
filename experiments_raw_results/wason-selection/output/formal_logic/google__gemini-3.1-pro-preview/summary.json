@@ -1,0 +1,8 @@
+{
+  "model": "google/gemini-3.1-pro-preview",
+  "context": "formal_logic",
+  "n_items": 30,
+  "n_prompt_permutations": 5,
+  "n_trials": 150,
+  "stats": {}
+}

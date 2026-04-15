@@ -1,0 +1,22 @@
+{
+  "model": "z-ai/glm-4.7-flash",
+  "prompt_style": "adaptive",
+  "reasoning_effort": "none",
+  "provider": null,
+  "n_rules": 50,
+  "n_success": 3,
+  "n_invalid_rules": 0,
+  "n_processed_rules": 50,
+  "max_turns": 19,
+  "stop_iou": 0.95,
+  "stats": {
+    "n_rules": 50,
+    "n_success": 3,
+    "n_invalid_rules": 0,
+    "n_processed_rules": 50,
+    "mean_turns": 17.98,
+    "prompt_tokens": 743872,
+    "completion_tokens": 25151,
+    "reasoning_tokens": 0
+  }
+}

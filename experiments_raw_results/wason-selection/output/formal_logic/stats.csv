@@ -1,0 +1,5 @@
+model,prompt_tokens,completion_tokens,reasoning_tokens
+claude-sonnet-4.6,20957.0,1068.0,0.0
+gemini-3.1-pro-preview,,,
+grok-4.1-fast,43131.0,557.0,0.0
+gpt-5.2,19466.0,1147.0,0.0

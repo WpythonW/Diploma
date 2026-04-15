@@ -1,0 +1,12 @@
+{
+  "model": "openai/gpt-5.2",
+  "context": "familiar_social_contracts_extended",
+  "n_items": 100,
+  "n_prompt_permutations": 5,
+  "n_trials": 500,
+  "stats": {
+    "prompt_tokens": 34575,
+    "completion_tokens": 4975,
+    "reasoning_tokens": 0
+  }
+}

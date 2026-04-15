@@ -1,0 +1,317 @@
+{
+  "chapters": [
+    {
+      "order": 1,
+      "filename": "preamble.tex",
+      "type": "content",
+      "words": 72,
+      "citation_count": 0,
+      "figure_count": 0,
+      "table_count": 0,
+      "sections": [],
+      "figures": [],
+      "tables": []
+    },
+    {
+      "order": 2,
+      "filename": "abbreviations.tex",
+      "type": "content",
+      "words": 86,
+      "citation_count": 0,
+      "figure_count": 0,
+      "table_count": 0,
+      "sections": [
+        {
+          "level": "chapter",
+          "title": "СПИСОК СОКРАЩЕНИЙ И УСЛОВНЫХ ОБОЗНАЧЕНИЙ"
+        }
+      ],
+      "figures": [],
+      "tables": []
+    },
+    {
+      "order": 3,
+      "filename": "terms.tex",
+      "type": "content",
+      "words": 168,
+      "citation_count": 0,
+      "figure_count": 0,
+      "table_count": 0,
+      "sections": [
+        {
+          "level": "chapter",
+          "title": "ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ"
+        }
+      ],
+      "figures": [],
+      "tables": []
+    },
+    {
+      "order": 4,
+      "filename": "intro.tex",
+      "type": "introduction",
+      "words": 1440,
+      "citation_count": 12,
+      "figure_count": 0,
+      "table_count": 0,
+      "sections": [
+        {
+          "level": "chapter",
+          "title": "ВВЕДЕНИЕ"
+        }
+      ],
+      "figures": [],
+      "tables": []
+    },
+    {
+      "order": 5,
+      "filename": "chapter1.tex",
+      "type": "content",
+      "words": 3807,
+      "citation_count": 35,
+      "figure_count": 0,
+      "table_count": 0,
+      "sections": [
+        {
+          "level": "chapter",
+          "title": "АНАЛИЗ ПРЕДМЕТНОЙ ОБЛАСТИ"
+        },
+        {
+          "level": "section",
+          "title": "Когнитивные предубеждения: теоретические основания"
+        },
+        {
+          "level": "subsection",
+          "title": "Программа эвристик и предубеждений Канемана и Тверски"
+        },
+        {
+          "level": "subsection",
+          "title": "Типология когнитивных предубеждений: вероятностные, логические, индуктивные"
+        },
+        {
+          "level": "subsection",
+          "title": "Нормативные стандарты рассуждения и отклонения от них"
+        },
+        {
+          "level": "section",
+          "title": "Анализ проблемы: когнитивные предубеждения в LLM"
+        },
+        {
+          "level": "subsection",
+          "title": "Природа предубеждений в языковых моделях: memorization vs. emergent bias"
+        },
+        {
+          "level": "subsection",
+          "title": "Архитектурные и математические предпосылки эвристик в трансформерах"
+        },
+        {
+          "level": "subsection",
+          "title": "Влияние методов выравнивания (RLHF) и склонность к угождению пользователю"
+        },
+        {
+          "level": "subsection",
+          "title": "Проблема контаминации обучающих данных"
+        },
+        {
+          "level": "subsection",
+          "title": "Ограничения существующих подходов и обоснование метрик"
+        },
+        {
+          "level": "subsection",
+          "title": "Практическая значимость и целевая аудитория"
+        },
+        {
+          "level": "section",
+          "title": "Обзор смежных исследований и существующих бенчмарков"
+        },
+        {
+          "level": "subsection",
+          "title": "Ошибка конъюнкции, эвристика репрезентативности и демографический токен-bias"
+        },
+        {
+          "level": "subsection",
+          "title": "Дедуктивное рассуждение и задача выбора карточек Уэйсона"
+        },
+        {
+          "level": "subsection",
+          "title": "Индуктивное открытие правил и задача 2-4-6"
+        },
+        {
+          "level": "subsection",
+          "title": "Сравнительные бенчмарки и формирование исследовательского ландшафта"
+        },
+        {
+          "level": "section",
+          "title": "Обоснование исследовательских гипотез"
+        },
+        {
+          "level": "subsection",
+          "title": "Гипотеза об универсальности предубеждений"
+        },
+        {
+          "level": "subsection",
+          "title": "Гипотеза о масштабировании и внутрисемейном парадоксе"
+        },
+        {
+          "level": "subsection",
+          "title": "Гипотеза о спектральной природе предубеждений"
+        },
+        {
+          "level": "subsection",
+          "title": "Гипотеза о демографическом токен-bias"
+        },
+        {
+          "level": "section",
+          "title": "Требования к экспериментальному исследованию"
+        },
+        {
+          "level": "subsection",
+          "title": "Требования к датасетам и контролю контаминации"
+        },
+        {
+          "level": "subsection",
+          "title": "Требования к метрикам и статистическому выводу"
+        },
+        {
+          "level": "subsection",
+          "title": "Требования к инфраструктуре и набору тестируемых моделей"
+        }
+      ],
+      "figures": [],
+      "tables": []
+    },
+    {
+      "order": 6,
+      "filename": "chapter2.tex",
+      "type": "content",
+      "words": 0,
+      "citation_count": 0,
+      "figure_count": 0,
+      "table_count": 0,
+      "sections": [],
+      "figures": [],
+      "tables": []
+    },
+    {
+      "order": 7,
+      "filename": "chapter3.tex",
+      "type": "content",
+      "words": 1058,
+      "citation_count": 1,
+      "figure_count": 0,
+      "table_count": 0,
+      "sections": [
+        {
+          "level": "chapter",
+          "title": "ЭКСПЕРИМЕНТАЛЬНЫЙ ФРЕЙМВОРК И ОБСУЖДЕНИЕ РЕЗУЛЬТАТОВ"
+        },
+        {
+          "level": "section",
+          "title": "Архитектура воспроизводимого экспериментального фреймворка"
+        },
+        {
+          "level": "subsection",
+          "title": "Общая структура кодовой базы"
+        },
+        {
+          "level": "subsection",
+          "title": "Параметры запросов и механизм отказоустойчивости"
+        },
+        {
+          "level": "subsection",
+          "title": "Структура датасетов"
+        },
+        {
+          "level": "subsection",
+          "title": "Реализация метрики IOU"
+        },
+        {
+          "level": "section",
+          "title": "Ограничения исследования"
+        },
+        {
+          "level": "subsection",
+          "title": "Методологические ограничения"
+        },
+        {
+          "level": "subsection",
+          "title": "Ограничения отдельных экспериментов"
+        },
+        {
+          "level": "section",
+          "title": "Апробация результатов"
+        },
+        {
+          "level": "section",
+          "title": "Направления будущих исследований"
+        }
+      ],
+      "figures": [],
+      "tables": []
+    },
+    {
+      "order": 8,
+      "filename": "conclusion.tex",
+      "type": "discussion",
+      "words": 95,
+      "citation_count": 0,
+      "figure_count": 0,
+      "table_count": 0,
+      "sections": [
+        {
+          "level": "chapter",
+          "title": "ЗАКЛЮЧЕНИЕ"
+        }
+      ],
+      "figures": [],
+      "tables": []
+    },
+    {
+      "order": 9,
+      "filename": "appA.tex",
+      "type": "content",
+      "words": 270,
+      "citation_count": 0,
+      "figure_count": 1,
+      "table_count": 0,
+      "sections": [
+        {
+          "level": "chapter",
+          "title": "РУКОВОДСТВО ПО ИСПОЛЬЗОВАНИЮ ШАБЛОНА"
+        },
+        {
+          "level": "section",
+          "title": "Пример заголовков разделов и подразделов"
+        },
+        {
+          "level": "section",
+          "title": "Пример изображения"
+        },
+        {
+          "level": "section",
+          "title": "Примеры таблиц"
+        },
+        {
+          "level": "section",
+          "title": "Примеры перечислений"
+        },
+        {
+          "level": "section",
+          "title": "Пример формулы"
+        }
+      ],
+      "figures": [
+        "fig:appA_example"
+      ],
+      "tables": []
+    }
+  ],
+  "total_chapters": 9,
+  "figure_map": {
+    "fig:appA_example": [
+      "appA.tex"
+    ]
+  },
+  "table_map": {},
+  "experiments": []
+}

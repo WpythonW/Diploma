@@ -1,0 +1,3369 @@
+row_idx,item_id,permutation_idx,llm_seed,rule_text,prompt,ordered_cards,response_text,selected_cards,logic_set,category,prompt_tokens,completion_tokens,reasoning_tokens
+0,T01,0,42,"If a card has a Vowel on one side, then it has an Even Number on the other side.","Rule: ""If a card has a Vowel on one side, then it has an Even Number on the other side.""
+Cards: ['4', 'K', '7', 'A']
+
+Which cards must you turn over?
+Your answer:","['4', 'K', '7', 'A']","### Step-by-Step Reasoning
+
+This is the Wason selection task, testing logical implication. The rule is: **If a card has a Vowel on one side, then it has an Even Number on the other side.** In logical terms: **Vowel → Even**.
+
+- Each card has one side visible from ['4', 'K', '7', 'A'].
+- We must turn over **only** cards that could falsify the rule (i.e., show a Vowel without an Even on the other side).
+- Validating the rule (confirming it holds) is irrelevant; we seek potential disproof.
+
+Analyze each card:
+
+1. **'4' (Even number visible)**:
+   - Other side could be Consonant (consistent: no Vowel, so rule doesn't apply) or Vowel (consistent: Vowel paired with Even).
+   - Cannot falsify (no way to have Vowel + Odd).
+   - **Do not turn over.**
+
+2. **'K' (Consonant visible)**:
+   - Rule doesn't apply (antecedent ""Vowel"" is false).
+   - Other side Even or Odd doesn't matter (rule is vacuously true).
+   - **Do not turn over.**
+
+3. **'7' (Odd number visible)**:
+   - If other side is Vowel, this is Vowel + Odd → **falsifies rule**.
+   - Must check other side isn't a Vowel.
+   - **Turn over.**
+
+4. **'A' (Vowel visible)**:
+   - Rule requires Even on other side.
+   - If other side is Odd, this is Vowel + Odd → **falsifies rule**.
+   - Must check other side is Even.
+   - **Turn over.**
+
+**Conclusion**: Turn over 'A' (to ensure Even) and '7' (to ensure no Vowel).
+
+ANSWER: 7, A","['7', 'A']","['P', 'not_Q']",CORRECT,252,376,0
+0,T01,1,43,"If a card has a Vowel on one side, then it has an Even Number on the other side.","Rule: ""If a card has a Vowel on one side, then it has an Even Number on the other side.""
+Cards: ['A', '7', '4', 'K']
+
+Which cards must you turn over?
+Your answer:","['A', '7', '4', 'K']","### Step-by-Step Reasoning
+
+This is the Wason selection task, testing logical implication. The rule is: **If a card has a Vowel on one side, then it has an Even Number on the other side.** In logical terms: **Vowel → Even**.
+
+- Each card has one side visible from ['A', '7', '4', 'K'].
+- Vowels (A, E, I, O, U) require an Even number on the other side.
+- Consonants (e.g., K, 7) provide no information about the rule (antecedent false → implication true regardless of consequent).
+- Even numbers allow any letter (no violation possible).
+- Odd numbers on the other side of a Vowel would falsify the rule.
+
+Analyze each card:
+
+1. **'A' (Vowel)**: Antecedent (Vowel) is true. Must turn over to verify the other side is Even (e.g., not Odd like 3 or 7). **Must turn.**
+
+2. **'7' (Odd number)**: Consequent is false (Odd). If the other side is a Vowel, it falsifies (Vowel → Even violated). Must check for Vowel. **Must turn.**
+
+3. **'4' (Even number)**: Consequent is true (Even). Implication holds regardless of letter (Vowel → Even or Consonant → Even both true). No need to turn. **Do not turn.**
+
+4. **'K' (Consonant)**: Antecedent is false. Implication true regardless of number (Even or Odd). No need to turn. **Do not turn.**
+
+Only 'A' and '7' can potentially falsify the rule.
+
+ANSWER: A, 7","['A', '7']","['P', 'not_Q']",CORRECT,252,355,0
+0,T01,2,44,"If a card has a Vowel on one side, then it has an Even Number on the other side.","Rule: ""If a card has a Vowel on one side, then it has an Even Number on the other side.""
+Cards: ['7', 'A', 'K', '4']
+
+Which cards must you turn over?
+Your answer:","['7', 'A', 'K', '4']","### Step-by-Step Reasoning
+
+This is the Wason selection task, testing logical implication. The rule is: **If a card has a Vowel on one side (P), then it has an Even Number on the other side (Q)**. In logical terms: **P → Q**.
+
+- Each card has one side visible from ['7', 'A', 'K', '4'].
+- We must **falsify** the rule by finding violations (P and not-Q).
+- Turn over a card **only if it could reveal a violation**.
+
+1. **'A' (Vowel: P is true)**:
+   - Must check the other side. If it's odd (not-Q), rule is false (P and not-Q).
+   - **Turn over**.
+
+2. **'4' (Even Number: Q is true)**:
+   - Other side could be consonant (not-P: fine) or vowel (P: also fine, since Q holds).
+   - No violation possible.
+   - **Do not turn over**.
+
+3. **'7' (Odd Number: not-Q)**:
+   - Other side vowel (P) would falsify (P and not-Q).
+   - Other side consonant (not-P) is fine.
+   - Must check for violation.
+   - **Turn over**.
+
+4. **'K' (Consonant: not-P)**:
+   - Rule doesn't apply (not-P → anything is true).
+   - Other side even or odd: irrelevant.
+   - **Do not turn over**.
+
+**Cards to turn over: 'A' (to confirm Q) and '7' (to confirm not-P).**
+
+ANSWER: A, 7","['A', '7']","['P', 'not_Q']",CORRECT,252,344,0
+0,T01,3,45,"If a card has a Vowel on one side, then it has an Even Number on the other side.","Rule: ""If a card has a Vowel on one side, then it has an Even Number on the other side.""
+Cards: ['7', '4', 'K', 'A']
+
+Which cards must you turn over?
+Your answer:","['7', '4', 'K', 'A']","### Step-by-Step Reasoning
+
+This is the Wason selection task, testing logical deduction from the conditional rule: **If a card has a Vowel on one side, then it has an Even Number on the other side.** (Vowel → Even).
+
+- Each card shows one side only. We must turn over cards to **falsify** the rule if possible (i.e., check for violations).
+- A violation occurs only if a **Vowel** pairs with an **Odd number** on the other side.
+- Logically irrelevant cards provide no risk of violation.
+
+**Cards analysis:**
+1. **'7' (Odd number)**: 
+   - Other side could be Vowel (violates: Vowel → Odd) or consonant (OK).
+   - **Must turn over** to check if it's a Vowel.
+
+2. **'4' (Even number)**: 
+   - Other side could be Vowel (OK: satisfies rule) or consonant (OK: rule doesn't apply).
+   - No violation possible. **Do not turn over.**
+
+3. **'K' (Consonant)**: 
+   - Rule ignores consonants (antecedent false).
+   - Other side Odd or Even is OK. **Do not turn over.**
+
+4. **'A' (Vowel)**: 
+   - Rule requires Even on other side.
+   - Other side could be Even (OK) or Odd (violates).
+   - **Must turn over** to check for Even.
+
+**Cards to turn over: '7' and 'A'.**
+
+ANSWER: 7, A","['7', 'A']","['P', 'not_Q']",CORRECT,252,319,0
+0,T01,4,46,"If a card has a Vowel on one side, then it has an Even Number on the other side.","Rule: ""If a card has a Vowel on one side, then it has an Even Number on the other side.""
+Cards: ['4', 'A', '7', 'K']
+
+Which cards must you turn over?
+Your answer:","['4', 'A', '7', 'K']","### Step-by-Step Reasoning
+
+This is the Wason selection task, testing logical implication. The rule is: **If a card has a Vowel on one side (P), then it has an Even Number on the other side (Q)**. In logical terms: **P → Q**.
+
+- Each card shows one side only.
+- Cards: **4** (even number, Q), **A** (vowel, P), **7** (odd number, ¬Q), **K** (consonant, ¬P).
+- To verify the rule **P → Q**, we must turn over cards that could **falsify** it (i.e., show P true but Q false). The rule holds unless there's a vowel without an even number on the other side.
+- We **do not** need to check cases where the rule is vacuously true (¬P or Q).
+
+1. **4** (shows Q: even number):
+   - Other side could be vowel (P → Q holds) or consonant (¬P → Q holds).
+   - Cannot falsify (no P without Q possible here).
+   - **Do not turn over**.
+
+2. **A** (shows P: vowel):
+   - Rule requires even number (Q) on other side.
+   - If other side is odd (¬Q), rule is false (P ∧ ¬Q).
+   - **Must turn over** to check for even number.
+
+3. **7** (shows ¬Q: odd number):
+   - If other side is vowel (P), rule is false (P ∧ ¬Q).
+   - **Must turn over** to ensure no vowel.
+
+4. **K** (shows ¬P: consonant):
+   - Rule doesn't apply (¬P → Q is always true, regardless of other side).
+   - Other side even or odd doesn't matter.
+   - **Do not turn over**.
+
+**Conclusion**: Turn over **A** (to confirm even number) and **7** (to confirm no vowel). This exhaustively tests the rule.
+
+ANSWER: A, 7","['A', '7']","['P', 'not_Q']",CORRECT,252,423,0
+1,T02,0,10042,"If a card has a Consonant on one side, then it has an Odd Number on the other side.","Rule: ""If a card has a Consonant on one side, then it has an Odd Number on the other side.""
+Cards: ['K', '7', 'A', '4']
+
+Which cards must you turn over?
+Your answer:","['K', '7', 'A', '4']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If a card has a Consonant on one side, then it has an Odd Number on the other side.** (P → Q, where P = Consonant, Q = Odd Number).
+
+We must turn over **only the cards that could falsify the rule** (i.e., show P without Q). Logical analysis:
+
+1. **'K' (Consonant = P)**: Must turn over. If the other side is Even (¬Q), rule is false (P ∧ ¬Q).
+2. **'7' (Odd Number = Q)**: No need to turn over. Rule allows any letter on the other side (Q satisfies P → Q regardless of P or ¬P).
+3. **'A' (Vowel = ¬P)**: No need to turn over. Rule doesn't apply (¬P satisfies P → Q regardless of number).
+4. **'4' (Even Number = ¬Q)**: Must turn over. If the other side is Consonant (P), rule is false (P ∧ ¬Q).
+
+Cards to turn over: 'K' and '4'.
+
+ANSWER: K, 4","['K', '4']","['P', 'not_Q']",CORRECT,252,247,0
+1,T02,1,10043,"If a card has a Consonant on one side, then it has an Odd Number on the other side.","Rule: ""If a card has a Consonant on one side, then it has an Odd Number on the other side.""
+Cards: ['4', 'K', 'A', '7']
+
+Which cards must you turn over?
+Your answer:","['4', 'K', 'A', '7']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If a card has a Consonant on one side, then it has an Odd Number on the other side.** (Logical form: Consonant → Odd)
+
+- **Consonants**: B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z.
+- **Vowels**: A, E, I, O, U (Y is a consonant here).
+- Cards show: **'4'** (even number), **'K'** (consonant), **'A'** (vowel), **'7'** (odd number).
+
+To falsify the rule (P → Q), we need:
+1. **P (Consonant)** without **Q (Odd)** → Turn over **'K'** (consonant). Check if the other side is odd. If even, rule is false.
+2. **Not Q (Even)** → Check if it has a consonant. Turn over **'4'** (even). If consonant on other side, rule is false.
+
+Do **not** turn over:
+- **'A'** (vowel = not P). Rule doesn't apply (antecedent false; modus ponens irrelevant).
+- **'7'** (odd = Q). Can't falsify (if consonant, rule holds; if vowel, irrelevant).
+
+**Cards to turn over: 'K' (test antecedent), '4' (test consequent negation).**
+
+ANSWER: 4, K","['4', 'K']","['P', 'not_Q']",CORRECT,252,337,0
+1,T02,2,10044,"If a card has a Consonant on one side, then it has an Odd Number on the other side.","Rule: ""If a card has a Consonant on one side, then it has an Odd Number on the other side.""
+Cards: ['A', 'K', '4', '7']
+
+Which cards must you turn over?
+Your answer:","['A', 'K', '4', '7']","### Step-by-Step Reasoning
+
+This is the Wason selection task, testing logical implication. The rule is: **If a card has a Consonant on one side, then it has an Odd Number on the other side.**
+
+- **Logical form**: If P (Consonant), then Q (Odd Number). To falsify it, we need P *and not Q* (Consonant *and Even Number*).
+- Cards show one side only: ['A', 'K', '4', '7']. Assume standard: letters on one side, numbers on the other; vowels/consonants are letters; odd/even are numbers.
+
+1. **'A' (Vowel)**:
+   - Not P (not consonant).
+   - Rule doesn't apply (implication true regardless of other side).
+   - **No need to turn**.
+
+2. **'K' (Consonant)**:
+   - P (consonant).
+   - Must check other side for Q (odd). If even, falsifies rule.
+   - **Must turn**.
+
+3. **'4' (Even Number)**:
+   - Not Q (even).
+   - If other side is consonant (P), falsifies (P and not Q).
+   - **Must turn**.
+
+4. **'7' (Odd Number)**:
+   - Q (odd).
+   - Rule satisfied regardless of other side (if consonant, good; if vowel, irrelevant).
+   - **No need to turn**.
+
+**Necessary cards**: 'K' (to verify odd) and '4' (to check no consonant).
+
+ANSWER: K, 4","['K', '4']","['P', 'not_Q']",CORRECT,252,329,0
+1,T02,3,10045,"If a card has a Consonant on one side, then it has an Odd Number on the other side.","Rule: ""If a card has a Consonant on one side, then it has an Odd Number on the other side.""
+Cards: ['4', 'A', '7', 'K']
+
+Which cards must you turn over?
+Your answer:","['4', 'A', '7', 'K']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If a card has a Consonant on one side, then it has an Odd Number on the other side.** (Logical form: Consonant → Odd.)
+
+- **Consonants** (e.g., K) trigger the rule's antecedent (P).
+- **Vowels** (e.g., A) do not trigger it.
+- **Odd numbers** (e.g., 7) are the consequent (Q).
+- **Even numbers** (e.g., 4) are not.
+
+To falsify the rule (P → Q), we need **P and not-Q** (Consonant and Even). We must turn cards that could show this.
+
+1. **'4' (Even number, not-Q)**: Could have a Consonant on the back (P and not-Q → falsifies). **Must turn.**
+
+2. **'A' (Vowel, not-P)**: Rule doesn't apply (not-P → Q or not-Q both true). No falsification possible. **Do not turn.**
+
+3. **'7' (Odd number, Q)**: Rule satisfied regardless of front (P → Q true; not-P → Q true). **Do not turn.**
+
+4. **'K' (Consonant, P)**: Back must be Odd to satisfy rule. If Even (not-Q), falsifies. **Must turn.**
+
+**Cards to turn: '4' and 'K'.**
+
+ANSWER: 4, K","['4', 'K']","['P', 'not_Q']",CORRECT,252,312,0
+1,T02,4,10046,"If a card has a Consonant on one side, then it has an Odd Number on the other side.","Rule: ""If a card has a Consonant on one side, then it has an Odd Number on the other side.""
+Cards: ['4', 'K', '7', 'A']
+
+Which cards must you turn over?
+Your answer:","['4', 'K', '7', 'A']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule to test is: **If a card has a Consonant on one side, then it has an Odd Number on the other side.** (P → Q, where P = Consonant, Q = Odd Number).
+
+- Cards show either a letter (Consonant/Vowel) or a number (Odd/Even).
+- We must **falsify** the rule by finding a card with Consonant (P) on one side but **not** Odd (¬Q) on the other.
+- Turn over only cards that could potentially falsify the rule.
+
+Analyze each card:
+
+1. **'4' (Even number)**:
+   - Shows ¬Q (not odd).
+   - To falsify: Needs P (Consonant) on the back.
+   - **Must turn over**: If back is Consonant, rule is false (P and ¬Q).
+
+2. **'K' (Consonant)**:
+   - Shows P.
+   - To falsify: Needs ¬Q (Even) on the back.
+   - **Must turn over**: If back is Even, rule is false (P and ¬Q).
+
+3. **'7' (Odd number)**:
+   - Shows Q (odd).
+   - Back is either Consonant (P → Q, allowed) or Vowel (¬P → anything, allowed).
+   - Cannot falsify (no way to get P and ¬Q).
+   - **Do not turn over**.
+
+4. **'A' (Vowel)**:
+   - Shows ¬P.
+   - Rule doesn't apply (¬P → anything is true).
+   - Cannot falsify.
+   - **Do not turn over**.
+
+**Cards to turn over: '4' and 'K'** (test for Even/Consonant mismatch).
+
+ANSWER: 4, K","['4', 'K']","['P', 'not_Q']",CORRECT,252,380,0
+2,T03,0,20042,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['D', '7', '3', 'A']
+
+Which cards must you turn over?
+Your answer:","['D', '7', '3', 'A']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **""If there is an A on one side, then there is a 3 on the other side.""** (In logical terms: A → 3.)
+
+We must **turn over only the cards that could potentially falsify the rule**. A rule is falsified only if there's an A without a 3 on the other side. The cards are:
+
+- **'D'**: Shows a consonant (not A). The rule says nothing about non-A cards. Whatever is on the other side (3 or not) can't violate ""if A, then 3"". **No need to turn.**
+- **'7'**: Shows a number (not 3). The rule says nothing about non-3 cards. The other side could be A or not; if A, we'd need to check the 7 (which isn't 3) to falsify—but wait, no: this card shows 7, so the other side is a letter. If it's A, then A paired with 7 (not 3) falsifies. **Must turn** to check if it's A.
+- **'3'**: Shows a 3. The rule requires a 3 if there's an A, so this satisfies the consequent regardless of the letter on the other side. If it's A, good (A → 3 holds). If not A, the rule doesn't apply. Can't falsify. **No need to turn.**
+- **'A'**: Shows an A. The rule requires a 3 on the other side. Must check if it's actually a 3 (or not) to verify. If not 3, falsifies. **Must turn.**
+
+Common error: People often pick '3' (confirmation bias), but it can't disprove the rule.
+
+### Cards to Turn Over
+'D' and '3' can be ignored. '7' and 'A' must be checked.
+
+ANSWER: 7, A","['7', 'A']","['P', 'not_Q']",CORRECT,251,407,0
+2,T03,1,20043,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['D', '7', 'A', '3']
+
+Which cards must you turn over?
+Your answer:","['D', '7', 'A', '3']","### Step-by-Step Reasoning
+
+This is the Wason selection task. The rule is: **If there is an A on one side, then there is a 3 on the other side.** (In logical terms: A → 3)
+
+We must **falsify** the rule by checking for violations (A without a 3 on the other side). The cards show one side each: D, 7, A, 3. We decide which to turn over.
+
+1. **D card** (not A):  
+   - The rule doesn't apply (antecedent is false).  
+   - Turning it over can't falsify (no A, so rule is satisfied regardless of other side).  
+   - **Do not turn over.**
+
+2. **7 card** (not 3):  
+   - If other side is A, this falsifies (A without 3).  
+   - Must check if other side is A.  
+   - **Turn over.**
+
+3. **A card** (A):  
+   - Rule requires 3 on other side.  
+   - If other side is not 3 (e.g., 5), falsifies.  
+   - Must check other side.  
+   - **Turn over.**
+
+4. **3 card** (3):  
+   - Rule is satisfied regardless of other side (if A, good; if not A like D, rule doesn't apply).  
+   - Can't falsify.  
+   - **Do not turn over.**
+
+**Cards to turn over: 7 and A** (to check for A→¬3 violations).
+
+ANSWER: 7, A","['7', 'A']","['P', 'not_Q']",CORRECT,251,331,0
+2,T03,2,20044,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['7', 'A', 'D', '3']
+
+Which cards must you turn over?
+Your answer:","['7', 'A', 'D', '3']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **""If there is an A on one side, then there is a 3 on the other side.""** (In logical terms: A → 3)
+
+We must **falsify** the rule by checking for violations (A on one side but not 3 on the other). The cards show: **7**, **A**, **D**, **3**. Each has a letter on one side and a number on the other.
+
+1. **'7' card** (number side visible):
+   - Shows 7 (not 3). The other side is a letter.
+   - The rule says nothing about non-A letters, so no restriction on what number pairs with non-A.
+   - Cannot falsify (no A visible). **Do not turn.**
+
+2. **'A' card** (letter side visible):
+   - Shows A, so the rule requires **3** on the other side.
+   - Must check the number side to confirm it's 3 (if not, rule is false).
+   - **Must turn.**
+
+3. **'D' card** (letter side visible):
+   - Shows D (not A).
+   - Rule doesn't apply (only triggers on A). Other side can be any number without violating.
+   - Cannot falsify. **Do not turn.**
+
+4. **'3' card** (number side visible):
+   - Shows 3. Other side is a letter.
+   - Rule requires 3 *only if* A is present, but doesn't forbid 3 with non-A (e.g., D-3 is fine).
+   - Cannot falsify (if other side is A, it confirms; if not, irrelevant). **Do not turn.**
+
+Only the **A** must be turned to verify the rule.
+
+ANSWER: A",['A'],['P'],CONFIRMATION_BIAS,251,380,0
+2,T03,3,20045,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['7', 'D', '3', 'A']
+
+Which cards must you turn over?
+Your answer:","['7', 'D', '3', 'A']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **""If there is an A on one side, then there is a 3 on the other side.""** (In logical terms: A → 3)
+
+We must **falsify** the rule by checking for violations (A on one side but not 3 on the other). The cards show: **7**, **D**, **3**, **A**. Each has a letter on one side and a number on the other.
+
+1. **A card**: Shows A (antecedent true). Must turn over to check if the other side is 3. If not 3, rule is false. **Must turn.**
+
+2. **7 card**: Shows 7 (not 3). The rule says nothing about non-3s. Whether the other side is A or not, no violation possible (A → 3 can't be falsified by non-3). **No need.**
+
+3. **D card**: Shows D (not A). The rule says nothing about non-As. Other side can be 3 or not—no violation possible. **No need.**
+
+4. **3 card**: Shows 3 (consequent true). Rule is satisfied regardless of other side (A → 3 holds if consequent is true). No way to falsify. **No need.**
+
+Only the **A** enables falsification.
+
+ANSWER: A",['A'],['P'],CONFIRMATION_BIAS,251,290,0
+2,T03,4,20046,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['3', 'D', 'A', '7']
+
+Which cards must you turn over?
+Your answer:","['3', 'D', 'A', '7']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If there is an A on one side, then there is a 3 on the other side."" This is a conditional: A → 3. To falsify it, we need an A without a 3 on the other side.
+
+2. **Cards visible**:
+   - '3': Shows 3 (consequent). Other side could be A (true) or not (still true, as rule doesn't require non-A → non-3). No need to turn.
+   - 'D': Shows D (not A). Rule doesn't apply (antecedent false). No need to turn.
+   - 'A': Shows A (antecedent). Must check other side is 3, to avoid falsification (e.g., if 7). **Must turn**.
+   - '7': Shows 7 (not 3). Other side could be non-A (true) or A (falsifies). **Must turn** to check it's not A.
+
+3. **Cards to turn over**: 'A' and '7'.
+
+ANSWER: A, 7","['A', '7']","['P', 'not_Q']",CORRECT,251,230,0
+3,T04,0,30042,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['8', 'F', 'D', '5']
+
+Which cards must you turn over?
+Your answer:","['8', 'F', 'D', '5']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is D, then the number must be 5."" This is a conditional: **D → 5**. To verify it, check for violations (D without 5).
+
+2. **Cards to evaluate**:
+   - '8': Number side. Can't falsify (no letter shown). **No need to turn**.
+   - 'F': Letter side (not D). Rule doesn't apply (antecedent false). **No need to turn**.
+   - 'D': Letter side **is** D. Must check if number is 5. **Must turn over**.
+   - '5': Number side **is** 5. Rule satisfied regardless of letter (consequent true). **No need to turn**.
+
+3. **Conclusion**: Only turn 'D' to confirm the number is 5.
+
+ANSWER: D",['D'],['P'],CONFIRMATION_BIAS,245,182,0
+3,T04,1,30043,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['D', '5', '8', 'F']
+
+Which cards must you turn over?
+Your answer:","['D', '5', '8', 'F']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing conditional logic: **If P (the letter is D), then Q (the number is 5)**. The cards show **P (D)**, **Q (5)**, **not-P (F)**, and **not-Q (8)**. To verify the rule, we must check for violations (cases where P is true but Q is false). We ignore cases that cannot falsify the rule.
+
+1. **D card (P)**: Must turn over. Check if its number is 5. If not (e.g., 8), the rule is false.
+2. **5 card (Q)**: No need to turn over. The rule says nothing about what letter pairs with 5 (could be D or not; no violation possible).
+3. **8 card (not-Q)**: Must turn over. If its letter is D, this falsifies the rule (D without 5).
+4. **F card (not-P)**: No need to turn over. The rule doesn't apply (only concerns D cards; F can pair with any number).
+
+Only **D** and **8** can potentially falsify the rule.
+
+ANSWER: D, 8","['D', '8']","['P', 'not_Q']",CORRECT,245,255,0
+3,T04,2,30044,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['D', '8', '5', 'F']
+
+Which cards must you turn over?
+Your answer:","['D', '8', '5', 'F']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is D, then the number must be 5."" This is a conditional: D → 5. To verify it, check for violations (D without 5).
+
+2. **Cards to test**:
+   - **'D' (letter D)**: Must turn over. Need to check its back for 5. If not 5, rule violated.
+   - **'8' (number 8)**: Must turn over. If its front is D, rule violated (D but not 5).
+   - **'5' (number 5)**: No need. Rule doesn't restrict what letter pairs with 5 (e.g., F5 is fine).
+   - **'F' (letter F)**: No need. Rule only applies to D; F can have any number.
+
+3. **Conclusion**: Turn over 'D' and '8' only.
+
+ANSWER: D, 8","['D', '8']","['P', 'not_Q']",CORRECT,245,203,0
+3,T04,3,30045,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['8', 'D', 'F', '5']
+
+Which cards must you turn over?
+Your answer:","['8', 'D', 'F', '5']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is D, then the number must be 5."" This is a conditional: **D → 5**. To verify it, check for violations (D without 5).
+
+2. **Cards to evaluate**:
+   - '8': Number side. Can't falsify (no letter shown). **No need to turn.**
+   - 'D': Letter side. **Must turn** to check if number is 5. (If not 5, rule broken.)
+   - 'F': Letter side (not D). Rule doesn't apply (antecedent false). **No need to turn.**
+   - '5': Number side (matches consequent). Can't falsify (no letter shown; even if D, it's fine). **No need to turn.**
+
+3. **Cards to turn over**: Only 'D' (to confirm number is 5).
+
+ANSWER: D",['D'],['P'],CONFIRMATION_BIAS,245,191,0
+3,T04,4,30046,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['F', 'D', '5', '8']
+
+Which cards must you turn over?
+Your answer:","['F', 'D', '5', '8']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing conditional logic: ""If P (the letter is D), then Q (the number must be 5)."" To verify the rule, we must turn over cards that could **falsify** it (i.e., show P true but Q false). We ignore cards that cannot falsify it.
+
+1. **Card 'F'**: Shows ""not P"" (letter is not D). The rule says nothing about non-D letters, so they can't falsify it (antecedent false). **Do not turn over.**
+
+2. **Card 'D'**: Shows P true (letter is D). We must check the other side to ensure the number is 5 (Q true). If it's not 5, the rule is false. **Must turn over.**
+
+3. **Card '5'**: Shows Q true (number is 5). The rule is satisfied regardless of the letter (if D, good; if not D, irrelevant). Can't falsify. **Do not turn over.**
+
+4. **Card '8'**: Shows ""not Q"" (number is not 5). If the other side is D (P true), this falsifies the rule (D but not 5). Must check the letter. **Must turn over.**
+
+Only 'D' and '8' can potentially violate the rule.
+
+ANSWER: D, 8","['D', '8']","['P', 'not_Q']",CORRECT,245,288,0
+4,T05,0,40042,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['8', 'U', '1', 'G']
+
+Which cards must you turn over?
+Your answer:","['8', 'U', '1', 'G']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: This is a conditional statement: ""If P, then Q"", where P = ""there is a U on the card"" (front side) and Q = ""there is an 8 on the back"" (number side). To verify the rule, we must check cases where it could be falsified (P true but Q false).
+
+2. **Analyze each card** (assuming cards show front sides: letter or number):
+   - **'8'**: Shows number 8 (Q true). Rule can't be falsified (no P). No need to turn.
+   - **'U'**: Shows U (P true). Must check back for 8 (Q true?). **Must turn over**.
+   - **'1'**: Shows 1 (Q false). Rule can't be falsified (no P). No need to turn.
+   - **'G'**: Shows G (neither P nor Q). Rule can't be falsified. No need to turn.
+
+3. **Conclusion**: Only turn the 'U' card to confirm an 8 is on the back.
+
+ANSWER: U",['U'],['P'],CONFIRMATION_BIAS,250,235,0
+4,T05,1,40043,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['G', '8', 'U', '1']
+
+Which cards must you turn over?
+Your answer:","['G', '8', 'U', '1']","### Step-by-Step Reasoning
+
+This is the Wason selection task, testing falsification of the conditional rule: **If U on front, then 8 on back** (U → 8).
+
+- Cards showing: **G** (front), **8** (back), **U** (front), **1** (back).
+- Goal: Turn over **only** cards that could falsify the rule (i.e., show U on front but not 8 on back).
+
+1. **G (front)**: Rule says nothing about G. Back could be anything (8 or not); can't falsify. **Do not turn.**
+
+2. **8 (back)**: Rule requires 8 only if front is U. Front could be U (valid) or not (irrelevant). Can't falsify. **Do not turn.**
+
+3. **U (front)**: Rule demands 8 on back. Must check back: if not 8, rule is false. **Must turn.**
+
+4. **1 (back)**: Not 8 on back. If front is U, falsifies rule. Must check front isn't U. **Must turn.**
+
+### Cards to Turn Over
+U and 1.
+
+ANSWER: U, 1","['U', '1']","['P', 'not_Q']",CORRECT,250,252,0
+4,T05,2,40044,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['U', '8', '1', 'G']
+
+Which cards must you turn over?
+Your answer:","['U', '8', '1', 'G']","### Step-by-Step Reasoning
+
+This is the Wason selection task, testing falsification of the conditional rule: **If U on front → 8 on back** (equivalent to ""U implies 8"").
+
+- The rule is falsified **only** by a card with U on front and **not** 8 on back.
+- We must turn over cards that could potentially falsify the rule (i.e., show a violation).
+
+**Analyze each card:**
+1. **'U'**: Front shows U, so must turn over. Back must be 8 to satisfy rule. If back is not 8 (e.g., 1, 2), rule is false.
+2. **'8'**: Front shows 8. Back could be U (satisfies) or not U (irrelevant, as rule doesn't restrict non-U fronts). No need to turn.
+3. **'1'**: Front shows 1 (not U). Back could be 8 (irrelevant) or not 8 (irrelevant). Rule doesn't apply. No need to turn.
+4. **'G'**: Front shows G (not U). Same as '1': irrelevant to rule. No need to turn.
+
+**Cards to turn over**: Only 'U' (to check for 8 on back).
+
+ANSWER: U",['U'],['P'],CONFIRMATION_BIAS,250,269,0
+4,T05,3,40045,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['G', '1', '8', 'U']
+
+Which cards must you turn over?
+Your answer:","['G', '1', '8', 'U']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If there is a U on the card, then there is an 8 on the back."" This is a conditional: **U → 8**. To falsify it, we need a U on the front with **not 8** (anything else) on the back.
+
+2. **Cards shown**:
+   - 'G': No U, so irrelevant (antecedent false; rule can't be violated).
+   - '1': Back unknown. If back has U, rule irrelevant (no requirement for non-8 backs). Skip.
+   - '8': Back unknown. Must check if back has **not U** (rule holds regardless). Skip.
+   - 'U': **Must turn over**. Has U, so back **must** be 8. Check for violation (non-8).
+
+3. **Cards to turn**: Only 'U' (to verify back is 8).
+
+ANSWER: U",['U'],['P'],CONFIRMATION_BIAS,250,199,0
+4,T05,4,40046,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['G', 'U', '8', '1']
+
+Which cards must you turn over?
+Your answer:","['G', 'U', '8', '1']","### Step-by-Step Reasoning
+
+This is the Wason selection task, testing falsification of the conditional rule: **If U on front → 8 on back** (equivalent to ""U and not-8"" is false).
+
+Cards shown:  
+- Card 1: **G** (front)  
+- Card 2: **U** (front)  
+- Card 3: **8** (back)  
+- Card 4: **1** (back)  
+
+To falsify the rule, check only cards that could show a violation (U without 8).  
+
+1. **G card**: G is not U, so irrelevant (antecedent false). No need to turn.  
+2. **U card**: Shows U (antecedent true), so back **must** be 8. Turn to check for violation (non-8).  
+3. **8 card**: Shows 8 (consequent true). Back could be anything (U or not); can't falsify. No need to turn.  
+4. **1 card**: Shows 1 (not-8, consequent false). If front is U, it falsifies. **Must** turn to check front.  
+
+Only U and 1 can falsify.
+
+ANSWER: card2, card4","['card2', 'card4']",[],NOISE,250,260,0
+5,T06,0,50042,"If the number is Even, then the letter is a Vowel.","Rule: ""If the number is Even, then the letter is a Vowel.""
+Cards: ['4', 'K', 'E', '7']
+
+Which cards must you turn over?
+Your answer:","['4', 'K', 'E', '7']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **""If the number is Even, then the letter is a Vowel.""** (If P, then Q, where P = ""number is even"", Q = ""letter is a vowel"").
+
+We must test the rule by turning over only cards that could **falsify** it (i.e., find a case where P is true but Q is false). Cards that cannot falsify it (P false or Q true) can be ignored.
+
+Cards: **['4', 'K', 'E', '7']**
+- **'4'**: Even number (P true). Must turn over to check if the letter is a vowel (Q true). If consonant, rule falsified.
+- **'K'**: Consonant (Q false). Must turn over to check if the number is even (P true). If even, rule falsified.
+- **'E'**: Vowel (Q true). No need to turn over. Rule holds regardless of number (antecedent false if odd, or consequent true if even).
+- **'7'**: Odd number (P false). No need to turn over. Rule holds vacuously (antecedent false).
+
+Thus, turn over **'4'** (even number) and **'K'** (consonant).
+
+ANSWER: 4, K","['4', 'K']","['P', 'not_Q']",CORRECT,244,282,0
+5,T06,1,50043,"If the number is Even, then the letter is a Vowel.","Rule: ""If the number is Even, then the letter is a Vowel.""
+Cards: ['K', 'E', '7', '4']
+
+Which cards must you turn over?
+Your answer:","['K', 'E', '7', '4']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the number is Even, then the letter is a Vowel** (logical form: Even → Vowel).
+
+- Cards show: **K** (consonant letter), **E** (vowel letter), **7** (odd number), **4** (even number).
+- We must turn over **only the cards that could potentially falsify the rule** (i.e., make it false). The rule is falsified only by an Even number paired with a non-Vowel (consonant).
+
+1. **K (consonant letter)**:  
+   - This is a letter side. To check the rule (Even → Vowel), we need to see if its number side is Even.  
+   - If Even + K (consonant), the rule is false.  
+   - **Must turn over** (could falsify).
+
+2. **E (vowel letter)**:  
+   - This is a vowel. The rule only restricts Even numbers (they must be vowels).  
+   - Any number (Even or odd) + E satisfies the rule. No way to falsify.  
+   - **Do not turn over**.
+
+3. **7 (odd number)**:  
+   - This is odd. The rule says nothing about odd numbers (they can pair with any letter).  
+   - Odd + any letter satisfies the rule. No way to falsify.  
+   - **Do not turn over**.
+
+4. **4 (even number)**:  
+   - This is Even, so the rule requires its letter side to be a Vowel.  
+   - If 4 + consonant, the rule is false.  
+   - **Must turn over** (could falsify).
+
+**Cards to turn over: K and 4.**
+
+ANSWER: K, 4","['K', '4']","['P', 'not_Q']",CORRECT,244,381,0
+5,T06,2,50044,"If the number is Even, then the letter is a Vowel.","Rule: ""If the number is Even, then the letter is a Vowel.""
+Cards: ['E', 'K', '4', '7']
+
+Which cards must you turn over?
+Your answer:","['E', 'K', '4', '7']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the number is Even, then the letter is a Vowel** (i.e., Even → Vowel).
+
+- **Logical form**: P → Q, where P = ""Even number"" and Q = ""Vowel letter"".
+- To falsify the rule, we need a case where P is true but Q is false (Even number with a non-Vowel).
+- We must turn over **only cards that could potentially falsify the rule**. Cards that cannot falsify it (even if they show confirming or irrelevant info) can be ignored.
+
+Analyze each card:
+
+1. **'E' (Vowel letter)**:
+   - Shows Q is true.
+   - Could be paired with Even (confirms) or Odd (irrelevant, since rule doesn't apply to Odd).
+   - **Cannot falsify**: No Even + non-Vowel possible here.
+   - **Do not turn over**.
+
+2. **'K' (Consonant letter)**:
+   - Shows Q is false (non-Vowel).
+   - If the other side is Even (P true), this falsifies (Even + non-Vowel).
+   - If Odd (P false), rule doesn't apply.
+   - **Must turn over** to check for Even.
+
+3. **'4' (Even number)**:
+   - Shows P is true.
+   - If the other side is non-Vowel (Q false), this falsifies.
+   - If Vowel (Q true), it confirms.
+   - **Must turn over** to check for Vowel.
+
+4. **'7' (Odd number)**:
+   - Shows P is false.
+   - Rule (Even → Vowel) doesn't apply to Odd numbers (antecedent false).
+   - Other side Vowel or not is irrelevant.
+   - **Cannot falsify**: No way to get Even + non-Vowel.
+   - **Do not turn over**.
+
+**Cards to turn over**: 'K' (to rule out Even + Consonant) and '4' (to rule out Even + Consonant).
+
+ANSWER: K, 4","['K', '4']","['P', 'not_Q']",CORRECT,244,434,0
+5,T06,3,50045,"If the number is Even, then the letter is a Vowel.","Rule: ""If the number is Even, then the letter is a Vowel.""
+Cards: ['7', '4', 'K', 'E']
+
+Which cards must you turn over?
+Your answer:","['7', '4', 'K', 'E']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the number is Even, then the letter is a Vowel** (logical form: Even → Vowel).
+
+We must test the rule by turning over only cards that could **falsify** it (i.e., find a counterexample: Even number with a non-Vowel).
+
+Cards: **7** (odd number), **4** (even number), **K** (consonant), **E** (vowel).
+
+1. **7 (odd number)**: The rule says nothing about odd numbers (antecedent is false). Whether the letter is a vowel or consonant cannot falsify the rule. **Do not turn over.**
+
+2. **4 (even number)**: The rule requires a vowel on the other side. If it's a consonant, the rule is false (Even + non-Vowel). **Must turn over.**
+
+3. **K (consonant)**: If the number is odd, no problem (rule doesn't apply). But if even, it falsifies (Even + non-Vowel). **Must turn over.**
+
+4. **E (vowel)**: The rule is satisfied regardless of the number (even → vowel holds; odd is irrelevant). Cannot falsify. **Do not turn over.**
+
+Only **4** and **K** need turning over.
+
+ANSWER: 4, K","['4', 'K']","['P', 'not_Q']",CORRECT,244,285,0
+5,T06,4,50046,"If the number is Even, then the letter is a Vowel.","Rule: ""If the number is Even, then the letter is a Vowel.""
+Cards: ['4', 'K', '7', 'E']
+
+Which cards must you turn over?
+Your answer:","['4', 'K', '7', 'E']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the number is Even, then the letter is a Vowel** (i.e., Even → Vowel).
+
+- Cards show: **4** (even number), **K** (consonant letter), **7** (odd number), **E** (vowel letter).
+- We must turn over **only the cards that could potentially falsify the rule**. The rule is falsified *only* by an even number paired with a non-vowel (consonant).
+
+1. **4 (even number)**: Must turn over. Check if its letter is a vowel. If consonant, rule is false (even without vowel).
+
+2. **K (consonant)**: Must turn over. If its number is even, rule is false (even without vowel).
+
+3. **7 (odd number)**: No need. Odd numbers have no restriction under the rule (odd → anything is fine).
+
+4. **E (vowel)**: No need. Any number with a vowel satisfies the rule (even → vowel is true; odd → vowel is irrelevant).
+
+**Cards to turn over: 4 and K.**
+
+ANSWER: 4, K","['4', 'K']","['P', 'not_Q']",CORRECT,244,252,0
+6,T07,0,60042,"If the number is Odd, then the letter is a Consonant.","Rule: ""If the number is Odd, then the letter is a Consonant.""
+Cards: ['M', '6', 'A', '9']
+
+Which cards must you turn over?
+Your answer:","['M', '6', 'A', '9']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the number is Odd, then the letter is a Consonant.** In logical terms: If P (number is Odd), then Q (letter is Consonant). To falsify the rule, we need a case where P is true but Q is false (Odd number with a Vowel).
+
+Cards shown: **M** (letter), **6** (number), **A** (letter), **9** (number).
+
+1. **M** (Consonant letter):  
+   - This is Q (true). The rule doesn't constrain Consonants (Q can pair with anything). No need to turn over.  
+   - Can't falsify: Odd/Even doesn't matter here.
+
+2. **6** (Even number):  
+   - This is not-P (Even). The rule only applies when P (Odd) is true. Even numbers can pair with anything. No need to turn over.  
+   - Can't falsify: Rule ignores Even numbers.
+
+3. **A** (Vowel letter):  
+   - This is not-Q (Vowel). We must check if it's paired with an Odd number (P true, Q false = falsifies). **Must turn over.**
+
+4. **9** (Odd number):  
+   - This is P (Odd). The rule requires it pairs with a Consonant (Q). We must check the letter side to ensure it's not a Vowel. **Must turn over.**
+
+Only **A** and **9** can potentially falsify the rule.
+
+ANSWER: A, 9","['A', '9']","['P', 'not_Q']",CORRECT,244,326,0
+6,T07,1,60043,"If the number is Odd, then the letter is a Consonant.","Rule: ""If the number is Odd, then the letter is a Consonant.""
+Cards: ['9', '6', 'M', 'A']
+
+Which cards must you turn over?
+Your answer:","['9', '6', 'M', 'A']","**Step-by-step reasoning:**
+
+1. **Formalize the rule**: ""If the number is Odd, then the letter is a Consonant"" is a conditional: **Odd → Consonant**. To verify it, we must check for violations (cases where antecedent is true but consequent is false).
+
+2. **Identify antecedent (Odd number)**: Turn over cards that could make ""Odd"" true.
+   - '9': Odd number. Must turn over to check if its letter is a Consonant (if vowel, rule violated).
+
+3. **Identify consequent (Consonant letter)**: Turn over cards that could make ""Consonant"" false (i.e., a vowel).
+   - 'A': Vowel. Must turn over to check if its number is Odd (if odd, rule violated).
+
+4. **Other cards**:
+   - '6': Even number. Antecedent false, so rule holds regardless of letter. No need to turn.
+   - 'M': Consonant. Consequent true, so rule holds regardless of number. No need to turn.
+
+**Cards to turn over**: '9' (test antecedent) and 'A' (test negation of consequent).
+
+ANSWER: 9, A","['9', 'A']","['P', 'not_Q']",CORRECT,244,242,0
+6,T07,2,60044,"If the number is Odd, then the letter is a Consonant.","Rule: ""If the number is Odd, then the letter is a Consonant.""
+Cards: ['A', '9', '6', 'M']
+
+Which cards must you turn over?
+Your answer:","['A', '9', '6', 'M']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is Odd, then the letter is a Consonant.""  
+   - This is a conditional: **Odd → Consonant**.  
+   - To verify, check for violations (Odd number with a vowel).
+
+2. **Analyze each card**:  
+   - **'A'**: Vowel. Must turn over to check if the number is odd (if odd, rule violated). **Turn over**.  
+   - **'9'**: Odd number. Must turn over to check if the letter is a consonant (if vowel, rule violated). **Turn over**.  
+   - **'6'**: Even number. Rule doesn't apply (antecedent false). No need to turn over. **Do not turn over**.  
+   - **'M'**: Consonant. Rule satisfied regardless of number. No need to turn over. **Do not turn over**.
+
+3. **Cards to turn over**: 'A' and '9'.
+
+ANSWER: A, 9","['A', '9']","['P', 'not_Q']",CORRECT,244,207,0
+6,T07,3,60045,"If the number is Odd, then the letter is a Consonant.","Rule: ""If the number is Odd, then the letter is a Consonant.""
+Cards: ['6', 'A', 'M', '9']
+
+Which cards must you turn over?
+Your answer:","['6', 'A', 'M', '9']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is Odd, then the letter is a Consonant.""  
+   - This is a conditional: **P → Q**, where:  
+     - **P** = ""number is Odd""  
+     - **Q** = ""letter is a Consonant""  
+   - To falsify **P → Q**, we need **P true and Q false** (Odd number but vowel letter).
+
+2. **Examine each card**:  
+   | Card | Shows | Relevant? | Why turn over? |
+   |------|-------|-----------|---------------|
+   | **'6'** | Even number | **Yes** | Even (¬P), so rule can't be falsified regardless of letter. **No need to turn.** |
+   | **'A'** | Vowel (not consonant) | **Yes** | ¬Q. Must check if number is Odd (P). If Odd + Vowel, rule falsified. **Turn over.** |
+   | **'M'** | Consonant | **No** | Q is true, so rule holds regardless of number. **No need to turn.** |
+   | **'9'** | Odd number | **Yes** | P is true. Must check if letter is Consonant (Q). If vowel (¬Q), rule falsified. **Turn over.** |
+
+3. **Cards to turn over**: 'A' (to check number isn't Odd) and '9' (to check letter is Consonant).
+
+ANSWER: A, 9","['A', '9']","['P', 'not_Q']",CORRECT,244,318,0
+6,T07,4,60046,"If the number is Odd, then the letter is a Consonant.","Rule: ""If the number is Odd, then the letter is a Consonant.""
+Cards: ['9', 'A', 'M', '6']
+
+Which cards must you turn over?
+Your answer:","['9', 'A', 'M', '6']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the number is Odd, then the letter is a Consonant.** In logical terms: **Odd → Consonant**.
+
+We must turn over **only the cards that could potentially falsify (disprove) the rule**. A rule is falsified only if the antecedent (Odd) is true but the consequent (Consonant) is false (i.e., a vowel).
+
+- **'9' (Odd number)**: Must turn over. This has an Odd number (antecedent true). We need to check if the letter is a Consonant. If it's a vowel, the rule is false.
+- **'A' (Vowel)**: Must turn over. This is a vowel (not Consonant, consequent false). We need to check if the number is Odd. If it is Odd, the rule is false.
+- **'M' (Consonant)**: **Do not turn over**. This satisfies the consequent (Consonant is true). Whether the number is Odd or Even, it can't falsify the rule (Odd → Consonant holds if consequent is true).
+- **'6' (Even number)**: **Do not turn over**. This has an Even number (antecedent false). The rule makes no claim about Even numbers, so it can't falsify the rule regardless of the letter.
+
+Thus, only '9' and 'A' must be turned over.
+
+ANSWER: 9, A","['9', 'A']","['P', 'not_Q']",CORRECT,244,302,0
+7,T08,0,70042,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['9', 'E', '2', 'K']
+
+Which cards must you turn over?
+Your answer:","['9', 'E', '2', 'K']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing conditional logic: **If P (vowel: E), then Q (even number: 2)**. The rule is: ""If the card shows an E, then the number is 2.""
+
+To falsify the rule, we need a card showing **E (P) but not 2 (not Q)**. We ignore cases that cannot falsify it.
+
+1. **'9' (odd number, not Q)**: Cannot falsify. Rule says nothing about non-2 numbers. (No E visible, so irrelevant.)
+
+2. **'E' (vowel, P)**: **Must turn over**. Check back for 2 (Q). If odd (not Q), rule falsified.
+
+3. **'2' (even number, Q)**: Cannot falsify. Rule allows 2 with any front (vowel or consonant). (No E visible, so irrelevant.)
+
+4. **'K' (consonant, not P)**: Cannot falsify. Rule only restricts E cards; K can have any number.
+
+**Only 'E' must be turned over** (to verify it has 2). No other card can falsify the rule.
+
+ANSWER: E",['E'],['P'],CONFIRMATION_BIAS,245,260,0
+7,T08,1,70043,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['K', '2', '9', 'E']
+
+Which cards must you turn over?
+Your answer:","['K', '2', '9', 'E']","**Step-by-step reasoning:**
+
+1. **Understand the rule as a conditional**: ""If the card shows an E, then the number is 2."" In logical terms: If P (front is E), then Q (back is 2). To verify, check for violations (P true and Q false).
+
+2. **Analyze each card**:
+   - **'K' (front: K)**: Not E, so P is false. Rule can't be violated (true regardless of back). No need to turn.
+   - **'2' (front: 2)**: This is the number side. Rule is about E → 2, so seeing 2 doesn't test the antecedent (E). Back could be anything (E or not); no violation possible here. No need to turn.
+   - **'9' (front: 9)**: Number side, not 2. Back could be E or not. If not E, fine; if E, still fine (rule doesn't care about non-2 backs). No violation possible. No need to turn.
+   - **'E' (front: E)**: P is true. Must check if back is 2 (Q true). If back isn't 2, rule violated. **Must turn over**.
+
+3. **Conclusion**: Only the 'E' card must be turned to verify the rule.
+
+ANSWER: E",['E'],['P'],CONFIRMATION_BIAS,245,283,0
+7,T08,2,70044,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['2', 'K', '9', 'E']
+
+Which cards must you turn over?
+Your answer:","['2', 'K', '9', 'E']","**Step-by-step reasoning:**
+
+1. **Understand the rule (modus ponens form):** ""If P, then Q"" where P = ""card shows an E"" and Q = ""number is 2"". To verify, check cases where the rule could be falsified (P true but Q false).
+
+2. **Analyze each card:**
+   - **'2'**: Shows Q (number is 2). Could have E (P true, as required) or not (P false, rule vacuously true). No violation possible. **No need to turn.**
+   - **'K'**: Neither P nor Q. P false, so rule holds regardless of back. **No need to turn.**
+   - **'9'**: Shows ¬Q (number is 9, not 2). P false (not E), so rule holds regardless of back. **No need to turn.**
+   - **'E'**: Shows P (vowel E). Must check if Q (number 2) holds. If back is not 2, rule falsified. **Must turn over.**
+
+3. **Conclusion:** Only the 'E' card must be turned to confirm the rule. The '2' reveals nothing falsifying (per Wason selection task logic).
+
+ANSWER: E",['E'],['P'],CONFIRMATION_BIAS,245,262,0
+7,T08,3,70045,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['E', '9', '2', 'K']
+
+Which cards must you turn over?
+Your answer:","['E', '9', '2', 'K']","### Step-by-Step Reasoning
+
+This is the Wason selection task, testing falsification of the conditional rule: **If the card shows an E, then the number is 2** (logically: E → 2).
+
+To falsify the rule, we need a card that shows **E on one side and NOT 2 on the other**. We must turn over only cards that could potentially reveal this violation. Irrelevant cards can be ignored.
+
+1. **'E' card**:
+   - Shows antecedent (E).
+   - Must turn over: If the other side is not 2 (e.g., 9, K, or anything else), the rule is false.
+   - Potential falsifier.
+
+2. **'9' card**:
+   - Shows consequent (2)? No, shows NOT 2 (9).
+   - Must turn over: If the other side is E, it's E → 9 (violates E → 2).
+   - Potential falsifier.
+
+3. **'2' card**:
+   - Shows consequent (2).
+   - No need to turn over: Rule is E → 2. If other side is E, it confirms (true). If not E (e.g., K), it's K → 2 (irrelevant; rule doesn't apply).
+   - Cannot falsify.
+
+4. **'K' card**:
+   - Neither E nor 2 (K is a letter, not E).
+   - No need to turn over: Rule only constrains E cards. K → anything (even 2) is irrelevant.
+   - Cannot falsify.
+
+**Cards to turn over: 'E' (to check for non-2) and '9' (to check for no E).**
+
+ANSWER: E, 9","['E', '9']","['P', 'not_Q']",CORRECT,245,363,0
+7,T08,4,70046,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['9', 'K', '2', 'E']
+
+Which cards must you turn over?
+Your answer:","['9', 'K', '2', 'E']","**Step-by-step reasoning:**
+
+1. **Understand the rule as a conditional**: ""If the card shows an E, then the number is 2."" In logical terms: If P (front is E), then Q (back is 2). To verify, check for violations (P true but Q false).
+
+2. **Evaluate each card**:
+   - **'E' card**: Shows P (E). Must turn over to check if back is 2. (If not 2, rule violated.)
+   - **'2' card**: Shows Q (2). No need to turn over. Rule allows non-E cards to have 2 (doesn't test ""if E"").
+   - **'9' card**: Shows not-Q (9 ≠ 2). No need to turn over. Rule only cares about E cards; non-2 backs are fine if not E.
+   - **'K' card**: Assuming standard deck (K = King, not E). No need to turn over. Only E fronts matter.
+
+3. **Cards to turn over**: Only 'E' (to confirm back is 2). No others can falsify the rule.
+
+ANSWER: E",['E'],['P'],CONFIRMATION_BIAS,245,240,0
+8,T09,0,80042,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['X', '4', '7', 'Y']
+
+Which cards must you turn over?
+Your answer:","['X', '4', '7', 'Y']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing conditional logic: **If P (7), then Q (X)**. To verify the rule, turn over cards that could **falsify** it (i.e., show P without Q). Do **not** turn over cards that cannot falsify it.
+
+1. **'X' card** (Q): Could have a 7 (confirms rule) or not (irrelevant). Cannot falsify (no ""7 but not X""). **Do not turn over.**
+
+2. **'4' card** (not P): Rule says nothing about non-7s. Could have X or not—irrelevant. **Do not turn over.**
+
+3. **'7' card** (P): Must check back for X. If not X, falsifies rule. **Must turn over.**
+
+4. **'Y' card** (not Q): If front is 7, falsifies (7 but not X). **Must turn over.**
+
+**Cards to turn over: '7' and 'Y'.**
+
+ANSWER: 7, Y","['7', 'Y']","['P', 'not_Q']",CORRECT,245,229,0
+8,T09,1,80043,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['4', '7', 'X', 'Y']
+
+Which cards must you turn over?
+Your answer:","['4', '7', 'X', 'Y']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing logical implication. The rule is: **If the card shows a 7, then the letter is X** (symbolically: 7 → X).
+
+- To **confirm** the rule, we need cases where it holds (e.g., 7 paired with X).
+- To **falsify** the rule, we need a violation: 7 paired with **not X** (anything other than X).
+- We **ignore** cases that cannot falsify the rule (not 7, regardless of letter; or X, regardless of number).
+
+**Analyze each card:**
+1. **'4'**: Shows ""not 7"". The rule says nothing about non-7s (antecedent false). Cannot falsify. **Do not turn over.**
+2. **'7'**: Shows 7 (antecedent true). Must check if the other side is X. If not X, rule is false. **Must turn over.**
+3. **'X'**: Shows X (consequent true). Rule holds regardless of number (vacuous truth if not 7). Cannot falsify. **Do not turn over.**
+4. **'Y'**: Shows ""not X"". If the other side is 7, this falsifies (7 → not X). **Must turn over.**
+
+**Conclusion**: Turn over '7' (to ensure X) and 'Y' (to ensure not 7).
+
+ANSWER: 7, Y","['7', 'Y']","['P', 'not_Q']",CORRECT,245,308,0
+8,T09,2,80044,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['7', 'Y', '4', 'X']
+
+Which cards must you turn over?
+Your answer:","['7', 'Y', '4', 'X']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the card shows a 7, then the letter is X."" This is a conditional: **P → Q**, where **P** = ""shows a 7"" (antecedent) and **Q** = ""letter is X"" (consequent).
+
+2. **Falsification test**: To verify the rule, check for violations (P true and Q false). Turn over cards that could potentially falsify it:
+   - Cards showing **P** (a 7): Must confirm Q is true (letter is X).
+   - Cards showing **not Q** (not X): Must confirm P is false (not a 7).
+
+3. **Evaluate each card**:
+   | Card | Side visible | Could it falsify? | Reason |
+   |------|--------------|-------------------|--------|
+   | '7'  | Number (P)  | **Yes**          | P is true. Must turn over to check if back is X (Q true). If back is not X, rule is false. |
+   | 'Y'  | Letter (not Q) | **Yes**       | Q is false (not X). Must turn over to check if back is not 7 (P false). If back is 7, rule is false. |
+   | '4'  | Number (not P) | **No**        | P is false. Rule can't be falsified (true regardless of back). |
+   | 'X'  | Letter (Q)   | **No**           | Q is true. Rule can't be falsified (true regardless of back). |
+
+4. **Conclusion**: Must turn over **'7'** (to verify consequent) and **'Y'** (to verify antecedent false).
+
+ANSWER: 7, Y","['7', 'Y']","['P', 'not_Q']",CORRECT,245,379,0
+8,T09,3,80045,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['7', '4', 'X', 'Y']
+
+Which cards must you turn over?
+Your answer:","['7', '4', 'X', 'Y']","**Step-by-step reasoning:**
+
+1. **Understand the rule (modus ponens form):** ""If P, then Q"" where P = ""the card shows a 7"" and Q = ""the letter is X"". To falsify this, we need a case where P is true but Q is false (7 on front but not X on back).
+
+2. **Evaluate each card:**
+   - **'7'**: Shows P (true). Must turn over to check if back is X (Q true). If back is not X, rule is falsified.
+   - **'4'**: Does not show P (false). Rule allows any back side (vacuously true). No need to turn over.
+   - **'X'**: Shows Q (true). Rule allows any front side (if P false, true regardless). No need to turn over.
+   - **'Y'**: Shows not Q (false). Must turn over to check front. If front is 7 (P true), rule is falsified.
+
+3. **Cards to turn over:** '7' (test consequent) and 'Y' (test falsifying antecedent).
+
+ANSWER: 7, Y","['7', 'Y']","['P', 'not_Q']",CORRECT,245,242,0
+8,T09,4,80046,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['Y', '7', 'X', '4']
+
+Which cards must you turn over?
+Your answer:","['Y', '7', 'X', '4']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the card shows a 7, then the letter is X."" This is a conditional: **7 → X**. To verify it, check for violations (a 7 without an X).
+
+2. **Falsification test** (Wason selection task):
+   - **Turn over '7'** (antecedent): Must check if its letter is X. If not X, rule is false.
+   - **Do not turn over 'X'** (consequent): Any number (7 or not) on its back satisfies the rule.
+   - **Do not turn over 'Y'** (not-X): A non-X can pair with any number except 7, but since we already check all 7s, this doesn't violate.
+   - **Do not turn over '4'** (not-7): A non-7 can pair with any letter (X or not), so no violation possible.
+
+3. **Cards to turn over**: Only the '7' card.
+
+ANSWER: 7",['7'],['P'],CONFIRMATION_BIAS,245,220,0
+9,T10,0,90042,"If the letter is B, then the number is Greater than 10.","Rule: ""If the letter is B, then the number is Greater than 10.""
+Cards: ['B', 'A', '5', '15']
+
+Which cards must you turn over?
+Your answer:","['B', 'A', '5', '15']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the letter is B, then the number is Greater than 10.** (In logical terms: B → >10).
+
+We must turn over **only the cards that could potentially falsify the rule**. A rule is falsified only if the antecedent (B) is true but the consequent (>10) is false.
+
+- **'B' card**: Shows the antecedent (letter is B). Must turn over to check if the number on the other side is >10. If it's ≤10, the rule is false. **Must turn over.**
+- **'A' card**: Does not show the antecedent (not B). The rule says nothing about A, so whatever number is on the other side (even ≤10) doesn't falsify it. **No need to turn over.**
+- **'5' card**: Shows a number ≤10 (not >10). To falsify, we'd need B on the other side (B with ≤10). But if it's A (or any non-B), the rule doesn't apply. **No need to turn over.**
+- **'15' card**: Shows >10, which satisfies the consequent. Whether the letter is B or not, it can't falsify (B → >10 holds; non-B is irrelevant). **No need to turn over.**
+
+Only 'B' can lead to a violation.
+
+ANSWER: B",['B'],['P'],CONFIRMATION_BIAS,246,293,0
+9,T10,1,90043,"If the letter is B, then the number is Greater than 10.","Rule: ""If the letter is B, then the number is Greater than 10.""
+Cards: ['15', 'B', '5', 'A']
+
+Which cards must you turn over?
+Your answer:","['15', 'B', '5', 'A']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the letter is B, then the number is Greater than 10.** (In logical terms: B → >10).
+
+We must turn over **only the cards that could potentially falsify the rule**. A rule is falsified only if there is a B with a number ≤10. Cards that cannot falsify it (e.g., confirming instances) can be ignored.
+
+Cards available: **['15', 'B', '5', 'A']** (15 = >10; 5 = ≤10).
+
+1. **'15' (number >10)**: This shows a number >10. It doesn't matter what letter is on the other side (B or not)—it can't falsify the rule (no B here to test). **Do not turn over.**
+
+2. **'B' (letter B)**: This is the antecedent (B). To check the rule, we must verify the other side is >10. If it's ≤10, the rule is false. **Must turn over.**
+
+3. **'5' (number ≤10)**: This is the negation of the consequent (not >10). To falsify, we must check if the other side is B (B + ≤10 = violation). If it's A, no problem. **Must turn over.**
+
+4. **'A' (letter not B)**: This is not B, so the rule doesn't apply (antecedent false). Other side can be any number without violating. **Do not turn over.**
+
+### Cards to Turn Over
+Only 'B' and '5' can falsify the rule.
+
+ANSWER: B, 5","['B', '5']","['P', 'not_Q']",CORRECT,246,349,0
+9,T10,2,90044,"If the letter is B, then the number is Greater than 10.","Rule: ""If the letter is B, then the number is Greater than 10.""
+Cards: ['B', '5', 'A', '15']
+
+Which cards must you turn over?
+Your answer:","['B', '5', 'A', '15']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is B, then the number is >10."" This is a conditional: B → >10. To verify, check for violations (B without >10).
+
+2. **Card 'B' (letter side)**: Must turn over. See if its number side is >10. If ≤10, rule is false.
+
+3. **Card '5' (number side ≤10)**: Must turn over. If its letter side is B, rule is violated (B but not >10).
+
+4. **Card 'A' (letter side ≠B)**: No need to turn. Rule only restricts B cards; A can't violate it.
+
+5. **Card '15' (number side >10)**: No need to turn. Satisfies rule regardless of letter (if B, good; if not B, irrelevant).
+
+**Cards to turn over**: 'B' and '5'.
+
+ANSWER: B, 5","['B', '5']","['P', 'not_Q']",CORRECT,246,203,0
+9,T10,3,90045,"If the letter is B, then the number is Greater than 10.","Rule: ""If the letter is B, then the number is Greater than 10.""
+Cards: ['B', 'A', '15', '5']
+
+Which cards must you turn over?
+Your answer:","['B', 'A', '15', '5']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is B, then the number is >10."" This is a conditional: B → >10. To verify, check for violations (B without >10).
+
+2. **Card 'B'**: Must turn over. Has letter B, so need to check if its number side is >10. If ≤10, rule violated.
+
+3. **Card 'A'**: No need to turn. Letter A doesn't trigger antecedent (not B), so irrelevant to rule.
+
+4. **Card '15'**: Must turn over. Number >10 satisfies consequent, but need to check letter side isn't B (if B and >10, fine; if A, irrelevant—but must confirm no violation).
+
+5. **Card '5'**: Must turn over. Number ≤10 (not >10). If letter side is B, violates rule; must check it's not B.
+
+Cards to turn: 'B', '15', '5'.
+
+ANSWER: B, 15, 5","['B', '15', '5']","['P', 'Q', 'not_Q']",OVER_SELECTION,246,213,0
+9,T10,4,90046,"If the letter is B, then the number is Greater than 10.","Rule: ""If the letter is B, then the number is Greater than 10.""
+Cards: ['A', 'B', '15', '5']
+
+Which cards must you turn over?
+Your answer:","['A', 'B', '15', '5']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the letter is B, then the number is Greater than 10.** (In logical terms: If P, then Q, where P = ""letter is B"" and Q = ""number > 10"".)
+
+To falsify the rule, we need a case where P is true but Q is false (B on one side, but number ≤ 10 on the other).
+
+The cards show:
+- **'A'**: Letter side. Not B (P false). Cannot falsify (A can pair with any number).
+- **'B'**: Letter side. Is B (P true). **Must turn over** to check if number > 10 (Q true). If ≤ 10, rule falsified.
+- **'15'**: Number side. > 10 (Q true). Cannot falsify (can pair with any letter).
+- **'5'**: Number side. ≤ 10 (Q false). **Must turn over** to check if letter is not B (P false). If B, rule falsified.
+
+Only 'B' and '5' can potentially falsify the rule.
+
+ANSWER: B, 5","['B', '5']","['P', 'not_Q']",CORRECT,246,252,0
+10,T11,0,100042,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['9', 'A', '4', 'K']
+
+Which cards must you turn over?
+Your answer:","['9', 'A', '4', 'K']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing conditional logic: ""If P, then Q"" (where P = ""the letter is K"", Q = ""the number is 4"").
+
+To falsify the rule, we need evidence of **P true and Q false** (K on the letter side, but **not** 4 on the number side). We ignore cases that can't falsify it.
+
+1. **'K' card**: Letter side shows P (K). Must turn over to check if number side is Q (4). If not 4, rule is false.
+
+2. **'A' card**: Letter side shows not-P (A ≠ K). Irrelevant—rule doesn't apply. No need to turn.
+
+3. **'4' card**: Number side shows Q (4). Must **not** turn. If letter is K, it confirms rule (doesn't falsify). If not K, irrelevant.
+
+4. **'9' card**: Number side shows not-Q (9 ≠ 4). **Must turn over** to check letter side. If K, falsifies rule (P true, Q false).
+
+Only 'K' and '9' can falsify the rule.
+
+ANSWER: K, 9","['K', '9']","['P', 'not_Q']",CORRECT,244,257,0
+10,T11,1,100043,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['4', 'A', 'K', '9']
+
+Which cards must you turn over?
+Your answer:","['4', 'A', 'K', '9']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is K, then the number is 4."" This is a conditional: **K → 4**. To falsify it, we need a K without a 4 on the other side.
+
+2. **Cards to check**:
+   - **'K' card**: Must turn over. If the other side is not 4 (e.g., 9, 7), the rule is false.
+   - **'4' card**: No need. Any letter (K or not) satisfies K → 4.
+   - **'A' card**: No need. Rule doesn't restrict non-K letters.
+   - **'9' card**: Must turn over. If it shows K, then K paired with 9 falsifies the rule.
+
+3. **Conclusion**: Turn over 'K' (to confirm 4) and '9' (to rule out K).
+
+ANSWER: K, 9","['K', '9']","['P', 'not_Q']",CORRECT,244,201,0
+10,T11,2,100044,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['A', '9', 'K', '4']
+
+Which cards must you turn over?
+Your answer:","['A', '9', 'K', '4']","**Step-by-step reasoning:**
+
+This is a Wason selection task. The rule is: ""If the letter is K, then the number is 4"" (If P, then Q, where P = ""letter is K"" and Q = ""number is 4"").
+
+To falsify the rule, we need a case where P is true but Q is false (K on one side but not 4 on the other).
+
+- **'A'**: Letter is not K (P false). Rule doesn't apply (irrelevant).
+- **'9'**: Number is not 4 (Q false). But without knowing the letter, it can't falsify (irrelevant).
+- **'K'**: Letter is K (P true). *Must* check the number side to ensure it's 4 (potential falsifier).
+- **'4'**: Number is 4 (Q true). Rule holds regardless of letter (irrelevant).
+
+Only 'K' and nothing else must be turned.
+
+ANSWER: K",['K'],['P'],CONFIRMATION_BIAS,244,204,0
+10,T11,3,100045,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['9', 'K', '4', 'A']
+
+Which cards must you turn over?
+Your answer:","['9', 'K', '4', 'A']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing falsification of the conditional rule: **If the letter is K, then the number is 4** (logically: K → 4).
+
+- To falsify the rule, we need a card showing **K on one side and NOT 4 on the other**.
+- We must turn over only cards that could potentially falsify the rule. Cards that cannot falsify it (even if turned over) can be ignored.
+
+Analyzing each card:
+1. **'9' card**: Shows a number (9). 
+   - The rule says nothing about what letter pairs with 9 (antecedent is K only).
+   - If the other side is K, this would be K → 9 (not 4), falsifying the rule.
+   - **Must turn over** (could falsify).
+
+2. **'K' card**: Shows the letter K.
+   - The rule requires the other side to be 4.
+   - If the other side is not 4 (e.g., 7), this falsifies K → 4.
+   - **Must turn over** (could falsify).
+
+3. **'4' card**: Shows the number 4.
+   - The rule is satisfied regardless of the letter (if K, good; if not K, rule doesn't apply).
+   - No way to falsify (cannot be K → not-4).
+   - **Do not turn over**.
+
+4. **'A' card**: Shows a letter (A, not K).
+   - The rule doesn't apply (antecedent false).
+   - Other side (any number) cannot falsify.
+   - **Do not turn over**.
+
+**Cards to turn over: '9' and 'K' only.**
+
+ANSWER: 9, K","['9', 'K']","['P', 'not_Q']",CORRECT,244,373,0
+10,T11,4,100046,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['4', '9', 'A', 'K']
+
+Which cards must you turn over?
+Your answer:","['4', '9', 'A', 'K']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the letter is K, then the number is 4** (in logical terms: K → 4). We must test this by turning over only the cards that could **falsify** the rule (i.e., show a K without a 4 on the other side). Cards that cannot falsify it (confirmations or irrelevancies) can be ignored.
+
+1. **'4' card** (number side):  
+   - This shows 4 (the consequent).  
+   - If the other side is K, it **confirms** the rule (K → 4 holds).  
+   - If the other side is not K (e.g., A), the rule says nothing about non-K letters, so it doesn't falsify.  
+   - **Do not turn over**: Cannot falsify.
+
+2. **'9' card** (number side):  
+   - This shows 9 (not 4).  
+   - The rule only restricts K cards (they must be 4). Non-4 numbers are irrelevant regardless of the letter.  
+   - **Do not turn over**: Cannot falsify.
+
+3. **'A' card** (letter side):  
+   - This shows A (not K).  
+   - The rule only applies to K letters. Non-K letters can pair with any number.  
+   - **Do not turn over**: Cannot falsify.
+
+4. **'K' card** (letter side):  
+   - This shows K (the antecedent).  
+   - To test K → 4, the other side **must** be 4. If it's not 4 (e.g., 9), the rule is falsified (K without 4).  
+   - **Must turn over**: Could falsify.
+
+**Conclusion**: Only the 'K' card needs to be turned over.
+
+ANSWER: K",['K'],['P'],CONFIRMATION_BIAS,244,400,0
+11,T12,0,110042,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['9', 'S', 'P', '6']
+
+Which cards must you turn over?
+Your answer:","['9', 'S', 'P', '6']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is 6, then the letter is S."" This is a conditional: 6 → S. To verify, check for violations (a 6 without an S).
+
+2. **Falsification test (Wason selection task)**:
+   - **'6' (number card)**: Must turn over. See if its letter is S. If not S, rule is false.
+   - **'S' (letter card)**: No need. Rule says nothing about S requiring 6 (ignores cases where S pairs with other numbers).
+   - **'9' (number card)**: No need. Rule only restricts 6; 9 can pair with any letter without violating.
+   - **'P' (letter card)**: Must turn over. If its number is 6, rule is false (6 without S).
+
+3. **Cards to turn over**: '6' and 'P' (test antecedent and negation of consequent).
+
+ANSWER: 6, P","['6', 'P']","['P', 'not_Q']",CORRECT,244,216,0
+11,T12,1,110043,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['S', 'P', '9', '6']
+
+Which cards must you turn over?
+Your answer:","['S', 'P', '9', '6']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the number is 6, then the letter is S** (in logical terms: 6 → S).
+
+We must test the rule by turning over only cards that could **falsify** it (i.e., show a violation: 6 on the front but not S on the back). Cards that cannot falsify it (confirmations or irrelevancies) can be ignored.
+
+Cards available: **S**, **P**, **9**, **6**.
+
+1. **S card** (shows antecedent-true: letter S):
+   - Rule requires S only *if* 6; no restriction if not 6.
+   - Back could be 6 (confirms) or not 6 (irrelevant).
+   - Cannot falsify → **Do not turn**.
+
+2. **P card** (shows letter ≠ S):
+   - Rule doesn't constrain non-S letters.
+   - Back could be anything (irrelevant).
+   - Cannot falsify → **Do not turn**.
+
+3. **9 card** (shows number ≠ 6):
+   - Rule only applies *if* 6; non-6 has no requirements.
+   - Back could be S or not (irrelevant).
+   - Cannot falsify → **Do not turn**.
+
+4. **6 card** (shows antecedent-true: number 6):
+   - Rule requires S on back.
+   - Back must be checked: if not S (e.g., P), rule is false.
+   - Can falsify → **Must turn**.
+
+Only the **6** can potentially violate the rule.
+
+ANSWER: 6",['6'],['P'],CONFIRMATION_BIAS,244,340,0
+11,T12,2,110044,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['P', 'S', '6', '9']
+
+Which cards must you turn over?
+Your answer:","['P', 'S', '6', '9']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the number is 6, then the letter is S** (in logical terms: 6 → S).
+
+We must turn over only the cards that could **falsify** the rule (i.e., reveal a violation). A violation would be a 6 paired with a non-S on the other side. Cards that cannot falsify the rule (confirmations or irrelevancies) can be ignored.
+
+- **'P' card**: Shows a non-S letter. To falsify, we'd need a 6 on the other side (6 → non-S). Must turn over.
+- **'S' card**: Shows S. Other side is either 6 (confirms rule) or non-6 (irrelevant, since rule doesn't restrict non-6). Cannot falsify. Ignore.
+- **'6' card**: Shows 6. Other side must be S to satisfy rule. If non-S, falsifies. Must turn over.
+- **'9' card**: Shows non-6. Rule doesn't apply (no restriction on non-6). Cannot falsify. Ignore.
+
+Thus, turn over 'P' and '6'.
+
+ANSWER: P, 6","['P', '6']","['P', 'not_Q']",CORRECT,244,258,0
+11,T12,3,110045,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['6', 'S', 'P', '9']
+
+Which cards must you turn over?
+Your answer:","['6', 'S', 'P', '9']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is 6, then the letter is S."" This is a conditional: **6 → S**. To verify it, check for violations (a 6 without an S).
+
+2. **Falsification test (Wason selection task)**:
+   - Turn over **6** (card1): Must check if its letter is S. If not S, rule is false.
+   - Do **not** turn over **S** (card2): Any number paired with S satisfies the rule (true regardless of number).
+   - Do **not** turn over **P** (card3): Letter is not S, but rule says nothing about non-6 numbers (irrelevant).
+   - Turn over **9** (card4): Number is not 6, so rule doesn't apply (cannot violate).
+
+3. **Cards to turn over**: Only '6' and '9' (to check non-S on a non-6? Wait, no—9 is irrelevant). Correction: Only '6' to check for S; '9', 'P', 'S' irrelevant.
+
+Wait, re-eval: '9' is not 6, so no violation possible. Only '6' (confirm S) and actually—'P' is non-S, but to violate, needs 6 on other side. Yes!
+
+**Correct cards**: '6' (test antecedent) and 'P' (test consequent negation: if 6, violates).
+
+ANSWER: 6, P","['6', 'P']","['P', 'not_Q']",CORRECT,244,319,0
+11,T12,4,110046,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['6', '9', 'P', 'S']
+
+Which cards must you turn over?
+Your answer:","['6', '9', 'P', 'S']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: This is a conditional statement in the form ""If P, then Q"", where P = ""the number is 6"" and Q = ""the letter is S"". To verify the rule holds for all cards, we must check for **falsifying instances** (where P is true but Q is false).
+
+2. **Analyze each card for potential violations**:
+   - **'6'** (number side): P is true (""number is 6""). Must turn over to check if Q is true (letter is S). If the other side is not S, the rule is false.
+   - **'9'** (number side): P is false (""number is not 6""). The rule is automatically true regardless of the letter side (antecedent false). No need to turn over.
+   - **'P'** (letter side): Q is false (""letter is not S""). Must turn over to check the number side. If it's 6, then P true + Q false violates the rule.
+   - **'S'** (letter side): Q is true (""letter is S""). The rule holds regardless of the number side (consequent true). No need to turn over.
+
+3. **Cards to turn over**: Only those that could falsify the rule: '6' and 'P'.
+
+ANSWER: 6, P","['6', 'P']","['P', 'not_Q']",CORRECT,244,288,0
+12,T13,0,120042,"If the letter is R, then the number is Positive.","Rule: ""If the letter is R, then the number is Positive.""
+Cards: ['-5', 'R', 'L', '5']
+
+Which cards must you turn over?
+Your answer:","['-5', 'R', 'L', '5']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the letter is R, then the number is Positive** (i.e., R → Positive).
+
+- Cards show: **-5** (negative number), **R** (letter R), **L** (letter L), **5** (positive number).
+- Goal: Turn over only cards that could **falsify** the rule (prove it false). A false instance would be: R on front **and** non-positive number on back.
+
+1. **R card**:
+   - Shows R (antecedent true).
+   - Must check back for positive number. If negative (e.g., -3), rule is false.
+   - **Must turn over**.
+
+2. **-5 card**:
+   - Shows negative number (consequent false).
+   - Rule says nothing about non-R letters. Back could be any letter (R or not); doesn't falsify.
+   - **Do not turn over**.
+
+3. **L card**:
+   - Shows L (not R, antecedent false).
+   - Rule doesn't apply (non-R can have any number). Back could be positive/negative; doesn't falsify.
+   - **Do not turn over**.
+
+4. **5 card**:
+   - Shows positive number (consequent true).
+   - Rule is satisfied regardless of letter (even if R). Can't falsify.
+   - **Do not turn over**.
+
+Only the **R** card must be turned over.
+
+ANSWER: R",['R'],['P'],CONFIRMATION_BIAS,244,312,0
+12,T13,1,120043,"If the letter is R, then the number is Positive.","Rule: ""If the letter is R, then the number is Positive.""
+Cards: ['R', 'L', '-5', '5']
+
+Which cards must you turn over?
+Your answer:","['R', 'L', '-5', '5']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is R, then the number is Positive."" This is a conditional: **R → Positive**. To verify it, we check for violations (R without Positive).
+
+2. **Analyze each card**:
+   - **'R'**: Must turn over. Shows R (antecedent true), so need to check if the other side is Positive. If negative (e.g., -5), rule violated.
+   - **'L'**: No need to turn. L is not R (antecedent false), so rule holds regardless of number (true for non-R cases).
+   - **'-5'**: Must turn over. Shows negative number. If other side is R, then R → negative violates rule.
+   - **'5'**: No need to turn. Positive number satisfies rule regardless of letter (R → Positive holds; non-R always holds).
+
+3. **Cards to turn**: Only 'R' (confirm consequent true) and '-5' (confirm antecedent false).
+
+ANSWER: R, -5","['R', '-5']","['P', 'not_Q']",CORRECT,243,221,0
+12,T13,2,120044,"If the letter is R, then the number is Positive.","Rule: ""If the letter is R, then the number is Positive.""
+Cards: ['R', '5', 'L', '-5']
+
+Which cards must you turn over?
+Your answer:","['R', '5', 'L', '-5']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the letter is R, then the number is Positive** (i.e., R → Positive).
+
+- Cards show: **R** (letter R), **5** (positive number), **L** (letter L), **-5** (negative number).
+- Goal: Turn over only cards that could **falsify** the rule (make it false). A conditional rule ""P → Q"" is false **only** when P is true but Q is false.
+
+1. **R card**:
+   - Shows P (antecedent: ""letter is R"") is true.
+   - Must turn over to check if Q (""number is Positive"") is true on the back. If negative, rule is false.
+   - **Must turn over**.
+
+2. **5 card**:
+   - Shows Q (consequent: ""number is Positive"") is true.
+   - Rule is true regardless of the letter (even if R or not R). Cannot falsify.
+   - **Do not turn over**.
+
+3. **L card**:
+   - Shows not-P (""letter is not R"").
+   - Rule is true regardless of the number (positive or negative). Cannot falsify.
+   - **Do not turn over**.
+
+4. **-5 card**:
+   - Shows not-Q (""number is not Positive"").
+   - Must turn over to check if P (""letter is R"") is false. If R, rule is false (R but not Positive).
+   - **Must turn over**.
+
+**Cards to turn over: R and -5.**
+
+ANSWER: R, -5","['R', '-5']","['P', 'not_Q']",CORRECT,243,340,0
+12,T13,3,120045,"If the letter is R, then the number is Positive.","Rule: ""If the letter is R, then the number is Positive.""
+Cards: ['L', '5', 'R', '-5']
+
+Which cards must you turn over?
+Your answer:","['L', '5', 'R', '-5']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is R, then the number is Positive."" This is a conditional: If P (letter = R), then Q (number = Positive). To verify, we check for violations (P true and Q false).
+
+2. **Analyze each card**:
+   - **'L'**: Shows letter ≠ R (P false). Rule doesn't apply (no violation possible). No need to turn.
+   - **'5'**: Shows Positive number (Q true). Rule doesn't apply (antecedent irrelevant). No need to turn.
+   - **'R'**: Shows letter = R (P true). *Must* turn to check if number is Positive (Q true). Violation if negative.
+   - **'-5'**: Shows negative number (Q false). *Must* turn to check if letter is not R (P false). Violation if R.
+
+3. **Cards to turn**: 'R' (confirm consequent) and '-5' (check antecedent false).
+
+ANSWER: R, -5","['R', '-5']","['P', 'not_Q']",CORRECT,243,217,0
+12,T13,4,120046,"If the letter is R, then the number is Positive.","Rule: ""If the letter is R, then the number is Positive.""
+Cards: ['5', 'R', '-5', 'L']
+
+Which cards must you turn over?
+Your answer:","['5', 'R', '-5', 'L']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing logical evaluation of the conditional rule: **If the letter is R, then the number is Positive** (R → Positive).
+
+- Cards show either a letter (R, L) or a number (5, -5).
+- We must turn over **only the cards that could falsify the rule**. A conditional ""If P then Q"" is falsified only by a case where P is true but Q is false (P ∧ ¬Q). All other combinations (¬P ∧ Q, ¬P ∧ ¬Q, or no P) are logically consistent with the rule.
+
+1. **R card**:
+   - Shows P (letter is R) is true.
+   - Must check the other side: if it's not Positive (e.g., negative), the rule is false.
+   - **Must turn over**.
+
+2. **5 card**:
+   - Shows Q (number is Positive) is true.
+   - Other side could be R (consistent) or L (¬P ∧ Q, also consistent).
+   - Cannot falsify the rule.
+   - **Do not turn over**.
+
+3. **-5 card**:
+   - Shows ¬Q (number is not Positive).
+   - If other side is R, this is P ∧ ¬Q, falsifying the rule.
+   - Must check to ensure it's not R.
+   - **Must turn over**.
+
+4. **L card**:
+   - Shows ¬P (letter is not R).
+   - Other side could be Positive (¬P ∧ Q, consistent) or negative (¬P ∧ ¬Q, consistent).
+   - Cannot falsify the rule.
+   - **Do not turn over**.
+
+**Cards to turn over: R and -5.**
+
+ANSWER: R, -5","['R', '-5']","['P', 'not_Q']",CORRECT,243,369,0
+13,T14,0,130042,"If the letter is a Vowel, then the number is Prime.","Rule: ""If the letter is a Vowel, then the number is Prime.""
+Cards: ['8', 'T', '7', 'E']
+
+Which cards must you turn over?
+Your answer:","['8', 'T', '7', 'E']","### Step-by-Step Reasoning
+
+The rule is: **If the letter is a Vowel, then the number is Prime.**  
+- Vowels (antecedent/true): A, E, I, O, U.  
+- Primes (consequent/true): 2, 3, 5, 7, 11, etc. (1 is not prime; even numbers >2 are not prime).  
+
+Cards: **['8', 'T', '7', 'E']**  
+To verify the rule, we must falsify potential violations (vowel on front AND non-prime on back). Turn over cards where:  
+1. **Vowel**: Must check back is prime (falsifiable if non-prime).  
+2. **Non-prime**: Must check front is not a vowel (falsifiable if vowel).  
+Other cards cannot falsify the rule.
+
+- **'8'** (even >2 → non-prime): Turn over. Back must not be a vowel.  
+- **'T'** (consonant → non-vowel): Cannot falsify (rule allows any number). No need.  
+- **'7'** (prime): Cannot falsify (rule allows any letter). No need.  
+- **'E'** (vowel): Turn over. Back must be prime.  
+
+Must turn over: '8' and 'E'.
+
+ANSWER: 8, E","['8', 'E']","['P', 'not_Q']",CORRECT,244,292,0
+13,T14,1,130043,"If the letter is a Vowel, then the number is Prime.","Rule: ""If the letter is a Vowel, then the number is Prime.""
+Cards: ['E', 'T', '8', '7']
+
+Which cards must you turn over?
+Your answer:","['E', 'T', '8', '7']","### Step-by-Step Reasoning
+
+The rule is a conditional statement: **If the letter is a Vowel (P), then the number is Prime (Q)**. In logical terms, this is **P → Q**, which is equivalent to **¬P ∨ Q**. The rule is falsified *only* if there is a case where P is true but Q is false (vowel with a non-prime number).
+
+The cards show:
+- 'E': Letter side (vowel?).
+- 'T': Letter side (vowel?).
+- '8': Number side (prime?).
+- '7': Number side (prime?).
+
+To verify the rule, we must turn over cards that *could potentially falsify it*. We ignore cards that cannot falsify it regardless of what's on the other side.
+
+1. **'E' card**:
+   - Shows a vowel (P is true).
+   - Must check the other side: if the number is *not* prime (Q false), rule is broken.
+   - **Must turn over**.
+
+2. **'T' card**:
+   - Shows a consonant (P is false).
+   - Other side (number) doesn't matter: ¬P makes P → Q true regardless of Q.
+   - **Do not turn over**.
+
+3. **'8' card**:
+   - Shows '8', which is *not* prime (Q is false).
+   - Other side (letter) doesn't matter: if vowel (P true), rule broken—but we already check vowels separately. If consonant (P false), rule holds. No new falsification possible here.
+   - **Do not turn over**.
+
+4. **'7' card**:
+   - Shows '7', which *is* prime (Q is true).
+   - Other side (letter) doesn't matter: Q true makes P → Q true regardless of P.
+   - **Do not turn over**.
+
+Only the 'E' card must be turned over to verify the rule.
+
+ANSWER: E",['E'],['P'],CONFIRMATION_BIAS,244,410,0
+13,T14,2,130044,"If the letter is a Vowel, then the number is Prime.","Rule: ""If the letter is a Vowel, then the number is Prime.""
+Cards: ['7', 'E', '8', 'T']
+
+Which cards must you turn over?
+Your answer:","['7', 'E', '8', 'T']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is a Vowel, then the number is Prime."" This is a conditional: Vowel → Prime. To falsify it, find a Vowel with a non-Prime number.
+
+2. **Cards to check**:
+   - **'E'**: Letter side. E is a vowel, so must check its number side to ensure it's prime (potential falsifier if even).
+   - **'7'**: Number side. Rule only requires primes *if* vowel; non-vowels can have any number. No need to turn.
+   - **'8'**: Number side. 8 is not prime, but rule doesn't care about non-primes unless vowel confirmed. Turn to check if letter is vowel (falsifier if yes).
+   - **'T'**: Letter side. T is consonant (not vowel), so antecedent false; rule holds regardless of number. No need to turn.
+
+3. **Conclusion**: Must turn 'E' (vowel confirmation) and '8' (non-prime risk).
+
+ANSWER: E, 8","['E', '8']","['P', 'not_Q']",CORRECT,244,228,0
+13,T14,3,130045,"If the letter is a Vowel, then the number is Prime.","Rule: ""If the letter is a Vowel, then the number is Prime.""
+Cards: ['E', 'T', '7', '8']
+
+Which cards must you turn over?
+Your answer:","['E', 'T', '7', '8']","### Step-by-Step Reasoning
+
+The rule is: **If the letter is a Vowel, then the number is Prime.**
+
+- **Vowels** (antecedent/true): A, E, I, O, U.
+- **Prime numbers** (consequent/true): 2, 3, 5, 7, 11, etc. (1 is not prime; even numbers >2 are not prime).
+
+This is a conditional rule (**P → Q**). To verify it, we must check for violations (**P true and Q false**). We turn over cards that could falsify the rule:
+
+1. **'E' (Vowel)**: P is **true**. Must turn over to check if the number is Prime (Q true). If non-prime (e.g., 4 or 8), rule violated.
+
+2. **'T' (Consonant)**: P is **false**. Rule holds vacuously (false → anything is true). No need to turn over.
+
+3. **'7' (Prime)**: Q is **true**. Rule holds (anything → true is true). No need to turn over.
+
+4. **'8' (Non-Prime)**: Q is **false**. Must turn over to check if the letter is *not* a Vowel (P false). If Vowel (e.g., E or A), rule violated.
+
+**Cards to turn over**: 'E' and '8'.
+
+ANSWER: E, 8","['E', '8']","['P', 'not_Q']",CORRECT,244,302,0
+13,T14,4,130046,"If the letter is a Vowel, then the number is Prime.","Rule: ""If the letter is a Vowel, then the number is Prime.""
+Cards: ['E', '7', '8', 'T']
+
+Which cards must you turn over?
+Your answer:","['E', '7', '8', 'T']","### Step-by-Step Reasoning
+
+The rule is: ""If the letter is a Vowel, then the number is Prime."" This is a conditional statement in the form ""If P, then Q,"" where:
+- P = ""the letter is a Vowel"" (vowels: A, E, I, O, U)
+- Q = ""the number is Prime"" (primes: 2, 3, 5, 7, 11, etc.; 1 is not prime)
+
+To verify the rule, we must check for violations (cases where P is true but Q is false). We only turn over cards that could potentially falsify the rule:
+1. **Cards where P is true** (Vowel letters): Must check if Q holds (number is prime). If the number is not prime, the rule is false.
+2. **Cards where Q is false** (non-prime numbers): Must check if P is false (not a vowel). If it has a vowel, the rule is false.
+3. **Cards where P is false** (consonant letters): Rule is automatically true (false antecedent), no need to turn over.
+4. **Cards where Q is true** (prime numbers): Rule holds regardless of P, no need to turn over.
+
+Now evaluate each card:
+- **'E'**: Vowel (P true). Must turn over to check if paired number is prime (Q).
+- **'7'**: Prime (Q true). No need to turn over (rule holds either way).
+- **'8'**: Not prime (Q false). Must turn over to check if paired letter is not a vowel (¬P).
+- **'T'**: Consonant (P false). No need to turn over (rule holds automatically).
+
+Thus, turn over 'E' (to confirm prime number) and '8' (to confirm non-vowel letter).
+
+ANSWER: E, 8","['E', '8']","['P', 'not_Q']",CORRECT,244,393,0
+14,T15,0,140042,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['2', 'R', '9', 'L']
+
+Which cards must you turn over?
+Your answer:","['2', 'R', '9', 'L']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing conditional logic: **If P (number is 9), then Q (letter is L)**. The cards show either a number or a letter side. We must determine which cards to turn over to verify the rule is true for all cases, falsifiable only by evidence.
+
+1. **Identify card meanings**:
+   - '2': Number side, **not P** (not 9). Cannot falsify (rule silent on non-9s).
+   - 'R': Letter side, **not Q** (not L). Cannot falsify (rule silent on non-Ls).
+   - '9': Number side, **P** (is 9). **Must turn over**. Check if letter is L. If not L, rule false (P ∧ ¬Q).
+   - 'L': Letter side, **Q** (is L). **Must turn over**. Check if number is 9. If not 9, rule false (¬P ∧ Q).
+
+2. **Logical requirement**: Turn over cards that could falsify (P ∧ ¬Q). Only '9' risks ¬Q; 'L' risks ¬P.
+
+### Cards to Turn Over
+'9' and 'L'.
+
+ANSWER: 9, L","['9', 'L']","['P', 'Q']",MATCHING_BIAS,244,266,0
+14,T15,1,140043,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['2', 'L', '9', 'R']
+
+Which cards must you turn over?
+Your answer:","['2', 'L', '9', 'R']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: This is a conditional statement ""If P, then Q"", where P = ""the number is 9"" and Q = ""the letter is L"". To verify the rule, we must check for violations (cases where P is true but Q is false).
+
+2. **Wason selection task**: Turn over cards where:
+   - P is true (to check if Q is true on the other side).
+   - Q is false (to check if P is false on the other side).
+   - Do **not** turn cards where P is false (irrelevant to the rule) or Q is true (cannot violate the rule).
+
+3. **Analyze each card**:
+   - '2': Number ≠ 9 (P false). Cannot violate rule (antecedent false). **Do not turn**.
+   - 'L': Letter = L (Q true). Rule allows any number (including 9). Cannot violate. **Do not turn**.
+   - '9': Number = 9 (P true). Must check if letter is L (Q true). Could have non-L (violation). **Turn over**.
+   - 'R': Letter ≠ L (Q false). Must check if number ≠ 9 (P false). Could have 9 (violation). **Turn over**.
+
+**Cards to turn over**: '9' and 'R'.
+
+ANSWER: 9, R","['9', 'R']","['P', 'not_Q']",CORRECT,244,293,0
+14,T15,2,140044,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['9', 'L', '2', 'R']
+
+Which cards must you turn over?
+Your answer:","['9', 'L', '2', 'R']","**Step-by-step reasoning:**
+
+This is a Wason selection task. The rule is: ""If the number is 9, then the letter is L"" (in logical terms: 9 → L).
+
+- **'9' card**: Must turn over. It shows the number 9 (antecedent true), so we need to check if the letter is L (consequent true). If it's not L, the rule is falsified.
+- **'L' card**: No need to turn over. It shows L (consequent true), but the rule doesn't care what number is on the other side (true → true or false → true both satisfy the rule).
+- **'2' card**: No need to turn over. It shows 2 (antecedent false), and ¬9 → anything satisfies the rule (doesn't test the implication).
+- **'R' card**: Must turn over. It shows R (consequent false, ¬L). We need to check if the number is 9. If it is 9, then 9 → ¬L falsifies the rule.
+
+Only the cards that could potentially falsify the rule ('9' and 'R') need to be turned over.
+
+ANSWER: 9, R","['9', 'R']","['P', 'not_Q']",CORRECT,244,251,0
+14,T15,3,140045,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['R', '2', 'L', '9']
+
+Which cards must you turn over?
+Your answer:","['R', '2', 'L', '9']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is 9, then the letter is L."" This is a conditional: P → Q, where P = ""number is 9"" and Q = ""letter is L"".
+
+2. **Falsification test**: To verify the rule, check for violations (cases where P is true but Q is false). Turn over cards that could potentially falsify it.
+
+3. **Evaluate each card**:
+   - **'R'**: Shows a letter that is not L. Cannot test P (no number shown), so irrelevant. **Do not turn over**.
+   - **'2'**: Shows a number that is not 9. P is false regardless of the letter side, so cannot falsify. **Do not turn over**.
+   - **'L'**: Shows letter L (Q true). Cannot test P (no number shown), so irrelevant. **Do not turn over**.
+   - **'9'**: Shows number 9 (P true). Must check if the letter side is L (Q true). If not L, rule is false. **Must turn over**.
+
+4. **Conclusion**: Only the '9' card must be turned over.
+
+ANSWER: 9",['9'],['P'],CONFIRMATION_BIAS,244,257,0
+14,T15,4,140046,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['2', 'R', 'L', '9']
+
+Which cards must you turn over?
+Your answer:","['2', 'R', 'L', '9']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is 9, then the letter is L."" This is a conditional: **P → Q**, where P = ""number is 9"" and Q = ""letter is L"".
+
+2. **Wason selection task goal**: Turn over only cards that could **falsify** the rule (i.e., find a case of P and not-Q). We ignore cards that can't violate it.
+
+3. **Evaluate each card**:
+   - **'9'** (P): Must turn over. Check its letter. If not L (e.g., R), rule is false.
+   - **'L'** (Q): No need. If number is 9, good; if not (e.g., 2), irrelevant (doesn't violate P → Q).
+   - **'2'** (not-P): No need. Rule says nothing about non-9s; letter can't violate.
+   - **'R'** (not-Q): Must turn over. If number is 9, rule is false (P and not-Q).
+
+4. **Cards to turn over**: '9' (test P) and 'R' (test not-Q).
+
+ANSWER: 9, R","['9', 'R']","['P', 'not_Q']",CORRECT,244,261,0
+15,T16,0,150042,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['1', 'O', 'H', '2']
+
+Which cards must you turn over?
+Your answer:","['1', 'O', 'H', '2']","### Step-by-Step Reasoning
+
+1. **Understand the Rule**: The rule is a conditional statement: ""If there is an H on one side, there is a 1 on the other side."" In logical terms, this is **H → 1** (If H, then 1). 
+   - To verify this rule, we must check for **violations**: Any card showing H without a 1 on the other side (falsifies the rule).
+   - We **do not need** to check cases that cannot falsify it (e.g., no H, or a 1 which could pair with anything).
+
+2. **Analyze Each Card**:
+   | Card | Visible Side | Must Turn Over? | Reason |
+   |------|--------------|-----------------|--------|
+   | '1' | 1 | **No** | Shows 1 (consequent). Other side could be H (satisfies rule) or not (irrelevant, as rule only restricts H sides). Cannot falsify. |
+   | 'O' | O | **No** | O is neither H (antecedent) nor 1. Other side irrelevant to rule. Cannot falsify. |
+   | 'H' | H | **Yes** | Shows H (antecedent). Must check other side is 1. If not (e.g., 2), rule is false. |
+   | '2' | 2 | **No** | Shows 2 (not 1). Other side cannot be H (that would falsify rule), but if it were, we'd catch it on the H card. Cannot falsify independently. |
+
+3. **Conclusion**: Turn over only the cards that could potentially falsify the rule: the 'H' card.
+
+ANSWER: H",['H'],['P'],CONFIRMATION_BIAS,250,361,0
+15,T16,1,150043,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['2', '1', 'O', 'H']
+
+Which cards must you turn over?
+Your answer:","['2', '1', 'O', 'H']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **""If there is an H on one side, there is a 1 on the other side.""** In logical terms, this is **H → 1** (if H, then 1).
+
+- There are four cards, each with a letter on one side and a number on the other.
+- Cards show: **2**, **1**, **O**, **H**.
+- We must **turn over only cards that could falsify the rule** (i.e., violate H → 1). A violation would be **H on one side and not-1 on the other**.
+
+1. **'2' card**:
+   - Shows 2 (not 1).
+   - The other side is a letter. If it's H, then H pairs with 2 (not 1), falsifying the rule.
+   - **Must turn over? No.** The rule says nothing about non-1 numbers; they can't falsify it regardless of the letter.
+
+2. **'1' card**:
+   - Shows 1.
+   - The other side is a letter. If it's H, it confirms the rule (H → 1). If it's not H (e.g., O), the rule doesn't apply (no H).
+   - **Must turn over? No.** It can't falsify the rule.
+
+3. **'O' card**:
+   - Shows O (not H).
+   - The other side is a number. The rule doesn't apply (no H present).
+   - **Must turn over? No.** Can't falsify the rule.
+
+4. **'H' card**:
+   - Shows H.
+   - The other side is a number. To satisfy the rule, it **must** be 1. If it's not 1 (e.g., 2), it falsifies H → 1.
+   - **Must turn over? Yes.**
+
+### Cards to Turn Over
+Only the **H** card must be turned over to check for a 1 on the other side.
+
+ANSWER: H",['H'],['P'],CONFIRMATION_BIAS,250,432,0
+15,T16,2,150044,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['O', '1', '2', 'H']
+
+Which cards must you turn over?
+Your answer:","['O', '1', '2', 'H']","### Step-by-Step Reasoning
+
+1. **Understand the rule**: The conditional rule is ""If there is an H on one side, there is a 1 on the other side."" In logical terms, this is: **H → 1**. 
+   - To verify this, we must check for cases where the antecedent (H) is true but the consequent (1) is false (H on one side but not 1 on the other). Any other combination cannot falsify the rule.
+
+2. **Analyze each card** (assuming each has one visible side and one hidden side):
+   - **'O' card** (visible: O): O is not H, so the rule's condition (H → 1) is not triggered (antecedent false). Whatever is on the other side (1 or not) cannot falsify the rule. **No need to turn.**
+   - **'1' card** (visible: 1): This shows 1, which satisfies the consequent. The other side could be H (supports rule) or not H (irrelevant, as non-H doesn't trigger the rule). Cannot falsify. **No need to turn.**
+   - **'2' card** (visible: 2): This shows 2 (not 1). If the other side is H, it would be H paired with 2 (not 1), falsifying H → 1. Must check the other side to rule out H. **Must turn.**
+   - **'H' card** (visible: H): This shows H, so the antecedent is true. The other side *must* be 1 to satisfy the rule. If it's not 1, the rule is false. Must check the other side. **Must turn.**
+
+3. **Conclusion**: Turn over only the cards that could potentially falsify the rule: 'H' and '2'.
+
+ANSWER: H, 2","['H', '2']","['P', 'not_Q']",CORRECT,250,391,0
+15,T16,3,150045,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['2', 'O', '1', 'H']
+
+Which cards must you turn over?
+Your answer:","['2', 'O', '1', 'H']","### Step-by-Step Reasoning
+
+This is the Wason selection task. The rule to verify is: **""If there is an H on one side, there is a 1 on the other side.""**  
+In logical terms: **H → 1** (If H, then 1).  
+- Cards show one side only: ['2', 'O', '1', 'H']. Assume each card has a letter on one side and a number on the other.
+- We must **falsify** the rule by finding violations (H without a 1 on the other side).
+- Turn over a card only if its hidden side *could* violate the rule.
+
+1. **'2' (number side visible)**:  
+   - Rule concerns H → 1, so this tests ""if number, then letter.""  
+   - Hidden side is a letter. If it's H, other side is 2 (not 1), violating H → 1.  
+   - **Must turn over**: Could falsify.
+
+2. **'O' (letter side visible, not H)**:  
+   - Rule only triggers on H. O is irrelevant (¬H).  
+   - Hidden side (number) can't violate, regardless (e.g., 1 or not 1).  
+   - **Do not turn over**.
+
+3. **'1' (number side visible)**:  
+   - Rule requires 1 *only if* H. Visible 1 is consistent with H or not-H.  
+   - Hidden side (letter): If H, confirms rule; if not, irrelevant. No violation possible.  
+   - **Do not turn over**.
+
+4. **'H' (letter side visible)**:  
+   - Rule says if H, then other side *must* be 1.  
+   - Hidden side (number): Must check if it's 1. If not (e.g., 2), violates H → 1.  
+   - **Must turn over**.
+
+### Cards to Turn Over
+Only '2' and 'H' can potentially falsify the rule.
+
+ANSWER: 2, H","['2', 'H']","['P', 'not_Q']",CORRECT,250,437,0
+15,T16,4,150046,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['1', 'H', 'O', '2']
+
+Which cards must you turn over?
+Your answer:","['1', 'H', 'O', '2']","### Step-by-Step Reasoning
+
+This is the Wason selection task, a classic test of conditional logic. The rule is: **If there is an H on one side, then there is a 1 on the other side** (symbolically: H → 1).
+
+- Each card has a letter on one side and a number on the other.
+- We must **falsify** the rule to test it properly. The rule is violated only if there is an **H with no 1 on the other side** (i.e., H paired with 2).
+- We evaluate each card:
+
+1. **'1' card**: Shows 1 (consequent).  
+   - Other side could be H (satisfies rule) or not (also fine, as rule doesn't require non-H to have 1).  
+   - **No need to turn**: Cannot falsify (no H possible violation).
+
+2. **'H' card**: Shows H (antecedent).  
+   - Rule requires 1 on the other side. Must check if it's 1 or 2.  
+   - If 2, rule is false (H → 1 violated).  
+   - **Must turn**: Potential falsifier.
+
+3. **'O' card**: Shows O (not H).  
+   - Rule doesn't apply (no H, so no requirement for 1). Other side can be anything.  
+   - **No need to turn**: Cannot falsify.
+
+4. **'2' card**: Shows 2 (not 1).  
+   - If other side is H, rule is false (H without 1). Must check if it's H or not.  
+   - **Must turn**: Potential falsifier.
+
+### Cards to Turn Over
+Only the **'H'** (to ensure 1 is opposite) and **'2'** (to ensure no H is opposite).
+
+ANSWER: H, 2","['H', '2']","['P', 'not_Q']",CORRECT,250,393,0
+16,T17,0,160042,"If the letter is T, then the number is Even.","Rule: ""If the letter is T, then the number is Even.""
+Cards: ['T', '6', 'A', '3']
+
+Which cards must you turn over?
+Your answer:","['T', '6', 'A', '3']","### Step-by-Step Reasoning
+
+This is the Wason selection task. The rule is: **If the letter is T, then the number is Even** (i.e., **T → Even**).
+
+- Cards show: **T** (antecedent, letter T), **6** (even number), **A** (letter A, not T), **3** (odd number).
+- To verify the rule, turn over cards that could **falsify** it (P → Q is false only when P is true but Q is false).
+- Logical evaluation:
+  1. **T**: Must turn over. Check if the other side is even. If odd, rule is false (T but not Even).
+  2. **6**: No need. It's even (Q true). Rule holds regardless of letter (if T, even ✓; if not T, irrelevant).
+  3. **A**: No need. Not T (¬P). Rule holds regardless of number (antecedent false).
+  4. **3**: Must turn over. It's odd (¬Q). If other side is T, rule is false (T but not Even).
+
+Only T and 3 can falsify the rule.
+
+ANSWER: T, 3","['T', '3']","['P', 'not_Q']",CORRECT,243,256,0
+16,T17,1,160043,"If the letter is T, then the number is Even.","Rule: ""If the letter is T, then the number is Even.""
+Cards: ['T', '6', '3', 'A']
+
+Which cards must you turn over?
+Your answer:","['T', '6', '3', 'A']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is T, then the number is Even."" This is a conditional: **T → Even**. To verify it, check for violations (T without Even).
+
+2. **Cards to evaluate**:
+   - **'T'**: Must turn over. Check if its back is Even (to confirm T → Even).
+   - **'6'** (Even): No need. Even satisfies the consequent regardless of letter.
+   - **'3'** (Odd): Must turn over. If its front is T, it violates T → Even.
+   - **'A'** (not T): No need. Non-T makes antecedent false (rule holds vacuously).
+
+3. **Cards that must be turned**: 'T' (antecedent) and '3' (negated consequent).
+
+ANSWER: T, 3","['T', '3']","['P', 'not_Q']",CORRECT,243,183,0
+16,T17,2,160044,"If the letter is T, then the number is Even.","Rule: ""If the letter is T, then the number is Even.""
+Cards: ['3', '6', 'A', 'T']
+
+Which cards must you turn over?
+Your answer:","['3', '6', 'A', 'T']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the letter is T, then the number is Even** (i.e., **T → Even**).
+
+- Cards show: **3** (odd number), **6** (even number), **A** (letter, not T), **T** (the letter T, side unknown).
+- Goal: Turn over **only** cards that could **falsify** the rule (i.e., find a T with an odd number on the back). Logical contrapositive: **Odd → not T**.
+
+1. **T card**: Must turn over. It matches the antecedent (""letter is T""). Check its back—if odd (e.g., 5), rule is false.
+
+2. **3 card**: Must turn over. It's odd (negation of consequent). Check its back—if T, rule is false (T with odd).
+
+3. **6 card**: **Do not** turn over. It's even (affirms consequent). Back could be T (true) or A (irrelevant)—cannot falsify.
+
+4. **A card**: **Do not** turn over. It's not T (negates antecedent). Back even or odd is irrelevant—rule doesn't apply.
+
+**Only T and 3 can potentially disprove the rule.**
+
+ANSWER: T, 3","['T', '3']","['P', 'not_Q']",CORRECT,243,278,0
+16,T17,3,160045,"If the letter is T, then the number is Even.","Rule: ""If the letter is T, then the number is Even.""
+Cards: ['6', '3', 'T', 'A']
+
+Which cards must you turn over?
+Your answer:","['6', '3', 'T', 'A']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is T, then the number is Even."" This is a conditional: **T → Even**. To verify it, we check for violations (a T without an even number).
+
+2. **Cards to evaluate**:
+   - **'T'**: Must turn over. Check if its number side is even (e.g., 4, 8). If odd (e.g., 3, 7), rule is false.
+   - **'6'**: Even number. No need to turn. Rule doesn't restrict even numbers (T or not); only requires T to have even.
+   - **'3'**: Odd number. Must turn over. If letter side is T, rule is false (T but not even).
+   - **'A'**: Neither T nor even/odd issue. No need to turn. Rule only concerns T cards.
+
+3. **Cards that must be turned**: 'T' (confirm even) and '3' (rule out T).
+
+ANSWER: 3, T","['3', 'T']","['P', 'not_Q']",CORRECT,243,222,0
+16,T17,4,160046,"If the letter is T, then the number is Even.","Rule: ""If the letter is T, then the number is Even.""
+Cards: ['T', 'A', '6', '3']
+
+Which cards must you turn over?
+Your answer:","['T', 'A', '6', '3']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the letter is T, then the number is Even** (i.e., **T → Even**).
+
+- Cards show: **T** (letter T), **A** (letter A), **6** (even number), **3** (odd number).
+- Goal: Turn over **only** cards that could **falsify** the rule (i.e., find violations of T without Even). Logical form: Check for **T & not-Even**; ignore cases that can't violate it.
+
+1. **T card**:
+   - Shows antecedent (T is true).
+   - Must turn over to check if number on back is Even (true → true = OK; true → odd = **violation**).
+   - **Must turn**.
+
+2. **A card**:
+   - Shows not-antecedent (A ≠ T).
+   - Rule says nothing about A (false → anything = true, vacuously).
+   - No violation possible (even if back is odd/even).
+   - **Do not turn**.
+
+3. **6 card**:
+   - Shows consequent (Even is true).
+   - Rule allows any letter if Even (T → true = OK; A → true = irrelevant).
+   - No violation possible (can't be T & not-Even).
+   - **Do not turn**.
+
+4. **3 card**:
+   - Shows not-consequent (odd = not-Even).
+   - Must turn to check letter on back. If T, then **T & not-Even = violation**. If A, OK.
+   - **Must turn**.
+
+**Cards to turn**: T (confirm Even) and 3 (rule out T).
+
+ANSWER: T, 3","['T', '3']","['P', 'not_Q']",CORRECT,243,366,0
+17,T18,0,170042,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['10', 'J', 'K', '5']
+
+Which cards must you turn over?
+Your answer:","['10', 'J', 'K', '5']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: This is a conditional statement: ""If P, then Q"", where P = ""the number is 10"" and Q = ""the letter is J"". To verify the rule, we check for violations (any case where P is true but Q is false).
+
+2. **Falsification test (Wason selection task)**:
+   - Turn over cards where P is true (to check if Q holds).
+   - Turn over cards where Q is false (to check if P does not hold).
+   - Ignore cards where P is false (irrelevant to the rule) or Q is true (cannot violate).
+
+3. **Apply to cards**:
+   - **'10'**: Shows P true. Must turn over to verify it has J (Q true). (Needed)
+   - **'J'**: Shows Q true. Cannot violate (P true or false both fine). (Not needed)
+   - **'K'**: Shows Q false (not J). Must turn over to ensure it does not have 10 (P false). (Needed)
+   - **'5'**: Shows P false (not 10). Rule doesn't apply. (Not needed)
+
+**Cards to turn over**: '10' and 'K'.
+
+ANSWER: 10, K","['10', 'K']","['P', 'not_Q']",CORRECT,244,270,0
+17,T18,1,170043,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['J', '5', 'K', '10']
+
+Which cards must you turn over?
+Your answer:","['J', '5', 'K', '10']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: This is a conditional statement in the form ""If P, then Q"".
+   - P = ""the number is 10""
+   - Q = ""the letter is J""
+   - Logically: P → Q. To falsify it, we need P true and Q false (a ""10"" without a ""J"").
+
+2. **Cards to test**:
+   - **'J'**: Letter side (Q true). Cannot falsify (if P true, Q is true). No need to turn.
+   - **'5'**: Number side, not 10 (P false). Rule doesn't apply (antecedent false). No need to turn.
+   - **'K'**: Letter side, not J (Q false). Must turn to check if number is 10 (if yes, falsifies rule).
+   - **'10'**: Number side, is 10 (P true). Must turn to check if letter is J (if not, falsifies rule).
+
+3. **Cards that must be turned**: 'K' (to rule out 10 on back) and '10' (to confirm J on back).
+
+ANSWER: 10, K","['10', 'K']","['P', 'not_Q']",CORRECT,244,252,0
+17,T18,2,170044,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['5', 'K', 'J', '10']
+
+Which cards must you turn over?
+Your answer:","['5', 'K', 'J', '10']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is 10, then the letter is J."" This is a conditional: P → Q, where P = ""number is 10"" and Q = ""letter is J"".
+
+2. **Falsification test (Wason selection task)**: To test if P → Q always holds, check for violations (cases where P is true but Q is false). Turn over cards that could potentially falsify the rule:
+   - **P card** (10): Must check its letter. If it's not J, the rule is false.
+   - **not-Q card** (not J): Must check its number. If it's 10, the rule is false.
+   - **not-P card** (not 10): Irrelevant. Rule doesn't apply (if number ≠ 10, letter can be anything).
+   - **Q card** (J): Irrelevant. Rule doesn't require checking what precedes J.
+
+3. **Apply to cards**: ['5', 'K', 'J', '10']
+   - '5': Number ≠ 10 (not-P) → irrelevant.
+   - 'K': Letter ≠ J (not-Q) → **must turn over** (check if number is 10).
+   - 'J': Letter = J (Q) → irrelevant.
+   - '10': Number = 10 (P) → **must turn over** (check if letter is J).
+
+**Cards to turn over**: 'K' and '10'.
+
+ANSWER: K, 10","['K', '10']","['P', 'not_Q']",CORRECT,244,320,0
+17,T18,3,170045,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['10', '5', 'K', 'J']
+
+Which cards must you turn over?
+Your answer:","['10', '5', 'K', 'J']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the number is 10, then the letter is J** (in logical terms: 10 → J). We must determine which cards **must** be turned over to verify if the rule holds for these cards: ['10', '5', 'K', 'J']. The goal is to check for **violations** of the rule (i.e., cases where the antecedent is true but the consequent is false).
+
+1. **'10' card**:
+   - Shows the antecedent (10) of the rule.
+   - **Must turn over**: The other side could be a non-J (e.g., K), falsifying the rule (10 → not J).
+
+2. **'5' card**:
+   - Shows a number that is **not** 10 (irrelevant to the antecedent).
+   - **No need to turn over**: Whatever letter is on the other side (J or not), it cannot violate the rule, as the rule only applies when the number is 10.
+
+3. **'K' card**:
+   - Shows a letter that is **not** J (the negation of the consequent).
+   - **Must turn over**: The other side could be 10, falsifying the rule (10 → not J). If it's not 10, the rule is unaffected.
+
+4. **'J' card**:
+   - Shows the consequent (J) of the rule.
+   - **No need to turn over**: The other side could be 10 (supports the rule) or 5 (irrelevant). No way to falsify (cannot be 10 → not J).
+
+**Cards to turn over**: '10' (to check for non-J) and 'K' (to check for non-10).
+
+ANSWER: 10, K","['10', 'K']","['P', 'not_Q']",CORRECT,244,383,0
+17,T18,4,170046,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['5', 'K', '10', 'J']
+
+Which cards must you turn over?
+Your answer:","['5', 'K', '10', 'J']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is 10, then the letter is J."" This is a conditional: **P → Q**, where P = ""number is 10"" and Q = ""letter is J"".
+
+2. **Falsification test (Wason selection task)**: To test if the rule holds for all cases, check for violations (P and not-Q). Turn over cards where:
+   - P is true (must verify Q is true).
+   - Not-Q is true (must verify P is false).
+   Do **not** turn over cards where not-P (irrelevant) or Q (cannot falsify).
+
+3. **Evaluate each card**:
+   | Card | Shows | Why turn over? |
+   |------|-------|----------------|
+   | '5'  | Not-P (number ≠ 10) | **No**: Cannot falsify P → Q. |
+   | 'K'  | Not-Q (letter ≠ J) | **Yes**: If number is 10 (P true), rule violated. |
+   | '10' | P (number = 10)     | **Yes**: Must check if letter is J (Q true). |
+   | 'J'  | Q (letter = J)      | **No**: Rule holds regardless of number. |
+
+**Cards to turn over**: '10' (verify J) and 'K' (rule violation if 10).
+
+ANSWER: 10, K","['10', 'K']","['P', 'not_Q']",CORRECT,244,307,0
+18,T19,0,180042,"If the card shows a Q, then the number is Zero.","Rule: ""If the card shows a Q, then the number is Zero.""
+Cards: ['Q', '1', '0', 'M']
+
+Which cards must you turn over?
+Your answer:","['Q', '1', '0', 'M']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the card shows a Q, then the number is Zero."" In logical terms, this is: Q → 0 (If Q on front, then 0 on back).
+
+2. **Falsification test**: To verify the rule, identify cards that could potentially falsify it (make Q → 0 false). The rule is false only if a Q has a non-0 back.
+
+3. **Evaluate each card**:
+   - **'Q'**: Must turn over. If back is not 0 (e.g., 1 or M), rule is false.
+   - **'1'**: No need. Rule only constrains Q cards; a 1 back doesn't affect Q cards.
+   - **'0'**: No need. Satisfies rule for any front (Q or not).
+   - **'M'**: Must turn over. If front is Q, rule is false (Q but not 0).
+
+4. **Cards to turn over**: 'Q' (antecedent) and 'M' (non-0, potential falsifier).
+
+ANSWER: Q, M","['Q', 'M']","['P', 'not_P']",LOGIC_ERROR,244,237,0
+18,T19,1,180043,"If the card shows a Q, then the number is Zero.","Rule: ""If the card shows a Q, then the number is Zero.""
+Cards: ['1', 'M', 'Q', '0']
+
+Which cards must you turn over?
+Your answer:","['1', 'M', 'Q', '0']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing logical evaluation of the conditional rule: **If the card shows a Q, then the number is Zero** (Q → 0).
+
+- **Logical form**: To falsify ""If P then Q"", we need P **and** not-Q. Here, P = Q (antecedent), Q = 0 (consequent).
+- Cards: ['1', 'M', 'Q', '0']. We must turn over only cards that could potentially falsify the rule.
+
+1. **'Q' card**:
+   - Shows antecedent (P = Q is true).
+   - Must turn over to check if the other side is 0 (Q). If not 0, rule is false.
+   - **Must turn over**.
+
+2. **'0' card**:
+   - Shows consequent (Q = 0 is true).
+   - Other side could be Q (valid) or not-Q like M (also valid, since rule doesn't restrict non-Q cards).
+   - Cannot falsify rule (no P without Q violation).
+   - **Do not turn over**.
+
+3. **'1' card**:
+   - Shows not-Q (1 ≠ 0).
+   - Rule doesn't apply (only constrains Q cards). Other side Q or not-Q is fine.
+   - Cannot falsify (would be Q → not-0, but we need to see the front).
+   - **Do not turn over**.
+
+4. **'M' card**:
+   - Shows not-Q (M ≠ 0).
+   - Same as '1': Rule irrelevant. Other side Q or not-Q is fine.
+   - Cannot falsify.
+   - **Do not turn over**.
+
+**Conclusion**: Only 'Q' can falsify the rule. (Note: '1' might seem tempting but logically doesn't test the rule, as non-Q cards have no restrictions.)
+
+ANSWER: Q",['Q'],['P'],CONFIRMATION_BIAS,244,396,0
+18,T19,2,180044,"If the card shows a Q, then the number is Zero.","Rule: ""If the card shows a Q, then the number is Zero.""
+Cards: ['1', 'Q', '0', 'M']
+
+Which cards must you turn over?
+Your answer:","['1', 'Q', '0', 'M']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing logical analysis of conditional rules. The rule is: **If the card shows a Q, then the number is Zero** (in logical terms: Q → 0).
+
+- Cards represent visible sides: '1' (number), 'Q' (letter), '0' (number), 'M' (letter).
+- Goal: Turn over only cards that could **falsify** the rule (i.e., potential violations). A violation would be Q on one side and not-0 on the other.
+- Do **not** turn cards that confirm the rule or are irrelevant.
+
+1. **'Q' card**:
+   - Shows antecedent (Q). Must turn to check if back is 0.
+   - If back is not 0 (e.g., 1), rule is false.
+   - **Must turn**.
+
+2. **'1' card**:
+   - Shows consequent (a number), but specifically not-0.
+   - Rule says nothing about non-Q letters (irrelevant) or what follows non-0.
+   - Even if back is Q, rule doesn't restrict non-0 backs for Q. No: if back is Q, it's Q → 1 (not 0), which falsifies!
+   - Wait, correction: '1' is the **back** we're hypothesizing. To falsify, we need Q on front with non-0 on back. But front is '1' (number), so back is letter.
+   - If back is Q, it's 1 (front) with Q (back): rule is Q → 0, but Q is on back, 1 on front—still Q paired with 1 (non-0), falsifies.
+   - Cards have one letter and one number. '1' front means number side visible, letter on back.
+   - Possible back: Q or not-Q.
+   - If back Q, then Q paired with 1 (non-0) → falsifies rule.
+   - If back M (or other non-Q), then non-Q with 1 → irrelevant (rule doesn't apply).
+   - **Must turn** '1' to check for Q on back (potential falsifier).
+
+3. **'0' card**:
+   - Shows consequent (0).
+   - Back is letter (Q or non-Q).
+   - If back Q, Q → 0 (true, confirms).
+   - If back non-Q (e.g., M), non-Q → 0 (irrelevant, rule doesn't apply).
+   - No way to falsify (can't have Q with non-0).
+   - **Do not turn**.
+
+4. **'M' card**:
+   - Shows non-Q (antecedent false).
+   - Back is number (0 or non-0).
+   - non-Q → anything is true (material implication: false antecedent makes rule hold).
+   - If back 0: non-Q → 0 (true).
+   - If back 1: non-Q → 1 (true).
+   - Irrelevant, can't falsify.
+   - **Do not turn**.
+
+**Cards to turn**: 'Q' (check for non-0 back) and '1' (check for Q back). These are the only potential falsifiers.
+
+ANSWER: Q, 1","['Q', '1']","['P', 'not_Q']",CORRECT,244,688,0
+18,T19,3,180045,"If the card shows a Q, then the number is Zero.","Rule: ""If the card shows a Q, then the number is Zero.""
+Cards: ['Q', '0', '1', 'M']
+
+Which cards must you turn over?
+Your answer:","['Q', '0', '1', 'M']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing falsification of the conditional rule: **If the card shows a Q, then the number is Zero** (Q → 0).
+
+- To falsify the rule, we need a card that shows **Q on one side and NOT 0 on the other** (e.g., Q with 1 or M).
+- We must turn over cards that could potentially reveal this violation. Cards that cannot violate the rule (even if turned over) can be ignored.
+
+Analyze each card:
+1. **'Q'**: Must turn over. If the other side is not 0 (e.g., 1 or M), the rule is false.
+2. **'0'**: Ignore. The rule says nothing about what must be on the front of a 0 card (Q or not). A Q-0 pair confirms the rule; a non-Q-0 pair doesn't violate it.
+3. **'1'**: Must turn over. '1' is not 0. If the other side is Q, it's Q-1, falsifying the rule.
+4. **'M'**: Must turn over. 'M' is not 0 (assuming M ≠ 0, like any non-numeric or non-matching symbol). If the other side is Q, it's Q-M, falsifying the rule.
+
+Cards to turn over: 'Q', '1', 'M'.
+
+ANSWER: Q, 1, M","['Q', '1', 'M']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,244,302,0
+18,T19,4,180046,"If the card shows a Q, then the number is Zero.","Rule: ""If the card shows a Q, then the number is Zero.""
+Cards: ['1', 'M', '0', 'Q']
+
+Which cards must you turn over?
+Your answer:","['1', 'M', '0', 'Q']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing understanding of **modus tollens** (falsifying a conditional rule). The rule is: **If the card shows a Q, then the number is Zero** (Q → 0).
+
+- Cards represent visible sides: '1' (number), 'M' (letter), '0' (number), 'Q' (letter).
+- We must turn over **only cards that could falsify the rule** (i.e., show a violation: Q on one side but not 0 on the other).
+- Logical form: For the antecedent (Q), verify the consequent (0) holds. For non-consequent (non-0), verify no antecedent (no Q).
+
+1. **'Q' card**:
+   - Shows antecedent (Q). Must check the other side is 0 (to confirm rule). If other side is not 0 (e.g., 1), rule is false.
+   - **Must turn over**.
+
+2. **'0' card**:
+   - Shows consequent (0). Rule says nothing about what letter pairs with 0 (could be Q, M, or anything). No way to falsify (e.g., Q-0 confirms; M-0 is fine).
+   - **Do not turn over**.
+
+3. **'1' card**:
+   - Shows non-consequent (not 0). Must check other side is not Q. If other side is Q (Q-1), rule is false.
+   - **Must turn over**.
+
+4. **'M' card**:
+   - Shows non-antecedent (not Q). Rule says nothing about non-Q letters (could pair with 0, 1, or anything). No way to falsify (e.g., M-0 or M-1 both fine).
+   - **Do not turn over**.
+
+**Cards to turn over: 'Q' and '1'** (to test for Q-not-0 violations).
+
+ANSWER: Q, 1","['Q', '1']","['P', 'not_Q']",CORRECT,244,418,0
+19,T20,0,190042,"If the letter is M, then the number is Odd.","Rule: ""If the letter is M, then the number is Odd.""
+Cards: ['3', 'M', 'A', '2']
+
+Which cards must you turn over?
+Your answer:","['3', 'M', 'A', '2']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is M, then the number is Odd."" This is a conditional: **M → Odd**. To verify it, check for violations (M without Odd).
+
+2. **Cards to evaluate**:
+   - '3': Number side. Must turn over. It's odd, but we need to check its letter. If the letter is M, it satisfies (odd); if not M, irrelevant. Needed to confirm no violation.
+   - 'M': Letter side. **Must turn over**. It's M, so we must verify its number is odd. If even, rule is falsified.
+   - 'A': Letter side. No need to turn over. A is not M, so rule doesn't apply (antecedent false; can't violate).
+   - '2': Number side. No need to turn over. It's even, but rule only restricts M cards (no M → even issue here).
+
+3. **Cards that must be turned over**: 'M' (to check number is odd) and '3' (to check letter isn't M).
+
+ANSWER: 3, M","['3', 'M']","['P', 'Q']",MATCHING_BIAS,243,234,0
+19,T20,1,190043,"If the letter is M, then the number is Odd.","Rule: ""If the letter is M, then the number is Odd.""
+Cards: ['M', '3', '2', 'A']
+
+Which cards must you turn over?
+Your answer:","['M', '3', '2', 'A']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is M, then the number is Odd."" This is a conditional: **M → Odd**. To verify it, check for violations (M without Odd).
+
+2. **Cards to evaluate**:
+   - **'M'**: Must turn over. Check if its number is Odd (to confirm → Odd holds).
+   - **'3'** (Odd number): No need. Rule doesn't restrict Odd numbers (works with any letter).
+   - **'2'** (Even number): Must turn over. If paired with M, it violates M → Odd.
+   - **'A'** (not M): No need. Rule only applies to M (non-M letters can have any number).
+
+3. **Cards that must be turned**: 'M' (antecedent) and '2' (potential falsifier).
+
+ANSWER: M, 2","['M', '2']","['P', 'not_Q']",CORRECT,243,190,0
+19,T20,2,190044,"If the letter is M, then the number is Odd.","Rule: ""If the letter is M, then the number is Odd.""
+Cards: ['A', '3', 'M', '2']
+
+Which cards must you turn over?
+Your answer:","['A', '3', 'M', '2']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is M, then the number is Odd."" In logical terms: M → Odd. To verify this, check for violations (M without Odd).
+
+2. **Cards to evaluate**:
+   - 'A': Letter side (not M). Irrelevant to antecedent; no need to turn (doesn't affect rule).
+   - '3': Number side (odd). Confirms consequent but doesn't test rule; no need to turn.
+   - 'M': Letter side (matches antecedent). **Must turn** to check if paired with odd number (e.g., if even, violates rule).
+   - '2': Number side (even). **Must turn** to check if paired with M (if M, violates rule).
+
+3. **Cards to turn**: 'M' (verify consequent holds) and '2' (verify antecedent doesn't hold).
+
+ANSWER: M, 2","['M', '2']","['P', 'not_Q']",CORRECT,243,192,0
+19,T20,3,190045,"If the letter is M, then the number is Odd.","Rule: ""If the letter is M, then the number is Odd.""
+Cards: ['A', '2', '3', 'M']
+
+Which cards must you turn over?
+Your answer:","['A', '2', '3', 'M']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is M, then the number is Odd."" In logical terms: M → Odd. To verify this, check for violations (M without Odd).
+
+2. **Cards available**: 'A' (letter), '2' (even number), '3' (odd number), 'M' (letter).
+
+3. **Analyze each card**:
+   - **'M'**: Must turn over. It has letter M, so check if its number side is odd (to confirm antecedent → consequent).
+   - **'2'**: Must turn over. It has even number, so check if its letter side is NOT M (if it were M, it violates M → Odd).
+   - **'A'**: No need. Letter A ≠ M, so antecedent false; rule holds regardless of number (no violation possible).
+   - **'3'**: No need. Odd number satisfies consequent for any letter (including M); no violation possible.
+
+4. **Conclusion**: Turn over 'M' (test consequent) and '2' (test potential false consequent).
+
+ANSWER: M, 2","['M', '2']","['P', 'not_Q']",CORRECT,243,238,0
+19,T20,4,190046,"If the letter is M, then the number is Odd.","Rule: ""If the letter is M, then the number is Odd.""
+Cards: ['M', '2', 'A', '3']
+
+Which cards must you turn over?
+Your answer:","['M', '2', 'A', '3']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is M, then the number is Odd."" This is a conditional: **M → Odd**. To verify it, check for violations (M without Odd).
+
+2. **Cards to evaluate**:
+   - **'M'**: Must turn over. Check if its number side is Odd (to confirm → Odd holds).
+   - **'2'**: Must turn over. It's Even. If its letter side is M, it violates the rule (M → Odd fails).
+   - **'A'**: No need. Rule only constrains M (non-M letters can't violate it).
+   - **'3'**: No need. It's Odd, so even if letter is M, rule holds (satisfies → Odd).
+
+3. **Minimal cards to falsify rule**: Only 'M' and '2' can potentially violate it.
+
+ANSWER: M, 2","['M', '2']","['P', 'not_Q']",CORRECT,243,191,0
+20,T21,0,200042,"If the number is Less than 5, then the letter is A.","Rule: ""If the number is Less than 5, then the letter is A.""
+Cards: ['B', 'A', '8', '2']
+
+Which cards must you turn over?
+Your answer:","['B', 'A', '8', '2']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is <5, then the letter is A."" In logical terms: If P (number <5), then Q (letter is A). To verify, check for violations (P true and Q false).
+
+2. **Identify card sides**:
+   - 'B': Letter side (not A).
+   - 'A': Letter side (is A).
+   - '8': Number side (8 ≮ 5, so P false).
+   - '2': Number side (2 < 5, so P true).
+
+3. **Cards to turn**:
+   - **'2' (number <5)**: Must check its letter. If not A, rule violated.
+   - **'B' (letter not A)**: Must check its number. If <5, rule violated.
+   - **'A' (letter A)**: No need; rule allows any number (handles P false or true).
+   - **'8' (number ≥5)**: No need; P false, so rule holds regardless of letter.
+
+**ANSWER: 2, B**","['**ANSWER: 2', 'B**']",[],NOISE,246,237,0
+20,T21,1,200043,"If the number is Less than 5, then the letter is A.","Rule: ""If the number is Less than 5, then the letter is A.""
+Cards: ['A', '8', 'B', '2']
+
+Which cards must you turn over?
+Your answer:","['A', '8', 'B', '2']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is less than 5, then the letter is A.""  
+   - This is a conditional: **P → Q**, where:  
+     - **P** = ""number is < 5""  
+     - **Q** = ""letter is A""  
+   - To falsify **P → Q**, we need **P true and Q false** (a number < 5 with a non-A letter).
+
+2. **Evaluate each card**:  
+   | Card | Side shown | Why turn it over? |  
+   |------|------------|-------------------|  
+   | **A** | Letter A | **No**: Confirms Q (letter is A), but we don't care about cases where Q is true (rule allows A regardless of number). |  
+   | **8** | Number 8 | **No**: 8 is not < 5 (P false), so rule doesn't apply (rule vacuously true). |  
+   | **B** | Letter B | **Yes**: B is not A (Q false). Must check number on back—if < 5 (P true), rule violated. |  
+   | **2** | Number 2 | **Yes**: 2 < 5 (P true). Must check letter on back—if not A (Q false), rule violated. |
+
+3. **Conclusion**: Turn over **B** (to rule out P true + Q false) and **2** (to rule out P true + Q false).
+
+ANSWER: B, 2","['B', '2']","['P', 'not_Q']",CORRECT,246,325,0
+20,T21,2,200044,"If the number is Less than 5, then the letter is A.","Rule: ""If the number is Less than 5, then the letter is A.""
+Cards: ['8', '2', 'A', 'B']
+
+Which cards must you turn over?
+Your answer:","['8', '2', 'A', 'B']","### Step-by-Step Reasoning
+
+**1. Understand the Rule (Conditional Statement):**
+- Rule: ""If the number is Less than 5 (P), then the letter is A (Q).""
+- In logical terms: **P → Q** (If P, then Q).
+- To falsify (violate) this rule, we need **P and not Q** (a number < 5 paired with a letter that is not A).
+
+**2. Analyze Each Card (Wason Selection Task):**
+- **'8' (number ≥ 5, not P):** Cannot falsify the rule (no P, so rule doesn't apply). **Do not turn over.**
+- **'2' (number < 5, P):** Must check if the letter is A (Q). If not A (not Q), rule is falsified. **Must turn over.**
+- **'A' (letter A, Q):** Cannot falsify the rule (Q is true regardless of number). **Do not turn over.**
+- **'B' (letter not A, not Q):** Must check if the number is < 5 (P). If < 5 (P and not Q), rule is falsified. **Must turn over.**
+
+**3. Conclusion:**
+Turn over cards that could potentially falsify the rule: '2' and 'B'.
+
+ANSWER: 2, B","['2', 'B']","['P', 'not_Q']",CORRECT,246,282,0
+20,T21,3,200045,"If the number is Less than 5, then the letter is A.","Rule: ""If the number is Less than 5, then the letter is A.""
+Cards: ['A', 'B', '8', '2']
+
+Which cards must you turn over?
+Your answer:","['A', 'B', '8', '2']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the number is Less than 5 (P), then the letter is A (Q)**, or **P → Q**.
+
+Cards shown: **A** (Q), **B** (not-Q), **8** (not-P), **2** (P).
+
+To falsify the rule (P → Q), we need a case where **P is true but Q is false** (number < 5 but letter ≠ A). We must turn only cards that could potentially falsify it.
+
+1. **A card (Q)**: Could have a number ≥ 5 (P false, Q true) → rule holds. Or < 5 (P true, Q true) → rule holds. Cannot falsify. **Do not turn.**
+
+2. **B card (not-Q)**: Letter ≠ A. If number < 5 (P true, Q false) → falsifies. Must check number. **Turn over.**
+
+3. **8 card (not-P)**: Number ≥ 5 (P false). Rule vacuously true regardless of letter. Cannot falsify. **Do not turn.**
+
+4. **2 card (P)**: Number < 5. Must have A on back (Q true) or rule falsified. Must check letter. **Turn over.**
+
+Only **B** and **2** can falsify the rule.
+
+ANSWER: B, 2","['B', '2']","['P', 'not_Q']",CORRECT,246,300,0
+20,T21,4,200046,"If the number is Less than 5, then the letter is A.","Rule: ""If the number is Less than 5, then the letter is A.""
+Cards: ['8', 'A', '2', 'B']
+
+Which cards must you turn over?
+Your answer:","['8', 'A', '2', 'B']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is <5, then the letter is A.""  
+   - **Antecedent (P)**: Number <5 (true for card '2').  
+   - **Consequent (Q)**: Letter is A.  
+   - Logical form: P → Q. To verify, check for violations (P true and Q false).
+
+2. **Evaluate each card**:  
+   - **'8' (number ≥5)**: Antecedent false (¬P). Rule holds regardless of letter. **No need to turn.**  
+   - **'A' (letter A)**: Shows Q true. Cannot test P (no number). Rule holds regardless. **No need to turn.**  
+   - **'2' (number <5)**: Antecedent true (P). Must check if letter is A (Q true). **Must turn** (to falsify if not A).  
+   - **'B' (letter ≠A)**: Shows Q false (¬Q). Must check if number <5 (P false). **Must turn** (to falsify if <5).
+
+3. **Cards to turn**: '2' and 'B' (potential falsifiers).
+
+ANSWER: 2, B","['2', 'B']","['P', 'not_Q']",CORRECT,246,264,0
+21,T22,0,210042,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['2', 'H', '5', 'Y']
+
+Which cards must you turn over?
+Your answer:","['2', 'H', '5', 'Y']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: This is a conditional statement in the form ""If P, then Q"".
+   - P (antecedent): ""the letter is Y""
+   - Q (consequent): ""the number is 5""
+   - The rule is logically false **only** if P is true **and** Q is false (i.e., Y on front but not 5 on back).
+
+2. **Evaluate each card**:
+   | Card | Front | Must turn? | Reason |
+   |------|-------|------------|--------|
+   | '2' | Number (2) | No | Numbers can't falsify (not P). |
+   | 'H' | Letter (H) | No | Not Y, so can't falsify (P false). |
+   | '5' | Number (5) | No | Confirms Q but can't falsify (not P). |
+   | 'Y' | Letter (Y) | **Yes** | P is true; must check back is 5 (Q true). |
+
+3. **Conclusion**: Only turn the 'Y' card to verify the rule. Turning others provides irrelevant info.
+
+ANSWER: Y",['Y'],['P'],CONFIRMATION_BIAS,244,247,0
+21,T22,1,210043,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['2', 'H', 'Y', '5']
+
+Which cards must you turn over?
+Your answer:","['2', 'H', 'Y', '5']","**Step-by-step reasoning:**
+
+This is a Wason selection task testing the conditional rule: **If the letter is Y, then the number is 5** (P → Q, where P = ""letter is Y"", Q = ""number is 5"").
+
+To falsify the rule, we need a case where P is true but Q is false (Y on one side but not 5 on the other).
+
+- **'Y' card**: Shows P (letter is Y). Must turn over to check if the number side is 5. If not 5, rule is false.
+- **'5' card**: Shows Q (number is 5). No need to turn over. The rule doesn't restrict what letter pairs with 5 (e.g., H/5 is fine).
+- **'2' card**: Shows not-Q (number is not 5). Must turn over to check the letter side. If it's Y, then Y/2 falsifies the rule.
+- **'H' card**: Shows not-P (letter is not Y). No need to turn over. The rule doesn't care what number pairs with non-Y (e.g., H/2 or H/5 both fine).
+
+Thus, turn over 'Y' (to verify Q) and '2' (to check for P).
+
+ANSWER: Y, 2","['Y', '2']","['P', 'not_Q']",CORRECT,244,274,0
+21,T22,2,210044,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['H', 'Y', '2', '5']
+
+Which cards must you turn over?
+Your answer:","['H', 'Y', '2', '5']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the letter is Y, then the number is 5** (P → Q, where P = ""letter is Y"", Q = ""number is 5"").
+
+We must test the rule by turning over only cards that could **falsify** it (i.e., find a case where P is true but Q is false). Cards that cannot falsify it can be ignored.
+
+1. **'H' card** (letter, not Y):  
+   - This is ¬P (not Y).  
+   - Rule doesn't apply (true regardless of number).  
+   - **Do not turn over.**
+
+2. **'Y' card** (letter Y):  
+   - This is P (Y).  
+   - Must check if number is 5 (Q). If not 5 (¬Q), rule is false.  
+   - **Must turn over.**
+
+3. **'2' card** (number, not 5):  
+   - This is ¬Q (not 5).  
+   - Only falsifies if letter is Y (P). Must check letter side.  
+   - **Must turn over.**
+
+4. **'5' card** (number 5):  
+   - This is Q (5).  
+   - Rule holds regardless of letter (if P, then Q is satisfied; if ¬P, irrelevant).  
+   - **Do not turn over.**
+
+**Cards to turn over: 'Y' (confirm Q) and '2' (check for P).**
+
+ANSWER: Y, 2","['Y', '2']","['P', 'not_Q']",CORRECT,244,333,0
+21,T22,3,210045,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['H', 'Y', '5', '2']
+
+Which cards must you turn over?
+Your answer:","['H', 'Y', '5', '2']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the letter is Y, then the number is 5** (in logical terms: Y → 5).
+
+We must turn over **only the cards that could potentially falsify the rule**. A conditional rule (P → Q) is falsified *only* by a case where P is true but Q is false. We ignore cards that cannot falsify it (either confirming the rule or irrelevant).
+
+- **'H' card**: Shows a letter that is not Y. The rule says nothing about non-Y letters (antecedent is false). Cannot falsify. **Do not turn over.**
+- **'Y' card**: Shows the letter Y (antecedent true). We must check if the number is 5 (consequent true). If it's not 5, the rule is false. **Must turn over.**
+- **'5' card**: Shows the number 5 (consequent true). The rule is satisfied regardless of the letter (if Y, good; if not Y, irrelevant). Cannot falsify. **Do not turn over.**
+- **'2' card**: Shows the number 2 (consequent false). If the letter is Y, this falsifies the rule (Y but not 5). We must check the letter. **Must turn over.**
+
+Cards to turn over: 'Y' (to verify consequent) and '2' (to verify antecedent is false).
+
+ANSWER: Y, 2","['Y', '2']","['P', 'not_Q']",CORRECT,244,308,0
+21,T22,4,210046,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['2', 'Y', '5', 'H']
+
+Which cards must you turn over?
+Your answer:","['2', 'Y', '5', 'H']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing conditional logic: **If P (letter is Y), then Q (number is 5)**. To verify the rule, we must check for violations, i.e., cases where P is true but Q is false (Y without a 5).
+
+1. **Card 'Y' (P true)**: Must turn over. Check its number. If not 5, rule is false.
+2. **Card '2' (Q false)**: No need to turn over. Rule doesn't restrict non-Y letters (e.g., Y can pair with 5, but non-Y can pair with anything).
+3. **Card '5' (Q true)**: No need to turn over. Rule doesn't care what letter pairs with 5 (e.g., non-Y with 5 is fine).
+4. **Card 'H' (not P)**: No need to turn over. Rule only applies when letter is Y.
+
+Only 'Y' can falsify the rule.
+
+ANSWER: Y",['Y'],['P'],CONFIRMATION_BIAS,244,215,0
+22,T23,0,220042,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['7', 'D', 'F', '4']
+
+Which cards must you turn over?
+Your answer:","['7', 'D', 'F', '4']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the card shows a 4, then the letter is D."" In logical terms, this is: **4 → D**. To verify this conditional, we must check for violations (cases where there's a 4 but not a D).
+
+2. **Analyze each card**:
+   - **'7' (number card)**: Shows a number that's not 4. The rule doesn't apply (antecedent false). No need to turn over.
+   - **'D' (letter card)**: Shows D. Could have any number on the back. If it has a 4, it satisfies the rule; if not, the rule doesn't apply. No violation possible here. No need to turn over.
+   - **'F' (letter card)**: Shows F (not D). Could have any number on the back. If it has a 4, this violates the rule (4 but not D). **Must turn over** to check the number.
+   - **'4' (number card)**: Shows 4. The rule requires the letter to be D. **Must turn over** to confirm the letter is D (violation if not D).
+
+3. **Conclusion**: Turn over the '4' (to verify D) and 'F' (to ensure no 4).
+
+ANSWER: F, 4","['F', '4']","['P', 'not_Q']",CORRECT,245,284,0
+22,T23,1,220043,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['7', '4', 'F', 'D']
+
+Which cards must you turn over?
+Your answer:","['7', '4', 'F', 'D']","**Step-by-step reasoning:**
+
+This is a Wason selection task testing conditional logic: ""If P (4), then Q (D)."" To falsify it, check for P without Q (a 4 that's not D). Other cases can't falsify it.
+
+- **'7'**: Not P (not 4), so irrelevant. Can't falsify (antecedent false).
+- **'4'**: P (4), so must turn over. Check if back is D. If not D, rule false.
+- **'F'**: Not Q (not D), so irrelevant. Can't falsify (consequent true or false doesn't matter without P).
+- **'D'**: Q (D), so irrelevant. Rule holds regardless of number (if 4, good; if not 4, vacuously true).
+
+Must turn over only cards that could falsify: '4' (check for D) and nothing else? Wait, no—'F' is not D!
+
+Correcting: 'F' is not D, so to falsify, check if it's 4 (P and not Q). Yes!
+
+Cards to turn: '4' (P, verify Q) and 'F' (not Q, verify not P).
+
+ANSWER: 4, F","['4', 'F']","['P', 'not_Q']",CORRECT,245,260,0
+22,T23,2,220044,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['4', 'F', 'D', '7']
+
+Which cards must you turn over?
+Your answer:","['4', 'F', 'D', '7']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the card shows a 4, then the letter is D."" This is a conditional: **4 → D**. To verify it, check for violations (a 4 without a D on the other side).
+
+2. **Analyze each card**:
+   - **'4'**: Must turn over. Need to confirm the other side is D (to satisfy the rule). If it's not D, the rule is false.
+   - **'F'**: No need to turn over. The rule only restricts what follows a 4; F doesn't trigger it (no risk of violation).
+   - **'D'**: No need to turn over. The rule doesn't restrict what precedes a D (a non-D before D doesn't violate 4 → D).
+   - **'7'**: No need to turn over. The rule only applies to 4s; 7 can't violate it.
+
+3. **Conclusion**: Only the '4' must be turned over to test the rule.
+
+ANSWER: 4",['4'],['P'],CONFIRMATION_BIAS,245,218,0
+22,T23,3,220045,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['4', 'F', '7', 'D']
+
+Which cards must you turn over?
+Your answer:","['4', 'F', '7', 'D']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the card shows a 4, then the letter is D."" This is a conditional: **4 → D**. To verify it, check for violations (a 4 without a D).
+
+2. **Analyze each card**:
+   - **'4' (antecedent)**: Must turn over. Need to check if its other side is D. If not D, rule is false.
+   - **'F' (not D)**: No need. Rule doesn't restrict non-D letters (only cares about 4s).
+   - **'7' (not 4)**: No need. Rule doesn't apply to non-4s (they can have any letter).
+   - **'D' (consequent)**: Must turn over. Need to check if its other side is *not* a 4. If it's a 4, fine; but if it's a 4, it's consistent. Wait—actually, error in initial thought: a D is allowed with *any* number (including 4 or not). Turning it reveals no violation possible (if 4, confirms rule; if not 4, irrelevant). **No need to turn 'D'**.
+
+3. **Cards to turn**: Only the '4' (to ensure it has D). No falsifiers on others.
+
+ANSWER: 4",['4'],['P'],CONFIRMATION_BIAS,245,284,0
+22,T23,4,220046,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['F', '4', '7', 'D']
+
+Which cards must you turn over?
+Your answer:","['F', '4', '7', 'D']","**Step-by-step reasoning:**
+
+This is a Wason selection task testing conditional logic: ""If P (4), then Q (D)."" To falsify it, check for P without Q (a 4 with a non-D).
+
+- **'F' card**: Shows non-P. Irrelevant (antecedent false). No need to turn.
+- **'4' card**: Shows P. Must turn to verify the other side is D (Q true). **Must turn.**
+- **'7' card**: Shows non-P. Irrelevant (antecedent false). No need to turn.
+- **'D' card**: Shows Q. Could pair with P or non-P; doesn't falsify. No need to turn.
+
+Only the '4' card must be turned over.
+
+ANSWER: 4",['4'],['P'],CONFIRMATION_BIAS,245,162,0
+23,T24,0,230042,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['S', '10', '20', 'G']
+
+Which cards must you turn over?
+Your answer:","['S', '10', '20', 'G']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: This is a conditional statement: ""If P, then Q"", where P = ""the letter is G"" and Q = ""the number is 20"". To verify the rule, we must check for violations (cases where P is true but Q is false).
+
+2. **Analyze each card** (using Wason selection task logic):
+   - **'G' card**: Shows P is true. Must turn over to check if the number is 20 (confirms Q). If it's not 20, rule is false.
+   - **'20' card**: Shows Q is true. No need to turn over. Rule allows non-G cards to have 20 (doesn't test P).
+   - **'S' card**: Shows P is false (not G). No need to turn over. Rule doesn't restrict non-G letters (Q can be anything).
+   - **'10' card**: Shows not-Q (number ≠ 20). Must turn over to check if the letter is G. If it is G, rule is false (P true, Q false).
+
+3. **Cards to turn over**: 'G' (test consequent of P) and '10' (test falsity of Q).
+
+ANSWER: G, 10","['G', '10']","['P', 'not_Q']",CORRECT,244,264,0
+23,T24,1,230043,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['G', '10', 'S', '20']
+
+Which cards must you turn over?
+Your answer:","['G', '10', 'S', '20']","**Step-by-step reasoning:**
+
+This is a Wason selection task. The rule is: ""If the letter is G, then the number is 20"" (G → 20). We must turn over cards to determine if the rule holds, falsifying it where possible. A rule is falsified only by G on one side and not-20 on the other.
+
+Cards: 'G' (shows G), '10' (shows 10), 'S' (shows S), '20' (shows 20).
+
+1. **'G' card**: Shows antecedent (G). Must turn over to check if number is 20. If not 20, rule falsified.
+
+2. **'10' card**: Shows number (10, i.e., not-20). Must turn over to check letter. If G, rule falsified (G → not-20).
+
+3. **'S' card**: Shows letter (S, i.e., not-G). Irrelevant; rule says nothing about non-G letters. No need to turn.
+
+4. **'20' card**: Shows consequent (20). Irrelevant; rule allows any letter with 20 (G → 20 is true regardless). No need to turn.
+
+Must turn: 'G' and '10'.
+
+ANSWER: G, 10","['G', '10']","['P', 'not_Q']",CORRECT,244,268,0
+23,T24,2,230044,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['10', '20', 'S', 'G']
+
+Which cards must you turn over?
+Your answer:","['10', '20', 'S', 'G']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is G, then the number is 20."" This is a conditional: **G → 20**. To verify it, check for violations (G without 20).
+
+2. **Falsification test** (Wason selection task):
+   - Turn over cards that could **falsify** the rule.
+   - **Antecedent (G)**: Must check if it has 20 (to confirm consequent).
+   - **Negated consequent (not 20)**: Must check if it has G (violation if G on non-20).
+
+3. **Evaluate each card**:
+   | Card | Reason |
+   |------|--------|
+   | **'10'** | Shows ""not 20"". Check back for G? **Yes**—if G, violates rule (G → 20 false). |
+   | **'20'** | Shows 20. Back is letter? Irrelevant—20 satisfies rule regardless of letter (affirming consequent irrelevant). **No**. |
+   | **'S'** | Shows ""not G"". Back is number? Irrelevant—not G makes antecedent false (vacuously true). **No**. |
+   | **'G'** | Shows G. Check back for 20? **Yes**—must confirm consequent holds. |
+
+**Cards to turn over**: '10' (not 20) and 'G' (antecedent).
+
+ANSWER: 10, G","['10', 'G']","['P', 'not_Q']",CORRECT,244,308,0
+23,T24,3,230045,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['G', 'S', '20', '10']
+
+Which cards must you turn over?
+Your answer:","['G', 'S', '20', '10']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the letter is G, then the number is 20** (in logical terms: G → 20). We must test this by turning over only the cards that could **falsify** the rule (i.e., show a violation: G on one side but not 20 on the other). Cards that cannot falsify it (confirmations or irrelevancies) can be ignored.
+
+1. **'G' card**:
+   - Shows the antecedent (G).
+   - Must turn over: The other side might be 10 (not 20), falsifying G → 20.
+
+2. **'S' card**:
+   - Shows ¬G (not G).
+   - Cannot falsify: The rule says nothing about non-G letters (other side could be 20 or 10; both fine).
+   - Do **not** turn over.
+
+3. **'20' card**:
+   - Shows the consequent (20).
+   - Cannot falsify: The rule allows G or non-G on the other side (both fine).
+   - Do **not** turn over.
+
+4. **'10' card**:
+   - Shows ¬20 (not 20).
+   - Must turn over: If the other side is G, it falsifies G → 20.
+   - Do turn over.
+
+**Cards to turn over**: 'G' (to check for non-20) and '10' (to check for no G).
+
+ANSWER: G, 10","['G', '10']","['P', 'not_Q']",CORRECT,244,323,0
+23,T24,4,230046,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['20', 'G', 'S', '10']
+
+Which cards must you turn over?
+Your answer:","['20', 'G', 'S', '10']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: This is a conditional statement: ""If P, then Q"", where P = ""the letter is G"" and Q = ""the number is 20"". To verify the rule, we must check for violations (cases where P is true but Q is false).
+
+2. **Analyze each card** (assuming cards have a letter on one side and a number on the other):
+   - **'G'**: Shows P (letter is G) is true. Must turn over to check if Q (number is 20) is true on the back. (Potential violation if back ≠ 20.)
+   - **'20'**: Shows Q (number is 20) is true. No need to turn over—rule doesn't care if letter is G or not (true Q satisfies regardless of P).
+   - **'S'**: Shows P is false (letter ≠ G). No need to turn over—rule allows any number when P is false.
+   - **'10'**: Shows Q is false (number ≠ 20). Must turn over to check if P is false (letter ≠ G). (Potential violation if back = G.)
+
+3. **Cards to turn over**: 'G' (confirm Q true) and '10' (confirm P false).
+
+ANSWER: G, 10","['G', '10']","['P', 'not_Q']",CORRECT,244,276,0
+24,T25,0,240042,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['K', '4', 'I', '9']
+
+Which cards must you turn over?
+Your answer:","['K', '4', 'I', '9']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing conditional logic: **If P (vowel ""I"" on front), then Q (number ""9"" on back)**. The cards show one side each: 'K' (consonant), '4' (low number), 'I' (vowel), '9' (target number). We must falsify the rule by finding violations (P and not-Q).
+
+1. **'K' card**: Shows consonant (not P). Rule doesn't apply (antecedent false). No need to turn (can't falsify).
+
+2. **'4' card**: Shows low number (not Q). Rule doesn't constrain non-P cards. No need to turn (can't falsify).
+
+3. **'I' card**: Shows ""I"" (P true). Must check back for ""9"" (Q). If not ""9"" (not-Q), rule falsified. **Must turn**.
+
+4. **'9' card**: Shows ""9"" (Q true). Rule allows any front with Q (P or not-P). Can't falsify (no P violation possible). No need to turn.
+
+**Cards to turn over**: 'I' (confirm Q) and '4' (wait, no—recheck '4').
+
+Wait, error in step 2: '4' is not-Q, but to falsify (P → Q), we need P *and* not-Q. '4' back could be consonant (not P, irrelevant) or ""I"" (P + not-Q, falsifies). **Must turn '4'** to check for ""I"".
+
+Corrected:
+- 'I': P; check for not-Q.
+- '4': not-Q; check for P.
+
+No need for 'K' or '9'.
+
+ANSWER: 4, I","['4', 'I']","['P', 'not_Q']",CORRECT,250,380,0
+24,T25,1,240043,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['I', '4', 'K', '9']
+
+Which cards must you turn over?
+Your answer:","['I', '4', 'K', '9']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If there is an I on the card, then there is a 9 on the back."" This is a conditional: **I → 9**. To falsify it, we need an I with **not 9** on the back.
+
+2. **Cards visible**:
+   - 'I': Must turn over. Check back for 9 (if not 9, rule falsified).
+   - '4': No I, so irrelevant (antecedent false; rule holds regardless of back).
+   - 'K': No I, so irrelevant (same as '4').
+   - '9': Must turn over. Check front—if it's I, rule holds; but if **not I** (already confirmed by visible side? Wait, visible is back), actually: visible '9' means back is 9, so if front is I, rule holds; if front is not I, rule holds vacuously. **No falsification possible** (back cannot be ""not 9"").
+
+3. **Cards to turn**: Only 'I' (to verify 9) and '9' (to verify not I on front, though strictly needed for full check).
+
+ANSWER: I, 9","['I', '9']","['P', 'Q']",MATCHING_BIAS,250,257,0
+24,T25,2,240044,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['9', 'I', 'K', '4']
+
+Which cards must you turn over?
+Your answer:","['9', 'I', 'K', '4']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing conditional logic: **If P (vowel ""I"" on front), then Q (number ""9"" on back)**. To verify the rule, turn over cards where a visible side **could falsify** it (P without Q). Ignore cards that cannot falsify it.
+
+1. **'9' card** (shows Q):  
+   - Rule concerns what must be on the back of an ""I"" card. A 9 could pair with ""I"" (true) or consonant (irrelevant). Cannot falsify. **Do not turn.**
+
+2. **'I' card** (shows P):  
+   - Must check back for 9. If not 9 (e.g., 4), rule is false. **Must turn.**
+
+3. **'K' card** (shows not-P, consonant):  
+   - Rule ignores non-""I"" cards. Back can be anything (9 or not). Cannot falsify. **Do not turn.**
+
+4. **'4' card** (shows not-Q):  
+   - If front is ""I"", back 4 falsifies (P without Q). Must check front isn't ""I"". **Must turn.**
+
+**Cards to turn: 'I' (confirm 9) and '4' (confirm not ""I"").**
+
+ANSWER: I, 4","['I', '4']","['P', 'not_Q']",CORRECT,250,287,0
+24,T25,3,240045,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['I', 'K', '9', '4']
+
+Which cards must you turn over?
+Your answer:","['I', 'K', '9', '4']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing falsification of the conditional rule: **If I (vowel), then 9**. To verify the rule, we must turn over **only** cards that could potentially falsify it (i.e., show an I on front but not-9 on back). Cards that cannot falsify it (confirmations or irrelevancies) can be ignored.
+
+1. **'I' card**: Front shows I (antecedent true). Must turn over to check if back is 9. If back is not 9 (e.g., 4), rule is false. **Must turn.**
+
+2. **'K' card**: Front shows K (consonant, not I). Antecedent false. Back side irrelevant (rule doesn't apply). Cannot falsify. **Do not turn.**
+
+3. **'9' card**: Front shows 9 (consequent true). Could have I or not-I on back. If I, confirms rule; if not-I, irrelevant. Cannot falsify. **Do not turn.**
+
+4. **'4' card**: Front shows 4 (not 9). Must turn over to check front. If front is I, falsifies rule (I but not 9). **Must turn.**
+
+**Cards to turn over: 'I' and '4'.**
+
+ANSWER: I, 4","['I', '4']","['P', 'not_Q']",CORRECT,250,284,0
+24,T25,4,240046,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['9', '4', 'I', 'K']
+
+Which cards must you turn over?
+Your answer:","['9', '4', 'I', 'K']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing conditional logic: **If P (vowel ""I"" on front), then Q (number ""9"" on back)**. The cards show one side only: '9' (Q), '4' (not Q), 'I' (P), 'K' (not P). We must turn over only cards that could falsify the rule (P and not Q).
+
+1. **'9' card**: Shows Q. The rule says nothing about what must be on the front if 9 is on back (Q can pair with P or not P). No violation possible. **Do not turn.**
+
+2. **'4' card**: Shows not Q. If front is 'I' (P), this falsifies (P and not Q). Must check front. **Turn over.**
+
+3. **'I' card**: Shows P. Rule requires 9 (Q) on back. If back is not 9 (e.g., 4), falsifies. Must check back. **Turn over.**
+
+4. **'K' card**: Shows not P. Rule doesn't apply (only constrains P). Back can be 9 or not; no falsification. **Do not turn.**
+
+Only '4' and 'I' must be turned to test the rule.
+
+ANSWER: 4, I","['4', 'I']","['P', 'not_Q']",CORRECT,250,281,0
+25,T26,0,250042,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['N', 'B', '12', '3']
+
+Which cards must you turn over?
+Your answer:","['N', 'B', '12', '3']","### Step-by-Step Reasoning
+
+This is a Wason selection task, testing logical evaluation of the conditional rule: **If the number is 12, then the letter is N** (symbolically, **12 → N**).
+
+- The rule is violated **only** if there is a 12 with a letter that is **not** N.
+- We must turn over cards to check for potential falsifiers (violations). Cards that cannot falsify the rule (even if turned over) can be ignored.
+
+**Analyze each card:**
+1. **'N' card** (shows consequent): Could have any number on the back. If it's 12, it confirms the rule (no violation). If not 12, irrelevant (rule doesn't constrain non-12s). **Cannot falsify → ignore.**
+2. **'B' card** (not-N, shows ¬consequent): Back has a number. If 12, this is 12 → ¬N (violation). Must check if number is **not** 12. **Can falsify → turn over.**
+3. **'12' card** (shows antecedent): Back has a letter. If not N (e.g., B), this is 12 → ¬N (violation). Must check if letter **is** N. **Can falsify → turn over.**
+4. **'3' card** (not-12, shows ¬antecedent): Back has a letter. Rule ignores non-12s (N or not N is fine). **Cannot falsify → ignore.**
+
+**Cards to turn over:** 'B' (to ensure no 12) and '12' (to ensure N).
+
+ANSWER: B, 12","['B', '12']","['P', 'not_Q']",CORRECT,244,348,0
+25,T26,1,250043,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['12', 'B', 'N', '3']
+
+Which cards must you turn over?
+Your answer:","['12', 'B', 'N', '3']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is 12, then the letter is N."" This is a conditional: P → Q, where P = ""number is 12"" and Q = ""letter is N"".
+
+2. **Wason selection task**: To falsify P → Q, check for cases where P is true but Q is false (12 on front but not N on back). Ignore P false (doesn't matter what Q is) and Q true (doesn't matter what P is).
+
+3. **Evaluate cards**:
+   - **'12'**: Has P (number 12). Must turn over to check if back is N (Q true). If not N, rule falsified.
+   - **'B'**: Letter B (not N, so ¬Q). But rule only cares about when P is true; ¬Q with ¬P doesn't falsify. No need.
+   - **'N'**: Has Q (letter N). Rule satisfied regardless of front (P true or false). No need.
+   - **'3'**: Number 3 (not 12, so ¬P). Rule doesn't apply; back letter irrelevant. No need.
+
+4. **Cards to turn over**: Only '12' (to verify Q) and nothing else falsifies the rule.
+
+ANSWER: 12",['12'],['P'],CONFIRMATION_BIAS,244,276,0
+25,T26,2,250044,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['3', 'N', 'B', '12']
+
+Which cards must you turn over?
+Your answer:","['3', 'N', 'B', '12']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is 12, then the letter is N."" In logical terms: If P (number = 12), then Q (letter = N). To verify, check for violations (P true and Q false).
+
+2. **Cards to evaluate**:
+   - '12' (number side): Must turn over. Shows P true, so need to check if letter is N (Q true). If not N, rule violated.
+   - '3' (number side): No need. P false (not 12), so rule holds regardless of letter (antecedent false).
+   - 'N' (letter side): No need. Shows Q true. Rule holds whether number is 12 (P true → Q true) or not (P false).
+   - 'B' (letter side): **Must turn over**. Shows Q false (not N). Need to check number; if 12 (P true), then violation (P true → Q false).
+
+3. **Conclusion**: Turn over cards showing the antecedent ('12') to verify consequent, and any falsifying consequent ('B') to ensure antecedent false.
+
+ANSWER: 12, B","['12', 'B']","['P', 'not_Q']",CORRECT,244,248,0
+25,T26,3,250045,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['3', '12', 'B', 'N']
+
+Which cards must you turn over?
+Your answer:","['3', '12', 'B', 'N']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is 12, then the letter is N."" This is a conditional: **P → Q**, where **P** = ""number is 12"" and **Q** = ""letter is N"".
+
+2. **Wason selection task goal**: Turn over only cards that could **falsify** the rule (i.e., show **P and not-Q**). We ignore cards that cannot violate it.
+
+3. **Evaluate each card**:
+   - **'3'**: Shows not-P (number ≠ 12). Cannot falsify P → Q (true regardless of letter). **Do not turn.**
+   - **'12'**: Shows P (number = 12). Must check if letter is N (Q). If not-N, rule is false. **Must turn.**
+   - **'B'**: Shows not-Q (letter ≠ N). But we don't know the number. If number is 12 (P), it falsifies; if not, it's fine. Must check number. **Must turn.**
+   - **'N'**: Shows Q (letter = N). Rule holds regardless of number (P → Q is true if Q is true). **Do not turn.**
+
+4. **Cards to turn**: '12' (test consequent) and 'B' (test for hidden antecedent).
+
+ANSWER: 12, B","['12', 'B']","['P', 'not_Q']",CORRECT,244,290,0
+25,T26,4,250046,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['3', '12', 'N', 'B']
+
+Which cards must you turn over?
+Your answer:","['3', '12', 'N', 'B']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the number is 12, then the letter is N** (in logical terms: 12 → N).
+
+We must turn over **only the cards that could potentially falsify (disprove) the rule**. A rule is falsified only by a case where the antecedent (12) is true but the consequent (N) is false.
+
+- **'3' card**: Shows a number that is *not* 12. The rule says nothing about numbers other than 12, so whatever letter is on the other side (N or not), it cannot falsify the rule. **Do not turn over.**
+- **'12' card**: Shows the number 12 (antecedent true). To check the rule, we must verify if the letter is N. If it's not N, the rule is false. **Must turn over.**
+- **'N' card**: Shows the letter N (consequent true). The rule is satisfied regardless of the number (12 or not). It cannot falsify the rule. **Do not turn over.**
+- **'B' card**: Shows a letter that is *not* N (consequent false). If the number is 12, this falsifies the rule. We must check the number to rule this out. **Must turn over.**
+
+Thus, turn over the '12' (to ensure N) and 'B' (to ensure not 12).
+
+ANSWER: 12, B","['12', 'B']","['P', 'not_Q']",CORRECT,244,310,0
+26,T27,0,260042,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['7', 'E', 'F', '6']
+
+Which cards must you turn over?
+Your answer:","['7', 'E', 'F', '6']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the letter is F, then the number is 6** (in logical terms: F → 6). We must turn over only the cards that could **falsify** this conditional rule. A conditional is falsified only when the antecedent (F) is true but the consequent (6) is false.
+
+The cards are:
+- **7**: Shows a number (not F). Cannot falsify (no antecedent). Ignore.
+- **E**: Shows a letter that's not F. Cannot falsify (antecedent false). Ignore.
+- **F**: Shows the antecedent (F). Must turn over to check if the other side is 6. If not 6, rule is false.
+- **6**: Shows the consequent (6). Cannot falsify on its own (if other side is F, rule holds; if not F, irrelevant). Ignore.
+
+Only **F** must be turned over.
+
+ANSWER: F",['F'],['P'],CONFIRMATION_BIAS,244,206,0
+26,T27,1,260043,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['F', 'E', '7', '6']
+
+Which cards must you turn over?
+Your answer:","['F', 'E', '7', '6']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the letter is F, then the number is 6** (in logical terms: F → 6). We must turn over only the cards that could **falsify** this conditional rule. A conditional is falsified only when the antecedent (F) is true but the consequent (6) is false.
+
+The cards are:
+- **F**: Shows the antecedent (letter is F). Must turn over to check if the other side is 6. If it's not 6 (e.g., 7), the rule is false.
+- **E**: Shows a different letter (not F). The antecedent is false, so the rule holds regardless of the number (true for any consequent). No need to turn over.
+- **7**: Shows a number that's not 6. This could be paired with F (antecedent true, consequent false), falsifying the rule. Must turn over to check the letter side—if it's F, rule is false.
+- **6**: Shows the consequent (number is 6). The rule holds if paired with F, and also holds if paired with non-F (vacuous truth). Cannot falsify the rule, so no need to turn over.
+
+Thus, turn over **F** (to verify consequent) and **7** (to rule out antecedent).
+
+ANSWER: F, 7","['F', '7']","['P', 'not_Q']",CORRECT,244,288,0
+26,T27,2,260044,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['6', 'F', 'E', '7']
+
+Which cards must you turn over?
+Your answer:","['6', 'F', 'E', '7']","**Step-by-step reasoning:**
+
+This is a Wason selection task testing the conditional rule: **If the letter is F, then the number is 6** (logically: F → 6).
+
+To verify the rule, we must check for **violations** (cases where antecedent is true but consequent is false). We ignore cases that can't falsify it.
+
+- **'F' card**: Shows the antecedent (letter is F). Must turn over to check if its number is 6. (If not 6, rule is false.)
+- **'6' card**: Shows the consequent (number is 6). No need to turn over—whether the letter is F or not, it can't violate F → 6. (F with 6 confirms; non-F with 6 is irrelevant.)
+- **'E' card**: Shows non-F (antecedent false). No need to turn over—non-F can pair with any number without violating the rule.
+- **'7' card**: Shows non-6 (consequent false). **Must turn over** to check its letter. (If F, then F → 7 violates the rule.)
+
+Thus, turn over **F** (to confirm → 6) and **7** (to rule out F on back).
+
+ANSWER: F, 7","['F', '7']","['P', 'not_Q']",CORRECT,244,268,0
+26,T27,3,260045,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['E', 'F', '6', '7']
+
+Which cards must you turn over?
+Your answer:","['E', 'F', '6', '7']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is F, then the number is 6."" This is a conditional: F → 6. To verify it, check for violations (F without 6).
+
+2. **Analyze each card**:
+   - **'F' card**: Must turn over. It claims ""letter is F,"" so check if its number is 6. If not 6, rule is false.
+   - **'E' card**: No need to turn over. ""Letter is E"" doesn't trigger the antecedent (not F), so can't violate F → 6 regardless of number.
+   - **'6' card**: No need to turn over. It claims ""number is 6."" If letter is F, rule holds; if not F, rule holds vacuously.
+   - **'7' card**: Must turn over. It claims ""number is 7"" (not 6). If letter is F, this violates F → 6.
+
+3. **Cards to turn over**: 'F' (confirm consequent) and '7' (check no F on non-6).
+
+ANSWER: F, 7","['F', '7']","['P', 'not_Q']",CORRECT,244,243,0
+26,T27,4,260046,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['F', 'E', '6', '7']
+
+Which cards must you turn over?
+Your answer:","['F', 'E', '6', '7']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the letter is F, then the number is 6** (in logical terms: F → 6). We must test this rule by turning over only the cards that could **falsify** it (i.e., show it to be false). A conditional rule is falsified only by a case where the antecedent (F) is true but the consequent (6) is false.
+
+The cards are:
+- **F**: Must turn over. Shows ""letter is F"" (antecedent true). Check the other side—if it's not 6 (e.g., 7), the rule is false.
+- **E**: No need to turn over. ""Letter is E"" (antecedent false). The rule says nothing about non-F letters, so whatever number is on the back (6 or not), it can't falsify the rule.
+- **6**: No need to turn over. Shows ""number is 6"" (consequent true). If the other side is F, rule holds; if E, rule doesn't apply (antecedent false). Can't falsify.
+- **7**: Must turn over. Shows ""number is 7"" (consequent false). If the other side is F, this falsifies the rule (F but not 6). If E, rule holds (antecedent false).
+
+Thus, turn over **F** (to check for non-6) and **7** (to check for no F).
+
+ANSWER: F, 7","['F', '7']","['P', 'not_Q']",CORRECT,244,318,0
+27,T28,0,270042,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['2', 'A', '5', 'Z']
+
+Which cards must you turn over?
+Your answer:","['2', 'A', '5', 'Z']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is 2, then the letter is Z."" This is a conditional: **P → Q**, where P = ""number is 2"" and Q = ""letter is Z"".
+
+2. **Wason selection task logic**: To falsify P → Q, check for **P and not-Q**. Turn over cards showing P (test antecedent) and not-Q (test consequent negation). Ignore not-P and Q (they can't falsify).
+
+3. **Apply to cards**:
+   - **'2'**: Shows P (""number is 2""). Must turn over to verify it has Z on the other side. (If not Z, rule falsified.)
+   - **'A'**: Shows not-Q (letter ≠ Z). Other side is a number (not-P). Can't falsify (not-P → anything is true). No need.
+   - **'5'**: Shows not-P (number ≠ 2). Can't falsify regardless of letter. No need.
+   - **'Z'**: Shows Q (""letter is Z""). Other side could be 2 (true) or not (true). Can't falsify. No need.
+
+4. **Cards to turn over**: Only '2' (to check for Z).
+
+ANSWER: 2",['2'],['P'],CONFIRMATION_BIAS,244,272,0
+27,T28,1,270043,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['A', '2', 'Z', '5']
+
+Which cards must you turn over?
+Your answer:","['A', '2', 'Z', '5']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is 2, then the letter is Z."" This is a conditional: P → Q, where P = ""number is 2"" and Q = ""letter is Z"".
+
+2. **Falsification test**: To verify the rule, check for violations (cases where P is true but Q is false). Turn over cards that could potentially show this.
+
+3. **Evaluate each card**:
+   - **'A'** (letter A, not Z): Q is false. Cannot violate P → Q (antecedent P irrelevant). **No need to turn**.
+   - **'2'** (number 2): P is true. Must check if back is Z (Q true). If not Z, rule falsified. **Must turn**.
+   - **'Z'** (letter Z): Q is true. Cannot violate P → Q (consequent true). **No need to turn**.
+   - **'5'** (number 5, not 2): P is false. Cannot violate P → Q (antecedent false). **No need to turn**.
+
+4. **Conclusion**: Only the '2' card must be turned over.
+
+ANSWER: 2",['2'],['P'],CONFIRMATION_BIAS,244,257,0
+27,T28,2,270044,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['Z', '5', 'A', '2']
+
+Which cards must you turn over?
+Your answer:","['Z', '5', 'A', '2']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is 2, then the letter is Z."" In logical terms: If P (number is 2), then Q (letter is Z). Or: P → Q.
+
+2. **Wason selection task**: To falsify the rule, check for cases where P is true but Q is false (a 2 without a Z). Other cases (¬P) are irrelevant.
+
+3. **Evaluate each card**:
+   - **'Z'** (Q true): Could have any number (2 or not). Doesn't test P → Q. **No need to turn.**
+   - **'5'** (¬P, number not 2): Rule doesn't apply (antecedent false). **No need to turn.**
+   - **'A'** (¬Q, letter not Z): Rule doesn't require non-Z letters to avoid 2. **No need to turn.**
+   - **'2'** (P true): Must check if it has Z on the other side. If not Z, rule is false. **Must turn.**
+
+**Cards to turn over**: Only the '2' card.
+
+ANSWER: 2",['2'],['P'],CONFIRMATION_BIAS,244,247,0
+27,T28,3,270045,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['2', '5', 'Z', 'A']
+
+Which cards must you turn over?
+Your answer:","['2', '5', 'Z', 'A']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is 2, then the letter is Z."" In logical terms: 2 → Z. To verify this, check for violations (cases where number is 2 but letter is not Z).
+
+2. **Falsification test** (Wason selection task):
+   - **'2'**: Must turn over. Check if its letter is Z. If not Z, rule is false.
+   - **'5'**: No need. Rule says nothing about 5 (non-2 numbers can have any letter).
+   - **'Z'**: No need. Rule doesn't restrict what number pairs with Z (Z can be with 2 or non-2).
+   - **'A'**: Must turn over. A is not Z, so check its number. If it's 2, rule is false (2 paired with non-Z).
+
+3. **Cards to turn over**: '2' (confirms consequent) and 'A' (checks for 2 without Z).
+
+ANSWER: 2, A","['2', 'A']","['P', 'not_Q']",CORRECT,244,222,0
+27,T28,4,270046,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['Z', '2', '5', 'A']
+
+Which cards must you turn over?
+Your answer:","['Z', '2', '5', 'A']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is 2, then the letter is Z."" This is a conditional: P → Q, where P = ""number is 2"" and Q = ""letter is Z"".
+
+2. **Falsification test**: To verify the rule, check for violations (cases where P is true but Q is false). Turn over cards that could potentially falsify it:
+   - Cards showing P (number 2): Must check if Q holds (letter is Z).
+   - Cards showing ¬Q (letter not Z): Must check if ¬P holds (number not 2).
+
+3. **Evaluate each card**:
+   - **'Z'**: Shows Q (letter Z). Cannot falsify (if P true, Q true; if P false, irrelevant). **Do not turn over**.
+   - **'2'**: Shows P (number 2). Must verify back is Z (Q). If not Z, rule false. **Turn over**.
+   - **'5'**: Shows ¬P (number not 2). Rule holds regardless of letter (antecedent false). **Do not turn over**.
+   - **'A'**: Shows ¬Q (letter not Z). Must verify back is not 2 (¬P). If 2, rule false. **Turn over**.
+
+**Cards to turn over**: '2' and 'A'.
+
+ANSWER: 2, A","['2', 'A']","['P', 'not_Q']",CORRECT,244,298,0
+28,T29,0,280042,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['V', '100', 'W', '50']
+
+Which cards must you turn over?
+Your answer:","['V', '100', 'W', '50']","**Step-by-step reasoning:**
+
+This is a Wason selection task. The rule is: ""If the letter is W, then the number is 100"" (in logical terms: W → 100). We must turn over cards to potentially falsify this conditional rule. A conditional is falsified **only** by a W paired with a number other than 100.
+
+Cards available:
+- 'V': Shows a letter that is not W. The rule says nothing about non-W letters, so this cannot falsify the rule (antecedent false). **Do not turn over.**
+- '100': Shows the consequent (100). Whether the letter is W or not, it satisfies the rule (if W, then 100 is true; if not W, irrelevant). **Do not turn over.**
+- 'W': Shows the antecedent (W). The rule requires this to have 100 on the other side. Must check if it does **not** have 100 (e.g., has 50), which would falsify. **Must turn over.**
+- '50': Shows a number that is not 100. If the other side is W, this falsifies the rule (W but not 100). Must check if it **is** W. **Must turn over.**
+
+Cards to turn over: 'W' and '50'.
+
+ANSWER: W, 50","['W', '50']","['P', 'not_Q']",CORRECT,244,277,0
+28,T29,1,280043,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['V', 'W', '50', '100']
+
+Which cards must you turn over?
+Your answer:","['V', 'W', '50', '100']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is W, then the number is 100."" This is a conditional: **W → 100**. To verify it, check for violations (W without 100).
+
+2. **Evaluate each card**:
+   - **'W'** (letter side): Must turn over. It claims ""letter is W"" (antecedent true). Need to check if the other side is 100. If not (e.g., 50), rule violated.
+   - **'V'** (letter side): No need. ""Letter is V"" makes antecedent false. Rule holds regardless of number (true whenever antecedent false).
+   - **'100'** (number side): No need. If other side is W, rule satisfied. If not W, antecedent false (no violation possible).
+   - **'50'** (number side): Must turn over. If other side is W, then ""W but 50"" violates rule. Must confirm it's not W.
+
+3. **Cards to turn over**: 'W' (confirm consequent) and '50' (falsifying potential).
+
+ANSWER: W, 50","['W', '50']","['P', 'not_Q']",CORRECT,244,245,0
+28,T29,2,280044,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['W', 'V', '100', '50']
+
+Which cards must you turn over?
+Your answer:","['W', 'V', '100', '50']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the letter is W, then the number is 100** (in logical terms: W → 100). We must test this rule by turning over only the cards that could **falsify** it (i.e., find evidence of W without 100). Cards that cannot falsify it (confirmations or irrelevancies) can be ignored.
+
+1. **'W' card** (antecedent): Must turn over. It shows ""letter is W"". Check its number side—if it's not 100 (e.g., 50), the rule is false.
+
+2. **'V' card** (non-W): No need to turn over. ""Letter is not W"", so the rule's antecedent is false (implication is true regardless of number).
+
+3. **'100' card** (consequent): No need to turn over. It shows ""number is 100"". The rule only cares about W cards having 100; a non-W with 100 doesn't violate it.
+
+4. **'50' card** (non-100): Must turn over. It shows ""number is not 100"". Check its letter side—if it's W, the rule is false (W without 100).
+
+Only 'W' and '50' can potentially disprove the rule.
+
+ANSWER: W, 50","['W', '50']","['P', 'not_Q']",CORRECT,244,287,0
+28,T29,3,280045,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['100', '50', 'W', 'V']
+
+Which cards must you turn over?
+Your answer:","['100', '50', 'W', 'V']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: This is a conditional statement in the form ""If P, then Q"":
+   - P = ""the letter is W"" (antecedent).
+   - Q = ""the number is 100"" (consequent).
+   - The rule is logically false **only** if P is true but Q is false (W on front but not 100 on back).
+
+2. **Goal**: Turn over only cards that could potentially falsify the rule. We ignore cards that cannot violate it regardless of what's on the other side.
+
+3. **Evaluate each card**:
+   | Card | Front | Can it falsify? | Reason | Turn over? |
+   |------|-------|-----------------|--------|------------|
+   | '100' | Number (Q true) | No | If back is W (P true), rule holds (W → 100). If back not W (P false), rule holds vacuously. | **No** |
+   | '50' | Number ≠100 (Q false) | No | Rule says nothing about non-W letters. Back can be W or not—doesn't matter (no P true case). | **No** |
+   | 'W' | Letter W (P true) | **Yes** | Back **must** be 100 for rule to hold. If back is not 100 (e.g., 50), rule is false. Must check back. | **Yes** |
+   | 'V' | Letter ≠W (P false) | No | Rule holds vacuously (false → anything is true). Back can be 100 or not—doesn't matter. | **No** |
+
+**Conclusion**: Only the 'W' card must be turned over to verify the rule.
+
+ANSWER: W",['W'],['P'],CONFIRMATION_BIAS,244,366,0
+28,T29,4,280046,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['100', 'W', '50', 'V']
+
+Which cards must you turn over?
+Your answer:","['100', 'W', '50', 'V']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the letter is W, then the number is 100."" In logical terms: W → 100. To verify this, check for violations (cases where antecedent is true but consequent is false: W but not 100).
+
+2. **Evaluate each card**:
+   - **'W'** (letter side): Must turn over. Shows antecedent (letter = W) is true. Need to check if number side is 100 (to confirm consequent).
+   - **'100'** (number side): No need to turn. If number = 100, rule holds regardless of letter (true → true is valid; false → true is valid).
+   - **'50'** (number side): No need to turn. Number ≠ 100, but rule only restricts W cards (non-W → 50 cannot violate W → 100).
+   - **'V'** (letter side): No need to turn. Letter = V (not W), so antecedent false. Rule holds regardless of number (false → anything is valid).
+
+3. **Cards to turn**: Only 'W' (to verify it has 100 on the back). Turning others cannot falsify the rule.
+
+ANSWER: W",['W'],['P'],CONFIRMATION_BIAS,244,259,0
+29,T30,0,290042,"If the number is Double Digit, then the letter is P.","Rule: ""If the number is Double Digit, then the letter is P.""
+Cards: ['S', '14', '5', 'P']
+
+Which cards must you turn over?
+Your answer:","['S', '14', '5', 'P']","### Step-by-Step Reasoning
+
+1. **Understand the rule**: The conditional rule is ""If the number is Double Digit, then the letter is P."" In logical terms, this is: **Double Digit → P**. 
+   - A double-digit number is any number with two digits (e.g., 10–99).
+   - To falsify (violate) this rule, we need a card with a **double-digit number on one side** but **not P on the other side**.
+
+2. **Identify relevant cards**:
+   - **'S'**: Shows a letter that is not P. The rule's consequent is ""letter is P"", so this could falsify if paired with a double-digit number. **Must turn over** to check the number.
+   - **'14'**: Shows a double-digit number (14). The rule's antecedent is ""double digit"", so this could falsify if paired with a non-P letter. **Must turn over** to check the letter.
+   - **'5'**: Shows a single-digit number (5). This does not match the antecedent (""double digit""), so it cannot falsify the rule regardless of the letter. **No need to turn over**.
+   - **'P'**: Shows the letter P. This satisfies the rule's consequent if it has a double-digit number, and single-digit numbers are irrelevant to the antecedent. Cannot falsify. **No need to turn over**.
+
+3. **Conclusion**: Only turn over cards that could potentially falsify the rule: 'S' and '14'.
+
+ANSWER: S, 14","['S', '14']","['P', 'not_Q']",CORRECT,244,325,0
+29,T30,1,290043,"If the number is Double Digit, then the letter is P.","Rule: ""If the number is Double Digit, then the letter is P.""
+Cards: ['5', 'S', 'P', '14']
+
+Which cards must you turn over?
+Your answer:","['5', 'S', 'P', '14']","### Step-by-Step Reasoning
+
+This is a Wason selection task. The rule is: **If the number is Double Digit (two digits, i.e., 10+), then the letter is P**. We need to test potential violations by turning over only cards that could falsify the rule (i.e., show a double-digit number without a P on the other side).
+
+1. **'5' (single-digit number)**: 
+   - The rule says nothing about single-digit numbers (antecedent is false). Whether the letter is P or not, the rule holds. No need to turn.
+
+2. **'S' (letter not P)**: 
+   - This is the consequent false (not P). To violate the rule, the other side must be double-digit. Must turn to check if it's double-digit (violation) or single-digit (no violation).
+
+3. **'P' (letter P)**: 
+   - This is the consequent true (P). The rule is satisfied regardless of the number (double-digit or not). No need to turn.
+
+4. **'14' (double-digit number)**: 
+   - This is the antecedent true (double-digit). To violate the rule, the other side must not be P. Must turn to check if it's P (rule holds) or not P (violation).
+
+**Cards to turn**: 'S' (to falsify consequent) and '14' (to verify consequent matches antecedent).
+
+ANSWER: S, 14","['S', '14']","['P', 'not_Q']",CORRECT,244,305,0
+29,T30,2,290044,"If the number is Double Digit, then the letter is P.","Rule: ""If the number is Double Digit, then the letter is P.""
+Cards: ['5', '14', 'S', 'P']
+
+Which cards must you turn over?
+Your answer:","['5', '14', 'S', 'P']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is Double Digit, then the letter is P.""  
+   - This is a conditional: **Double Digit → P**.  
+   - To falsify it, we need a Double Digit number (antecedent true) that does **not** have P (consequent false).
+
+2. **Define Double Digit**: Numbers ≥ 10 (e.g., 14 is Double Digit; 5 is not).
+
+3. **Evaluate each card**:  
+   - **'5'**: Single digit (not Double Digit). Antecedent false → irrelevant (cannot falsify). **Do not turn.**  
+   - **'14'**: Double Digit. Antecedent true → must check if it has P on the back. If not P, rule falsified. **Must turn.**  
+   - **'S'**: Letter S (not P). Check number on back. Only matters if Double Digit (then violates rule). **Must turn.**  
+   - **'P'**: Letter P. Consequent true → cannot falsify (rule holds regardless of number). **Do not turn.**
+
+**Cards to turn over**: '14' and 'S' (to verify no Double Digit without P).
+
+ANSWER: 14, S","['14', 'S']","['P', 'not_Q']",CORRECT,244,263,0
+29,T30,3,290045,"If the number is Double Digit, then the letter is P.","Rule: ""If the number is Double Digit, then the letter is P.""
+Cards: ['P', '5', 'S', '14']
+
+Which cards must you turn over?
+Your answer:","['P', '5', 'S', '14']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is Double Digit, then the letter is P.""  
+   - This is a conditional: **Double Digit → P**.  
+   - To falsify it, we need a Double Digit number (antecedent true) paired with a non-P letter (consequent false).
+
+2. **Define Double Digit**: Numbers with two digits (10–99).  
+   - '14' = 14 (Double Digit, **true**).  
+   - '5' = 5 (single digit, **false**).
+
+3. **Analyze each card**:  
+   - **'P'**: Shows consequent (P). Must check if number is Double Digit (to ensure no violation if true). **Turn over** (possible Double Digit + P is fine, but must verify).  
+   - **'5'**: Shows antecedent false (not Double Digit). Rule doesn't apply (true regardless of letter). **No need**.  
+   - **'S'**: Shows non-P (¬P). Must check if number is Double Digit (Double Digit + ¬P falsifies). **Turn over**.  
+   - **'14'**: Shows Double Digit (true). Must check letter is P (¬P falsifies). **Turn over**.
+
+4. **Cards to turn over**: 'P' (verify antecedent), 'S' (check for falsifying antecedent), '14' (verify consequent).
+
+ANSWER: P, S, 14","['P', 'S', '14']","['P', 'Q', 'not_Q']",OVER_SELECTION,244,306,0
+29,T30,4,290046,"If the number is Double Digit, then the letter is P.","Rule: ""If the number is Double Digit, then the letter is P.""
+Cards: ['14', '5', 'S', 'P']
+
+Which cards must you turn over?
+Your answer:","['14', '5', 'S', 'P']","**Step-by-step reasoning:**
+
+1. **Understand the rule**: ""If the number is Double Digit, then the letter is P.""  
+   - This is a conditional: **Double Digit → P**.  
+   - To falsify it, we need a card with a Double Digit number (antecedent true) but letter ≠ P (consequent false).
+
+2. **Interpret cards**:  
+   - '14': Double Digit number (14 ≥ 10). **Must turn over** (check if letter is P).  
+   - '5': Single Digit number (5 < 10). Antecedent false → irrelevant (rule doesn't apply).  
+   - 'S': Letter S (≠ P). **Must turn over** (check if number is NOT Double Digit; if it is Double Digit, rule violated).  
+   - 'P': Letter P. Consequent true → irrelevant (rule holds regardless of number).
+
+3. **Cards to turn over**: '14' (verify consequent) and 'S' (verify antecedent false).
+
+ANSWER: 14, S","['14', 'S']","['P', 'not_Q']",CORRECT,244,217,0

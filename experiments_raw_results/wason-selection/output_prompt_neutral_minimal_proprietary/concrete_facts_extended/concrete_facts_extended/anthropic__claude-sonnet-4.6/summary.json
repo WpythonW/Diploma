@@ -1,0 +1,12 @@
+{
+  "model": "anthropic/claude-sonnet-4.6",
+  "context": "concrete_facts_extended",
+  "n_items": 101,
+  "n_prompt_permutations": 5,
+  "n_trials": 505,
+  "stats": {
+    "prompt_tokens": 40512,
+    "completion_tokens": 8241,
+    "reasoning_tokens": 0
+  }
+}

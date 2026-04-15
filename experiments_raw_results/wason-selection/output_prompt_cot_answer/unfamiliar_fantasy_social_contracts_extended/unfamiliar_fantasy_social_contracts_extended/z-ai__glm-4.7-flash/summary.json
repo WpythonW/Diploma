@@ -1,0 +1,12 @@
+{
+  "model": "z-ai/glm-4.7-flash",
+  "context": "unfamiliar_fantasy_social_contracts_extended",
+  "n_items": 100,
+  "n_prompt_permutations": 5,
+  "n_trials": 500,
+  "stats": {
+    "prompt_tokens": 47340,
+    "completion_tokens": 280197,
+    "reasoning_tokens": 0
+  }
+}

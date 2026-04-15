@@ -1,0 +1,61 @@
+THESIS STRUCTURE
+
+Total chapters: 9
+
+CHAPTER BREAKDOWN
+ 1. preamble.tex                   [CONTENT]            |     72 words |  0 cites | fig:0 tbl:0
+ 2. abbreviations.tex              [CONTENT]            |     86 words |  0 cites | fig:0 tbl:0
+   chapter      СПИСОК СОКРАЩЕНИЙ И УСЛОВНЫХ ОБОЗНАЧЕНИЙ
+ 3. terms.tex                      [CONTENT]            |    168 words |  0 cites | fig:0 tbl:0
+   chapter      ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ
+ 4. intro.tex                      [INTRODUCTION]       |  1,440 words | 12 cites | fig:0 tbl:0
+   chapter      ВВЕДЕНИЕ
+ 5. chapter1.tex                   [CONTENT]            |  3,807 words | 35 cites | fig:0 tbl:0
+   chapter      АНАЛИЗ ПРЕДМЕТНОЙ ОБЛАСТИ
+     section      Когнитивные предубеждения: теоретические основания
+     subsection   Программа эвристик и предубеждений Канемана и Твер
+     subsection   Типология когнитивных предубеждений: вероятностные
+     subsection   Нормативные стандарты рассуждения и отклонения от 
+     section      Анализ проблемы: когнитивные предубеждения в LLM
+     subsection   Природа предубеждений в языковых моделях: memoriza
+     subsection   Архитектурные и математические предпосылки эвристи
+     subsection   Влияние методов выравнивания (RLHF) и склонность к
+     subsection   Проблема контаминации обучающих данных
+     subsection   Ограничения существующих подходов и обоснование ме
+     subsection   Практическая значимость и целевая аудитория
+     section      Обзор смежных исследований и существующих бенчмарк
+     subsection   Ошибка конъюнкции, эвристика репрезентативности и 
+     subsection   Дедуктивное рассуждение и задача выбора карточек У
+     subsection   Индуктивное открытие правил и задача 2-4-6
+     subsection   Сравнительные бенчмарки и формирование исследовате
+     section      Обоснование исследовательских гипотез
+     subsection   Гипотеза об универсальности предубеждений
+     subsection   Гипотеза о масштабировании и внутрисемейном парадо
+     subsection   Гипотеза о спектральной природе предубеждений
+     subsection   Гипотеза о демографическом токен-bias
+     section      Требования к экспериментальному исследованию
+     subsection   Требования к датасетам и контролю контаминации
+     subsection   Требования к метрикам и статистическому выводу
+     subsection   Требования к инфраструктуре и набору тестируемых м
+ 6. chapter2.tex                   [CONTENT]            |      0 words |  0 cites | fig:0 tbl:0
+ 7. chapter3.tex                   [CONTENT]            |  1,058 words |  1 cites | fig:0 tbl:0
+   chapter      ЭКСПЕРИМЕНТАЛЬНЫЙ ФРЕЙМВОРК И ОБСУЖДЕНИЕ РЕЗУЛЬТАТ
+     section      Архитектура воспроизводимого экспериментального фр
+     subsection   Общая структура кодовой базы
+     subsection   Параметры запросов и механизм отказоустойчивости
+     subsection   Структура датасетов
+     subsection   Реализация метрики IOU
+     section      Ограничения исследования
+     subsection   Методологические ограничения
+     subsection   Ограничения отдельных экспериментов
+     section      Апробация результатов
+     section      Направления будущих исследований
+ 8. conclusion.tex                 [DISCUSSION]         |     95 words |  0 cites | fig:0 tbl:0
+   chapter      ЗАКЛЮЧЕНИЕ
+ 9. appA.tex                       [CONTENT]            |    270 words |  0 cites | fig:1 tbl:0
+   chapter      РУКОВОДСТВО ПО ИСПОЛЬЗОВАНИЮ ШАБЛОНА
+     section      Пример заголовков разделов и подразделов
+     section      Пример изображения
+     section      Примеры таблиц
+     section      Примеры перечислений
+     section      Пример формулы

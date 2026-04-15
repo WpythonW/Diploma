@@ -1,0 +1,4 @@
+#!/bin/bash
+# Citation contextual correctness (OK/WARNING/ERROR)
+cd "$(dirname "$0")/../.." || exit 1
+uv run python .claude/skills/check-context/tools/check_contextual_correctness.py "$@"

@@ -1,0 +1,751 @@
+row_idx,item_id,permutation_idx,llm_seed,rule_text,prompt,ordered_cards,response_text,selected_cards,logic_set,category,prompt_tokens,completion_tokens,reasoning_tokens
+0,T01,0,42,"If a card has a Vowel on one side, then it has an Even Number on the other side.","Rule: ""If a card has a Vowel on one side, then it has an Even Number on the other side.""
+Cards: ['4', 'K', '7', 'A']
+
+Which cards must you turn over?
+Your answer:","['4', 'K', '7', 'A']","4, K","['4', 'K']","['Q', 'not_P']",LOGIC_ERROR,69,3,0
+0,T01,1,43,"If a card has a Vowel on one side, then it has an Even Number on the other side.","Rule: ""If a card has a Vowel on one side, then it has an Even Number on the other side.""
+Cards: ['A', '7', '4', 'K']
+
+Which cards must you turn over?
+Your answer:","['A', '7', '4', 'K']","A, 7","['A', '7']","['P', 'not_Q']",CORRECT,69,5,0
+0,T01,2,44,"If a card has a Vowel on one side, then it has an Even Number on the other side.","Rule: ""If a card has a Vowel on one side, then it has an Even Number on the other side.""
+Cards: ['7', 'A', 'K', '4']
+
+Which cards must you turn over?
+Your answer:","['7', 'A', 'K', '4']","A, 4","['A', '4']","['P', 'Q']",MATCHING_BIAS,69,5,0
+0,T01,3,45,"If a card has a Vowel on one side, then it has an Even Number on the other side.","Rule: ""If a card has a Vowel on one side, then it has an Even Number on the other side.""
+Cards: ['7', '4', 'K', 'A']
+
+Which cards must you turn over?
+Your answer:","['7', '4', 'K', 'A']","4, K","['4', 'K']","['Q', 'not_P']",LOGIC_ERROR,69,4,0
+0,T01,4,46,"If a card has a Vowel on one side, then it has an Even Number on the other side.","Rule: ""If a card has a Vowel on one side, then it has an Even Number on the other side.""
+Cards: ['4', 'A', '7', 'K']
+
+Which cards must you turn over?
+Your answer:","['4', 'A', '7', 'K']","4, A","['4', 'A']","['P', 'Q']",MATCHING_BIAS,69,3,0
+1,T02,0,10042,"If a card has a Consonant on one side, then it has an Odd Number on the other side.","Rule: ""If a card has a Consonant on one side, then it has an Odd Number on the other side.""
+Cards: ['K', '7', 'A', '4']
+
+Which cards must you turn over?
+Your answer:","['K', '7', 'A', '4']","K, 7","['K', '7']","['P', 'Q']",MATCHING_BIAS,70,4,0
+1,T02,1,10043,"If a card has a Consonant on one side, then it has an Odd Number on the other side.","Rule: ""If a card has a Consonant on one side, then it has an Odd Number on the other side.""
+Cards: ['4', 'K', 'A', '7']
+
+Which cards must you turn over?
+Your answer:","['4', 'K', 'A', '7']","K, 7","['K', '7']","['P', 'Q']",MATCHING_BIAS,70,4,0
+1,T02,2,10044,"If a card has a Consonant on one side, then it has an Odd Number on the other side.","Rule: ""If a card has a Consonant on one side, then it has an Odd Number on the other side.""
+Cards: ['A', 'K', '4', '7']
+
+Which cards must you turn over?
+Your answer:","['A', 'K', '4', '7']","K, 7","['K', '7']","['P', 'Q']",MATCHING_BIAS,70,4,0
+1,T02,3,10045,"If a card has a Consonant on one side, then it has an Odd Number on the other side.","Rule: ""If a card has a Consonant on one side, then it has an Odd Number on the other side.""
+Cards: ['4', 'A', '7', 'K']
+
+Which cards must you turn over?
+Your answer:","['4', 'A', '7', 'K']","4, A","['4', 'A']","['not_P', 'not_Q']",LOGIC_ERROR,70,3,0
+1,T02,4,10046,"If a card has a Consonant on one side, then it has an Odd Number on the other side.","Rule: ""If a card has a Consonant on one side, then it has an Odd Number on the other side.""
+Cards: ['4', 'K', '7', 'A']
+
+Which cards must you turn over?
+Your answer:","['4', 'K', '7', 'A']","K, 7","['K', '7']","['P', 'Q']",MATCHING_BIAS,70,4,0
+2,T03,0,20042,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['D', '7', '3', 'A']
+
+Which cards must you turn over?
+Your answer:","['D', '7', '3', 'A']","A, 7","['A', '7']","['P', 'not_Q']",CORRECT,67,5,0
+2,T03,1,20043,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['D', '7', 'A', '3']
+
+Which cards must you turn over?
+Your answer:","['D', '7', 'A', '3']","A, 7","['A', '7']","['P', 'not_Q']",CORRECT,67,4,0
+2,T03,2,20044,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['7', 'A', 'D', '3']
+
+Which cards must you turn over?
+Your answer:","['7', 'A', 'D', '3']","A, 3","['A', '3']","['P', 'Q']",MATCHING_BIAS,67,4,0
+2,T03,3,20045,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['7', 'D', '3', 'A']
+
+Which cards must you turn over?
+Your answer:","['7', 'D', '3', 'A']","A, 3","['A', '3']","['P', 'Q']",MATCHING_BIAS,67,4,0
+2,T03,4,20046,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['3', 'D', 'A', '7']
+
+Which cards must you turn over?
+Your answer:","['3', 'D', 'A', '7']","A, 3","['A', '3']","['P', 'Q']",MATCHING_BIAS,67,5,0
+3,T04,0,30042,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['8', 'F', 'D', '5']
+
+Which cards must you turn over?
+Your answer:","['8', 'F', 'D', '5']","D, 8","['D', '8']","['P', 'not_Q']",CORRECT,61,5,0
+3,T04,1,30043,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['D', '5', '8', 'F']
+
+Which cards must you turn over?
+Your answer:","['D', '5', '8', 'F']","D, 8","['D', '8']","['P', 'not_Q']",CORRECT,61,4,0
+3,T04,2,30044,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['D', '8', '5', 'F']
+
+Which cards must you turn over?
+Your answer:","['D', '8', '5', 'F']","D, 8","['D', '8']","['P', 'not_Q']",CORRECT,61,4,0
+3,T04,3,30045,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['8', 'D', 'F', '5']
+
+Which cards must you turn over?
+Your answer:","['8', 'D', 'F', '5']","D, 8","['D', '8']","['P', 'not_Q']",CORRECT,61,5,0
+3,T04,4,30046,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['F', 'D', '5', '8']
+
+Which cards must you turn over?
+Your answer:","['F', 'D', '5', '8']","D, 5","['D', '5']","['P', 'Q']",MATCHING_BIAS,61,4,0
+4,T05,0,40042,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['8', 'U', '1', 'G']
+
+Which cards must you turn over?
+Your answer:","['8', 'U', '1', 'G']","8, U","['8', 'U']","['P', 'Q']",MATCHING_BIAS,66,3,0
+4,T05,1,40043,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['G', '8', 'U', '1']
+
+Which cards must you turn over?
+Your answer:","['G', '8', 'U', '1']","8, U","['8', 'U']","['P', 'Q']",MATCHING_BIAS,66,3,0
+4,T05,2,40044,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['U', '8', '1', 'G']
+
+Which cards must you turn over?
+Your answer:","['U', '8', '1', 'G']","U, 1","['U', '1']","['P', 'not_Q']",CORRECT,66,5,0
+4,T05,3,40045,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['G', '1', '8', 'U']
+
+Which cards must you turn over?
+Your answer:","['G', '1', '8', 'U']","U, 1","['U', '1']","['P', 'not_Q']",CORRECT,66,4,0
+4,T05,4,40046,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['G', 'U', '8', '1']
+
+Which cards must you turn over?
+Your answer:","['G', 'U', '8', '1']","U, 1","['U', '1']","['P', 'not_Q']",CORRECT,66,4,0
+5,T06,0,50042,"If the number is Even, then the letter is a Vowel.","Rule: ""If the number is Even, then the letter is a Vowel.""
+Cards: ['4', 'K', 'E', '7']
+
+Which cards must you turn over?
+Your answer:","['4', 'K', 'E', '7']","4, K","['4', 'K']","['P', 'not_Q']",CORRECT,61,3,0
+5,T06,1,50043,"If the number is Even, then the letter is a Vowel.","Rule: ""If the number is Even, then the letter is a Vowel.""
+Cards: ['K', 'E', '7', '4']
+
+Which cards must you turn over?
+Your answer:","['K', 'E', '7', '4']","E, 4","['E', '4']","['P', 'Q']",MATCHING_BIAS,61,4,0
+5,T06,2,50044,"If the number is Even, then the letter is a Vowel.","Rule: ""If the number is Even, then the letter is a Vowel.""
+Cards: ['E', 'K', '4', '7']
+
+Which cards must you turn over?
+Your answer:","['E', 'K', '4', '7']",4,['4'],['P'],CONFIRMATION_BIAS,61,1,0
+5,T06,3,50045,"If the number is Even, then the letter is a Vowel.","Rule: ""If the number is Even, then the letter is a Vowel.""
+Cards: ['7', '4', 'K', 'E']
+
+Which cards must you turn over?
+Your answer:","['7', '4', 'K', 'E']",4,['4'],['P'],CONFIRMATION_BIAS,61,1,0
+5,T06,4,50046,"If the number is Even, then the letter is a Vowel.","Rule: ""If the number is Even, then the letter is a Vowel.""
+Cards: ['4', 'K', '7', 'E']
+
+Which cards must you turn over?
+Your answer:","['4', 'K', '7', 'E']","4, K","['4', 'K']","['P', 'not_Q']",CORRECT,61,3,0
+6,T07,0,60042,"If the number is Odd, then the letter is a Consonant.","Rule: ""If the number is Odd, then the letter is a Consonant.""
+Cards: ['M', '6', 'A', '9']
+
+Which cards must you turn over?
+Your answer:","['M', '6', 'A', '9']","M, 9","['M', '9']","['P', 'Q']",MATCHING_BIAS,62,4,0
+6,T07,1,60043,"If the number is Odd, then the letter is a Consonant.","Rule: ""If the number is Odd, then the letter is a Consonant.""
+Cards: ['9', '6', 'M', 'A']
+
+Which cards must you turn over?
+Your answer:","['9', '6', 'M', 'A']","9, M","['9', 'M']","['P', 'Q']",MATCHING_BIAS,62,3,0
+6,T07,2,60044,"If the number is Odd, then the letter is a Consonant.","Rule: ""If the number is Odd, then the letter is a Consonant.""
+Cards: ['A', '9', '6', 'M']
+
+Which cards must you turn over?
+Your answer:","['A', '9', '6', 'M']","9, M","['9', 'M']","['P', 'Q']",MATCHING_BIAS,62,3,0
+6,T07,3,60045,"If the number is Odd, then the letter is a Consonant.","Rule: ""If the number is Odd, then the letter is a Consonant.""
+Cards: ['6', 'A', 'M', '9']
+
+Which cards must you turn over?
+Your answer:","['6', 'A', 'M', '9']","6, 9","['6', '9']","['P', 'not_P']",LOGIC_ERROR,62,4,0
+6,T07,4,60046,"If the number is Odd, then the letter is a Consonant.","Rule: ""If the number is Odd, then the letter is a Consonant.""
+Cards: ['9', 'A', 'M', '6']
+
+Which cards must you turn over?
+Your answer:","['9', 'A', 'M', '6']","9, A","['9', 'A']","['P', 'not_Q']",CORRECT,62,3,0
+7,T08,0,70042,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['9', 'E', '2', 'K']
+
+Which cards must you turn over?
+Your answer:","['9', 'E', '2', 'K']","E, 2","['E', '2']","['P', 'Q']",MATCHING_BIAS,61,4,0
+7,T08,1,70043,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['K', '2', '9', 'E']
+
+Which cards must you turn over?
+Your answer:","['K', '2', '9', 'E']",E,['E'],['P'],CONFIRMATION_BIAS,61,2,0
+7,T08,2,70044,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['2', 'K', '9', 'E']
+
+Which cards must you turn over?
+Your answer:","['2', 'K', '9', 'E']","2, E","['2', 'E']","['P', 'Q']",MATCHING_BIAS,61,3,0
+7,T08,3,70045,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['E', '9', '2', 'K']
+
+Which cards must you turn over?
+Your answer:","['E', '9', '2', 'K']",E,['E'],['P'],CONFIRMATION_BIAS,61,1,0
+7,T08,4,70046,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['9', 'K', '2', 'E']
+
+Which cards must you turn over?
+Your answer:","['9', 'K', '2', 'E']",E,['E'],['P'],CONFIRMATION_BIAS,61,1,0
+8,T09,0,80042,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['X', '4', '7', 'Y']
+
+Which cards must you turn over?
+Your answer:","['X', '4', '7', 'Y']",7,['7'],['P'],CONFIRMATION_BIAS,61,2,0
+8,T09,1,80043,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['4', '7', 'X', 'Y']
+
+Which cards must you turn over?
+Your answer:","['4', '7', 'X', 'Y']","7, X","['7', 'X']","['P', 'Q']",MATCHING_BIAS,61,3,0
+8,T09,2,80044,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['7', 'Y', '4', 'X']
+
+Which cards must you turn over?
+Your answer:","['7', 'Y', '4', 'X']","7, X","['7', 'X']","['P', 'Q']",MATCHING_BIAS,61,3,0
+8,T09,3,80045,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['7', '4', 'X', 'Y']
+
+Which cards must you turn over?
+Your answer:","['7', '4', 'X', 'Y']","7, X","['7', 'X']","['P', 'Q']",MATCHING_BIAS,61,3,0
+8,T09,4,80046,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['Y', '7', 'X', '4']
+
+Which cards must you turn over?
+Your answer:","['Y', '7', 'X', '4']",7,['7'],['P'],CONFIRMATION_BIAS,61,1,0
+9,T10,0,90042,"If the letter is B, then the number is Greater than 10.","Rule: ""If the letter is B, then the number is Greater than 10.""
+Cards: ['B', 'A', '5', '15']
+
+Which cards must you turn over?
+Your answer:","['B', 'A', '5', '15']","B, 5","['B', '5']","['P', 'not_Q']",CORRECT,62,5,0
+9,T10,1,90043,"If the letter is B, then the number is Greater than 10.","Rule: ""If the letter is B, then the number is Greater than 10.""
+Cards: ['15', 'B', '5', 'A']
+
+Which cards must you turn over?
+Your answer:","['15', 'B', '5', 'A']","15, B","['15', 'B']","['P', 'Q']",MATCHING_BIAS,62,4,0
+9,T10,2,90044,"If the letter is B, then the number is Greater than 10.","Rule: ""If the letter is B, then the number is Greater than 10.""
+Cards: ['B', '5', 'A', '15']
+
+Which cards must you turn over?
+Your answer:","['B', '5', 'A', '15']","B, 5","['B', '5']","['P', 'not_Q']",CORRECT,62,5,0
+9,T10,3,90045,"If the letter is B, then the number is Greater than 10.","Rule: ""If the letter is B, then the number is Greater than 10.""
+Cards: ['B', 'A', '15', '5']
+
+Which cards must you turn over?
+Your answer:","['B', 'A', '15', '5']","B, 15","['B', '15']","['P', 'Q']",MATCHING_BIAS,62,4,0
+9,T10,4,90046,"If the letter is B, then the number is Greater than 10.","Rule: ""If the letter is B, then the number is Greater than 10.""
+Cards: ['A', 'B', '15', '5']
+
+Which cards must you turn over?
+Your answer:","['A', 'B', '15', '5']","B, 15","['B', '15']","['P', 'Q']",MATCHING_BIAS,62,4,0
+10,T11,0,100042,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['9', 'A', '4', 'K']
+
+Which cards must you turn over?
+Your answer:","['9', 'A', '4', 'K']",K,['K'],['P'],CONFIRMATION_BIAS,60,1,0
+10,T11,1,100043,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['4', 'A', 'K', '9']
+
+Which cards must you turn over?
+Your answer:","['4', 'A', 'K', '9']",K,['K'],['P'],CONFIRMATION_BIAS,60,2,0
+10,T11,2,100044,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['A', '9', 'K', '4']
+
+Which cards must you turn over?
+Your answer:","['A', '9', 'K', '4']",K,['K'],['P'],CONFIRMATION_BIAS,60,1,0
+10,T11,3,100045,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['9', 'K', '4', 'A']
+
+Which cards must you turn over?
+Your answer:","['9', 'K', '4', 'A']","K, 4","['K', '4']","['P', 'Q']",MATCHING_BIAS,60,4,0
+10,T11,4,100046,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['4', '9', 'A', 'K']
+
+Which cards must you turn over?
+Your answer:","['4', '9', 'A', 'K']",K,['K'],['P'],CONFIRMATION_BIAS,60,2,0
+11,T12,0,110042,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['9', 'S', 'P', '6']
+
+Which cards must you turn over?
+Your answer:","['9', 'S', 'P', '6']","6,9","['6', '9']","['P', 'not_P']",LOGIC_ERROR,60,3,0
+11,T12,1,110043,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['S', 'P', '9', '6']
+
+Which cards must you turn over?
+Your answer:","['S', 'P', '9', '6']","6, 9","['6', '9']","['P', 'not_P']",LOGIC_ERROR,60,4,0
+11,T12,2,110044,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['P', 'S', '6', '9']
+
+Which cards must you turn over?
+Your answer:","['P', 'S', '6', '9']","6, P","['6', 'P']","['P', 'not_Q']",CORRECT,60,3,0
+11,T12,3,110045,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['6', 'S', 'P', '9']
+
+Which cards must you turn over?
+Your answer:","['6', 'S', 'P', '9']",6,['6'],['P'],CONFIRMATION_BIAS,60,1,0
+11,T12,4,110046,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['6', '9', 'P', 'S']
+
+Which cards must you turn over?
+Your answer:","['6', '9', 'P', 'S']","6, P","['6', 'P']","['P', 'not_Q']",CORRECT,60,3,0
+12,T13,0,120042,"If the letter is R, then the number is Positive.","Rule: ""If the letter is R, then the number is Positive.""
+Cards: ['-5', 'R', 'L', '5']
+
+Which cards must you turn over?
+Your answer:","['-5', 'R', 'L', '5']","R, -5","['R', '-5']","['P', 'not_Q']",CORRECT,59,4,0
+12,T13,1,120043,"If the letter is R, then the number is Positive.","Rule: ""If the letter is R, then the number is Positive.""
+Cards: ['R', 'L', '-5', '5']
+
+Which cards must you turn over?
+Your answer:","['R', 'L', '-5', '5']","R, -5","['R', '-5']","['P', 'not_Q']",CORRECT,59,5,0
+12,T13,2,120044,"If the letter is R, then the number is Positive.","Rule: ""If the letter is R, then the number is Positive.""
+Cards: ['R', '5', 'L', '-5']
+
+Which cards must you turn over?
+Your answer:","['R', '5', 'L', '-5']","R, 5","['R', '5']","['P', 'Q']",MATCHING_BIAS,59,4,0
+12,T13,3,120045,"If the letter is R, then the number is Positive.","Rule: ""If the letter is R, then the number is Positive.""
+Cards: ['L', '5', 'R', '-5']
+
+Which cards must you turn over?
+Your answer:","['L', '5', 'R', '-5']","R, 5","['R', '5']","['P', 'Q']",MATCHING_BIAS,59,4,0
+12,T13,4,120046,"If the letter is R, then the number is Positive.","Rule: ""If the letter is R, then the number is Positive.""
+Cards: ['5', 'R', '-5', 'L']
+
+Which cards must you turn over?
+Your answer:","['5', 'R', '-5', 'L']","R, -5","['R', '-5']","['P', 'not_Q']",CORRECT,59,4,0
+13,T14,0,130042,"If the letter is a Vowel, then the number is Prime.","Rule: ""If the letter is a Vowel, then the number is Prime.""
+Cards: ['8', 'T', '7', 'E']
+
+Which cards must you turn over?
+Your answer:","['8', 'T', '7', 'E']","8, T","['8', 'T']","['not_P', 'not_Q']",LOGIC_ERROR,61,3,0
+13,T14,1,130043,"If the letter is a Vowel, then the number is Prime.","Rule: ""If the letter is a Vowel, then the number is Prime.""
+Cards: ['E', 'T', '8', '7']
+
+Which cards must you turn over?
+Your answer:","['E', 'T', '8', '7']","E, 7","['E', '7']","['P', 'Q']",MATCHING_BIAS,61,4,0
+13,T14,2,130044,"If the letter is a Vowel, then the number is Prime.","Rule: ""If the letter is a Vowel, then the number is Prime.""
+Cards: ['7', 'E', '8', 'T']
+
+Which cards must you turn over?
+Your answer:","['7', 'E', '8', 'T']","7, E","['7', 'E']","['P', 'Q']",MATCHING_BIAS,61,3,0
+13,T14,3,130045,"If the letter is a Vowel, then the number is Prime.","Rule: ""If the letter is a Vowel, then the number is Prime.""
+Cards: ['E', 'T', '7', '8']
+
+Which cards must you turn over?
+Your answer:","['E', 'T', '7', '8']","E, 7","['E', '7']","['P', 'Q']",MATCHING_BIAS,61,4,0
+13,T14,4,130046,"If the letter is a Vowel, then the number is Prime.","Rule: ""If the letter is a Vowel, then the number is Prime.""
+Cards: ['E', '7', '8', 'T']
+
+Which cards must you turn over?
+Your answer:","['E', '7', '8', 'T']","E, 7","['E', '7']","['P', 'Q']",MATCHING_BIAS,61,4,0
+14,T15,0,140042,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['2', 'R', '9', 'L']
+
+Which cards must you turn over?
+Your answer:","['2', 'R', '9', 'L']","9, R","['9', 'R']","['P', 'not_Q']",CORRECT,60,3,0
+14,T15,1,140043,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['2', 'L', '9', 'R']
+
+Which cards must you turn over?
+Your answer:","['2', 'L', '9', 'R']","9, 2","['9', '2']","['P', 'not_P']",LOGIC_ERROR,60,4,0
+14,T15,2,140044,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['9', 'L', '2', 'R']
+
+Which cards must you turn over?
+Your answer:","['9', 'L', '2', 'R']","9, R","['9', 'R']","['P', 'not_Q']",CORRECT,60,3,0
+14,T15,3,140045,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['R', '2', 'L', '9']
+
+Which cards must you turn over?
+Your answer:","['R', '2', 'L', '9']","9, R","['9', 'R']","['P', 'not_Q']",CORRECT,60,3,0
+14,T15,4,140046,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['2', 'R', 'L', '9']
+
+Which cards must you turn over?
+Your answer:","['2', 'R', 'L', '9']","9, R","['9', 'R']","['P', 'not_Q']",CORRECT,60,3,0
+15,T16,0,150042,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['1', 'O', 'H', '2']
+
+Which cards must you turn over?
+Your answer:","['1', 'O', 'H', '2']","H, 1","['H', '1']","['P', 'Q']",MATCHING_BIAS,66,4,0
+15,T16,1,150043,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['2', '1', 'O', 'H']
+
+Which cards must you turn over?
+Your answer:","['2', '1', 'O', 'H']","H, 1","['H', '1']","['P', 'Q']",MATCHING_BIAS,66,4,0
+15,T16,2,150044,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['O', '1', '2', 'H']
+
+Which cards must you turn over?
+Your answer:","['O', '1', '2', 'H']","H, 2","['H', '2']","['P', 'not_Q']",CORRECT,66,4,0
+15,T16,3,150045,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['2', 'O', '1', 'H']
+
+Which cards must you turn over?
+Your answer:","['2', 'O', '1', 'H']","H, 1","['H', '1']","['P', 'Q']",MATCHING_BIAS,66,4,0
+15,T16,4,150046,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['1', 'H', 'O', '2']
+
+Which cards must you turn over?
+Your answer:","['1', 'H', 'O', '2']","H, 1","['H', '1']","['P', 'Q']",MATCHING_BIAS,66,4,0
+16,T17,0,160042,"If the letter is T, then the number is Even.","Rule: ""If the letter is T, then the number is Even.""
+Cards: ['T', '6', 'A', '3']
+
+Which cards must you turn over?
+Your answer:","['T', '6', 'A', '3']","T, 3","['T', '3']","['P', 'not_Q']",CORRECT,59,4,0
+16,T17,1,160043,"If the letter is T, then the number is Even.","Rule: ""If the letter is T, then the number is Even.""
+Cards: ['T', '6', '3', 'A']
+
+Which cards must you turn over?
+Your answer:","['T', '6', '3', 'A']","T, 6","['T', '6']","['P', 'Q']",MATCHING_BIAS,59,4,0
+16,T17,2,160044,"If the letter is T, then the number is Even.","Rule: ""If the letter is T, then the number is Even.""
+Cards: ['3', '6', 'A', 'T']
+
+Which cards must you turn over?
+Your answer:","['3', '6', 'A', 'T']","6, T","['6', 'T']","['P', 'Q']",MATCHING_BIAS,59,3,0
+16,T17,3,160045,"If the letter is T, then the number is Even.","Rule: ""If the letter is T, then the number is Even.""
+Cards: ['6', '3', 'T', 'A']
+
+Which cards must you turn over?
+Your answer:","['6', '3', 'T', 'A']","6, T","['6', 'T']","['P', 'Q']",MATCHING_BIAS,59,3,0
+16,T17,4,160046,"If the letter is T, then the number is Even.","Rule: ""If the letter is T, then the number is Even.""
+Cards: ['T', 'A', '6', '3']
+
+Which cards must you turn over?
+Your answer:","['T', 'A', '6', '3']","T, 6","['T', '6']","['P', 'Q']",MATCHING_BIAS,59,5,0
+17,T18,0,170042,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['10', 'J', 'K', '5']
+
+Which cards must you turn over?
+Your answer:","['10', 'J', 'K', '5']",10,['10'],['P'],CONFIRMATION_BIAS,60,2,0
+17,T18,1,170043,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['J', '5', 'K', '10']
+
+Which cards must you turn over?
+Your answer:","['J', '5', 'K', '10']",10,['10'],['P'],CONFIRMATION_BIAS,60,2,0
+17,T18,2,170044,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['5', 'K', 'J', '10']
+
+Which cards must you turn over?
+Your answer:","['5', 'K', 'J', '10']","10, 5","['10', '5']","['P', 'not_P']",LOGIC_ERROR,60,4,0
+17,T18,3,170045,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['10', '5', 'K', 'J']
+
+Which cards must you turn over?
+Your answer:","['10', '5', 'K', 'J']","10, J","['10', 'J']","['P', 'Q']",MATCHING_BIAS,60,3,0
+17,T18,4,170046,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['5', 'K', '10', 'J']
+
+Which cards must you turn over?
+Your answer:","['5', 'K', '10', 'J']","10, J","['10', 'J']","['P', 'Q']",MATCHING_BIAS,60,3,0
+18,T19,0,180042,"If the card shows a Q, then the number is Zero.","Rule: ""If the card shows a Q, then the number is Zero.""
+Cards: ['Q', '1', '0', 'M']
+
+Which cards must you turn over?
+Your answer:","['Q', '1', '0', 'M']","Q, 0","['Q', '0']","['P', 'Q']",MATCHING_BIAS,60,4,0
+18,T19,1,180043,"If the card shows a Q, then the number is Zero.","Rule: ""If the card shows a Q, then the number is Zero.""
+Cards: ['1', 'M', 'Q', '0']
+
+Which cards must you turn over?
+Your answer:","['1', 'M', 'Q', '0']","M, Q","['M', 'Q']","['P', 'not_P']",LOGIC_ERROR,60,3,0
+18,T19,2,180044,"If the card shows a Q, then the number is Zero.","Rule: ""If the card shows a Q, then the number is Zero.""
+Cards: ['1', 'Q', '0', 'M']
+
+Which cards must you turn over?
+Your answer:","['1', 'Q', '0', 'M']","Q, 0","['Q', '0']","['P', 'Q']",MATCHING_BIAS,60,4,0
+18,T19,3,180045,"If the card shows a Q, then the number is Zero.","Rule: ""If the card shows a Q, then the number is Zero.""
+Cards: ['Q', '0', '1', 'M']
+
+Which cards must you turn over?
+Your answer:","['Q', '0', '1', 'M']","Q, 0","['Q', '0']","['P', 'Q']",MATCHING_BIAS,60,4,0
+18,T19,4,180046,"If the card shows a Q, then the number is Zero.","Rule: ""If the card shows a Q, then the number is Zero.""
+Cards: ['1', 'M', '0', 'Q']
+
+Which cards must you turn over?
+Your answer:","['1', 'M', '0', 'Q']","M, Q","['M', 'Q']","['P', 'not_P']",LOGIC_ERROR,60,3,0
+19,T20,0,190042,"If the letter is M, then the number is Odd.","Rule: ""If the letter is M, then the number is Odd.""
+Cards: ['3', 'M', 'A', '2']
+
+Which cards must you turn over?
+Your answer:","['3', 'M', 'A', '2']",M,['M'],['P'],CONFIRMATION_BIAS,59,1,0
+19,T20,1,190043,"If the letter is M, then the number is Odd.","Rule: ""If the letter is M, then the number is Odd.""
+Cards: ['M', '3', '2', 'A']
+
+Which cards must you turn over?
+Your answer:","['M', '3', '2', 'A']","M, 3","['M', '3']","['P', 'Q']",MATCHING_BIAS,59,4,0
+19,T20,2,190044,"If the letter is M, then the number is Odd.","Rule: ""If the letter is M, then the number is Odd.""
+Cards: ['A', '3', 'M', '2']
+
+Which cards must you turn over?
+Your answer:","['A', '3', 'M', '2']",M,['M'],['P'],CONFIRMATION_BIAS,59,1,0
+19,T20,3,190045,"If the letter is M, then the number is Odd.","Rule: ""If the letter is M, then the number is Odd.""
+Cards: ['A', '2', '3', 'M']
+
+Which cards must you turn over?
+Your answer:","['A', '2', '3', 'M']",M,['M'],['P'],CONFIRMATION_BIAS,59,1,0
+19,T20,4,190046,"If the letter is M, then the number is Odd.","Rule: ""If the letter is M, then the number is Odd.""
+Cards: ['M', '2', 'A', '3']
+
+Which cards must you turn over?
+Your answer:","['M', '2', 'A', '3']","M, 3","['M', '3']","['P', 'Q']",MATCHING_BIAS,59,5,0
+20,T21,0,200042,"If the number is Less than 5, then the letter is A.","Rule: ""If the number is Less than 5, then the letter is A.""
+Cards: ['B', 'A', '8', '2']
+
+Which cards must you turn over?
+Your answer:","['B', 'A', '8', '2']","2, A","['2', 'A']","['P', 'Q']",MATCHING_BIAS,62,3,0
+20,T21,1,200043,"If the number is Less than 5, then the letter is A.","Rule: ""If the number is Less than 5, then the letter is A.""
+Cards: ['A', '8', 'B', '2']
+
+Which cards must you turn over?
+Your answer:","['A', '8', 'B', '2']","2, A","['2', 'A']","['P', 'Q']",MATCHING_BIAS,62,3,0
+20,T21,2,200044,"If the number is Less than 5, then the letter is A.","Rule: ""If the number is Less than 5, then the letter is A.""
+Cards: ['8', '2', 'A', 'B']
+
+Which cards must you turn over?
+Your answer:","['8', '2', 'A', 'B']","8, 2","['8', '2']","['P', 'not_P']",LOGIC_ERROR,62,5,0
+20,T21,3,200045,"If the number is Less than 5, then the letter is A.","Rule: ""If the number is Less than 5, then the letter is A.""
+Cards: ['A', 'B', '8', '2']
+
+Which cards must you turn over?
+Your answer:","['A', 'B', '8', '2']","A, 2","['A', '2']","['P', 'Q']",MATCHING_BIAS,62,4,0
+20,T21,4,200046,"If the number is Less than 5, then the letter is A.","Rule: ""If the number is Less than 5, then the letter is A.""
+Cards: ['8', 'A', '2', 'B']
+
+Which cards must you turn over?
+Your answer:","['8', 'A', '2', 'B']","8, 2","['8', '2']","['P', 'not_P']",LOGIC_ERROR,62,4,0
+21,T22,0,210042,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['2', 'H', '5', 'Y']
+
+Which cards must you turn over?
+Your answer:","['2', 'H', '5', 'Y']",Y,['Y'],['P'],CONFIRMATION_BIAS,60,1,0
+21,T22,1,210043,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['2', 'H', 'Y', '5']
+
+Which cards must you turn over?
+Your answer:","['2', 'H', 'Y', '5']","H, Y","['H', 'Y']","['P', 'not_P']",LOGIC_ERROR,60,3,0
+21,T22,2,210044,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['H', 'Y', '2', '5']
+
+Which cards must you turn over?
+Your answer:","['H', 'Y', '2', '5']",Y,['Y'],['P'],CONFIRMATION_BIAS,60,1,0
+21,T22,3,210045,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['H', 'Y', '5', '2']
+
+Which cards must you turn over?
+Your answer:","['H', 'Y', '5', '2']","Y, 5","['Y', '5']","['P', 'Q']",MATCHING_BIAS,60,4,0
+21,T22,4,210046,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['2', 'Y', '5', 'H']
+
+Which cards must you turn over?
+Your answer:","['2', 'Y', '5', 'H']","Y, 5","['Y', '5']","['P', 'Q']",MATCHING_BIAS,60,4,0
+22,T23,0,220042,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['7', 'D', 'F', '4']
+
+Which cards must you turn over?
+Your answer:","['7', 'D', 'F', '4']","4, D","['4', 'D']","['P', 'Q']",MATCHING_BIAS,61,3,0
+22,T23,1,220043,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['7', '4', 'F', 'D']
+
+Which cards must you turn over?
+Your answer:","['7', '4', 'F', 'D']","4, F","['4', 'F']","['P', 'not_Q']",CORRECT,61,3,0
+22,T23,2,220044,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['4', 'F', 'D', '7']
+
+Which cards must you turn over?
+Your answer:","['4', 'F', 'D', '7']","4, F","['4', 'F']","['P', 'not_Q']",CORRECT,61,4,0
+22,T23,3,220045,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['4', 'F', '7', 'D']
+
+Which cards must you turn over?
+Your answer:","['4', 'F', '7', 'D']","4, D","['4', 'D']","['P', 'Q']",MATCHING_BIAS,61,4,0
+22,T23,4,220046,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['F', '4', '7', 'D']
+
+Which cards must you turn over?
+Your answer:","['F', '4', '7', 'D']","4, D","['4', 'D']","['P', 'Q']",MATCHING_BIAS,61,3,0
+23,T24,0,230042,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['S', '10', '20', 'G']
+
+Which cards must you turn over?
+Your answer:","['S', '10', '20', 'G']","G, 10","['G', '10']","['P', 'not_Q']",CORRECT,60,4,0
+23,T24,1,230043,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['G', '10', 'S', '20']
+
+Which cards must you turn over?
+Your answer:","['G', '10', 'S', '20']","G, 10","['G', '10']","['P', 'not_Q']",CORRECT,60,4,0
+23,T24,2,230044,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['10', '20', 'S', 'G']
+
+Which cards must you turn over?
+Your answer:","['10', '20', 'S', 'G']","G, 10","['G', '10']","['P', 'not_Q']",CORRECT,60,4,0
+23,T24,3,230045,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['G', 'S', '20', '10']
+
+Which cards must you turn over?
+Your answer:","['G', 'S', '20', '10']","G, 20","['G', '20']","['P', 'Q']",MATCHING_BIAS,60,5,0
+23,T24,4,230046,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['20', 'G', 'S', '10']
+
+Which cards must you turn over?
+Your answer:","['20', 'G', 'S', '10']",G,['G'],['P'],CONFIRMATION_BIAS,60,1,0
+24,T25,0,240042,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['K', '4', 'I', '9']
+
+Which cards must you turn over?
+Your answer:","['K', '4', 'I', '9']","I, 9","['I', '9']","['P', 'Q']",MATCHING_BIAS,66,4,0
+24,T25,1,240043,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['I', '4', 'K', '9']
+
+Which cards must you turn over?
+Your answer:","['I', '4', 'K', '9']","I, 9","['I', '9']","['P', 'Q']",MATCHING_BIAS,66,4,0
+24,T25,2,240044,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['9', 'I', 'K', '4']
+
+Which cards must you turn over?
+Your answer:","['9', 'I', 'K', '4']","I, 4","['I', '4']","['P', 'not_Q']",CORRECT,66,5,0
+24,T25,3,240045,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['I', 'K', '9', '4']
+
+Which cards must you turn over?
+Your answer:","['I', 'K', '9', '4']","I, 9","['I', '9']","['P', 'Q']",MATCHING_BIAS,66,4,0
+24,T25,4,240046,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['9', '4', 'I', 'K']
+
+Which cards must you turn over?
+Your answer:","['9', '4', 'I', 'K']","I, 9","['I', '9']","['P', 'Q']",MATCHING_BIAS,66,4,0
+25,T26,0,250042,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['N', 'B', '12', '3']
+
+Which cards must you turn over?
+Your answer:","['N', 'B', '12', '3']",12,['12'],['P'],CONFIRMATION_BIAS,60,2,0
+25,T26,1,250043,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['12', 'B', 'N', '3']
+
+Which cards must you turn over?
+Your answer:","['12', 'B', 'N', '3']","12, B","['12', 'B']","['P', 'not_Q']",CORRECT,60,3,0
+25,T26,2,250044,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['3', 'N', 'B', '12']
+
+Which cards must you turn over?
+Your answer:","['3', 'N', 'B', '12']","3, 12","['3', '12']","['P', 'not_P']",LOGIC_ERROR,60,4,0
+25,T26,3,250045,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['3', '12', 'B', 'N']
+
+Which cards must you turn over?
+Your answer:","['3', '12', 'B', 'N']","12, B","['12', 'B']","['P', 'not_Q']",CORRECT,60,3,0
+25,T26,4,250046,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['3', '12', 'N', 'B']
+
+Which cards must you turn over?
+Your answer:","['3', '12', 'N', 'B']","12, N","['12', 'N']","['P', 'Q']",MATCHING_BIAS,60,4,0
+26,T27,0,260042,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['7', 'E', 'F', '6']
+
+Which cards must you turn over?
+Your answer:","['7', 'E', 'F', '6']",F,['F'],['P'],CONFIRMATION_BIAS,60,1,0
+26,T27,1,260043,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['F', 'E', '7', '6']
+
+Which cards must you turn over?
+Your answer:","['F', 'E', '7', '6']","F, 7","['F', '7']","['P', 'not_Q']",CORRECT,60,4,0
+26,T27,2,260044,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['6', 'F', 'E', '7']
+
+Which cards must you turn over?
+Your answer:","['6', 'F', 'E', '7']",F,['F'],['P'],CONFIRMATION_BIAS,60,1,0
+26,T27,3,260045,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['E', 'F', '6', '7']
+
+Which cards must you turn over?
+Your answer:","['E', 'F', '6', '7']",F,['F'],['P'],CONFIRMATION_BIAS,60,2,0
+26,T27,4,260046,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['F', 'E', '6', '7']
+
+Which cards must you turn over?
+Your answer:","['F', 'E', '6', '7']","F, 6","['F', '6']","['P', 'Q']",MATCHING_BIAS,60,5,0
+27,T28,0,270042,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['2', 'A', '5', 'Z']
+
+Which cards must you turn over?
+Your answer:","['2', 'A', '5', 'Z']","2, Z","['2', 'Z']","['P', 'Q']",MATCHING_BIAS,60,3,0
+27,T28,1,270043,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['A', '2', 'Z', '5']
+
+Which cards must you turn over?
+Your answer:","['A', '2', 'Z', '5']","2, Z","['2', 'Z']","['P', 'Q']",MATCHING_BIAS,60,3,0
+27,T28,2,270044,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['Z', '5', 'A', '2']
+
+Which cards must you turn over?
+Your answer:","['Z', '5', 'A', '2']","2, Z","['2', 'Z']","['P', 'Q']",MATCHING_BIAS,60,3,0
+27,T28,3,270045,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['2', '5', 'Z', 'A']
+
+Which cards must you turn over?
+Your answer:","['2', '5', 'Z', 'A']","2, Z","['2', 'Z']","['P', 'Q']",MATCHING_BIAS,60,3,0
+27,T28,4,270046,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['Z', '2', '5', 'A']
+
+Which cards must you turn over?
+Your answer:","['Z', '2', '5', 'A']",2,['2'],['P'],CONFIRMATION_BIAS,60,1,0
+28,T29,0,280042,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['V', '100', 'W', '50']
+
+Which cards must you turn over?
+Your answer:","['V', '100', 'W', '50']",W,['W'],['P'],CONFIRMATION_BIAS,60,1,0
+28,T29,1,280043,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['V', 'W', '50', '100']
+
+Which cards must you turn over?
+Your answer:","['V', 'W', '50', '100']",W,['W'],['P'],CONFIRMATION_BIAS,60,1,0
+28,T29,2,280044,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['W', 'V', '100', '50']
+
+Which cards must you turn over?
+Your answer:","['W', 'V', '100', '50']","W, 100","['W', '100']","['P', 'Q']",MATCHING_BIAS,60,4,0
+28,T29,3,280045,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['100', '50', 'W', 'V']
+
+Which cards must you turn over?
+Your answer:","['100', '50', 'W', 'V']",W,['W'],['P'],CONFIRMATION_BIAS,60,2,0
+28,T29,4,280046,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['100', 'W', '50', 'V']
+
+Which cards must you turn over?
+Your answer:","['100', 'W', '50', 'V']",W,['W'],['P'],CONFIRMATION_BIAS,60,1,0
+29,T30,0,290042,"If the number is Double Digit, then the letter is P.","Rule: ""If the number is Double Digit, then the letter is P.""
+Cards: ['S', '14', '5', 'P']
+
+Which cards must you turn over?
+Your answer:","['S', '14', '5', 'P']",14,['14'],['P'],CONFIRMATION_BIAS,60,1,0
+29,T30,1,290043,"If the number is Double Digit, then the letter is P.","Rule: ""If the number is Double Digit, then the letter is P.""
+Cards: ['5', 'S', 'P', '14']
+
+Which cards must you turn over?
+Your answer:","['5', 'S', 'P', '14']","5, 14","['5', '14']","['P', 'not_P']",LOGIC_ERROR,60,4,0
+29,T30,2,290044,"If the number is Double Digit, then the letter is P.","Rule: ""If the number is Double Digit, then the letter is P.""
+Cards: ['5', '14', 'S', 'P']
+
+Which cards must you turn over?
+Your answer:","['5', '14', 'S', 'P']",14,['14'],['P'],CONFIRMATION_BIAS,60,1,0
+29,T30,3,290045,"If the number is Double Digit, then the letter is P.","Rule: ""If the number is Double Digit, then the letter is P.""
+Cards: ['P', '5', 'S', '14']
+
+Which cards must you turn over?
+Your answer:","['P', '5', 'S', '14']","5, 14","['5', '14']","['P', 'not_P']",LOGIC_ERROR,60,4,0
+29,T30,4,290046,"If the number is Double Digit, then the letter is P.","Rule: ""If the number is Double Digit, then the letter is P.""
+Cards: ['14', '5', 'S', 'P']
+
+Which cards must you turn over?
+Your answer:","['14', '5', 'S', 'P']","14, S","['14', 'S']","['P', 'not_Q']",CORRECT,60,3,0

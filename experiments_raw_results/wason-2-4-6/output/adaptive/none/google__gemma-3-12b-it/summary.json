@@ -1,0 +1,22 @@
+{
+  "model": "google/gemma-3-12b-it",
+  "prompt_style": "adaptive",
+  "reasoning_effort": "none",
+  "provider": null,
+  "n_rules": 50,
+  "n_success": 2,
+  "n_invalid_rules": 0,
+  "n_processed_rules": 50,
+  "max_turns": 19,
+  "stop_iou": 0.95,
+  "stats": {
+    "n_rules": 50,
+    "n_success": 2,
+    "n_invalid_rules": 0,
+    "n_processed_rules": 50,
+    "mean_turns": 18.36,
+    "prompt_tokens": 880943,
+    "completion_tokens": 30957,
+    "reasoning_tokens": 0
+  }
+}

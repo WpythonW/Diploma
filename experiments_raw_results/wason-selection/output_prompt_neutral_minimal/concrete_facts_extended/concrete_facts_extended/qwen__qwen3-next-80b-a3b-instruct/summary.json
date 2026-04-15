@@ -1,0 +1,12 @@
+{
+  "model": "qwen/qwen3-next-80b-a3b-instruct",
+  "context": "concrete_facts_extended",
+  "n_items": 101,
+  "n_prompt_permutations": 5,
+  "n_trials": 505,
+  "stats": {
+    "prompt_tokens": 36230,
+    "completion_tokens": 2832,
+    "reasoning_tokens": 0
+  }
+}

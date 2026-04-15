@@ -1,0 +1,4 @@
+#!/bin/bash
+# Word count, citation distribution, bib coverage
+cd "$(dirname "$0")/../.." || exit 1
+uv run python .claude/skills/thesis-stats/tools/stats.py "$@"

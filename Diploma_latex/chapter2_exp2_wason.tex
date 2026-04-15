@@ -12,7 +12,7 @@
 
 Были сконструированы четыре стимульных датасета, каждый включающий 100 уникальных условных правил с соответствующими отображениями на четыре позиции карточек.
 
-\textbf{Формальная логика --- Каноническая.} Правила используют стандартные абстрактные символы из классической литературы по задаче Уэйсона (буквы, числа, геометрические фигуры). Условие включено для сравнения с предшествующими работами при признании риска контаминации~\cite{binz2023using, arkoudas2023gpt4}.
+\textbf{Формальная логика --- Каноническая.} Правила используют стандартные абстрактные символы из классической литературы по задаче Уэйсона (буквы, числа, геометрические фигуры). Условие включено для сравнения с предшествующими работами при признании риска контаминации~\cite{arkoudas2023gpt4}.
 
 \textbf{Формальная логика --- Нейтральная.} Правила используют оригинальные абстрактные пары, не присутствующие в канонических формулировках (например, «если символ является Стрелкой, то узор является Полосатым»). Это условие служит деконтаминированным абстрактным базисом и непосредственно адресует методологический пробел работ, опирающихся исключительно на канонические стимулы.
 
@@ -74,14 +74,14 @@
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.95\textwidth]{fig_waston_ema_conditions.png}
+\includegraphics[width=0.95\textwidth]{../experiments_raw_results/wason-selection/figures/wason_ema_conditions.png}
 \caption{EMA по пяти контентным условиям для всех девяти моделей. Модели отсортированы по убыванию EMA в FL Neutral. Значения выше 0{,}90 достигаются топовыми моделями во всех условиях, в то время как слабые модели демонстрируют значительный разброс в зависимости от контента.}
 \label{fig:ema_conditions}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.95\textwidth]{fig_waston_ema_heatmap.png}
+\includegraphics[width=0.95\textwidth]{../experiments_raw_results/wason-selection/figures/wason_ema_heatmap.png}
 \caption{Тепловая карта EMA: модели $\times$ контентные условия. Визуализация подчёркивает универсальность контент-эффекта --- все модели без исключения показывают более светлые ячейки в условиях с семантическим содержанием по сравнению с абстрактными.}
 \label{fig:ema_heatmap}
 \end{figure}
@@ -111,7 +111,7 @@ gemma-3-12b-it            & 0,207 & 0,106 & 0,380 & 0,546 & 0,436 \\
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.85\textwidth]{fig_waston_context_effects.png}
+\includegraphics[width=0.85\textwidth]{../experiments_raw_results/wason-selection/figures/wason_context_effects.png}
 \caption{Контент-эффект: изменение EMA при переходе от FL Neutral к Familiar Social Contracts (синий) и Unfamiliar Fantasy Social Contracts (оранжевый). Фасилитация наблюдается у всех моделей, причём Fantasy Social условия дают EMA, сопоставимый с Familiar Social, что подтверждает гипотезу деонтической структуры.}
 \label{fig:context_effects}
 \end{figure}
@@ -170,7 +170,7 @@ gemma-3-12b-it     & 0,028 & 0,270 & 0,134 & 0,186 & 0,468 & 0,230 \\
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.85\textwidth]{fig_waston_cot_delta.png}
+\includegraphics[width=0.85\textwidth]{../experiments_raw_results/wason-selection/output/thesis_graphs/wason_cot_delta.png}
 \caption{CoT delta: изменение EMA при переходе от Neutral к CoT промпту. Для проприетарных моделей (синий) CoT даёт прирост у всех трёх моделей. Для открытых моделей (оранжевый) две модели демонстрируют отрицательный delta. Модели отсортированы по убыванию delta.}
 \label{fig:cot_delta}
 \end{figure}
@@ -183,7 +183,7 @@ gemma-3-12b-it     & 0,028 & 0,270 & 0,134 & 0,186 & 0,468 & 0,230 \\
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.85\textwidth]{fig_waston_ema_vs_consistency.png}
+\includegraphics[width=0.85\textwidth]{../experiments_raw_results/wason-selection/figures/wason_ema_vs_consistency.png}
 \caption{Связь EMA и Consistency Rate в FL Neutral. Идеальная модель находилась бы в правом верхнем углу (высокая точность + высокая стабильность). Топ-модели кластеризуются вблизи этого угла, в то время как слабые модели демонстрируют различные профили: низкая точность + низкая стабильность (\texttt{gemma-3-12b-it}), средняя точность + низкая стабильность (\texttt{gemma-3-27b-it}).}
 \label{fig:ema_vs_consistency}
 \end{figure}

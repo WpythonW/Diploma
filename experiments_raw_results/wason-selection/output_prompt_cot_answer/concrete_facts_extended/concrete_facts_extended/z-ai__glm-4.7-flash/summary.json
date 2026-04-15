@@ -1,0 +1,12 @@
+{
+  "model": "z-ai/glm-4.7-flash",
+  "context": "concrete_facts_extended",
+  "n_items": 101,
+  "n_prompt_permutations": 5,
+  "n_trials": 505,
+  "stats": {
+    "prompt_tokens": 44285,
+    "completion_tokens": 264766,
+    "reasoning_tokens": 0
+  }
+}

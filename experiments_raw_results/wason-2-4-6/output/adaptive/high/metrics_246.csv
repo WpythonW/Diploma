@@ -1,0 +1,3 @@
+model,prompt_style,reasoning,success_rate,mean_auc_iou,confirming_test_rate,hypothesis_change_rate
+anthropic__claude-sonnet-4.6,adaptive,high,0.32,0.11176967141747142,0.7806841046277666,0.6758694083694085
+openai__gpt-5.2,adaptive,high,0.48,0.08249824813337246,0.5594125500667557,0.7094655540537893

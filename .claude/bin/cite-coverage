@@ -1,0 +1,4 @@
+#!/bin/bash
+# Citation analysis — what's cited where, status per chapter
+cd "$(dirname "$0")/../.." || exit 1
+uv run python .claude/skills/cite-coverage/tools/coverage.py "$@"

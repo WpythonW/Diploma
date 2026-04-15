@@ -1,0 +1,12 @@
+{
+  "model": "x-ai/grok-4.1-fast",
+  "context": "concrete_facts_extended",
+  "n_items": 101,
+  "n_prompt_permutations": 5,
+  "n_trials": 505,
+  "stats": {
+    "prompt_tokens": 144502,
+    "completion_tokens": 2330,
+    "reasoning_tokens": 0
+  }
+}

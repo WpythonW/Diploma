@@ -1,0 +1,2883 @@
+row_idx,item_id,permutation_idx,llm_seed,rule_text,prompt,ordered_cards,response_text,selected_cards,logic_set,category,prompt_tokens,completion_tokens,reasoning_tokens
+0,T1,0,42,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['3', 'D', '7', 'A']
+
+Which cards must you turn over?
+Your answer:","['3', 'D', '7', 'A']","
+A, 3","['A', '3']","['P', 'Q']",MATCHING_BIAS,146,6,0
+0,T1,1,43,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['A', '7', '3', 'D']
+
+Which cards must you turn over?
+Your answer:","['A', '7', '3', 'D']","A, 3","['A', '3']","['P', 'Q']",MATCHING_BIAS,142,5,0
+0,T1,2,44,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['7', 'A', 'D', '3']
+
+Which cards must you turn over?
+Your answer:","['7', 'A', 'D', '3']","A, 3","['A', '3']","['P', 'Q']",MATCHING_BIAS,142,5,0
+0,T1,3,45,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['7', '3', 'D', 'A']
+
+Which cards must you turn over?
+Your answer:","['7', '3', 'D', 'A']","
+A, 7","['A', '7']","['P', 'not_Q']",CORRECT,146,6,0
+0,T1,4,46,"If there is an A on one side, then there is a 3 on the other side.","Rule: ""If there is an A on one side, then there is a 3 on the other side.""
+Cards: ['3', 'A', '7', 'D']
+
+Which cards must you turn over?
+Your answer:","['3', 'A', '7', 'D']","
+A, 3","['A', '3']","['P', 'Q']",MATCHING_BIAS,146,6,0
+1,T2,0,10042,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['D', '5', 'F', '8']
+
+Which cards must you turn over?
+Your answer:","['D', '5', 'F', '8']","D, 8","['D', '8']","['P', 'not_Q']",CORRECT,136,5,0
+1,T2,1,10043,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['8', 'D', 'F', '5']
+
+Which cards must you turn over?
+Your answer:","['8', 'D', 'F', '5']","
+D, 8","['D', '8']","['P', 'not_Q']",CORRECT,140,6,0
+1,T2,2,10044,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['F', 'D', '8', '5']
+
+Which cards must you turn over?
+Your answer:","['F', 'D', '8', '5']","
+D, 8","['D', '8']","['P', 'not_Q']",CORRECT,140,6,0
+1,T2,3,10045,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['8', 'F', '5', 'D']
+
+Which cards must you turn over?
+Your answer:","['8', 'F', '5', 'D']","
+D, 5","['D', '5']","['P', 'Q']",MATCHING_BIAS,140,6,0
+1,T2,4,10046,"If the letter is D, then the number must be 5.","Rule: ""If the letter is D, then the number must be 5.""
+Cards: ['8', 'D', '5', 'F']
+
+Which cards must you turn over?
+Your answer:","['8', 'D', '5', 'F']","
+D, 8","['D', '8']","['P', 'not_Q']",CORRECT,140,6,0
+2,T3,0,20042,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['G', '1', '8', 'U']
+
+Which cards must you turn over?
+Your answer:","['G', '1', '8', 'U']","
+U, 8","['U', '8']","['P', 'Q']",MATCHING_BIAS,145,6,0
+2,T3,1,20043,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['G', '1', 'U', '8']
+
+Which cards must you turn over?
+Your answer:","['G', '1', 'U', '8']","
+U, 1","['U', '1']","['P', 'not_Q']",CORRECT,145,6,0
+2,T3,2,20044,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['1', 'U', 'G', '8']
+
+Which cards must you turn over?
+Your answer:","['1', 'U', 'G', '8']","
+U, 1","['U', '1']","['P', 'not_Q']",CORRECT,145,6,0
+2,T3,3,20045,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['1', 'G', '8', 'U']
+
+Which cards must you turn over?
+Your answer:","['1', 'G', '8', 'U']","
+U, 1","['U', '1']","['P', 'not_Q']",CORRECT,145,6,0
+2,T3,4,20046,"If there is a U on the card, then there is an 8 on the back.","Rule: ""If there is a U on the card, then there is an 8 on the back.""
+Cards: ['8', 'G', 'U', '1']
+
+Which cards must you turn over?
+Your answer:","['8', 'G', 'U', '1']","
+U, 8","['U', '8']","['P', 'Q']",MATCHING_BIAS,145,6,0
+3,T4,0,30042,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['9', 'K', 'E', '2']
+
+Which cards must you turn over?
+Your answer:","['9', 'K', 'E', '2']","
+E, 9","['E', '9']","['P', 'not_Q']",CORRECT,140,6,0
+3,T4,1,30043,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['E', '2', '9', 'K']
+
+Which cards must you turn over?
+Your answer:","['E', '2', '9', 'K']","
+E, 9","['E', '9']","['P', 'not_Q']",CORRECT,140,6,0
+3,T4,2,30044,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['E', '9', '2', 'K']
+
+Which cards must you turn over?
+Your answer:","['E', '9', '2', 'K']","
+E, 9","['E', '9']","['P', 'not_Q']",CORRECT,140,6,0
+3,T4,3,30045,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['9', 'E', 'K', '2']
+
+Which cards must you turn over?
+Your answer:","['9', 'E', 'K', '2']","
+E, 9","['E', '9']","['P', 'not_Q']",CORRECT,140,6,0
+3,T4,4,30046,"If the card shows an E, then the number is 2.","Rule: ""If the card shows an E, then the number is 2.""
+Cards: ['K', 'E', '2', '9']
+
+Which cards must you turn over?
+Your answer:","['K', 'E', '2', '9']","
+E, 9","['E', '9']","['P', 'not_Q']",CORRECT,140,6,0
+4,T5,0,40042,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['X', '7', 'Y', '4']
+
+Which cards must you turn over?
+Your answer:","['X', '7', 'Y', '4']","
+7, Y","['7', 'Y']","['P', 'not_Q']",CORRECT,140,5,0
+4,T5,1,40043,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['4', 'X', '7', 'Y']
+
+Which cards must you turn over?
+Your answer:","['4', 'X', '7', 'Y']","
+7, Y","['7', 'Y']","['P', 'not_Q']",CORRECT,140,5,0
+4,T5,2,40044,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['7', 'X', 'Y', '4']
+
+Which cards must you turn over?
+Your answer:","['7', 'X', 'Y', '4']","
+7, Y","['7', 'Y']","['P', 'not_Q']",CORRECT,140,5,0
+4,T5,3,40045,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['4', 'Y', 'X', '7']
+
+Which cards must you turn over?
+Your answer:","['4', 'Y', 'X', '7']","
+7, Y","['7', 'Y']","['P', 'not_Q']",CORRECT,140,5,0
+4,T5,4,40046,"If the card shows a 7, then the letter is X.","Rule: ""If the card shows a 7, then the letter is X.""
+Cards: ['4', '7', 'X', 'Y']
+
+Which cards must you turn over?
+Your answer:","['4', '7', 'X', 'Y']","
+7, Y","['7', 'Y']","['P', 'not_Q']",CORRECT,140,5,0
+5,T6,0,50042,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['K', '9', '4', 'A']
+
+Which cards must you turn over?
+Your answer:","['K', '9', '4', 'A']","
+K, 4","['K', '4']","['P', 'Q']",MATCHING_BIAS,139,6,0
+5,T6,1,50043,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['9', '4', 'A', 'K']
+
+Which cards must you turn over?
+Your answer:","['9', '4', 'A', 'K']","
+K, 4","['K', '4']","['P', 'Q']",MATCHING_BIAS,139,6,0
+5,T6,2,50044,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['4', '9', 'K', 'A']
+
+Which cards must you turn over?
+Your answer:","['4', '9', 'K', 'A']","
+K, 4","['K', '4']","['P', 'Q']",MATCHING_BIAS,139,6,0
+5,T6,3,50045,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['A', 'K', '9', '4']
+
+Which cards must you turn over?
+Your answer:","['A', 'K', '9', '4']","
+K, 4","['K', '4']","['P', 'Q']",MATCHING_BIAS,139,6,0
+5,T6,4,50046,"If the letter is K, then the number is 4.","Rule: ""If the letter is K, then the number is 4.""
+Cards: ['K', '9', 'A', '4']
+
+Which cards must you turn over?
+Your answer:","['K', '9', 'A', '4']","
+K, 4","['K', '4']","['P', 'Q']",MATCHING_BIAS,139,6,0
+6,T7,0,60042,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['S', '9', 'P', '6']
+
+Which cards must you turn over?
+Your answer:","['S', '9', 'P', '6']","
+6, P","['6', 'P']","['P', 'not_Q']",CORRECT,139,5,0
+6,T7,1,60043,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['6', '9', 'S', 'P']
+
+Which cards must you turn over?
+Your answer:","['6', '9', 'S', 'P']","
+6, P","['6', 'P']","['P', 'not_Q']",CORRECT,138,5,0
+6,T7,2,60044,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['P', '6', '9', 'S']
+
+Which cards must you turn over?
+Your answer:","['P', '6', '9', 'S']","
+6, P","['6', 'P']","['P', 'not_Q']",CORRECT,139,5,0
+6,T7,3,60045,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['9', 'P', 'S', '6']
+
+Which cards must you turn over?
+Your answer:","['9', 'P', 'S', '6']","
+6, P","['6', 'P']","['P', 'not_Q']",CORRECT,139,5,0
+6,T7,4,60046,"If the number is 6, then the letter is S.","Rule: ""If the number is 6, then the letter is S.""
+Cards: ['6', 'P', 'S', '9']
+
+Which cards must you turn over?
+Your answer:","['6', 'P', 'S', '9']","
+6, P","['6', 'P']","['P', 'not_Q']",CORRECT,139,5,0
+7,T8,0,70042,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['R', '9', 'L', '2']
+
+Which cards must you turn over?
+Your answer:","['R', '9', 'L', '2']","
+9, L","['9', 'L']","['P', 'Q']",MATCHING_BIAS,139,5,0
+7,T8,1,70043,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['2', 'L', 'R', '9']
+
+Which cards must you turn over?
+Your answer:","['2', 'L', 'R', '9']","9, R","['9', 'R']","['P', 'not_Q']",CORRECT,135,4,0
+7,T8,2,70044,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['L', '2', 'R', '9']
+
+Which cards must you turn over?
+Your answer:","['L', '2', 'R', '9']","
+9, R","['9', 'R']","['P', 'not_Q']",CORRECT,139,5,0
+7,T8,3,70045,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['9', 'R', 'L', '2']
+
+Which cards must you turn over?
+Your answer:","['9', 'R', 'L', '2']","
+9, R","['9', 'R']","['P', 'not_Q']",CORRECT,139,5,0
+7,T8,4,70046,"If the number is 9, then the letter is L.","Rule: ""If the number is 9, then the letter is L.""
+Cards: ['R', '2', 'L', '9']
+
+Which cards must you turn over?
+Your answer:","['R', '2', 'L', '9']","9, L","['9', 'L']","['P', 'Q']",MATCHING_BIAS,135,4,0
+8,T9,0,80042,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['1', 'O', 'H', '2']
+
+Which cards must you turn over?
+Your answer:","['1', 'O', 'H', '2']","
+H, 1","['H', '1']","['P', 'Q']",MATCHING_BIAS,144,6,0
+8,T9,1,80043,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['O', 'H', '1', '2']
+
+Which cards must you turn over?
+Your answer:","['O', 'H', '1', '2']","
+H, 1","['H', '1']","['P', 'Q']",MATCHING_BIAS,145,6,0
+8,T9,2,80044,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['H', '2', 'O', '1']
+
+Which cards must you turn over?
+Your answer:","['H', '2', 'O', '1']","
+H, 1","['H', '1']","['P', 'Q']",MATCHING_BIAS,145,6,0
+8,T9,3,80045,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['H', 'O', '1', '2']
+
+Which cards must you turn over?
+Your answer:","['H', 'O', '1', '2']","H, O","['H', 'O']","['P', 'not_P']",LOGIC_ERROR,141,4,0
+8,T9,4,80046,"If there is an H on one side, there is a 1 on the other side.","Rule: ""If there is an H on one side, there is a 1 on the other side.""
+Cards: ['2', 'H', '1', 'O']
+
+Which cards must you turn over?
+Your answer:","['2', 'H', '1', 'O']","
+H, 2","['H', '2']","['P', 'not_Q']",CORRECT,145,6,0
+9,T10,0,90042,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['10', '5', 'K', 'J']
+
+Which cards must you turn over?
+Your answer:","['10', '5', 'K', 'J']","10, K","['10', 'K']","['P', 'not_Q']",CORRECT,137,5,0
+9,T10,1,90043,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['J', '10', 'K', '5']
+
+Which cards must you turn over?
+Your answer:","['J', '10', 'K', '5']","
+10, J","['10', 'J']","['P', 'Q']",MATCHING_BIAS,141,6,0
+9,T10,2,90044,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['10', 'K', '5', 'J']
+
+Which cards must you turn over?
+Your answer:","['10', 'K', '5', 'J']","
+10, K","['10', 'K']","['P', 'not_Q']",CORRECT,141,6,0
+9,T10,3,90045,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['10', '5', 'J', 'K']
+
+Which cards must you turn over?
+Your answer:","['10', '5', 'J', 'K']","
+10, K","['10', 'K']","['P', 'not_Q']",CORRECT,141,6,0
+9,T10,4,90046,"If the number is 10, then the letter is J.","Rule: ""If the number is 10, then the letter is J.""
+Cards: ['5', '10', 'J', 'K']
+
+Which cards must you turn over?
+Your answer:","['5', '10', 'J', 'K']","
+10, J","['10', 'J']","['P', 'Q']",MATCHING_BIAS,141,6,0
+10,T11,0,100042,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['2', 'H', '5', 'Y']
+
+Which cards must you turn over?
+Your answer:","['2', 'H', '5', 'Y']","Y, 5","['Y', '5']","['P', 'Q']",MATCHING_BIAS,135,5,0
+10,T11,1,100043,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['5', 'H', 'Y', '2']
+
+Which cards must you turn over?
+Your answer:","['5', 'H', 'Y', '2']","Y, 5","['Y', '5']","['P', 'Q']",MATCHING_BIAS,135,5,0
+10,T11,2,100044,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['H', '2', 'Y', '5']
+
+Which cards must you turn over?
+Your answer:","['H', '2', 'Y', '5']","
+Y, H","['Y', 'H']","['P', 'not_P']",LOGIC_ERROR,139,5,0
+10,T11,3,100045,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['2', 'Y', '5', 'H']
+
+Which cards must you turn over?
+Your answer:","['2', 'Y', '5', 'H']","
+Y, 2","['Y', '2']","['P', 'not_Q']",CORRECT,139,6,0
+10,T11,4,100046,"If the letter is Y, then the number is 5.","Rule: ""If the letter is Y, then the number is 5.""
+Cards: ['5', '2', 'H', 'Y']
+
+Which cards must you turn over?
+Your answer:","['5', '2', 'H', 'Y']","
+Y, 5","['Y', '5']","['P', 'Q']",MATCHING_BIAS,139,6,0
+11,T12,0,110042,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['7', 'D', 'F', '4']
+
+Which cards must you turn over?
+Your answer:","['7', 'D', 'F', '4']","
+4, F","['4', 'F']","['P', 'not_Q']",CORRECT,140,5,0
+11,T12,1,110043,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['D', 'F', '7', '4']
+
+Which cards must you turn over?
+Your answer:","['D', 'F', '7', '4']","4, F","['4', 'F']","['P', 'not_Q']",CORRECT,136,4,0
+11,T12,2,110044,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['F', 'D', '4', '7']
+
+Which cards must you turn over?
+Your answer:","['F', 'D', '4', '7']","
+4, F","['4', 'F']","['P', 'not_Q']",CORRECT,140,5,0
+11,T12,3,110045,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['4', 'D', 'F', '7']
+
+Which cards must you turn over?
+Your answer:","['4', 'D', 'F', '7']","
+4, F","['4', 'F']","['P', 'not_Q']",CORRECT,140,5,0
+11,T12,4,110046,"If the card shows a 4, then the letter is D.","Rule: ""If the card shows a 4, then the letter is D.""
+Cards: ['4', '7', 'F', 'D']
+
+Which cards must you turn over?
+Your answer:","['4', '7', 'F', 'D']","
+4, F","['4', 'F']","['P', 'not_Q']",CORRECT,140,5,0
+12,T13,0,120042,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['10', 'G', 'S', '20']
+
+Which cards must you turn over?
+Your answer:","['10', 'G', 'S', '20']","
+G, 10","['G', '10']","['P', 'not_Q']",CORRECT,142,7,0
+12,T13,1,120043,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['G', 'S', '10', '20']
+
+Which cards must you turn over?
+Your answer:","['G', 'S', '10', '20']","
+G, 20","['G', '20']","['P', 'Q']",MATCHING_BIAS,142,7,0
+12,T13,2,120044,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['G', '20', 'S', '10']
+
+Which cards must you turn over?
+Your answer:","['G', '20', 'S', '10']","G, S","['G', 'S']","['P', 'not_P']",LOGIC_ERROR,138,4,0
+12,T13,3,120045,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['S', '20', 'G', '10']
+
+Which cards must you turn over?
+Your answer:","['S', '20', 'G', '10']","
+G, 20","['G', '20']","['P', 'Q']",MATCHING_BIAS,142,7,0
+12,T13,4,120046,"If the letter is G, then the number is 20.","Rule: ""If the letter is G, then the number is 20.""
+Cards: ['20', 'G', '10', 'S']
+
+Which cards must you turn over?
+Your answer:","['20', 'G', '10', 'S']","
+G, 20","['G', '20']","['P', 'Q']",MATCHING_BIAS,142,7,0
+13,T14,0,130042,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['4', 'K', '9', 'I']
+
+Which cards must you turn over?
+Your answer:","['4', 'K', '9', 'I']","I, 9","['I', '9']","['P', 'Q']",MATCHING_BIAS,141,5,0
+13,T14,1,130043,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['I', 'K', '4', '9']
+
+Which cards must you turn over?
+Your answer:","['I', 'K', '4', '9']","
+I, 4","['I', '4']","['P', 'not_Q']",CORRECT,145,6,0
+13,T14,2,130044,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['9', 'I', '4', 'K']
+
+Which cards must you turn over?
+Your answer:","['9', 'I', '4', 'K']","
+I, 9","['I', '9']","['P', 'Q']",MATCHING_BIAS,145,6,0
+13,T14,3,130045,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['I', 'K', '9', '4']
+
+Which cards must you turn over?
+Your answer:","['I', 'K', '9', '4']","
+I, 4","['I', '4']","['P', 'not_Q']",CORRECT,145,6,0
+13,T14,4,130046,"If there is an I on the card, then there is a 9 on the back.","Rule: ""If there is an I on the card, then there is a 9 on the back.""
+Cards: ['I', '9', '4', 'K']
+
+Which cards must you turn over?
+Your answer:","['I', '9', '4', 'K']","
+I, 4","['I', '4']","['P', 'not_Q']",CORRECT,145,6,0
+14,T15,0,140042,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['3', 'B', '12', 'N']
+
+Which cards must you turn over?
+Your answer:","['3', 'B', '12', 'N']","
+12, B","['12', 'B']","['P', 'not_Q']",CORRECT,141,6,0
+14,T15,1,140043,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['3', 'N', '12', 'B']
+
+Which cards must you turn over?
+Your answer:","['3', 'N', '12', 'B']","
+12, B","['12', 'B']","['P', 'not_Q']",CORRECT,141,6,0
+14,T15,2,140044,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['12', 'N', '3', 'B']
+
+Which cards must you turn over?
+Your answer:","['12', 'N', '3', 'B']","
+12, N","['12', 'N']","['P', 'Q']",MATCHING_BIAS,141,6,0
+14,T15,3,140045,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['B', '3', 'N', '12']
+
+Which cards must you turn over?
+Your answer:","['B', '3', 'N', '12']","
+12, N","['12', 'N']","['P', 'Q']",MATCHING_BIAS,141,6,0
+14,T15,4,140046,"If the number is 12, then the letter is N.","Rule: ""If the number is 12, then the letter is N.""
+Cards: ['3', 'B', 'N', '12']
+
+Which cards must you turn over?
+Your answer:","['3', 'B', 'N', '12']","12, 3","['12', '3']","['P', 'not_P']",LOGIC_ERROR,137,6,0
+15,T16,0,150042,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['6', 'E', 'F', '7']
+
+Which cards must you turn over?
+Your answer:","['6', 'E', 'F', '7']","
+F, 6","['F', '6']","['P', 'Q']",MATCHING_BIAS,139,6,0
+15,T16,1,150043,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['7', '6', 'E', 'F']
+
+Which cards must you turn over?
+Your answer:","['7', '6', 'E', 'F']","
+F, 6","['F', '6']","['P', 'Q']",MATCHING_BIAS,139,6,0
+15,T16,2,150044,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['E', '6', '7', 'F']
+
+Which cards must you turn over?
+Your answer:","['E', '6', '7', 'F']","
+F, 6","['F', '6']","['P', 'Q']",MATCHING_BIAS,139,6,0
+15,T16,3,150045,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['7', 'E', '6', 'F']
+
+Which cards must you turn over?
+Your answer:","['7', 'E', '6', 'F']","
+F, 6","['F', '6']","['P', 'Q']",MATCHING_BIAS,139,6,0
+15,T16,4,150046,"If the letter is F, then the number is 6.","Rule: ""If the letter is F, then the number is 6.""
+Cards: ['6', 'F', 'E', '7']
+
+Which cards must you turn over?
+Your answer:","['6', 'F', 'E', '7']","
+F, 6","['F', '6']","['P', 'Q']",MATCHING_BIAS,139,6,0
+16,T17,0,160042,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['2', 'Z', '5', 'A']
+
+Which cards must you turn over?
+Your answer:","['2', 'Z', '5', 'A']","
+2, A","['2', 'A']","['P', 'not_Q']",CORRECT,139,5,0
+16,T17,1,160043,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['2', 'Z', 'A', '5']
+
+Which cards must you turn over?
+Your answer:","['2', 'Z', 'A', '5']","2, A","['2', 'A']","['P', 'not_Q']",CORRECT,135,4,0
+16,T17,2,160044,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['A', 'Z', '5', '2']
+
+Which cards must you turn over?
+Your answer:","['A', 'Z', '5', '2']","2, 5","['2', '5']","['P', 'not_P']",LOGIC_ERROR,135,5,0
+16,T17,3,160045,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['Z', 'A', '2', '5']
+
+Which cards must you turn over?
+Your answer:","['Z', 'A', '2', '5']","2, Z","['2', 'Z']","['P', 'Q']",MATCHING_BIAS,135,4,0
+16,T17,4,160046,"If the number is 2, then the letter is Z.","Rule: ""If the number is 2, then the letter is Z.""
+Cards: ['2', '5', 'Z', 'A']
+
+Which cards must you turn over?
+Your answer:","['2', '5', 'Z', 'A']","2, A","['2', 'A']","['P', 'not_Q']",CORRECT,135,4,0
+17,T18,0,170042,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['W', '100', '50', 'V']
+
+Which cards must you turn over?
+Your answer:","['W', '100', '50', 'V']","W, 50","['W', '50']","['P', 'not_Q']",CORRECT,140,6,0
+17,T18,1,170043,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['100', 'V', '50', 'W']
+
+Which cards must you turn over?
+Your answer:","['100', 'V', '50', 'W']","
+W, 100","['W', '100']","['P', 'Q']",MATCHING_BIAS,143,8,0
+17,T18,2,170044,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['V', '50', '100', 'W']
+
+Which cards must you turn over?
+Your answer:","['V', '50', '100', 'W']","
+W, V","['W', 'V']","['P', 'not_P']",LOGIC_ERROR,144,5,0
+17,T18,3,170045,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['W', 'V', '50', '100']
+
+Which cards must you turn over?
+Your answer:","['W', 'V', '50', '100']","W, V, 50","['W', 'V', '50']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,140,8,0
+17,T18,4,170046,"If the letter is W, then the number is 100.","Rule: ""If the letter is W, then the number is 100.""
+Cards: ['V', '50', 'W', '100']
+
+Which cards must you turn over?
+Your answer:","['V', '50', 'W', '100']","
+W, 50","['W', '50']","['P', 'not_Q']",CORRECT,144,7,0
+18,T19,0,180042,"If the letter is E, then the number is 4.","Rule: ""If the letter is E, then the number is 4.""
+Cards: ['E', '3', '4', 'K']
+
+Which cards must you turn over?
+Your answer:","['E', '3', '4', 'K']","
+E, 3","['E', '3']","['P', 'not_Q']",CORRECT,139,6,0
+18,T19,1,180043,"If the letter is E, then the number is 4.","Rule: ""If the letter is E, then the number is 4.""
+Cards: ['3', 'K', 'E', '4']
+
+Which cards must you turn over?
+Your answer:","['3', 'K', 'E', '4']","
+E, 3","['E', '3']","['P', 'not_Q']",CORRECT,139,6,0
+18,T19,2,180044,"If the letter is E, then the number is 4.","Rule: ""If the letter is E, then the number is 4.""
+Cards: ['3', 'E', '4', 'K']
+
+Which cards must you turn over?
+Your answer:","['3', 'E', '4', 'K']","
+E, 3","['E', '3']","['P', 'not_Q']",CORRECT,139,6,0
+18,T19,3,180045,"If the letter is E, then the number is 4.","Rule: ""If the letter is E, then the number is 4.""
+Cards: ['E', '4', '3', 'K']
+
+Which cards must you turn over?
+Your answer:","['E', '4', '3', 'K']","
+E, 4","['E', '4']","['P', 'Q']",MATCHING_BIAS,139,6,0
+18,T19,4,180046,"If the letter is E, then the number is 4.","Rule: ""If the letter is E, then the number is 4.""
+Cards: ['3', 'K', '4', 'E']
+
+Which cards must you turn over?
+Your answer:","['3', 'K', '4', 'E']","
+E, 3","['E', '3']","['P', 'not_Q']",CORRECT,138,6,0
+19,T20,0,190042,"If the shape is circle, then the color is green.","Rule: ""If the shape is circle, then the color is green.""
+Cards: ['green', 'circle', 'square', 'red']
+
+Which cards must you turn over?
+Your answer:","['green', 'circle', 'square', 'red']","
+",[],[],NOISE,138,1,0
+19,T20,1,190043,"If the shape is circle, then the color is green.","Rule: ""If the shape is circle, then the color is green.""
+Cards: ['circle', 'green', 'red', 'square']
+
+Which cards must you turn over?
+Your answer:","['circle', 'green', 'red', 'square']","
+circle, red","['circle', 'red']","['P', 'not_Q']",CORRECT,138,5,0
+19,T20,2,190044,"If the shape is circle, then the color is green.","Rule: ""If the shape is circle, then the color is green.""
+Cards: ['square', 'green', 'circle', 'red']
+
+Which cards must you turn over?
+Your answer:","['square', 'green', 'circle', 'red']","circle, red","['circle', 'red']","['P', 'not_Q']",CORRECT,134,4,0
+19,T20,3,190045,"If the shape is circle, then the color is green.","Rule: ""If the shape is circle, then the color is green.""
+Cards: ['square', 'red', 'green', 'circle']
+
+Which cards must you turn over?
+Your answer:","['square', 'red', 'green', 'circle']","
+circle, red","['circle', 'red']","['P', 'not_Q']",CORRECT,138,5,0
+19,T20,4,190046,"If the shape is circle, then the color is green.","Rule: ""If the shape is circle, then the color is green.""
+Cards: ['circle', 'red', 'square', 'green']
+
+Which cards must you turn over?
+Your answer:","['circle', 'red', 'square', 'green']","
+circle, red","['circle', 'red']","['P', 'not_Q']",CORRECT,138,5,0
+20,T21,0,200042,"If the symbol is star, then the digit is 2.","Rule: ""If the symbol is star, then the digit is 2.""
+Cards: ['5', '2', 'cross', 'star']
+
+Which cards must you turn over?
+Your answer:","['5', '2', 'cross', 'star']","
+star, 5","['star', '5']","['P', 'not_Q']",CORRECT,139,6,0
+20,T21,1,200043,"If the symbol is star, then the digit is 2.","Rule: ""If the symbol is star, then the digit is 2.""
+Cards: ['2', 'cross', '5', 'star']
+
+Which cards must you turn over?
+Your answer:","['2', 'cross', '5', 'star']","star, 2","['star', '2']","['P', 'Q']",MATCHING_BIAS,135,5,0
+20,T21,2,200044,"If the symbol is star, then the digit is 2.","Rule: ""If the symbol is star, then the digit is 2.""
+Cards: ['cross', 'star', '2', '5']
+
+Which cards must you turn over?
+Your answer:","['cross', 'star', '2', '5']","
+star, 5","['star', '5']","['P', 'not_Q']",CORRECT,138,6,0
+20,T21,3,200045,"If the symbol is star, then the digit is 2.","Rule: ""If the symbol is star, then the digit is 2.""
+Cards: ['2', '5', 'cross', 'star']
+
+Which cards must you turn over?
+Your answer:","['2', '5', 'cross', 'star']","
+star, 2","['star', '2']","['P', 'Q']",MATCHING_BIAS,139,6,0
+20,T21,4,200046,"If the symbol is star, then the digit is 2.","Rule: ""If the symbol is star, then the digit is 2.""
+Cards: ['cross', '2', 'star', '5']
+
+Which cards must you turn over?
+Your answer:","['cross', '2', 'star', '5']","
+star, 2","['star', '2']","['P', 'Q']",MATCHING_BIAS,139,6,0
+21,T22,0,210042,"If the card has stripes, then the background is white.","Rule: ""If the card has stripes, then the background is white.""
+Cards: ['black', 'dots', 'white', 'stripes']
+
+Which cards must you turn over?
+Your answer:","['black', 'dots', 'white', 'stripes']","
+stripes, white","['stripes', 'white']","['P', 'Q']",MATCHING_BIAS,139,6,0
+21,T22,1,210043,"If the card has stripes, then the background is white.","Rule: ""If the card has stripes, then the background is white.""
+Cards: ['black', 'dots', 'stripes', 'white']
+
+Which cards must you turn over?
+Your answer:","['black', 'dots', 'stripes', 'white']","
+stripes, black","['stripes', 'black']","['P', 'not_Q']",CORRECT,139,6,0
+21,T22,2,210044,"If the card has stripes, then the background is white.","Rule: ""If the card has stripes, then the background is white.""
+Cards: ['dots', 'stripes', 'black', 'white']
+
+Which cards must you turn over?
+Your answer:","['dots', 'stripes', 'black', 'white']","
+stripes, black","['stripes', 'black']","['P', 'not_Q']",CORRECT,139,6,0
+21,T22,3,210045,"If the card has stripes, then the background is white.","Rule: ""If the card has stripes, then the background is white.""
+Cards: ['dots', 'stripes', 'white', 'black']
+
+Which cards must you turn over?
+Your answer:","['dots', 'stripes', 'white', 'black']","
+stripes, black","['stripes', 'black']","['P', 'not_Q']",CORRECT,139,6,0
+21,T22,4,210046,"If the card has stripes, then the background is white.","Rule: ""If the card has stripes, then the background is white.""
+Cards: ['black', 'stripes', 'white', 'dots']
+
+Which cards must you turn over?
+Your answer:","['black', 'stripes', 'white', 'dots']","stripes, black","['stripes', 'black']","['P', 'not_Q']",CORRECT,135,5,0
+22,T23,0,220042,"If the number is 6, then the letter is X.","Rule: ""If the number is 6, then the letter is X.""
+Cards: ['9', 'X', 'M', '6']
+
+Which cards must you turn over?
+Your answer:","['9', 'X', 'M', '6']","6, X","['6', 'X']","['P', 'Q']",MATCHING_BIAS,135,4,0
+22,T23,1,220043,"If the number is 6, then the letter is X.","Rule: ""If the number is 6, then the letter is X.""
+Cards: ['9', '6', 'M', 'X']
+
+Which cards must you turn over?
+Your answer:","['9', '6', 'M', 'X']","6, M","['6', 'M']","['P', 'not_Q']",CORRECT,135,4,0
+22,T23,2,220044,"If the number is 6, then the letter is X.","Rule: ""If the number is 6, then the letter is X.""
+Cards: ['6', 'M', 'X', '9']
+
+Which cards must you turn over?
+Your answer:","['6', 'M', 'X', '9']","
+6, M","['6', 'M']","['P', 'not_Q']",CORRECT,139,5,0
+22,T23,3,220045,"If the number is 6, then the letter is X.","Rule: ""If the number is 6, then the letter is X.""
+Cards: ['6', 'M', '9', 'X']
+
+Which cards must you turn over?
+Your answer:","['6', 'M', '9', 'X']","6, M","['6', 'M']","['P', 'not_Q']",CORRECT,135,4,0
+22,T23,4,220046,"If the number is 6, then the letter is X.","Rule: ""If the number is 6, then the letter is X.""
+Cards: ['M', '6', '9', 'X']
+
+Which cards must you turn over?
+Your answer:","['M', '6', '9', 'X']","
+6, M","['6', 'M']","['P', 'not_Q']",CORRECT,138,5,0
+23,T24,0,230042,"If the figure is triangle, then the size is large.","Rule: ""If the figure is triangle, then the size is large.""
+Cards: ['pentagon', 'small', 'large', 'triangle']
+
+Which cards must you turn over?
+Your answer:","['pentagon', 'small', 'large', 'triangle']","
+triangle, large","['triangle', 'large']","['P', 'Q']",MATCHING_BIAS,139,5,0
+23,T24,1,230043,"If the figure is triangle, then the size is large.","Rule: ""If the figure is triangle, then the size is large.""
+Cards: ['triangle', 'small', 'pentagon', 'large']
+
+Which cards must you turn over?
+Your answer:","['triangle', 'small', 'pentagon', 'large']","
+triangle, small","['triangle', 'small']","['P', 'not_Q']",CORRECT,139,5,0
+23,T24,2,230044,"If the figure is triangle, then the size is large.","Rule: ""If the figure is triangle, then the size is large.""
+Cards: ['small', 'large', 'pentagon', 'triangle']
+
+Which cards must you turn over?
+Your answer:","['small', 'large', 'pentagon', 'triangle']","
+triangle, small","['triangle', 'small']","['P', 'not_Q']",CORRECT,139,5,0
+23,T24,3,230045,"If the figure is triangle, then the size is large.","Rule: ""If the figure is triangle, then the size is large.""
+Cards: ['triangle', 'pentagon', 'large', 'small']
+
+Which cards must you turn over?
+Your answer:","['triangle', 'pentagon', 'large', 'small']","
+triangle, small","['triangle', 'small']","['P', 'not_Q']",CORRECT,138,5,0
+23,T24,4,230046,"If the figure is triangle, then the size is large.","Rule: ""If the figure is triangle, then the size is large.""
+Cards: ['large', 'triangle', 'pentagon', 'small']
+
+Which cards must you turn over?
+Your answer:","['large', 'triangle', 'pentagon', 'small']","
+triangle, small","['triangle', 'small']","['P', 'not_Q']",CORRECT,139,5,0
+24,T25,0,240042,"If the token is alpha, then the code is 00.","Rule: ""If the token is alpha, then the code is 00.""
+Cards: ['beta', '11', 'alpha', '00']
+
+Which cards must you turn over?
+Your answer:","['beta', '11', 'alpha', '00']","
+alpha, 11","['alpha', '11']","['P', 'not_Q']",CORRECT,142,7,0
+24,T25,1,240043,"If the token is alpha, then the code is 00.","Rule: ""If the token is alpha, then the code is 00.""
+Cards: ['alpha', '11', 'beta', '00']
+
+Which cards must you turn over?
+Your answer:","['alpha', '11', 'beta', '00']","alpha, 11","['alpha', '11']","['P', 'not_Q']",CORRECT,138,6,0
+24,T25,2,240044,"If the token is alpha, then the code is 00.","Rule: ""If the token is alpha, then the code is 00.""
+Cards: ['00', 'alpha', 'beta', '11']
+
+Which cards must you turn over?
+Your answer:","['00', 'alpha', 'beta', '11']","alpha, 00","['alpha', '00']","['P', 'Q']",MATCHING_BIAS,138,6,0
+24,T25,3,240045,"If the token is alpha, then the code is 00.","Rule: ""If the token is alpha, then the code is 00.""
+Cards: ['alpha', 'beta', '00', '11']
+
+Which cards must you turn over?
+Your answer:","['alpha', 'beta', '00', '11']","
+alpha, 11","['alpha', '11']","['P', 'not_Q']",CORRECT,142,7,0
+24,T25,4,240046,"If the token is alpha, then the code is 00.","Rule: ""If the token is alpha, then the code is 00.""
+Cards: ['00', '11', 'alpha', 'beta']
+
+Which cards must you turn over?
+Your answer:","['00', '11', 'alpha', 'beta']","
+alpha, 00","['alpha', '00']","['P', 'Q']",MATCHING_BIAS,142,7,0
+25,T26,0,250042,"If the shape is filled, then the border is thick.","Rule: ""If the shape is filled, then the border is thick.""
+Cards: ['thick', 'thin', 'filled', 'hollow']
+
+Which cards must you turn over?
+Your answer:","['thick', 'thin', 'filled', 'hollow']","
+filled, thin","['filled', 'thin']","['P', 'not_Q']",CORRECT,139,5,0
+25,T26,1,250043,"If the shape is filled, then the border is thick.","Rule: ""If the shape is filled, then the border is thick.""
+Cards: ['filled', 'thin', 'thick', 'hollow']
+
+Which cards must you turn over?
+Your answer:","['filled', 'thin', 'thick', 'hollow']","
+filled, thin","['filled', 'thin']","['P', 'not_Q']",CORRECT,139,5,0
+25,T26,2,250044,"If the shape is filled, then the border is thick.","Rule: ""If the shape is filled, then the border is thick.""
+Cards: ['hollow', 'thick', 'thin', 'filled']
+
+Which cards must you turn over?
+Your answer:","['hollow', 'thick', 'thin', 'filled']","filled, hollow","['filled', 'hollow']","['P', 'not_P']",LOGIC_ERROR,135,4,0
+25,T26,3,250045,"If the shape is filled, then the border is thick.","Rule: ""If the shape is filled, then the border is thick.""
+Cards: ['hollow', 'filled', 'thin', 'thick']
+
+Which cards must you turn over?
+Your answer:","['hollow', 'filled', 'thin', 'thick']","
+filled, thin","['filled', 'thin']","['P', 'not_Q']",CORRECT,139,5,0
+25,T26,4,250046,"If the shape is filled, then the border is thick.","Rule: ""If the shape is filled, then the border is thick.""
+Cards: ['hollow', 'filled', 'thick', 'thin']
+
+Which cards must you turn over?
+Your answer:","['hollow', 'filled', 'thick', 'thin']","
+filled, thin","['filled', 'thin']","['P', 'not_Q']",CORRECT,138,5,0
+26,T27,0,260042,"If the card has a dot, then the number is 1.","Rule: ""If the card has a dot, then the number is 1.""
+Cards: ['8', 'dash', 'dot', '1']
+
+Which cards must you turn over?
+Your answer:","['8', 'dash', 'dot', '1']","
+8, dot","['8', 'dot']","['P', 'not_Q']",CORRECT,140,5,0
+26,T27,1,260043,"If the card has a dot, then the number is 1.","Rule: ""If the card has a dot, then the number is 1.""
+Cards: ['dot', 'dash', '8', '1']
+
+Which cards must you turn over?
+Your answer:","['dot', 'dash', '8', '1']","dot, 8","['dot', '8']","['P', 'not_Q']",CORRECT,136,5,0
+26,T27,2,260044,"If the card has a dot, then the number is 1.","Rule: ""If the card has a dot, then the number is 1.""
+Cards: ['1', 'dot', 'dash', '8']
+
+Which cards must you turn over?
+Your answer:","['1', 'dot', 'dash', '8']","
+dot, 1","['dot', '1']","['P', 'Q']",MATCHING_BIAS,140,6,0
+26,T27,3,260045,"If the card has a dot, then the number is 1.","Rule: ""If the card has a dot, then the number is 1.""
+Cards: ['dash', 'dot', '1', '8']
+
+Which cards must you turn over?
+Your answer:","['dash', 'dot', '1', '8']","dot, 8","['dot', '8']","['P', 'not_Q']",CORRECT,136,5,0
+26,T27,4,260046,"If the card has a dot, then the number is 1.","Rule: ""If the card has a dot, then the number is 1.""
+Cards: ['dot', 'dash', '1', '8']
+
+Which cards must you turn over?
+Your answer:","['dot', 'dash', '1', '8']","
+dot, 8","['dot', '8']","['P', 'not_Q']",CORRECT,140,6,0
+27,T28,0,270042,"If the figure is dark, then the shape is rectangle.","Rule: ""If the figure is dark, then the shape is rectangle.""
+Cards: ['dark', 'oval', 'light', 'rectangle']
+
+Which cards must you turn over?
+Your answer:","['dark', 'oval', 'light', 'rectangle']","
+dark, oval","['dark', 'oval']","['P', 'not_Q']",CORRECT,138,5,0
+27,T28,1,270043,"If the figure is dark, then the shape is rectangle.","Rule: ""If the figure is dark, then the shape is rectangle.""
+Cards: ['oval', 'dark', 'rectangle', 'light']
+
+Which cards must you turn over?
+Your answer:","['oval', 'dark', 'rectangle', 'light']","
+dark, oval","['dark', 'oval']","['P', 'not_Q']",CORRECT,138,5,0
+27,T28,2,270044,"If the figure is dark, then the shape is rectangle.","Rule: ""If the figure is dark, then the shape is rectangle.""
+Cards: ['rectangle', 'light', 'oval', 'dark']
+
+Which cards must you turn over?
+Your answer:","['rectangle', 'light', 'oval', 'dark']","dark, light","['dark', 'light']","['P', 'not_P']",LOGIC_ERROR,134,4,0
+27,T28,3,270045,"If the figure is dark, then the shape is rectangle.","Rule: ""If the figure is dark, then the shape is rectangle.""
+Cards: ['dark', 'light', 'rectangle', 'oval']
+
+Which cards must you turn over?
+Your answer:","['dark', 'light', 'rectangle', 'oval']","
+dark, oval","['dark', 'oval']","['P', 'not_Q']",CORRECT,138,5,0
+27,T28,4,270046,"If the figure is dark, then the shape is rectangle.","Rule: ""If the figure is dark, then the shape is rectangle.""
+Cards: ['rectangle', 'dark', 'light', 'oval']
+
+Which cards must you turn over?
+Your answer:","['rectangle', 'dark', 'light', 'oval']","
+dark, oval","['dark', 'oval']","['P', 'not_Q']",CORRECT,138,5,0
+28,T29,0,280042,"If the number is 3, then the symbol is arrow.","Rule: ""If the number is 3, then the symbol is arrow.""
+Cards: ['7', 'arrow', '3', 'spiral']
+
+Which cards must you turn over?
+Your answer:","['7', 'arrow', '3', 'spiral']","
+3, 7","['3', '7']","['P', 'not_P']",LOGIC_ERROR,139,6,0
+28,T29,1,280043,"If the number is 3, then the symbol is arrow.","Rule: ""If the number is 3, then the symbol is arrow.""
+Cards: ['7', '3', 'spiral', 'arrow']
+
+Which cards must you turn over?
+Your answer:","['7', '3', 'spiral', 'arrow']","
+3, spiral","['3', 'spiral']","['P', 'not_Q']",CORRECT,139,5,0
+28,T29,2,280044,"If the number is 3, then the symbol is arrow.","Rule: ""If the number is 3, then the symbol is arrow.""
+Cards: ['3', '7', 'arrow', 'spiral']
+
+Which cards must you turn over?
+Your answer:","['3', '7', 'arrow', 'spiral']","
+3, spiral","['3', 'spiral']","['P', 'not_Q']",CORRECT,139,5,0
+28,T29,3,280045,"If the number is 3, then the symbol is arrow.","Rule: ""If the number is 3, then the symbol is arrow.""
+Cards: ['arrow', 'spiral', '3', '7']
+
+Which cards must you turn over?
+Your answer:","['arrow', 'spiral', '3', '7']","3, spiral","['3', 'spiral']","['P', 'not_Q']",CORRECT,135,4,0
+28,T29,4,280046,"If the number is 3, then the symbol is arrow.","Rule: ""If the number is 3, then the symbol is arrow.""
+Cards: ['arrow', '3', 'spiral', '7']
+
+Which cards must you turn over?
+Your answer:","['arrow', '3', 'spiral', '7']","3, spiral","['3', 'spiral']","['P', 'not_Q']",CORRECT,135,4,0
+29,T30,0,290042,"If the letter is Z, then the number is 0.","Rule: ""If the letter is Z, then the number is 0.""
+Cards: ['5', 'Z', 'Q', '0']
+
+Which cards must you turn over?
+Your answer:","['5', 'Z', 'Q', '0']","
+Z, 0","['Z', '0']","['P', 'Q']",MATCHING_BIAS,139,6,0
+29,T30,1,290043,"If the letter is Z, then the number is 0.","Rule: ""If the letter is Z, then the number is 0.""
+Cards: ['Q', '5', '0', 'Z']
+
+Which cards must you turn over?
+Your answer:","['Q', '5', '0', 'Z']","
+Z, 0","['Z', '0']","['P', 'Q']",MATCHING_BIAS,139,6,0
+29,T30,2,290044,"If the letter is Z, then the number is 0.","Rule: ""If the letter is Z, then the number is 0.""
+Cards: ['Q', 'Z', '5', '0']
+
+Which cards must you turn over?
+Your answer:","['Q', 'Z', '5', '0']","
+Z, 5","['Z', '5']","['P', 'not_Q']",CORRECT,139,6,0
+29,T30,3,290045,"If the letter is Z, then the number is 0.","Rule: ""If the letter is Z, then the number is 0.""
+Cards: ['0', 'Q', '5', 'Z']
+
+Which cards must you turn over?
+Your answer:","['0', 'Q', '5', 'Z']","
+Z, 0","['Z', '0']","['P', 'Q']",MATCHING_BIAS,139,6,0
+29,T30,4,290046,"If the letter is Z, then the number is 0.","Rule: ""If the letter is Z, then the number is 0.""
+Cards: ['Z', 'Q', '5', '0']
+
+Which cards must you turn over?
+Your answer:","['Z', 'Q', '5', '0']","
+Z, 0","['Z', '0']","['P', 'Q']",MATCHING_BIAS,139,6,0
+30,T31,0,300042,"If the pattern is grid, then the color is blue.","Rule: ""If the pattern is grid, then the color is blue.""
+Cards: ['blue', 'grid', 'yellow', 'solid']
+
+Which cards must you turn over?
+Your answer:","['blue', 'grid', 'yellow', 'solid']","
+grid, blue","['grid', 'blue']","['P', 'Q']",MATCHING_BIAS,138,5,0
+30,T31,1,300043,"If the pattern is grid, then the color is blue.","Rule: ""If the pattern is grid, then the color is blue.""
+Cards: ['grid', 'solid', 'yellow', 'blue']
+
+Which cards must you turn over?
+Your answer:","['grid', 'solid', 'yellow', 'blue']","
+grid, yellow","['grid', 'yellow']","['P', 'not_Q']",CORRECT,138,5,0
+30,T31,2,300044,"If the pattern is grid, then the color is blue.","Rule: ""If the pattern is grid, then the color is blue.""
+Cards: ['blue', 'yellow', 'grid', 'solid']
+
+Which cards must you turn over?
+Your answer:","['blue', 'yellow', 'grid', 'solid']","grid, blue","['grid', 'blue']","['P', 'Q']",MATCHING_BIAS,134,4,0
+30,T31,3,300045,"If the pattern is grid, then the color is blue.","Rule: ""If the pattern is grid, then the color is blue.""
+Cards: ['yellow', 'solid', 'blue', 'grid']
+
+Which cards must you turn over?
+Your answer:","['yellow', 'solid', 'blue', 'grid']","grid, blue","['grid', 'blue']","['P', 'Q']",MATCHING_BIAS,134,4,0
+30,T31,4,300046,"If the pattern is grid, then the color is blue.","Rule: ""If the pattern is grid, then the color is blue.""
+Cards: ['blue', 'grid', 'solid', 'yellow']
+
+Which cards must you turn over?
+Your answer:","['blue', 'grid', 'solid', 'yellow']","grid, blue","['grid', 'blue']","['P', 'Q']",MATCHING_BIAS,134,4,0
+31,T32,0,310042,"If the shape is hexagon, then the number is 6.","Rule: ""If the shape is hexagon, then the number is 6.""
+Cards: ['hexagon', '3', 'triangle', '6']
+
+Which cards must you turn over?
+Your answer:","['hexagon', '3', 'triangle', '6']","
+hexagon, 3","['hexagon', '3']","['P', 'not_Q']",CORRECT,139,6,0
+31,T32,1,310043,"If the shape is hexagon, then the number is 6.","Rule: ""If the shape is hexagon, then the number is 6.""
+Cards: ['6', 'hexagon', '3', 'triangle']
+
+Which cards must you turn over?
+Your answer:","['6', 'hexagon', '3', 'triangle']","
+hexagon, 6","['hexagon', '6']","['P', 'Q']",MATCHING_BIAS,139,6,0
+31,T32,2,310044,"If the shape is hexagon, then the number is 6.","Rule: ""If the shape is hexagon, then the number is 6.""
+Cards: ['triangle', '3', '6', 'hexagon']
+
+Which cards must you turn over?
+Your answer:","['triangle', '3', '6', 'hexagon']","
+hexagon, 3","['hexagon', '3']","['P', 'not_Q']",CORRECT,139,6,0
+31,T32,3,310045,"If the shape is hexagon, then the number is 6.","Rule: ""If the shape is hexagon, then the number is 6.""
+Cards: ['3', 'hexagon', '6', 'triangle']
+
+Which cards must you turn over?
+Your answer:","['3', 'hexagon', '6', 'triangle']","
+hexagon, 3","['hexagon', '3']","['P', 'not_Q']",CORRECT,139,6,0
+31,T32,4,310046,"If the shape is hexagon, then the number is 6.","Rule: ""If the shape is hexagon, then the number is 6.""
+Cards: ['3', 'triangle', '6', 'hexagon']
+
+Which cards must you turn over?
+Your answer:","['3', 'triangle', '6', 'hexagon']","hexagon, 3, triangle","['hexagon', '3', 'triangle']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,135,7,0
+32,T33,0,320042,"If the digit is 9, then the letter is W.","Rule: ""If the digit is 9, then the letter is W.""
+Cards: ['W', '4', '9', 'F']
+
+Which cards must you turn over?
+Your answer:","['W', '4', '9', 'F']","9, F","['9', 'F']","['P', 'not_Q']",CORRECT,135,4,0
+32,T33,1,320043,"If the digit is 9, then the letter is W.","Rule: ""If the digit is 9, then the letter is W.""
+Cards: ['F', 'W', '4', '9']
+
+Which cards must you turn over?
+Your answer:","['F', 'W', '4', '9']","
+9, F","['9', 'F']","['P', 'not_Q']",CORRECT,139,5,0
+32,T33,2,320044,"If the digit is 9, then the letter is W.","Rule: ""If the digit is 9, then the letter is W.""
+Cards: ['W', 'F', '4', '9']
+
+Which cards must you turn over?
+Your answer:","['W', 'F', '4', '9']","9, F","['9', 'F']","['P', 'not_Q']",CORRECT,135,4,0
+32,T33,3,320045,"If the digit is 9, then the letter is W.","Rule: ""If the digit is 9, then the letter is W.""
+Cards: ['9', '4', 'W', 'F']
+
+Which cards must you turn over?
+Your answer:","['9', '4', 'W', 'F']","9, F","['9', 'F']","['P', 'not_Q']",CORRECT,135,4,0
+32,T33,4,320046,"If the digit is 9, then the letter is W.","Rule: ""If the digit is 9, then the letter is W.""
+Cards: ['F', '9', '4', 'W']
+
+Which cards must you turn over?
+Your answer:","['F', '9', '4', 'W']","
+9, F","['9', 'F']","['P', 'not_Q']",CORRECT,139,5,0
+33,T34,0,330042,"If the cell is shaded, then the symbol is diamond.","Rule: ""If the cell is shaded, then the symbol is diamond.""
+Cards: ['empty', 'shaded', 'diamond', 'circle']
+
+Which cards must you turn over?
+Your answer:","['empty', 'shaded', 'diamond', 'circle']","shaded, empty","['shaded', 'empty']","['P', 'not_P']",LOGIC_ERROR,134,4,0
+33,T34,1,330043,"If the cell is shaded, then the symbol is diamond.","Rule: ""If the cell is shaded, then the symbol is diamond.""
+Cards: ['shaded', 'empty', 'diamond', 'circle']
+
+Which cards must you turn over?
+Your answer:","['shaded', 'empty', 'diamond', 'circle']","
+shaded, empty","['shaded', 'empty']","['P', 'not_P']",LOGIC_ERROR,138,5,0
+33,T34,2,330044,"If the cell is shaded, then the symbol is diamond.","Rule: ""If the cell is shaded, then the symbol is diamond.""
+Cards: ['circle', 'empty', 'diamond', 'shaded']
+
+Which cards must you turn over?
+Your answer:","['circle', 'empty', 'diamond', 'shaded']","
+shaded, empty","['shaded', 'empty']","['P', 'not_P']",LOGIC_ERROR,138,5,0
+33,T34,3,330045,"If the cell is shaded, then the symbol is diamond.","Rule: ""If the cell is shaded, then the symbol is diamond.""
+Cards: ['shaded', 'diamond', 'empty', 'circle']
+
+Which cards must you turn over?
+Your answer:","['shaded', 'diamond', 'empty', 'circle']","
+shaded, empty","['shaded', 'empty']","['P', 'not_P']",LOGIC_ERROR,138,5,0
+33,T34,4,330046,"If the cell is shaded, then the symbol is diamond.","Rule: ""If the cell is shaded, then the symbol is diamond.""
+Cards: ['diamond', 'circle', 'empty', 'shaded']
+
+Which cards must you turn over?
+Your answer:","['diamond', 'circle', 'empty', 'shaded']","shaded, empty","['shaded', 'empty']","['P', 'not_P']",LOGIC_ERROR,134,4,0
+34,T35,0,340042,"If the shape has four sides, then the color is orange.","Rule: ""If the shape has four sides, then the color is orange.""
+Cards: ['three_sides', 'orange', 'four_sides', 'purple']
+
+Which cards must you turn over?
+Your answer:","['three_sides', 'orange', 'four_sides', 'purple']","
+four_sides, purple","['four_sides', 'purple']","['P', 'not_Q']",CORRECT,143,7,0
+34,T35,1,340043,"If the shape has four sides, then the color is orange.","Rule: ""If the shape has four sides, then the color is orange.""
+Cards: ['purple', 'three_sides', 'four_sides', 'orange']
+
+Which cards must you turn over?
+Your answer:","['purple', 'three_sides', 'four_sides', 'orange']","
+four_sides, purple","['four_sides', 'purple']","['P', 'not_Q']",CORRECT,143,7,0
+34,T35,2,340044,"If the shape has four sides, then the color is orange.","Rule: ""If the shape has four sides, then the color is orange.""
+Cards: ['three_sides', 'purple', 'four_sides', 'orange']
+
+Which cards must you turn over?
+Your answer:","['three_sides', 'purple', 'four_sides', 'orange']","
+four_sides, purple","['four_sides', 'purple']","['P', 'not_Q']",CORRECT,143,7,0
+34,T35,3,340045,"If the shape has four sides, then the color is orange.","Rule: ""If the shape has four sides, then the color is orange.""
+Cards: ['four_sides', 'three_sides', 'orange', 'purple']
+
+Which cards must you turn over?
+Your answer:","['four_sides', 'three_sides', 'orange', 'purple']","
+four_sides, purple","['four_sides', 'purple']","['P', 'not_Q']",CORRECT,143,7,0
+34,T35,4,340046,"If the shape has four sides, then the color is orange.","Rule: ""If the shape has four sides, then the color is orange.""
+Cards: ['purple', 'orange', 'three_sides', 'four_sides']
+
+Which cards must you turn over?
+Your answer:","['purple', 'orange', 'three_sides', 'four_sides']","
+four_sides, purple","['four_sides', 'purple']","['P', 'not_Q']",CORRECT,143,7,0
+35,T36,0,350042,"If the token is delta, then the code is 99.","Rule: ""If the token is delta, then the code is 99.""
+Cards: ['99', '00', 'delta', 'gamma']
+
+Which cards must you turn over?
+Your answer:","['99', '00', 'delta', 'gamma']","
+delta, 99","['delta', '99']","['P', 'Q']",MATCHING_BIAS,142,7,0
+35,T36,1,350043,"If the token is delta, then the code is 99.","Rule: ""If the token is delta, then the code is 99.""
+Cards: ['delta', '00', '99', 'gamma']
+
+Which cards must you turn over?
+Your answer:","['delta', '00', '99', 'gamma']","
+delta, 00","['delta', '00']","['P', 'not_Q']",CORRECT,141,7,0
+35,T36,2,350044,"If the token is delta, then the code is 99.","Rule: ""If the token is delta, then the code is 99.""
+Cards: ['99', 'gamma', 'delta', '00']
+
+Which cards must you turn over?
+Your answer:","['99', 'gamma', 'delta', '00']","
+delta, 99","['delta', '99']","['P', 'Q']",MATCHING_BIAS,141,7,0
+35,T36,3,350045,"If the token is delta, then the code is 99.","Rule: ""If the token is delta, then the code is 99.""
+Cards: ['gamma', '00', '99', 'delta']
+
+Which cards must you turn over?
+Your answer:","['gamma', '00', '99', 'delta']","
+delta, 99","['delta', '99']","['P', 'Q']",MATCHING_BIAS,142,7,0
+35,T36,4,350046,"If the token is delta, then the code is 99.","Rule: ""If the token is delta, then the code is 99.""
+Cards: ['delta', 'gamma', '00', '99']
+
+Which cards must you turn over?
+Your answer:","['delta', 'gamma', '00', '99']","
+delta, 00","['delta', '00']","['P', 'not_Q']",CORRECT,142,7,0
+36,T37,0,360042,"If the figure is small, then the border is dashed.","Rule: ""If the figure is small, then the border is dashed.""
+Cards: ['solid', 'small', 'large', 'dashed']
+
+Which cards must you turn over?
+Your answer:","['solid', 'small', 'large', 'dashed']","
+small, solid","['small', 'solid']","['P', 'not_Q']",CORRECT,138,5,0
+36,T37,1,360043,"If the figure is small, then the border is dashed.","Rule: ""If the figure is small, then the border is dashed.""
+Cards: ['solid', 'large', 'dashed', 'small']
+
+Which cards must you turn over?
+Your answer:","['solid', 'large', 'dashed', 'small']","
+small, solid","['small', 'solid']","['P', 'not_Q']",CORRECT,138,5,0
+36,T37,2,360044,"If the figure is small, then the border is dashed.","Rule: ""If the figure is small, then the border is dashed.""
+Cards: ['dashed', 'solid', 'large', 'small']
+
+Which cards must you turn over?
+Your answer:","['dashed', 'solid', 'large', 'small']","small, dashed","['small', 'dashed']","['P', 'Q']",MATCHING_BIAS,134,4,0
+36,T37,3,360045,"If the figure is small, then the border is dashed.","Rule: ""If the figure is small, then the border is dashed.""
+Cards: ['small', 'solid', 'dashed', 'large']
+
+Which cards must you turn over?
+Your answer:","['small', 'solid', 'dashed', 'large']","small, solid","['small', 'solid']","['P', 'not_Q']",CORRECT,134,4,0
+36,T37,4,360046,"If the figure is small, then the border is dashed.","Rule: ""If the figure is small, then the border is dashed.""
+Cards: ['solid', 'small', 'dashed', 'large']
+
+Which cards must you turn over?
+Your answer:","['solid', 'small', 'dashed', 'large']","small, solid","['small', 'solid']","['P', 'not_Q']",CORRECT,134,4,0
+37,T38,0,370042,"If the letter is I, then the digit is 1.","Rule: ""If the letter is I, then the digit is 1.""
+Cards: ['T', '1', 'I', '6']
+
+Which cards must you turn over?
+Your answer:","['T', '1', 'I', '6']","
+I, 6","['I', '6']","['P', 'not_Q']",CORRECT,139,6,0
+37,T38,1,370043,"If the letter is I, then the digit is 1.","Rule: ""If the letter is I, then the digit is 1.""
+Cards: ['1', 'I', '6', 'T']
+
+Which cards must you turn over?
+Your answer:","['1', 'I', '6', 'T']","
+I, 1","['I', '1']","['P', 'Q']",MATCHING_BIAS,139,6,0
+37,T38,2,370044,"If the letter is I, then the digit is 1.","Rule: ""If the letter is I, then the digit is 1.""
+Cards: ['T', '6', 'I', '1']
+
+Which cards must you turn over?
+Your answer:","['T', '6', 'I', '1']","
+I, 6","['I', '6']","['P', 'not_Q']",CORRECT,139,6,0
+37,T38,3,370045,"If the letter is I, then the digit is 1.","Rule: ""If the letter is I, then the digit is 1.""
+Cards: ['1', 'I', 'T', '6']
+
+Which cards must you turn over?
+Your answer:","['1', 'I', 'T', '6']","I, 6","['I', '6']","['P', 'not_Q']",CORRECT,135,5,0
+37,T38,4,370046,"If the letter is I, then the digit is 1.","Rule: ""If the letter is I, then the digit is 1.""
+Cards: ['T', '1', '6', 'I']
+
+Which cards must you turn over?
+Your answer:","['T', '1', '6', 'I']","I, 6","['I', '6']","['P', 'not_Q']",CORRECT,135,5,0
+38,T39,0,380042,"If the symbol is square, then the letter is B.","Rule: ""If the symbol is square, then the letter is B.""
+Cards: ['square', 'B', 'circle', 'N']
+
+Which cards must you turn over?
+Your answer:","['square', 'B', 'circle', 'N']","
+square, N","['square', 'N']","['P', 'not_Q']",CORRECT,138,5,0
+38,T39,1,380043,"If the symbol is square, then the letter is B.","Rule: ""If the symbol is square, then the letter is B.""
+Cards: ['square', 'N', 'B', 'circle']
+
+Which cards must you turn over?
+Your answer:","['square', 'N', 'B', 'circle']","
+square, N","['square', 'N']","['P', 'not_Q']",CORRECT,138,5,0
+38,T39,2,380044,"If the symbol is square, then the letter is B.","Rule: ""If the symbol is square, then the letter is B.""
+Cards: ['circle', 'N', 'square', 'B']
+
+Which cards must you turn over?
+Your answer:","['circle', 'N', 'square', 'B']","
+square, N","['square', 'N']","['P', 'not_Q']",CORRECT,138,5,0
+38,T39,3,380045,"If the symbol is square, then the letter is B.","Rule: ""If the symbol is square, then the letter is B.""
+Cards: ['N', 'circle', 'square', 'B']
+
+Which cards must you turn over?
+Your answer:","['N', 'circle', 'square', 'B']","
+square, N","['square', 'N']","['P', 'not_Q']",CORRECT,138,5,0
+38,T39,4,380046,"If the symbol is square, then the letter is B.","Rule: ""If the symbol is square, then the letter is B.""
+Cards: ['square', 'N', 'circle', 'B']
+
+Which cards must you turn over?
+Your answer:","['square', 'N', 'circle', 'B']","
+square, N","['square', 'N']","['P', 'not_Q']",CORRECT,138,5,0
+39,T40,0,390042,"If the pattern is diagonal, then the color is grey.","Rule: ""If the pattern is diagonal, then the color is grey.""
+Cards: ['grey', 'diagonal', 'brown', 'horizontal']
+
+Which cards must you turn over?
+Your answer:","['grey', 'diagonal', 'brown', 'horizontal']","
+diagonal, grey","['diagonal', 'grey']","['P', 'Q']",MATCHING_BIAS,138,5,0
+39,T40,1,390043,"If the pattern is diagonal, then the color is grey.","Rule: ""If the pattern is diagonal, then the color is grey.""
+Cards: ['horizontal', 'grey', 'diagonal', 'brown']
+
+Which cards must you turn over?
+Your answer:","['horizontal', 'grey', 'diagonal', 'brown']","diagonal, brown","['diagonal', 'brown']","['P', 'not_Q']",CORRECT,134,4,0
+39,T40,2,390044,"If the pattern is diagonal, then the color is grey.","Rule: ""If the pattern is diagonal, then the color is grey.""
+Cards: ['diagonal', 'grey', 'brown', 'horizontal']
+
+Which cards must you turn over?
+Your answer:","['diagonal', 'grey', 'brown', 'horizontal']","diagonal, brown","['diagonal', 'brown']","['P', 'not_Q']",CORRECT,134,4,0
+39,T40,3,390045,"If the pattern is diagonal, then the color is grey.","Rule: ""If the pattern is diagonal, then the color is grey.""
+Cards: ['brown', 'diagonal', 'horizontal', 'grey']
+
+Which cards must you turn over?
+Your answer:","['brown', 'diagonal', 'horizontal', 'grey']","diagonal, grey","['diagonal', 'grey']","['P', 'Q']",MATCHING_BIAS,134,4,0
+39,T40,4,390046,"If the pattern is diagonal, then the color is grey.","Rule: ""If the pattern is diagonal, then the color is grey.""
+Cards: ['horizontal', 'diagonal', 'grey', 'brown']
+
+Which cards must you turn over?
+Your answer:","['horizontal', 'diagonal', 'grey', 'brown']","
+diagonal, brown","['diagonal', 'brown']","['P', 'not_Q']",CORRECT,138,5,0
+40,T41,0,400042,"If the number is 8, then the shape is octagon.","Rule: ""If the number is 8, then the shape is octagon.""
+Cards: ['octagon', '8', '5', 'pentagon']
+
+Which cards must you turn over?
+Your answer:","['octagon', '8', '5', 'pentagon']","
+8, pentagon","['8', 'pentagon']","['P', 'not_Q']",CORRECT,140,6,0
+40,T41,1,400043,"If the number is 8, then the shape is octagon.","Rule: ""If the number is 8, then the shape is octagon.""
+Cards: ['pentagon', '5', 'octagon', '8']
+
+Which cards must you turn over?
+Your answer:","['pentagon', '5', 'octagon', '8']","8, pentagon","['8', 'pentagon']","['P', 'not_Q']",CORRECT,136,5,0
+40,T41,2,400044,"If the number is 8, then the shape is octagon.","Rule: ""If the number is 8, then the shape is octagon.""
+Cards: ['5', 'pentagon', 'octagon', '8']
+
+Which cards must you turn over?
+Your answer:","['5', 'pentagon', 'octagon', '8']","8, pentagon","['8', 'pentagon']","['P', 'not_Q']",CORRECT,136,5,0
+40,T41,3,400045,"If the number is 8, then the shape is octagon.","Rule: ""If the number is 8, then the shape is octagon.""
+Cards: ['octagon', '8', 'pentagon', '5']
+
+Which cards must you turn over?
+Your answer:","['octagon', '8', 'pentagon', '5']","
+8, pentagon","['8', 'pentagon']","['P', 'not_Q']",CORRECT,140,6,0
+40,T41,4,400046,"If the number is 8, then the shape is octagon.","Rule: ""If the number is 8, then the shape is octagon.""
+Cards: ['octagon', '5', '8', 'pentagon']
+
+Which cards must you turn over?
+Your answer:","['octagon', '5', '8', 'pentagon']","
+8, pentagon","['8', 'pentagon']","['P', 'not_Q']",CORRECT,140,6,0
+41,T42,0,410042,"If the digit is 0, then the symbol is omega.","Rule: ""If the digit is 0, then the symbol is omega.""
+Cards: ['1', 'omega', 'sigma', '0']
+
+Which cards must you turn over?
+Your answer:","['1', 'omega', 'sigma', '0']","
+0, 1","['0', '1']","['P', 'not_P']",LOGIC_ERROR,139,6,0
+41,T42,1,410043,"If the digit is 0, then the symbol is omega.","Rule: ""If the digit is 0, then the symbol is omega.""
+Cards: ['1', 'sigma', 'omega', '0']
+
+Which cards must you turn over?
+Your answer:","['1', 'sigma', 'omega', '0']","
+0, sigma","['0', 'sigma']","['P', 'not_Q']",CORRECT,139,5,0
+41,T42,2,410044,"If the digit is 0, then the symbol is omega.","Rule: ""If the digit is 0, then the symbol is omega.""
+Cards: ['1', 'sigma', '0', 'omega']
+
+Which cards must you turn over?
+Your answer:","['1', 'sigma', '0', 'omega']","0, 1","['0', '1']","['P', 'not_P']",LOGIC_ERROR,135,5,0
+41,T42,3,410045,"If the digit is 0, then the symbol is omega.","Rule: ""If the digit is 0, then the symbol is omega.""
+Cards: ['1', 'omega', '0', 'sigma']
+
+Which cards must you turn over?
+Your answer:","['1', 'omega', '0', 'sigma']","
+0, 1, sigma","['0', '1', 'sigma']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,139,8,0
+41,T42,4,410046,"If the digit is 0, then the symbol is omega.","Rule: ""If the digit is 0, then the symbol is omega.""
+Cards: ['0', 'omega', 'sigma', '1']
+
+Which cards must you turn over?
+Your answer:","['0', 'omega', 'sigma', '1']","
+0, sigma","['0', 'sigma']","['P', 'not_Q']",CORRECT,139,5,0
+42,T43,0,420042,"If the shape is convex, then the color is pink.","Rule: ""If the shape is convex, then the color is pink.""
+Cards: ['grey', 'concave', 'pink', 'convex']
+
+Which cards must you turn over?
+Your answer:","['grey', 'concave', 'pink', 'convex']","
+convex, grey","['convex', 'grey']","['P', 'not_Q']",CORRECT,138,5,0
+42,T43,1,420043,"If the shape is convex, then the color is pink.","Rule: ""If the shape is convex, then the color is pink.""
+Cards: ['grey', 'convex', 'pink', 'concave']
+
+Which cards must you turn over?
+Your answer:","['grey', 'convex', 'pink', 'concave']","
+convex, grey","['convex', 'grey']","['P', 'not_Q']",CORRECT,139,5,0
+42,T43,2,420044,"If the shape is convex, then the color is pink.","Rule: ""If the shape is convex, then the color is pink.""
+Cards: ['grey', 'convex', 'concave', 'pink']
+
+Which cards must you turn over?
+Your answer:","['grey', 'convex', 'concave', 'pink']","
+convex, grey","['convex', 'grey']","['P', 'not_Q']",CORRECT,139,5,0
+42,T43,3,420045,"If the shape is convex, then the color is pink.","Rule: ""If the shape is convex, then the color is pink.""
+Cards: ['pink', 'convex', 'concave', 'grey']
+
+Which cards must you turn over?
+Your answer:","['pink', 'convex', 'concave', 'grey']","convex, grey","['convex', 'grey']","['P', 'not_Q']",CORRECT,135,4,0
+42,T43,4,420046,"If the shape is convex, then the color is pink.","Rule: ""If the shape is convex, then the color is pink.""
+Cards: ['pink', 'grey', 'concave', 'convex']
+
+Which cards must you turn over?
+Your answer:","['pink', 'grey', 'concave', 'convex']","
+convex, grey","['convex', 'grey']","['P', 'not_Q']",CORRECT,139,5,0
+43,T44,0,430042,"If the letter is O, then the number is 10.","Rule: ""If the letter is O, then the number is 10.""
+Cards: ['O', 'D', '13', '10']
+
+Which cards must you turn over?
+Your answer:","['O', 'D', '13', '10']","
+O, 13","['O', '13']","['P', 'not_Q']",CORRECT,142,7,0
+43,T44,1,430043,"If the letter is O, then the number is 10.","Rule: ""If the letter is O, then the number is 10.""
+Cards: ['O', '13', '10', 'D']
+
+Which cards must you turn over?
+Your answer:","['O', '13', '10', 'D']","
+O, 10","['O', '10']","['P', 'Q']",MATCHING_BIAS,142,7,0
+43,T44,2,430044,"If the letter is O, then the number is 10.","Rule: ""If the letter is O, then the number is 10.""
+Cards: ['O', '10', 'D', '13']
+
+Which cards must you turn over?
+Your answer:","['O', '10', 'D', '13']","
+O, 10","['O', '10']","['P', 'Q']",MATCHING_BIAS,142,7,0
+43,T44,3,430045,"If the letter is O, then the number is 10.","Rule: ""If the letter is O, then the number is 10.""
+Cards: ['10', 'D', '13', 'O']
+
+Which cards must you turn over?
+Your answer:","['10', 'D', '13', 'O']","
+O, 10","['O', '10']","['P', 'Q']",MATCHING_BIAS,142,7,0
+43,T44,4,430046,"If the letter is O, then the number is 10.","Rule: ""If the letter is O, then the number is 10.""
+Cards: ['O', 'D', '10', '13']
+
+Which cards must you turn over?
+Your answer:","['O', 'D', '10', '13']","
+O, 10","['O', '10']","['P', 'Q']",MATCHING_BIAS,142,7,0
+44,T45,0,440042,"If the card is vertical, then the digit is 5.","Rule: ""If the card is vertical, then the digit is 5.""
+Cards: ['vertical', '2', 'horizontal', '5']
+
+Which cards must you turn over?
+Your answer:","['vertical', '2', 'horizontal', '5']","
+vertical, horizontal","['vertical', 'horizontal']","['P', 'not_P']",LOGIC_ERROR,139,5,0
+44,T45,1,440043,"If the card is vertical, then the digit is 5.","Rule: ""If the card is vertical, then the digit is 5.""
+Cards: ['vertical', '2', '5', 'horizontal']
+
+Which cards must you turn over?
+Your answer:","['vertical', '2', '5', 'horizontal']","
+vertical, 5","['vertical', '5']","['P', 'Q']",MATCHING_BIAS,139,6,0
+44,T45,2,440044,"If the card is vertical, then the digit is 5.","Rule: ""If the card is vertical, then the digit is 5.""
+Cards: ['2', '5', 'vertical', 'horizontal']
+
+Which cards must you turn over?
+Your answer:","['2', '5', 'vertical', 'horizontal']","
+vertical, 2","['vertical', '2']","['P', 'not_Q']",CORRECT,139,6,0
+44,T45,3,440045,"If the card is vertical, then the digit is 5.","Rule: ""If the card is vertical, then the digit is 5.""
+Cards: ['2', 'horizontal', '5', 'vertical']
+
+Which cards must you turn over?
+Your answer:","['2', 'horizontal', '5', 'vertical']","
+vertical, 2","['vertical', '2']","['P', 'not_Q']",CORRECT,139,6,0
+44,T45,4,440046,"If the card is vertical, then the digit is 5.","Rule: ""If the card is vertical, then the digit is 5.""
+Cards: ['2', 'vertical', 'horizontal', '5']
+
+Which cards must you turn over?
+Your answer:","['2', 'vertical', 'horizontal', '5']","vertical, 2","['vertical', '2']","['P', 'not_Q']",CORRECT,135,5,0
+45,T46,0,450042,"If the symbol is heart, then the number is 4.","Rule: ""If the symbol is heart, then the number is 4.""
+Cards: ['spade', '7', '4', 'heart']
+
+Which cards must you turn over?
+Your answer:","['spade', '7', '4', 'heart']","
+heart, 4","['heart', '4']","['P', 'Q']",MATCHING_BIAS,140,6,0
+45,T46,1,450043,"If the symbol is heart, then the number is 4.","Rule: ""If the symbol is heart, then the number is 4.""
+Cards: ['4', 'spade', '7', 'heart']
+
+Which cards must you turn over?
+Your answer:","['4', 'spade', '7', 'heart']","
+heart, 4","['heart', '4']","['P', 'Q']",MATCHING_BIAS,139,6,0
+45,T46,2,450044,"If the symbol is heart, then the number is 4.","Rule: ""If the symbol is heart, then the number is 4.""
+Cards: ['4', 'heart', 'spade', '7']
+
+Which cards must you turn over?
+Your answer:","['4', 'heart', 'spade', '7']","heart, 4","['heart', '4']","['P', 'Q']",MATCHING_BIAS,136,5,0
+45,T46,3,450045,"If the symbol is heart, then the number is 4.","Rule: ""If the symbol is heart, then the number is 4.""
+Cards: ['heart', '4', 'spade', '7']
+
+Which cards must you turn over?
+Your answer:","['heart', '4', 'spade', '7']","heart, 4","['heart', '4']","['P', 'Q']",MATCHING_BIAS,136,5,0
+45,T46,4,450046,"If the symbol is heart, then the number is 4.","Rule: ""If the symbol is heart, then the number is 4.""
+Cards: ['7', 'heart', '4', 'spade']
+
+Which cards must you turn over?
+Your answer:","['7', 'heart', '4', 'spade']","
+heart, 4","['heart', '4']","['P', 'Q']",MATCHING_BIAS,139,6,0
+46,T47,0,460042,"If the figure is dotted, then the shape is oval.","Rule: ""If the figure is dotted, then the shape is oval.""
+Cards: ['rhombus', 'striped', 'dotted', 'oval']
+
+Which cards must you turn over?
+Your answer:","['rhombus', 'striped', 'dotted', 'oval']","
+dotted, rhombus","['dotted', 'rhombus']","['P', 'not_Q']",CORRECT,140,5,0
+46,T47,1,460043,"If the figure is dotted, then the shape is oval.","Rule: ""If the figure is dotted, then the shape is oval.""
+Cards: ['oval', 'rhombus', 'striped', 'dotted']
+
+Which cards must you turn over?
+Your answer:","['oval', 'rhombus', 'striped', 'dotted']","dotted, rhombus","['dotted', 'rhombus']","['P', 'not_Q']",CORRECT,136,4,0
+46,T47,2,460044,"If the figure is dotted, then the shape is oval.","Rule: ""If the figure is dotted, then the shape is oval.""
+Cards: ['dotted', 'rhombus', 'striped', 'oval']
+
+Which cards must you turn over?
+Your answer:","['dotted', 'rhombus', 'striped', 'oval']","dotted, rhombus","['dotted', 'rhombus']","['P', 'not_Q']",CORRECT,136,4,0
+46,T47,3,460045,"If the figure is dotted, then the shape is oval.","Rule: ""If the figure is dotted, then the shape is oval.""
+Cards: ['rhombus', 'oval', 'striped', 'dotted']
+
+Which cards must you turn over?
+Your answer:","['rhombus', 'oval', 'striped', 'dotted']","
+rhombus, dotted","['rhombus', 'dotted']","['P', 'not_Q']",CORRECT,139,7,0
+46,T47,4,460046,"If the figure is dotted, then the shape is oval.","Rule: ""If the figure is dotted, then the shape is oval.""
+Cards: ['rhombus', 'oval', 'dotted', 'striped']
+
+Which cards must you turn over?
+Your answer:","['rhombus', 'oval', 'dotted', 'striped']","dotted, rhombus","['dotted', 'rhombus']","['P', 'not_Q']",CORRECT,136,4,0
+47,T48,0,470042,"If the card has a frame, then the center is empty.","Rule: ""If the card has a frame, then the center is empty.""
+Cards: ['unframed', 'framed', 'filled_center', 'empty_center']
+
+Which cards must you turn over?
+Your answer:","['unframed', 'framed', 'filled_center', 'empty_center']","
+framed, filled_center","['framed', 'filled_center']","['P', 'not_Q']",CORRECT,144,7,0
+47,T48,1,470043,"If the card has a frame, then the center is empty.","Rule: ""If the card has a frame, then the center is empty.""
+Cards: ['unframed', 'framed', 'empty_center', 'filled_center']
+
+Which cards must you turn over?
+Your answer:","['unframed', 'framed', 'empty_center', 'filled_center']","
+framed, filled_center","['framed', 'filled_center']","['P', 'not_Q']",CORRECT,144,7,0
+47,T48,2,470044,"If the card has a frame, then the center is empty.","Rule: ""If the card has a frame, then the center is empty.""
+Cards: ['unframed', 'empty_center', 'filled_center', 'framed']
+
+Which cards must you turn over?
+Your answer:","['unframed', 'empty_center', 'filled_center', 'framed']","
+framed, filled_center","['framed', 'filled_center']","['P', 'not_Q']",CORRECT,144,7,0
+47,T48,3,470045,"If the card has a frame, then the center is empty.","Rule: ""If the card has a frame, then the center is empty.""
+Cards: ['filled_center', 'unframed', 'empty_center', 'framed']
+
+Which cards must you turn over?
+Your answer:","['filled_center', 'unframed', 'empty_center', 'framed']","
+framed, filled_center","['framed', 'filled_center']","['P', 'not_Q']",CORRECT,144,7,0
+47,T48,4,470046,"If the card has a frame, then the center is empty.","Rule: ""If the card has a frame, then the center is empty.""
+Cards: ['framed', 'unframed', 'empty_center', 'filled_center']
+
+Which cards must you turn over?
+Your answer:","['framed', 'unframed', 'empty_center', 'filled_center']","
+framed, filled_center","['framed', 'filled_center']","['P', 'not_Q']",CORRECT,144,7,0
+48,T49,0,480042,"If the letter is U, then the digit is 2.","Rule: ""If the letter is U, then the digit is 2.""
+Cards: ['U', '2', '9', 'H']
+
+Which cards must you turn over?
+Your answer:","['U', '2', '9', 'H']","
+U, 9","['U', '9']","['P', 'not_Q']",CORRECT,139,6,0
+48,T49,1,480043,"If the letter is U, then the digit is 2.","Rule: ""If the letter is U, then the digit is 2.""
+Cards: ['9', '2', 'H', 'U']
+
+Which cards must you turn over?
+Your answer:","['9', '2', 'H', 'U']","
+U, 9","['U', '9']","['P', 'not_Q']",CORRECT,139,6,0
+48,T49,2,480044,"If the letter is U, then the digit is 2.","Rule: ""If the letter is U, then the digit is 2.""
+Cards: ['9', 'H', '2', 'U']
+
+Which cards must you turn over?
+Your answer:","['9', 'H', '2', 'U']","
+U, 9","['U', '9']","['P', 'not_Q']",CORRECT,139,6,0
+48,T49,3,480045,"If the letter is U, then the digit is 2.","Rule: ""If the letter is U, then the digit is 2.""
+Cards: ['U', 'H', '2', '9']
+
+Which cards must you turn over?
+Your answer:","['U', 'H', '2', '9']","
+U, 9","['U', '9']","['P', 'not_Q']",CORRECT,139,6,0
+48,T49,4,480046,"If the letter is U, then the digit is 2.","Rule: ""If the letter is U, then the digit is 2.""
+Cards: ['H', '9', 'U', '2']
+
+Which cards must you turn over?
+Your answer:","['H', '9', 'U', '2']","
+U, 9","['U', '9']","['P', 'not_Q']",CORRECT,139,6,0
+49,T50,0,490042,"If the letter is P, then the digit is 3.","Rule: ""If the letter is P, then the digit is 3.""
+Cards: ['8', '3', 'G', 'P']
+
+Which cards must you turn over?
+Your answer:","['8', '3', 'G', 'P']","
+P, 8","['P', '8']","['P', 'not_Q']",CORRECT,139,6,0
+49,T50,1,490043,"If the letter is P, then the digit is 3.","Rule: ""If the letter is P, then the digit is 3.""
+Cards: ['G', '8', 'P', '3']
+
+Which cards must you turn over?
+Your answer:","['G', '8', 'P', '3']","P, 8","['P', '8']","['P', 'not_Q']",CORRECT,135,5,0
+49,T50,2,490044,"If the letter is P, then the digit is 3.","Rule: ""If the letter is P, then the digit is 3.""
+Cards: ['3', 'G', '8', 'P']
+
+Which cards must you turn over?
+Your answer:","['3', 'G', '8', 'P']","
+P, 3","['P', '3']","['P', 'Q']",MATCHING_BIAS,138,6,0
+49,T50,3,490045,"If the letter is P, then the digit is 3.","Rule: ""If the letter is P, then the digit is 3.""
+Cards: ['P', 'G', '3', '8']
+
+Which cards must you turn over?
+Your answer:","['P', 'G', '3', '8']","
+P, 8","['P', '8']","['P', 'not_Q']",CORRECT,139,6,0
+49,T50,4,490046,"If the letter is P, then the digit is 3.","Rule: ""If the letter is P, then the digit is 3.""
+Cards: ['G', '3', 'P', '8']
+
+Which cards must you turn over?
+Your answer:","['G', '3', 'P', '8']","
+P, 3","['P', '3']","['P', 'Q']",MATCHING_BIAS,139,6,0
+50,T51,0,500042,"If the card has a cross, then the number is 12.","Rule: ""If the card has a cross, then the number is 12.""
+Cards: ['7', '12', 'cross', 'check']
+
+Which cards must you turn over?
+Your answer:","['7', '12', 'cross', 'check']","
+cross, 7","['cross', '7']","['P', 'not_Q']",CORRECT,142,6,0
+50,T51,1,500043,"If the card has a cross, then the number is 12.","Rule: ""If the card has a cross, then the number is 12.""
+Cards: ['check', '7', '12', 'cross']
+
+Which cards must you turn over?
+Your answer:","['check', '7', '12', 'cross']","
+cross, 12","['cross', '12']","['P', 'Q']",MATCHING_BIAS,142,7,0
+50,T51,2,500044,"If the card has a cross, then the number is 12.","Rule: ""If the card has a cross, then the number is 12.""
+Cards: ['12', 'check', 'cross', '7']
+
+Which cards must you turn over?
+Your answer:","['12', 'check', 'cross', '7']","
+cross, 12","['cross', '12']","['P', 'Q']",MATCHING_BIAS,141,7,0
+50,T51,3,500045,"If the card has a cross, then the number is 12.","Rule: ""If the card has a cross, then the number is 12.""
+Cards: ['cross', '7', 'check', '12']
+
+Which cards must you turn over?
+Your answer:","['cross', '7', 'check', '12']","
+cross, 7","['cross', '7']","['P', 'not_Q']",CORRECT,142,6,0
+50,T51,4,500046,"If the card has a cross, then the number is 12.","Rule: ""If the card has a cross, then the number is 12.""
+Cards: ['12', 'cross', 'check', '7']
+
+Which cards must you turn over?
+Your answer:","['12', 'cross', 'check', '7']","
+cross, 12","['cross', '12']","['P', 'Q']",MATCHING_BIAS,142,7,0
+51,T52,0,510042,"If the shape is symmetric, then the color is cyan.","Rule: ""If the shape is symmetric, then the color is cyan.""
+Cards: ['asymmetric', 'symmetric', 'magenta', 'cyan']
+
+Which cards must you turn over?
+Your answer:","['asymmetric', 'symmetric', 'magenta', 'cyan']","
+symmetric, magenta","['symmetric', 'magenta']","['P', 'not_Q']",CORRECT,139,5,0
+51,T52,1,510043,"If the shape is symmetric, then the color is cyan.","Rule: ""If the shape is symmetric, then the color is cyan.""
+Cards: ['asymmetric', 'symmetric', 'cyan', 'magenta']
+
+Which cards must you turn over?
+Your answer:","['asymmetric', 'symmetric', 'cyan', 'magenta']","symmetric, asymmetric","['symmetric', 'asymmetric']","['P', 'not_P']",LOGIC_ERROR,135,4,0
+51,T52,2,510044,"If the shape is symmetric, then the color is cyan.","Rule: ""If the shape is symmetric, then the color is cyan.""
+Cards: ['asymmetric', 'magenta', 'symmetric', 'cyan']
+
+Which cards must you turn over?
+Your answer:","['asymmetric', 'magenta', 'symmetric', 'cyan']","
+asymmetric, symmetric","['asymmetric', 'symmetric']","['P', 'not_P']",LOGIC_ERROR,139,6,0
+51,T52,3,510045,"If the shape is symmetric, then the color is cyan.","Rule: ""If the shape is symmetric, then the color is cyan.""
+Cards: ['magenta', 'asymmetric', 'symmetric', 'cyan']
+
+Which cards must you turn over?
+Your answer:","['magenta', 'asymmetric', 'symmetric', 'cyan']","
+symmetric, magenta","['symmetric', 'magenta']","['P', 'not_Q']",CORRECT,139,5,0
+51,T52,4,510046,"If the shape is symmetric, then the color is cyan.","Rule: ""If the shape is symmetric, then the color is cyan.""
+Cards: ['cyan', 'symmetric', 'magenta', 'asymmetric']
+
+Which cards must you turn over?
+Your answer:","['cyan', 'symmetric', 'magenta', 'asymmetric']","
+symmetric, magenta","['symmetric', 'magenta']","['P', 'not_Q']",CORRECT,139,5,0
+52,T53,0,520042,"If the digit is 4, then the symbol is moon.","Rule: ""If the digit is 4, then the symbol is moon.""
+Cards: ['moon', 'sun', '4', '9']
+
+Which cards must you turn over?
+Your answer:","['moon', 'sun', '4', '9']","
+4, moon","['4', 'moon']","['P', 'Q']",MATCHING_BIAS,139,5,0
+52,T53,1,520043,"If the digit is 4, then the symbol is moon.","Rule: ""If the digit is 4, then the symbol is moon.""
+Cards: ['9', '4', 'sun', 'moon']
+
+Which cards must you turn over?
+Your answer:","['9', '4', 'sun', 'moon']","4, sun","['4', 'sun']","['P', 'not_Q']",CORRECT,135,4,0
+52,T53,2,520044,"If the digit is 4, then the symbol is moon.","Rule: ""If the digit is 4, then the symbol is moon.""
+Cards: ['4', '9', 'sun', 'moon']
+
+Which cards must you turn over?
+Your answer:","['4', '9', 'sun', 'moon']","
+4, sun","['4', 'sun']","['P', 'not_Q']",CORRECT,139,5,0
+52,T53,3,520045,"If the digit is 4, then the symbol is moon.","Rule: ""If the digit is 4, then the symbol is moon.""
+Cards: ['9', 'sun', '4', 'moon']
+
+Which cards must you turn over?
+Your answer:","['9', 'sun', '4', 'moon']","
+4, 9","['4', '9']","['P', 'not_P']",LOGIC_ERROR,139,6,0
+52,T53,4,520046,"If the digit is 4, then the symbol is moon.","Rule: ""If the digit is 4, then the symbol is moon.""
+Cards: ['4', 'moon', '9', 'sun']
+
+Which cards must you turn over?
+Your answer:","['4', 'moon', '9', 'sun']","
+4, sun","['4', 'sun']","['P', 'not_Q']",CORRECT,139,5,0
+53,T54,0,530042,"If the figure is outlined, then the number is 15.","Rule: ""If the figure is outlined, then the number is 15.""
+Cards: ['15', 'outlined', '11', 'filled']
+
+Which cards must you turn over?
+Your answer:","['15', 'outlined', '11', 'filled']","
+outlined, 15","['outlined', '15']","['P', 'Q']",MATCHING_BIAS,142,7,0
+53,T54,1,530043,"If the figure is outlined, then the number is 15.","Rule: ""If the figure is outlined, then the number is 15.""
+Cards: ['filled', 'outlined', '11', '15']
+
+Which cards must you turn over?
+Your answer:","['filled', 'outlined', '11', '15']","
+outlined, 11","['outlined', '11']","['P', 'not_Q']",CORRECT,142,7,0
+53,T54,2,530044,"If the figure is outlined, then the number is 15.","Rule: ""If the figure is outlined, then the number is 15.""
+Cards: ['outlined', 'filled', '11', '15']
+
+Which cards must you turn over?
+Your answer:","['outlined', 'filled', '11', '15']","
+outlined, 11","['outlined', '11']","['P', 'not_Q']",CORRECT,142,7,0
+53,T54,3,530045,"If the figure is outlined, then the number is 15.","Rule: ""If the figure is outlined, then the number is 15.""
+Cards: ['11', 'outlined', '15', 'filled']
+
+Which cards must you turn over?
+Your answer:","['11', 'outlined', '15', 'filled']","
+outlined, 11","['outlined', '11']","['P', 'not_Q']",CORRECT,141,7,0
+53,T54,4,530046,"If the figure is outlined, then the number is 15.","Rule: ""If the figure is outlined, then the number is 15.""
+Cards: ['15', 'filled', 'outlined', '11']
+
+Which cards must you turn over?
+Your answer:","['15', 'filled', 'outlined', '11']","
+outlined, 15","['outlined', '15']","['P', 'Q']",MATCHING_BIAS,142,7,0
+54,T55,0,540042,"If the letter is R, then the color is violet.","Rule: ""If the letter is R, then the color is violet.""
+Cards: ['teal', 'R', 'S', 'violet']
+
+Which cards must you turn over?
+Your answer:","['teal', 'R', 'S', 'violet']","
+R, teal","['R', 'teal']","['P', 'not_Q']",CORRECT,138,5,0
+54,T55,1,540043,"If the letter is R, then the color is violet.","Rule: ""If the letter is R, then the color is violet.""
+Cards: ['S', 'R', 'teal', 'violet']
+
+Which cards must you turn over?
+Your answer:","['S', 'R', 'teal', 'violet']","
+R, S","['R', 'S']","['P', 'not_P']",LOGIC_ERROR,138,5,0
+54,T55,2,540044,"If the letter is R, then the color is violet.","Rule: ""If the letter is R, then the color is violet.""
+Cards: ['violet', 'R', 'teal', 'S']
+
+Which cards must you turn over?
+Your answer:","['violet', 'R', 'teal', 'S']","
+R, violet","['R', 'violet']","['P', 'Q']",MATCHING_BIAS,138,5,0
+54,T55,3,540045,"If the letter is R, then the color is violet.","Rule: ""If the letter is R, then the color is violet.""
+Cards: ['violet', 'S', 'teal', 'R']
+
+Which cards must you turn over?
+Your answer:","['violet', 'S', 'teal', 'R']","
+R, violet","['R', 'violet']","['P', 'Q']",MATCHING_BIAS,138,5,0
+54,T55,4,540046,"If the letter is R, then the color is violet.","Rule: ""If the letter is R, then the color is violet.""
+Cards: ['S', 'violet', 'teal', 'R']
+
+Which cards must you turn over?
+Your answer:","['S', 'violet', 'teal', 'R']","
+R, S","['R', 'S']","['P', 'not_P']",LOGIC_ERROR,138,5,0
+55,T56,0,550042,"If the card has a wavy border, then the digit is 7.","Rule: ""If the card has a wavy border, then the digit is 7.""
+Cards: ['7', 'wavy', 'straight', '4']
+
+Which cards must you turn over?
+Your answer:","['7', 'wavy', 'straight', '4']","
+wavy, 4","['wavy', '4']","['P', 'not_Q']",CORRECT,142,7,0
+55,T56,1,550043,"If the card has a wavy border, then the digit is 7.","Rule: ""If the card has a wavy border, then the digit is 7.""
+Cards: ['4', '7', 'straight', 'wavy']
+
+Which cards must you turn over?
+Your answer:","['4', '7', 'straight', 'wavy']","
+wavy, 4","['wavy', '4']","['P', 'not_Q']",CORRECT,142,7,0
+55,T56,2,550044,"If the card has a wavy border, then the digit is 7.","Rule: ""If the card has a wavy border, then the digit is 7.""
+Cards: ['wavy', '7', '4', 'straight']
+
+Which cards must you turn over?
+Your answer:","['wavy', '7', '4', 'straight']","
+wavy, 4","['wavy', '4']","['P', 'not_Q']",CORRECT,142,7,0
+55,T56,3,550045,"If the card has a wavy border, then the digit is 7.","Rule: ""If the card has a wavy border, then the digit is 7.""
+Cards: ['straight', '7', '4', 'wavy']
+
+Which cards must you turn over?
+Your answer:","['straight', '7', '4', 'wavy']","
+wavy, 4","['wavy', '4']","['P', 'not_Q']",CORRECT,142,7,0
+55,T56,4,550046,"If the card has a wavy border, then the digit is 7.","Rule: ""If the card has a wavy border, then the digit is 7.""
+Cards: ['wavy', '7', 'straight', '4']
+
+Which cards must you turn over?
+Your answer:","['wavy', '7', 'straight', '4']","
+wavy, 4","['wavy', '4']","['P', 'not_Q']",CORRECT,142,7,0
+56,T57,0,560042,"If the number is 16, then the shape is parallelogram.","Rule: ""If the number is 16, then the shape is parallelogram.""
+Cards: ['parallelogram', 'trapezoid', '16', '11']
+
+Which cards must you turn over?
+Your answer:","['parallelogram', 'trapezoid', '16', '11']","
+16, trapezoid","['16', 'trapezoid']","['P', 'not_Q']",CORRECT,145,7,0
+56,T57,1,560043,"If the number is 16, then the shape is parallelogram.","Rule: ""If the number is 16, then the shape is parallelogram.""
+Cards: ['trapezoid', 'parallelogram', '16', '11']
+
+Which cards must you turn over?
+Your answer:","['trapezoid', 'parallelogram', '16', '11']","
+16, trapezoid","['16', 'trapezoid']","['P', 'not_Q']",CORRECT,145,7,0
+56,T57,2,560044,"If the number is 16, then the shape is parallelogram.","Rule: ""If the number is 16, then the shape is parallelogram.""
+Cards: ['trapezoid', '16', 'parallelogram', '11']
+
+Which cards must you turn over?
+Your answer:","['trapezoid', '16', 'parallelogram', '11']","
+16, trapezoid","['16', 'trapezoid']","['P', 'not_Q']",CORRECT,145,7,0
+56,T57,3,560045,"If the number is 16, then the shape is parallelogram.","Rule: ""If the number is 16, then the shape is parallelogram.""
+Cards: ['16', 'trapezoid', '11', 'parallelogram']
+
+Which cards must you turn over?
+Your answer:","['16', 'trapezoid', '11', 'parallelogram']","
+16, trapezoid","['16', 'trapezoid']","['P', 'not_Q']",CORRECT,145,7,0
+56,T57,4,560046,"If the number is 16, then the shape is parallelogram.","Rule: ""If the number is 16, then the shape is parallelogram.""
+Cards: ['parallelogram', 'trapezoid', '11', '16']
+
+Which cards must you turn over?
+Your answer:","['parallelogram', 'trapezoid', '11', '16']","
+16, parallelogram","['16', 'parallelogram']","['P', 'Q']",MATCHING_BIAS,145,6,0
+57,T58,0,570042,"If the symbol is flag, then the letter is C.","Rule: ""If the symbol is flag, then the letter is C.""
+Cards: ['flag', 'anchor', 'C', 'J']
+
+Which cards must you turn over?
+Your answer:","['flag', 'anchor', 'C', 'J']","
+flag, J","['flag', 'J']","['P', 'not_Q']",CORRECT,137,5,0
+57,T58,1,570043,"If the symbol is flag, then the letter is C.","Rule: ""If the symbol is flag, then the letter is C.""
+Cards: ['C', 'anchor', 'J', 'flag']
+
+Which cards must you turn over?
+Your answer:","['C', 'anchor', 'J', 'flag']","
+flag, C","['flag', 'C']","['P', 'Q']",MATCHING_BIAS,138,5,0
+57,T58,2,570044,"If the symbol is flag, then the letter is C.","Rule: ""If the symbol is flag, then the letter is C.""
+Cards: ['J', 'anchor', 'flag', 'C']
+
+Which cards must you turn over?
+Your answer:","['J', 'anchor', 'flag', 'C']","flag, J","['flag', 'J']","['P', 'not_Q']",CORRECT,134,4,0
+57,T58,3,570045,"If the symbol is flag, then the letter is C.","Rule: ""If the symbol is flag, then the letter is C.""
+Cards: ['J', 'C', 'flag', 'anchor']
+
+Which cards must you turn over?
+Your answer:","['J', 'C', 'flag', 'anchor']","
+flag, J","['flag', 'J']","['P', 'not_Q']",CORRECT,138,5,0
+57,T58,4,570046,"If the symbol is flag, then the letter is C.","Rule: ""If the symbol is flag, then the letter is C.""
+Cards: ['C', 'anchor', 'flag', 'J']
+
+Which cards must you turn over?
+Your answer:","['C', 'anchor', 'flag', 'J']","
+flag, C","['flag', 'C']","['P', 'Q']",MATCHING_BIAS,138,5,0
+58,T59,0,580042,"If the pattern is checkerboard, then the number is 64.","Rule: ""If the pattern is checkerboard, then the number is 64.""
+Cards: ['striped', '32', 'checkerboard', '64']
+
+Which cards must you turn over?
+Your answer:","['striped', '32', 'checkerboard', '64']","
+checkerboard, 32","['checkerboard', '32']","['P', 'not_Q']",CORRECT,144,8,0
+58,T59,1,580043,"If the pattern is checkerboard, then the number is 64.","Rule: ""If the pattern is checkerboard, then the number is 64.""
+Cards: ['striped', '64', '32', 'checkerboard']
+
+Which cards must you turn over?
+Your answer:","['striped', '64', '32', 'checkerboard']","
+checkerboard, 64","['checkerboard', '64']","['P', 'Q']",MATCHING_BIAS,144,8,0
+58,T59,2,580044,"If the pattern is checkerboard, then the number is 64.","Rule: ""If the pattern is checkerboard, then the number is 64.""
+Cards: ['32', 'striped', '64', 'checkerboard']
+
+Which cards must you turn over?
+Your answer:","['32', 'striped', '64', 'checkerboard']","
+checkerboard, 64","['checkerboard', '64']","['P', 'Q']",MATCHING_BIAS,144,8,0
+58,T59,3,580045,"If the pattern is checkerboard, then the number is 64.","Rule: ""If the pattern is checkerboard, then the number is 64.""
+Cards: ['32', 'striped', 'checkerboard', '64']
+
+Which cards must you turn over?
+Your answer:","['32', 'striped', 'checkerboard', '64']","
+checkerboard, 32","['checkerboard', '32']","['P', 'not_Q']",CORRECT,144,8,0
+58,T59,4,580046,"If the pattern is checkerboard, then the number is 64.","Rule: ""If the pattern is checkerboard, then the number is 64.""
+Cards: ['striped', 'checkerboard', '64', '32']
+
+Which cards must you turn over?
+Your answer:","['striped', 'checkerboard', '64', '32']","
+checkerboard, 32","['checkerboard', '32']","['P', 'not_Q']",CORRECT,144,8,0
+59,T60,0,590042,"If the shape is spiral, then the color is maroon.","Rule: ""If the shape is spiral, then the color is maroon.""
+Cards: ['zigzag', 'lime', 'spiral', 'maroon']
+
+Which cards must you turn over?
+Your answer:","['zigzag', 'lime', 'spiral', 'maroon']","spiral, zigzag","['spiral', 'zigzag']","['P', 'not_P']",LOGIC_ERROR,135,4,0
+59,T60,1,590043,"If the shape is spiral, then the color is maroon.","Rule: ""If the shape is spiral, then the color is maroon.""
+Cards: ['lime', 'zigzag', 'maroon', 'spiral']
+
+Which cards must you turn over?
+Your answer:","['lime', 'zigzag', 'maroon', 'spiral']","
+spiral, lime","['spiral', 'lime']","['P', 'not_Q']",CORRECT,139,5,0
+59,T60,2,590044,"If the shape is spiral, then the color is maroon.","Rule: ""If the shape is spiral, then the color is maroon.""
+Cards: ['maroon', 'spiral', 'lime', 'zigzag']
+
+Which cards must you turn over?
+Your answer:","['maroon', 'spiral', 'lime', 'zigzag']","
+spiral, maroon","['spiral', 'maroon']","['P', 'Q']",MATCHING_BIAS,139,5,0
+59,T60,3,590045,"If the shape is spiral, then the color is maroon.","Rule: ""If the shape is spiral, then the color is maroon.""
+Cards: ['spiral', 'zigzag', 'maroon', 'lime']
+
+Which cards must you turn over?
+Your answer:","['spiral', 'zigzag', 'maroon', 'lime']","spiral, zigzag, maroon","['spiral', 'zigzag', 'maroon']","['P', 'Q', 'not_P']",LOGIC_ERROR,135,6,0
+59,T60,4,590046,"If the shape is spiral, then the color is maroon.","Rule: ""If the shape is spiral, then the color is maroon.""
+Cards: ['zigzag', 'maroon', 'lime', 'spiral']
+
+Which cards must you turn over?
+Your answer:","['zigzag', 'maroon', 'lime', 'spiral']","
+spiral, zigzag","['spiral', 'zigzag']","['P', 'not_P']",LOGIC_ERROR,139,5,0
+60,T61,0,600042,"If the card has a star, then the number is 5.","Rule: ""If the card has a star, then the number is 5.""
+Cards: ['8', '5', 'moon', 'star']
+
+Which cards must you turn over?
+Your answer:","['8', '5', 'moon', 'star']","
+star, 8","['star', '8']","['P', 'not_Q']",CORRECT,140,6,0
+60,T61,1,600043,"If the card has a star, then the number is 5.","Rule: ""If the card has a star, then the number is 5.""
+Cards: ['moon', '8', 'star', '5']
+
+Which cards must you turn over?
+Your answer:","['moon', '8', 'star', '5']","
+star, 8","['star', '8']","['P', 'not_Q']",CORRECT,140,6,0
+60,T61,2,600044,"If the card has a star, then the number is 5.","Rule: ""If the card has a star, then the number is 5.""
+Cards: ['moon', 'star', '8', '5']
+
+Which cards must you turn over?
+Your answer:","['moon', 'star', '8', '5']","
+star, 8","['star', '8']","['P', 'not_Q']",CORRECT,140,6,0
+60,T61,3,600045,"If the card has a star, then the number is 5.","Rule: ""If the card has a star, then the number is 5.""
+Cards: ['star', 'moon', '8', '5']
+
+Which cards must you turn over?
+Your answer:","['star', 'moon', '8', '5']","
+star, 8","['star', '8']","['P', 'not_Q']",CORRECT,140,6,0
+60,T61,4,600046,"If the card has a star, then the number is 5.","Rule: ""If the card has a star, then the number is 5.""
+Cards: ['5', 'star', '8', 'moon']
+
+Which cards must you turn over?
+Your answer:","['5', 'star', '8', 'moon']","star, 8","['star', '8']","['P', 'not_Q']",CORRECT,136,5,0
+61,T62,0,610042,"If the digit is 2, then the letter is J.","Rule: ""If the digit is 2, then the letter is J.""
+Cards: ['2', 'X', '7', 'J']
+
+Which cards must you turn over?
+Your answer:","['2', 'X', '7', 'J']","
+2, X","['2', 'X']","['P', 'not_Q']",CORRECT,139,5,0
+61,T62,1,610043,"If the digit is 2, then the letter is J.","Rule: ""If the digit is 2, then the letter is J.""
+Cards: ['7', 'J', '2', 'X']
+
+Which cards must you turn over?
+Your answer:","['7', 'J', '2', 'X']","
+2, J","['2', 'J']","['P', 'Q']",MATCHING_BIAS,139,5,0
+61,T62,2,610044,"If the digit is 2, then the letter is J.","Rule: ""If the digit is 2, then the letter is J.""
+Cards: ['7', 'J', 'X', '2']
+
+Which cards must you turn over?
+Your answer:","['7', 'J', 'X', '2']","
+2, J","['2', 'J']","['P', 'Q']",MATCHING_BIAS,139,5,0
+61,T62,3,610045,"If the digit is 2, then the letter is J.","Rule: ""If the digit is 2, then the letter is J.""
+Cards: ['2', 'X', 'J', '7']
+
+Which cards must you turn over?
+Your answer:","['2', 'X', 'J', '7']","
+2, J","['2', 'J']","['P', 'Q']",MATCHING_BIAS,138,5,0
+61,T62,4,610046,"If the digit is 2, then the letter is J.","Rule: ""If the digit is 2, then the letter is J.""
+Cards: ['X', '7', 'J', '2']
+
+Which cards must you turn over?
+Your answer:","['X', '7', 'J', '2']","
+",[],[],NOISE,139,1,0
+62,T63,0,620042,"If the figure is transparent, then the border is double.","Rule: ""If the figure is transparent, then the border is double.""
+Cards: ['single', 'opaque', 'double', 'transparent']
+
+Which cards must you turn over?
+Your answer:","['single', 'opaque', 'double', 'transparent']","
+transparent, single","['transparent', 'single']","['P', 'not_Q']",CORRECT,137,5,0
+62,T63,1,620043,"If the figure is transparent, then the border is double.","Rule: ""If the figure is transparent, then the border is double.""
+Cards: ['transparent', 'double', 'single', 'opaque']
+
+Which cards must you turn over?
+Your answer:","['transparent', 'double', 'single', 'opaque']","transparent, single","['transparent', 'single']","['P', 'not_Q']",CORRECT,134,4,0
+62,T63,2,620044,"If the figure is transparent, then the border is double.","Rule: ""If the figure is transparent, then the border is double.""
+Cards: ['opaque', 'double', 'transparent', 'single']
+
+Which cards must you turn over?
+Your answer:","['opaque', 'double', 'transparent', 'single']","
+transparent, single","['transparent', 'single']","['P', 'not_Q']",CORRECT,137,5,0
+62,T63,3,620045,"If the figure is transparent, then the border is double.","Rule: ""If the figure is transparent, then the border is double.""
+Cards: ['double', 'transparent', 'single', 'opaque']
+
+Which cards must you turn over?
+Your answer:","['double', 'transparent', 'single', 'opaque']","transparent, single","['transparent', 'single']","['P', 'not_Q']",CORRECT,134,4,0
+62,T63,4,620046,"If the figure is transparent, then the border is double.","Rule: ""If the figure is transparent, then the border is double.""
+Cards: ['double', 'single', 'opaque', 'transparent']
+
+Which cards must you turn over?
+Your answer:","['double', 'single', 'opaque', 'transparent']","transparent, single","['transparent', 'single']","['P', 'not_Q']",CORRECT,134,4,0
+63,T64,0,630042,"If the letter is N, then the number is 14.","Rule: ""If the letter is N, then the number is 14.""
+Cards: ['9', 'N', '14', 'V']
+
+Which cards must you turn over?
+Your answer:","['9', 'N', '14', 'V']","
+N, 14","['N', '14']","['P', 'Q']",MATCHING_BIAS,141,7,0
+63,T64,1,630043,"If the letter is N, then the number is 14.","Rule: ""If the letter is N, then the number is 14.""
+Cards: ['14', '9', 'V', 'N']
+
+Which cards must you turn over?
+Your answer:","['14', '9', 'V', 'N']","
+N, 14","['N', '14']","['P', 'Q']",MATCHING_BIAS,141,7,0
+63,T64,2,630044,"If the letter is N, then the number is 14.","Rule: ""If the letter is N, then the number is 14.""
+Cards: ['V', '14', 'N', '9']
+
+Which cards must you turn over?
+Your answer:","['V', '14', 'N', '9']","N, 14","['N', '14']","['P', 'Q']",MATCHING_BIAS,137,6,0
+63,T64,3,630045,"If the letter is N, then the number is 14.","Rule: ""If the letter is N, then the number is 14.""
+Cards: ['V', 'N', '9', '14']
+
+Which cards must you turn over?
+Your answer:","['V', 'N', '9', '14']","N, 14","['N', '14']","['P', 'Q']",MATCHING_BIAS,137,6,0
+63,T64,4,630046,"If the letter is N, then the number is 14.","Rule: ""If the letter is N, then the number is 14.""
+Cards: ['N', '9', 'V', '14']
+
+Which cards must you turn over?
+Your answer:","['N', '9', 'V', '14']","N, 14","['N', '14']","['P', 'Q']",MATCHING_BIAS,137,6,0
+64,T65,0,640042,"If the symbol is cube, then the digit is 3.","Rule: ""If the symbol is cube, then the digit is 3.""
+Cards: ['8', 'sphere', 'cube', '3']
+
+Which cards must you turn over?
+Your answer:","['8', 'sphere', 'cube', '3']","
+cube, 8","['cube', '8']","['P', 'not_Q']",CORRECT,139,6,0
+64,T65,1,640043,"If the symbol is cube, then the digit is 3.","Rule: ""If the symbol is cube, then the digit is 3.""
+Cards: ['8', 'sphere', '3', 'cube']
+
+Which cards must you turn over?
+Your answer:","['8', 'sphere', '3', 'cube']","cube, 8","['cube', '8']","['P', 'not_Q']",CORRECT,135,5,0
+64,T65,2,640044,"If the symbol is cube, then the digit is 3.","Rule: ""If the symbol is cube, then the digit is 3.""
+Cards: ['8', 'cube', '3', 'sphere']
+
+Which cards must you turn over?
+Your answer:","['8', 'cube', '3', 'sphere']","cube, 8","['cube', '8']","['P', 'not_Q']",CORRECT,135,5,0
+64,T65,3,640045,"If the symbol is cube, then the digit is 3.","Rule: ""If the symbol is cube, then the digit is 3.""
+Cards: ['sphere', '8', 'cube', '3']
+
+Which cards must you turn over?
+Your answer:","['sphere', '8', 'cube', '3']","
+cube, 8","['cube', '8']","['P', 'not_Q']",CORRECT,139,6,0
+64,T65,4,640046,"If the symbol is cube, then the digit is 3.","Rule: ""If the symbol is cube, then the digit is 3.""
+Cards: ['8', 'cube', 'sphere', '3']
+
+Which cards must you turn over?
+Your answer:","['8', 'cube', 'sphere', '3']","cube, 8","['cube', '8']","['P', 'not_Q']",CORRECT,135,5,0
+65,T66,0,650042,"If the card is rotated, then the color is silver.","Rule: ""If the card is rotated, then the color is silver.""
+Cards: ['gold', 'silver', 'upright', 'rotated']
+
+Which cards must you turn over?
+Your answer:","['gold', 'silver', 'upright', 'rotated']","
+rotated, upright","['rotated', 'upright']","['P', 'not_P']",LOGIC_ERROR,138,5,0
+65,T66,1,650043,"If the card is rotated, then the color is silver.","Rule: ""If the card is rotated, then the color is silver.""
+Cards: ['upright', 'gold', 'silver', 'rotated']
+
+Which cards must you turn over?
+Your answer:","['upright', 'gold', 'silver', 'rotated']","
+rotated, upright","['rotated', 'upright']","['P', 'not_P']",LOGIC_ERROR,139,5,0
+65,T66,2,650044,"If the card is rotated, then the color is silver.","Rule: ""If the card is rotated, then the color is silver.""
+Cards: ['rotated', 'silver', 'upright', 'gold']
+
+Which cards must you turn over?
+Your answer:","['rotated', 'silver', 'upright', 'gold']","
+rotated, upright","['rotated', 'upright']","['P', 'not_P']",LOGIC_ERROR,139,5,0
+65,T66,3,650045,"If the card is rotated, then the color is silver.","Rule: ""If the card is rotated, then the color is silver.""
+Cards: ['upright', 'silver', 'rotated', 'gold']
+
+Which cards must you turn over?
+Your answer:","['upright', 'silver', 'rotated', 'gold']","
+rotated, upright","['rotated', 'upright']","['P', 'not_P']",LOGIC_ERROR,138,5,0
+65,T66,4,650046,"If the card is rotated, then the color is silver.","Rule: ""If the card is rotated, then the color is silver.""
+Cards: ['upright', 'rotated', 'silver', 'gold']
+
+Which cards must you turn over?
+Your answer:","['upright', 'rotated', 'silver', 'gold']","
+rotated, upright","['rotated', 'upright']","['P', 'not_P']",LOGIC_ERROR,139,5,0
+66,T67,0,660042,"If the number is 20, then the shape is rhombus.","Rule: ""If the number is 20, then the shape is rhombus.""
+Cards: ['15', 'ellipse', '20', 'rhombus']
+
+Which cards must you turn over?
+Your answer:","['15', 'ellipse', '20', 'rhombus']","
+15, 20, ellipse","['15', '20', 'ellipse']","['P', 'not_P', 'not_Q']",LOGIC_ERROR,143,10,0
+66,T67,1,660043,"If the number is 20, then the shape is rhombus.","Rule: ""If the number is 20, then the shape is rhombus.""
+Cards: ['ellipse', '20', 'rhombus', '15']
+
+Which cards must you turn over?
+Your answer:","['ellipse', '20', 'rhombus', '15']","20, 15","['20', '15']","['P', 'not_P']",LOGIC_ERROR,140,7,0
+66,T67,2,660044,"If the number is 20, then the shape is rhombus.","Rule: ""If the number is 20, then the shape is rhombus.""
+Cards: ['rhombus', '20', 'ellipse', '15']
+
+Which cards must you turn over?
+Your answer:","['rhombus', '20', 'ellipse', '15']","
+20, ellipse","['20', 'ellipse']","['P', 'not_Q']",CORRECT,143,6,0
+66,T67,3,660045,"If the number is 20, then the shape is rhombus.","Rule: ""If the number is 20, then the shape is rhombus.""
+Cards: ['rhombus', 'ellipse', '15', '20']
+
+Which cards must you turn over?
+Your answer:","['rhombus', 'ellipse', '15', '20']","20, ellipse","['20', 'ellipse']","['P', 'not_Q']",CORRECT,140,5,0
+66,T67,4,660046,"If the number is 20, then the shape is rhombus.","Rule: ""If the number is 20, then the shape is rhombus.""
+Cards: ['15', '20', 'ellipse', 'rhombus']
+
+Which cards must you turn over?
+Your answer:","['15', '20', 'ellipse', 'rhombus']","20, ellipse","['20', 'ellipse']","['P', 'not_Q']",CORRECT,140,5,0
+67,T68,0,670042,"If the pattern is dotted, then the letter is Q.","Rule: ""If the pattern is dotted, then the letter is Q.""
+Cards: ['dotted', 'crosshatched', 'Q', 'Y']
+
+Which cards must you turn over?
+Your answer:","['dotted', 'crosshatched', 'Q', 'Y']","dotted, Y","['dotted', 'Y']","['P', 'not_Q']",CORRECT,136,4,0
+67,T68,1,670043,"If the pattern is dotted, then the letter is Q.","Rule: ""If the pattern is dotted, then the letter is Q.""
+Cards: ['Q', 'dotted', 'Y', 'crosshatched']
+
+Which cards must you turn over?
+Your answer:","['Q', 'dotted', 'Y', 'crosshatched']","
+dotted, Q","['dotted', 'Q']","['P', 'Q']",MATCHING_BIAS,140,5,0
+67,T68,2,670044,"If the pattern is dotted, then the letter is Q.","Rule: ""If the pattern is dotted, then the letter is Q.""
+Cards: ['crosshatched', 'dotted', 'Q', 'Y']
+
+Which cards must you turn over?
+Your answer:","['crosshatched', 'dotted', 'Q', 'Y']","
+dotted, Y","['dotted', 'Y']","['P', 'not_Q']",CORRECT,140,5,0
+67,T68,3,670045,"If the pattern is dotted, then the letter is Q.","Rule: ""If the pattern is dotted, then the letter is Q.""
+Cards: ['dotted', 'Q', 'crosshatched', 'Y']
+
+Which cards must you turn over?
+Your answer:","['dotted', 'Q', 'crosshatched', 'Y']","
+dotted, Y","['dotted', 'Y']","['P', 'not_Q']",CORRECT,139,5,0
+67,T68,4,670046,"If the pattern is dotted, then the letter is Q.","Rule: ""If the pattern is dotted, then the letter is Q.""
+Cards: ['crosshatched', 'Y', 'Q', 'dotted']
+
+Which cards must you turn over?
+Your answer:","['crosshatched', 'Y', 'Q', 'dotted']","
+crosshatched, dotted","['crosshatched', 'dotted']","['P', 'not_P']",LOGIC_ERROR,140,7,0
+68,T69,0,680042,"If the digit is 8, then the symbol is infinity.","Rule: ""If the digit is 8, then the symbol is infinity.""
+Cards: ['3', 'infinity', 'theta', '8']
+
+Which cards must you turn over?
+Your answer:","['3', 'infinity', 'theta', '8']","8, 3","['8', '3']","['P', 'not_P']",LOGIC_ERROR,135,5,0
+68,T69,1,680043,"If the digit is 8, then the symbol is infinity.","Rule: ""If the digit is 8, then the symbol is infinity.""
+Cards: ['8', 'theta', '3', 'infinity']
+
+Which cards must you turn over?
+Your answer:","['8', 'theta', '3', 'infinity']","8, theta","['8', 'theta']","['P', 'not_Q']",CORRECT,135,4,0
+68,T69,2,680044,"If the digit is 8, then the symbol is infinity.","Rule: ""If the digit is 8, then the symbol is infinity.""
+Cards: ['theta', '3', 'infinity', '8']
+
+Which cards must you turn over?
+Your answer:","['theta', '3', 'infinity', '8']","8, theta","['8', 'theta']","['P', 'not_Q']",CORRECT,135,4,0
+68,T69,3,680045,"If the digit is 8, then the symbol is infinity.","Rule: ""If the digit is 8, then the symbol is infinity.""
+Cards: ['3', '8', 'infinity', 'theta']
+
+Which cards must you turn over?
+Your answer:","['3', '8', 'infinity', 'theta']","
+8, infinity","['8', 'infinity']","['P', 'Q']",MATCHING_BIAS,139,5,0
+68,T69,4,680046,"If the digit is 8, then the symbol is infinity.","Rule: ""If the digit is 8, then the symbol is infinity.""
+Cards: ['theta', 'infinity', '3', '8']
+
+Which cards must you turn over?
+Your answer:","['theta', 'infinity', '3', '8']","
+8, theta","['8', 'theta']","['P', 'not_Q']",CORRECT,139,5,0
+69,T70,0,690042,"If the shape is pointed, then the number is 7.","Rule: ""If the shape is pointed, then the number is 7.""
+Cards: ['rounded', '2', '7', 'pointed']
+
+Which cards must you turn over?
+Your answer:","['rounded', '2', '7', 'pointed']","
+pointed, rounded","['pointed', 'rounded']","['P', 'not_P']",LOGIC_ERROR,139,5,0
+69,T70,1,690043,"If the shape is pointed, then the number is 7.","Rule: ""If the shape is pointed, then the number is 7.""
+Cards: ['7', '2', 'rounded', 'pointed']
+
+Which cards must you turn over?
+Your answer:","['7', '2', 'rounded', 'pointed']","pointed, 7","['pointed', '7']","['P', 'Q']",MATCHING_BIAS,135,5,0
+69,T70,2,690044,"If the shape is pointed, then the number is 7.","Rule: ""If the shape is pointed, then the number is 7.""
+Cards: ['pointed', 'rounded', '7', '2']
+
+Which cards must you turn over?
+Your answer:","['pointed', 'rounded', '7', '2']","
+pointed, 2","['pointed', '2']","['P', 'not_Q']",CORRECT,139,6,0
+69,T70,3,690045,"If the shape is pointed, then the number is 7.","Rule: ""If the shape is pointed, then the number is 7.""
+Cards: ['7', 'rounded', 'pointed', '2']
+
+Which cards must you turn over?
+Your answer:","['7', 'rounded', 'pointed', '2']","
+pointed, 7","['pointed', '7']","['P', 'Q']",MATCHING_BIAS,139,6,0
+69,T70,4,690046,"If the shape is pointed, then the number is 7.","Rule: ""If the shape is pointed, then the number is 7.""
+Cards: ['2', 'pointed', '7', 'rounded']
+
+Which cards must you turn over?
+Your answer:","['2', 'pointed', '7', 'rounded']","
+pointed, 2","['pointed', '2']","['P', 'not_Q']",CORRECT,139,6,0
+70,T71,0,700042,"If the letter is D, then the color is indigo.","Rule: ""If the letter is D, then the color is indigo.""
+Cards: ['W', 'amber', 'D', 'indigo']
+
+Which cards must you turn over?
+Your answer:","['W', 'amber', 'D', 'indigo']","
+D, W","['D', 'W']","['P', 'not_P']",LOGIC_ERROR,138,5,0
+70,T71,1,700043,"If the letter is D, then the color is indigo.","Rule: ""If the letter is D, then the color is indigo.""
+Cards: ['D', 'amber', 'W', 'indigo']
+
+Which cards must you turn over?
+Your answer:","['D', 'amber', 'W', 'indigo']","D, W","['D', 'W']","['P', 'not_P']",LOGIC_ERROR,134,4,0
+70,T71,2,700044,"If the letter is D, then the color is indigo.","Rule: ""If the letter is D, then the color is indigo.""
+Cards: ['amber', 'indigo', 'W', 'D']
+
+Which cards must you turn over?
+Your answer:","['amber', 'indigo', 'W', 'D']","
+D, amber","['D', 'amber']","['P', 'not_Q']",CORRECT,138,5,0
+70,T71,3,700045,"If the letter is D, then the color is indigo.","Rule: ""If the letter is D, then the color is indigo.""
+Cards: ['D', 'W', 'amber', 'indigo']
+
+Which cards must you turn over?
+Your answer:","['D', 'W', 'amber', 'indigo']","
+D, indigo","['D', 'indigo']","['P', 'Q']",MATCHING_BIAS,138,5,0
+70,T71,4,700046,"If the letter is D, then the color is indigo.","Rule: ""If the letter is D, then the color is indigo.""
+Cards: ['indigo', 'amber', 'D', 'W']
+
+Which cards must you turn over?
+Your answer:","['indigo', 'amber', 'D', 'W']","
+D, indigo","['D', 'indigo']","['P', 'Q']",MATCHING_BIAS,138,5,0
+71,T72,0,710042,"If the card has a ring, then the digit is 0.","Rule: ""If the card has a ring, then the digit is 0.""
+Cards: ['6', 'bar', '0', 'ring']
+
+Which cards must you turn over?
+Your answer:","['6', 'bar', '0', 'ring']","
+6, ring","['6', 'ring']","['P', 'not_Q']",CORRECT,140,5,0
+71,T72,1,710043,"If the card has a ring, then the digit is 0.","Rule: ""If the card has a ring, then the digit is 0.""
+Cards: ['6', 'ring', '0', 'bar']
+
+Which cards must you turn over?
+Your answer:","['6', 'ring', '0', 'bar']","
+ring, 6","['ring', '6']","['P', 'not_Q']",CORRECT,140,6,0
+71,T72,2,710044,"If the card has a ring, then the digit is 0.","Rule: ""If the card has a ring, then the digit is 0.""
+Cards: ['0', 'ring', 'bar', '6']
+
+Which cards must you turn over?
+Your answer:","['0', 'ring', 'bar', '6']","
+ring, 0","['ring', '0']","['P', 'Q']",MATCHING_BIAS,140,6,0
+71,T72,3,710045,"If the card has a ring, then the digit is 0.","Rule: ""If the card has a ring, then the digit is 0.""
+Cards: ['ring', '6', '0', 'bar']
+
+Which cards must you turn over?
+Your answer:","['ring', '6', '0', 'bar']","ring, 6","['ring', '6']","['P', 'not_Q']",CORRECT,136,5,0
+71,T72,4,710046,"If the card has a ring, then the digit is 0.","Rule: ""If the card has a ring, then the digit is 0.""
+Cards: ['ring', '0', '6', 'bar']
+
+Which cards must you turn over?
+Your answer:","['ring', '0', '6', 'bar']","
+ring, 6","['ring', '6']","['P', 'not_Q']",CORRECT,140,6,0
+72,T73,0,720042,"If the number is 11, then the letter is K.","Rule: ""If the number is 11, then the letter is K.""
+Cards: ['T', '6', '11', 'K']
+
+Which cards must you turn over?
+Your answer:","['T', '6', '11', 'K']","
+11, T","['11', 'T']","['P', 'not_Q']",CORRECT,141,6,0
+72,T73,1,720043,"If the number is 11, then the letter is K.","Rule: ""If the number is 11, then the letter is K.""
+Cards: ['6', '11', 'K', 'T']
+
+Which cards must you turn over?
+Your answer:","['6', '11', 'K', 'T']","
+11, K","['11', 'K']","['P', 'Q']",MATCHING_BIAS,141,6,0
+72,T73,2,720044,"If the number is 11, then the letter is K.","Rule: ""If the number is 11, then the letter is K.""
+Cards: ['K', '11', '6', 'T']
+
+Which cards must you turn over?
+Your answer:","['K', '11', '6', 'T']","
+11, K","['11', 'K']","['P', 'Q']",MATCHING_BIAS,141,6,0
+72,T73,3,720045,"If the number is 11, then the letter is K.","Rule: ""If the number is 11, then the letter is K.""
+Cards: ['11', 'K', '6', 'T']
+
+Which cards must you turn over?
+Your answer:","['11', 'K', '6', 'T']","
+11, K","['11', 'K']","['P', 'Q']",MATCHING_BIAS,141,6,0
+72,T73,4,720046,"If the number is 11, then the letter is K.","Rule: ""If the number is 11, then the letter is K.""
+Cards: ['K', 'T', '6', '11']
+
+Which cards must you turn over?
+Your answer:","['K', 'T', '6', '11']","11, K","['11', 'K']","['P', 'Q']",MATCHING_BIAS,137,5,0
+73,T74,0,730042,"If the figure is mirrored, then the shape is trapezoid.","Rule: ""If the figure is mirrored, then the shape is trapezoid.""
+Cards: ['mirrored', 'kite', 'normal', 'trapezoid']
+
+Which cards must you turn over?
+Your answer:","['mirrored', 'kite', 'normal', 'trapezoid']","
+mirrored, normal","['mirrored', 'normal']","['P', 'not_P']",LOGIC_ERROR,142,6,0
+73,T74,1,730043,"If the figure is mirrored, then the shape is trapezoid.","Rule: ""If the figure is mirrored, then the shape is trapezoid.""
+Cards: ['kite', 'trapezoid', 'mirrored', 'normal']
+
+Which cards must you turn over?
+Your answer:","['kite', 'trapezoid', 'mirrored', 'normal']","
+mirrored, normal","['mirrored', 'normal']","['P', 'not_P']",LOGIC_ERROR,142,6,0
+73,T74,2,730044,"If the figure is mirrored, then the shape is trapezoid.","Rule: ""If the figure is mirrored, then the shape is trapezoid.""
+Cards: ['trapezoid', 'mirrored', 'kite', 'normal']
+
+Which cards must you turn over?
+Your answer:","['trapezoid', 'mirrored', 'kite', 'normal']","
+mirrored, normal","['mirrored', 'normal']","['P', 'not_P']",LOGIC_ERROR,142,6,0
+73,T74,3,730045,"If the figure is mirrored, then the shape is trapezoid.","Rule: ""If the figure is mirrored, then the shape is trapezoid.""
+Cards: ['kite', 'mirrored', 'trapezoid', 'normal']
+
+Which cards must you turn over?
+Your answer:","['kite', 'mirrored', 'trapezoid', 'normal']","
+mirrored, normal","['mirrored', 'normal']","['P', 'not_P']",LOGIC_ERROR,142,6,0
+73,T74,4,730046,"If the figure is mirrored, then the shape is trapezoid.","Rule: ""If the figure is mirrored, then the shape is trapezoid.""
+Cards: ['mirrored', 'normal', 'kite', 'trapezoid']
+
+Which cards must you turn over?
+Your answer:","['mirrored', 'normal', 'kite', 'trapezoid']","
+mirrored, normal","['mirrored', 'normal']","['P', 'not_P']",LOGIC_ERROR,142,6,0
+74,T75,0,740042,"If the symbol is wave, then the number is 33.","Rule: ""If the symbol is wave, then the number is 33.""
+Cards: ['33', 'bolt', 'wave', '22']
+
+Which cards must you turn over?
+Your answer:","['33', 'bolt', 'wave', '22']","
+wave, 33","['wave', '33']","['P', 'Q']",MATCHING_BIAS,141,7,0
+74,T75,1,740043,"If the symbol is wave, then the number is 33.","Rule: ""If the symbol is wave, then the number is 33.""
+Cards: ['bolt', '22', 'wave', '33']
+
+Which cards must you turn over?
+Your answer:","['bolt', '22', 'wave', '33']","
+wave, 22","['wave', '22']","['P', 'not_Q']",CORRECT,142,7,0
+74,T75,2,740044,"If the symbol is wave, then the number is 33.","Rule: ""If the symbol is wave, then the number is 33.""
+Cards: ['bolt', '33', 'wave', '22']
+
+Which cards must you turn over?
+Your answer:","['bolt', '33', 'wave', '22']","
+wave, 33","['wave', '33']","['P', 'Q']",MATCHING_BIAS,142,7,0
+74,T75,3,740045,"If the symbol is wave, then the number is 33.","Rule: ""If the symbol is wave, then the number is 33.""
+Cards: ['wave', '22', '33', 'bolt']
+
+Which cards must you turn over?
+Your answer:","['wave', '22', '33', 'bolt']","
+wave, 33","['wave', '33']","['P', 'Q']",MATCHING_BIAS,142,7,0
+74,T75,4,740046,"If the symbol is wave, then the number is 33.","Rule: ""If the symbol is wave, then the number is 33.""
+Cards: ['33', 'wave', '22', 'bolt']
+
+Which cards must you turn over?
+Your answer:","['33', 'wave', '22', 'bolt']","
+wave, 33","['wave', '33']","['P', 'Q']",MATCHING_BIAS,142,7,0
+75,T76,0,750042,"If the digit is 5, then the color is coral.","Rule: ""If the digit is 5, then the color is coral.""
+Cards: ['5', 'slate', '0', 'coral']
+
+Which cards must you turn over?
+Your answer:","['5', 'slate', '0', 'coral']","5, slate","['5', 'slate']","['P', 'not_Q']",CORRECT,135,4,0
+75,T76,1,750043,"If the digit is 5, then the color is coral.","Rule: ""If the digit is 5, then the color is coral.""
+Cards: ['slate', '0', '5', 'coral']
+
+Which cards must you turn over?
+Your answer:","['slate', '0', '5', 'coral']","
+5, slate","['5', 'slate']","['P', 'not_Q']",CORRECT,139,5,0
+75,T76,2,750044,"If the digit is 5, then the color is coral.","Rule: ""If the digit is 5, then the color is coral.""
+Cards: ['0', 'slate', '5', 'coral']
+
+Which cards must you turn over?
+Your answer:","['0', 'slate', '5', 'coral']","5, 0","['5', '0']","['P', 'not_P']",LOGIC_ERROR,135,5,0
+75,T76,3,750045,"If the digit is 5, then the color is coral.","Rule: ""If the digit is 5, then the color is coral.""
+Cards: ['5', '0', 'slate', 'coral']
+
+Which cards must you turn over?
+Your answer:","['5', '0', 'slate', 'coral']","
+5, slate","['5', 'slate']","['P', 'not_Q']",CORRECT,138,5,0
+75,T76,4,750046,"If the digit is 5, then the color is coral.","Rule: ""If the digit is 5, then the color is coral.""
+Cards: ['coral', 'slate', '5', '0']
+
+Which cards must you turn over?
+Your answer:","['coral', 'slate', '5', '0']","
+5, coral","['5', 'coral']","['P', 'Q']",MATCHING_BIAS,139,5,0
+76,T77,0,760042,"If the letter is G, then the shape is cylinder.","Rule: ""If the letter is G, then the shape is cylinder.""
+Cards: ['G', 'B', 'cone', 'cylinder']
+
+Which cards must you turn over?
+Your answer:","['G', 'B', 'cone', 'cylinder']","
+G, B","['G', 'B']","['P', 'not_P']",LOGIC_ERROR,138,5,0
+76,T77,1,760043,"If the letter is G, then the shape is cylinder.","Rule: ""If the letter is G, then the shape is cylinder.""
+Cards: ['cone', 'G', 'B', 'cylinder']
+
+Which cards must you turn over?
+Your answer:","['cone', 'G', 'B', 'cylinder']","
+G, cone","['G', 'cone']","['P', 'not_Q']",CORRECT,138,5,0
+76,T77,2,760044,"If the letter is G, then the shape is cylinder.","Rule: ""If the letter is G, then the shape is cylinder.""
+Cards: ['cone', 'G', 'cylinder', 'B']
+
+Which cards must you turn over?
+Your answer:","['cone', 'G', 'cylinder', 'B']","
+G, cone","['G', 'cone']","['P', 'not_Q']",CORRECT,138,5,0
+76,T77,3,760045,"If the letter is G, then the shape is cylinder.","Rule: ""If the letter is G, then the shape is cylinder.""
+Cards: ['cylinder', 'G', 'cone', 'B']
+
+Which cards must you turn over?
+Your answer:","['cylinder', 'G', 'cone', 'B']","
+G, cone","['G', 'cone']","['P', 'not_Q']",CORRECT,137,5,0
+76,T77,4,760046,"If the letter is G, then the shape is cylinder.","Rule: ""If the letter is G, then the shape is cylinder.""
+Cards: ['B', 'cone', 'G', 'cylinder']
+
+Which cards must you turn over?
+Your answer:","['B', 'cone', 'G', 'cylinder']","
+G, B","['G', 'B']","['P', 'not_P']",LOGIC_ERROR,138,5,0
+77,T78,0,770042,"If the card has a shadow, then the number is 18.","Rule: ""If the card has a shadow, then the number is 18.""
+Cards: ['no_shadow', '13', '18', 'shadow']
+
+Which cards must you turn over?
+Your answer:","['no_shadow', '13', '18', 'shadow']","no_shadow, shadow","['no_shadow', 'shadow']","['P', 'not_P']",LOGIC_ERROR,141,6,0
+77,T78,1,770043,"If the card has a shadow, then the number is 18.","Rule: ""If the card has a shadow, then the number is 18.""
+Cards: ['shadow', 'no_shadow', '13', '18']
+
+Which cards must you turn over?
+Your answer:","['shadow', 'no_shadow', '13', '18']","shadow, 13","['shadow', '13']","['P', 'not_Q']",CORRECT,141,6,0
+77,T78,2,770044,"If the card has a shadow, then the number is 18.","Rule: ""If the card has a shadow, then the number is 18.""
+Cards: ['13', '18', 'no_shadow', 'shadow']
+
+Which cards must you turn over?
+Your answer:","['13', '18', 'no_shadow', 'shadow']","
+shadow, 13","['shadow', '13']","['P', 'not_Q']",CORRECT,144,7,0
+77,T78,3,770045,"If the card has a shadow, then the number is 18.","Rule: ""If the card has a shadow, then the number is 18.""
+Cards: ['no_shadow', '18', 'shadow', '13']
+
+Which cards must you turn over?
+Your answer:","['no_shadow', '18', 'shadow', '13']","
+shadow, 13","['shadow', '13']","['P', 'not_Q']",CORRECT,145,7,0
+77,T78,4,770046,"If the card has a shadow, then the number is 18.","Rule: ""If the card has a shadow, then the number is 18.""
+Cards: ['no_shadow', '13', 'shadow', '18']
+
+Which cards must you turn over?
+Your answer:","['no_shadow', '13', 'shadow', '18']","
+shadow, 13","['shadow', '13']","['P', 'not_Q']",CORRECT,145,7,0
+78,T79,0,780042,"If the letter is C, then the number is 17.","Rule: ""If the letter is C, then the number is 17.""
+Cards: ['4', 'C', '17', 'M']
+
+Which cards must you turn over?
+Your answer:","['4', 'C', '17', 'M']","C, 4","['C', '4']","['P', 'not_Q']",CORRECT,137,5,0
+78,T79,1,780043,"If the letter is C, then the number is 17.","Rule: ""If the letter is C, then the number is 17.""
+Cards: ['4', '17', 'C', 'M']
+
+Which cards must you turn over?
+Your answer:","['4', '17', 'C', 'M']","
+C, 4","['C', '4']","['P', 'not_Q']",CORRECT,141,6,0
+78,T79,2,780044,"If the letter is C, then the number is 17.","Rule: ""If the letter is C, then the number is 17.""
+Cards: ['C', 'M', '17', '4']
+
+Which cards must you turn over?
+Your answer:","['C', 'M', '17', '4']","
+C, 17","['C', '17']","['P', 'Q']",MATCHING_BIAS,141,7,0
+78,T79,3,780045,"If the letter is C, then the number is 17.","Rule: ""If the letter is C, then the number is 17.""
+Cards: ['17', 'C', 'M', '4']
+
+Which cards must you turn over?
+Your answer:","['17', 'C', 'M', '4']","
+C, 17","['C', '17']","['P', 'Q']",MATCHING_BIAS,141,7,0
+78,T79,4,780046,"If the letter is C, then the number is 17.","Rule: ""If the letter is C, then the number is 17.""
+Cards: ['M', '17', 'C', '4']
+
+Which cards must you turn over?
+Your answer:","['M', '17', 'C', '4']","
+C, 17","['C', '17']","['P', 'Q']",MATCHING_BIAS,141,7,0
+79,T80,0,790042,"If the number is 25, then the letter is T.","Rule: ""If the number is 25, then the letter is T.""
+Cards: ['25', 'H', '13', 'T']
+
+Which cards must you turn over?
+Your answer:","['25', 'H', '13', 'T']","
+25, H","['25', 'H']","['P', 'not_Q']",CORRECT,141,6,0
+79,T80,1,790043,"If the number is 25, then the letter is T.","Rule: ""If the number is 25, then the letter is T.""
+Cards: ['13', 'T', '25', 'H']
+
+Which cards must you turn over?
+Your answer:","['13', 'T', '25', 'H']","25, T","['25', 'T']","['P', 'Q']",MATCHING_BIAS,138,5,0
+79,T80,2,790044,"If the number is 25, then the letter is T.","Rule: ""If the number is 25, then the letter is T.""
+Cards: ['25', '13', 'H', 'T']
+
+Which cards must you turn over?
+Your answer:","['25', '13', 'H', 'T']","25, H","['25', 'H']","['P', 'not_Q']",CORRECT,138,5,0
+79,T80,3,790045,"If the number is 25, then the letter is T.","Rule: ""If the number is 25, then the letter is T.""
+Cards: ['13', '25', 'H', 'T']
+
+Which cards must you turn over?
+Your answer:","['13', '25', 'H', 'T']","
+25, H","['25', 'H']","['P', 'not_Q']",CORRECT,142,6,0
+79,T80,4,790046,"If the number is 25, then the letter is T.","Rule: ""If the number is 25, then the letter is T.""
+Cards: ['T', 'H', '13', '25']
+
+Which cards must you turn over?
+Your answer:","['T', 'H', '13', '25']","
+25, T","['25', 'T']","['P', 'Q']",MATCHING_BIAS,142,6,0
+80,T81,0,800042,"If the shape is crescent, then the color is yellow.","Rule: ""If the shape is crescent, then the color is yellow.""
+Cards: ['crescent', 'pentagon', 'yellow', 'red']
+
+Which cards must you turn over?
+Your answer:","['crescent', 'pentagon', 'yellow', 'red']","crescent, red","['crescent', 'red']","['P', 'not_Q']",CORRECT,136,5,0
+80,T81,1,800043,"If the shape is crescent, then the color is yellow.","Rule: ""If the shape is crescent, then the color is yellow.""
+Cards: ['pentagon', 'red', 'crescent', 'yellow']
+
+Which cards must you turn over?
+Your answer:","['pentagon', 'red', 'crescent', 'yellow']","
+crescent, red","['crescent', 'red']","['P', 'not_Q']",CORRECT,140,6,0
+80,T81,2,800044,"If the shape is crescent, then the color is yellow.","Rule: ""If the shape is crescent, then the color is yellow.""
+Cards: ['yellow', 'crescent', 'red', 'pentagon']
+
+Which cards must you turn over?
+Your answer:","['yellow', 'crescent', 'red', 'pentagon']","crescent, red","['crescent', 'red']","['P', 'not_Q']",CORRECT,136,5,0
+80,T81,3,800045,"If the shape is crescent, then the color is yellow.","Rule: ""If the shape is crescent, then the color is yellow.""
+Cards: ['red', 'pentagon', 'yellow', 'crescent']
+
+Which cards must you turn over?
+Your answer:","['red', 'pentagon', 'yellow', 'crescent']","
+crescent, red","['crescent', 'red']","['P', 'not_Q']",CORRECT,140,6,0
+80,T81,4,800046,"If the shape is crescent, then the color is yellow.","Rule: ""If the shape is crescent, then the color is yellow.""
+Cards: ['red', 'yellow', 'pentagon', 'crescent']
+
+Which cards must you turn over?
+Your answer:","['red', 'yellow', 'pentagon', 'crescent']","
+crescent, red","['crescent', 'red']","['P', 'not_Q']",CORRECT,140,6,0
+81,T82,0,810042,"If the digit is 6, then the symbol is anchor.","Rule: ""If the digit is 6, then the symbol is anchor.""
+Cards: ['anchor', '1', 'ladder', '6']
+
+Which cards must you turn over?
+Your answer:","['anchor', '1', 'ladder', '6']","
+6, ladder","['6', 'ladder']","['P', 'not_Q']",CORRECT,138,5,0
+81,T82,1,810043,"If the digit is 6, then the symbol is anchor.","Rule: ""If the digit is 6, then the symbol is anchor.""
+Cards: ['ladder', '6', '1', 'anchor']
+
+Which cards must you turn over?
+Your answer:","['ladder', '6', '1', 'anchor']","
+6, ladder","['6', 'ladder']","['P', 'not_Q']",CORRECT,139,5,0
+81,T82,2,810044,"If the digit is 6, then the symbol is anchor.","Rule: ""If the digit is 6, then the symbol is anchor.""
+Cards: ['6', 'ladder', '1', 'anchor']
+
+Which cards must you turn over?
+Your answer:","['6', 'ladder', '1', 'anchor']","6, ladder","['6', 'ladder']","['P', 'not_Q']",CORRECT,135,4,0
+81,T82,3,810045,"If the digit is 6, then the symbol is anchor.","Rule: ""If the digit is 6, then the symbol is anchor.""
+Cards: ['anchor', 'ladder', '6', '1']
+
+Which cards must you turn over?
+Your answer:","['anchor', 'ladder', '6', '1']","
+6, anchor","['6', 'anchor']","['P', 'Q']",MATCHING_BIAS,139,5,0
+81,T82,4,810046,"If the digit is 6, then the symbol is anchor.","Rule: ""If the digit is 6, then the symbol is anchor.""
+Cards: ['1', '6', 'anchor', 'ladder']
+
+Which cards must you turn over?
+Your answer:","['1', '6', 'anchor', 'ladder']","
+6, ladder","['6', 'ladder']","['P', 'not_Q']",CORRECT,139,5,0
+82,T83,0,820042,"If the figure is striped, then the border is round.","Rule: ""If the figure is striped, then the border is round.""
+Cards: ['round', 'plain', 'striped', 'sharp']
+
+Which cards must you turn over?
+Your answer:","['round', 'plain', 'striped', 'sharp']","
+striped, plain","['striped', 'plain']","['P', 'not_P']",LOGIC_ERROR,137,5,0
+82,T83,1,820043,"If the figure is striped, then the border is round.","Rule: ""If the figure is striped, then the border is round.""
+Cards: ['sharp', 'striped', 'plain', 'round']
+
+Which cards must you turn over?
+Your answer:","['sharp', 'striped', 'plain', 'round']","
+striped, plain","['striped', 'plain']","['P', 'not_P']",LOGIC_ERROR,137,5,0
+82,T83,2,820044,"If the figure is striped, then the border is round.","Rule: ""If the figure is striped, then the border is round.""
+Cards: ['plain', 'sharp', 'striped', 'round']
+
+Which cards must you turn over?
+Your answer:","['plain', 'sharp', 'striped', 'round']","
+striped, plain","['striped', 'plain']","['P', 'not_P']",LOGIC_ERROR,138,5,0
+82,T83,3,820045,"If the figure is striped, then the border is round.","Rule: ""If the figure is striped, then the border is round.""
+Cards: ['round', 'plain', 'sharp', 'striped']
+
+Which cards must you turn over?
+Your answer:","['round', 'plain', 'sharp', 'striped']","striped, round","['striped', 'round']","['P', 'Q']",MATCHING_BIAS,134,4,0
+82,T83,4,820046,"If the figure is striped, then the border is round.","Rule: ""If the figure is striped, then the border is round.""
+Cards: ['plain', 'round', 'sharp', 'striped']
+
+Which cards must you turn over?
+Your answer:","['plain', 'round', 'sharp', 'striped']","striped, plain","['striped', 'plain']","['P', 'not_P']",LOGIC_ERROR,134,4,0
+83,T84,0,830042,"If the letter is H, then the number is 37.","Rule: ""If the letter is H, then the number is 37.""
+Cards: ['H', '37', '12', 'Z']
+
+Which cards must you turn over?
+Your answer:","['H', '37', '12', 'Z']","
+H, 37","['H', '37']","['P', 'Q']",MATCHING_BIAS,142,7,0
+83,T84,1,830043,"If the letter is H, then the number is 37.","Rule: ""If the letter is H, then the number is 37.""
+Cards: ['37', '12', 'Z', 'H']
+
+Which cards must you turn over?
+Your answer:","['37', '12', 'Z', 'H']","
+H, 37","['H', '37']","['P', 'Q']",MATCHING_BIAS,142,7,0
+83,T84,2,830044,"If the letter is H, then the number is 37.","Rule: ""If the letter is H, then the number is 37.""
+Cards: ['Z', '37', 'H', '12']
+
+Which cards must you turn over?
+Your answer:","['Z', '37', 'H', '12']","
+H, 37","['H', '37']","['P', 'Q']",MATCHING_BIAS,142,7,0
+83,T84,3,830045,"If the letter is H, then the number is 37.","Rule: ""If the letter is H, then the number is 37.""
+Cards: ['37', '12', 'H', 'Z']
+
+Which cards must you turn over?
+Your answer:","['37', '12', 'H', 'Z']","H, 37","['H', '37']","['P', 'Q']",MATCHING_BIAS,138,6,0
+83,T84,4,830046,"If the letter is H, then the number is 37.","Rule: ""If the letter is H, then the number is 37.""
+Cards: ['37', 'Z', 'H', '12']
+
+Which cards must you turn over?
+Your answer:","['37', 'Z', 'H', '12']","
+H, 37","['H', '37']","['P', 'Q']",MATCHING_BIAS,142,7,0
+84,T85,0,840042,"If the symbol is crown, then the digit is 9.","Rule: ""If the symbol is crown, then the digit is 9.""
+Cards: ['crown', 'shield', '9', '4']
+
+Which cards must you turn over?
+Your answer:","['crown', 'shield', '9', '4']","
+crown, 4","['crown', '4']","['P', 'not_Q']",CORRECT,139,6,0
+84,T85,1,840043,"If the symbol is crown, then the digit is 9.","Rule: ""If the symbol is crown, then the digit is 9.""
+Cards: ['shield', 'crown', '9', '4']
+
+Which cards must you turn over?
+Your answer:","['shield', 'crown', '9', '4']","
+crown, 4","['crown', '4']","['P', 'not_Q']",CORRECT,139,6,0
+84,T85,2,840044,"If the symbol is crown, then the digit is 9.","Rule: ""If the symbol is crown, then the digit is 9.""
+Cards: ['4', 'shield', 'crown', '9']
+
+Which cards must you turn over?
+Your answer:","['4', 'shield', 'crown', '9']","
+crown, 4","['crown', '4']","['P', 'not_Q']",CORRECT,139,6,0
+84,T85,3,840045,"If the symbol is crown, then the digit is 9.","Rule: ""If the symbol is crown, then the digit is 9.""
+Cards: ['9', '4', 'shield', 'crown']
+
+Which cards must you turn over?
+Your answer:","['9', '4', 'shield', 'crown']","
+crown, 9","['crown', '9']","['P', 'Q']",MATCHING_BIAS,139,6,0
+84,T85,4,840046,"If the symbol is crown, then the digit is 9.","Rule: ""If the symbol is crown, then the digit is 9.""
+Cards: ['shield', '4', '9', 'crown']
+
+Which cards must you turn over?
+Your answer:","['shield', '4', '9', 'crown']","
+crown, 9","['crown', '9']","['P', 'Q']",MATCHING_BIAS,139,6,0
+85,T86,0,850042,"If the number is 42, then the shape is kite.","Rule: ""If the number is 42, then the shape is kite.""
+Cards: ['42', 'arrow', 'kite', '17']
+
+Which cards must you turn over?
+Your answer:","['42', 'arrow', 'kite', '17']","
+42, arrow","['42', 'arrow']","['P', 'not_Q']",CORRECT,142,6,0
+85,T86,1,850043,"If the number is 42, then the shape is kite.","Rule: ""If the number is 42, then the shape is kite.""
+Cards: ['kite', '42', 'arrow', '17']
+
+Which cards must you turn over?
+Your answer:","['kite', '42', 'arrow', '17']","
+42, kite","['42', 'kite']","['P', 'Q']",MATCHING_BIAS,142,6,0
+85,T86,2,850044,"If the number is 42, then the shape is kite.","Rule: ""If the number is 42, then the shape is kite.""
+Cards: ['arrow', 'kite', '17', '42']
+
+Which cards must you turn over?
+Your answer:","['arrow', 'kite', '17', '42']","
+42, arrow","['42', 'arrow']","['P', 'not_Q']",CORRECT,142,6,0
+85,T86,3,850045,"If the number is 42, then the shape is kite.","Rule: ""If the number is 42, then the shape is kite.""
+Cards: ['17', '42', 'arrow', 'kite']
+
+Which cards must you turn over?
+Your answer:","['17', '42', 'arrow', 'kite']","
+42, arrow","['42', 'arrow']","['P', 'not_Q']",CORRECT,142,6,0
+85,T86,4,850046,"If the number is 42, then the shape is kite.","Rule: ""If the number is 42, then the shape is kite.""
+Cards: ['17', 'kite', 'arrow', '42']
+
+Which cards must you turn over?
+Your answer:","['17', 'kite', 'arrow', '42']","
+42, arrow","['42', 'arrow']","['P', 'not_Q']",CORRECT,142,6,0
+86,T87,0,860042,"If the pattern is radial, then the color is bronze.","Rule: ""If the pattern is radial, then the color is bronze.""
+Cards: ['radial', 'bronze', 'ivory', 'linear']
+
+Which cards must you turn over?
+Your answer:","['radial', 'bronze', 'ivory', 'linear']","
+radial, ivory","['radial', 'ivory']","['P', 'not_Q']",CORRECT,140,5,0
+86,T87,1,860043,"If the pattern is radial, then the color is bronze.","Rule: ""If the pattern is radial, then the color is bronze.""
+Cards: ['ivory', 'bronze', 'linear', 'radial']
+
+Which cards must you turn over?
+Your answer:","['ivory', 'bronze', 'linear', 'radial']","
+radial, ivory","['radial', 'ivory']","['P', 'not_Q']",CORRECT,140,5,0
+86,T87,2,860044,"If the pattern is radial, then the color is bronze.","Rule: ""If the pattern is radial, then the color is bronze.""
+Cards: ['radial', 'linear', 'ivory', 'bronze']
+
+Which cards must you turn over?
+Your answer:","['radial', 'linear', 'ivory', 'bronze']","
+radial, ivory","['radial', 'ivory']","['P', 'not_Q']",CORRECT,140,5,0
+86,T87,3,860045,"If the pattern is radial, then the color is bronze.","Rule: ""If the pattern is radial, then the color is bronze.""
+Cards: ['radial', 'bronze', 'linear', 'ivory']
+
+Which cards must you turn over?
+Your answer:","['radial', 'bronze', 'linear', 'ivory']","
+radial, ivory","['radial', 'ivory']","['P', 'not_Q']",CORRECT,140,5,0
+86,T87,4,860046,"If the pattern is radial, then the color is bronze.","Rule: ""If the pattern is radial, then the color is bronze.""
+Cards: ['radial', 'ivory', 'bronze', 'linear']
+
+Which cards must you turn over?
+Your answer:","['radial', 'ivory', 'bronze', 'linear']","radial, ivory","['radial', 'ivory']","['P', 'not_Q']",CORRECT,136,4,0
+87,T88,0,870042,"If the letter is V, then the digit is 8.","Rule: ""If the letter is V, then the digit is 8.""
+Cards: ['3', 'D', 'V', '8']
+
+Which cards must you turn over?
+Your answer:","['3', 'D', 'V', '8']","
+V, 3","['V', '3']","['P', 'not_Q']",CORRECT,139,6,0
+87,T88,1,870043,"If the letter is V, then the digit is 8.","Rule: ""If the letter is V, then the digit is 8.""
+Cards: ['3', '8', 'V', 'D']
+
+Which cards must you turn over?
+Your answer:","['3', '8', 'V', 'D']","
+V, 3","['V', '3']","['P', 'not_Q']",CORRECT,139,6,0
+87,T88,2,870044,"If the letter is V, then the digit is 8.","Rule: ""If the letter is V, then the digit is 8.""
+Cards: ['V', 'D', '8', '3']
+
+Which cards must you turn over?
+Your answer:","['V', 'D', '8', '3']","
+V, 3","['V', '3']","['P', 'not_Q']",CORRECT,139,6,0
+87,T88,3,870045,"If the letter is V, then the digit is 8.","Rule: ""If the letter is V, then the digit is 8.""
+Cards: ['D', 'V', '8', '3']
+
+Which cards must you turn over?
+Your answer:","['D', 'V', '8', '3']","
+V, 3","['V', '3']","['P', 'not_Q']",CORRECT,139,6,0
+87,T88,4,870046,"If the letter is V, then the digit is 8.","Rule: ""If the letter is V, then the digit is 8.""
+Cards: ['D', '8', '3', 'V']
+
+Which cards must you turn over?
+Your answer:","['D', '8', '3', 'V']","
+V, 3","['V', '3']","['P', 'not_Q']",CORRECT,139,6,0
+88,T89,0,880042,"If the figure is hollow, then the shape is diamond.","Rule: ""If the figure is hollow, then the shape is diamond.""
+Cards: ['square', 'diamond', 'hollow', 'solid']
+
+Which cards must you turn over?
+Your answer:","['square', 'diamond', 'hollow', 'solid']","hollow, square","['hollow', 'square']","['P', 'not_Q']",CORRECT,135,5,0
+88,T89,1,880043,"If the figure is hollow, then the shape is diamond.","Rule: ""If the figure is hollow, then the shape is diamond.""
+Cards: ['solid', 'diamond', 'square', 'hollow']
+
+Which cards must you turn over?
+Your answer:","['solid', 'diamond', 'square', 'hollow']","hollow, solid","['hollow', 'solid']","['P', 'not_P']",LOGIC_ERROR,135,5,0
+88,T89,2,880044,"If the figure is hollow, then the shape is diamond.","Rule: ""If the figure is hollow, then the shape is diamond.""
+Cards: ['hollow', 'square', 'solid', 'diamond']
+
+Which cards must you turn over?
+Your answer:","['hollow', 'square', 'solid', 'diamond']","
+hollow, square","['hollow', 'square']","['P', 'not_Q']",CORRECT,139,6,0
+88,T89,3,880045,"If the figure is hollow, then the shape is diamond.","Rule: ""If the figure is hollow, then the shape is diamond.""
+Cards: ['square', 'diamond', 'solid', 'hollow']
+
+Which cards must you turn over?
+Your answer:","['square', 'diamond', 'solid', 'hollow']","
+hollow, square","['hollow', 'square']","['P', 'not_Q']",CORRECT,139,6,0
+88,T89,4,880046,"If the figure is hollow, then the shape is diamond.","Rule: ""If the figure is hollow, then the shape is diamond.""
+Cards: ['square', 'hollow', 'solid', 'diamond']
+
+Which cards must you turn over?
+Your answer:","['square', 'hollow', 'solid', 'diamond']","hollow, solid","['hollow', 'solid']","['P', 'not_P']",LOGIC_ERROR,135,5,0
+89,T90,0,890042,"If the digit is 3, then the color is crimson.","Rule: ""If the digit is 3, then the color is crimson.""
+Cards: ['8', '3', 'crimson', 'olive']
+
+Which cards must you turn over?
+Your answer:","['8', '3', 'crimson', 'olive']","
+3, olive","['3', 'olive']","['P', 'not_Q']",CORRECT,140,5,0
+89,T90,1,890043,"If the digit is 3, then the color is crimson.","Rule: ""If the digit is 3, then the color is crimson.""
+Cards: ['crimson', 'olive', '8', '3']
+
+Which cards must you turn over?
+Your answer:","['crimson', 'olive', '8', '3']","
+3, crimson","['3', 'crimson']","['P', 'Q']",MATCHING_BIAS,140,5,0
+89,T90,2,890044,"If the digit is 3, then the color is crimson.","Rule: ""If the digit is 3, then the color is crimson.""
+Cards: ['olive', 'crimson', '8', '3']
+
+Which cards must you turn over?
+Your answer:","['olive', 'crimson', '8', '3']","
+3, olive","['3', 'olive']","['P', 'not_Q']",CORRECT,140,5,0
+89,T90,3,890045,"If the digit is 3, then the color is crimson.","Rule: ""If the digit is 3, then the color is crimson.""
+Cards: ['3', 'olive', '8', 'crimson']
+
+Which cards must you turn over?
+Your answer:","['3', 'olive', '8', 'crimson']","3, olive","['3', 'olive']","['P', 'not_Q']",CORRECT,136,4,0
+89,T90,4,890046,"If the digit is 3, then the color is crimson.","Rule: ""If the digit is 3, then the color is crimson.""
+Cards: ['olive', 'crimson', '3', '8']
+
+Which cards must you turn over?
+Your answer:","['olive', 'crimson', '3', '8']","
+3, olive","['3', 'olive']","['P', 'not_Q']",CORRECT,140,5,0
+90,T91,0,900042,"If the symbol is bolt, then the letter is L.","Rule: ""If the symbol is bolt, then the letter is L.""
+Cards: ['L', 'drop', 'P', 'bolt']
+
+Which cards must you turn over?
+Your answer:","['L', 'drop', 'P', 'bolt']","bolt, L","['bolt', 'L']","['P', 'Q']",MATCHING_BIAS,134,4,0
+90,T91,1,900043,"If the symbol is bolt, then the letter is L.","Rule: ""If the symbol is bolt, then the letter is L.""
+Cards: ['L', 'bolt', 'drop', 'P']
+
+Which cards must you turn over?
+Your answer:","['L', 'bolt', 'drop', 'P']","
+bolt, L","['bolt', 'L']","['P', 'Q']",MATCHING_BIAS,138,5,0
+90,T91,2,900044,"If the symbol is bolt, then the letter is L.","Rule: ""If the symbol is bolt, then the letter is L.""
+Cards: ['P', 'bolt', 'drop', 'L']
+
+Which cards must you turn over?
+Your answer:","['P', 'bolt', 'drop', 'L']","bolt, P","['bolt', 'P']","['P', 'not_Q']",CORRECT,134,4,0
+90,T91,3,900045,"If the symbol is bolt, then the letter is L.","Rule: ""If the symbol is bolt, then the letter is L.""
+Cards: ['L', 'P', 'drop', 'bolt']
+
+Which cards must you turn over?
+Your answer:","['L', 'P', 'drop', 'bolt']","
+bolt, L","['bolt', 'L']","['P', 'Q']",MATCHING_BIAS,138,5,0
+90,T91,4,900046,"If the symbol is bolt, then the letter is L.","Rule: ""If the symbol is bolt, then the letter is L.""
+Cards: ['drop', 'P', 'bolt', 'L']
+
+Which cards must you turn over?
+Your answer:","['drop', 'P', 'bolt', 'L']","
+bolt, P","['bolt', 'P']","['P', 'not_Q']",CORRECT,138,5,0
+91,T92,0,910042,"If the number is 53, then the shape is cone.","Rule: ""If the number is 53, then the shape is cone.""
+Cards: ['cube', '28', 'cone', '53']
+
+Which cards must you turn over?
+Your answer:","['cube', '28', 'cone', '53']","
+53, cone","['53', 'cone']","['P', 'Q']",MATCHING_BIAS,142,6,0
+91,T92,1,910043,"If the number is 53, then the shape is cone.","Rule: ""If the number is 53, then the shape is cone.""
+Cards: ['53', 'cube', 'cone', '28']
+
+Which cards must you turn over?
+Your answer:","['53', 'cube', 'cone', '28']","
+53, cube","['53', 'cube']","['P', 'not_Q']",CORRECT,142,6,0
+91,T92,2,910044,"If the number is 53, then the shape is cone.","Rule: ""If the number is 53, then the shape is cone.""
+Cards: ['28', '53', 'cube', 'cone']
+
+Which cards must you turn over?
+Your answer:","['28', '53', 'cube', 'cone']","
+53, cube","['53', 'cube']","['P', 'not_Q']",CORRECT,142,6,0
+91,T92,3,910045,"If the number is 53, then the shape is cone.","Rule: ""If the number is 53, then the shape is cone.""
+Cards: ['28', 'cone', '53', 'cube']
+
+Which cards must you turn over?
+Your answer:","['28', 'cone', '53', 'cube']","
+53, cube","['53', 'cube']","['P', 'not_Q']",CORRECT,141,6,0
+91,T92,4,910046,"If the number is 53, then the shape is cone.","Rule: ""If the number is 53, then the shape is cone.""
+Cards: ['cone', 'cube', '53', '28']
+
+Which cards must you turn over?
+Your answer:","['cone', 'cube', '53', '28']","53, cube","['53', 'cube']","['P', 'not_Q']",CORRECT,138,5,0
+92,T93,0,920042,"If the letter is J, then the number is 77.","Rule: ""If the letter is J, then the number is 77.""
+Cards: ['31', 'R', 'J', '77']
+
+Which cards must you turn over?
+Your answer:","['31', 'R', 'J', '77']","J, R","['J', 'R']","['P', 'not_P']",LOGIC_ERROR,138,4,0
+92,T93,1,920043,"If the letter is J, then the number is 77.","Rule: ""If the letter is J, then the number is 77.""
+Cards: ['R', '31', 'J', '77']
+
+Which cards must you turn over?
+Your answer:","['R', '31', 'J', '77']","J, R","['J', 'R']","['P', 'not_P']",LOGIC_ERROR,138,4,0
+92,T93,2,920044,"If the letter is J, then the number is 77.","Rule: ""If the letter is J, then the number is 77.""
+Cards: ['R', '31', '77', 'J']
+
+Which cards must you turn over?
+Your answer:","['R', '31', '77', 'J']","
+J, 77","['J', '77']","['P', 'Q']",MATCHING_BIAS,142,7,0
+92,T93,3,920045,"If the letter is J, then the number is 77.","Rule: ""If the letter is J, then the number is 77.""
+Cards: ['31', 'R', '77', 'J']
+
+Which cards must you turn over?
+Your answer:","['31', 'R', '77', 'J']","
+J, 77","['J', '77']","['P', 'Q']",MATCHING_BIAS,142,7,0
+92,T93,4,920046,"If the letter is J, then the number is 77.","Rule: ""If the letter is J, then the number is 77.""
+Cards: ['31', 'J', '77', 'R']
+
+Which cards must you turn over?
+Your answer:","['31', 'J', '77', 'R']","
+J, 77","['J', '77']","['P', 'Q']",MATCHING_BIAS,142,7,0
+93,T94,0,930042,"If the figure is pixelated, then the border is zigzag.","Rule: ""If the figure is pixelated, then the border is zigzag.""
+Cards: ['zigzag', 'pixelated', 'smooth', 'wavy']
+
+Which cards must you turn over?
+Your answer:","['zigzag', 'pixelated', 'smooth', 'wavy']","pixelated, smooth","['pixelated', 'smooth']","['P', 'not_P']",LOGIC_ERROR,137,5,0
+93,T94,1,930043,"If the figure is pixelated, then the border is zigzag.","Rule: ""If the figure is pixelated, then the border is zigzag.""
+Cards: ['zigzag', 'wavy', 'smooth', 'pixelated']
+
+Which cards must you turn over?
+Your answer:","['zigzag', 'wavy', 'smooth', 'pixelated']","
+pixelated, wavy","['pixelated', 'wavy']","['P', 'not_Q']",CORRECT,141,6,0
+93,T94,2,930044,"If the figure is pixelated, then the border is zigzag.","Rule: ""If the figure is pixelated, then the border is zigzag.""
+Cards: ['pixelated', 'smooth', 'wavy', 'zigzag']
+
+Which cards must you turn over?
+Your answer:","['pixelated', 'smooth', 'wavy', 'zigzag']","
+pixelated, wavy","['pixelated', 'wavy']","['P', 'not_Q']",CORRECT,141,6,0
+93,T94,3,930045,"If the figure is pixelated, then the border is zigzag.","Rule: ""If the figure is pixelated, then the border is zigzag.""
+Cards: ['wavy', 'pixelated', 'zigzag', 'smooth']
+
+Which cards must you turn over?
+Your answer:","['wavy', 'pixelated', 'zigzag', 'smooth']","
+pixelated, wavy","['pixelated', 'wavy']","['P', 'not_Q']",CORRECT,141,6,0
+93,T94,4,930046,"If the figure is pixelated, then the border is zigzag.","Rule: ""If the figure is pixelated, then the border is zigzag.""
+Cards: ['zigzag', 'smooth', 'pixelated', 'wavy']
+
+Which cards must you turn over?
+Your answer:","['zigzag', 'smooth', 'pixelated', 'wavy']","pixelated, smooth","['pixelated', 'smooth']","['P', 'not_P']",LOGIC_ERROR,137,5,0
+94,T95,0,940042,"If the pattern is mosaic, then the color is teal.","Rule: ""If the pattern is mosaic, then the color is teal.""
+Cards: ['gradient', 'teal', 'mosaic', 'beige']
+
+Which cards must you turn over?
+Your answer:","['gradient', 'teal', 'mosaic', 'beige']","mosaic, teal","['mosaic', 'teal']","['P', 'Q']",MATCHING_BIAS,134,4,0
+94,T95,1,940043,"If the pattern is mosaic, then the color is teal.","Rule: ""If the pattern is mosaic, then the color is teal.""
+Cards: ['teal', 'mosaic', 'gradient', 'beige']
+
+Which cards must you turn over?
+Your answer:","['teal', 'mosaic', 'gradient', 'beige']","
+mosaic, teal","['mosaic', 'teal']","['P', 'Q']",MATCHING_BIAS,138,5,0
+94,T95,2,940044,"If the pattern is mosaic, then the color is teal.","Rule: ""If the pattern is mosaic, then the color is teal.""
+Cards: ['teal', 'beige', 'gradient', 'mosaic']
+
+Which cards must you turn over?
+Your answer:","['teal', 'beige', 'gradient', 'mosaic']","
+mosaic, teal","['mosaic', 'teal']","['P', 'Q']",MATCHING_BIAS,138,5,0
+94,T95,3,940045,"If the pattern is mosaic, then the color is teal.","Rule: ""If the pattern is mosaic, then the color is teal.""
+Cards: ['mosaic', 'beige', 'teal', 'gradient']
+
+Which cards must you turn over?
+Your answer:","['mosaic', 'beige', 'teal', 'gradient']","mosaic, beige","['mosaic', 'beige']","['P', 'not_Q']",CORRECT,134,4,0
+94,T95,4,940046,"If the pattern is mosaic, then the color is teal.","Rule: ""If the pattern is mosaic, then the color is teal.""
+Cards: ['beige', 'gradient', 'teal', 'mosaic']
+
+Which cards must you turn over?
+Your answer:","['beige', 'gradient', 'teal', 'mosaic']","
+mosaic, teal","['mosaic', 'teal']","['P', 'Q']",MATCHING_BIAS,138,5,0
+95,T96,0,950042,"If the digit is 7, then the symbol is prism.","Rule: ""If the digit is 7, then the symbol is prism.""
+Cards: ['7', '2', 'lens', 'prism']
+
+Which cards must you turn over?
+Your answer:","['7', '2', 'lens', 'prism']","
+7, lens","['7', 'lens']","['P', 'not_Q']",CORRECT,139,5,0
+95,T96,1,950043,"If the digit is 7, then the symbol is prism.","Rule: ""If the digit is 7, then the symbol is prism.""
+Cards: ['lens', '2', '7', 'prism']
+
+Which cards must you turn over?
+Your answer:","['lens', '2', '7', 'prism']","
+7, lens","['7', 'lens']","['P', 'not_Q']",CORRECT,139,5,0
+95,T96,2,950044,"If the digit is 7, then the symbol is prism.","Rule: ""If the digit is 7, then the symbol is prism.""
+Cards: ['prism', 'lens', '2', '7']
+
+Which cards must you turn over?
+Your answer:","['prism', 'lens', '2', '7']","
+7, lens","['7', 'lens']","['P', 'not_Q']",CORRECT,139,5,0
+95,T96,3,950045,"If the digit is 7, then the symbol is prism.","Rule: ""If the digit is 7, then the symbol is prism.""
+Cards: ['2', 'prism', 'lens', '7']
+
+Which cards must you turn over?
+Your answer:","['2', 'prism', 'lens', '7']","
+7, lens","['7', 'lens']","['P', 'not_Q']",CORRECT,138,5,0
+95,T96,4,950046,"If the digit is 7, then the symbol is prism.","Rule: ""If the digit is 7, then the symbol is prism.""
+Cards: ['prism', 'lens', '7', '2']
+
+Which cards must you turn over?
+Your answer:","['prism', 'lens', '7', '2']","
+7, lens","['7', 'lens']","['P', 'not_Q']",CORRECT,139,5,0
+96,T97,0,960042,"If the letter is S, then the number is 49.","Rule: ""If the letter is S, then the number is 49.""
+Cards: ['16', 'N', 'S', '49']
+
+Which cards must you turn over?
+Your answer:","['16', 'N', 'S', '49']","S, 16","['S', '16']","['P', 'not_Q']",CORRECT,138,6,0
+96,T97,1,960043,"If the letter is S, then the number is 49.","Rule: ""If the letter is S, then the number is 49.""
+Cards: ['N', '16', 'S', '49']
+
+Which cards must you turn over?
+Your answer:","['N', '16', 'S', '49']","
+S, N","['S', 'N']","['P', 'not_P']",LOGIC_ERROR,142,5,0
+96,T97,2,960044,"If the letter is S, then the number is 49.","Rule: ""If the letter is S, then the number is 49.""
+Cards: ['N', '16', '49', 'S']
+
+Which cards must you turn over?
+Your answer:","['N', '16', '49', 'S']","
+S, N","['S', 'N']","['P', 'not_P']",LOGIC_ERROR,142,5,0
+96,T97,3,960045,"If the letter is S, then the number is 49.","Rule: ""If the letter is S, then the number is 49.""
+Cards: ['49', '16', 'N', 'S']
+
+Which cards must you turn over?
+Your answer:","['49', '16', 'N', 'S']","
+S, 49","['S', '49']","['P', 'Q']",MATCHING_BIAS,142,7,0
+96,T97,4,960046,"If the letter is S, then the number is 49.","Rule: ""If the letter is S, then the number is 49.""
+Cards: ['S', 'N', '49', '16']
+
+Which cards must you turn over?
+Your answer:","['S', 'N', '49', '16']","
+S, 49","['S', '49']","['P', 'Q']",MATCHING_BIAS,142,7,0
+97,T98,0,970042,"If the symbol is gear, then the digit is 12.","Rule: ""If the symbol is gear, then the digit is 12.""
+Cards: ['12', 'spring', 'gear', '7']
+
+Which cards must you turn over?
+Your answer:","['12', 'spring', 'gear', '7']","gear, 12","['gear', '12']","['P', 'Q']",MATCHING_BIAS,137,6,0
+97,T98,1,970043,"If the symbol is gear, then the digit is 12.","Rule: ""If the symbol is gear, then the digit is 12.""
+Cards: ['12', '7', 'gear', 'spring']
+
+Which cards must you turn over?
+Your answer:","['12', '7', 'gear', 'spring']","gear, 12","['gear', '12']","['P', 'Q']",MATCHING_BIAS,137,6,0
+97,T98,2,970044,"If the symbol is gear, then the digit is 12.","Rule: ""If the symbol is gear, then the digit is 12.""
+Cards: ['spring', 'gear', '12', '7']
+
+Which cards must you turn over?
+Your answer:","['spring', 'gear', '12', '7']","gear, 7","['gear', '7']","['P', 'not_Q']",CORRECT,137,5,0
+97,T98,3,970045,"If the symbol is gear, then the digit is 12.","Rule: ""If the symbol is gear, then the digit is 12.""
+Cards: ['gear', 'spring', '7', '12']
+
+Which cards must you turn over?
+Your answer:","['gear', 'spring', '7', '12']","
+gear, 7","['gear', '7']","['P', 'not_Q']",CORRECT,141,6,0
+97,T98,4,970046,"If the symbol is gear, then the digit is 12.","Rule: ""If the symbol is gear, then the digit is 12.""
+Cards: ['spring', 'gear', '7', '12']
+
+Which cards must you turn over?
+Your answer:","['spring', 'gear', '7', '12']","
+gear, 7","['gear', '7']","['P', 'not_Q']",CORRECT,141,6,0
+98,T99,0,980042,"If the shape is teardrop, then the color is lavender.","Rule: ""If the shape is teardrop, then the color is lavender.""
+Cards: ['scarlet', 'lozenge', 'lavender', 'teardrop']
+
+Which cards must you turn over?
+Your answer:","['scarlet', 'lozenge', 'lavender', 'teardrop']","
+teardrop, lavender","['teardrop', 'lavender']","['P', 'Q']",MATCHING_BIAS,145,7,0
+98,T99,1,980043,"If the shape is teardrop, then the color is lavender.","Rule: ""If the shape is teardrop, then the color is lavender.""
+Cards: ['lozenge', 'lavender', 'scarlet', 'teardrop']
+
+Which cards must you turn over?
+Your answer:","['lozenge', 'lavender', 'scarlet', 'teardrop']","
+teardrop, lavender","['teardrop', 'lavender']","['P', 'Q']",MATCHING_BIAS,145,7,0
+98,T99,2,980044,"If the shape is teardrop, then the color is lavender.","Rule: ""If the shape is teardrop, then the color is lavender.""
+Cards: ['teardrop', 'scarlet', 'lavender', 'lozenge']
+
+Which cards must you turn over?
+Your answer:","['teardrop', 'scarlet', 'lavender', 'lozenge']","
+teardrop, scarlet","['teardrop', 'scarlet']","['P', 'not_Q']",CORRECT,145,7,0
+98,T99,3,980045,"If the shape is teardrop, then the color is lavender.","Rule: ""If the shape is teardrop, then the color is lavender.""
+Cards: ['lavender', 'lozenge', 'teardrop', 'scarlet']
+
+Which cards must you turn over?
+Your answer:","['lavender', 'lozenge', 'teardrop', 'scarlet']","
+teardrop, lavender","['teardrop', 'lavender']","['P', 'Q']",MATCHING_BIAS,144,7,0
+98,T99,4,980046,"If the shape is teardrop, then the color is lavender.","Rule: ""If the shape is teardrop, then the color is lavender.""
+Cards: ['scarlet', 'teardrop', 'lavender', 'lozenge']
+
+Which cards must you turn over?
+Your answer:","['scarlet', 'teardrop', 'lavender', 'lozenge']","
+teardrop, scarlet","['teardrop', 'scarlet']","['P', 'not_Q']",CORRECT,145,7,0
+99,T100,0,990042,"If the number is 31, then the letter is Q.","Rule: ""If the number is 31, then the letter is Q.""
+Cards: ['31', '44', 'B', 'Q']
+
+Which cards must you turn over?
+Your answer:","['31', '44', 'B', 'Q']","
+31, B","['31', 'B']","['P', 'not_Q']",CORRECT,141,6,0
+99,T100,1,990043,"If the number is 31, then the letter is Q.","Rule: ""If the number is 31, then the letter is Q.""
+Cards: ['Q', '31', '44', 'B']
+
+Which cards must you turn over?
+Your answer:","['Q', '31', '44', 'B']","
+31, Q","['31', 'Q']","['P', 'Q']",MATCHING_BIAS,142,6,0
+99,T100,2,990044,"If the number is 31, then the letter is Q.","Rule: ""If the number is 31, then the letter is Q.""
+Cards: ['44', 'B', 'Q', '31']
+
+Which cards must you turn over?
+Your answer:","['44', 'B', 'Q', '31']","
+31, B","['31', 'B']","['P', 'not_Q']",CORRECT,141,6,0
+99,T100,3,990045,"If the number is 31, then the letter is Q.","Rule: ""If the number is 31, then the letter is Q.""
+Cards: ['Q', '31', 'B', '44']
+
+Which cards must you turn over?
+Your answer:","['Q', '31', 'B', '44']","
+31, Q","['31', 'Q']","['P', 'Q']",MATCHING_BIAS,142,6,0
+99,T100,4,990046,"If the number is 31, then the letter is Q.","Rule: ""If the number is 31, then the letter is Q.""
+Cards: ['44', 'Q', 'B', '31']
+
+Which cards must you turn over?
+Your answer:","['44', 'Q', 'B', '31']","
+31, B","['31', 'B']","['P', 'not_Q']",CORRECT,142,6,0

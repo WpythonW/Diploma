@@ -1,0 +1,8 @@
+group_variable,group_value,n12,n21,discordant,mcnemar_statistic_cc,mcnemar_exact_pvalue,bh_fdr_pvalue
+race,Asian,0,2,2,0.5,0.5,1.0
+race,Black,0,1,1,0.0,1.0,1.0
+race,Hispanic,0,1,1,0.0,1.0,1.0
+race,White,0,1,1,0.0,1.0,1.0
+age,24,0,2,2,0.5,0.5,1.0
+age,38,0,1,1,0.0,1.0,1.0
+age,55,0,2,2,0.5,0.5,1.0

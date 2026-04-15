@@ -1,0 +1,28 @@
+{
+  "model": "google/gemma-3-12b-it",
+  "prompt_style": "baseline",
+  "reasoning_effort": "none",
+  "provider": {
+    "order": [
+      "crusoe",
+      "cloudflare"
+    ],
+    "allow_fallbacks": false
+  },
+  "n_rules": 50,
+  "n_success": 3,
+  "n_invalid_rules": 0,
+  "n_processed_rules": 50,
+  "max_turns": 19,
+  "stop_iou": 0.95,
+  "stats": {
+    "n_rules": 50,
+    "n_success": 3,
+    "n_invalid_rules": 0,
+    "n_processed_rules": 50,
+    "mean_turns": 18.18,
+    "prompt_tokens": 738282,
+    "completion_tokens": 30387,
+    "reasoning_tokens": 0
+  }
+}

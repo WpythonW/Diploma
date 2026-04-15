@@ -1,0 +1,425 @@
+{
+  "chapters": {
+    "chapter1.tex": {
+      "tversky1981framing, tversky1983extensional": 1,
+      "simon1955behavioral": 1,
+      "kahneman2011thinking": 1,
+      "evans2003in, kahneman2011thinking": 1,
+      "wei2022chain": 1,
+      "tversky1983extensional": 2,
+      "wason1966reasoning": 3,
+      "evans1998matching": 2,
+      "wason1960failure": 2,
+      "tenenbaum1999bayesian": 1,
+      "oaksford1994rational": 1,
+      "banatt2024wilt": 2,
+      "zhou2023benchmark": 1,
+      "zhou2023benchmark, macmillan2024irrationality": 1,
+      "dasgupta2024language": 3,
+      "zhang2025identifying": 2,
+      "stolfo2024confidence": 1,
+      "collins2024softmax, han2023explaining": 1,
+      "collins2024softmax": 1,
+      "fu2024implies": 1,
+      "batista2026rational": 4,
+      "suri2024large": 2,
+      "jiang2024peek": 3,
+      "chadimova2024meaningless": 1,
+      "macmillan2024irrationality": 3,
+      "shafiei2025more": 2,
+      "an2025measuring": 1,
+      "yang2025bias": 1,
+      "cheng1985pragmatic": 1,
+      "coda2024cogbench": 2,
+      "koo2024benchmarking": 1,
+      "han2023explaining": 1,
+      "jiang2024peek, shafiei2025more": 1,
+      "mcnemar1947note": 1,
+      "benjamini1995controlling": 1
+    },
+    "chapter2_exp1_linda.tex": {
+      "tversky1983extensional": 2,
+      "suri2024large, wang2024linda, jiang2024peek, macmillan2024irrationality": 1,
+      "zhou2023benchmark": 1,
+      "usdl2024oews": 1,
+      "benjamini1995controlling": 1,
+      "mcnemar1947note": 1
+    },
+    "chapter2_exp2_wason.tex": {
+      "wason1966reasoning": 1,
+      "nickerson1998confirmation": 1,
+      "cheng1985pragmatic, cosmides1992cognitive": 2,
+      "arkoudas2023gpt4": 1,
+      "cheng1985pragmatic": 2,
+      "binz2023using": 1,
+      "macmillan2024irrationality": 2,
+      "wei2022chain": 1,
+      "kojima2022large": 2,
+      "dasgupta2024language": 1,
+      "evans1998matching": 2
+    },
+    "chapter2_exp3_246.tex": {
+      "wason1960failure": 1,
+      "banatt2024wilt": 2,
+      "batista2026rational": 1
+    },
+    "chapter3.tex": {
+      "usdl2024oews": 1
+    },
+    "intro.tex": {
+      "bommasani2021opportunities": 1,
+      "kahneman2011thinking": 1,
+      "tversky1983extensional": 1,
+      "wason1966reasoning": 1,
+      "suri2024large, macmillan2024irrationality, coda2024cogbench": 1,
+      "binz2023using": 1,
+      "suri2024large": 1,
+      "macmillan2024irrationality": 1,
+      "tversky1983extensional, wason1966reasoning, wason1960failure": 1,
+      "mcnemar1947note": 1,
+      "benjamini1995controlling": 1,
+      "banatt2024wilt": 1
+    }
+  },
+  "coverage": {
+    "tversky1981framing, tversky1983extensional": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "OK"
+    },
+    "simon1955behavioral": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "CONTEXT:WARNING"
+    },
+    "kahneman2011thinking": {
+      "usage_count": 2,
+      "chapters_used": [
+        "chapter1.tex",
+        "intro.tex"
+      ],
+      "verdict": "OK"
+    },
+    "evans2003in, kahneman2011thinking": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "OK"
+    },
+    "wei2022chain": {
+      "usage_count": 2,
+      "chapters_used": [
+        "chapter1.tex",
+        "chapter2_exp2_wason.tex"
+      ],
+      "verdict": "OK"
+    },
+    "tversky1983extensional": {
+      "usage_count": 5,
+      "chapters_used": [
+        "chapter1.tex",
+        "chapter2_exp1_linda.tex",
+        "intro.tex"
+      ],
+      "verdict": "OK"
+    },
+    "wason1966reasoning": {
+      "usage_count": 5,
+      "chapters_used": [
+        "chapter1.tex",
+        "chapter2_exp2_wason.tex",
+        "intro.tex"
+      ],
+      "verdict": "OK"
+    },
+    "evans1998matching": {
+      "usage_count": 4,
+      "chapters_used": [
+        "chapter1.tex",
+        "chapter2_exp2_wason.tex"
+      ],
+      "verdict": "CONTEXT:ERROR"
+    },
+    "wason1960failure": {
+      "usage_count": 3,
+      "chapters_used": [
+        "chapter1.tex",
+        "chapter2_exp3_246.tex"
+      ],
+      "verdict": "OK"
+    },
+    "tenenbaum1999bayesian": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "CONTEXT:WARNING"
+    },
+    "oaksford1994rational": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "CONTEXT:ERROR"
+    },
+    "banatt2024wilt": {
+      "usage_count": 5,
+      "chapters_used": [
+        "chapter1.tex",
+        "chapter2_exp3_246.tex",
+        "intro.tex"
+      ],
+      "verdict": "CONTEXT:ERROR"
+    },
+    "zhou2023benchmark": {
+      "usage_count": 2,
+      "chapters_used": [
+        "chapter1.tex",
+        "chapter2_exp1_linda.tex"
+      ],
+      "verdict": "CONTEXT:WARNING"
+    },
+    "zhou2023benchmark, macmillan2024irrationality": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "OK"
+    },
+    "dasgupta2024language": {
+      "usage_count": 4,
+      "chapters_used": [
+        "chapter1.tex",
+        "chapter2_exp2_wason.tex"
+      ],
+      "verdict": "CONTEXT:ERROR"
+    },
+    "zhang2025identifying": {
+      "usage_count": 2,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "CONTEXT:ERROR"
+    },
+    "stolfo2024confidence": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "CONTEXT:ERROR"
+    },
+    "collins2024softmax, han2023explaining": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "OK"
+    },
+    "collins2024softmax": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "CONTEXT:WARNING"
+    },
+    "fu2024implies": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "CONTEXT:ERROR"
+    },
+    "batista2026rational": {
+      "usage_count": 5,
+      "chapters_used": [
+        "chapter1.tex",
+        "chapter2_exp3_246.tex"
+      ],
+      "verdict": "CONTEXT:WARNING"
+    },
+    "suri2024large": {
+      "usage_count": 3,
+      "chapters_used": [
+        "chapter1.tex",
+        "intro.tex"
+      ],
+      "verdict": "CONTEXT:ERROR"
+    },
+    "jiang2024peek": {
+      "usage_count": 3,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "CONTEXT:ERROR"
+    },
+    "chadimova2024meaningless": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "CONTEXT:WARNING"
+    },
+    "macmillan2024irrationality": {
+      "usage_count": 6,
+      "chapters_used": [
+        "chapter1.tex",
+        "chapter2_exp2_wason.tex",
+        "intro.tex"
+      ],
+      "verdict": "CONTEXT:ERROR"
+    },
+    "shafiei2025more": {
+      "usage_count": 2,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "CONTEXT:ERROR"
+    },
+    "an2025measuring": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "CONTEXT:WARNING"
+    },
+    "yang2025bias": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "OK"
+    },
+    "cheng1985pragmatic": {
+      "usage_count": 3,
+      "chapters_used": [
+        "chapter1.tex",
+        "chapter2_exp2_wason.tex"
+      ],
+      "verdict": "OK"
+    },
+    "coda2024cogbench": {
+      "usage_count": 2,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "CONTEXT:ERROR"
+    },
+    "koo2024benchmarking": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "CONTEXT:WARNING"
+    },
+    "han2023explaining": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "CONTEXT:WARNING"
+    },
+    "jiang2024peek, shafiei2025more": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter1.tex"
+      ],
+      "verdict": "OK"
+    },
+    "mcnemar1947note": {
+      "usage_count": 3,
+      "chapters_used": [
+        "chapter1.tex",
+        "chapter2_exp1_linda.tex",
+        "intro.tex"
+      ],
+      "verdict": "OK"
+    },
+    "benjamini1995controlling": {
+      "usage_count": 3,
+      "chapters_used": [
+        "chapter1.tex",
+        "chapter2_exp1_linda.tex",
+        "intro.tex"
+      ],
+      "verdict": "OK"
+    },
+    "suri2024large, wang2024linda, jiang2024peek, macmillan2024irrationality": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter2_exp1_linda.tex"
+      ],
+      "verdict": "OK"
+    },
+    "usdl2024oews": {
+      "usage_count": 2,
+      "chapters_used": [
+        "chapter2_exp1_linda.tex",
+        "chapter3.tex"
+      ],
+      "verdict": "CONTEXT:ERROR"
+    },
+    "nickerson1998confirmation": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter2_exp2_wason.tex"
+      ],
+      "verdict": "CONTEXT:WARNING"
+    },
+    "cheng1985pragmatic, cosmides1992cognitive": {
+      "usage_count": 2,
+      "chapters_used": [
+        "chapter2_exp2_wason.tex"
+      ],
+      "verdict": "OK"
+    },
+    "arkoudas2023gpt4": {
+      "usage_count": 1,
+      "chapters_used": [
+        "chapter2_exp2_wason.tex"
+      ],
+      "verdict": "CONTEXT:WARNING"
+    },
+    "binz2023using": {
+      "usage_count": 2,
+      "chapters_used": [
+        "chapter2_exp2_wason.tex",
+        "intro.tex"
+      ],
+      "verdict": "CONTEXT:ERROR"
+    },
+    "kojima2022large": {
+      "usage_count": 2,
+      "chapters_used": [
+        "chapter2_exp2_wason.tex"
+      ],
+      "verdict": "CONTEXT:WARNING"
+    },
+    "bommasani2021opportunities": {
+      "usage_count": 1,
+      "chapters_used": [
+        "intro.tex"
+      ],
+      "verdict": "CONTEXT:WARNING"
+    },
+    "suri2024large, macmillan2024irrationality, coda2024cogbench": {
+      "usage_count": 1,
+      "chapters_used": [
+        "intro.tex"
+      ],
+      "verdict": "OK"
+    },
+    "tversky1983extensional, wason1966reasoning, wason1960failure": {
+      "usage_count": 1,
+      "chapters_used": [
+        "intro.tex"
+      ],
+      "verdict": "OK"
+    }
+  },
+  "total_keys": 45
+}

@@ -1,0 +1,2 @@
+n_rules,n_success,n_invalid_rules,n_processed_rules,mean_turns,prompt_tokens,completion_tokens,reasoning_tokens
+50,5,2,52,17.56,864619,32419,0

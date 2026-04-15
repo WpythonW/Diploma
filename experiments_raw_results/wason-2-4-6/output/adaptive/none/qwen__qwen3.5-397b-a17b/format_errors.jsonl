@@ -1,0 +1,1 @@
+{"model": "qwen/qwen3.5-397b-a17b", "rule": "lambda x, y, z: x < 10", "turn": 9, "attempt": 1, "response_text": "```python\nH: lambda x,y,z: True\nT: [1001, 1, 1]\n```", "error": "Test values must be in [1..1000], got [1001, 1, 1]", "fatal": false}

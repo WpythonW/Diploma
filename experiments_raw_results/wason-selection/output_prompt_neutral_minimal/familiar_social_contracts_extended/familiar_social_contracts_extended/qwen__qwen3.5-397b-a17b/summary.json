@@ -1,0 +1,12 @@
+{
+  "model": "qwen/qwen3.5-397b-a17b",
+  "context": "familiar_social_contracts_extended",
+  "n_items": 100,
+  "n_prompt_permutations": 5,
+  "n_trials": 500,
+  "stats": {
+    "prompt_tokens": 40325,
+    "completion_tokens": 3143,
+    "reasoning_tokens": 0
+  }
+}

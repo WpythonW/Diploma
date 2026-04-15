@@ -13,6 +13,7 @@ dependencies = [
     "langchain-openai>=0.3",
     "langgraph>=0.2",
     "tavily-python>=0.7.23",
+    "seaborn>=0.13.2",
 ]
 
 [dependency-groups]

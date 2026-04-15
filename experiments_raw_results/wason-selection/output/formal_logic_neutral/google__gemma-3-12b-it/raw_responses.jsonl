@@ -1,0 +1,500 @@
+{"row_idx": 0, "item_id": "T1", "permutation_idx": 0, "ordered_cards": ["3", "D", "7", "A"], "response_text": "A, 3"}
+{"row_idx": 0, "item_id": "T1", "permutation_idx": 1, "ordered_cards": ["A", "7", "3", "D"], "response_text": "A, 3"}
+{"row_idx": 0, "item_id": "T1", "permutation_idx": 2, "ordered_cards": ["7", "A", "D", "3"], "response_text": "A, 3"}
+{"row_idx": 0, "item_id": "T1", "permutation_idx": 3, "ordered_cards": ["7", "3", "D", "A"], "response_text": "A, 3"}
+{"row_idx": 0, "item_id": "T1", "permutation_idx": 4, "ordered_cards": ["3", "A", "7", "D"], "response_text": "A, 3"}
+{"row_idx": 1, "item_id": "T2", "permutation_idx": 0, "ordered_cards": ["D", "5", "F", "8"], "response_text": "D, 5"}
+{"row_idx": 1, "item_id": "T2", "permutation_idx": 1, "ordered_cards": ["8", "D", "F", "5"], "response_text": "D, 5"}
+{"row_idx": 1, "item_id": "T2", "permutation_idx": 2, "ordered_cards": ["F", "D", "8", "5"], "response_text": "D, 5\n"}
+{"row_idx": 1, "item_id": "T2", "permutation_idx": 3, "ordered_cards": ["8", "F", "5", "D"], "response_text": "D, 5"}
+{"row_idx": 1, "item_id": "T2", "permutation_idx": 4, "ordered_cards": ["8", "D", "5", "F"], "response_text": "D, 5\n"}
+{"row_idx": 2, "item_id": "T3", "permutation_idx": 0, "ordered_cards": ["G", "1", "8", "U"], "response_text": "U, 8"}
+{"row_idx": 2, "item_id": "T3", "permutation_idx": 1, "ordered_cards": ["G", "1", "U", "8"], "response_text": "U, 8"}
+{"row_idx": 2, "item_id": "T3", "permutation_idx": 2, "ordered_cards": ["1", "U", "G", "8"], "response_text": "U, 8"}
+{"row_idx": 2, "item_id": "T3", "permutation_idx": 3, "ordered_cards": ["1", "G", "8", "U"], "response_text": "U, 8"}
+{"row_idx": 2, "item_id": "T3", "permutation_idx": 4, "ordered_cards": ["8", "G", "U", "1"], "response_text": "U"}
+{"row_idx": 3, "item_id": "T4", "permutation_idx": 0, "ordered_cards": ["9", "K", "E", "2"], "response_text": "E, 2\n"}
+{"row_idx": 3, "item_id": "T4", "permutation_idx": 1, "ordered_cards": ["E", "2", "9", "K"], "response_text": "E, 2"}
+{"row_idx": 3, "item_id": "T4", "permutation_idx": 2, "ordered_cards": ["E", "9", "2", "K"], "response_text": "E, 2"}
+{"row_idx": 3, "item_id": "T4", "permutation_idx": 3, "ordered_cards": ["9", "E", "K", "2"], "response_text": "E, 2\n"}
+{"row_idx": 3, "item_id": "T4", "permutation_idx": 4, "ordered_cards": ["K", "E", "2", "9"], "response_text": "E, 2\n"}
+{"row_idx": 4, "item_id": "T5", "permutation_idx": 0, "ordered_cards": ["X", "7", "Y", "4"], "response_text": "7, X"}
+{"row_idx": 4, "item_id": "T5", "permutation_idx": 1, "ordered_cards": ["4", "X", "7", "Y"], "response_text": "7, X"}
+{"row_idx": 4, "item_id": "T5", "permutation_idx": 2, "ordered_cards": ["7", "X", "Y", "4"], "response_text": "7, X"}
+{"row_idx": 4, "item_id": "T5", "permutation_idx": 3, "ordered_cards": ["4", "Y", "X", "7"], "response_text": "7, X"}
+{"row_idx": 4, "item_id": "T5", "permutation_idx": 4, "ordered_cards": ["4", "7", "X", "Y"], "response_text": "7, X"}
+{"row_idx": 5, "item_id": "T6", "permutation_idx": 0, "ordered_cards": ["K", "9", "4", "A"], "response_text": "K, 9"}
+{"row_idx": 5, "item_id": "T6", "permutation_idx": 1, "ordered_cards": ["9", "4", "A", "K"], "response_text": "K, 4\n"}
+{"row_idx": 5, "item_id": "T6", "permutation_idx": 2, "ordered_cards": ["4", "9", "K", "A"], "response_text": "K, 9"}
+{"row_idx": 5, "item_id": "T6", "permutation_idx": 3, "ordered_cards": ["A", "K", "9", "4"], "response_text": "K, 4\n"}
+{"row_idx": 5, "item_id": "T6", "permutation_idx": 4, "ordered_cards": ["K", "9", "A", "4"], "response_text": "K, 9"}
+{"row_idx": 6, "item_id": "T7", "permutation_idx": 0, "ordered_cards": ["S", "9", "P", "6"], "response_text": "6, S"}
+{"row_idx": 6, "item_id": "T7", "permutation_idx": 1, "ordered_cards": ["6", "9", "S", "P"], "response_text": "6, S\n"}
+{"row_idx": 6, "item_id": "T7", "permutation_idx": 2, "ordered_cards": ["P", "6", "9", "S"], "response_text": "6, S"}
+{"row_idx": 6, "item_id": "T7", "permutation_idx": 3, "ordered_cards": ["9", "P", "S", "6"], "response_text": "9, P"}
+{"row_idx": 6, "item_id": "T7", "permutation_idx": 4, "ordered_cards": ["6", "P", "S", "9"], "response_text": "6, S"}
+{"row_idx": 7, "item_id": "T8", "permutation_idx": 0, "ordered_cards": ["R", "9", "L", "2"], "response_text": "9, L"}
+{"row_idx": 7, "item_id": "T8", "permutation_idx": 1, "ordered_cards": ["2", "L", "R", "9"], "response_text": "9, L"}
+{"row_idx": 7, "item_id": "T8", "permutation_idx": 2, "ordered_cards": ["L", "2", "R", "9"], "response_text": "9, L"}
+{"row_idx": 7, "item_id": "T8", "permutation_idx": 3, "ordered_cards": ["9", "R", "L", "2"], "response_text": "9, L"}
+{"row_idx": 7, "item_id": "T8", "permutation_idx": 4, "ordered_cards": ["R", "2", "L", "9"], "response_text": "2, R"}
+{"row_idx": 8, "item_id": "T9", "permutation_idx": 0, "ordered_cards": ["1", "O", "H", "2"], "response_text": "H, 2"}
+{"row_idx": 8, "item_id": "T9", "permutation_idx": 1, "ordered_cards": ["O", "H", "1", "2"], "response_text": "H, 2"}
+{"row_idx": 8, "item_id": "T9", "permutation_idx": 2, "ordered_cards": ["H", "2", "O", "1"], "response_text": "H, 1"}
+{"row_idx": 8, "item_id": "T9", "permutation_idx": 3, "ordered_cards": ["H", "O", "1", "2"], "response_text": "H, 2"}
+{"row_idx": 8, "item_id": "T9", "permutation_idx": 4, "ordered_cards": ["2", "H", "1", "O"], "response_text": "H, 1"}
+{"row_idx": 9, "item_id": "T10", "permutation_idx": 0, "ordered_cards": ["10", "5", "K", "J"], "response_text": "10, J\n"}
+{"row_idx": 9, "item_id": "T10", "permutation_idx": 1, "ordered_cards": ["J", "10", "K", "5"], "response_text": "10, J"}
+{"row_idx": 9, "item_id": "T10", "permutation_idx": 2, "ordered_cards": ["10", "K", "5", "J"], "response_text": "10, J\n"}
+{"row_idx": 9, "item_id": "T10", "permutation_idx": 3, "ordered_cards": ["10", "5", "J", "K"], "response_text": "10, J"}
+{"row_idx": 9, "item_id": "T10", "permutation_idx": 4, "ordered_cards": ["5", "10", "J", "K"], "response_text": "10, J\n"}
+{"row_idx": 10, "item_id": "T11", "permutation_idx": 0, "ordered_cards": ["2", "H", "5", "Y"], "response_text": "H, Y"}
+{"row_idx": 10, "item_id": "T11", "permutation_idx": 1, "ordered_cards": ["5", "H", "Y", "2"], "response_text": "Y, 5"}
+{"row_idx": 10, "item_id": "T11", "permutation_idx": 2, "ordered_cards": ["H", "2", "Y", "5"], "response_text": "H, 2"}
+{"row_idx": 10, "item_id": "T11", "permutation_idx": 3, "ordered_cards": ["2", "Y", "5", "H"], "response_text": "Y, 5"}
+{"row_idx": 10, "item_id": "T11", "permutation_idx": 4, "ordered_cards": ["5", "2", "H", "Y"], "response_text": "Y, 5"}
+{"row_idx": 11, "item_id": "T12", "permutation_idx": 0, "ordered_cards": ["7", "D", "F", "4"], "response_text": "4, D\n"}
+{"row_idx": 11, "item_id": "T12", "permutation_idx": 1, "ordered_cards": ["D", "F", "7", "4"], "response_text": "4, D\n"}
+{"row_idx": 11, "item_id": "T12", "permutation_idx": 2, "ordered_cards": ["F", "D", "4", "7"], "response_text": "4"}
+{"row_idx": 11, "item_id": "T12", "permutation_idx": 3, "ordered_cards": ["4", "D", "F", "7"], "response_text": "4, D\n"}
+{"row_idx": 11, "item_id": "T12", "permutation_idx": 4, "ordered_cards": ["4", "7", "F", "D"], "response_text": "4, D"}
+{"row_idx": 12, "item_id": "T13", "permutation_idx": 0, "ordered_cards": ["10", "G", "S", "20"], "response_text": "G, 20\n"}
+{"row_idx": 12, "item_id": "T13", "permutation_idx": 1, "ordered_cards": ["G", "S", "10", "20"], "response_text": "G, 20"}
+{"row_idx": 12, "item_id": "T13", "permutation_idx": 2, "ordered_cards": ["G", "20", "S", "10"], "response_text": "G, 20\n"}
+{"row_idx": 12, "item_id": "T13", "permutation_idx": 3, "ordered_cards": ["S", "20", "G", "10"], "response_text": "S, 10"}
+{"row_idx": 12, "item_id": "T13", "permutation_idx": 4, "ordered_cards": ["20", "G", "10", "S"], "response_text": "G, 20\n"}
+{"row_idx": 13, "item_id": "T14", "permutation_idx": 0, "ordered_cards": ["4", "K", "9", "I"], "response_text": "I, 9"}
+{"row_idx": 13, "item_id": "T14", "permutation_idx": 1, "ordered_cards": ["I", "K", "4", "9"], "response_text": "I, 9"}
+{"row_idx": 13, "item_id": "T14", "permutation_idx": 2, "ordered_cards": ["9", "I", "4", "K"], "response_text": "I, 9"}
+{"row_idx": 13, "item_id": "T14", "permutation_idx": 3, "ordered_cards": ["I", "K", "9", "4"], "response_text": "I, 9"}
+{"row_idx": 13, "item_id": "T14", "permutation_idx": 4, "ordered_cards": ["I", "9", "4", "K"], "response_text": "I, K"}
+{"row_idx": 14, "item_id": "T15", "permutation_idx": 0, "ordered_cards": ["3", "B", "12", "N"], "response_text": "3, B, 12, N"}
+{"row_idx": 14, "item_id": "T15", "permutation_idx": 1, "ordered_cards": ["3", "N", "12", "B"], "response_text": "3, B"}
+{"row_idx": 14, "item_id": "T15", "permutation_idx": 2, "ordered_cards": ["12", "N", "3", "B"], "response_text": "12, N\n"}
+{"row_idx": 14, "item_id": "T15", "permutation_idx": 3, "ordered_cards": ["B", "3", "N", "12"], "response_text": "3, B"}
+{"row_idx": 14, "item_id": "T15", "permutation_idx": 4, "ordered_cards": ["3", "B", "N", "12"], "response_text": "3, B, 12\n"}
+{"row_idx": 15, "item_id": "T16", "permutation_idx": 0, "ordered_cards": ["6", "E", "F", "7"], "response_text": "E, 7"}
+{"row_idx": 15, "item_id": "T16", "permutation_idx": 1, "ordered_cards": ["7", "6", "E", "F"], "response_text": "F, 6"}
+{"row_idx": 15, "item_id": "T16", "permutation_idx": 2, "ordered_cards": ["E", "6", "7", "F"], "response_text": "E, 7"}
+{"row_idx": 15, "item_id": "T16", "permutation_idx": 3, "ordered_cards": ["7", "E", "6", "F"], "response_text": "F, 6"}
+{"row_idx": 15, "item_id": "T16", "permutation_idx": 4, "ordered_cards": ["6", "F", "E", "7"], "response_text": "F, 6"}
+{"row_idx": 16, "item_id": "T17", "permutation_idx": 0, "ordered_cards": ["2", "Z", "5", "A"], "response_text": "2, Z\n"}
+{"row_idx": 16, "item_id": "T17", "permutation_idx": 1, "ordered_cards": ["2", "Z", "A", "5"], "response_text": "2, Z\n"}
+{"row_idx": 16, "item_id": "T17", "permutation_idx": 2, "ordered_cards": ["A", "Z", "5", "2"], "response_text": "2, Z"}
+{"row_idx": 16, "item_id": "T17", "permutation_idx": 3, "ordered_cards": ["Z", "A", "2", "5"], "response_text": "2, Z"}
+{"row_idx": 16, "item_id": "T17", "permutation_idx": 4, "ordered_cards": ["2", "5", "Z", "A"], "response_text": "2, Z"}
+{"row_idx": 17, "item_id": "T18", "permutation_idx": 0, "ordered_cards": ["W", "100", "50", "V"], "response_text": "W, 100\n"}
+{"row_idx": 17, "item_id": "T18", "permutation_idx": 1, "ordered_cards": ["100", "V", "50", "W"], "response_text": "V, 50"}
+{"row_idx": 17, "item_id": "T18", "permutation_idx": 2, "ordered_cards": ["V", "50", "100", "W"], "response_text": "V, 50"}
+{"row_idx": 17, "item_id": "T18", "permutation_idx": 3, "ordered_cards": ["W", "V", "50", "100"], "response_text": "W, 100\n"}
+{"row_idx": 17, "item_id": "T18", "permutation_idx": 4, "ordered_cards": ["V", "50", "W", "100"], "response_text": "V, 50\n"}
+{"row_idx": 18, "item_id": "T19", "permutation_idx": 0, "ordered_cards": ["E", "3", "4", "K"], "response_text": "E, 3"}
+{"row_idx": 18, "item_id": "T19", "permutation_idx": 1, "ordered_cards": ["3", "K", "E", "4"], "response_text": "K, 3"}
+{"row_idx": 18, "item_id": "T19", "permutation_idx": 2, "ordered_cards": ["3", "E", "4", "K"], "response_text": "E, 3, K"}
+{"row_idx": 18, "item_id": "T19", "permutation_idx": 3, "ordered_cards": ["E", "4", "3", "K"], "response_text": "E, 4, 3"}
+{"row_idx": 18, "item_id": "T19", "permutation_idx": 4, "ordered_cards": ["3", "K", "4", "E"], "response_text": "K, E"}
+{"row_idx": 19, "item_id": "T20", "permutation_idx": 0, "ordered_cards": ["green", "circle", "square", "red"], "response_text": "circle, green\n"}
+{"row_idx": 19, "item_id": "T20", "permutation_idx": 1, "ordered_cards": ["circle", "green", "red", "square"], "response_text": "circle, green\n"}
+{"row_idx": 19, "item_id": "T20", "permutation_idx": 2, "ordered_cards": ["square", "green", "circle", "red"], "response_text": "square, circle\n"}
+{"row_idx": 19, "item_id": "T20", "permutation_idx": 3, "ordered_cards": ["square", "red", "green", "circle"], "response_text": "square, red, circle\n"}
+{"row_idx": 19, "item_id": "T20", "permutation_idx": 4, "ordered_cards": ["circle", "red", "square", "green"], "response_text": "circle, red"}
+{"row_idx": 20, "item_id": "T21", "permutation_idx": 0, "ordered_cards": ["5", "2", "cross", "star"], "response_text": "5, cross"}
+{"row_idx": 20, "item_id": "T21", "permutation_idx": 1, "ordered_cards": ["2", "cross", "5", "star"], "response_text": "star, 2\n"}
+{"row_idx": 20, "item_id": "T21", "permutation_idx": 2, "ordered_cards": ["cross", "star", "2", "5"], "response_text": "star, 2\n"}
+{"row_idx": 20, "item_id": "T21", "permutation_idx": 3, "ordered_cards": ["2", "5", "cross", "star"], "response_text": "star, 5\n"}
+{"row_idx": 20, "item_id": "T21", "permutation_idx": 4, "ordered_cards": ["cross", "2", "star", "5"], "response_text": "cross, 5"}
+{"row_idx": 21, "item_id": "T22", "permutation_idx": 0, "ordered_cards": ["black", "dots", "white", "stripes"], "response_text": "black, dots, stripes\n"}
+{"row_idx": 21, "item_id": "T22", "permutation_idx": 1, "ordered_cards": ["black", "dots", "stripes", "white"], "response_text": "black, dots, white"}
+{"row_idx": 21, "item_id": "T22", "permutation_idx": 2, "ordered_cards": ["dots", "stripes", "black", "white"], "response_text": "stripes, black"}
+{"row_idx": 21, "item_id": "T22", "permutation_idx": 3, "ordered_cards": ["dots", "stripes", "white", "black"], "response_text": "stripes, white"}
+{"row_idx": 21, "item_id": "T22", "permutation_idx": 4, "ordered_cards": ["black", "stripes", "white", "dots"], "response_text": "black, dots\n"}
+{"row_idx": 22, "item_id": "T23", "permutation_idx": 0, "ordered_cards": ["9", "X", "M", "6"], "response_text": "9, M"}
+{"row_idx": 22, "item_id": "T23", "permutation_idx": 1, "ordered_cards": ["9", "6", "M", "X"], "response_text": "6, X"}
+{"row_idx": 22, "item_id": "T23", "permutation_idx": 2, "ordered_cards": ["6", "M", "X", "9"], "response_text": "6, X\n"}
+{"row_idx": 22, "item_id": "T23", "permutation_idx": 3, "ordered_cards": ["6", "M", "9", "X"], "response_text": "6, X\n"}
+{"row_idx": 22, "item_id": "T23", "permutation_idx": 4, "ordered_cards": ["M", "6", "9", "X"], "response_text": "6, X"}
+{"row_idx": 23, "item_id": "T24", "permutation_idx": 0, "ordered_cards": ["pentagon", "small", "large", "triangle"], "response_text": "pentagon, small, triangle"}
+{"row_idx": 23, "item_id": "T24", "permutation_idx": 1, "ordered_cards": ["triangle", "small", "pentagon", "large"], "response_text": "triangle, small"}
+{"row_idx": 23, "item_id": "T24", "permutation_idx": 2, "ordered_cards": ["small", "large", "pentagon", "triangle"], "response_text": "small, pentagon"}
+{"row_idx": 23, "item_id": "T24", "permutation_idx": 3, "ordered_cards": ["triangle", "pentagon", "large", "small"], "response_text": "triangle, large"}
+{"row_idx": 23, "item_id": "T24", "permutation_idx": 4, "ordered_cards": ["large", "triangle", "pentagon", "small"], "response_text": "triangle, large"}
+{"row_idx": 24, "item_id": "T25", "permutation_idx": 0, "ordered_cards": ["beta", "11", "alpha", "00"], "response_text": "alpha, 00\n"}
+{"row_idx": 24, "item_id": "T25", "permutation_idx": 1, "ordered_cards": ["alpha", "11", "beta", "00"], "response_text": "alpha, 00\n"}
+{"row_idx": 24, "item_id": "T25", "permutation_idx": 2, "ordered_cards": ["00", "alpha", "beta", "11"], "response_text": "alpha, 00\n"}
+{"row_idx": 24, "item_id": "T25", "permutation_idx": 3, "ordered_cards": ["alpha", "beta", "00", "11"], "response_text": "alpha, 00\n"}
+{"row_idx": 24, "item_id": "T25", "permutation_idx": 4, "ordered_cards": ["00", "11", "alpha", "beta"], "response_text": "alpha, 11"}
+{"row_idx": 25, "item_id": "T26", "permutation_idx": 0, "ordered_cards": ["thick", "thin", "filled", "hollow"], "response_text": "filled, thick\n"}
+{"row_idx": 25, "item_id": "T26", "permutation_idx": 1, "ordered_cards": ["filled", "thin", "thick", "hollow"], "response_text": "filled, thin"}
+{"row_idx": 25, "item_id": "T26", "permutation_idx": 2, "ordered_cards": ["hollow", "thick", "thin", "filled"], "response_text": "hollow, thin"}
+{"row_idx": 25, "item_id": "T26", "permutation_idx": 3, "ordered_cards": ["hollow", "filled", "thin", "thick"], "response_text": "filled, thick"}
+{"row_idx": 25, "item_id": "T26", "permutation_idx": 4, "ordered_cards": ["hollow", "filled", "thick", "thin"], "response_text": "filled, thick"}
+{"row_idx": 26, "item_id": "T27", "permutation_idx": 0, "ordered_cards": ["8", "dash", "dot", "1"], "response_text": "dash, 8, 1\n"}
+{"row_idx": 26, "item_id": "T27", "permutation_idx": 1, "ordered_cards": ["dot", "dash", "8", "1"], "response_text": "dash, 8\n"}
+{"row_idx": 26, "item_id": "T27", "permutation_idx": 2, "ordered_cards": ["1", "dot", "dash", "8"], "response_text": "1, dot"}
+{"row_idx": 26, "item_id": "T27", "permutation_idx": 3, "ordered_cards": ["dash", "dot", "1", "8"], "response_text": "dash, 8"}
+{"row_idx": 26, "item_id": "T27", "permutation_idx": 4, "ordered_cards": ["dot", "dash", "1", "8"], "response_text": "dot, 8\n"}
+{"row_idx": 27, "item_id": "T28", "permutation_idx": 0, "ordered_cards": ["dark", "oval", "light", "rectangle"], "response_text": "dark, oval"}
+{"row_idx": 27, "item_id": "T28", "permutation_idx": 1, "ordered_cards": ["oval", "dark", "rectangle", "light"], "response_text": "dark, rectangle\n"}
+{"row_idx": 27, "item_id": "T28", "permutation_idx": 2, "ordered_cards": ["rectangle", "light", "oval", "dark"], "response_text": "light, oval"}
+{"row_idx": 27, "item_id": "T28", "permutation_idx": 3, "ordered_cards": ["dark", "light", "rectangle", "oval"], "response_text": "light, oval"}
+{"row_idx": 27, "item_id": "T28", "permutation_idx": 4, "ordered_cards": ["rectangle", "dark", "light", "oval"], "response_text": "dark, rectangle"}
+{"row_idx": 28, "item_id": "T29", "permutation_idx": 0, "ordered_cards": ["7", "arrow", "3", "spiral"], "response_text": "3, arrow\n"}
+{"row_idx": 28, "item_id": "T29", "permutation_idx": 1, "ordered_cards": ["7", "3", "spiral", "arrow"], "response_text": "3, arrow\n"}
+{"row_idx": 28, "item_id": "T29", "permutation_idx": 2, "ordered_cards": ["3", "7", "arrow", "spiral"], "response_text": "3, arrow\n"}
+{"row_idx": 28, "item_id": "T29", "permutation_idx": 3, "ordered_cards": ["arrow", "spiral", "3", "7"], "response_text": "3, arrow\n"}
+{"row_idx": 28, "item_id": "T29", "permutation_idx": 4, "ordered_cards": ["arrow", "3", "spiral", "7"], "response_text": "3, arrow\n"}
+{"row_idx": 29, "item_id": "T30", "permutation_idx": 0, "ordered_cards": ["5", "Z", "Q", "0"], "response_text": "Z, 0"}
+{"row_idx": 29, "item_id": "T30", "permutation_idx": 1, "ordered_cards": ["Q", "5", "0", "Z"], "response_text": "Q, 5, Z"}
+{"row_idx": 29, "item_id": "T30", "permutation_idx": 2, "ordered_cards": ["Q", "Z", "5", "0"], "response_text": "Z, 0"}
+{"row_idx": 29, "item_id": "T30", "permutation_idx": 3, "ordered_cards": ["0", "Q", "5", "Z"], "response_text": "Q, 5"}
+{"row_idx": 29, "item_id": "T30", "permutation_idx": 4, "ordered_cards": ["Z", "Q", "5", "0"], "response_text": "Z, 0"}
+{"row_idx": 30, "item_id": "T31", "permutation_idx": 0, "ordered_cards": ["blue", "grid", "yellow", "solid"], "response_text": "grid, blue"}
+{"row_idx": 30, "item_id": "T31", "permutation_idx": 1, "ordered_cards": ["grid", "solid", "yellow", "blue"], "response_text": "grid, blue"}
+{"row_idx": 30, "item_id": "T31", "permutation_idx": 2, "ordered_cards": ["blue", "yellow", "grid", "solid"], "response_text": "grid, blue"}
+{"row_idx": 30, "item_id": "T31", "permutation_idx": 3, "ordered_cards": ["yellow", "solid", "blue", "grid"], "response_text": "yellow, grid\n"}
+{"row_idx": 30, "item_id": "T31", "permutation_idx": 4, "ordered_cards": ["blue", "grid", "solid", "yellow"], "response_text": "grid, blue"}
+{"row_idx": 31, "item_id": "T32", "permutation_idx": 0, "ordered_cards": ["hexagon", "3", "triangle", "6"], "response_text": "hexagon, 6"}
+{"row_idx": 31, "item_id": "T32", "permutation_idx": 1, "ordered_cards": ["6", "hexagon", "3", "triangle"], "response_text": "hexagon, 6\n"}
+{"row_idx": 31, "item_id": "T32", "permutation_idx": 2, "ordered_cards": ["triangle", "3", "6", "hexagon"], "response_text": "triangle, 3, hexagon\n"}
+{"row_idx": 31, "item_id": "T32", "permutation_idx": 3, "ordered_cards": ["3", "hexagon", "6", "triangle"], "response_text": "hexagon, 6\n"}
+{"row_idx": 31, "item_id": "T32", "permutation_idx": 4, "ordered_cards": ["3", "triangle", "6", "hexagon"], "response_text": "3, triangle, hexagon\n"}
+{"row_idx": 32, "item_id": "T33", "permutation_idx": 0, "ordered_cards": ["W", "4", "9", "F"], "response_text": "9, W"}
+{"row_idx": 32, "item_id": "T33", "permutation_idx": 1, "ordered_cards": ["F", "W", "4", "9"], "response_text": "F, 4"}
+{"row_idx": 32, "item_id": "T33", "permutation_idx": 2, "ordered_cards": ["W", "F", "4", "9"], "response_text": "9, F"}
+{"row_idx": 32, "item_id": "T33", "permutation_idx": 3, "ordered_cards": ["9", "4", "W", "F"], "response_text": "9, W\n"}
+{"row_idx": 32, "item_id": "T33", "permutation_idx": 4, "ordered_cards": ["F", "9", "4", "W"], "response_text": "F, 4"}
+{"row_idx": 33, "item_id": "T34", "permutation_idx": 0, "ordered_cards": ["empty", "shaded", "diamond", "circle"], "response_text": "shaded, circle"}
+{"row_idx": 33, "item_id": "T34", "permutation_idx": 1, "ordered_cards": ["shaded", "empty", "diamond", "circle"], "response_text": "shaded, diamond\n"}
+{"row_idx": 33, "item_id": "T34", "permutation_idx": 2, "ordered_cards": ["circle", "empty", "diamond", "shaded"], "response_text": "shaded, diamond\n"}
+{"row_idx": 33, "item_id": "T34", "permutation_idx": 3, "ordered_cards": ["shaded", "diamond", "empty", "circle"], "response_text": "shaded, diamond\n"}
+{"row_idx": 33, "item_id": "T34", "permutation_idx": 4, "ordered_cards": ["diamond", "circle", "empty", "shaded"], "response_text": "shaded, circle\n"}
+{"row_idx": 34, "item_id": "T35", "permutation_idx": 0, "ordered_cards": ["three_sides", "orange", "four_sides", "purple"], "response_text": "three_sides, purple"}
+{"row_idx": 34, "item_id": "T35", "permutation_idx": 1, "ordered_cards": ["purple", "three_sides", "four_sides", "orange"], "response_text": "three_sides, purple"}
+{"row_idx": 34, "item_id": "T35", "permutation_idx": 2, "ordered_cards": ["three_sides", "purple", "four_sides", "orange"], "response_text": "three_sides, purple"}
+{"row_idx": 34, "item_id": "T35", "permutation_idx": 3, "ordered_cards": ["four_sides", "three_sides", "orange", "purple"], "response_text": "three_sides, purple"}
+{"row_idx": 34, "item_id": "T35", "permutation_idx": 4, "ordered_cards": ["purple", "orange", "three_sides", "four_sides"], "response_text": "three_sides, purple"}
+{"row_idx": 35, "item_id": "T36", "permutation_idx": 0, "ordered_cards": ["99", "00", "delta", "gamma"], "response_text": "delta, 99"}
+{"row_idx": 35, "item_id": "T36", "permutation_idx": 1, "ordered_cards": ["delta", "00", "99", "gamma"], "response_text": "delta, 99"}
+{"row_idx": 35, "item_id": "T36", "permutation_idx": 2, "ordered_cards": ["99", "gamma", "delta", "00"], "response_text": "delta, 99\n"}
+{"row_idx": 35, "item_id": "T36", "permutation_idx": 3, "ordered_cards": ["gamma", "00", "99", "delta"], "response_text": "gamma, 00, delta\n"}
+{"row_idx": 35, "item_id": "T36", "permutation_idx": 4, "ordered_cards": ["delta", "gamma", "00", "99"], "response_text": "delta, 99\n"}
+{"row_idx": 36, "item_id": "T37", "permutation_idx": 0, "ordered_cards": ["solid", "small", "large", "dashed"], "response_text": "small, dashed"}
+{"row_idx": 36, "item_id": "T37", "permutation_idx": 1, "ordered_cards": ["solid", "large", "dashed", "small"], "response_text": "large, solid\n"}
+{"row_idx": 36, "item_id": "T37", "permutation_idx": 2, "ordered_cards": ["dashed", "solid", "large", "small"], "response_text": "small, border"}
+{"row_idx": 36, "item_id": "T37", "permutation_idx": 3, "ordered_cards": ["small", "solid", "dashed", "large"], "response_text": "small, solid"}
+{"row_idx": 36, "item_id": "T37", "permutation_idx": 4, "ordered_cards": ["solid", "small", "dashed", "large"], "response_text": "small, dashed\n"}
+{"row_idx": 37, "item_id": "T38", "permutation_idx": 0, "ordered_cards": ["T", "1", "I", "6"], "response_text": "T, 6"}
+{"row_idx": 37, "item_id": "T38", "permutation_idx": 1, "ordered_cards": ["1", "I", "6", "T"], "response_text": "I, 6, T"}
+{"row_idx": 37, "item_id": "T38", "permutation_idx": 2, "ordered_cards": ["T", "6", "I", "1"], "response_text": "T, 6"}
+{"row_idx": 37, "item_id": "T38", "permutation_idx": 3, "ordered_cards": ["1", "I", "T", "6"], "response_text": "I, 1\n"}
+{"row_idx": 37, "item_id": "T38", "permutation_idx": 4, "ordered_cards": ["T", "1", "6", "I"], "response_text": "T, 6"}
+{"row_idx": 38, "item_id": "T39", "permutation_idx": 0, "ordered_cards": ["square", "B", "circle", "N"], "response_text": "square, B\n"}
+{"row_idx": 38, "item_id": "T39", "permutation_idx": 1, "ordered_cards": ["square", "N", "B", "circle"], "response_text": "square, B\n"}
+{"row_idx": 38, "item_id": "T39", "permutation_idx": 2, "ordered_cards": ["circle", "N", "square", "B"], "response_text": "circle, N, square, B"}
+{"row_idx": 38, "item_id": "T39", "permutation_idx": 3, "ordered_cards": ["N", "circle", "square", "B"], "response_text": "circle, N, B"}
+{"row_idx": 38, "item_id": "T39", "permutation_idx": 4, "ordered_cards": ["square", "N", "circle", "B"], "response_text": "square, B\n"}
+{"row_idx": 39, "item_id": "T40", "permutation_idx": 0, "ordered_cards": ["grey", "diagonal", "brown", "horizontal"], "response_text": "diagonal, grey\n"}
+{"row_idx": 39, "item_id": "T40", "permutation_idx": 1, "ordered_cards": ["horizontal", "grey", "diagonal", "brown"], "response_text": "horizontal, brown"}
+{"row_idx": 39, "item_id": "T40", "permutation_idx": 2, "ordered_cards": ["diagonal", "grey", "brown", "horizontal"], "response_text": "brown, horizontal"}
+{"row_idx": 39, "item_id": "T40", "permutation_idx": 3, "ordered_cards": ["brown", "diagonal", "horizontal", "grey"], "response_text": "brown, horizontal"}
+{"row_idx": 39, "item_id": "T40", "permutation_idx": 4, "ordered_cards": ["horizontal", "diagonal", "grey", "brown"], "response_text": "horizontal, brown"}
+{"row_idx": 40, "item_id": "T41", "permutation_idx": 0, "ordered_cards": ["octagon", "8", "5", "pentagon"], "response_text": "8, octagon"}
+{"row_idx": 40, "item_id": "T41", "permutation_idx": 1, "ordered_cards": ["pentagon", "5", "octagon", "8"], "response_text": "5, pentagon"}
+{"row_idx": 40, "item_id": "T41", "permutation_idx": 2, "ordered_cards": ["5", "pentagon", "octagon", "8"], "response_text": "8, octagon\n"}
+{"row_idx": 40, "item_id": "T41", "permutation_idx": 3, "ordered_cards": ["octagon", "8", "pentagon", "5"], "response_text": "8, octagon"}
+{"row_idx": 40, "item_id": "T41", "permutation_idx": 4, "ordered_cards": ["octagon", "5", "8", "pentagon"], "response_text": "8, octagon"}
+{"row_idx": 41, "item_id": "T42", "permutation_idx": 0, "ordered_cards": ["1", "omega", "sigma", "0"], "response_text": "1, 0"}
+{"row_idx": 41, "item_id": "T42", "permutation_idx": 1, "ordered_cards": ["1", "sigma", "omega", "0"], "response_text": "1, omega\n"}
+{"row_idx": 41, "item_id": "T42", "permutation_idx": 2, "ordered_cards": ["1", "sigma", "0", "omega"], "response_text": "1, sigma\n"}
+{"row_idx": 41, "item_id": "T42", "permutation_idx": 3, "ordered_cards": ["1", "omega", "0", "sigma"], "response_text": "0, omega\n"}
+{"row_idx": 41, "item_id": "T42", "permutation_idx": 4, "ordered_cards": ["0", "omega", "sigma", "1"], "response_text": "0, omega\n"}
+{"row_idx": 42, "item_id": "T43", "permutation_idx": 0, "ordered_cards": ["grey", "concave", "pink", "convex"], "response_text": "grey, concave"}
+{"row_idx": 42, "item_id": "T43", "permutation_idx": 1, "ordered_cards": ["grey", "convex", "pink", "concave"], "response_text": "convex, pink"}
+{"row_idx": 42, "item_id": "T43", "permutation_idx": 2, "ordered_cards": ["grey", "convex", "concave", "pink"], "response_text": "grey, concave\n"}
+{"row_idx": 42, "item_id": "T43", "permutation_idx": 3, "ordered_cards": ["pink", "convex", "concave", "grey"], "response_text": "convex, pink"}
+{"row_idx": 42, "item_id": "T43", "permutation_idx": 4, "ordered_cards": ["pink", "grey", "concave", "convex"], "response_text": "grey, concave\n"}
+{"row_idx": 43, "item_id": "T44", "permutation_idx": 0, "ordered_cards": ["O", "D", "13", "10"], "response_text": "O, 10\n"}
+{"row_idx": 43, "item_id": "T44", "permutation_idx": 1, "ordered_cards": ["O", "13", "10", "D"], "response_text": "O, 13\n"}
+{"row_idx": 43, "item_id": "T44", "permutation_idx": 2, "ordered_cards": ["O", "10", "D", "13"], "response_text": "O, 10, D"}
+{"row_idx": 43, "item_id": "T44", "permutation_idx": 3, "ordered_cards": ["10", "D", "13", "O"], "response_text": "D, 13"}
+{"row_idx": 43, "item_id": "T44", "permutation_idx": 4, "ordered_cards": ["O", "D", "10", "13"], "response_text": "O, 13"}
+{"row_idx": 44, "item_id": "T45", "permutation_idx": 0, "ordered_cards": ["vertical", "2", "horizontal", "5"], "response_text": "vertical, 2, horizontal, 5"}
+{"row_idx": 44, "item_id": "T45", "permutation_idx": 1, "ordered_cards": ["vertical", "2", "5", "horizontal"], "response_text": "vertical, 2, horizontal"}
+{"row_idx": 44, "item_id": "T45", "permutation_idx": 2, "ordered_cards": ["2", "5", "vertical", "horizontal"], "response_text": "vertical, 2, horizontal"}
+{"row_idx": 44, "item_id": "T45", "permutation_idx": 3, "ordered_cards": ["2", "horizontal", "5", "vertical"], "response_text": "2, horizontal, vertical"}
+{"row_idx": 44, "item_id": "T45", "permutation_idx": 4, "ordered_cards": ["2", "vertical", "horizontal", "5"], "response_text": "vertical, 2, 5"}
+{"row_idx": 45, "item_id": "T46", "permutation_idx": 0, "ordered_cards": ["spade", "7", "4", "heart"], "response_text": "spade, 7, heart"}
+{"row_idx": 45, "item_id": "T46", "permutation_idx": 1, "ordered_cards": ["4", "spade", "7", "heart"], "response_text": "spade, 7, heart"}
+{"row_idx": 45, "item_id": "T46", "permutation_idx": 2, "ordered_cards": ["4", "heart", "spade", "7"], "response_text": "heart, 4\n"}
+{"row_idx": 45, "item_id": "T46", "permutation_idx": 3, "ordered_cards": ["heart", "4", "spade", "7"], "response_text": "heart, 4\n"}
+{"row_idx": 45, "item_id": "T46", "permutation_idx": 4, "ordered_cards": ["7", "heart", "4", "spade"], "response_text": "heart, 4\n"}
+{"row_idx": 46, "item_id": "T47", "permutation_idx": 0, "ordered_cards": ["rhombus", "striped", "dotted", "oval"], "response_text": "dotted, oval\n"}
+{"row_idx": 46, "item_id": "T47", "permutation_idx": 1, "ordered_cards": ["oval", "rhombus", "striped", "dotted"], "response_text": "dotted, oval\n"}
+{"row_idx": 46, "item_id": "T47", "permutation_idx": 2, "ordered_cards": ["dotted", "rhombus", "striped", "oval"], "response_text": "dotted, rhombus"}
+{"row_idx": 46, "item_id": "T47", "permutation_idx": 3, "ordered_cards": ["rhombus", "oval", "striped", "dotted"], "response_text": "rhombus, striped\n"}
+{"row_idx": 46, "item_id": "T47", "permutation_idx": 4, "ordered_cards": ["rhombus", "oval", "dotted", "striped"], "response_text": "dotted, oval\n"}
+{"row_idx": 47, "item_id": "T48", "permutation_idx": 0, "ordered_cards": ["unframed", "framed", "filled_center", "empty_center"], "response_text": "framed, filled_center"}
+{"row_idx": 47, "item_id": "T48", "permutation_idx": 1, "ordered_cards": ["unframed", "framed", "empty_center", "filled_center"], "response_text": "framed, filled_center"}
+{"row_idx": 47, "item_id": "T48", "permutation_idx": 2, "ordered_cards": ["unframed", "empty_center", "filled_center", "framed"], "response_text": "unframed, filled_center"}
+{"row_idx": 47, "item_id": "T48", "permutation_idx": 3, "ordered_cards": ["filled_center", "unframed", "empty_center", "framed"], "response_text": "unframed, framed\n"}
+{"row_idx": 47, "item_id": "T48", "permutation_idx": 4, "ordered_cards": ["framed", "unframed", "empty_center", "filled_center"], "response_text": "framed, filled_center"}
+{"row_idx": 48, "item_id": "T49", "permutation_idx": 0, "ordered_cards": ["U", "2", "9", "H"], "response_text": "U, 2\n"}
+{"row_idx": 48, "item_id": "T49", "permutation_idx": 1, "ordered_cards": ["9", "2", "H", "U"], "response_text": "H, 9"}
+{"row_idx": 48, "item_id": "T49", "permutation_idx": 2, "ordered_cards": ["9", "H", "2", "U"], "response_text": "H, 9"}
+{"row_idx": 48, "item_id": "T49", "permutation_idx": 3, "ordered_cards": ["U", "H", "2", "9"], "response_text": "U, 2\n"}
+{"row_idx": 48, "item_id": "T49", "permutation_idx": 4, "ordered_cards": ["H", "9", "U", "2"], "response_text": "H, 9"}
+{"row_idx": 49, "item_id": "T50", "permutation_idx": 0, "ordered_cards": ["8", "3", "G", "P"], "response_text": "G, 8"}
+{"row_idx": 49, "item_id": "T50", "permutation_idx": 1, "ordered_cards": ["G", "8", "P", "3"], "response_text": "G, 8, P, 3\n"}
+{"row_idx": 49, "item_id": "T50", "permutation_idx": 2, "ordered_cards": ["3", "G", "8", "P"], "response_text": "G, 8"}
+{"row_idx": 49, "item_id": "T50", "permutation_idx": 3, "ordered_cards": ["P", "G", "3", "8"], "response_text": "P, 3"}
+{"row_idx": 49, "item_id": "T50", "permutation_idx": 4, "ordered_cards": ["G", "3", "P", "8"], "response_text": "P, 3"}
+{"row_idx": 50, "item_id": "T51", "permutation_idx": 0, "ordered_cards": ["7", "12", "cross", "check"], "response_text": "cross, 7\n"}
+{"row_idx": 50, "item_id": "T51", "permutation_idx": 1, "ordered_cards": ["check", "7", "12", "cross"], "response_text": "check, 7, cross"}
+{"row_idx": 50, "item_id": "T51", "permutation_idx": 2, "ordered_cards": ["12", "check", "cross", "7"], "response_text": "cross, 7"}
+{"row_idx": 50, "item_id": "T51", "permutation_idx": 3, "ordered_cards": ["cross", "7", "check", "12"], "response_text": "cross, 12\n"}
+{"row_idx": 50, "item_id": "T51", "permutation_idx": 4, "ordered_cards": ["12", "cross", "check", "7"], "response_text": "cross, 7"}
+{"row_idx": 51, "item_id": "T52", "permutation_idx": 0, "ordered_cards": ["asymmetric", "symmetric", "magenta", "cyan"], "response_text": "asymmetric, magenta"}
+{"row_idx": 51, "item_id": "T52", "permutation_idx": 1, "ordered_cards": ["asymmetric", "symmetric", "cyan", "magenta"], "response_text": "asymmetric, magenta"}
+{"row_idx": 51, "item_id": "T52", "permutation_idx": 2, "ordered_cards": ["asymmetric", "magenta", "symmetric", "cyan"], "response_text": "asymmetric, magenta"}
+{"row_idx": 51, "item_id": "T52", "permutation_idx": 3, "ordered_cards": ["magenta", "asymmetric", "symmetric", "cyan"], "response_text": "magenta, asymmetric, symmetric\n"}
+{"row_idx": 51, "item_id": "T52", "permutation_idx": 4, "ordered_cards": ["cyan", "symmetric", "magenta", "asymmetric"], "response_text": "symmetric, cyan\n"}
+{"row_idx": 52, "item_id": "T53", "permutation_idx": 0, "ordered_cards": ["moon", "sun", "4", "9"], "response_text": "4"}
+{"row_idx": 52, "item_id": "T53", "permutation_idx": 1, "ordered_cards": ["9", "4", "sun", "moon"], "response_text": "9, moon"}
+{"row_idx": 52, "item_id": "T53", "permutation_idx": 2, "ordered_cards": ["4", "9", "sun", "moon"], "response_text": "4, moon\n"}
+{"row_idx": 52, "item_id": "T53", "permutation_idx": 3, "ordered_cards": ["9", "sun", "4", "moon"], "response_text": "9, sun, 4, moon\n"}
+{"row_idx": 52, "item_id": "T53", "permutation_idx": 4, "ordered_cards": ["4", "moon", "9", "sun"], "response_text": "4, moon\n"}
+{"row_idx": 53, "item_id": "T54", "permutation_idx": 0, "ordered_cards": ["15", "outlined", "11", "filled"], "response_text": "outlined, 15\n"}
+{"row_idx": 53, "item_id": "T54", "permutation_idx": 1, "ordered_cards": ["filled", "outlined", "11", "15"], "response_text": "filled, 11"}
+{"row_idx": 53, "item_id": "T54", "permutation_idx": 2, "ordered_cards": ["outlined", "filled", "11", "15"], "response_text": "outlined, 11"}
+{"row_idx": 53, "item_id": "T54", "permutation_idx": 3, "ordered_cards": ["11", "outlined", "15", "filled"], "response_text": "outlined, 15\n"}
+{"row_idx": 53, "item_id": "T54", "permutation_idx": 4, "ordered_cards": ["15", "filled", "outlined", "11"], "response_text": "outlined, 15\n"}
+{"row_idx": 54, "item_id": "T55", "permutation_idx": 0, "ordered_cards": ["teal", "R", "S", "violet"], "response_text": "R, violet"}
+{"row_idx": 54, "item_id": "T55", "permutation_idx": 1, "ordered_cards": ["S", "R", "teal", "violet"], "response_text": "R, violet"}
+{"row_idx": 54, "item_id": "T55", "permutation_idx": 2, "ordered_cards": ["violet", "R", "teal", "S"], "response_text": "R, violet"}
+{"row_idx": 54, "item_id": "T55", "permutation_idx": 3, "ordered_cards": ["violet", "S", "teal", "R"], "response_text": "S, R"}
+{"row_idx": 54, "item_id": "T55", "permutation_idx": 4, "ordered_cards": ["S", "violet", "teal", "R"], "response_text": "S, teal"}
+{"row_idx": 55, "item_id": "T56", "permutation_idx": 0, "ordered_cards": ["7", "wavy", "straight", "4"], "response_text": "wavy, 7\n"}
+{"row_idx": 55, "item_id": "T56", "permutation_idx": 1, "ordered_cards": ["4", "7", "straight", "wavy"], "response_text": "wavy, 7\n"}
+{"row_idx": 55, "item_id": "T56", "permutation_idx": 2, "ordered_cards": ["wavy", "7", "4", "straight"], "response_text": "wavy, 4, straight"}
+{"row_idx": 55, "item_id": "T56", "permutation_idx": 3, "ordered_cards": ["straight", "7", "4", "wavy"], "response_text": "straight, 4"}
+{"row_idx": 55, "item_id": "T56", "permutation_idx": 4, "ordered_cards": ["wavy", "7", "straight", "4"], "response_text": "wavy, 7\n"}
+{"row_idx": 56, "item_id": "T57", "permutation_idx": 0, "ordered_cards": ["parallelogram", "trapezoid", "16", "11"], "response_text": "16"}
+{"row_idx": 56, "item_id": "T57", "permutation_idx": 1, "ordered_cards": ["trapezoid", "parallelogram", "16", "11"], "response_text": "16, trapezoid"}
+{"row_idx": 56, "item_id": "T57", "permutation_idx": 2, "ordered_cards": ["trapezoid", "16", "parallelogram", "11"], "response_text": "trapezoid, 11"}
+{"row_idx": 56, "item_id": "T57", "permutation_idx": 3, "ordered_cards": ["16", "trapezoid", "11", "parallelogram"], "response_text": "16, trapezoid"}
+{"row_idx": 56, "item_id": "T57", "permutation_idx": 4, "ordered_cards": ["parallelogram", "trapezoid", "11", "16"], "response_text": "16, trapezoid"}
+{"row_idx": 57, "item_id": "T58", "permutation_idx": 0, "ordered_cards": ["flag", "anchor", "C", "J"], "response_text": "flag, C"}
+{"row_idx": 57, "item_id": "T58", "permutation_idx": 1, "ordered_cards": ["C", "anchor", "J", "flag"], "response_text": "anchor, J"}
+{"row_idx": 57, "item_id": "T58", "permutation_idx": 2, "ordered_cards": ["J", "anchor", "flag", "C"], "response_text": "anchor, C"}
+{"row_idx": 57, "item_id": "T58", "permutation_idx": 3, "ordered_cards": ["J", "C", "flag", "anchor"], "response_text": "J, flag\n"}
+{"row_idx": 57, "item_id": "T58", "permutation_idx": 4, "ordered_cards": ["C", "anchor", "flag", "J"], "response_text": "anchor, flag"}
+{"row_idx": 58, "item_id": "T59", "permutation_idx": 0, "ordered_cards": ["striped", "32", "checkerboard", "64"], "response_text": "striped, 32, 64"}
+{"row_idx": 58, "item_id": "T59", "permutation_idx": 1, "ordered_cards": ["striped", "64", "32", "checkerboard"], "response_text": "striped, 32"}
+{"row_idx": 58, "item_id": "T59", "permutation_idx": 2, "ordered_cards": ["32", "striped", "64", "checkerboard"], "response_text": "32, striped, checkerboard"}
+{"row_idx": 58, "item_id": "T59", "permutation_idx": 3, "ordered_cards": ["32", "striped", "checkerboard", "64"], "response_text": "checkerboard, 64"}
+{"row_idx": 58, "item_id": "T59", "permutation_idx": 4, "ordered_cards": ["striped", "checkerboard", "64", "32"], "response_text": "checkerboard, 64\n"}
+{"row_idx": 59, "item_id": "T60", "permutation_idx": 0, "ordered_cards": ["zigzag", "lime", "spiral", "maroon"], "response_text": "zigzag, lime, spiral, maroon"}
+{"row_idx": 59, "item_id": "T60", "permutation_idx": 1, "ordered_cards": ["lime", "zigzag", "maroon", "spiral"], "response_text": "zigzag, lime"}
+{"row_idx": 59, "item_id": "T60", "permutation_idx": 2, "ordered_cards": ["maroon", "spiral", "lime", "zigzag"], "response_text": "spiral, maroon"}
+{"row_idx": 59, "item_id": "T60", "permutation_idx": 3, "ordered_cards": ["spiral", "zigzag", "maroon", "lime"], "response_text": "spiral, maroon"}
+{"row_idx": 59, "item_id": "T60", "permutation_idx": 4, "ordered_cards": ["zigzag", "maroon", "lime", "spiral"], "response_text": "zigzag, lime"}
+{"row_idx": 60, "item_id": "T61", "permutation_idx": 0, "ordered_cards": ["8", "5", "moon", "star"], "response_text": "star, 8\n"}
+{"row_idx": 60, "item_id": "T61", "permutation_idx": 1, "ordered_cards": ["moon", "8", "star", "5"], "response_text": "moon, 8, 5"}
+{"row_idx": 60, "item_id": "T61", "permutation_idx": 2, "ordered_cards": ["moon", "star", "8", "5"], "response_text": "star, 8\n"}
+{"row_idx": 60, "item_id": "T61", "permutation_idx": 3, "ordered_cards": ["star", "moon", "8", "5"], "response_text": "star, 8"}
+{"row_idx": 60, "item_id": "T61", "permutation_idx": 4, "ordered_cards": ["5", "star", "8", "moon"], "response_text": "star, 8, moon"}
+{"row_idx": 61, "item_id": "T62", "permutation_idx": 0, "ordered_cards": ["2", "X", "7", "J"], "response_text": "2, J"}
+{"row_idx": 61, "item_id": "T62", "permutation_idx": 1, "ordered_cards": ["7", "J", "2", "X"], "response_text": "2, J\n"}
+{"row_idx": 61, "item_id": "T62", "permutation_idx": 2, "ordered_cards": ["7", "J", "X", "2"], "response_text": "2, J\n"}
+{"row_idx": 61, "item_id": "T62", "permutation_idx": 3, "ordered_cards": ["2", "X", "J", "7"], "response_text": "2, J"}
+{"row_idx": 61, "item_id": "T62", "permutation_idx": 4, "ordered_cards": ["X", "7", "J", "2"], "response_text": "X, 7, 2"}
+{"row_idx": 62, "item_id": "T63", "permutation_idx": 0, "ordered_cards": ["single", "opaque", "double", "transparent"], "response_text": "opaque, transparent\n"}
+{"row_idx": 62, "item_id": "T63", "permutation_idx": 1, "ordered_cards": ["transparent", "double", "single", "opaque"], "response_text": "transparent, single"}
+{"row_idx": 62, "item_id": "T63", "permutation_idx": 2, "ordered_cards": ["opaque", "double", "transparent", "single"], "response_text": "opaque, transparent\n"}
+{"row_idx": 62, "item_id": "T63", "permutation_idx": 3, "ordered_cards": ["double", "transparent", "single", "opaque"], "response_text": "transparent, double\n"}
+{"row_idx": 62, "item_id": "T63", "permutation_idx": 4, "ordered_cards": ["double", "single", "opaque", "transparent"], "response_text": "opaque, single"}
+{"row_idx": 63, "item_id": "T64", "permutation_idx": 0, "ordered_cards": ["9", "N", "14", "V"], "response_text": "N, 14\n"}
+{"row_idx": 63, "item_id": "T64", "permutation_idx": 1, "ordered_cards": ["14", "9", "V", "N"], "response_text": "N, 9"}
+{"row_idx": 63, "item_id": "T64", "permutation_idx": 2, "ordered_cards": ["V", "14", "N", "9"], "response_text": "V, 9"}
+{"row_idx": 63, "item_id": "T64", "permutation_idx": 3, "ordered_cards": ["V", "N", "9", "14"], "response_text": "V, 9"}
+{"row_idx": 63, "item_id": "T64", "permutation_idx": 4, "ordered_cards": ["N", "9", "V", "14"], "response_text": "N, 14\n"}
+{"row_idx": 64, "item_id": "T65", "permutation_idx": 0, "ordered_cards": ["8", "sphere", "cube", "3"], "response_text": "sphere, 8, 3\n"}
+{"row_idx": 64, "item_id": "T65", "permutation_idx": 1, "ordered_cards": ["8", "sphere", "3", "cube"], "response_text": "sphere, 8, cube\n"}
+{"row_idx": 64, "item_id": "T65", "permutation_idx": 2, "ordered_cards": ["8", "cube", "3", "sphere"], "response_text": "cube, 3\n"}
+{"row_idx": 64, "item_id": "T65", "permutation_idx": 3, "ordered_cards": ["sphere", "8", "cube", "3"], "response_text": "sphere, 8, cube, 3"}
+{"row_idx": 64, "item_id": "T65", "permutation_idx": 4, "ordered_cards": ["8", "cube", "sphere", "3"], "response_text": "cube, 3"}
+{"row_idx": 65, "item_id": "T66", "permutation_idx": 0, "ordered_cards": ["gold", "silver", "upright", "rotated"], "response_text": "gold, upright"}
+{"row_idx": 65, "item_id": "T66", "permutation_idx": 1, "ordered_cards": ["upright", "gold", "silver", "rotated"], "response_text": "rotated, gold"}
+{"row_idx": 65, "item_id": "T66", "permutation_idx": 2, "ordered_cards": ["rotated", "silver", "upright", "gold"], "response_text": "rotated, silver\n"}
+{"row_idx": 65, "item_id": "T66", "permutation_idx": 3, "ordered_cards": ["upright", "silver", "rotated", "gold"], "response_text": "rotated, silver"}
+{"row_idx": 65, "item_id": "T66", "permutation_idx": 4, "ordered_cards": ["upright", "rotated", "silver", "gold"], "response_text": "rotated, silver"}
+{"row_idx": 66, "item_id": "T67", "permutation_idx": 0, "ordered_cards": ["15", "ellipse", "20", "rhombus"], "response_text": "15, ellipse"}
+{"row_idx": 66, "item_id": "T67", "permutation_idx": 1, "ordered_cards": ["ellipse", "20", "rhombus", "15"], "response_text": "20, rhombus"}
+{"row_idx": 66, "item_id": "T67", "permutation_idx": 2, "ordered_cards": ["rhombus", "20", "ellipse", "15"], "response_text": "20, rhombus"}
+{"row_idx": 66, "item_id": "T67", "permutation_idx": 3, "ordered_cards": ["rhombus", "ellipse", "15", "20"], "response_text": "15, ellipse"}
+{"row_idx": 66, "item_id": "T67", "permutation_idx": 4, "ordered_cards": ["15", "20", "ellipse", "rhombus"], "response_text": "15, ellipse"}
+{"row_idx": 67, "item_id": "T68", "permutation_idx": 0, "ordered_cards": ["dotted", "crosshatched", "Q", "Y"], "response_text": "dotted, Q"}
+{"row_idx": 67, "item_id": "T68", "permutation_idx": 1, "ordered_cards": ["Q", "dotted", "Y", "crosshatched"], "response_text": "dotted, Q"}
+{"row_idx": 67, "item_id": "T68", "permutation_idx": 2, "ordered_cards": ["crosshatched", "dotted", "Q", "Y"], "response_text": "dotted, Q\n"}
+{"row_idx": 67, "item_id": "T68", "permutation_idx": 3, "ordered_cards": ["dotted", "Q", "crosshatched", "Y"], "response_text": "dotted, Q\n"}
+{"row_idx": 67, "item_id": "T68", "permutation_idx": 4, "ordered_cards": ["crosshatched", "Y", "Q", "dotted"], "response_text": "crosshatched, Y, dotted"}
+{"row_idx": 68, "item_id": "T69", "permutation_idx": 0, "ordered_cards": ["3", "infinity", "theta", "8"], "response_text": "3, theta"}
+{"row_idx": 68, "item_id": "T69", "permutation_idx": 1, "ordered_cards": ["8", "theta", "3", "infinity"], "response_text": "8, infinity\n"}
+{"row_idx": 68, "item_id": "T69", "permutation_idx": 2, "ordered_cards": ["theta", "3", "infinity", "8"], "response_text": "3, theta"}
+{"row_idx": 68, "item_id": "T69", "permutation_idx": 3, "ordered_cards": ["3", "8", "infinity", "theta"], "response_text": "8, infinity\n"}
+{"row_idx": 68, "item_id": "T69", "permutation_idx": 4, "ordered_cards": ["theta", "infinity", "3", "8"], "response_text": "8"}
+{"row_idx": 69, "item_id": "T70", "permutation_idx": 0, "ordered_cards": ["rounded", "2", "7", "pointed"], "response_text": "rounded, 2, pointed\n"}
+{"row_idx": 69, "item_id": "T70", "permutation_idx": 1, "ordered_cards": ["7", "2", "rounded", "pointed"], "response_text": "pointed, 7\n"}
+{"row_idx": 69, "item_id": "T70", "permutation_idx": 2, "ordered_cards": ["pointed", "rounded", "7", "2"], "response_text": "pointed, 7\n"}
+{"row_idx": 69, "item_id": "T70", "permutation_idx": 3, "ordered_cards": ["7", "rounded", "pointed", "2"], "response_text": "pointed, 7\n"}
+{"row_idx": 69, "item_id": "T70", "permutation_idx": 4, "ordered_cards": ["2", "pointed", "7", "rounded"], "response_text": "pointed, 7\n"}
+{"row_idx": 70, "item_id": "T71", "permutation_idx": 0, "ordered_cards": ["W", "amber", "D", "indigo"], "response_text": "W, amber, D, indigo\n"}
+{"row_idx": 70, "item_id": "T71", "permutation_idx": 1, "ordered_cards": ["D", "amber", "W", "indigo"], "response_text": "D, indigo"}
+{"row_idx": 70, "item_id": "T71", "permutation_idx": 2, "ordered_cards": ["amber", "indigo", "W", "D"], "response_text": "D, indigo\n"}
+{"row_idx": 70, "item_id": "T71", "permutation_idx": 3, "ordered_cards": ["D", "W", "amber", "indigo"], "response_text": "D, indigo"}
+{"row_idx": 70, "item_id": "T71", "permutation_idx": 4, "ordered_cards": ["indigo", "amber", "D", "W"], "response_text": "D"}
+{"row_idx": 71, "item_id": "T72", "permutation_idx": 0, "ordered_cards": ["6", "bar", "0", "ring"], "response_text": "6, bar"}
+{"row_idx": 71, "item_id": "T72", "permutation_idx": 1, "ordered_cards": ["6", "ring", "0", "bar"], "response_text": "ring, 6\n"}
+{"row_idx": 71, "item_id": "T72", "permutation_idx": 2, "ordered_cards": ["0", "ring", "bar", "6"], "response_text": "ring, 6"}
+{"row_idx": 71, "item_id": "T72", "permutation_idx": 3, "ordered_cards": ["ring", "6", "0", "bar"], "response_text": "ring, 6\n"}
+{"row_idx": 71, "item_id": "T72", "permutation_idx": 4, "ordered_cards": ["ring", "0", "6", "bar"], "response_text": "ring, 6\n"}
+{"row_idx": 72, "item_id": "T73", "permutation_idx": 0, "ordered_cards": ["T", "6", "11", "K"], "response_text": "11, K"}
+{"row_idx": 72, "item_id": "T73", "permutation_idx": 1, "ordered_cards": ["6", "11", "K", "T"], "response_text": "11, K\n"}
+{"row_idx": 72, "item_id": "T73", "permutation_idx": 2, "ordered_cards": ["K", "11", "6", "T"], "response_text": "11, K"}
+{"row_idx": 72, "item_id": "T73", "permutation_idx": 3, "ordered_cards": ["11", "K", "6", "T"], "response_text": "11, K\n"}
+{"row_idx": 72, "item_id": "T73", "permutation_idx": 4, "ordered_cards": ["K", "T", "6", "11"], "response_text": "11, K"}
+{"row_idx": 73, "item_id": "T74", "permutation_idx": 0, "ordered_cards": ["mirrored", "kite", "normal", "trapezoid"], "response_text": "mirrored, trapezoid"}
+{"row_idx": 73, "item_id": "T74", "permutation_idx": 1, "ordered_cards": ["kite", "trapezoid", "mirrored", "normal"], "response_text": "kite, normal"}
+{"row_idx": 73, "item_id": "T74", "permutation_idx": 2, "ordered_cards": ["trapezoid", "mirrored", "kite", "normal"], "response_text": "mirrored, trapezoid"}
+{"row_idx": 73, "item_id": "T74", "permutation_idx": 3, "ordered_cards": ["kite", "mirrored", "trapezoid", "normal"], "response_text": "kite, normal"}
+{"row_idx": 73, "item_id": "T74", "permutation_idx": 4, "ordered_cards": ["mirrored", "normal", "kite", "trapezoid"], "response_text": "mirrored, trapezoid\n"}
+{"row_idx": 74, "item_id": "T75", "permutation_idx": 0, "ordered_cards": ["33", "bolt", "wave", "22"], "response_text": "wave, 33\n"}
+{"row_idx": 74, "item_id": "T75", "permutation_idx": 1, "ordered_cards": ["bolt", "22", "wave", "33"], "response_text": "bolt, 22\n"}
+{"row_idx": 74, "item_id": "T75", "permutation_idx": 2, "ordered_cards": ["bolt", "33", "wave", "22"], "response_text": "bolt, 22"}
+{"row_idx": 74, "item_id": "T75", "permutation_idx": 3, "ordered_cards": ["wave", "22", "33", "bolt"], "response_text": "wave, 22"}
+{"row_idx": 74, "item_id": "T75", "permutation_idx": 4, "ordered_cards": ["33", "wave", "22", "bolt"], "response_text": "wave, 33\n"}
+{"row_idx": 75, "item_id": "T76", "permutation_idx": 0, "ordered_cards": ["5", "slate", "0", "coral"], "response_text": "5, coral"}
+{"row_idx": 75, "item_id": "T76", "permutation_idx": 1, "ordered_cards": ["slate", "0", "5", "coral"], "response_text": "0, slate, coral"}
+{"row_idx": 75, "item_id": "T76", "permutation_idx": 2, "ordered_cards": ["0", "slate", "5", "coral"], "response_text": "0, slate"}
+{"row_idx": 75, "item_id": "T76", "permutation_idx": 3, "ordered_cards": ["5", "0", "slate", "coral"], "response_text": "5, coral\n"}
+{"row_idx": 75, "item_id": "T76", "permutation_idx": 4, "ordered_cards": ["coral", "slate", "5", "0"], "response_text": "5\n"}
+{"row_idx": 76, "item_id": "T77", "permutation_idx": 0, "ordered_cards": ["G", "B", "cone", "cylinder"], "response_text": "G, cylinder"}
+{"row_idx": 76, "item_id": "T77", "permutation_idx": 1, "ordered_cards": ["cone", "G", "B", "cylinder"], "response_text": "G, cone\n"}
+{"row_idx": 76, "item_id": "T77", "permutation_idx": 2, "ordered_cards": ["cone", "G", "cylinder", "B"], "response_text": "G, cone"}
+{"row_idx": 76, "item_id": "T77", "permutation_idx": 3, "ordered_cards": ["cylinder", "G", "cone", "B"], "response_text": "G, cylinder\n"}
+{"row_idx": 76, "item_id": "T77", "permutation_idx": 4, "ordered_cards": ["B", "cone", "G", "cylinder"], "response_text": "B, cone"}
+{"row_idx": 77, "item_id": "T78", "permutation_idx": 0, "ordered_cards": ["no_shadow", "13", "18", "shadow"], "response_text": "no_shadow, 13, shadow"}
+{"row_idx": 77, "item_id": "T78", "permutation_idx": 1, "ordered_cards": ["shadow", "no_shadow", "13", "18"], "response_text": "shadow, 13"}
+{"row_idx": 77, "item_id": "T78", "permutation_idx": 2, "ordered_cards": ["13", "18", "no_shadow", "shadow"], "response_text": "13, no_shadow"}
+{"row_idx": 77, "item_id": "T78", "permutation_idx": 3, "ordered_cards": ["no_shadow", "18", "shadow", "13"], "response_text": "no_shadow, 13"}
+{"row_idx": 77, "item_id": "T78", "permutation_idx": 4, "ordered_cards": ["no_shadow", "13", "shadow", "18"], "response_text": "no_shadow, 13, shadow, 18"}
+{"row_idx": 78, "item_id": "T79", "permutation_idx": 0, "ordered_cards": ["4", "C", "17", "M"], "response_text": "C, 17\n"}
+{"row_idx": 78, "item_id": "T79", "permutation_idx": 1, "ordered_cards": ["4", "17", "C", "M"], "response_text": "C, 17\n"}
+{"row_idx": 78, "item_id": "T79", "permutation_idx": 2, "ordered_cards": ["C", "M", "17", "4"], "response_text": "C, 17\n"}
+{"row_idx": 78, "item_id": "T79", "permutation_idx": 3, "ordered_cards": ["17", "C", "M", "4"], "response_text": "C, 17"}
+{"row_idx": 78, "item_id": "T79", "permutation_idx": 4, "ordered_cards": ["M", "17", "C", "4"], "response_text": "M, 4"}
+{"row_idx": 79, "item_id": "T80", "permutation_idx": 0, "ordered_cards": ["25", "H", "13", "T"], "response_text": "25, T"}
+{"row_idx": 79, "item_id": "T80", "permutation_idx": 1, "ordered_cards": ["13", "T", "25", "H"], "response_text": "13, T, 25, H"}
+{"row_idx": 79, "item_id": "T80", "permutation_idx": 2, "ordered_cards": ["25", "13", "H", "T"], "response_text": "25, T\n"}
+{"row_idx": 79, "item_id": "T80", "permutation_idx": 3, "ordered_cards": ["13", "25", "H", "T"], "response_text": "13, T"}
+{"row_idx": 79, "item_id": "T80", "permutation_idx": 4, "ordered_cards": ["T", "H", "13", "25"], "response_text": "H, 13"}
+{"row_idx": 80, "item_id": "T81", "permutation_idx": 0, "ordered_cards": ["crescent", "pentagon", "yellow", "red"], "response_text": "crescent, yellow"}
+{"row_idx": 80, "item_id": "T81", "permutation_idx": 1, "ordered_cards": ["pentagon", "red", "crescent", "yellow"], "response_text": "pentagon, red"}
+{"row_idx": 80, "item_id": "T81", "permutation_idx": 2, "ordered_cards": ["yellow", "crescent", "red", "pentagon"], "response_text": "crescent, yellow"}
+{"row_idx": 80, "item_id": "T81", "permutation_idx": 3, "ordered_cards": ["red", "pentagon", "yellow", "crescent"], "response_text": "red, pentagon\n"}
+{"row_idx": 80, "item_id": "T81", "permutation_idx": 4, "ordered_cards": ["red", "yellow", "pentagon", "crescent"], "response_text": "red, pentagon\n"}
+{"row_idx": 81, "item_id": "T82", "permutation_idx": 0, "ordered_cards": ["anchor", "1", "ladder", "6"], "response_text": "1, 6\n"}
+{"row_idx": 81, "item_id": "T82", "permutation_idx": 1, "ordered_cards": ["ladder", "6", "1", "anchor"], "response_text": "6, anchor\n"}
+{"row_idx": 81, "item_id": "T82", "permutation_idx": 2, "ordered_cards": ["6", "ladder", "1", "anchor"], "response_text": "6, anchor\n"}
+{"row_idx": 81, "item_id": "T82", "permutation_idx": 3, "ordered_cards": ["anchor", "ladder", "6", "1"], "response_text": "6, anchor\n"}
+{"row_idx": 81, "item_id": "T82", "permutation_idx": 4, "ordered_cards": ["1", "6", "anchor", "ladder"], "response_text": "6, anchor\n"}
+{"row_idx": 82, "item_id": "T83", "permutation_idx": 0, "ordered_cards": ["round", "plain", "striped", "sharp"], "response_text": "striped, round"}
+{"row_idx": 82, "item_id": "T83", "permutation_idx": 1, "ordered_cards": ["sharp", "striped", "plain", "round"], "response_text": "striped, round"}
+{"row_idx": 82, "item_id": "T83", "permutation_idx": 2, "ordered_cards": ["plain", "sharp", "striped", "round"], "response_text": "striped, round"}
+{"row_idx": 82, "item_id": "T83", "permutation_idx": 3, "ordered_cards": ["round", "plain", "sharp", "striped"], "response_text": "striped, round"}
+{"row_idx": 82, "item_id": "T83", "permutation_idx": 4, "ordered_cards": ["plain", "round", "sharp", "striped"], "response_text": "plain, sharp"}
+{"row_idx": 83, "item_id": "T84", "permutation_idx": 0, "ordered_cards": ["H", "37", "12", "Z"], "response_text": "H, 37\n"}
+{"row_idx": 83, "item_id": "T84", "permutation_idx": 1, "ordered_cards": ["37", "12", "Z", "H"], "response_text": "H, 37\n"}
+{"row_idx": 83, "item_id": "T84", "permutation_idx": 2, "ordered_cards": ["Z", "37", "H", "12"], "response_text": "H, 37\n"}
+{"row_idx": 83, "item_id": "T84", "permutation_idx": 3, "ordered_cards": ["37", "12", "H", "Z"], "response_text": "H, 37\n"}
+{"row_idx": 83, "item_id": "T84", "permutation_idx": 4, "ordered_cards": ["37", "Z", "H", "12"], "response_text": "H, 37\n"}
+{"row_idx": 84, "item_id": "T85", "permutation_idx": 0, "ordered_cards": ["crown", "shield", "9", "4"], "response_text": "crown, 9\n"}
+{"row_idx": 84, "item_id": "T85", "permutation_idx": 1, "ordered_cards": ["shield", "crown", "9", "4"], "response_text": "crown, 9\n"}
+{"row_idx": 84, "item_id": "T85", "permutation_idx": 2, "ordered_cards": ["4", "shield", "crown", "9"], "response_text": "shield, 4, 9"}
+{"row_idx": 84, "item_id": "T85", "permutation_idx": 3, "ordered_cards": ["9", "4", "shield", "crown"], "response_text": "shield, crown"}
+{"row_idx": 84, "item_id": "T85", "permutation_idx": 4, "ordered_cards": ["shield", "4", "9", "crown"], "response_text": "shield, crown"}
+{"row_idx": 85, "item_id": "T86", "permutation_idx": 0, "ordered_cards": ["42", "arrow", "kite", "17"], "response_text": "42, kite"}
+{"row_idx": 85, "item_id": "T86", "permutation_idx": 1, "ordered_cards": ["kite", "42", "arrow", "17"], "response_text": "42, kite"}
+{"row_idx": 85, "item_id": "T86", "permutation_idx": 2, "ordered_cards": ["arrow", "kite", "17", "42"], "response_text": "17, arrow"}
+{"row_idx": 85, "item_id": "T86", "permutation_idx": 3, "ordered_cards": ["17", "42", "arrow", "kite"], "response_text": "17, kite"}
+{"row_idx": 85, "item_id": "T86", "permutation_idx": 4, "ordered_cards": ["17", "kite", "arrow", "42"], "response_text": "17, arrow"}
+{"row_idx": 86, "item_id": "T87", "permutation_idx": 0, "ordered_cards": ["radial", "bronze", "ivory", "linear"], "response_text": "radial, bronze"}
+{"row_idx": 86, "item_id": "T87", "permutation_idx": 1, "ordered_cards": ["ivory", "bronze", "linear", "radial"], "response_text": "ivory, linear"}
+{"row_idx": 86, "item_id": "T87", "permutation_idx": 2, "ordered_cards": ["radial", "linear", "ivory", "bronze"], "response_text": "linear, ivory"}
+{"row_idx": 86, "item_id": "T87", "permutation_idx": 3, "ordered_cards": ["radial", "bronze", "linear", "ivory"], "response_text": "radial, bronze"}
+{"row_idx": 86, "item_id": "T87", "permutation_idx": 4, "ordered_cards": ["radial", "ivory", "bronze", "linear"], "response_text": "radial, bronze"}
+{"row_idx": 87, "item_id": "T88", "permutation_idx": 0, "ordered_cards": ["3", "D", "V", "8"], "response_text": "D, 3"}
+{"row_idx": 87, "item_id": "T88", "permutation_idx": 1, "ordered_cards": ["3", "8", "V", "D"], "response_text": "V, 8\n"}
+{"row_idx": 87, "item_id": "T88", "permutation_idx": 2, "ordered_cards": ["V", "D", "8", "3"], "response_text": "V, 8"}
+{"row_idx": 87, "item_id": "T88", "permutation_idx": 3, "ordered_cards": ["D", "V", "8", "3"], "response_text": "V, 8"}
+{"row_idx": 87, "item_id": "T88", "permutation_idx": 4, "ordered_cards": ["D", "8", "3", "V"], "response_text": "D, V"}
+{"row_idx": 88, "item_id": "T89", "permutation_idx": 0, "ordered_cards": ["square", "diamond", "hollow", "solid"], "response_text": "hollow, square\n"}
+{"row_idx": 88, "item_id": "T89", "permutation_idx": 1, "ordered_cards": ["solid", "diamond", "square", "hollow"], "response_text": "solid, square"}
+{"row_idx": 88, "item_id": "T89", "permutation_idx": 2, "ordered_cards": ["hollow", "square", "solid", "diamond"], "response_text": "square, solid"}
+{"row_idx": 88, "item_id": "T89", "permutation_idx": 3, "ordered_cards": ["square", "diamond", "solid", "hollow"], "response_text": "square, solid"}
+{"row_idx": 88, "item_id": "T89", "permutation_idx": 4, "ordered_cards": ["square", "hollow", "solid", "diamond"], "response_text": "square, solid"}
+{"row_idx": 89, "item_id": "T90", "permutation_idx": 0, "ordered_cards": ["8", "3", "crimson", "olive"], "response_text": "3, crimson"}
+{"row_idx": 89, "item_id": "T90", "permutation_idx": 1, "ordered_cards": ["crimson", "olive", "8", "3"], "response_text": "olive, 8"}
+{"row_idx": 89, "item_id": "T90", "permutation_idx": 2, "ordered_cards": ["olive", "crimson", "8", "3"], "response_text": "3"}
+{"row_idx": 89, "item_id": "T90", "permutation_idx": 3, "ordered_cards": ["3", "olive", "8", "crimson"], "response_text": "3, olive"}
+{"row_idx": 89, "item_id": "T90", "permutation_idx": 4, "ordered_cards": ["olive", "crimson", "3", "8"], "response_text": "3, crimson"}
+{"row_idx": 90, "item_id": "T91", "permutation_idx": 0, "ordered_cards": ["L", "drop", "P", "bolt"], "response_text": "bolt\n"}
+{"row_idx": 90, "item_id": "T91", "permutation_idx": 1, "ordered_cards": ["L", "bolt", "drop", "P"], "response_text": "bolt, L"}
+{"row_idx": 90, "item_id": "T91", "permutation_idx": 2, "ordered_cards": ["P", "bolt", "drop", "L"], "response_text": "bolt, L"}
+{"row_idx": 90, "item_id": "T91", "permutation_idx": 3, "ordered_cards": ["L", "P", "drop", "bolt"], "response_text": "bolt, L"}
+{"row_idx": 90, "item_id": "T91", "permutation_idx": 4, "ordered_cards": ["drop", "P", "bolt", "L"], "response_text": "drop, P, bolt, L"}
+{"row_idx": 91, "item_id": "T92", "permutation_idx": 0, "ordered_cards": ["cube", "28", "cone", "53"], "response_text": "28, cube"}
+{"row_idx": 91, "item_id": "T92", "permutation_idx": 1, "ordered_cards": ["53", "cube", "cone", "28"], "response_text": "53, cone"}
+{"row_idx": 91, "item_id": "T92", "permutation_idx": 2, "ordered_cards": ["28", "53", "cube", "cone"], "response_text": "53, cone"}
+{"row_idx": 91, "item_id": "T92", "permutation_idx": 3, "ordered_cards": ["28", "cone", "53", "cube"], "response_text": "53, cone"}
+{"row_idx": 91, "item_id": "T92", "permutation_idx": 4, "ordered_cards": ["cone", "cube", "53", "28"], "response_text": "53, cone"}
+{"row_idx": 92, "item_id": "T93", "permutation_idx": 0, "ordered_cards": ["31", "R", "J", "77"], "response_text": "R, 31"}
+{"row_idx": 92, "item_id": "T93", "permutation_idx": 1, "ordered_cards": ["R", "31", "J", "77"], "response_text": "R, 31\n"}
+{"row_idx": 92, "item_id": "T93", "permutation_idx": 2, "ordered_cards": ["R", "31", "77", "J"], "response_text": "J, 77\n"}
+{"row_idx": 92, "item_id": "T93", "permutation_idx": 3, "ordered_cards": ["31", "R", "77", "J"], "response_text": "J, 77\n"}
+{"row_idx": 92, "item_id": "T93", "permutation_idx": 4, "ordered_cards": ["31", "J", "77", "R"], "response_text": "J, 77\n"}
+{"row_idx": 93, "item_id": "T94", "permutation_idx": 0, "ordered_cards": ["zigzag", "pixelated", "smooth", "wavy"], "response_text": "pixelated, zigzag"}
+{"row_idx": 93, "item_id": "T94", "permutation_idx": 1, "ordered_cards": ["zigzag", "wavy", "smooth", "pixelated"], "response_text": "pixelated, zigzag"}
+{"row_idx": 93, "item_id": "T94", "permutation_idx": 2, "ordered_cards": ["pixelated", "smooth", "wavy", "zigzag"], "response_text": "pixelated, zigzag\n"}
+{"row_idx": 93, "item_id": "T94", "permutation_idx": 3, "ordered_cards": ["wavy", "pixelated", "zigzag", "smooth"], "response_text": "pixelated, wavy"}
+{"row_idx": 93, "item_id": "T94", "permutation_idx": 4, "ordered_cards": ["zigzag", "smooth", "pixelated", "wavy"], "response_text": "pixelated, zigzag"}
+{"row_idx": 94, "item_id": "T95", "permutation_idx": 0, "ordered_cards": ["gradient", "teal", "mosaic", "beige"], "response_text": "gradient, mosaic\n"}
+{"row_idx": 94, "item_id": "T95", "permutation_idx": 1, "ordered_cards": ["teal", "mosaic", "gradient", "beige"], "response_text": "mosaic, teal"}
+{"row_idx": 94, "item_id": "T95", "permutation_idx": 2, "ordered_cards": ["teal", "beige", "gradient", "mosaic"], "response_text": "beige, gradient"}
+{"row_idx": 94, "item_id": "T95", "permutation_idx": 3, "ordered_cards": ["mosaic", "beige", "teal", "gradient"], "response_text": "mosaic, teal"}
+{"row_idx": 94, "item_id": "T95", "permutation_idx": 4, "ordered_cards": ["beige", "gradient", "teal", "mosaic"], "response_text": "beige, gradient, mosaic"}
+{"row_idx": 95, "item_id": "T96", "permutation_idx": 0, "ordered_cards": ["7", "2", "lens", "prism"], "response_text": "7, prism"}
+{"row_idx": 95, "item_id": "T96", "permutation_idx": 1, "ordered_cards": ["lens", "2", "7", "prism"], "response_text": "2, lens"}
+{"row_idx": 95, "item_id": "T96", "permutation_idx": 2, "ordered_cards": ["prism", "lens", "2", "7"], "response_text": "2, 7"}
+{"row_idx": 95, "item_id": "T96", "permutation_idx": 3, "ordered_cards": ["2", "prism", "lens", "7"], "response_text": "2, lens"}
+{"row_idx": 95, "item_id": "T96", "permutation_idx": 4, "ordered_cards": ["prism", "lens", "7", "2"], "response_text": "7, lens\n"}
+{"row_idx": 96, "item_id": "T97", "permutation_idx": 0, "ordered_cards": ["16", "N", "S", "49"], "response_text": "N, 16"}
+{"row_idx": 96, "item_id": "T97", "permutation_idx": 1, "ordered_cards": ["N", "16", "S", "49"], "response_text": "N, 16"}
+{"row_idx": 96, "item_id": "T97", "permutation_idx": 2, "ordered_cards": ["N", "16", "49", "S"], "response_text": "N, S"}
+{"row_idx": 96, "item_id": "T97", "permutation_idx": 3, "ordered_cards": ["49", "16", "N", "S"], "response_text": "S, 49"}
+{"row_idx": 96, "item_id": "T97", "permutation_idx": 4, "ordered_cards": ["S", "N", "49", "16"], "response_text": "S, 49\n"}
+{"row_idx": 97, "item_id": "T98", "permutation_idx": 0, "ordered_cards": ["12", "spring", "gear", "7"], "response_text": "spring, 7"}
+{"row_idx": 97, "item_id": "T98", "permutation_idx": 1, "ordered_cards": ["12", "7", "gear", "spring"], "response_text": "gear, 12\n"}
+{"row_idx": 97, "item_id": "T98", "permutation_idx": 2, "ordered_cards": ["spring", "gear", "12", "7"], "response_text": "gear, 12\n"}
+{"row_idx": 97, "item_id": "T98", "permutation_idx": 3, "ordered_cards": ["gear", "spring", "7", "12"], "response_text": "gear, 12\n"}
+{"row_idx": 97, "item_id": "T98", "permutation_idx": 4, "ordered_cards": ["spring", "gear", "7", "12"], "response_text": "spring, 7"}
+{"row_idx": 98, "item_id": "T99", "permutation_idx": 0, "ordered_cards": ["scarlet", "lozenge", "lavender", "teardrop"], "response_text": "lozenge, scarlet"}
+{"row_idx": 98, "item_id": "T99", "permutation_idx": 1, "ordered_cards": ["lozenge", "lavender", "scarlet", "teardrop"], "response_text": "lozenge, scarlet"}
+{"row_idx": 98, "item_id": "T99", "permutation_idx": 2, "ordered_cards": ["teardrop", "scarlet", "lavender", "lozenge"], "response_text": "teardrop, scarlet"}
+{"row_idx": 98, "item_id": "T99", "permutation_idx": 3, "ordered_cards": ["lavender", "lozenge", "teardrop", "scarlet"], "response_text": "lozenge, scarlet"}
+{"row_idx": 98, "item_id": "T99", "permutation_idx": 4, "ordered_cards": ["scarlet", "teardrop", "lavender", "lozenge"], "response_text": "teardrop, lavender"}
+{"row_idx": 99, "item_id": "T100", "permutation_idx": 0, "ordered_cards": ["31", "44", "B", "Q"], "response_text": "31, Q\n"}
+{"row_idx": 99, "item_id": "T100", "permutation_idx": 1, "ordered_cards": ["Q", "31", "44", "B"], "response_text": "31, Q\n"}
+{"row_idx": 99, "item_id": "T100", "permutation_idx": 2, "ordered_cards": ["44", "B", "Q", "31"], "response_text": "31, Q\n"}
+{"row_idx": 99, "item_id": "T100", "permutation_idx": 3, "ordered_cards": ["Q", "31", "B", "44"], "response_text": "31, Q\n"}
+{"row_idx": 99, "item_id": "T100", "permutation_idx": 4, "ordered_cards": ["44", "Q", "B", "31"], "response_text": "31, Q\n"}

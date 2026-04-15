@@ -1,0 +1,4 @@
+#!/bin/bash
+# Search thesis with context — patterns, cites, TODOs
+cd "$(dirname "$0")/../.." || exit 1
+uv run python .claude/skills/find-in-thesis/tools/find.py "$@"

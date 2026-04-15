@@ -1,0 +1,2452 @@
+{
+  "lambda x, y, z: x < y < z": [
+    {
+      "turn": 1,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        3
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 1.0,
+      "distance": 0.0,
+      "delta": -1.414,
+      "iou": 1.0,
+      "tokens": {
+        "prompt": 189,
+        "completion": 683,
+        "reasoning": 657
+      }
+    }
+  ],
+  "lambda x, y, z: x > y > z": [
+    {
+      "turn": 1,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        3
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0002,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 191,
+        "completion": 329,
+        "reasoning": 303
+      }
+    },
+    {
+      "turn": 2,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        4,
+        6,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.1571,
+      "r_in_h": 0.1175,
+      "distance": 1.2204,
+      "delta": -0.1938,
+      "iou": 0.0721,
+      "tokens": {
+        "prompt": 226,
+        "completion": 487,
+        "reasoning": 443
+      }
+    },
+    {
+      "turn": 3,
+      "hypothesis": "lambda x,y,z: x + y == z and x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        2,
+        6,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.1938,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 281,
+        "completion": 1225,
+        "reasoning": 1175
+      }
+    },
+    {
+      "turn": 4,
+      "hypothesis": "lambda x,y,z: x + y + z == 12",
+      "test": [
+        1,
+        4,
+        7
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0952,
+      "r_in_h": 0.0,
+      "distance": 1.3485,
+      "delta": -0.0657,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 342,
+        "completion": 1671,
+        "reasoning": 1641
+      }
+    },
+    {
+      "turn": 5,
+      "hypothesis": "lambda x,y,z: x == 2 and y == 4",
+      "test": [
+        2,
+        4,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0657,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 383,
+        "completion": 840,
+        "reasoning": 810
+      }
+    },
+    {
+      "turn": 6,
+      "hypothesis": "lambda x,y,z: y == x * 2 and z == x + y",
+      "test": [
+        3,
+        6,
+        9
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 424,
+        "completion": 33,
+        "reasoning": 0
+      }
+    },
+    {
+      "turn": 7,
+      "hypothesis": "lambda x,y,z: y == x * 2 and z == y + 2",
+      "test": [
+        4,
+        8,
+        10
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 482,
+        "completion": 2056,
+        "reasoning": 2021
+      }
+    },
+    {
+      "turn": 8,
+      "hypothesis": "lambda x,y,z: x == 2 and y == 4 and z == 6",
+      "test": [
+        2,
+        4,
+        6
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 515,
+        "completion": 35,
+        "reasoning": 0
+      }
+    },
+    {
+      "turn": 9,
+      "hypothesis": "lambda x,y,z: x % 2 != 0 and y % 2 != 0 and z % 2 != 0",
+      "test": [
+        1,
+        3,
+        5
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.1553,
+      "r_in_h": 0.1238,
+      "distance": 1.2171,
+      "delta": -0.1971,
+      "iou": 0.074,
+      "tokens": {
+        "prompt": 579,
+        "completion": 2698,
+        "reasoning": 2654
+      }
+    }
+  ],
+  "lambda x, y, z: x <= y <= z": [
+    {
+      "turn": 1,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        3
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.9411,
+      "distance": 0.0589,
+      "delta": -1.3551,
+      "iou": 0.9411,
+      "tokens": {
+        "prompt": 191,
+        "completion": 320,
+        "reasoning": 294
+      }
+    },
+    {
+      "turn": 2,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        4
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.9416,
+      "distance": 0.0584,
+      "delta": -0.0005,
+      "iou": 0.9416,
+      "tokens": {
+        "prompt": 230,
+        "completion": 303,
+        "reasoning": 277
+      }
+    },
+    {
+      "turn": 3,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        3,
+        5
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.9421,
+      "distance": 0.0579,
+      "delta": -0.0005,
+      "iou": 0.9421,
+      "tokens": {
+        "prompt": 269,
+        "completion": 142,
+        "reasoning": 116
+      }
+    },
+    {
+      "turn": 4,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        3,
+        2,
+        1
+      ],
+      "expected": false,
+      "actual": false,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.9417,
+      "distance": 0.0583,
+      "delta": 0.0004,
+      "iou": 0.9417,
+      "tokens": {
+        "prompt": 300,
+        "completion": 508,
+        "reasoning": 482
+      }
+    },
+    {
+      "turn": 5,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        5,
+        2
+      ],
+      "expected": false,
+      "actual": false,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.9418,
+      "distance": 0.0582,
+      "delta": -0.0001,
+      "iou": 0.9418,
+      "tokens": {
+        "prompt": 347,
+        "completion": 411,
+        "reasoning": 385
+      }
+    },
+    {
+      "turn": 6,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        2,
+        2,
+        3
+      ],
+      "expected": false,
+      "actual": true,
+      "surprised": true,
+      "h_in_r": 1.0,
+      "r_in_h": 0.9411,
+      "distance": 0.0589,
+      "delta": 0.0007,
+      "iou": 0.9411,
+      "tokens": {
+        "prompt": 386,
+        "completion": 405,
+        "reasoning": 379
+      }
+    },
+    {
+      "turn": 7,
+      "hypothesis": "lambda x,y,z: x <= y < z",
+      "test": [
+        2,
+        2,
+        2
+      ],
+      "expected": false,
+      "actual": true,
+      "surprised": true,
+      "h_in_r": 1.0,
+      "r_in_h": 0.9704,
+      "distance": 0.0296,
+      "delta": -0.0293,
+      "iou": 0.9704,
+      "tokens": {
+        "prompt": 411,
+        "completion": 26,
+        "reasoning": 0
+      }
+    }
+  ],
+  "lambda x, y, z: x < z < y": [
+    {
+      "turn": 1,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        3
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0002,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 191,
+        "completion": 329,
+        "reasoning": 303
+      }
+    },
+    {
+      "turn": 2,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        4,
+        6,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.1578,
+      "r_in_h": 0.1178,
+      "distance": 1.2196,
+      "delta": -0.1946,
+      "iou": 0.0724,
+      "tokens": {
+        "prompt": 226,
+        "completion": 487,
+        "reasoning": 443
+      }
+    },
+    {
+      "turn": 3,
+      "hypothesis": "lambda x,y,z: x + y == z and x == 2",
+      "test": [
+        2,
+        5,
+        7
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.1946,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 287,
+        "completion": 1663,
+        "reasoning": 1632
+      }
+    },
+    {
+      "turn": 4,
+      "hypothesis": "lambda x,y,z: x + y + z == 12",
+      "test": [
+        3,
+        4,
+        5
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.087,
+      "r_in_h": 0.0,
+      "distance": 1.3541,
+      "delta": -0.0601,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 331,
+        "completion": 1510,
+        "reasoning": 1480
+      }
+    },
+    {
+      "turn": 5,
+      "hypothesis": "lambda x,y,z: y == x * 2 and z == x + y",
+      "test": [
+        2,
+        4,
+        6
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0601,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 364,
+        "completion": 33,
+        "reasoning": 0
+      }
+    },
+    {
+      "turn": 6,
+      "hypothesis": "lambda x,y,z: x > y > z",
+      "test": [
+        3,
+        2,
+        1
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 420,
+        "completion": 3349,
+        "reasoning": 3323
+      }
+    },
+    {
+      "turn": 7,
+      "hypothesis": "lambda x,y,z: x * z == 12",
+      "test": [
+        1,
+        9,
+        12
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.4965,
+      "r_in_h": 0.0017,
+      "distance": 1.1181,
+      "delta": -0.2961,
+      "iou": 0.0017,
+      "tokens": {
+        "prompt": 459,
+        "completion": 62941,
+        "reasoning": 62912
+      }
+    },
+    {
+      "turn": 8,
+      "hypothesis": "lambda x,y,z: x * y * z == 48",
+      "test": [
+        1,
+        6,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.1471,
+      "r_in_h": 0.0001,
+      "distance": 1.3143,
+      "delta": 0.1962,
+      "iou": 0.0001,
+      "tokens": {
+        "prompt": 502,
+        "completion": 62940,
+        "reasoning": 62910
+      }
+    },
+    {
+      "turn": 9,
+      "hypothesis": "lambda x,y,z: x * y == z + 2",
+      "test": [
+        2,
+        5,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.2148,
+      "r_in_h": 0.0007,
+      "distance": 1.2709,
+      "delta": -0.0434,
+      "iou": 0.0007,
+      "tokens": {
+        "prompt": 527,
+        "completion": 2409,
+        "reasoning": 2380
+      }
+    }
+  ],
+  "lambda x, y, z: x > y and z > y": [
+    {
+      "turn": 1,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        3
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0002,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 189,
+        "completion": 683,
+        "reasoning": 657
+      }
+    },
+    {
+      "turn": 2,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        4,
+        6,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.3203,
+      "r_in_h": 0.1182,
+      "distance": 1.1133,
+      "delta": -0.3009,
+      "iou": 0.0945,
+      "tokens": {
+        "prompt": 226,
+        "completion": 487,
+        "reasoning": 443
+      }
+    },
+    {
+      "turn": 3,
+      "hypothesis": "lambda x,y,z: x + y == z and x == 2",
+      "test": [
+        2,
+        5,
+        7
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0192,
+      "r_in_h": 0.0,
+      "distance": 1.4007,
+      "delta": 0.2874,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 287,
+        "completion": 1663,
+        "reasoning": 1632
+      }
+    },
+    {
+      "turn": 4,
+      "hypothesis": "lambda x,y,z: x + y + z == 12",
+      "test": [
+        3,
+        4,
+        5
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.2258,
+      "r_in_h": 0.0,
+      "distance": 1.2646,
+      "delta": -0.1361,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 331,
+        "completion": 1510,
+        "reasoning": 1480
+      }
+    },
+    {
+      "turn": 5,
+      "hypothesis": "lambda x,y,z: x == 2 and y == 4",
+      "test": [
+        2,
+        4,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.1496,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 374,
+        "completion": 1731,
+        "reasoning": 1701
+      }
+    },
+    {
+      "turn": 6,
+      "hypothesis": "lambda x,y,z: x == 2 and y + z == 10",
+      "test": [
+        2,
+        3,
+        7
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 405,
+        "completion": 1188,
+        "reasoning": 1155
+      }
+    },
+    {
+      "turn": 7,
+      "hypothesis": "lambda x,y,z: x * y == z + 2",
+      "test": [
+        3,
+        3,
+        7
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.425,
+      "r_in_h": 0.0006,
+      "distance": 1.153,
+      "delta": -0.2612,
+      "iou": 0.0006,
+      "tokens": {
+        "prompt": 449,
+        "completion": 2047,
+        "reasoning": 2018
+      }
+    },
+    {
+      "turn": 8,
+      "hypothesis": "lambda x,y,z: y == x + 2 and z == y + 2",
+      "test": [
+        4,
+        6,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.2612,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 489,
+        "completion": 34,
+        "reasoning": 0
+      }
+    },
+    {
+      "turn": 9,
+      "hypothesis": "lambda x,y,z: y == x**2 and z == x + y",
+      "test": [
+        3,
+        9,
+        12
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 552,
+        "completion": 1600,
+        "reasoning": 1567
+      }
+    }
+  ],
+  "lambda x, y, z: x != y and y != z and x != z": [
+    {
+      "turn": 1,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        3
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.1664,
+      "distance": 0.8336,
+      "delta": -0.5804,
+      "iou": 0.1664,
+      "tokens": {
+        "prompt": 189,
+        "completion": 683,
+        "reasoning": 657
+      }
+    },
+    {
+      "turn": 2,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        4
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.1664,
+      "distance": 0.8336,
+      "delta": 0.0,
+      "iou": 0.1664,
+      "tokens": {
+        "prompt": 230,
+        "completion": 303,
+        "reasoning": 277
+      }
+    },
+    {
+      "turn": 3,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        3,
+        2,
+        1
+      ],
+      "expected": false,
+      "actual": true,
+      "surprised": true,
+      "h_in_r": 1.0,
+      "r_in_h": 0.167,
+      "distance": 0.833,
+      "delta": -0.0006,
+      "iou": 0.167,
+      "tokens": {
+        "prompt": 263,
+        "completion": 483,
+        "reasoning": 457
+      }
+    },
+    {
+      "turn": 4,
+      "hypothesis": "lambda x,y,z: len({x, y, z}) == 3",
+      "test": [
+        1,
+        1,
+        1
+      ],
+      "expected": false,
+      "actual": false,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 1.0,
+      "distance": 0.0,
+      "delta": -0.833,
+      "iou": 1.0,
+      "tokens": {
+        "prompt": 308,
+        "completion": 403,
+        "reasoning": 371
+      }
+    }
+  ],
+  "lambda x, y, z: x == y == z": [
+    {
+      "turn": 1,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        3
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0002,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 191,
+        "completion": 329,
+        "reasoning": 303
+      }
+    },
+    {
+      "turn": 2,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        4,
+        6,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0004,
+      "r_in_h": 0.5306,
+      "distance": 1.1043,
+      "delta": -0.3099,
+      "iou": 0.0004,
+      "tokens": {
+        "prompt": 226,
+        "completion": 487,
+        "reasoning": 443
+      }
+    },
+    {
+      "turn": 3,
+      "hypothesis": "lambda x,y,z: x + y + z == 12",
+      "test": [
+        1,
+        5,
+        6
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.05,
+      "r_in_h": 0.037,
+      "distance": 1.3527,
+      "delta": 0.2484,
+      "iou": 0.0217,
+      "tokens": {
+        "prompt": 287,
+        "completion": 932,
+        "reasoning": 902
+      }
+    },
+    {
+      "turn": 4,
+      "hypothesis": "lambda x,y,z: x == 2",
+      "test": [
+        2,
+        5,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0615,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 330,
+        "completion": 1759,
+        "reasoning": 1734
+      }
+    },
+    {
+      "turn": 5,
+      "hypothesis": "lambda x,y,z: x * 2 == y and y + 2 == z",
+      "test": [
+        3,
+        6,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 358,
+        "completion": 1269,
+        "reasoning": 1235
+      }
+    },
+    {
+      "turn": 6,
+      "hypothesis": "lambda x,y,z: x == 2 and y == 4",
+      "test": [
+        2,
+        4,
+        10
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 415,
+        "completion": 1584,
+        "reasoning": 1553
+      }
+    },
+    {
+      "turn": 7,
+      "hypothesis": "lambda x,y,z: y == x**2 and z == x + y",
+      "test": [
+        3,
+        9,
+        12
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 446,
+        "completion": 1219,
+        "reasoning": 1186
+      }
+    },
+    {
+      "turn": 8,
+      "hypothesis": "lambda x,y,z: x + y == z and x == 2",
+      "test": [
+        2,
+        4,
+        6
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 491,
+        "completion": 31,
+        "reasoning": 0
+      }
+    },
+    {
+      "turn": 9,
+      "hypothesis": "lambda x,y,z: x + 4 == y and y + 4 == z",
+      "test": [
+        10,
+        14,
+        18
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 533,
+        "completion": 3060,
+        "reasoning": 3023
+      }
+    }
+  ],
+  "lambda x, y, z: x == y or y == z or x == z": [
+    {
+      "turn": 1,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        3
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0002,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 189,
+        "completion": 683,
+        "reasoning": 657
+      }
+    },
+    {
+      "turn": 2,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        4,
+        6,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0606,
+      "r_in_h": 0.2422,
+      "distance": 1.207,
+      "delta": -0.2072,
+      "iou": 0.0509,
+      "tokens": {
+        "prompt": 226,
+        "completion": 487,
+        "reasoning": 443
+      }
+    },
+    {
+      "turn": 3,
+      "hypothesis": "lambda x,y,z: x + y == z and x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        2,
+        6,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0129,
+      "r_in_h": 0.0005,
+      "distance": 1.4047,
+      "delta": 0.1977,
+      "iou": 0.0005,
+      "tokens": {
+        "prompt": 281,
+        "completion": 1225,
+        "reasoning": 1175
+      }
+    },
+    {
+      "turn": 4,
+      "hypothesis": "lambda x,y,z: x + y + z == 12",
+      "test": [
+        1,
+        4,
+        7
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.2941,
+      "r_in_h": 0.0007,
+      "distance": 1.2235,
+      "delta": -0.1812,
+      "iou": 0.0007,
+      "tokens": {
+        "prompt": 342,
+        "completion": 1671,
+        "reasoning": 1641
+      }
+    },
+    {
+      "turn": 5,
+      "hypothesis": "lambda x,y,z: x == 2 and y == 4",
+      "test": [
+        2,
+        4,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.1907,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 393,
+        "completion": 934,
+        "reasoning": 904
+      }
+    },
+    {
+      "turn": 6,
+      "hypothesis": "lambda x,y,z: x == 2 and y == 4 and z == 6",
+      "test": [
+        2,
+        4,
+        10
+      ],
+      "expected": false,
+      "actual": false,
+      "surprised": false,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 436,
+        "completion": 1817,
+        "reasoning": 1781
+      }
+    },
+    {
+      "turn": 7,
+      "hypothesis": "lambda x,y,z: y == 2*x and z == 3*x",
+      "test": [
+        3,
+        6,
+        9
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 472,
+        "completion": 720,
+        "reasoning": 686
+      }
+    },
+    {
+      "turn": 8,
+      "hypothesis": "lambda x,y,z: x + y == z and y == x + 2",
+      "test": [
+        3,
+        5,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 533,
+        "completion": 17857,
+        "reasoning": 17824
+      }
+    },
+    {
+      "turn": 9,
+      "hypothesis": "lambda x,y,z: x + y == z and x * y == z + 2",
+      "test": [
+        4,
+        2,
+        6
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 579,
+        "completion": 7058,
+        "reasoning": 7023
+      }
+    }
+  ],
+  "lambda x, y, z: True": [
+    {
+      "turn": 1,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        3
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.1615,
+      "distance": 0.8385,
+      "delta": -0.5755,
+      "iou": 0.1615,
+      "tokens": {
+        "prompt": 189,
+        "completion": 683,
+        "reasoning": 657
+      }
+    },
+    {
+      "turn": 2,
+      "hypothesis": "lambda x,y,z: x + y == z",
+      "test": [
+        3,
+        4,
+        7
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.005,
+      "distance": 0.995,
+      "delta": 0.1565,
+      "iou": 0.005,
+      "tokens": {
+        "prompt": 226,
+        "completion": 417,
+        "reasoning": 391
+      }
+    },
+    {
+      "turn": 3,
+      "hypothesis": "lambda x,y,z: x + y == z",
+      "test": [
+        1,
+        5,
+        10
+      ],
+      "expected": false,
+      "actual": true,
+      "surprised": true,
+      "h_in_r": 1.0,
+      "r_in_h": 0.0049,
+      "distance": 0.9951,
+      "delta": 0.0001,
+      "iou": 0.0049,
+      "tokens": {
+        "prompt": 269,
+        "completion": 439,
+        "reasoning": 412
+      }
+    },
+    {
+      "turn": 4,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        10,
+        5,
+        1
+      ],
+      "expected": false,
+      "actual": true,
+      "surprised": true,
+      "h_in_r": 1.0,
+      "r_in_h": 0.1612,
+      "distance": 0.8388,
+      "delta": -0.1563,
+      "iou": 0.1612,
+      "tokens": {
+        "prompt": 302,
+        "completion": 601,
+        "reasoning": 574
+      }
+    },
+    {
+      "turn": 5,
+      "hypothesis": "lambda x,y,z: (x + y + z) % 2 == 0",
+      "test": [
+        1,
+        1,
+        1
+      ],
+      "expected": false,
+      "actual": true,
+      "surprised": true,
+      "h_in_r": 1.0,
+      "r_in_h": 0.4993,
+      "distance": 0.5007,
+      "delta": -0.3381,
+      "iou": 0.4993,
+      "tokens": {
+        "prompt": 351,
+        "completion": 514,
+        "reasoning": 480
+      }
+    },
+    {
+      "turn": 6,
+      "hypothesis": "lambda x,y,z: True",
+      "test": [
+        99,
+        99,
+        99
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 1.0,
+      "distance": 0.0,
+      "delta": -0.5007,
+      "iou": 1.0,
+      "tokens": {
+        "prompt": 398,
+        "completion": 841,
+        "reasoning": 816
+      }
+    }
+  ],
+  "lambda x, y, z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0": [
+    {
+      "turn": 1,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        3
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.117,
+      "r_in_h": 0.1567,
+      "distance": 1.221,
+      "delta": -0.193,
+      "iou": 0.0718,
+      "tokens": {
+        "prompt": 189,
+        "completion": 683,
+        "reasoning": 657
+      }
+    },
+    {
+      "turn": 2,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        4,
+        6,
+        8
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 1.0,
+      "distance": 0.0,
+      "delta": -1.221,
+      "iou": 1.0,
+      "tokens": {
+        "prompt": 226,
+        "completion": 487,
+        "reasoning": 443
+      }
+    }
+  ],
+  "lambda x, y, z: x % 2 != 0 and y % 2 != 0 and z % 2 != 0": [
+    {
+      "turn": 1,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        3
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.1243,
+      "r_in_h": 0.1568,
+      "distance": 1.2157,
+      "delta": -0.1983,
+      "iou": 0.0745,
+      "tokens": {
+        "prompt": 189,
+        "completion": 683,
+        "reasoning": 657
+      }
+    },
+    {
+      "turn": 2,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        4,
+        8,
+        12
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.1985,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 230,
+        "completion": 533,
+        "reasoning": 488
+      }
+    },
+    {
+      "turn": 3,
+      "hypothesis": "lambda x,y,z: x + y + z == 12",
+      "test": [
+        3,
+        4,
+        5
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 289,
+        "completion": 947,
+        "reasoning": 917
+      }
+    },
+    {
+      "turn": 4,
+      "hypothesis": "lambda x,y,z: y == x * 2 and z == x + y",
+      "test": [
+        3,
+        6,
+        9
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 324,
+        "completion": 33,
+        "reasoning": 0
+      }
+    },
+    {
+      "turn": 5,
+      "hypothesis": "lambda x,y,z: y == x + 2 and z == y + 2",
+      "test": [
+        10,
+        12,
+        14
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.3636,
+      "r_in_h": 0.0002,
+      "distance": 1.1851,
+      "delta": -0.2291,
+      "iou": 0.0002,
+      "tokens": {
+        "prompt": 368,
+        "completion": 37,
+        "reasoning": 0
+      }
+    },
+    {
+      "turn": 6,
+      "hypothesis": "lambda x,y,z: x == 2 and y == 4 and z == 6",
+      "test": [
+        2,
+        4,
+        8
+      ],
+      "expected": false,
+      "actual": false,
+      "surprised": false,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.2291,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 419,
+        "completion": 1494,
+        "reasoning": 1459
+      }
+    },
+    {
+      "turn": 7,
+      "hypothesis": "lambda x,y,z: y == x + 2 and x + y == z",
+      "test": [
+        3,
+        5,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 465,
+        "completion": 23637,
+        "reasoning": 23604
+      }
+    },
+    {
+      "turn": 8,
+      "hypothesis": "lambda x,y,z: x == 2 and y + z == 10",
+      "test": [
+        2,
+        3,
+        7
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 509,
+        "completion": 1265,
+        "reasoning": 1232
+      }
+    },
+    {
+      "turn": 9,
+      "hypothesis": "lambda x,y,z: y == 4 and z == 6",
+      "test": [
+        1,
+        4,
+        6
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 571,
+        "completion": 1504,
+        "reasoning": 1474
+      }
+    }
+  ],
+  "lambda x, y, z: x % 2 == y % 2 == z % 2": [
+    {
+      "turn": 1,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        3
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.2425,
+      "r_in_h": 0.1569,
+      "distance": 1.1334,
+      "delta": -0.2806,
+      "iou": 0.1053,
+      "tokens": {
+        "prompt": 191,
+        "completion": 329,
+        "reasoning": 303
+      }
+    },
+    {
+      "turn": 2,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        4,
+        6,
+        8
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.4852,
+      "distance": 0.5148,
+      "delta": -0.6186,
+      "iou": 0.4852,
+      "tokens": {
+        "prompt": 226,
+        "completion": 487,
+        "reasoning": 443
+      }
+    },
+    {
+      "turn": 3,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        2,
+        6,
+        10
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.4842,
+      "distance": 0.5158,
+      "delta": 0.001,
+      "iou": 0.4842,
+      "tokens": {
+        "prompt": 287,
+        "completion": 530,
+        "reasoning": 485
+      }
+    },
+    {
+      "turn": 4,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        2,
+        4,
+        8
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.4863,
+      "distance": 0.5137,
+      "delta": -0.0021,
+      "iou": 0.4863,
+      "tokens": {
+        "prompt": 346,
+        "completion": 553,
+        "reasoning": 509
+      }
+    },
+    {
+      "turn": 5,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        2,
+        4,
+        7
+      ],
+      "expected": false,
+      "actual": false,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.4845,
+      "distance": 0.5155,
+      "delta": 0.0018,
+      "iou": 0.4845,
+      "tokens": {
+        "prompt": 403,
+        "completion": 332,
+        "reasoning": 288
+      }
+    },
+    {
+      "turn": 6,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        8,
+        4,
+        2
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.4846,
+      "distance": 0.5154,
+      "delta": -0.0001,
+      "iou": 0.4846,
+      "tokens": {
+        "prompt": 448,
+        "completion": 863,
+        "reasoning": 819
+      }
+    },
+    {
+      "turn": 7,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        2,
+        2,
+        2
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.4834,
+      "distance": 0.5166,
+      "delta": 0.0012,
+      "iou": 0.4834,
+      "tokens": {
+        "prompt": 517,
+        "completion": 402,
+        "reasoning": 358
+      }
+    },
+    {
+      "turn": 8,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        1,
+        1,
+        1
+      ],
+      "expected": false,
+      "actual": true,
+      "surprised": true,
+      "h_in_r": 1.0,
+      "r_in_h": 0.4865,
+      "distance": 0.5135,
+      "delta": -0.0031,
+      "iou": 0.4865,
+      "tokens": {
+        "prompt": 558,
+        "completion": 809,
+        "reasoning": 765
+      }
+    },
+    {
+      "turn": 9,
+      "hypothesis": "lambda x,y,z: x % 2 == y % 2 == z % 2",
+      "test": [
+        3,
+        5,
+        7
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 1.0,
+      "distance": 0.0,
+      "delta": -0.5135,
+      "iou": 1.0,
+      "tokens": {
+        "prompt": 631,
+        "completion": 640,
+        "reasoning": 605
+      }
+    }
+  ],
+  "lambda x, y, z: sum([x % 2, y % 2, z % 2]) == 1": [
+    {
+      "turn": 1,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        3
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.3748,
+      "r_in_h": 0.1635,
+      "distance": 1.0443,
+      "delta": -0.3697,
+      "iou": 0.1285,
+      "tokens": {
+        "prompt": 191,
+        "completion": 320,
+        "reasoning": 294
+      }
+    },
+    {
+      "turn": 2,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        4,
+        8,
+        12
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.3699,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 230,
+        "completion": 533,
+        "reasoning": 488
+      }
+    },
+    {
+      "turn": 3,
+      "hypothesis": "lambda x,y,z: x + y + z == 12",
+      "test": [
+        3,
+        4,
+        5
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 283,
+        "completion": 881,
+        "reasoning": 851
+      }
+    },
+    {
+      "turn": 4,
+      "hypothesis": "lambda x,y,z: y == x * 2 and z == x + y",
+      "test": [
+        3,
+        6,
+        9
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 324,
+        "completion": 33,
+        "reasoning": 0
+      }
+    },
+    {
+      "turn": 5,
+      "hypothesis": "lambda x,y,z: y == x + 2 and z == y + 2",
+      "test": [
+        10,
+        12,
+        14
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 368,
+        "completion": 37,
+        "reasoning": 0
+      }
+    },
+    {
+      "turn": 6,
+      "hypothesis": "lambda x,y,z: x == 2",
+      "test": [
+        2,
+        3,
+        4
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 0.4996,
+      "r_in_h": 0.0134,
+      "distance": 1.1063,
+      "delta": -0.3079,
+      "iou": 0.0132,
+      "tokens": {
+        "prompt": 431,
+        "completion": 1251,
+        "reasoning": 1226
+      }
+    },
+    {
+      "turn": 7,
+      "hypothesis": "lambda x,y,z: x == 2",
+      "test": [
+        2,
+        1,
+        1
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.5023,
+      "r_in_h": 0.0135,
+      "distance": 1.1049,
+      "delta": -0.0014,
+      "iou": 0.0133,
+      "tokens": {
+        "prompt": 455,
+        "completion": 479,
+        "reasoning": 454
+      }
+    },
+    {
+      "turn": 8,
+      "hypothesis": "lambda x,y,z: x == 2 and x < y < z",
+      "test": [
+        2,
+        5,
+        10
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 0.4861,
+      "r_in_h": 0.0064,
+      "distance": 1.1187,
+      "delta": 0.0138,
+      "iou": 0.0063,
+      "tokens": {
+        "prompt": 507,
+        "completion": 767,
+        "reasoning": 735
+      }
+    },
+    {
+      "turn": 9,
+      "hypothesis": "lambda x,y,z: x == 2 and y < z",
+      "test": [
+        2,
+        10,
+        5
+      ],
+      "expected": false,
+      "actual": true,
+      "surprised": true,
+      "h_in_r": 0.5002,
+      "r_in_h": 0.007,
+      "distance": 1.1117,
+      "delta": -0.007,
+      "iou": 0.007,
+      "tokens": {
+        "prompt": 535,
+        "completion": 674,
+        "reasoning": 644
+      }
+    }
+  ],
+  "lambda x, y, z: x % 2 == 0": [
+    {
+      "turn": 1,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        3
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.4905,
+      "r_in_h": 0.16,
+      "distance": 0.9824,
+      "delta": -0.4316,
+      "iou": 0.1372,
+      "tokens": {
+        "prompt": 189,
+        "completion": 683,
+        "reasoning": 657
+      }
+    },
+    {
+      "turn": 2,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        4,
+        8,
+        12
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.2443,
+      "distance": 0.7557,
+      "delta": -0.2267,
+      "iou": 0.2443,
+      "tokens": {
+        "prompt": 230,
+        "completion": 533,
+        "reasoning": 488
+      }
+    },
+    {
+      "turn": 3,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        2,
+        6,
+        10
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.2431,
+      "distance": 0.7569,
+      "delta": 0.0012,
+      "iou": 0.2431,
+      "tokens": {
+        "prompt": 283,
+        "completion": 529,
+        "reasoning": 484
+      }
+    },
+    {
+      "turn": 4,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        2,
+        4,
+        8
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.2449,
+      "distance": 0.7551,
+      "delta": -0.0018,
+      "iou": 0.2449,
+      "tokens": {
+        "prompt": 340,
+        "completion": 682,
+        "reasoning": 638
+      }
+    },
+    {
+      "turn": 5,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        10,
+        20,
+        30
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.2462,
+      "distance": 0.7538,
+      "delta": -0.0013,
+      "iou": 0.2462,
+      "tokens": {
+        "prompt": 395,
+        "completion": 47,
+        "reasoning": 0
+      }
+    },
+    {
+      "turn": 6,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        6,
+        4,
+        2
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.2464,
+      "distance": 0.7536,
+      "delta": -0.0002,
+      "iou": 0.2464,
+      "tokens": {
+        "prompt": 468,
+        "completion": 379,
+        "reasoning": 335
+      }
+    },
+    {
+      "turn": 7,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        2,
+        2,
+        2
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 0.2447,
+      "distance": 0.7553,
+      "delta": 0.0017,
+      "iou": 0.2447,
+      "tokens": {
+        "prompt": 511,
+        "completion": 44,
+        "reasoning": 0
+      }
+    },
+    {
+      "turn": 8,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        2,
+        4,
+        5
+      ],
+      "expected": false,
+      "actual": true,
+      "surprised": true,
+      "h_in_r": 1.0,
+      "r_in_h": 0.2435,
+      "distance": 0.7565,
+      "delta": 0.0012,
+      "iou": 0.2435,
+      "tokens": {
+        "prompt": 582,
+        "completion": 301,
+        "reasoning": 257
+      }
+    },
+    {
+      "turn": 9,
+      "hypothesis": "lambda x,y,z: x % 2 == 0",
+      "test": [
+        4,
+        1,
+        1
+      ],
+      "expected": true,
+      "actual": true,
+      "surprised": false,
+      "h_in_r": 1.0,
+      "r_in_h": 1.0,
+      "distance": 0.0,
+      "delta": -0.7565,
+      "iou": 1.0,
+      "tokens": {
+        "prompt": 621,
+        "completion": 754,
+        "reasoning": 726
+      }
+    }
+  ],
+  "lambda x, y, z: x % 5 == 0 and y % 5 == 0 and z % 5 == 0": [
+    {
+      "turn": 1,
+      "hypothesis": "lambda x,y,z: x < y < z",
+      "test": [
+        1,
+        2,
+        3
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0062,
+      "r_in_h": 0.139,
+      "distance": 1.315,
+      "delta": -0.099,
+      "iou": 0.0059,
+      "tokens": {
+        "prompt": 191,
+        "completion": 320,
+        "reasoning": 294
+      }
+    },
+    {
+      "turn": 2,
+      "hypothesis": "lambda x,y,z: x % 2 == 0 and y % 2 == 0 and z % 2 == 0",
+      "test": [
+        4,
+        8,
+        12
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.006,
+      "r_in_h": 0.1023,
+      "distance": 1.3393,
+      "delta": 0.0243,
+      "iou": 0.0057,
+      "tokens": {
+        "prompt": 230,
+        "completion": 533,
+        "reasoning": 488
+      }
+    },
+    {
+      "turn": 3,
+      "hypothesis": "lambda x,y,z: x + y + z == 12",
+      "test": [
+        3,
+        4,
+        5
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0749,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 289,
+        "completion": 947,
+        "reasoning": 917
+      }
+    },
+    {
+      "turn": 4,
+      "hypothesis": "lambda x,y,z: y - x == 2 and z - y == 2",
+      "test": [
+        4,
+        6,
+        8
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 332,
+        "completion": 1884,
+        "reasoning": 1850
+      }
+    },
+    {
+      "turn": 5,
+      "hypothesis": "lambda x,y,z: x == 2",
+      "test": [
+        2,
+        1,
+        1
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 379,
+        "completion": 1712,
+        "reasoning": 1687
+      }
+    },
+    {
+      "turn": 6,
+      "hypothesis": "lambda x,y,z: x == 2 and x + y == z",
+      "test": [
+        2,
+        3,
+        5
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 417,
+        "completion": 1418,
+        "reasoning": 1387
+      }
+    },
+    {
+      "turn": 7,
+      "hypothesis": "lambda x,y,z: x == 2 and y == 4",
+      "test": [
+        2,
+        4,
+        10
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 461,
+        "completion": 1114,
+        "reasoning": 1083
+      }
+    },
+    {
+      "turn": 8,
+      "hypothesis": "lambda x,y,z: x == 2 and z == 6",
+      "test": [
+        2,
+        5,
+        6
+      ],
+      "expected": true,
+      "actual": false,
+      "surprised": true,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 506,
+        "completion": 2767,
+        "reasoning": 2737
+      }
+    },
+    {
+      "turn": 9,
+      "hypothesis": "lambda x,y,z: x == 2 and y == 4 and z == 6",
+      "test": [
+        6,
+        4,
+        2
+      ],
+      "expected": false,
+      "actual": false,
+      "surprised": false,
+      "h_in_r": 0.0,
+      "r_in_h": 0.0,
+      "distance": 1.4142,
+      "delta": 0.0,
+      "iou": 0.0,
+      "tokens": {
+        "prompt": 531,
+        "completion": 995,
+        "reasoning": 960
+      }
+    }
+  ]
+}

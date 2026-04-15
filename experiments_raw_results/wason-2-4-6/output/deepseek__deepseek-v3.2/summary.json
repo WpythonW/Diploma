@@ -1,0 +1,21 @@
+{
+  "model": "deepseek/deepseek-v3.2",
+  "prompt_style": "baseline",
+  "reasoning_effort": "none",
+  "n_rules": 50,
+  "n_success": 5,
+  "n_invalid_rules": 0,
+  "n_processed_rules": 50,
+  "max_turns": 19,
+  "stop_iou": 0.95,
+  "stats": {
+    "n_rules": 50,
+    "n_success": 5,
+    "n_invalid_rules": 0,
+    "n_processed_rules": 50,
+    "mean_turns": 17.38,
+    "prompt_tokens": 638539,
+    "completion_tokens": 29870,
+    "reasoning_tokens": 0
+  }
+}
