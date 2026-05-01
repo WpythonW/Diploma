@@ -1481,6 +1481,186 @@
       \field{title}{Occupational Employment and Wage Statistics (OEWS)}
       \field{year}{2024}
     \endentry
+    \entry{gigerenzer1991how}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=32974c316f27312962a18372e815d15c}{%
+           family={Gigerenzer},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{32974c316f27312962a18372e815d15c}
+      \strng{fullhash}{32974c316f27312962a18372e815d15c}
+      \strng{fullhashraw}{32974c316f27312962a18372e815d15c}
+      \strng{bibnamehash}{32974c316f27312962a18372e815d15c}
+      \strng{authorbibnamehash}{32974c316f27312962a18372e815d15c}
+      \strng{authornamehash}{32974c316f27312962a18372e815d15c}
+      \strng{authorfullhash}{32974c316f27312962a18372e815d15c}
+      \strng{authorfullhashraw}{32974c316f27312962a18372e815d15c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{2}
+      \field{journaltitle}{European Review of Social Psychology}
+      \field{title}{How to make cognitive illusions disappear: Beyond ``heuristics and biases''}
+      \field{year}{1991}
+      \field{number}{1}
+      \range{number}{1}
+      \field{pages}{83\bibrangedash 115}
+      \range{pages}{33}
+      \field{volume}{2}
+      \range{volume}{1}
+    \endentry
+    \entry{fiedler1988dependence}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=873f1956a5fea17beb737a5dd3fa9726}{%
+           family={Fiedler},
+           familyi={F\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{873f1956a5fea17beb737a5dd3fa9726}
+      \strng{fullhash}{873f1956a5fea17beb737a5dd3fa9726}
+      \strng{fullhashraw}{873f1956a5fea17beb737a5dd3fa9726}
+      \strng{bibnamehash}{873f1956a5fea17beb737a5dd3fa9726}
+      \strng{authorbibnamehash}{873f1956a5fea17beb737a5dd3fa9726}
+      \strng{authornamehash}{873f1956a5fea17beb737a5dd3fa9726}
+      \strng{authorfullhash}{873f1956a5fea17beb737a5dd3fa9726}
+      \strng{authorfullhashraw}{873f1956a5fea17beb737a5dd3fa9726}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{50}
+      \field{journaltitle}{Psychological Research}
+      \field{title}{The dependence of the conjunction fallacy on subtle linguistic factors}
+      \field{year}{1988}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{123\bibrangedash 129}
+      \range{pages}{7}
+      \field{volume}{50}
+      \range{volume}{1}
+    \endentry
+    \entry{hertwig1999conjunction}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=e4d03927899b158d81500c178f74a1dc}{%
+           family={Hertwig},
+           familyi={H\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=32974c316f27312962a18372e815d15c}{%
+           family={Gigerenzer},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{c9fd1091823f27a3fd2625db09ab0839}
+      \strng{fullhash}{c9fd1091823f27a3fd2625db09ab0839}
+      \strng{fullhashraw}{c9fd1091823f27a3fd2625db09ab0839}
+      \strng{bibnamehash}{c9fd1091823f27a3fd2625db09ab0839}
+      \strng{authorbibnamehash}{c9fd1091823f27a3fd2625db09ab0839}
+      \strng{authornamehash}{c9fd1091823f27a3fd2625db09ab0839}
+      \strng{authorfullhash}{c9fd1091823f27a3fd2625db09ab0839}
+      \strng{authorfullhashraw}{c9fd1091823f27a3fd2625db09ab0839}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{12}
+      \field{journaltitle}{Journal of Behavioral Decision Making}
+      \field{title}{The ``conjunction fallacy'' revisited: How intelligent inferences look like reasoning errors}
+      \field{year}{1999}
+      \field{number}{4}
+      \range{number}{1}
+      \field{pages}{275\bibrangedash 305}
+      \range{pages}{31}
+      \field{volume}{12}
+      \range{volume}{1}
+    \endentry
+    \entry{sides2002reality}{article}{useauthor=false}{}
+      \name{author}{4}{}{%
+        {{hash=fc4eb32201b59722797090fb943e62ca}{%
+           family={Sides},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3e3f40a97d87c823bffaf785576cd685}{%
+           family={Osherson},
+           familyi={O\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=42f1fcc847385bf476f78c05bcff6760}{%
+           family={Bonini},
+           familyi={B\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=fbd0cf7a42d98ddb0c72ccd64f4c241f}{%
+           family={Viale},
+           familyi={V\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{authorbibnamehash}{d52a50584a2408c0762fbd22c35d8e89}
+      \strng{authornamehash}{d52a50584a2408c0762fbd22c35d8e89}
+      \strng{authorfullhash}{c61ea8d451f2bd1b2ccb8ffc68d75e26}
+      \strng{authorfullhashraw}{c61ea8d451f2bd1b2ccb8ffc68d75e26}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{30}
+      \field{journaltitle}{Memory \& Cognition}
+      \field{title}{On the reality of the conjunction fallacy}
+      \field{year}{2002}
+      \field{number}{2}
+      \range{number}{1}
+      \field{pages}{191\bibrangedash 198}
+      \range{pages}{8}
+      \field{volume}{30}
+      \range{volume}{1}
+    \endentry
+    \entry{mellers2001frequency}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=eaec99890e3e759919a9ae0e25241f83}{%
+           family={Mellers},
+           familyi={M\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e4d03927899b158d81500c178f74a1dc}{%
+           family={Hertwig},
+           familyi={H\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=90cdea5582a22a9fcc5c0fc0f6a66705}{%
+           family={Kahneman},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{325f9a6070824443aa426174bbdd4233}
+      \strng{fullhash}{325f9a6070824443aa426174bbdd4233}
+      \strng{fullhashraw}{325f9a6070824443aa426174bbdd4233}
+      \strng{bibnamehash}{325f9a6070824443aa426174bbdd4233}
+      \strng{authorbibnamehash}{325f9a6070824443aa426174bbdd4233}
+      \strng{authornamehash}{325f9a6070824443aa426174bbdd4233}
+      \strng{authorfullhash}{325f9a6070824443aa426174bbdd4233}
+      \strng{authorfullhashraw}{325f9a6070824443aa426174bbdd4233}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{12}
+      \field{journaltitle}{Psychological Science}
+      \field{title}{Do frequency representations eliminate conjunction effects?}
+      \field{year}{2001}
+      \field{number}{4}
+      \range{number}{1}
+      \field{pages}{269\bibrangedash 275}
+      \range{pages}{7}
+      \field{volume}{12}
+      \range{volume}{1}
+    \endentry
     \entry{ragni2018experimental}{report}{}{}
       \name{author}{3}{}{%
         {{hash=0dbbb8685a170e115e955dc33586eaab}{%
@@ -1510,8 +1690,8 @@
       \strng{authornamehash}{941ee8e26892016d53331fe23a88f1fb}
       \strng{authorfullhash}{941ee8e26892016d53331fe23a88f1fb}
       \strng{authorfullhashraw}{941ee8e26892016d53331fe23a88f1fb}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{On the evidence for the {W}ason selection task: {A} meta-analysis}
@@ -1541,8 +1721,8 @@
       \strng{authornamehash}{156f4d2754b6cb9f417082bf6e679f0a}
       \strng{authorfullhash}{156f4d2754b6cb9f417082bf6e679f0a}
       \strng{authorfullhashraw}{156f4d2754b6cb9f417082bf6e679f0a}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{internalsortvolume}{23}
@@ -1572,8 +1752,8 @@
       \strng{authornamehash}{cf023fcad0aaa0ecad08fcf309f28db6}
       \strng{authorfullhash}{cf023fcad0aaa0ecad08fcf309f28db6}
       \strng{authorfullhashraw}{cf023fcad0aaa0ecad08fcf309f28db6}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{internalsortvolume}{2}
@@ -1635,8 +1815,8 @@
       \strng{editornamehash}{72134c1e30d644ab070e3f0552c7f6da}
       \strng{editorfullhash}{72134c1e30d644ab070e3f0552c7f6da}
       \strng{editorfullhashraw}{72134c1e30d644ab070e3f0552c7f6da}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{The Adapted Mind: Evolutionary Psychology and the Generation of Culture}
@@ -1661,8 +1841,8 @@
       \strng{authornamehash}{4c305231dc0ade708d6c60f0b10bd845}
       \strng{authorfullhash}{4c305231dc0ade708d6c60f0b10bd845}
       \strng{authorfullhashraw}{4c305231dc0ade708d6c60f0b10bd845}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{URL: https://arxiv.org/abs/2308.03762}
@@ -1702,8 +1882,8 @@
       \strng{authornamehash}{9fce87d78824b3089644e7cfe2918211}
       \strng{authorfullhash}{d0c680198a613cecd35ecaa24f673832}
       \strng{authorfullhashraw}{d0c680198a613cecd35ecaa24f673832}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in Neural Information Processing Systems}
       \field{internalsortvolume}{35}

@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1777555494.65506 "main.bcf" "main.bbl" "main" 1777555620.17741 0
-  "bibliography.bib" 1777555249.2781 15376 417e8d960b852cbe85492d40430c7883 ""
-  "main.bcf" 1777555619.63544 166001 22f1c0748d392b937de5c3d369a6fe64 "lualatex"
+["biber main"] 1777651612.80754 "main.bcf" "main.bbl" "main" 1777651637.3332 0
+  "bibliography.bib" 1777650631.71179 16796 d60b3e66ddca47fd9c3e70feddb643e8 ""
+  "main.bcf" 1777651636.79784 167937 ab1ff8e8b9b1d157880d07a11d441971 "lualatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["lualatex"] 1777555609.85466 "main.tex" "main.pdf" "main" 1777555620.17797 0
+["lualatex"] 1777651626.40911 "main.tex" "main.pdf" "main" 1777651637.33377 0
   "../experiments_raw_results/wason-2-4-6/figures/wason246_category_heatmap.png" 1776192039.7817 117926 cac37a9ea0e15e08f90c860cd8dc16fd ""
   "../experiments_raw_results/wason-2-4-6/figures/wason246_ctr_bars.png" 1776192039.7823 128180 5c9b84f768a3ae740f354b75a10d531f ""
   "../experiments_raw_results/wason-2-4-6/figures/wason246_iou_trajectories.png" 1776192039.78295 293276 48e72e8d50cace4e281435fdc17e286e ""
@@ -31,7 +31,7 @@
   "/Users/andrejustinov/Library/texlive/2026/texmf-var/luatex-cache/generic/fonts/otl/times-new-roman-bold.luc" 1777544187.84702 530645 68abc11fec61913eb5303a666efa0a20 ""
   "/Users/andrejustinov/Library/texlive/2026/texmf-var/luatex-cache/generic/fonts/otl/times-new-roman-italic.luc" 1777544187.98115 417865 8a3a0d662ef117fcb094187bb2cbacf7 ""
   "/Users/andrejustinov/Library/texlive/2026/texmf-var/luatex-cache/generic/fonts/otl/times-new-roman.luc" 1777544187.56622 528748 8815d2f0ab937f684c35c20325e384cd ""
-  "/Users/andrejustinov/Library/texlive/2026/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1777545171.51616 2490 01aa8a55c1235481f837c79850c7fb5e ""
+  "/Users/andrejustinov/Library/texlive/2026/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1777651619.52964 2586 563b8541a3c606995a1584dddb16f4c1 ""
   "/Users/andrejustinov/Library/texlive/2026/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1777544187.10252 430845 8968871eb2b9a947a405f3ef5dcbc9f8 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmmono10-italic.otf" 1255129361 63584 4d362a77d55d0d8683d2b315bd34f34b ""
   "/usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1255129361 64684 15a2082c8e31f411875a86ea2d29a0ee ""
@@ -190,7 +190,7 @@
   "chapter1.tex" 1777555416.27181 75243 6a5520bedf9b67de26511dbcad7d11a1 ""
   "chapter2.tex" 1776024287.15885 148 7c3d285a3d83e9e1d20d01107a2c444e ""
   "chapter2_cross.tex" 1776024276.74159 8522 c1761d8d83abfc26bd166197fa3cce9d ""
-  "chapter2_exp1_linda.tex" 1776193912.47646 45487 343dd4232404c4f1f4c78a9d2d4a695a ""
+  "chapter2_exp1_linda.tex" 1777651469.6526 58490 14aa9cf7a662df6ddce35e0878954051 ""
   "chapter2_exp2_wason.tex" 1777555171.03148 39426 fcadecc58626c6e7aef063e962335f76 ""
   "chapter2_exp3_246.tex" 1777554816.50946 29934 c5c3a1cca52083ebff0c781e7a3c4830 ""
   "chapter2_intro.tex" 1776023489.40325 4343 78ea56d29b8265e043ca68a98518fcd3 ""
@@ -203,11 +203,11 @@
   "config-tables.tex" 1773571452.53682 3074 3dc84c64eca8900b308b24217b0f872d ""
   "example.jpg" 1773563804.5841 15817 236c908fdb8f33d3146ff144515dab16 ""
   "intro.tex" 1777481635.85436 25819 7f5aa4d51f5176681dfdaaa1f6abd708 ""
-  "main.aux" 1777555619.61838 46559 63bb3bfe921d21c30a3ade272de50414 "lualatex"
-  "main.bbl" 1777555497.84087 71809 235f4473ee3d4e4ba4561ceafd5dac45 "biber main"
-  "main.run.xml" 1777555619.63653 2539 53081166575ee613f3e7d12c0a8b9d49 "lualatex"
+  "main.aux" 1777651636.77709 49829 0c7a9c44af30b019b13ce454726b380a "lualatex"
+  "main.bbl" 1777651615.55789 79127 4b85a3b54a88016da6a2181ec3f5e855 "biber main"
+  "main.run.xml" 1777651636.79894 2539 53081166575ee613f3e7d12c0a8b9d49 "lualatex"
   "main.tex" 1777481573.28957 1823 ebd4cdc6e05b7a553ecf1a6969192f21 ""
-  "main.toc" 1777555619.63664 14538 4219f5f053fe76ffb11988657295f78a "lualatex"
+  "main.toc" 1777651636.79904 14679 0afb3830f3581f254dcd62556099c5c9 "lualatex"
   "preamble.tex" 1775501280.76637 4631 e6681b3bc257d5528802a9eeb9ba16ac ""
   "terms.tex" 1773570803.1959 2975 a4f88aba5269c976efa760e46d825291 ""
   (generated)

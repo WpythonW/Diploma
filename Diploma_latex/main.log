@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.3.1)  30 APR 2026 16:26
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.3.1)  1 MAY 2026 19:07
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1797,20 +1797,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 346--347
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 350--351
+Underfull \hbox (badness 2277) in paragraph at lines 354--355
+\TU/TimesNewRoman(0)/m/n/10 Таблица 2.8[] обобщает резуль
+таты ключевых экспериментов Тверски и Кан
+емана [3] и последующих
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 380--381
+[]\TU/TimesNewRoman(0)/m/n/10 Канонический уровень ошиб
+ки в probability-формате составляет 82--89% [3]. Ошиб
+ка устойчиво
+ []
+
+[30]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 423--424
+\TU/TimesNewRoman(0)/m/n/10 нуля. Таким образом, в обеих 
+парадигмах наблюдается позитивный тренд п
+ри переходе от людей к
+ []
+
+[31]
+Underfull \hbox (badness 4316) in paragraph at lines 427--428
+\TU/TimesNewRoman(0)/m/n/10 даже при семантически нейт
+ральном втором элементе (аналог uncorrelated-усл
+овия). В настоящем
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 431--432
 \TU/TimesNewRoman(0)/m/n/10 что даёт основания говорит
 ь о широко распространённом, но не абсолют
 но универсальном феномене;
  []
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 352--353
+Underfull \hbox (badness 1163) in paragraph at lines 433--434
 \TU/TimesNewRoman(0)/m/n/10 является устойчивым и субъ
 ективно обоснованным; (7) почти все модели м
 енее уверены в correlated-
  []
 
-[30]) (./chapter2_exp2_wason.tex
+[32]) (./chapter2_exp2_wason.tex
 Underfull \hbox (badness 4872) in paragraph at lines 7--8
 []\TU/TimesNewRoman(0)/m/n/10 Задача выбора карточек Уэ
 йсона [4] была выбрана как каноническая пар
@@ -1824,7 +1859,7 @@ Underfull \hbox (badness 5403) in paragraph at lines 7--8
 ой версии испытуемым
  []
 
-[31]
+[33]
 Underfull \hbox (badness 2057) in paragraph at lines 36--37
 []\TU/TimesNewRoman(0)/b/n/10 Формальная логика --- Канон
 ическая. \TU/TimesNewRoman(0)/m/n/10 Правила использую
@@ -1859,14 +1894,14 @@ Underfull \hbox (badness 1117) in paragraph at lines 60--61
 ое прайминирование и явный
  []
 
-
+[34]
 Underfull \hbox (badness 1072) in paragraph at lines 62--63
 []\TU/TimesNewRoman(0)/b/n/10 Neu-tral. \TU/TimesNewRoman(0)/m/n/10 Систе
 мный промпт содержит только инструкцию по 
 формату без персоны и без фрейминга
  []
 
-[32]
+
 Underfull \hbox (badness 1867) in paragraph at lines 68--69
 []\TU/TimesNewRoman(0)/m/n/10 Наиболее близко воспроизв
 одит оригинальную человеческую экспериме
@@ -1902,7 +1937,7 @@ man(0)/m/n/10 --- доля испытаний, в которых модель
  []
 
 <../experiments_raw_results/wason-selection/figures/wason_ema_conditions.png, i
-d=111, 1002.3849pt x 424.2249pt>
+d=117, 1002.3849pt x 424.2249pt>
 File: ../experiments_raw_results/wason-selection/figures/wason_ema_conditions.p
 ng Graphic file (type png)
 <use ../experiments_raw_results/wason-selection/figures/wason_ema_conditions.pn
@@ -1914,7 +1949,7 @@ on_ema_conditions.png  used on input line 96.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <../experiments_raw_results/wason-selection/figures/wason_ema_heatmap.png, id=1
-12, 712.3413pt x 388.0899pt>
+18, 712.3413pt x 388.0899pt>
 File: ../experiments_raw_results/wason-selection/figures/wason_ema_heatmap.png 
 Graphic file (type png)
 <use ../experiments_raw_results/wason-selection/figures/wason_ema_heatmap.png>
@@ -1925,15 +1960,17 @@ on_ema_heatmap.png  used on input line 103.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \hbox (badness 1418) in paragraph at lines 129--130
 \TU/TimesNewRoman(0)/m/n/10 превышает EMA в нейтральном 
 абстрактном условии у семи из девяти модел
 ей (медианный прирост
  []
 
-[33]
 <../experiments_raw_results/wason-selection/figures/wason_context_effects.png, 
-id=116, 857.604pt x 351.9549pt>
+id=119, 857.604pt x 351.9549pt>
 File: ../experiments_raw_results/wason-selection/figures/wason_context_effects.
 png Graphic file (type png)
 <use ../experiments_raw_results/wason-selection/figures/wason_context_effects.p
@@ -1942,16 +1979,22 @@ Package luatex.def Info: ../experiments_raw_results/wason-selection/figures/was
 on_context_effects.png  used on input line 133.
 (luatex.def)             Requested size: 399.05278pt x 163.77011pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[34<../experiments_raw_results/wason-selection/figures/wason_ema_conditions.png>
+[35]
+
+LaTeX Warning: Text page 36 contains only floats.
+
+[36<../experiments_raw_results/wason-selection/figures/wason_ema_conditions.png>
 <../experiments_raw_results/wason-selection/figures/wason_ema_heatmap.png>]
 Underfull \hbox (badness 1102) in paragraph at lines 165--166
 []\TU/TimesNewRoman(0)/b/n/10 Сравнение с человеческой 
 производительностью. \TU/TimesNewRoman(0)/m/n/10 Резул
 ьтаты LLM интерпретируются относительно
  []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 185--186
@@ -1974,16 +2017,17 @@ Underfull \hbox (badness 4518) in paragraph at lines 185--186
 твенно родственен
  []
 
-[35<../experiments_raw_results/wason-selection/figures/wason_context_effects.png
->]
+
 Underfull \hbox (badness 1742) in paragraph at lines 187--188
 []\TU/TimesNewRoman(0)/m/n/10 Контент-эффект воспроизво
 дит человеческий паттерн: и люди, и LLM улучш
 аются при переходе от
  []
 
+[37<../experiments_raw_results/wason-selection/figures/wason_context_effects.png
+>]
 <../experiments_raw_results/wason-selection/output/thesis_graphs/wason_cot_delt
-a.png, id=127, 636.4578pt x 341.1144pt>
+a.png, id=132, 636.4578pt x 341.1144pt>
 File: ../experiments_raw_results/wason-selection/output/thesis_graphs/wason_cot
 _delta.png Graphic file (type png)
 <use ../experiments_raw_results/wason-selection/output/thesis_graphs/wason_cot_
@@ -1991,10 +2035,10 @@ delta.png>
 Package luatex.def Info: ../experiments_raw_results/wason-selection/output/thes
 is_graphs/wason_cot_delta.png  used on input line 216.
 (luatex.def)             Requested size: 399.05278pt x 213.8778pt.
-[36<../experiments_raw_results/wason-selection/output/thesis_graphs/wason_cot_de
-lta.png>]
+ [38<../experiments_raw_results/wason-selection/output/thesis_graphs/wason_cot_d
+elta.png>]
 <../experiments_raw_results/wason-selection/figures/wason_ema_vs_consistency.pn
-g, id=132, 564.9105pt x 424.2249pt>
+g, id=138, 564.9105pt x 424.2249pt>
 File: ../experiments_raw_results/wason-selection/figures/wason_ema_vs_consisten
 cy.png Graphic file (type png)
 <use ../experiments_raw_results/wason-selection/figures/wason_ema_vs_consistenc
@@ -2002,7 +2046,7 @@ y.png>
 Package luatex.def Info: ../experiments_raw_results/wason-selection/figures/was
 on_ema_vs_consistency.png  used on input line 229.
 (luatex.def)             Requested size: 399.05278pt x 299.66763pt.
- [37<../experiments_raw_results/wason-selection/figures/wason_ema_vs_consistency
+ [39<../experiments_raw_results/wason-selection/figures/wason_ema_vs_consistency
 .png>]
 Underfull \hbox (badness 1735) in paragraph at lines 263--264
 []\TU/TimesNewRoman(0)/b/n/10 5. OVER-SELECTION \TU/TimesNewRoman(0)/m/n/10 (
@@ -2023,7 +2067,7 @@ Underfull \hbox (badness 1062) in paragraph at lines 284--285
 нии у всех девяти моделей в нейтральном
  []
 
-[38]
+[40]
 Underfull \hbox (badness 10000) in paragraph at lines 292--293
 \TU/TimesNewRoman(0)/m/n/10 12b в логической задаче, но б
 ыла более уязвима в вероятностной, что сви
@@ -2037,7 +2081,7 @@ Underfull \hbox (badness 2073) in paragraph at lines 7--8
 истинное правило («любая
  []
 
-
+[41]
 Underfull \hbox (badness 1509) in paragraph at lines 23--24
 \TU/TimesNewRoman(0)/m/n/10 (проверка через экстенсион
 альную эквивалентность) и отсутствие тавт
@@ -2052,14 +2096,17 @@ an(0)/m/it/10 ловушки специфичности\TU/TimesNewRoman(0)/m/n
 фичными, чем
  []
 
-[39] [40]
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 75--77
 \TU/TimesNewRoman(0)/m/n/10 Напрямую операционализиру
 ет предубеждение подтверждения: низкий CTR 
 соответствует
  []
 
-<../experiments_raw_results/wason-2-4-6/figures/wason246_ctr_bars.png, id=147, 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../experiments_raw_results/wason-2-4-6/figures/wason246_ctr_bars.png, id=154, 
 605.8635pt x 354.3639pt>
 File: ../experiments_raw_results/wason-2-4-6/figures/wason246_ctr_bars.png Grap
 hic file (type png)
@@ -2067,7 +2114,7 @@ hic file (type png)
 Package luatex.def Info: ../experiments_raw_results/wason-2-4-6/figures/wason24
 6_ctr_bars.png  used on input line 115.
 (luatex.def)             Requested size: 375.57782pt x 219.6763pt.
-[41]
+
 Underfull \hbox (badness 2790) in paragraph at lines 122--123
 \TU/TimesNewRoman(0)/m/n/10 подтверждающим), однако дан
 ная оценка не вполне сопоставима с CTR в нас
@@ -2081,8 +2128,9 @@ Underfull \hbox (badness 1478) in paragraph at lines 122--123
 испытуемого vs. к правилу
  []
 
+[43] [44<../experiments_raw_results/wason-2-4-6/figures/wason246_ctr_bars.png>]
 <../experiments_raw_results/wason-2-4-6/figures/wason246_iou_trajectories.png, 
-id=153, 556.2381pt x 333.8874pt>
+id=163, 556.2381pt x 333.8874pt>
 File: ../experiments_raw_results/wason-2-4-6/figures/wason246_iou_trajectories.
 png Graphic file (type png)
 <use ../experiments_raw_results/wason-2-4-6/figures/wason246_iou_trajectories.p
@@ -2091,7 +2139,7 @@ Package luatex.def Info: ../experiments_raw_results/wason-2-4-6/figures/wason24
 6_iou_trajectories.png  used on input line 128.
 (luatex.def)             Requested size: 375.57782pt x 225.45088pt.
 <../experiments_raw_results/wason-2-4-6/figures/wason246_reasoning_iou_trajecto
-ries.png, id=154, 556.2381pt x 348.5823pt>
+ries.png, id=164, 556.2381pt x 348.5823pt>
 File: ../experiments_raw_results/wason-2-4-6/figures/wason246_reasoning_iou_tra
 jectories.png Graphic file (type png)
 <use ../experiments_raw_results/wason-2-4-6/figures/wason246_reasoning_iou_traj
@@ -2114,9 +2162,8 @@ Underfull \hbox (badness 2119) in paragraph at lines 140--141
 обны \TU/TimesNewRoman(0)/m/it/10 частично
  []
 
-[42<../experiments_raw_results/wason-2-4-6/figures/wason246_ctr_bars.png>]
 <../experiments_raw_results/wason-2-4-6/figures/wason246_scatter_sr_correlation
-.png, id=159, 535.7616pt x 333.8874pt>
+.png, id=165, 535.7616pt x 333.8874pt>
 File: ../experiments_raw_results/wason-2-4-6/figures/wason246_scatter_sr_correl
 ation.png Graphic file (type png)
 <use ../experiments_raw_results/wason-2-4-6/figures/wason246_scatter_sr_correla
@@ -2135,7 +2182,7 @@ Underfull \hbox (badness 2277) in paragraph at lines 151--152
  []
 
 <../experiments_raw_results/wason-2-4-6/figures/wason246_category_heatmap.png, 
-id=160, 560.5743pt x 308.5929pt>
+id=166, 560.5743pt x 308.5929pt>
 File: ../experiments_raw_results/wason-2-4-6/figures/wason246_category_heatmap.
 png Graphic file (type png)
 <use ../experiments_raw_results/wason-2-4-6/figures/wason246_category_heatmap.p
@@ -2143,7 +2190,8 @@ ng>
 Package luatex.def Info: ../experiments_raw_results/wason-2-4-6/figures/wason24
 6_category_heatmap.png  used on input line 155.
 (luatex.def)             Requested size: 422.52057pt x 232.59773pt.
-
+[45<../experiments_raw_results/wason-2-4-6/figures/wason246_iou_trajectories.png
+>]
 Underfull \hbox (badness 2582) in paragraph at lines 160--161
 []\TU/TimesNewRoman(0)/b/n/10 Контринтуитивный эффект у 
 \TU/lmtt/b/n/10 gemma-3-27b-it\TU/TimesNewRoman(0)/b/n/10 : \TU/TimesNewRoman(0
@@ -2151,10 +2199,8 @@ Underfull \hbox (badness 2582) in paragraph at lines 160--161
 кацию,
  []
 
-[43<../experiments_raw_results/wason-2-4-6/figures/wason246_iou_trajectories.png
->]
 <../experiments_raw_results/wason-2-4-6/figures/wason246_turns_to_success.png, 
-id=166, 437.7153pt x 278.2395pt>
+id=172, 437.7153pt x 278.2395pt>
 File: ../experiments_raw_results/wason-2-4-6/figures/wason246_turns_to_success.
 png Graphic file (type png)
 <use ../experiments_raw_results/wason-2-4-6/figures/wason246_turns_to_success.p
@@ -2162,15 +2208,19 @@ ng>
 Package luatex.def Info: ../experiments_raw_results/wason-2-4-6/figures/wason24
 6_turns_to_success.png  used on input line 166.
 (luatex.def)             Requested size: 328.6279pt x 208.90837pt.
-) (./chapter2_cross.tex [44<../experiments_raw_results/wason-2-4-6/figures/wason
+) (./chapter2_cross.tex [46<../experiments_raw_results/wason-2-4-6/figures/wason
 246_reasoning_iou_trajectories.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \hbox (badness 2368) in paragraph at lines 36--37
 []\TU/TimesNewRoman(0)/m/n/10 Гипотеза H2 о снижении пред
 убеждений с ростом модели получила частич
 ное подтверждение. На
  []
 
-[45<../experiments_raw_results/wason-2-4-6/figures/wason246_scatter_sr_correlati
+[47<../experiments_raw_results/wason-2-4-6/figures/wason246_scatter_sr_correlati
 on.png>]
 Underfull \hbox (badness 1067) in paragraph at lines 38--39
 []\TU/TimesNewRoman(0)/m/n/10 В семействе Gemma направлени
@@ -2185,22 +2235,22 @@ Underfull \hbox (badness 2119) in paragraph at lines 42--43
 астает от эксперимента 1 к
  []
 
-
+[48<../experiments_raw_results/wason-2-4-6/figures/wason246_category_heatmap.png
+>]
 Underfull \hbox (badness 2027) in paragraph at lines 48--49
 []\TU/TimesNewRoman(0)/m/n/10 Во-первых, когнитивные пре
 дубеждения в LLM являются устойчивым, воспр
 оизводимым феноменом.
  []
 
-[46<../experiments_raw_results/wason-2-4-6/figures/wason246_category_heatmap.png
->]
+
 Underfull \hbox (badness 7221) in paragraph at lines 52--53
 []\TU/TimesNewRoman(0)/m/n/10 В-третьих, масштаб модели 
 не является надёжным предиктором устойчив
 ости к предубеждениям.
  []
 
-)) (./chapter3.tex [47<../experiments_raw_results/wason-2-4-6/figures/wason246_t
+)) (./chapter3.tex [49<../experiments_raw_results/wason-2-4-6/figures/wason246_t
 urns_to_success.png>]
 Chapter 3.
 
@@ -2230,7 +2280,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 python wason-selection/run_experiments.py --models <model_id>
  []
 
-[48
+[50
 
 ]
 Underfull \hbox (badness 2205) in paragraph at lines 50--51
@@ -2285,7 +2335,7 @@ Underfull \hbox (badness 1642) in paragraph at lines 65--66
 дного ответа
  []
 
-[49]
+[51]
 Underfull \hbox (badness 6110) in paragraph at lines 80--81
 []\TU/TimesNewRoman(0)/m/n/10 Основной датасет \TU/lmtt/m/n/10 li
 nda-problem/data/conjunction_dataset_all.csv \TU/TimesNewRoman(0)/m/n/10 со
@@ -2313,7 +2363,7 @@ Underfull \hbox (badness 1838) in paragraph at lines 92--93
 дели в \TU/TimesNewRoman(0)/b/n/10 пяти различных
  []
 
-[50]
+[52]
 Underfull \hbox (badness 2111) in paragraph at lines 98--99
 \TU/TimesNewRoman(0)/m/n/10 дубликатов (через экстенси
 ональную эквивалентность), (3) отсутствие т
@@ -2355,7 +2405,7 @@ bias вычисляется как разность средних bias_score
 между correlated- и
  []
 
-[51]
+[53]
 Underfull \hbox (badness 2035) in paragraph at lines 128--129
 \TU/TimesNewRoman(0)/m/n/10 модели и отображение логич
 еских ролей карточек, возвращает агрегиро
@@ -2376,14 +2426,14 @@ Underfull \hbox (badness 1838) in paragraph at lines 146--147
 твует, что приводит
  []
 
-[52]
+[54]
 Underfull \hbox (badness 3138) in paragraph at lines 157--158
 \TU/TimesNewRoman(0)/m/n/10 подстановками; скрипт вери
 фикации правил задачи 2-4-6 на экстенсиональ
 ную эквивалентность и
  []
 
-) (./chapter4.tex [53]
+) (./chapter4.tex [55]
 Chapter 4.
 
 Underfull \hbox (badness 2359) in paragraph at lines 17--18
@@ -2421,7 +2471,7 @@ Underfull \hbox (badness 1005) in paragraph at lines 31--32
 нность. В задаче Линды это
  []
 
-[54
+[56
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
@@ -2443,14 +2493,14 @@ Underfull \hbox (badness 3312) in paragraph at lines 53--54
 среднённые по 9 моделям): His-panic ($\OT1/cmr/m/n/10 0[]235$\TU/TimesNewRoman(0)/m/n/10 ), Asian ($\OT1/cmr/m/n/10 0[]233$\TU/TimesNewRoman(0)/m/n/10 ), White
  []
 
-[55]
+[57]
 Underfull \hbox (badness 2698) in paragraph at lines 77--78
 \TU/TimesNewRoman(0)/m/n/10 варьируется от 0,629 до 0,976, пр
 ичём даже наилучший результат существенно 
 выше нормативного
  []
 
-[56]
+[58]
 Underfull \hbox (badness 1895) in paragraph at lines 87--88
 []\TU/TimesNewRoman(0)/m/n/10 Результаты трёх экспериме
 нтов позволяют сформулировать конкретные 
@@ -2464,7 +2514,7 @@ Underfull \hbox (badness 1990) in paragraph at lines 111--112
 ование измеряет итоговое
  []
 
-[57]
+[59]
 Underfull \hbox (badness 10000) in paragraph at lines 113--114
 []\TU/TimesNewRoman(0)/b/n/10 Недетерминированность эк
 сперимента 3. \TU/TimesNewRoman(0)/m/n/10 Монте-Карло-оц
@@ -2506,7 +2556,7 @@ Underfull \hbox (badness 2671) in paragraph at lines 135--136
 тьи, планируемая к подаче в
  []
 
-[58]
+[60]
 Underfull \hbox (badness 6157) in paragraph at lines 143--144
 \TU/TimesNewRoman(0)/m/n/10 и индуктивный типы рассужд
 ения, однако спектр когнитивных предубежд
@@ -2556,7 +2606,7 @@ Underfull \hbox (badness 2088) in paragraph at lines 155--156
 внение с логарифмическими
  []
 
-) (./conclusion.tex [59]
+) (./conclusion.tex [61]
 Underfull \hbox (badness 3199) in paragraph at lines 4--5
 []\TU/TimesNewRoman(0)/m/n/10 В настоящей работе провед
 ено систематическое исследование когнити
@@ -2641,19 +2691,19 @@ Underfull \hbox (badness 2512) in paragraph at lines 24--25
 илирования когнитивных
  []
 
-[60
+[62
 
-]) [61] [62
+]) [63] [64
 
-] [63]
+] [65]
 Underfull \hbox (badness 10000) in paragraph at lines 54--54
 []\TU/TimesNewRoman(0)/m/n/10 Ark-oudas K. GPT-4 can’t rea-son. — 2023. 
 — дата обращения: 01.03.2025. URL:
  []
 
-(./appA.tex [64]
+(./appA.tex [66]
 ПРИЛОЖЕНИЕ А.
-<example.jpg, id=238, 642.4pt x 642.4pt>
+<example.jpg, id=244, 642.4pt x 642.4pt>
 File: example.jpg Graphic file (type jpg)
 <use example.jpg>
 Package luatex.def Info: example.jpg  used on input line 53.
@@ -2664,9 +2714,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[65
+[67
 
-] [66<./example.jpg>]) [67] (./main.aux)
+] [68<./example.jpg>]) [69] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -2677,15 +2727,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 17748 strings out of 476076
+ 17766 strings out of 476076
  125165,1648299 words of node,token memory allocated
  825 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 20 attribute, 109 glue_spe
 c, 20 attribute_list, 1 write nodes
-   avail lists: 1:1,2:1259,3:544,4:28,5:388,6:196,7:8906,8:45,9:879,10:23,11:556
-
- 39814 multiletter control sequences out of 65536+600000
- 64 fonts using 15201127 bytes
+   avail lists: 1:1,2:1269,3:544,4:28,5:394,6:208,7:10158,8:47,9:829,10:23,11:56
+5
+ 39832 multiletter control sequences out of 65536+600000
+ 65 fonts using 15602735 bytes
  78i,12n,95p,3191b,1802s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmmono10-italic.otf
 ></usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.ot
@@ -2701,10 +2751,10 @@ s/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 7.pfb>
-Output written on main.pdf (67 pages, 2313854 bytes).
+Output written on main.pdf (69 pages, 2326254 bytes).
 
-PDF statistics: 314 PDF objects out of 1000 (max. 8388607)
- 192 compressed objects within 2 object streams
+PDF statistics: 320 PDF objects out of 1000 (max. 8388607)
+ 196 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 1048576)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
