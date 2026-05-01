@@ -1,83 +1,110 @@
-\contentsline {chapter}{СПИСОК СОКРАЩЕНИЙ И УСЛОВНЫХ ОБОЗНАЧЕНИЙ}{3}{}%
-\contentsline {chapter}{ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ}{4}{}%
-\contentsline {chapter}{ВВЕДЕНИЕ}{5}{}%
-\contentsline {chapter}{\numberline {1}АНАЛИЗ ПРЕДМЕТНОЙ ОБЛАСТИ}{9}{}%
-\contentsline {section}{\numberline {1.1}Когнитивные предубеждения: теоретические основания}{9}{}%
-\contentsline {subsection}{\numberline {1.1.1}Программа эвристик и предубеждений Канемана и Тверски}{9}{}%
-\contentsline {subsection}{\numberline {1.1.2}Типология когнитивных предубеждений: вероятностные, логические, индуктивные}{10}{}%
-\contentsline {subsection}{\numberline {1.1.3}Нормативные стандарты рассуждения и отклонения от них}{11}{}%
-\contentsline {section}{\numberline {1.2}Анализ проблемы: когнитивные предубеждения в LLM}{11}{}%
-\contentsline {subsection}{\numberline {1.2.1}Природа предубеждений в языковых моделях: memorization vs. emergent bias}{11}{}%
-\contentsline {subsection}{\numberline {1.2.2}Архитектурные и математические предпосылки эвристик в трансформерах}{12}{}%
-\contentsline {subsection}{\numberline {1.2.3}Влияние методов выравнивания (RLHF) и склонность к угождению пользователю}{13}{}%
-\contentsline {subsection}{\numberline {1.2.4}Проблема контаминации обучающих данных}{13}{}%
-\contentsline {subsection}{\numberline {1.2.5}Ограничения существующих подходов и обоснование метрик}{14}{}%
-\contentsline {subsection}{\numberline {1.2.6}Практическая значимость и целевая аудитория}{14}{}%
-\contentsline {section}{\numberline {1.3}Обзор смежных исследований и существующих бенчмарков}{14}{}%
-\contentsline {subsection}{\numberline {1.3.1}Ошибка конъюнкции, эвристика репрезентативности и демографический токен-bias}{14}{}%
-\contentsline {subsection}{\numberline {1.3.2}Дедуктивное рассуждение и задача выбора карточек Уэйсона}{15}{}%
-\contentsline {subsection}{\numberline {1.3.3}Индуктивное открытие правил и задача 2-4-6}{16}{}%
-\contentsline {subsection}{\numberline {1.3.4}Сравнительные бенчмарки и формирование исследовательского ландшафта}{16}{}%
-\contentsline {section}{\numberline {1.4}Обоснование исследовательских гипотез}{16}{}%
-\contentsline {subsection}{\numberline {1.4.1}Гипотеза об универсальности предубеждений}{17}{}%
-\contentsline {subsection}{\numberline {1.4.2}Гипотеза о масштабировании и внутрисемейном парадоксе}{17}{}%
-\contentsline {subsection}{\numberline {1.4.3}Гипотеза о спектральной природе предубеждений}{17}{}%
-\contentsline {subsection}{\numberline {1.4.4}Гипотеза о демографическом токен-bias}{18}{}%
-\contentsline {section}{\numberline {1.5}Требования к экспериментальному исследованию}{18}{}%
-\contentsline {subsection}{\numberline {1.5.1}Требования к датасетам и контролю контаминации}{18}{}%
-\contentsline {subsection}{\numberline {1.5.2}Требования к метрикам и статистическому выводу}{19}{}%
-\contentsline {subsection}{\numberline {1.5.3}Требования к инфраструктуре и набору тестируемых моделей}{19}{}%
-\contentsline {chapter}{\numberline {2}ДИЗАЙН И ПРОВЕДЕНИЕ ЭКСПЕРИМЕНТОВ}{20}{}%
-\contentsline {section}{\numberline {2.1}Обзор экспериментального фреймворка}{20}{}%
-\contentsline {subsection}{\numberline {2.1.1}Три парадигмы как единый спектр}{20}{}%
-\contentsline {subsection}{\numberline {2.1.2}Общие принципы дизайна}{20}{}%
-\contentsline {section}{\numberline {2.2}Эксперимент 1: Ошибка конъюнкции (Задача Линды)}{21}{}%
-\contentsline {subsection}{\numberline {2.2.1}Обоснование выбора парадигмы}{21}{}%
-\contentsline {subsection}{\numberline {2.2.2}Проблема контаминации и подходы к её решению}{21}{}%
-\contentsline {subsection}{\numberline {2.2.3}Конструкция датасета: биографические виньетки}{21}{}%
-\contentsline {subsection}{\numberline {2.2.4}Демографические подстановки и факториальный дизайн}{22}{}%
-\contentsline {subsection}{\numberline {2.2.5}Протокол эксперимента и промпт-структура}{22}{}%
-\contentsline {subsection}{\numberline {2.2.6}Метрики: бинарная точность, тест МакНемара, Severity of Bias}{22}{}%
-\contentsline {subsection}{\numberline {2.2.7}Результаты и анализ}{23}{}%
-\contentsline {subsection}{\numberline {2.2.8}Расширенный анализ: контентная специфичность виньеток}{24}{}%
-\contentsline {subsection}{\numberline {2.2.9}Расширенный анализ: размеры эффекта (Effect Sizes)}{25}{}%
-\contentsline {subsection}{\numberline {2.2.10}Расширенный анализ: двойная ошибка (Double Fallacy)}{26}{}%
-\contentsline {subsection}{\numberline {2.2.11}Расширенный анализ: калибровка уверенности моделей}{26}{}%
-\contentsline {subsection}{\numberline {2.2.12}Расширенный анализ: демографические эффекты}{27}{}%
-\contentsline {subsection}{\numberline {2.2.13}Выводы по эксперименту 1}{28}{}%
-\contentsline {section}{\numberline {2.3}Эксперимент 2: Задача выбора карточек Уэйсона}{29}{}%
-\contentsline {subsection}{\numberline {2.3.1}Обоснование выбора парадигмы}{29}{}%
-\contentsline {subsection}{\numberline {2.3.2}Конструкция стимульных датасетов: четыре контентных условия}{29}{}%
-\contentsline {subsection}{\numberline {2.3.3}Протокол перестановок порядка карточек}{30}{}%
-\contentsline {subsection}{\numberline {2.3.4}Промпт-условия}{30}{}%
-\contentsline {subsection}{\numberline {2.3.5}Метрики}{31}{}%
-\contentsline {subsection}{\numberline {2.3.6}Результаты и анализ}{31}{}%
-\contentsline {subsection}{\numberline {2.3.7}Качественный анализ категорий ошибок}{35}{}%
-\contentsline {subsection}{\numberline {2.3.8}Выводы по эксперименту 2}{36}{}%
-\contentsline {section}{\numberline {2.4}Эксперимент 3: Задача открытия правила 2-4-6}{36}{}%
-\contentsline {subsection}{\numberline {2.4.1}Обоснование выбора парадигмы}{36}{}%
-\contentsline {subsection}{\numberline {2.4.2}Конструкция датасета правил: пять таксономических категорий}{36}{}%
-\contentsline {subsection}{\numberline {2.4.3}Многоходовой диалоговый протокол}{37}{}%
-\contentsline {subsection}{\numberline {2.4.4}Промпт-условия: Baseline и Adaptive}{37}{}%
-\contentsline {subsection}{\numberline {2.4.5}Метрики качества гипотез}{38}{}%
-\contentsline {subsection}{\numberline {2.4.6}Результаты и анализ}{38}{}%
-\contentsline {subsection}{\numberline {2.4.7}Выводы по эксперименту 3}{41}{}%
-\contentsline {section}{\numberline {2.5}Сквозной анализ: три парадигмы, девять моделей}{41}{}%
-\contentsline {subsection}{\numberline {2.5.1}Сравнительная таблица результатов по всем экспериментам}{41}{}%
-\contentsline {subsection}{\numberline {2.5.2}Проверка гипотез о масштабировании и внутрисемейный парадокс}{42}{}%
-\contentsline {subsection}{\numberline {2.5.3}Проверка гипотезы о спектральной природе предубеждений}{43}{}%
-\contentsline {subsection}{\numberline {2.5.4}Итоги: Proof-of-Concept фреймворка оценки когнитивных предубеждений}{43}{}%
-\contentsline {chapter}{\numberline {3}ЭКСПЕРИМЕНТАЛЬНЫЙ ФРЕЙМВОРК И ОБСУЖДЕНИЕ РЕЗУЛЬТАТОВ}{45}{}%
-\contentsline {section}{\numberline {3.1}Архитектура воспроизводимого экспериментального фреймворка}{45}{}%
-\contentsline {subsection}{\numberline {3.1.1}Общая структура кодовой базы}{45}{}%
-\contentsline {subsection}{\numberline {3.1.2}Параметры запросов и механизм отказоустойчивости}{45}{}%
-\contentsline {subsection}{\numberline {3.1.3}Структура датасетов}{46}{}%
-\contentsline {subsection}{\numberline {3.1.4}Реализация метрики IOU}{46}{}%
-\contentsline {section}{\numberline {3.2}Ограничения исследования}{47}{}%
-\contentsline {subsection}{\numberline {3.2.1}Методологические ограничения}{47}{}%
-\contentsline {subsection}{\numberline {3.2.2}Ограничения отдельных экспериментов}{47}{}%
-\contentsline {section}{\numberline {3.3}Апробация результатов}{47}{}%
-\contentsline {section}{\numberline {3.4}Направления будущих исследований}{48}{}%
-\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{49}{}%
-\contentsline {chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{49}{}%
-\contentsline {chapter}{\numberline {А}РУКОВОДСТВО ПО ИСПОЛЬЗОВАНИЮ ШАБЛОНА}{52}{}%
+\contentsline {chapter}{СПИСОК СОКРАЩЕНИЙ И УСЛОВНЫХ ОБОЗНАЧЕНИЙ}{4}{}%
+\contentsline {chapter}{ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ}{5}{}%
+\contentsline {chapter}{ВВЕДЕНИЕ}{6}{}%
+\contentsline {chapter}{\numberline {1}АНАЛИЗ ПРЕДМЕТНОЙ ОБЛАСТИ}{10}{}%
+\contentsline {section}{\numberline {1.1}Когнитивные предубеждения: теоретические основания}{10}{}%
+\contentsline {subsection}{\numberline {1.1.1}Программа эвристик и предубеждений Канемана и Тверски}{10}{}%
+\contentsline {subsection}{\numberline {1.1.2}Типология когнитивных предубеждений: вероятностные, логические, индуктивные}{11}{}%
+\contentsline {subsection}{\numberline {1.1.3}Нормативные стандарты рассуждения и отклонения от них}{12}{}%
+\contentsline {section}{\numberline {1.2}Анализ проблемы: когнитивные предубеждения в LLM}{13}{}%
+\contentsline {subsection}{\numberline {1.2.1}Природа предубеждений в языковых моделях: memorization vs. emergent bias}{13}{}%
+\contentsline {subsection}{\numberline {1.2.2}Архитектурные и математические предпосылки эвристик в трансформерах}{13}{}%
+\contentsline {subsection}{\numberline {1.2.3}Влияние методов выравнивания (RLHF) и склонность к угождению пользователю}{14}{}%
+\contentsline {subsection}{\numberline {1.2.4}Проблема контаминации обучающих данных}{15}{}%
+\contentsline {subsection}{\numberline {1.2.5}Ограничения существующих подходов и обоснование метрик}{15}{}%
+\contentsline {subsection}{\numberline {1.2.6}Практическая значимость и целевая аудитория}{15}{}%
+\contentsline {section}{\numberline {1.3}Обзор смежных исследований и существующих бенчмарков}{16}{}%
+\contentsline {subsection}{\numberline {1.3.1}Ошибка конъюнкции, эвристика репрезентативности и демографический токен-bias}{16}{}%
+\contentsline {subsection}{\numberline {1.3.2}Дедуктивное рассуждение и задача выбора карточек Уэйсона}{16}{}%
+\contentsline {subsection}{\numberline {1.3.3}Индуктивное открытие правил и задача 2-4-6}{17}{}%
+\contentsline {subsection}{\numberline {1.3.4}Сравнительные бенчмарки и формирование исследовательского ландшафта}{17}{}%
+\contentsline {section}{\numberline {1.4}Обоснование исследовательских гипотез}{18}{}%
+\contentsline {subsection}{\numberline {1.4.1}Гипотеза об универсальности предубеждений}{18}{}%
+\contentsline {subsection}{\numberline {1.4.2}Гипотеза о масштабировании и внутрисемейном парадоксе}{18}{}%
+\contentsline {subsection}{\numberline {1.4.3}Гипотеза о спектральной природе предубеждений}{18}{}%
+\contentsline {subsection}{\numberline {1.4.4}Гипотеза о демографическом токен-bias}{19}{}%
+\contentsline {section}{\numberline {1.5}Требования к экспериментальному исследованию}{19}{}%
+\contentsline {subsection}{\numberline {1.5.1}Требования к датасетам и контролю контаминации}{19}{}%
+\contentsline {subsection}{\numberline {1.5.2}Требования к метрикам и статистическому выводу}{20}{}%
+\contentsline {subsection}{\numberline {1.5.3}Требования к инфраструктуре и набору тестируемых моделей}{20}{}%
+\contentsline {chapter}{\numberline {2}ДИЗАЙН И ПРОВЕДЕНИЕ ЭКСПЕРИМЕНТОВ}{22}{}%
+\contentsline {section}{\numberline {2.1}Обзор экспериментального фреймворка}{22}{}%
+\contentsline {subsection}{\numberline {2.1.1}Три парадигмы как единый спектр}{22}{}%
+\contentsline {subsection}{\numberline {2.1.2}Общие принципы дизайна}{22}{}%
+\contentsline {section}{\numberline {2.2}Эксперимент 1: Ошибка конъюнкции (Задача Линды)}{23}{}%
+\contentsline {subsection}{\numberline {2.2.1}Обоснование выбора парадигмы}{23}{}%
+\contentsline {subsection}{\numberline {2.2.2}Проблема контаминации и подходы к её решению}{23}{}%
+\contentsline {subsection}{\numberline {2.2.3}Конструкция датасета: биографические виньетки}{23}{}%
+\contentsline {subsection}{\numberline {2.2.4}Демографические подстановки и факториальный дизайн}{24}{}%
+\contentsline {subsection}{\numberline {2.2.5}Протокол эксперимента и промпт-структура}{24}{}%
+\contentsline {subsection}{\numberline {2.2.6}Метрики: бинарная точность, тест МакНемара, Severity of Bias}{24}{}%
+\contentsline {subsection}{\numberline {2.2.7}Результаты и анализ}{25}{}%
+\contentsline {subsection}{\numberline {2.2.8}Расширенный анализ: контентная специфичность виньеток}{26}{}%
+\contentsline {subsection}{\numberline {2.2.9}Расширенный анализ: размеры эффекта (Effect Sizes)}{27}{}%
+\contentsline {subsection}{\numberline {2.2.10}Расширенный анализ: двойная ошибка (Double Fallacy)}{28}{}%
+\contentsline {subsection}{\numberline {2.2.11}Расширенный анализ: калибровка уверенности моделей}{28}{}%
+\contentsline {subsection}{\numberline {2.2.12}Расширенный анализ: демографические эффекты}{29}{}%
+\contentsline {subsection}{\numberline {2.2.13}Выводы по эксперименту 1}{30}{}%
+\contentsline {section}{\numberline {2.3}Эксперимент 2: Задача выбора карточек Уэйсона}{31}{}%
+\contentsline {subsection}{\numberline {2.3.1}Обоснование выбора парадигмы}{31}{}%
+\contentsline {subsection}{\numberline {2.3.2}Конструкция стимульных датасетов: четыре контентных условия}{32}{}%
+\contentsline {subsection}{\numberline {2.3.3}Промпт-условия}{32}{}%
+\contentsline {subsection}{\numberline {2.3.4}Метрики}{33}{}%
+\contentsline {subsection}{\numberline {2.3.5}Результаты и анализ}{33}{}%
+\contentsline {subsection}{\numberline {2.3.6}Качественный анализ категорий ошибок}{37}{}%
+\contentsline {subsection}{\numberline {2.3.7}Выводы по эксперименту 2}{38}{}%
+\contentsline {section}{\numberline {2.4}Эксперимент 3: Задача открытия правила 2-4-6}{39}{}%
+\contentsline {subsection}{\numberline {2.4.1}Обоснование выбора парадигмы}{39}{}%
+\contentsline {subsection}{\numberline {2.4.2}Конструкция датасета правил: пять таксономических категорий}{39}{}%
+\contentsline {subsection}{\numberline {2.4.3}Многоходовой диалоговый протокол}{40}{}%
+\contentsline {subsection}{\numberline {2.4.4}Промпт-условия: Baseline и Adaptive}{40}{}%
+\contentsline {subsection}{\numberline {2.4.5}Метрики качества гипотез}{41}{}%
+\contentsline {subsection}{\numberline {2.4.6}Результаты и анализ}{41}{}%
+\contentsline {subsection}{\numberline {2.4.7}Выводы по эксперименту 3}{44}{}%
+\contentsline {section}{\numberline {2.5}Сквозной анализ: три парадигмы, девять моделей}{45}{}%
+\contentsline {subsection}{\numberline {2.5.1}Сравнительная таблица результатов по всем экспериментам}{45}{}%
+\contentsline {subsection}{\numberline {2.5.2}Проверка гипотез о масштабировании и внутрисемейный парадокс}{46}{}%
+\contentsline {subsection}{\numberline {2.5.3}Проверка гипотезы о спектральной природе предубеждений}{46}{}%
+\contentsline {subsection}{\numberline {2.5.4}Итоги: Proof-of-Concept фреймворка оценки когнитивных предубеждений}{46}{}%
+\contentsline {chapter}{\numberline {3}ТЕХНИЧЕСКАЯ РЕАЛИЗАЦИЯ ЭКСПЕРИМЕНТАЛЬНОГО ФРЕЙМВОРКА}{48}{}%
+\contentsline {section}{\numberline {3.1}Архитектура воспроизводимого экспериментального фреймворка}{48}{}%
+\contentsline {subsection}{\numberline {3.1.1}Общая структура кодовой базы}{48}{}%
+\contentsline {subsection}{\numberline {3.1.2}Унифицированный API-интерфейс и маршрутизация моделей}{48}{}%
+\contentsline {section}{\numberline {3.2}Параметры запросов и механизм отказоустойчивости}{49}{}%
+\contentsline {subsection}{\numberline {3.2.1}Конфигурация параметров по экспериментам}{49}{}%
+\contentsline {subsection}{\numberline {3.2.2}Механизм повторных попыток и repair-протокол}{49}{}%
+\contentsline {section}{\numberline {3.3}Структура и генерация датасетов}{50}{}%
+\contentsline {subsection}{\numberline {3.3.1}Эксперимент 1: биографические виньетки с факториальными подстановками}{50}{}%
+\contentsline {subsection}{\numberline {3.3.2}Эксперимент 2: пять контентных условий}{50}{}%
+\contentsline {subsection}{\numberline {3.3.3}Эксперимент 3: пятьдесят верифицированных правил}{51}{}%
+\contentsline {section}{\numberline {3.4}Реализация метрик и статистического протокола}{51}{}%
+\contentsline {subsection}{\numberline {3.4.1}Метрика экстенсиональной эквивалентности (IOU)}{51}{}%
+\contentsline {subsection}{\numberline {3.4.2}Метрика Severity of Bias и протокол уверенности}{51}{}%
+\contentsline {subsection}{\numberline {3.4.3}Статистический протокол: McNemar, Cohen's \textit {d}, FDR-коррекция}{51}{}%
+\contentsline {subsection}{\numberline {3.4.4}Метрики дедуктивного рассуждения: EMA, MBI, CBR, Consistency Rate}{52}{}%
+\contentsline {section}{\numberline {3.5}Технические проблемы и их решения}{52}{}%
+\contentsline {subsection}{\numberline {3.5.1}Нарушения формата ответа в многоходовом диалоге}{52}{}%
+\contentsline {subsection}{\numberline {3.5.2}Ограничение конкурентности и квоты API}{52}{}%
+\contentsline {subsection}{\numberline {3.5.3}Недетерминированность Монте-Карло-оценки IOU}{52}{}%
+\contentsline {section}{\numberline {3.6}Личный технический вклад автора}{53}{}%
+\contentsline {chapter}{\numberline {4}ВАЛИДАЦИЯ, ОГРАНИЧЕНИЯ И ОБСУЖДЕНИЕ РЕЗУЛЬТАТОВ}{54}{}%
+\contentsline {section}{\numberline {4.1}Статистическая валидация исследовательских гипотез}{54}{}%
+\contentsline {subsection}{\numberline {4.1.1}Гипотеза H1: универсальность предубеждений}{54}{}%
+\contentsline {subsection}{\numberline {4.1.2}Гипотеза H2: масштабирование и внутрисемейный парадокс}{54}{}%
+\contentsline {subsection}{\numberline {4.1.3}Гипотеза H3: спектральная природа предубеждений}{55}{}%
+\contentsline {subsection}{\numberline {4.1.4}Гипотеза H4: демографический токен-bias}{55}{}%
+\contentsline {section}{\numberline {4.2}Обсуждение результатов в контексте смежных исследований}{56}{}%
+\contentsline {subsection}{\numberline {4.2.1}Ошибка конъюнкции: сравнение с Suri et al.\ и Macmillan-Scott \& Musolesi}{56}{}%
+\contentsline {subsection}{\numberline {4.2.2}Задача Уэйсона: контент-эффект и сравнение с Dasgupta et al.}{56}{}%
+\contentsline {subsection}{\numberline {4.2.3}Задача 2-4-6: сравнение с WILT и CogBench}{56}{}%
+\contentsline {section}{\numberline {4.3}Практические рекомендации по митигации предубеждений}{57}{}%
+\contentsline {subsection}{\numberline {4.3.1}Для инженеров: выбор модели и стратегии промптинга}{57}{}%
+\contentsline {subsection}{\numberline {4.3.2}Для исследователей: метрики и методология}{57}{}%
+\contentsline {section}{\numberline {4.4}Ограничения исследования}{57}{}%
+\contentsline {subsection}{\numberline {4.4.1}Методологические ограничения}{57}{}%
+\contentsline {subsection}{\numberline {4.4.2}Ограничения отдельных экспериментов}{58}{}%
+\contentsline {section}{\numberline {4.5}Апробация результатов}{58}{}%
+\contentsline {section}{\numberline {4.6}Направления будущих исследований}{59}{}%
+\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{60}{}%
+\contentsline {chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{61}{}%
+\contentsline {chapter}{\numberline {А}РУКОВОДСТВО ПО ИСПОЛЬЗОВАНИЮ ШАБЛОНА}{65}{}%

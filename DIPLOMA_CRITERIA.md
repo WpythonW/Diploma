@@ -33,7 +33,7 @@ Possible artifacts:
 
 4. Effectiveness of the Solution
 
-This criterion shows whether the method is better than or comparable to existing approaches, whether its effect has been demonstrated experimentally, whether the experimental methodology is sound, and whether the study’s limitations have been identified.
+This criterion shows whether the method is better than or comparable to existing approaches, whether its effect has been demonstrated experimentally, whether the experimental methodology is sound, and whether the study's limitations have been identified.
 
 Possible artifacts:
 
@@ -44,12 +44,12 @@ Possible artifacts:
 
 5. Technical Complexity and Implementation Quality
 
-This criterion describes whether the study has been designed competently, whether models, methods, metrics, and data have been selected appropriately, which technical challenges were solved, and what the student’s personal contribution was.
+This criterion describes whether the study has been designed competently, whether models, methods, metrics, and data have been selected appropriately, which technical challenges were solved, and what the student's personal contribution was.
 
 Possible artifacts:
 
 - the implementation is structured, correct, and reproducible;
-- the student’s personal technical contribution is stated clearly;
+- the student's personal technical contribution is stated clearly;
 - understanding of methodology and experimental design is demonstrated;
 - risks and limitations have been taken into account (bias, validation, overfitting).
 
@@ -161,7 +161,7 @@ The thesis includes the following structural elements:
 - list of references;
 - appendices (optional).
 
-The recommended length of a master’s thesis is **60 to 80 pages**, excluding appendices.
+The recommended length of a master's thesis is **60 to 80 pages**, excluding appendices.
 
 The thesis text should cover the following aspects of the work:
 
@@ -177,12 +177,37 @@ The thesis text should cover the following aspects of the work:
 6. The scientific and/or applied **novelty** of the work is identified relative to existing known solutions.
 7. The **path toward developing the solution** and/or the research plan is defined and justified, and the **technical complexity** and depth of the solution are explained, including problems solved during the work and lessons learned from successful or unsuccessful hypotheses.
 8. The current **degree of readiness of the solution** is defined, together with substantive feedback from end users, the customer, or other stakeholders, and a plan for future improvements is formulated.
-9. The **author’s personal contribution** is clearly identified and distinguished from the contributions of other project team members. The main body of the thesis should primarily reflect the author’s own contribution.
+9. The **author's personal contribution** is clearly identified and distinguished from the contributions of other project team members. The main body of the thesis should primarily reflect the author's own contribution.
 10. The **impact** is defined as the measurable effect of the work results on the original problem, and the approach to **validation of results** is justified. The evaluation must be objective and adequate to the claimed impacts, and it must be verifiable by experts and the scientific supervisor, interpretable, and reproducible.
-11. A section titled **Use of AI Tools and Author’s Contribution** must be included (for Russian-language theses, the corresponding Russian title is used). In this section, the student transparently documents which AI tools were used during thesis writing, solution development, project work, experiments, and analysis of results.
+11. A section titled **Use of AI Tools and Author's Contribution** must be included (for Russian-language theses, the corresponding Russian title is used). In this section, the student transparently documents which AI tools were used during thesis writing, solution development, project work, experiments, and analysis of results.
 
 The thesis must also account for the anti-plagiarism and AI-use disclosure requirements described in the corresponding guidance materials.
 
 For defense within the ITMO Advanced Engineering School track, the work must be interdisciplinary, including analysis of multiple subject areas and their interaction or overlap.
 
 The thesis may be completed by a team of students; however, each participant must submit a thesis that emphasizes their own contribution to the project.
+
+---
+
+## ИТОГОВАЯ СВОДКА — Аудит диплома по критериям
+
+> **Дата аудита:** 2026-04-29
+> **Статусы:** ✅ DONE | ⚠️ NEEDS WORK | ❌ MISSING | 🔧 IN PROGRESS
+
+| # | Критерий | Статус | Проблема | Приоритет |
+|---|---|---|---|---|
+| 1 | Актуальность (Relevance) | ✅ DONE | Введение содержит анализ проблемы и пробела в литературе. Можно чуть чётче сформулировать «проанализировали X работ → выявили пробел → поэтому…» | Низкий |
+| 2 | Практическая значимость | ✅ DONE | Три конкретных сценария + целевая аудитория + пример с claude-sonnet-4.6. Один из сильнейших разделов. | — |
+| 3 | Новизна (Novelty) | ✅ DONE | 6 пунктов новизны, сравнение с CogBench/BIG-bench/Binz/Suri. Рекомендация: добавить 1-2 прямых контрастных сравнения с SOTA во введении. | Низкий |
+| 4 | Эффективность решения | ⚠️ NEEDS WORK | **КРИТИЧЕСКИ: conclusion.tex — шаблон-заглушка** (текст про «классификацию данных и глубокие нейронные сети», не по теме). Метрики и таблицы есть, но заключение надо переписать полностью. | **ВЫСОКИЙ** |
+| 5 | Личный вклад + техническая сложность | ✅ DONE | Подробный параграф с перечислением: датасеты, пайплайн, метрики, анализ. Прозрачное раскрытие использования ИИ. | — |
+| 6 | Публичность и обратная связь | ⚠️ NEEDS WORK | Только кандидатский экзамен в ИТМО. Рукопись «планируется к подаче» — не опубликована. Нет препринта, нет внешних отзывов. Рекомендация: опубликовать препринт/код, получить внешний фидбек. | Средний |
+| 7 | Потенциал масштабирования | ⚠️ NEEDS WORK | Нигде прямо не обсуждается: расширение на новые модели/парадигмы/языки, интеграция в CI/CD, применение в индустрии. Нужно добавить раздел в главу 4 или заключение. | Средний |
+
+### Критические действия (по приоритету)
+
+1. **[ВЫСОКИЙ] Переписать conclusion.tex** — сейчас шаблонный текст не по теме диплома. Должно отражать реальные результаты: гипотезы H1–H4, выводы по экспериментам, ограничения, дальнейшие работы.
+2. **[СРЕДНИЙ] Добавить раздел о масштабировании** — в главу 4 или заключение: как фреймворк расширяется на новые модели, парадигмы, языки; интеграция в production.
+3. **[СРЕДНИЙ] Усилить публичность** — опубликовать код/датасеты на GitHub, выложить препринт, зафиксировать отзывы экспертов.
+4. **[НИЗКИЙ] Уточнить формулировку актуальности** — добавить во введение явную фразу «проанализировав X работ за 2023–2025 гг., мы выявили…».
+5. **[НИЗКИЙ] Добавить контрастные сравнения с SOTA** — 1-2 прямых предложения «В отличие от работы X, мы…» в разделе новизны.
