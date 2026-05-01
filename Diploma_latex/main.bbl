@@ -634,33 +634,6 @@
       \field{volume}{4}
       \range{volume}{1}
     \endentry
-    \entry{tenenbaum1999bayesian}{thesis}{}{}
-      \name{author}{1}{}{%
-        {{hash=b1496617cb6c48a07efcc39a1bbe8568}{%
-           family={Tenenbaum},
-           familyi={T\bibinitperiod},
-           given={J.\bibnamedelimi B.},
-           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {Massachusetts Institute of Technology}%
-      }
-      \strng{namehash}{b1496617cb6c48a07efcc39a1bbe8568}
-      \strng{fullhash}{b1496617cb6c48a07efcc39a1bbe8568}
-      \strng{fullhashraw}{b1496617cb6c48a07efcc39a1bbe8568}
-      \strng{bibnamehash}{b1496617cb6c48a07efcc39a1bbe8568}
-      \strng{authorbibnamehash}{b1496617cb6c48a07efcc39a1bbe8568}
-      \strng{authornamehash}{b1496617cb6c48a07efcc39a1bbe8568}
-      \strng{authorfullhash}{b1496617cb6c48a07efcc39a1bbe8568}
-      \strng{authorfullhashraw}{b1496617cb6c48a07efcc39a1bbe8568}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{A Bayesian framework for concept learning}
-      \field{type}{phdthesis}
-      \field{year}{1999}
-    \endentry
     \entry{klayman1987confirmation}{article}{}{}
       \name{author}{2}{}{%
         {{hash=306531805fe68e08219159c4851dd881}{%
@@ -739,8 +712,8 @@
       \strng{authornamehash}{3e776155c346590267a8ac35dab800dd}
       \strng{authorfullhash}{43d70f0fccf4e31545eebea465a797d7}
       \strng{authorfullhashraw}{43d70f0fccf4e31545eebea465a797d7}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{internalsortvolume}{32}
       \field{journaltitle}{Quarterly Journal of Experimental Psychology}
@@ -1096,8 +1069,8 @@
       \strng{authornamehash}{0b98b7a37ea90a88d17a8060d2cb7ae4}
       \strng{authorfullhash}{eaaf76aff9758efbc43b334c6b124aa1}
       \strng{authorfullhashraw}{eaaf76aff9758efbc43b334c6b124aa1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{howpublished}{URL: https://arxiv.org/abs/2411.04105}
       \field{note}{дата обращения: 01.03.2025}
@@ -1287,8 +1260,8 @@
       \strng{authornamehash}{7190f437f1a376e49d4d86249852cb21}
       \strng{authorfullhash}{255ed04ad310e9564b7695f77b548652}
       \strng{authorfullhashraw}{255ed04ad310e9564b7695f77b548652}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{internalsortvolume}{4}
       \field{journaltitle}{PNAS Nexus}
@@ -1342,42 +1315,6 @@
       \field{pages}{276\bibrangedash 290}
       \range{pages}{15}
     \endentry
-    \entry{cheng1985pragmatic}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=904a9cc3661da56d3c78b9b8435deca2}{%
-           family={Cheng},
-           familyi={C\bibinitperiod},
-           given={P.\bibnamedelimi W.},
-           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=a421902ebf642505a3ff8c231a9a274a}{%
-           family={Holyoak},
-           familyi={H\bibinitperiod},
-           given={K.\bibnamedelimi J.},
-           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \strng{namehash}{81ad8f420e3fc677276b709d774cdf64}
-      \strng{fullhash}{81ad8f420e3fc677276b709d774cdf64}
-      \strng{fullhashraw}{81ad8f420e3fc677276b709d774cdf64}
-      \strng{bibnamehash}{81ad8f420e3fc677276b709d774cdf64}
-      \strng{authorbibnamehash}{81ad8f420e3fc677276b709d774cdf64}
-      \strng{authornamehash}{81ad8f420e3fc677276b709d774cdf64}
-      \strng{authorfullhash}{81ad8f420e3fc677276b709d774cdf64}
-      \strng{authorfullhashraw}{81ad8f420e3fc677276b709d774cdf64}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{internalsortvolume}{17}
-      \field{journaltitle}{Cognitive Psychology}
-      \field{title}{Pragmatic reasoning schemas}
-      \field{year}{1985}
-      \field{number}{4}
-      \range{number}{1}
-      \field{pages}{391\bibrangedash 416}
-      \range{pages}{26}
-      \field{volume}{17}
-      \range{volume}{1}
-    \endentry
     \entry{koo2024benchmarking}{inproceedings}{useauthor=false}{}
       \name{author}{6}{}{%
         {{hash=a97ef493f81a539e6efc2a014e3a23ec}{%
@@ -1415,14 +1352,211 @@
       \strng{authornamehash}{9a7767f87dc1b337ac8f85aed26a0c3b}
       \strng{authorfullhash}{6781a4f10aa9066d3c2cc2d08ffb37a3}
       \strng{authorfullhashraw}{6781a4f10aa9066d3c2cc2d08ffb37a3}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{booktitle}{Findings of the Association for Computational Linguistics: ACL 2024}
       \field{title}{Benchmarking cognitive biases in large language models as evaluators}
       \field{year}{2024}
       \field{pages}{286\bibrangedash 311}
       \range{pages}{26}
+    \endentry
+    \entry{mondorf2024beyond}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=bc3bfae377ee11a964e530d584f915b0}{%
+           family={Mondorf},
+           familyi={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b613d746226a7fe48ef1a56aad74fdb5}{%
+           family={Plank},
+           familyi={P\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{e9a56621bbfdedd6b683d94d83e03420}
+      \strng{fullhash}{e9a56621bbfdedd6b683d94d83e03420}
+      \strng{fullhashraw}{e9a56621bbfdedd6b683d94d83e03420}
+      \strng{bibnamehash}{e9a56621bbfdedd6b683d94d83e03420}
+      \strng{authorbibnamehash}{e9a56621bbfdedd6b683d94d83e03420}
+      \strng{authornamehash}{e9a56621bbfdedd6b683d94d83e03420}
+      \strng{authorfullhash}{e9a56621bbfdedd6b683d94d83e03420}
+      \strng{authorfullhashraw}{e9a56621bbfdedd6b683d94d83e03420}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Conference on Language Modeling (COLM 2024)}
+      \field{title}{Beyond Accuracy: Evaluating the Reasoning Behavior of Large Language Models --- A Survey}
+      \field{year}{2024}
+    \endentry
+    \entry{tang2024humanlike}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=e06b193fc4f28ad8cbee039a8e3f07af}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=5c3a260dba6942e9f1ec58722923f74c}{%
+           family={Kejriwal},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0cf016f7930715b3942fa9238da64590}
+      \strng{fullhash}{0cf016f7930715b3942fa9238da64590}
+      \strng{fullhashraw}{0cf016f7930715b3942fa9238da64590}
+      \strng{bibnamehash}{0cf016f7930715b3942fa9238da64590}
+      \strng{authorbibnamehash}{0cf016f7930715b3942fa9238da64590}
+      \strng{authornamehash}{0cf016f7930715b3942fa9238da64590}
+      \strng{authorfullhash}{0cf016f7930715b3942fa9238da64590}
+      \strng{authorfullhashraw}{0cf016f7930715b3942fa9238da64590}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{URL: https://arxiv.org/abs/2412.15501}
+      \field{note}{дата обращения: 01.05.2026}
+      \field{title}{Humanlike Cognitive Patterns as Emergent Phenomena in Large Language Models}
+      \field{year}{2024}
+    \endentry
+    \entry{cheng2025empowering}{inproceedings}{useauthor=false}{}
+      \name{author}{6}{}{%
+        {{hash=bb6443b580349099982f8f84868edda0}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e2e65bc31792929cfaa15cecf7f23965}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=5f5501ee3881a72f69061a6d21e20416}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=db9e713f1e74139ab3a994d6eaf52f1e}{%
+           family={Rooij},
+           familyi={R\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=9ac5c6e1891a9d327b6cf9dce9924eaa}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b07e08d389bfad6c22931b7cb072ed36}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{authorbibnamehash}{eaaa359c4adc0aea417fa4850a0a1f2d}
+      \strng{authornamehash}{eaaa359c4adc0aea417fa4850a0a1f2d}
+      \strng{authorfullhash}{6967117f81f4a834fb504c0e783555ae}
+      \strng{authorfullhashraw}{6967117f81f4a834fb504c0e783555ae}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI 2025), Survey Track}
+      \field{title}{Empowering {LLMs} with Logical Reasoning: A Comprehensive Survey}
+      \field{year}{2025}
+      \field{pages}{10400\bibrangedash 10408}
+      \range{pages}{9}
+    \endentry
+    \entry{chen2025inductive}{misc}{useauthor=false}{}
+      \name{author}{15}{}{%
+        {{hash=bbd76d99dff4497fda6976a4f0146e4f}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e23ce20536dd51515da8921d6d999e7c}{%
+           family={Ruan},
+           familyi={R\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=22dd741c868c0499d13e1fc82cc64ad6}{%
+           family={Dan},
+           familyi={D\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=61ad10c626e1d641e0b1d7b5f48d3233}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1aa98d7f38330735e741f8047c33882f}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9113b5835843309fa06504ea7ee28c1d}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+        {{hash=1f26f664835ac6c347db22001b657f1a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6dbedad2342e7fdc31f6a6905f472c6d}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Q.},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=ef49c46818ad29b72631eb82007b2054}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=972234bc6cedbf8c53e9cdde1d02f16a}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=495a3f2175d16f9eed6b23eee6de0fb3}{%
+           family={Qi},
+           familyi={Q\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4c305f909afd2192eedb6f46f0883d14}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=081d830b137dab2f191c059695d6bf25}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Q.},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=05f7e0c820360d2ead95928afd606a67}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+        {{hash=13414502df57d59c82c59a065c752294}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{authorbibnamehash}{6059aac1d525c99c513613ac5d30513e}
+      \strng{authornamehash}{6059aac1d525c99c513613ac5d30513e}
+      \strng{authorfullhash}{c6c2519782a3e4e2b61ca42936fcdce7}
+      \strng{authorfullhashraw}{c6c2519782a3e4e2b61ca42936fcdce7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{URL: https://arxiv.org/abs/2510.10182}
+      \field{note}{дата обращения: 01.05.2026}
+      \field{title}{A Survey of Inductive Reasoning for Large Language Models}
+      \field{year}{2025}
     \endentry
     \entry{wang2024linda}{inproceedings}{useauthor=false}{}
       \name{author}{4}{}{%
@@ -1497,8 +1631,8 @@
       \strng{authornamehash}{32974c316f27312962a18372e815d15c}
       \strng{authorfullhash}{32974c316f27312962a18372e815d15c}
       \strng{authorfullhashraw}{32974c316f27312962a18372e815d15c}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{internalsortvolume}{2}
@@ -1606,8 +1740,8 @@
       \strng{authornamehash}{d52a50584a2408c0762fbd22c35d8e89}
       \strng{authorfullhash}{c61ea8d451f2bd1b2ccb8ffc68d75e26}
       \strng{authorfullhashraw}{c61ea8d451f2bd1b2ccb8ffc68d75e26}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labeltitlesource}{title}
       \field{internalsortvolume}{30}
       \field{journaltitle}{Memory \& Cognition}
@@ -1646,8 +1780,8 @@
       \strng{authornamehash}{325f9a6070824443aa426174bbdd4233}
       \strng{authorfullhash}{325f9a6070824443aa426174bbdd4233}
       \strng{authorfullhashraw}{325f9a6070824443aa426174bbdd4233}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{internalsortvolume}{12}
@@ -1765,6 +1899,42 @@
       \field{pages}{175\bibrangedash 220}
       \range{pages}{46}
       \field{volume}{2}
+      \range{volume}{1}
+    \endentry
+    \entry{cheng1985pragmatic}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=904a9cc3661da56d3c78b9b8435deca2}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={P.\bibnamedelimi W.},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=a421902ebf642505a3ff8c231a9a274a}{%
+           family={Holyoak},
+           familyi={H\bibinitperiod},
+           given={K.\bibnamedelimi J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{81ad8f420e3fc677276b709d774cdf64}
+      \strng{fullhash}{81ad8f420e3fc677276b709d774cdf64}
+      \strng{fullhashraw}{81ad8f420e3fc677276b709d774cdf64}
+      \strng{bibnamehash}{81ad8f420e3fc677276b709d774cdf64}
+      \strng{authorbibnamehash}{81ad8f420e3fc677276b709d774cdf64}
+      \strng{authornamehash}{81ad8f420e3fc677276b709d774cdf64}
+      \strng{authorfullhash}{81ad8f420e3fc677276b709d774cdf64}
+      \strng{authorfullhashraw}{81ad8f420e3fc677276b709d774cdf64}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{17}
+      \field{journaltitle}{Cognitive Psychology}
+      \field{title}{Pragmatic reasoning schemas}
+      \field{year}{1985}
+      \field{number}{4}
+      \range{number}{1}
+      \field{pages}{391\bibrangedash 416}
+      \range{pages}{26}
+      \field{volume}{17}
       \range{volume}{1}
     \endentry
     \entry{cosmides1992cognitive}{incollection}{}{}
@@ -1893,6 +2063,34 @@
       \range{pages}{15}
       \field{volume}{35}
       \range{volume}{1}
+    \endentry
+    \entry{tenenbaum1999bayesian}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1496617cb6c48a07efcc39a1bbe8568}{%
+           family={Tenenbaum},
+           familyi={T\bibinitperiod},
+           given={J.\bibnamedelimi B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Massachusetts Institute of Technology}%
+      }
+      \strng{namehash}{b1496617cb6c48a07efcc39a1bbe8568}
+      \strng{fullhash}{b1496617cb6c48a07efcc39a1bbe8568}
+      \strng{fullhashraw}{b1496617cb6c48a07efcc39a1bbe8568}
+      \strng{bibnamehash}{b1496617cb6c48a07efcc39a1bbe8568}
+      \strng{authorbibnamehash}{b1496617cb6c48a07efcc39a1bbe8568}
+      \strng{authornamehash}{b1496617cb6c48a07efcc39a1bbe8568}
+      \strng{authorfullhash}{b1496617cb6c48a07efcc39a1bbe8568}
+      \strng{authorfullhashraw}{b1496617cb6c48a07efcc39a1bbe8568}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Bayesian framework for concept learning}
+      \field{type}{phdthesis}
+      \field{year}{1999}
+      \true{nocite}
     \endentry
   \enddatalist
 \endrefsection
