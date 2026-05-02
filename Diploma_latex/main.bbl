@@ -1260,8 +1260,8 @@
       \strng{authornamehash}{7190f437f1a376e49d4d86249852cb21}
       \strng{authorfullhash}{255ed04ad310e9564b7695f77b548652}
       \strng{authorfullhashraw}{255ed04ad310e9564b7695f77b548652}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{internalsortvolume}{4}
       \field{journaltitle}{PNAS Nexus}
@@ -2063,6 +2063,30 @@
       \range{pages}{15}
       \field{volume}{35}
       \range{volume}{1}
+    \endentry
+    \entry{li2026ikp}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=66d548e0e670e107fc4a80dc0c3825b3}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{66d548e0e670e107fc4a80dc0c3825b3}
+      \strng{fullhash}{66d548e0e670e107fc4a80dc0c3825b3}
+      \strng{fullhashraw}{66d548e0e670e107fc4a80dc0c3825b3}
+      \strng{bibnamehash}{66d548e0e670e107fc4a80dc0c3825b3}
+      \strng{authorbibnamehash}{66d548e0e670e107fc4a80dc0c3825b3}
+      \strng{authornamehash}{66d548e0e670e107fc4a80dc0c3825b3}
+      \strng{authorfullhash}{66d548e0e670e107fc4a80dc0c3825b3}
+      \strng{authorfullhashraw}{66d548e0e670e107fc4a80dc0c3825b3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2604.24827}
+      \field{title}{Black-Box {LLM} Parameter Count Estimation via Inverse Knowledge Probing}
+      \field{year}{2026}
     \endentry
     \entry{tenenbaum1999bayesian}{thesis}{}{}
       \name{author}{1}{}{%
