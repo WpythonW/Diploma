@@ -1,0 +1,61 @@
+\documentclass[14pt,a4paper,oneside,openany]{book}
+\let\cleardoublepage\clearpage
+
+\input{preamble.tex}
+
+\begin{document}
+
+% Титульный лист для Антиплагиата (не нумеруется)
+\input{titlepage_antiplagiat.tex}
+
+% Нумерация страниц начинается с листа «СОДЕРЖАНИЕ»
+\setcounter{page}{1}
+
+% СОДЕРЖАНИЕ
+\chapter*{СОДЕРЖАНИЕ}
+\markboth{СОДЕРЖАНИЕ}{}
+\vspace{-3.5cm}
+{%
+  \renewcommand{\contentsname}{}%
+  \tableofcontents
+}
+
+% Список сокращений и условных обозначений
+\input{abbreviations.tex}
+\cleardoublepage
+
+% Список терминов и определений
+\input{terms.tex}
+\cleardoublepage
+
+% Основной текст работы
+\mainmatter
+
+% ВВЕДЕНИЕ
+\input{intro.tex}
+
+% ГЛАВА 1 - Анализ предметной области
+\input{chapter1.tex}
+
+% ГЛАВА 2 - Дизайн и проведение экспериментов
+\input{chapter2.tex}
+
+% ГЛАВА 3 - Техническая реализация
+\input{chapter3.tex}
+
+% ГЛАВА 4 - Валидация, ограничения и обсуждение результатов
+\input{chapter4.tex}
+
+% ЗАКЛЮЧЕНИЕ
+\input{conclusion.tex}
+
+% СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ
+\addcontentsline{toc}{chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
+\nocite{*}
+\printbibliography[title={СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}]
+
+% ПРИЛОЖЕНИЯ
+\appendix
+\input{appA.tex}
+
+\end{document}

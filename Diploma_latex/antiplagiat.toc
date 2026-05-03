@@ -102,11 +102,11 @@
 \contentsline {section}{\numberline {4.3}Практические рекомендации по митигации предубеждений}{61}{}%
 \contentsline {subsection}{\numberline {4.3.1}Для инженеров: выбор модели и стратегии промптинга}{61}{}%
 \contentsline {subsection}{\numberline {4.3.2}Для исследователей: метрики и методология}{61}{}%
-\contentsline {section}{\numberline {4.4}Ограничения исследования}{61}{}%
-\contentsline {subsection}{\numberline {4.4.1}Методологические ограничения}{61}{}%
-\contentsline {subsection}{\numberline {4.4.2}Ограничения отдельных экспериментов}{62}{}%
-\contentsline {section}{\numberline {4.5}Апробация результатов}{62}{}%
-\contentsline {section}{\numberline {4.6}Направления будущих исследований}{62}{}%
-\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{64}{}%
-\contentsline {chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{65}{}%
-\contentsline {chapter}{\numberline {А}РУКОВОДСТВО ПО ИСПОЛЬЗОВАНИЮ ШАБЛОНА}{69}{}%
+\contentsline {section}{\numberline {4.4}Ограничения исследования}{62}{}%
+\contentsline {subsection}{\numberline {4.4.1}Методологические ограничения}{62}{}%
+\contentsline {subsection}{\numberline {4.4.2}Ограничения отдельных экспериментов}{63}{}%
+\contentsline {section}{\numberline {4.5}Апробация результатов}{63}{}%
+\contentsline {section}{\numberline {4.6}Направления будущих исследований}{63}{}%
+\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{65}{}%
+\contentsline {chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{66}{}%
+\contentsline {chapter}{\numberline {А}РУКОВОДСТВО ПО ИСПОЛЬЗОВАНИЮ ШАБЛОНА}{70}{}%
