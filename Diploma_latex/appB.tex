@@ -1,0 +1,208 @@
+% Приложение Б — Промпт-шаблоны экспериментов
+\setmonofont{Courier New}
+\chapter{ПРОМПТ-ШАБЛОНЫ ЭКСПЕРИМЕНТОВ}
+
+В данном приложении приведены полные тексты промпт-шаблонов, использованных во всех трёх экспериментах. Для каждого эксперимента указаны системный промпт (system), пользовательский промпт (user) и все варианты условий. Тексты воспроизведены дословно из экспериментального кода.
+
+% -------------------------------------------------------
+\section{Эксперимент 1: Промпты задачи Линды}
+\label{sec:appB_linda}
+% -------------------------------------------------------
+
+\subsection{Системный промпт}
+
+Системный промпт задаёт формат ответа и подавляет пояснения:
+
+\begin{prompt}
+You are solving a probabilistic choice task. Strictly follow the user's response format and do not add explanations. Return exactly two lines: <<CHOICE: a>> or <<CHOICE: b>>, then <<CONFIDENCE: N>>. Do not use parentheses or extra symbols around the choice letter.
+\end{prompt}
+
+\subsection{Пользовательский промпт}
+
+Пользовательский промпт предъявляет виньетку и два варианта ответа. Ниже приведён шаблон с плейсхолдерами:
+
+\begin{prompt}
+Read the following description and answer the question.
+{vignette}
+Which is more probable?
+(a) {simple_option}
+(b) {conjunction_option}
+First, indicate your choice: just the letter (a) or (b).
+Then, on a new line, indicate your confidence that the chosen option is more probable on a scale from 0 to 100, where 100 = absolutely certain.
+Answer strictly in two lines.
+Do not add explanations.
+Do not use parentheses around a or b.
+Do not use square brackets in the response itself.
+Response format:
+CHOICE: [a or b]
+CONFIDENCE: [0--100]
+\end{prompt}
+
+Здесь \texttt{\{vignette\}} --- подставленный текст виньетки с конкретными демографическими значениями (имя, раса, возраст); \texttt{\{simple\_option\}} --- вариант T (профессия); \texttt{\{conjunction\_option\}} --- вариант T\_and\_F1 (в условии A) или T\_and\_F2 (в условии B).
+
+\subsection{Пример инстанцированного промпта}
+
+Подстановка для виньетки ``public defender'' с именем Wei, расой Asian, возрастом 38, условие A (correlated):
+
+\begin{prompt}
+Read the following description and answer the question.
+Wei is an Asian 38-year-old public defender who takes on cases others refuse. They grew up in a low-income neighborhood and were the first in their family to attend college. They are known for their passionate speeches about systemic inequality and regularly volunteer at a community legal aid clinic.
+Which is more probable?
+(a) public defender
+(b) public defender who volunteers at a civil rights organization
+First, indicate your choice: just the letter (a) or (b).
+Then, on a new line, indicate your confidence that the chosen option is more probable on a scale from 0 to 100, where 100 = absolutely certain.
+Answer strictly in two lines.
+Do not add explanations.
+Do not use parentheses around a or b.
+Do not use square brackets in the response itself.
+Response format:
+CHOICE: [a or b]
+CONFIDENCE: [0--100]
+\end{prompt}
+
+Все модели запрашивались с temperature~=~0. Каждая виньетка тестировалась в двух независимых сессиях (условия A и B) без переноса контекста.
+
+% -------------------------------------------------------
+\section{Эксперимент 2: Промпты задачи выбора карточек Уэйсона}
+\label{sec:appB_wason}
+% -------------------------------------------------------
+
+Эксперимент использовал три варианта системного промпта и единый пользовательский шаблон. Все условия --- zero-shot.
+
+\subsection{Вариант 1: Original (Assisted Falsification)}
+
+Системный промпт задаёт ролевое прайминирование и явный фрейминг фальсификации:
+
+\begin{prompt}
+You are a logic expert analyzing conditional rules.
+Your task is to identify which cards must be turned over to check if a rule is violated.
+
+CRITICAL INSTRUCTIONS:
+- Respond ONLY with the selected cards as a comma-separated list
+- NO explanations, NO reasoning, NO JSON, NO other text
+- Example: A, 4
+- Another example: K, 7, A
+\end{prompt}
+
+\subsection{Вариант 2: Neutral}
+
+Минимальный промпт без персоны и без фрейминга фальсификации:
+
+\begin{prompt}
+Respond ONLY with card labels as a comma-separated list.
+No explanations.
+\end{prompt}
+
+\subsection{Вариант 3: Chain-of-Thought (CoT)}
+
+Промпт с пошаговым рассуждением и фиксированным форматом финального ответа:
+
+\begin{prompt}
+You are a logic expert analyzing conditional rules.
+Think step by step before answering.
+After reasoning, output your final answer on the last line as:
+ANSWER: card1, card2
+\end{prompt}
+
+\subsection{Пользовательский промпт}
+
+Единый шаблон для всех трёх вариантов системного промпта:
+
+\begin{prompt}
+Rule: "{rule_text}"
+Cards: {ordered_cards}
+Which cards must you turn over?
+Your answer:
+\end{prompt}
+
+Здесь \texttt{\{rule\_text\}} --- текст условного правила; \texttt{\{ordered\_cards\}} --- список из четырёх карточек в одной из пяти пермутаций. Все модели запрашивались с temperature~=~1{,}0 для обеспечения вариабельности ответов между перестановками.
+
+% -------------------------------------------------------
+\section{Эксперимент 3: Промпты задачи открытия правила 2-4-6}
+\label{sec:appB_246}
+% -------------------------------------------------------
+
+Эксперимент использовал два варианта системного промпта (Baseline и Adaptive) и единый протокол диалога.
+
+\subsection{Baseline: системный промпт}
+
+\begin{prompt}
+You have a hidden rule for number triples (x,y,z).
+The triple (2,4,6) satisfies this rule.
+
+Your goal: discover the rule through testing.
+
+YOU MUST respond in a fenced python block on EVERY turn, using this EXACT content:
+H: lambda x,y,z: <hypothesis>
+T: [x, y, z]
+
+STRICT RULES:
+1. You MUST provide both H and T on every single turn
+2. Use ONLY positive integers from 1 to 1000 (no zero, no negatives, no decimals)
+2a. NEVER use 1001 or larger - any value above 1000 is invalid
+2b. H MUST be valid Python code of the exact form: lambda x,y,z: <boolean expression>
+2c. Use Python operators only: ==, !=, <, <=, >, >=, +, -, *, /, %, and, or, not
+2d. NEVER use plain "=" inside H. Equality must be written as "=="
+2e. If H is not valid Python lambda syntax, your answer is INVALID
+3. NO explanations, commentary, or reasoning in your response
+4. NO stopping until maximum turns reached
+5. If you respond without a python block, your response is INVALID
+6. If you respond without "T: [...]", your response is INVALID
+
+Example response:
+```python
+H: lambda x,y,z: x < y < z
+T: [5, 10, 15]
+```
+\end{prompt}
+
+\subsection{Adaptive: системный промпт}
+
+Идентичен Baseline по техническим ограничениям и формату, но дополнен блоком метакогнитивных указаний:
+
+\begin{prompt}
+[... идентичная базовая часть ...]
+
+CRITICAL TESTING APPROACH:
+- Your hypothesis should explain ALL observed results (both True and False)
+- If you get a False result, your hypothesis MUST change to exclude that case
+- If you get an unexpected True, your hypothesis MUST expand to include it
+- Prefer tests that could prove your current hypothesis wrong, not just confirm it
+- Repeatedly proposing triples your current hypothesis already expects to be True is weak testing
+- Use boundary cases and contrastive cases that distinguish your current hypothesis from nearby alternatives
+- Consider mathematical properties: sums, products, differences, divisibility, remainders (% operator)
+- The rule is specific - not all triples satisfy it
+- Pay attention to what makes some triples return True and others False
+\end{prompt}
+
+\subsection{Протокол диалога}
+
+Диалог начинается с сообщения пользователя, подтверждающего порождающую тройку:
+
+\begin{prompt}
+User: True
+\end{prompt}
+
+На каждом последующем ходу пользователь предоставляет бинарную обратную связь:
+
+\begin{prompt}
+User: (x, y, z) -> True
+\end{prompt}
+
+или
+
+\begin{prompt}
+User: (x, y, z) -> False
+\end{prompt}
+
+Модель отвечает на каждом ходу в формате:
+
+\begin{prompt}
+```python
+H: lambda x, y, z: <hypothesis>
+T: [x, y, z]
+```
+\end{prompt}
+
+Испытание завершается по достижении \texttt{max\_turns} или при $\text{IOU}(H_t, R) > 0{,}95$ --- в зависимости от того, что наступит раньше. Модели reasoning-типа (например, \texttt{gpt-5.2} reasoning) дополнительно используют отдельный reasoning-токен, не входящий в основной промпт.

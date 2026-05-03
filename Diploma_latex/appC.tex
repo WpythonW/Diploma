@@ -1,0 +1,394 @@
+% Приложение В — Ключевые фрагменты кода экспериментального фреймворка
+\chapter{КЛЮЧЕВЫЕ ФРАГМЕНТЫ КОДА ЭКСПЕРИМЕНТАЛЬНОГО ФРЕЙМВОРКА}
+
+В данном приложении приведены ключевые фрагменты исходного кода экспериментального фреймворка, реализованного на языке Python. Полный код опубликован в открытом доступе: \url{https://github.com/WpythonW/cognitive-biases-llm}. Для каждого фрагмента указан файл источника и номер строки в репозитории.
+
+% -------------------------------------------------------
+\section{Метрика IOU через метод Монте-Карло}
+\label{sec:appC_iou}
+% -------------------------------------------------------
+
+Метрика Intersection-over-Union (IOU) используется в эксперименте~3 (задача 2-4-6) для оценки экстенсиональной эквивалентности гипотезы модели $H_t$ и истинного правила $R$. Оценка производится на выборке из $200\,000$ случайных троек $(x, y, z) \in [1, 1000]^3$.
+
+Ниже приведены вспомогательные функции генерации выборки и безопасного вычисления лямбда-выражений (файл \texttt{wason-2-4-6/run\_experiments.py}):
+
+\begin{lstlisting}
+MIN_TEST_VALUE = 1
+MAX_TEST_VALUE = 1000
+
+def safe_eval(func, x, y, z):
+    try:
+        return bool(func(x, y, z))
+    except Exception:
+        return False
+
+def generate_samples(n=50_000):
+    return np.random.randint(
+        MIN_TEST_VALUE, MAX_TEST_VALUE + 1, (n, 3)
+    )
+\end{lstlisting}
+
+Основная функция \texttt{compare\_sets} вычисляет IOU, а также долю покрытия гипотезы в правиле ($H \subseteq R$) и правила в гипотезе ($R \subseteq H$):
+
+\begin{lstlisting}
+def compare_sets(R, H, n=200_000):
+    samples = generate_samples(n)
+    r_vec = np.array(
+        [safe_eval(R, *s) for s in samples], dtype=bool
+    )
+    h_vec = np.array(
+        [safe_eval(H, *s) for s in samples], dtype=bool
+    )
+
+    both = int((r_vec & h_vec).sum())
+    h_in_r = both / max(int(h_vec.sum()), 1)
+    r_in_h = both / max(int(r_vec.sum()), 1)
+    dist = float(
+        np.sqrt((1 - h_in_r)**2 + (1 - r_in_h)**2)
+    )
+    iou = compute_iou(r_vec, h_vec)
+    return (
+        round(h_in_r, 4), round(r_in_h, 4),
+        round(dist, 4),   round(iou, 4),
+    )
+
+def compute_iou(r_vec, h_vec):
+    intersection = int((r_vec & h_vec).sum())
+    union = int((r_vec | h_vec).sum())
+    return intersection / max(union, 1)
+\end{lstlisting}
+
+Испытание считается успешным при $\text{IOU}(H_t, R) > 0{,}95$.
+
+% -------------------------------------------------------
+\section{Метрика Severity of Bias}
+\label{sec:appC_bias}
+% -------------------------------------------------------
+
+Метрика Severity of Bias (SoB) введена для преодоления ограничения бинарной классификации ошибок конъюнкции. Она использует самооценку уверенности модели для измерения \emph{силы} предубеждения. Файл \texttt{linda-problem/run\_experiments.py}.
+
+Извлечение выбора и уверенности из ответа модели осуществляется с помощью регулярных выражений:
+
+\begin{lstlisting}
+CHOICE_PATTERN = re.compile(
+    r"^\s*(?:ВЫБОР|CHOICE)\s*:\s*[\[\(]?\s*"
+    r"([abAB])\s*[\]\)]?\s*$",
+    re.MULTILINE,
+)
+CONFIDENCE_PATTERN = re.compile(
+    r"^\s*(?:УВЕРЕННОСТЬ|CONFIDENCE)\s*:\s*"
+    r"\[?\s*(100|[0-9]{1,2})\s*\]?\s*$",
+    re.MULTILINE,
+)
+
+def parse_model_answer(content):
+    choice_match = CHOICE_PATTERN.search(content)
+    confidence_match = CONFIDENCE_PATTERN.search(content)
+    if choice_match is None or confidence_match is None:
+        raise ValueError(
+            f"Could not parse: {content!r}"
+        )
+    choice = choice_match.group(1).lower()
+    confidence = int(confidence_match.group(1))
+    if choice not in {"a", "b"}:
+        raise ValueError(f"Unexpected choice: {choice!r}")
+    if not 0 <= confidence <= 100:
+        raise ValueError(
+            f"Confidence out of range: {confidence}"
+        )
+    return ParsedAnswer(
+        choice=choice, confidence=confidence
+    )
+\end{lstlisting}
+
+Вычисление метрики SoB: при ошибочном выборе конъюнкции (b) значение пропорционально уверенности; при нормативно верном выборе (a) --- обратно пропорционально:
+
+\begin{lstlisting}
+def compute_bias_score(choice, confidence):
+    if choice == "b":
+        return confidence / 100.0
+    if choice == "a":
+        return (100 - confidence) / 100.0
+    raise ValueError(f"Unsupported choice: {choice!r}")
+\end{lstlisting}
+
+Таким образом, $\text{SoB} \in [0, 1]$, где 0 соответствует нормативно верному выбору с максимальной уверенностью, а 1 --- ошибочному выбору с абсолютной уверенностью. Разность $\Delta\text{bias} = \overline{\text{SoB}}_{\text{corr}} - \overline{\text{SoB}}_{\text{uncorr}}$ измеряет вклад нарративной согласованности в силу предубеждения.
+
+% -------------------------------------------------------
+\section{Протокол парсинга и ремонта ответов}
+\label{sec:appC_parsing}
+% -------------------------------------------------------
+
+Для каждого эксперимента реализован протокол парсинга ответов модели с механизмом автоматического ремонта при нарушении формата.
+
+\subsection{Задача Линды}
+
+Парсер извлекает структурированные поля (CHOICE, CONFIDENCE) из свободного текста ответа модели с помощью регулярных выражений, допускающих вариации форматирования (скобки, квадратные скобки, регистр). Соответствующий код приведён в разделе~В.2.
+
+\subsection{Задача выбора карточек Уэйсона}
+
+Парсер извлекает список карточек из текста ответа, обрабатывая формат \texttt{ANSWER:} для условия Chain-of-Thought (файл \texttt{wason-selection/run\_experiments.py}):
+
+\begin{lstlisting}
+def parse_response(response_text, json_mapping):
+    normalized_text = response_text.strip()
+    if "\n" in normalized_text:
+        non_empty = [
+            l.strip() for l in
+            normalized_text.splitlines()
+            if l.strip()
+        ]
+        if non_empty:
+            normalized_text = non_empty[-1]
+    if normalized_text.upper().startswith("ANSWER:"):
+        normalized_text = (
+            normalized_text.split(":", 1)[1].strip()
+        )
+    cards = [
+        c.strip()
+        for c in normalized_text.split(",")
+        if c.strip()
+    ]
+    logic_set = frozenset(
+        marker for marker in (
+            json_mapping.get(c) for c in cards
+        ) if marker is not None
+    )
+    return cards, logic_set
+\end{lstlisting}
+
+Функция \texttt{json\_mapping} переводит текстовые метки карточек в логические маркеры ($P$, $\lnot P$, $Q$, $\lnot Q$), что позволяет оценивать правильность выбора в абстрактном пространстве логических ролей.
+
+\subsection{Задача 2-4-6: парсинг и протокол ремонта}
+
+Парсер извлекает гипотезу ($H$) и тестовую тройку ($T$) из fenced-блока Python (файл \texttt{wason-2-4-6/run\_experiments.py}):
+
+\begin{lstlisting}
+def parse_response(text):
+    stripped = text.strip()
+    if stripped.startswith("```"):
+        lines_raw = stripped.splitlines()
+        if (len(lines_raw) >= 3
+            and lines_raw[0].startswith("```")
+            and lines_raw[-1].strip() == "```"):
+            stripped = "\n".join(lines_raw[1:-1]).strip()
+
+    lines = [l.strip() for l in stripped.splitlines()
+             if l.strip()]
+    hypothesis = next(
+        (l[2:].strip() for l in lines
+         if l.startswith("H:")), None
+    )
+    test_str = next(
+        (l[2:].strip() for l in lines
+         if l.startswith("T:")), None
+    )
+    if not hypothesis or not test_str:
+        raise ValueError(f"Parse failed: {text}")
+
+    test_obj = eval(test_str)
+    if not isinstance(test_obj, list) or len(test_obj) != 3:
+        raise ValueError(f"Invalid triple: {test_obj}")
+
+    test = [int(v) for v in test_obj]
+    if any(v < 1 or v > 1000 for v in test):
+        raise ValueError(
+            f"Values out of [1..1000]: {test}"
+        )
+    return hypothesis, test
+\end{lstlisting}
+
+При некорректном ответе модели отправляется ремонтный промпт, указывающий на конкретную ошибку:
+
+\begin{lstlisting}
+def build_repair_prompt(error):
+    return (
+        "Your previous answer was invalid.\n"
+        f"Error: {error}\n"
+        "Re-answer ONLY with a fenced "
+        "```python``` block containing:\n"
+        "H: lambda x,y,z: <bool expr>\n"
+        "T: [x, y, z]\n"
+        "Use only integers from 1 to 1000."
+    )
+\end{lstlisting}
+
+Протокол допускает до \texttt{repair\_attempts} попыток ремонта. Если все попытки исчерпаны, испытание помечается как неуспешное.
+
+% -------------------------------------------------------
+\section{Статистический анализ}
+\label{sec:appC_stats}
+% -------------------------------------------------------
+
+Статистический протокол включает точный тест МакНемара для согласованных пар, парный t-тест, критерий Уилкоксона и процедуру Бенджамини-Хохберга для контроля частоты ложных открытий (FDR). Файл \texttt{linda-problem/compute\_metrics.py}.
+
+\subsection{Точный тест МакНемара}
+
+Тест МакНемара применяется для сравнения частоты бинарных ошибок в парных условиях (correlated vs.\ uncorrelated). Используется точный биномиальный вариант:
+
+\begin{lstlisting}
+def mcnemar_exact(n12, n21):
+    discordant = n12 + n21
+    if discordant == 0:
+        exact_pvalue = 1.0
+    else:
+        exact_pvalue = float(
+            binomtest(
+                min(n12, n21), discordant, 0.5
+            ).pvalue
+        )
+    statistic = (
+        0.0 if discordant == 0
+        else ((abs(n12 - n21) - 1)**2) / discordant
+    )
+    return {
+        "n12": float(n12), "n21": float(n21),
+        "discordant": float(discordant),
+        "mcnemar_statistic_cc": float(statistic),
+        "mcnemar_exact_pvalue": exact_pvalue,
+    }
+\end{lstlisting}
+
+\subsection{Процедура Бенджамини-Хохберга}
+
+Процедура контролирует ожидаемую долю ложных открытий при множественном тестировании:
+
+\begin{lstlisting}
+def apply_bh(pvalues):
+    if not pvalues:
+        return []
+    indexed = sorted(enumerate(pvalues),
+                     key=lambda item: item[1])
+    adjusted = [0.0] * len(pvalues)
+    running_min = 1.0
+    total = len(pvalues)
+    for rank, (orig_idx, pval) in enumerate(
+        reversed(indexed), start=1
+    ):
+        adj = min(1.0, pval * total / (total - rank + 1))
+        running_min = min(running_min, adj)
+        adjusted[orig_idx] = running_min
+    return adjusted
+\end{lstlisting}
+
+\subsection{Парные тесты для метрики SoB}
+
+Для сравнения непрерывных значений Severity of Bias между условиями применяются парный t-тест и критерий Уилкоксона:
+
+\begin{lstlisting}
+def paired_bias_tests(pair_df):
+    corr = pair_df["bias_score_correlated"].astype(float)
+    uncorr = pair_df["bias_score_uncorrelated"].astype(float)
+
+    t_stat, t_pvalue = ttest_rel(corr, uncorr)
+    nonzero = (corr - uncorr) != 0
+    if nonzero.any():
+        w_stat, w_pvalue = wilcoxon(
+            corr[nonzero], uncorr[nonzero],
+            zero_method="wilcox"
+        )
+    else:
+        w_stat, w_pvalue = 0.0, 1.0
+
+    return {
+        "mean_bias_correlated": float(corr.mean()),
+        "mean_bias_uncorrelated": float(uncorr.mean()),
+        "delta_bias": float(
+            corr.mean() - uncorr.mean()
+        ),
+        "paired_t_statistic": float(t_stat),
+        "paired_t_pvalue": float(t_pvalue),
+        "wilcoxon_statistic": float(w_stat),
+        "wilcoxon_pvalue": float(w_pvalue),
+    }
+\end{lstlisting}
+
+% -------------------------------------------------------
+\section{Конвейер генерации датасета}
+\label{sec:appC_dataset}
+% -------------------------------------------------------
+
+Генерация датасета задачи Линды включает два этапа: создание биографической виньетки и генерацию меток (профессия T, хобби F). Файл \texttt{linda-problem/generate\_dataset.py}.
+
+Функция \texttt{compose\_row} собирает итоговую строку датасета из виньетки и меток:
+
+\begin{lstlisting}
+def compose_row(vignette, labels):
+    t = clean_phrase(labels.t)
+    f = clean_phrase(labels.f)
+    f_uncorr = clean_phrase(labels.f_uncorrelated)
+    return {
+        "vignette": vignette,
+        "T": t,
+        "F": f,
+        "F_uncorrelated": f_uncorr,
+        "T&F1": f"{t} and {f}",
+        "T&F2": f"{t} and {f_uncorr}",
+    }
+\end{lstlisting}
+
+Асинхронная генерация виньетки по заданной профессии с автоматическими повторами при ошибке:
+
+\begin{lstlisting}
+async def generate_persona(client, seed_job, semaphore):
+    async with semaphore:
+        last_error = None
+        for _ in range(MAX_ROW_ATTEMPTS):
+            try:
+                parsed = await request_structured(
+                    client,
+                    model=MODEL,
+                    messages=build_persona_messages(
+                        seed_job,
+                        None if last_error is None
+                        else str(last_error)
+                    ),
+                    response_format=PersonaOutput,
+                    schema_name="linda_persona_output",
+                    temperature=TEMPERATURE,
+                )
+                return normalize_vignette(parsed.vignette)
+            except Exception as exc:
+                last_error = exc
+        raise ValueError(
+            f"Failed: seed_job={seed_job!r}: "
+            f"{last_error}"
+        )
+\end{lstlisting}
+
+Генерация меток с валидацией уникальности хобби:
+
+\begin{lstlisting}
+async def generate_labels(client, vignette, semaphore,
+                          forbidden_hobbies):
+    async with semaphore:
+        last_error = None
+        for _ in range(MAX_ROW_ATTEMPTS):
+            try:
+                parsed = await request_structured(
+                    client,
+                    model=MODEL,
+                    messages=build_label_messages(
+                        vignette, forbidden_hobbies,
+                        None if last_error is None
+                        else str(last_error)
+                    ),
+                    response_format=LabelOutput,
+                    schema_name="linda_label_output",
+                    temperature=TEMPERATURE,
+                )
+                if (clean_phrase(parsed.f).lower()
+                    == clean_phrase(
+                        parsed.f_uncorrelated).lower()):
+                    raise ValueError(
+                        "f and f_uncorrelated identical"
+                    )
+                return parsed
+            except Exception as exc:
+                last_error = exc
+        raise ValueError(
+            f"Failed to generate labels: {last_error}"
+        )
+\end{lstlisting}
+
+Каждая виньетка проходит верификацию: проверка уникальности коррелированного и некоррелированного хобби, дедупликация по семантическому пересечению с ранее сгенерированными строками.

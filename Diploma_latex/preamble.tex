@@ -1,4 +1,4 @@
-% Используем XeLaTeX - настраиваем шрифт через fontspec
+% Используем XeLaTeX — настраиваем шрифт через fontspec
 \usepackage{fontspec}
 \setmainfont{Times New Roman}
 
@@ -11,10 +11,10 @@
 
 % Абзацный отступ 1.25 см (п. 4.2)
 \setlength{\parindent}{1.25cm}
-\setlength{\parskip}{6pt}
+\setlength{\parskip}{0pt}
 
 % Нумерация страниц: арабскими цифрами, по центру нижней части, без точки (п. 4.3.1)
-% Нумерация сквозная, включая приложения - см. \setcounter{page} в main.tex
+% Нумерация сквозная, включая приложения — см. \setcounter{page} в main.tex
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
@@ -32,11 +32,11 @@
 \titleformat{\chapter}[hang]{\bfseries\Large\centering}{\thechapter}{1em}{\MakeUppercase}
 % Разделы: полужирный, с абзацного отступа (п. 4.4.4)
 \titleformat{\section}[hang]{\bfseries\large}{\thesection}{1em}{}
-% Подразделы: обычный шрифт, с абзацного отступа (п. 4.4.4 - полужирный только для разделов)
+% Подразделы: обычный шрифт, с абзацного отступа (п. 4.4.4 — полужирный только для разделов)
 \titleformat{\subsection}[hang]{\normalfont}{\thesubsection}{1em}{}
-\titlespacing{\chapter}{0pt}{0pt}{30pt}
-\titlespacing{\section}{1.25cm}{18pt}{10pt}
-\titlespacing{\subsection}{1.25cm}{12pt}{6pt}
+\titlespacing{\chapter}{0pt}{0pt}{20pt}
+\titlespacing{\section}{1.25cm}{12pt}{6pt}
+\titlespacing{\subsection}{1.25cm}{6pt}{3pt}
 
 % Глубина содержания и нумерации
 \setcounter{tocdepth}{2}      % в содержании: главы + разделы + подразделы
@@ -70,14 +70,14 @@
 \DeclareFieldFormat*{issuetitle}{#1}
 \DeclareFieldFormat{namewrapperformat}{#1}
 
-% Убираем курсив из имён авторов (\mkgostheading - внутренняя команда gost-numeric)
+% Убираем курсив из имён авторов (\mkgostheading — внутренняя команда gost-numeric)
 \renewcommand*{\mkgostheading}[1]{#1}
 \renewcommand*{\mkbibnamefamily}[1]{#1}
 \renewcommand*{\mkbibnamegiven}[1]{#1}
 \renewcommand*{\mkbibnameprefix}[1]{#1}
 \renewcommand*{\mkbibnamesuffix}[1]{#1}
 
-% Буквы для приложений (исключены Ё, З, Й, О, Ч, Ъ, Ы, Ь - п. 4.11.2)
+% Буквы для приложений (исключены Ё, З, Й, О, Ч, Ъ, Ы, Ь — п. 4.11.2)
 \def\cyrtoc#1{\ifcase #1\or А\or Б\or В\or Г\or Д\or Е\or Ж\or И\or К\or Л\or М\or Н\or П\or Р\or С\or Т\or У\or Ф\or Х\or Ц\or Ш\or Щ\or Э\or Ю\or Я\else \@ctrerr \fi}
 
 \newcommand\originalappendix{}
@@ -87,10 +87,10 @@
   \renewcommand{\thechapter}{\cyrtoc{\value{chapter}}}
   \renewcommand{\appendixname}{ПРИЛОЖЕНИЕ}
   % Заголовок приложения: «ПРИЛОЖЕНИЕ А» по центру, затем название (п. 4.11.2)
-  \titleformat{\chapter}{\Large\bfseries\centering}{\MakeUppercase{\chaptertitlename}.\ \thechapter}{4pt}{}
+  \titleformat{\chapter}{\Large\bfseries\centering}{\MakeUppercase{\appendixname}\ \thechapter}{4pt}{}
 }
 
-% Переопределяем \mainmatter: убираем сброс счётчика страниц (п. 4.3.1 - сквозная нумерация)
+% Переопределяем \mainmatter: убираем сброс счётчика страниц (п. 4.3.1 — сквозная нумерация)
 \makeatletter
 \renewcommand{\mainmatter}{%
   \cleardoublepage

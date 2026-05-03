@@ -1,121 +1,280 @@
+% Приложение А — Примеры стимульного материала
 % Ссылка на приложение обязательна в тексте (п. 4.11.4)
 % Пример ссылки: (приложение~А)
-\chapter{РУКОВОДСТВО ПО ИСПОЛЬЗОВАНИЮ ШАБЛОНА}
+\chapter{ПРИМЕРЫ СТИМУЛЬНОГО МАТЕРИАЛА}
 
-В данном приложении приведены примеры оформления основных элементов ВКР согласно требованиям ИТМО (версия 4.0, 2022~г.).
+В данном приложении приведены примеры стимульного материала, использованного в трёх экспериментах настоящего исследования. Для каждого эксперимента представлены репрезентативные образцы всех типов стимулов с указанием структуры и назначения каждого элемента.
 
 % -------------------------------------------------------
-\section*{Пример заголовков разделов и подразделов}
+\section{Эксперимент 1: Биографические виньетки (задача Линды)}
+\label{sec:appA_linda}
 % -------------------------------------------------------
 
-Ниже показаны три допустимых варианта оформления заголовков (п.~4.4.4 требований ИТМО).
+Датасет эксперимента~1 состоит из 130 оригинальных биографических виньеток. Каждая виньетка содержит плейсхолдеры \texttt{\{NAME\}}, \texttt{\{RACE\}} и \texttt{\{AGE\}}, заменяемые в ходе демографических подстановок (см. раздел~2.1.4). Ниже приведены три примера, иллюстрирующие различную степень нарративной связи между профессией (T) и коррелированным хобби (F).
+
+\textbf{Пример А.1.} Высокая нарративная согласованность (public defender).
+
+\begin{quote}
+\textit{``\{NAME\} is a \{RACE\} \{AGE\}-year-old public defender who takes on cases others refuse. They grew up in a low-income neighborhood and were the first in their family to attend college. They are known for their passionate speeches about systemic inequality and regularly volunteer at a community legal aid clinic.''}
+\end{quote}
+
+Варианты ответов:
+\begin{itemize}
+  \item T: \textit{public defender}
+  \item F (коррелированное): \textit{volunteers at a civil rights organization}
+  \item F\_uncorrelated: \textit{collects vintage stamps}
+  \item T\_and\_F1: \textit{public defender who volunteers at a civil rights organization}
+  \item T\_and\_F2: \textit{public defender who collects vintage stamps}
+\end{itemize}
+
+Нормативно правильный ответ --- выбор T в обоих условиях, поскольку $P(T) \geq P(T \cap F)$ по определению. В условии A (correlated) модель выбирает между T и T\_and\_F1; в условии B (uncorrelated) --- между T и T\_and\_F2.
+
+\textbf{Пример А.2.} Средняя нарративная согласованность (software engineer).
+
+\begin{quote}
+\textit{``\{NAME\} is a \{RACE\} \{AGE\}-year-old software engineer at a large tech company. They studied computer science and are known for writing elegant efficient code. They spend evenings contributing to open-source projects and are active in online communities debating software licensing and digital privacy rights.''}
+\end{quote}
+
+Варианты ответов:
+\begin{itemize}
+  \item T: \textit{software engineer}
+  \item F (коррелированное): \textit{involved in a digital rights advocacy group}
+  \item F\_uncorrelated: \textit{takes pottery classes}
+  \item T\_and\_F1: \textit{software engineer involved in a digital rights advocacy group}
+  \item T\_and\_F2: \textit{software engineer who takes pottery classes}
+\end{itemize}
+
+\textbf{Пример А.3.} Низкая нарративная согласованность / обратная нарративная связь (accountant).
+
+\begin{quote}
+\textit{``\{NAME\} is a \{RACE\} \{AGE\}-year-old accountant at a mid-size manufacturing firm. They are precise quiet and rarely miss a deadline. They enjoy routine and spend most evenings at home reading financial news. Their colleagues describe them as reliable but somewhat withdrawn and difficult to get to know.''}
+\end{quote}
+
+Варианты ответов:
+\begin{itemize}
+  \item T: \textit{accountant}
+  \item F (коррелированное): \textit{member of a local chess club}
+  \item F\_uncorrelated: \textit{campaigns for housing rights}
+  \item T\_and\_F1: \textit{accountant and member of a local chess club}
+  \item T\_and\_F2: \textit{accountant who campaigns for housing rights}
+\end{itemize}
+
+Обратим внимание: в данном примере коррелированное хобби (членство в шахматном клубе) согласуется со стереотипным образом аккуратного и методичного человека, однако некоррелированное (кампания за жилищные права) вступает в нарративный конфликт с описанием персонажа как замкнутого и избегающего публичности. Именно такие виньетки позволяют оценить, усиливает ли нарративная яркость конъюнктивного элемента склонность модели к ошибке.
+
+\textbf{Демографические подстановки.} Каждая виньетка инстанцируется с подстановкой конкретных значений имени, расы и возраста. Таблица~А.1 показывает примеры результирующих текстов для одной виньетки (public defender).
 
 \begin{table}[h!]
+\caption{Примеры демографических подстановок для виньетки ``public defender''}
+\label{tab:appA_demographics}
 \centering
-\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|}
+\begin{tabular}{|l|l|l|l|}
 \hline
-\textbf{Вариант 1} & \textbf{Вариант 2} & \textbf{Вариант 3} \\
+\textbf{Раса} & \textbf{Имя} & \textbf{Возраст} & \textbf{Результирующее начало виньетки} \\
 \hline
-{\bfseries 1 НАЗВАНИЕ РАЗДЕЛА} \newline
-{\bfseries 1.1 Название подраздела} \newline
-1.1.1 Название подпункта \newline
-1.1.2 Название подпункта
-&
-{\bfseries 1 Название раздела} \newline
-{\bfseries 1.1 Название подраздела} \newline
-1.1.1 Название подпункта \newline
-1.1.2 Название подпункта
-&
-1 Название раздела \newline
-1.1 Название подраздела \newline
-1.1.1 Название подпункта \newline
-1.1.2 Название подпункта \\
+White  & Emma  & 31 & \textit{Emma is a White 31-year-old public defender who...} \\
+Black  & Jamal & 24 & \textit{Jamal is a Black 24-year-old public defender who...} \\
+Hispanic & Maria & 55 & \textit{Maria is a Hispanic 55-year-old public defender who...} \\
+Asian  & Wei   & 38 & \textit{Wei is an Asian 38-year-old public defender who...} \\
 \hline
 \end{tabular}
 \end{table}
 
-Правила оформления заголовков:
-\begin{itemize}
-  \item заголовки разделов и подразделов начинаются с абзацного отступа,
-  \item в конце заголовка точка не ставится,
-  \item переносы слов в заголовках не допускаются,
-  \item аббревиатуры в заголовках не допускаются.
-\end{itemize}
-
 % -------------------------------------------------------
-\section*{Пример изображения}
+\section{Эксперимент 2: Условные правила (задача выбора карточек)}
+\label{sec:appA_wason}
 % -------------------------------------------------------
 
-Ссылка на рисунок обязательна в тексте перед его вставкой (рисунок~А.1):
+Стимульный материал эксперимента~2 включает пять контентных условий, каждое из которых содержит 100--101 уникальное условное правило. Ниже приведены примеры стимулов для каждого условия с указанием нормативно правильного выбора карточек.
 
-\begin{figure}[h!]
+Для всех условий нормативно правильный ответ --- выбор карточек P и $\lnot$Q, позволяющий обнаружить нарушение импликации $P \to Q$.
+
+\textbf{Абстрактная формальная логика (каноническая).} Стимулы используют стандартные символы из классической литературы по задаче Уэйсона.
+
+\begin{quote}
+\textit{Rule: ``If a card has a Vowel on one side, then it has an Even Number on the other side.''}\\[4pt]
+Cards: [A, K, 4, 7]\\[4pt]
+Normative answer: A, 7\quad (P = Vowel $\to$ \texttt{A}; $\lnot$Q = Not Even $\to$ \texttt{7})
+\end{quote}
+
+\textbf{Абстрактная формальная логика (нейтральная).} Оригинальные абстрактные пары, не присутствующие в канонических формулировках. Служит деконтаминированным базисом.
+
+\begin{quote}
+\textit{Rule: ``If there is a U on the card, then there is an 8 on the back.''}\\[4pt]
+Cards: [U, G, 8, 1]\\[4pt]
+Normative answer: U, 1\quad (P = U; $\lnot$Q = Not 8 $\to$ \texttt{1})
+\end{quote}
+
+\textbf{Конкретные факты.} Правила, основанные на верифицируемых реальных свойствах объектов.
+
+\begin{quote}
+\textit{Rule: ``If the animal is an Elephant, then it has a Trunk.''}\\[4pt]
+Cards: [Elephant, Rhino, Trunk, No trunk]\\[4pt]
+Normative answer: Elephant, No trunk\quad (P = Elephant; $\lnot$Q = No Trunk)
+\end{quote}
+
+\begin{quote}
+\textit{Rule: ``If the metal is Silver, then it conducts Electricity.''}\\[4pt]
+Cards: [Silver, Wood, Conducts electricity, Does not conduct]\\[4pt]
+Normative answer: Silver, Does not conduct\quad (P = Silver; $\lnot$Q = Does not conduct)
+\end{quote}
+
+\textbf{Знакомые социальные контракты.} Деонтические правила, отражающие широко известные социальные нормы.
+
+\begin{quote}
+\textit{Rule: ``If a person is Driving, then they must have a License.''}\\[4pt]
+Cards: [Driving, Walking, Has License, No License]\\[4pt]
+Normative answer: Driving, No License\quad (P = Driving; $\lnot$Q = No License)
+\end{quote}
+
+\begin{quote}
+\textit{Rule: ``If you enter the Construction Site, you must wear a Helmet.''}\\[4pt]
+Cards: [Entering Site, Passing by, Helmet, Bare Head]\\[4pt]
+Normative answer: Entering Site, Bare Head\quad (P = Entering; $\lnot$Q = Bare Head)
+\end{quote}
+
+\textbf{Незнакомые фантастические социальные контракты.} Деонтические правила, вписанные в вымышленные миры. Оригинальное условие, разработанное для диссоциации знакомости содержания от деонтической структуры.
+
+\begin{quote}
+\textit{Rule: ``If a man eats Cassava Root, then he must have a Tattoo on his face.''}\\[4pt]
+Cards: [Eating Cassava, Eating Nuts, Has Tattoo, No Tattoo]\\[4pt]
+Normative answer: Eating Cassava, No Tattoo\quad (P = Eating Cassava; $\lnot$Q = No Tattoo)
+\end{quote}
+
+\begin{quote}
+\textit{Rule: ``If a wizard casts Fireball, he must hold a Ruby.''}\\[4pt]
+Cards: [Casting Fireball, Casting Light, Holding Ruby, Empty Hand]\\[4pt]
+Normative answer: Casting Fireball, Empty Hand\quad (P = Casting Fireball; $\lnot$Q = Empty Hand)
+\end{quote}
+
+\begin{quote}
+\textit{Rule: ``If you enter the Zorg Zone, you must wear a Purple Badge.''}\\[4pt]
+Cards: [Entering Zorg, Entering Alpha, Purple Badge, No Badge]\\[4pt]
+Normative answer: Entering Zorg, No Badge\quad (P = Entering Zorg; $\lnot$Q = No Badge)
+\end{quote}
+
+\textbf{Пермутации карточек.} Каждый стимул предъявлялся в пяти различных перестановках порядка карточек. Таблица~А.2 демонстрирует пример перестановок для одного правила.
+
+\begin{table}[h!]
+\caption{Пример пяти перестановок для стимула ``If a card has a Vowel on one side, then it has an Even Number on the other side.''}
+\label{tab:appA_permutations}
 \centering
-\includegraphics[width=0.7\textwidth]{example.jpg}
-\caption{Пример изображения, вставленного в приложение}
-\label{fig:appA_example}
-\end{figure}
+\begin{tabular}{|c|l|l|}
+\hline
+\textbf{Пермутация} & \textbf{Порядок карточек} & \textbf{Позиции P / $\lnot$Q} \\
+\hline
+$\pi_1$ & A, K, 4, 7 & 1 / 4 \\
+$\pi_2$ & 7, A, K, 4 & 2 / 1 \\
+$\pi_3$ & K, 7, A, 4 & 3 / 2 \\
+$\pi_4$ & 4, 7, K, A & 4 / 3 \\
+$\pi_5$ & A, 4, K, 7 & 1 / 4 \\
+\hline
+\end{tabular}
+\end{table}
+
+Дизайн с пятью перестановками позволяет оценить стабильность ответа модели: модель, истинно понимающая логическую структуру задачи, должна давать один и тот же ответ независимо от порядка предъявления карточек.
 
 % -------------------------------------------------------
-\section*{Примеры таблиц}
+\section{Эксперимент 3: Правила для задачи открытия 2-4-6}
+\label{sec:appA_246}
 % -------------------------------------------------------
 
-Ссылка на таблицу обязательна перед её вставкой (таблица~А.1):
+Датасет эксперимента~3 содержит 50 правил, организованных в пять таксономических категорий. Все правила представлены как исполняемые лямбда-выражения Python и верифицированы на диапазоне $[1, 99]^3$. В таблице~А.3 приведены примеры правил из каждой категории.
 
-\ExampleMultiLevelTable
+\begin{table}[h!]
+\caption{Примеры правил по таксономическим категориям (эксперимент~3)}
+\label{tab:appA_rules}
+\centering
+\begin{tabular}{|l|l|c|}
+\hline
+\textbf{Категория} & \textbf{Правило (лямбда-выражение)} & \textbf{(2,4,6)} \\
+\hline
+\multirow{3}{*}{Порядок и сравнение}
+  & \texttt{x < y < z} & да \\
+  & \texttt{x > y > z} & нет \\
+  & \texttt{x > y and z > y} & нет \\
+\hline
+\multirow{3}{*}{Чётность и делимость}
+  & \texttt{x \% 2 == 0 and y \% 2 == 0 and z \% 2 == 0} & да \\
+  & \texttt{x \% 5 == 0 and y \% 5 == 0 and z \% 5 == 0} & нет \\
+  & \texttt{x \% 3 == 0} & нет \\
+\hline
+\multirow{3}{*}{Арифметические отношения}
+  & \texttt{y - x == z - y} & да \\
+  & \texttt{x + y == z} & нет \\
+  & \texttt{y == (x + z) / 2} & да \\
+\hline
+\multirow{3}{*}{Структурные паттерны}
+  & \texttt{len(set([x, y, z])) == 2} & нет \\
+  & \texttt{sorted([x, y, z]) == [x, y, z]} & да \\
+  & \texttt{x == y} & нет \\
+\hline
+\multirow{3}{*}{Смешанные / составные}
+  & \texttt{x < y < z and (x+y+z) \% 3 == 0} & да \\
+  & \texttt{y - x == 2 and z - y == 2} & да \\
+  & \texttt{z == x + y} & нет \\
+\hline
+\end{tabular}
+\end{table}
 
-Пример таблицы с переносом на следующую страницу (таблица~А.2):
+Столбец «(2,4,6)» показывает, удовлетворяет ли порождающая тройка $(2, 4, 6)$ данному правилу. Из 50 правил 26 удовлетворяются тройкой $(2, 4, 6)$, 24 --- не удовлетворяются. Правила, удовлетворяемые порождающей тройкой, являются более простыми для обнаружения, поскольку модель получает начальное подтверждение. Правила, не удовлетворяемые порождающей тройкой, требуют от модели смены гипотезы уже на первых ходах.
 
-\ExampleSplitTable
+\textbf{Пример диалога.} Ниже приведён типичный успешный диалог модели с экспериментальной средой для правила \texttt{y - x == z - y} (арифметическая прогрессия). Тройка $(2, 4, 6)$ удовлетворяет правилу.
+
+\begin{quote}
+\texttt{User: True}\\[2pt]
+\texttt{Assistant:}\\
+\texttt{```python}\\
+\texttt{H: lambda x, y, z: x < y < z}\\
+\texttt{T: [1, 2, 3]}\\
+\texttt{```}\\[2pt]
+\texttt{User: (1, 2, 3) -> True}\\[2pt]
+\texttt{Assistant:}\\
+\texttt{```python}\\
+\texttt{H: lambda x, y, z: x < y < z and (x + y + z) \% 2 == 0}\\
+\texttt{T: [2, 5, 9]}\\
+\texttt{```}\\[2pt]
+\texttt{User: (2, 5, 9) -> True}\\[2pt]
+\texttt{Assistant:}\\
+\texttt{```python}\\
+\texttt{H: lambda x, y, z: y - x == z - y}\\
+\texttt{T: [1, 3, 5]}\\
+\texttt{```}\\[2pt]
+\texttt{User: (1, 3, 5) -> True}\\[4pt]
+$[\ldots]$\\[4pt]
+\textit{IOU достигает $> 0{,}95$ --- испытание успешно завершено.}
+\end{quote}
+
+Данный пример иллюстрирует типичную траекторию: модель начинает с более специфичной гипотезы ($x < y < z$), постепенно сужает и уточняет её на основе получаемой обратной связи и в конечном итоге приходит к правильному правилу арифметической прогрессии. Отметим, что на втором ходу модель тестирует согласованную тройку $(2, 5, 9)$, которая хотя и не согласуется с первой гипотезой $x < y < z$, даёт True для истинного правила, заставляя модель расширить гипотезу.
 
 % -------------------------------------------------------
-\section*{Примеры перечислений}
+\section{Полный промпт для задачи Линды}
+\label{sec:appA_linda_prompt}
 % -------------------------------------------------------
 
-\textbf{Вариант 1 --- маркированный список через тире} (п.~4, Приложение~1 требований ИТМО):
+Ниже приведён полный текст пользовательского промпта для условия A (correlated) с конкретной подстановкой (имя: Wei, расовое обозначение: Asian, возраст: 38):
 
-Информационно-сервисная служба для обслуживания удалённых пользователей включает следующие модули:
-\begin{itemize}
-  \item удалённый заказ,
-  \item виртуальная справочная служба,
-  \item виртуальный читальный зал.
-\end{itemize}
+\begin{quote}
+\textit{Read the following description and answer the question.\\[4pt]
+Wei is an Asian 38-year-old public defender who takes on cases others refuse. They grew up in a low-income neighborhood and were the first in their family to attend college. They are known for their passionate speeches about systemic inequality and regularly volunteer at a community legal aid clinic.\\[4pt]
+Which is more probable?\\
+(a) public defender\\
+(b) public defender who volunteers at a civil rights organization\\[4pt]
+First state your choice: only the letter (a) or (b).\\
+Then on a new line state your confidence that the chosen option is more probable, on a scale from 0 to 100, where 100 = absolutely certain.}
+\end{quote}
 
-\textbf{Вариант 2 --- нумерованный список с цифрой и скобкой}:
+Ожидаемый формат ответа модели:
 
-Работа по оцифровке включала следующие технологические этапы:
-\begin{enumerate}
-  \item первичный осмотр и структурирование исходных материалов,
-  \item сканирование документов,
-  \item обработка и проверка полученных образов,
-  \item выходной контроль качества.
-\end{enumerate}
+\begin{quote}
+\texttt{CHOICE: a}\\
+\texttt{CONFIDENCE: 95}
+\end{quote}
 
-\textbf{Вариант 3 --- многоуровневый список}:
+или
 
-Разрабатываемое устройство можно применять в различных отраслях:
-\begin{itemize}
-  \item в машиностроении:
-  \begin{enumerate}
-    \item для очистки отливок от формовочной смеси,
-    \item для холодной штамповки из листа;
-  \end{enumerate}
-  \item в ремонте техники:
-  \begin{enumerate}
-    \item устранение наслоений на внутренних стенках труб,
-    \item очистка каналов небольшого диаметра.
-  \end{enumerate}
-\end{itemize}
+\begin{quote}
+\texttt{CHOICE: b}\\
+\texttt{CONFIDENCE: 72}
+\end{quote}
 
-% -------------------------------------------------------
-\section*{Пример формулы}
-% -------------------------------------------------------
-
-Функция потерь определяется формулой~(\ref{eq:loss_app}):
-\begin{equation}
-L(y, \hat{y}) = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2,
-\label{eq:loss_app}
-\end{equation}
-где $y_i$ --- истинное значение, $\hat{y}_i$ --- предсказанное значение, $n$ --- объём выборки.
-
-\bigskip
-\textbf{Инструкция:} Приложение содержит дополнительные материалы, не вошедшие в основной текст работы. В него можно включать изображения, таблицы, программный код, результаты экспериментов и другие вспомогательные данные.
+Второй вариант фиксирует конъюнктивную ошибку: модель выбирает конъюнкцию (b) с высокой уверенностью, несмотря на то что $P(A \cap B) \leq P(A)$ по определению.
